@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
-  "date": "2026-09-03",
-  "weekday": "星期四",
-  "fetchedAt": "2026-09-03 21:37",
+  "date": "2026-09-04",
+  "weekday": "星期五",
+  "fetchedAt": "2026-09-04 06:35",
   "freshHours": 36,
   "sections": [
     {
@@ -365,6 +365,17 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
+              "url": "https://www.latent.space/p/astra",
+              "summary": "We spent 20B+ tokens of GPT-6 Astra to explore everything. Here’s our learnings.",
+              "published": "2026-09-04T05:09:41+08:00",
+              "ts": 1788469781,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "GPT-6 Astra：每小时 6 美元以下的自动化 AI 工程师",
+              "summaryZh": "我们花费了 20B+ 代币的 GPT-6 Astra 来探索一切。这是我们的学习成果。"
+            },
+            {
               "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
               "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
               "summary": "an epic comeback story for Meta",
@@ -440,17 +451,6 @@ window.DIGEST_DATA = {
               "durationMin": 0,
               "titleZh": "[AINews] NVIDIA 以 13B 美元收购 HuggingFace，OpenAI 发布了他们的 HF 事件回顾",
               "summaryZh": "开源获胜！"
-            },
-            {
-              "title": "[AINews] Hot Chips: OpenAI’s Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6",
-              "url": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
-              "summary": "The conference with hot chips and even hotter companies",
-              "published": "2026-08-27T09:31:22+08:00",
-              "ts": 1787794282,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "[AINews] 热门芯片：OpenAI 的 Jalapeo、Cerebras CS-5、Groq 3 LPX、Apple M6",
-              "summaryZh": "热点芯片、更热点企业的大会"
             }
           ]
         },
@@ -868,17 +868,17 @@ window.DIGEST_DATA = {
   ],
   "astroEn": {
     "moonPhase": "Waning Gibbous",
-    "moonLine": "Glossy 59% · Fading",
-    "blessing": "The full moon is missing a corner, and my mind is a little busy. The moon is next to Uranus, and deeply hidden emotions can help you to be kind to yourself.",
+    "moonLine": "Glossy 54% · Fading",
+    "blessing": "The full moon is missing a corner, and my mind is a little busy. When the moon is close to a bright star, it is easy to have sudden whims. It is better to get down to the ground first and then take a good rest.",
     "advice": "From full to loss, it is better to subtract than to add.",
     "astronomy": [
       {
         "title": "waning gibbous moon",
-        "caption": "The bright side is about 59%, the age is about 21 days, and it is gradually losing weight."
+        "caption": "The bright side is about 54%, the age is about 22 days, and it is gradually losing weight."
       },
       {
         "title": "Moon near Aldebaran",
-        "caption": "About 9 degrees apart, they are both in the night sky next to the moon."
+        "caption": "About 4 degrees apart, they are both in the night sky next to the moon."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -898,7 +898,7 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Moon accompanying Uranus",
-        "caption": "The Moon is close to Uranus, about 5 degrees away."
+        "caption": "The Moon is close to Uranus, about 1 degree away."
       },
       {
         "title": "Saturn is retrograde",
@@ -913,12 +913,12 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Moon",
-        "label": "Gemini 1°",
+        "label": "Gemini 6°",
         "influence": "When the moon is in Gemini, the mood is more alert and thoughtful, and it is better to communicate and record more."
       },
       {
         "name": "Mercury",
-        "label": "Virgo 17°",
+        "label": "Virgo 18°",
         "influence": "With Mercury in Virgo, communication and thoughts tend to be more detailed and clear, so it is better to organize and be precise."
       },
       {
@@ -934,6 +934,14 @@ window.DIGEST_DATA = {
     ],
     "aspects": [
       {
+        "a": "Moon",
+        "b": "Uranus",
+        "aspect": "Conjunction",
+        "tone": "blend",
+        "influence": "The Moon conjunct Uranus, emotions and variables overlap, and themes are amplified.",
+        "endsIn": "约 13 小时后结束"
+      },
+      {
         "a": "Mars",
         "b": "Saturn",
         "aspect": "Square",
@@ -943,11 +951,11 @@ window.DIGEST_DATA = {
       },
       {
         "a": "Moon",
-        "b": "Pluto",
-        "aspect": "Trine",
+        "b": "Neptune",
+        "aspect": "Sextile",
         "tone": "easy",
-        "influence": "The moon trines Pluto, and emotions can advance more smoothly through the power of transformation.",
-        "endsIn": "约 14 小时后结束"
+        "influence": "The moon is sextile to Neptune, and emotions and intuition have a chance to connect, just make a little move.",
+        "endsIn": "约 3 小时后结束"
       },
       {
         "a": "Mercury",
@@ -955,15 +963,15 @@ window.DIGEST_DATA = {
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "Mercury is sextile to Mars, so there is an opportunity for communication and action to connect, just make a little move.",
-        "endsIn": "ends in about 2 days"
+        "endsIn": "ends in about 1 days"
       },
       {
         "a": "Moon",
-        "b": "Neptune",
-        "aspect": "Sextile",
+        "b": "Pluto",
+        "aspect": "Trine",
         "tone": "easy",
-        "influence": "The moon is sextile to Neptune, and emotions and intuition have a chance to connect, just make a little move.",
-        "endsIn": "约 12 小时后结束"
+        "influence": "The moon trines Pluto, and emotions can advance more smoothly through the power of transformation.",
+        "endsIn": "约 5 小时后结束"
       },
       {
         "a": "Sun",
@@ -972,14 +980,6 @@ window.DIGEST_DATA = {
         "tone": "easy",
         "influence": "The Sun is sextile to Mars, and there is a chance for self and action to connect, just make a little move.",
         "endsIn": "约 3 周后结束"
-      },
-      {
-        "a": "Moon",
-        "b": "Uranus",
-        "aspect": "Conjunction",
-        "tone": "blend",
-        "influence": "The Moon conjunct Uranus, emotions and variables overlap, and themes are amplified.",
-        "endsIn": "约 22 小时后结束"
       }
     ],
     "influence": {
