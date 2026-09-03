@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>每日精选</title>
+  <script src="stars-data.js?v=20260903171047"></script>
+  <script src="digest-data.js?v=20260903171047"></script>
+  <!-- 版式源码：digest.css；结构：本文件；交互：digest-ui.js -->
+  <link rel="stylesheet" href="digest.css?v=20260903173600" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="logo" href="digest.html" data-i18n="title">每日精选</a>
+      <nav class="nav">
+        <a href="#astrology" data-i18n="navAstro">占星</a>
+        <a href="#invest" data-i18n="navInvest">投资</a>
+        <a href="#ai" data-i18n="navAi">AI</a>
+        <a href="#work" data-i18n="navWork">工作</a>
+      </nav>
+      <div class="top-right">
+        <div class="top-meta">
+          <strong id="date-line">—</strong>
+          <span id="updated">订阅源定时拉取</span>
+          <span id="live-status" class="live-status"></span>
+        </div>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="zh" class="is-on">中文</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="page">
+    <div class="fresh-box" id="fresh-box" hidden>
+      <p class="kicker" data-i18n="latestKicker">最新</p>
+      <h2 data-i18n="latest">今日更新</h2>
+      <div class="fresh-list" id="fresh-list"></div>
+    </div>
+
+    <section class="block" id="astrology">
+      <div class="sec-head">
+        <h2 data-i18n="navAstro">占星</h2>
+        <p data-i18n="astroLead">当日天文学 / 占星学星象，及订阅栏目</p>
+      </div>
+      <div class="sky-panel">
+        <article class="card">
+          <div class="moon-row">
+            <div class="moon" id="moon-disc"></div>
+            <div class="moon-copy">
+              <h3 id="moon-title">月相</h3>
+              <p id="moon-sub"></p>
+            </div>
+          </div>
+          <p class="blessing" id="blessing"></p>
+          <div class="more-links">
+            <a href="diary.html" data-i18n="diary">星星日记</a>
+            <a href="stars.html" data-i18n="calendar">星星日历</a>
+          </div>
+        </article>
+        <article class="card">
+          <p class="subk" data-i18n="astroSky">天文学 · 今夜可见</p>
+          <div class="astro-list" id="astro-sky"></div>
+        </article>
+      </div>
+      <div class="split">
+        <article class="card">
+          <p class="subk" data-i18n="signs">占星 · 日月金水火星座</p>
+          <div class="chip-row" id="sign-chips"></div>
+          <p class="subk" data-i18n="aspects" style="margin-top:8px">主要相位与影响</p>
+          <div id="aspect-mini"></div>
+        </article>
+        <article class="card">
+          <p class="subk" data-i18n="influence">对你的影响</p>
+          <div class="inf-grid" id="inf-grid"></div>
+        </article>
+      </div>
+      <div class="feed-grid" id="feeds-astrology"></div>
+    </section>
+
+    <section class="block" id="invest">
+      <div class="sec-head"><h2 data-i18n="navInvest">投资</h2><p data-i18n="investLead">长期资金、周期与个人理财</p></div>
+      <div class="feed-grid" id="feeds-invest"></div>
+    </section>
+    <section class="block" id="ai">
+      <div class="sec-head"><h2 data-i18n="navAi">AI</h2><p data-i18n="aiLead">研究访谈、工程现场与中国观察</p></div>
+      <div class="feed-grid cols-4" id="feeds-ai"></div>
+    </section>
+    <section class="block" id="work">
+      <div class="sec-head"><h2 data-i18n="navWork">工作</h2><p data-i18n="workLead">宏观现场、利率与信用</p></div>
+      <div class="feed-grid" id="feeds-work"></div>
+    </section>
+    <footer class="note" id="foot-note"></footer>
+  </div>
+  <script src="digest-ui.js?v=20260903171047"></script>
+  <script src="sky-refresh.js?v=202609011733"></script>
+</body>
+</html>
