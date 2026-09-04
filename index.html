@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>每日精选</title>
-  <script src="stars-data.js?v=20260903171047"></script>
-  <script src="digest-data.js?v=20260903171047"></script>
+  <script src="stars-data.js?v=20260904093649"></script>
+  <script src="digest-data.js?v=20260904093649"></script>
   <!-- 版式源码：digest.css；结构：本文件；交互：digest-ui.js -->
-  <link rel="stylesheet" href="digest.css?v=20260903173600" />
+  <link rel="stylesheet" href="digest.css?v=20260904100200" />
 </head>
 <body>
   <header class="topbar">
@@ -44,27 +44,21 @@
         <h2 data-i18n="navAstro">占星</h2>
         <p data-i18n="astroLead">当日天文学 / 占星学星象，及订阅栏目</p>
       </div>
-      <div class="sky-panel">
-        <article class="card">
-          <div class="moon-row">
-            <div class="moon" id="moon-disc"></div>
-            <div class="moon-copy">
-              <h3 id="moon-title">月相</h3>
-              <p id="moon-sub"></p>
-            </div>
+      <div class="moon-band">
+        <div class="moon-row">
+          <div class="moon" id="moon-disc"></div>
+          <div class="moon-copy">
+            <h3 id="moon-title">月相</h3>
+            <p id="moon-sub"></p>
           </div>
-          <p class="blessing" id="blessing"></p>
-          <div class="more-links">
-            <a href="diary.html" data-i18n="diary">星星日记</a>
-            <a href="stars.html" data-i18n="calendar">星星日历</a>
-          </div>
-        </article>
+        </div>
+        <p class="blessing" id="blessing"></p>
+      </div>
+      <div class="sky-facts">
         <article class="card">
           <p class="subk" data-i18n="astroSky">天文学 · 今夜可见</p>
           <div class="astro-list" id="astro-sky"></div>
         </article>
-      </div>
-      <div class="split">
         <article class="card">
           <p class="subk" data-i18n="signs">占星 · 日月金水火星座</p>
           <div class="chip-row" id="sign-chips"></div>
@@ -93,7 +87,7 @@
     </section>
     <footer class="note" id="foot-note"></footer>
   </div>
-  <script src="digest-ui.js?v=20260903171047"></script>
+  <script src="digest-ui.js?v=20260904100200"></script>
   <script src="sky-refresh.js?v=202609011733"></script>
 </body>
 </html>
