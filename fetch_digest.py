@@ -25,6 +25,12 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent
 TZ = ZoneInfo("Asia/Shanghai")
 SSL_CTX = ssl.create_default_context()
+SSL_CTX_TLS12 = ssl.create_default_context()
+try:
+    SSL_CTX_TLS12.minimum_version = ssl.TLSVersion.TLSv1_2
+    SSL_CTX_TLS12.maximum_version = ssl.TLSVersion.TLSv1_2
+except Exception:
+    SSL_CTX_TLS12 = SSL_CTX
 ITEM_LIMIT = 8
 HEADERS = {
     "User-Agent": (
@@ -32,6 +38,8 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
     ),
     "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, text/html;q=0.9, */*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Connection": "close",
 }
 
 # 用户提供的部分链接已 404 / 换源，这里用当前仍可用的官方镜像。
@@ -296,20 +304,45 @@ def find_enclosure(node: ET.Element) -> str:
     return ""
 
 
-def http_get(url: str, retries: int = 3) -> bytes:
+def http_get_curl(url: str) -> bytes:
+    import subprocess
+
+    cmd = [
+        "curl", "-fsSL", "--max-time", "45", "--retry", "2", "--retry-delay", "1",
+        "--http1.1", "--compressed",
+        "-A", HEADERS["User-Agent"],
+        "-H", "Accept: " + HEADERS["Accept"],
+        url,
+    ]
+    proc = subprocess.run(cmd, capture_output=True)
+    if proc.returncode != 0 or not proc.stdout:
+        err = (proc.stderr or b"").decode("utf-8", errors="replace").strip()[:240]
+        raise RuntimeError(err or f"curl exit {proc.returncode}")
+    raw = proc.stdout
+    if raw[:2] == b"\x1f\x8b":
+        raw = gzip.decompress(raw)
+    return raw
+
+
+def http_get(url: str, retries: int = 2) -> bytes:
     last_err: Exception | None = None
-    for i in range(retries):
-        req = urllib.request.Request(url, headers=HEADERS)
-        try:
-            with urllib.request.urlopen(req, timeout=45, context=SSL_CTX) as resp:
-                raw = resp.read()
-                enc = (resp.headers.get("Content-Encoding") or "").lower()
-                if enc == "gzip" or raw[:2] == b"\x1f\x8b":
-                    raw = gzip.decompress(raw)
-                return raw
-        except Exception as exc:
-            last_err = exc
-            time.sleep(0.7 * (i + 1))
+    for ctx in (SSL_CTX, SSL_CTX_TLS12):
+        for i in range(retries):
+            req = urllib.request.Request(url, headers=HEADERS)
+            try:
+                with urllib.request.urlopen(req, timeout=45, context=ctx) as resp:
+                    raw = resp.read()
+                    enc = (resp.headers.get("Content-Encoding") or "").lower()
+                    if enc == "gzip" or raw[:2] == b"\x1f\x8b":
+                        raw = gzip.decompress(raw)
+                    return raw
+            except Exception as exc:
+                last_err = exc
+                time.sleep(0.5 * (i + 1))
+    try:
+        return http_get_curl(url)
+    except Exception as exc:
+        last_err = exc
     raise RuntimeError(f"{url} -> {last_err}")
 
 
@@ -752,6 +785,40 @@ def attach_translations(data: dict) -> dict:
     return data
 
 
+def load_saved_digest() -> dict:
+    path = ROOT / "digest-data.js"
+    if not path.exists():
+        return {}
+    text = path.read_text(encoding="utf-8")
+    match = re.match(r"window\.DIGEST_DATA = (.*);\s*$", text, re.S)
+    if not match:
+        return {}
+    try:
+        data = json.loads(match.group(1))
+    except json.JSONDecodeError:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def keep_previous_items(sections: list[dict], saved: dict) -> list[dict]:
+    prev = {}
+    for sec in saved.get("sections") or []:
+        for feed in sec.get("feeds") or []:
+            fid = feed.get("id")
+            if fid:
+                prev[fid] = feed
+    for sec in sections:
+        for feed in sec.get("feeds") or []:
+            old = prev.get(feed.get("id"))
+            if feed.get("items"):
+                continue
+            if old and old.get("items"):
+                feed["items"] = old["items"]
+                feed["ok"] = True
+                feed["error"] = None
+    return sections
+
+
 def build() -> dict:
     now = datetime.now(TZ)
     jobs = []
@@ -792,13 +859,19 @@ def build() -> dict:
         )
     from digest_nativity import build_nativity
 
+    saved = load_saved_digest()
+    sections = keep_previous_items(sections, saved)
+    nativity = build_nativity(now)
+    if saved.get("nativity") and not nativity.get("name"):
+        nativity = saved["nativity"]
+
     return {
         "date": now.strftime("%Y-%m-%d"),
         "weekday": weekday_cn(now),
         "fetchedAt": now.strftime("%Y-%m-%d %H:%M"),
         "freshHours": 36,
         "sections": sections,
-        "nativity": build_nativity(now),
+        "nativity": nativity,
     }
 
 
