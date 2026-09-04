@@ -389,12 +389,6 @@
     k.className = "feed-kind";
     k.textContent = feed.kind === "podcast" ? t("podcast") : t("article");
     col.appendChild(k);
-    if (!feed.ok && feed.error) {
-      var err = document.createElement("p");
-      err.className = "fail";
-      err.textContent = t("failPrefix") + feed.error;
-      col.appendChild(err);
-    }
     if (!feed.items || !feed.items.length) {
       var empty = document.createElement("p");
       empty.className = "empty";
@@ -610,6 +604,28 @@
     ]).then(paintFresh);
   }
 
+  function mergeDigest(next, prev) {
+    if (!next) return prev;
+    if (!prev) return next;
+    var old = {};
+    (prev.sections || []).forEach(function (sec) {
+      (sec.feeds || []).forEach(function (f) { old[f.id] = f; });
+    });
+    (next.sections || []).forEach(function (sec) {
+      (sec.feeds || []).forEach(function (f) {
+        var prevFeed = old[f.id];
+        if ((!f.items || !f.items.length) && prevFeed && prevFeed.items && prevFeed.items.length) {
+          f.items = prevFeed.items;
+          f.ok = true;
+          f.error = null;
+        }
+      });
+    });
+    if (!next.nativity && prev.nativity) next.nativity = prev.nativity;
+    if (!next.astroEn && prev.astroEn) next.astroEn = prev.astroEn;
+    return next;
+  }
+
   function liveRefresh() {
     setLive("", t("updating"));
     fetch("/api/digest?t=" + Date.now(), { cache: "no-store" })
@@ -619,9 +635,7 @@
       })
       .then(function (payload) {
         if (!payload || !payload.ok || !payload.digest) throw new Error("bad");
-        if (!payload.digest.nativity && window.DIGEST_DATA && window.DIGEST_DATA.nativity) {
-          payload.digest.nativity = window.DIGEST_DATA.nativity;
-        }
+        payload.digest = mergeDigest(payload.digest, window.DIGEST_DATA);
         window.DIGEST_DATA = payload.digest;
         if (payload.stars && Object.keys(payload.stars).length) {
           window.STARS_DATA = payload.stars;
