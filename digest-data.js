@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-04",
   "weekday": "星期五",
-  "fetchedAt": "2026-09-04 15:33",
+  "fetchedAt": "2026-09-04 15:41",
   "freshHours": 36,
   "sections": [
     {
@@ -211,98 +211,9 @@ window.DIGEST_DATA = {
           "name": "Astrology with Alice Bell",
           "home": "https://alicebell.substack.com/",
           "kind": "newsletter",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "The Astrology of My Birth Story",
-              "url": "https://alicebell.substack.com/p/the-astrology-of-my-birth-story",
-              "summary": "How the transits spoke to the various twists and turns my labor and delivery ended up having.",
-              "published": "2026-09-03T22:03:27+08:00",
-              "ts": 1788444207,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "我出生的占星故事",
-              "summaryZh": "这些行运如何讲述了我的分娩和分娩最终经历的各种曲折。"
-            },
-            {
-              "title": "Virgo Season Monthly Forecast",
-              "url": "https://alicebell.substack.com/p/virgo-season-monthly-forecast-c23",
-              "summary": "A final Pisces lunar eclipse, Sun-Mercury cazimi in Virgo, Mars squares Saturn, Venus enters Scorpio where it will later station retrograde, Mercury moves to L…",
-              "published": "2026-08-22T22:01:27+08:00",
-              "ts": 1787407287,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "处女座季节月度预测",
-              "summaryZh": "最后一次双鱼座月食，太阳-水星在处女座，火星与土星相刑，金星进入天蝎座，稍后将在那里逆行，水星移动到左..."
-            },
-            {
-              "title": "How Synastry and Relationship Timing Work Hand in Hand",
-              "url": "https://alicebell.substack.com/p/how-synastry-and-relationship-timing",
-              "summary": "Plus, some other relationship astrology observations I’ve noticed recently",
-              "published": "2026-08-14T00:45:01+08:00",
-              "ts": 1786639501,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "Synastry 和关系计时如何齐头并进",
-              "summaryZh": "另外，我最近注意到的一些其他关系占星学观察"
-            },
-            {
-              "title": "How Do You Know When You’re Ready for a Major Life Change?",
-              "url": "https://alicebell.substack.com/p/how-do-you-know-when-youre-ready",
-              "summary": "Tips for understanding when eclipses will be a bigger deal for you",
-              "published": "2026-08-04T00:41:07+08:00",
-              "ts": 1785775267,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "你怎么知道你什么时候准备好迎接重大的生活改变？",
-              "summaryZh": "了解日食何时对你来说更重要的提示"
-            },
-            {
-              "title": "Leo Season Monthly Forecast",
-              "url": "https://alicebell.substack.com/p/leo-season-monthly-forecast-cf1",
-              "summary": "Mercury retrograde ends, the Nodes are changing signs, a full moon triggers the Jupiter-Pluto opposition, a solar eclipse in Leo is happening, and much more!",
-              "published": "2026-07-23T01:30:19+08:00",
-              "ts": 1784741419,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "狮子座季节月度预测",
-              "summaryZh": "水星逆行结束、南北交点改变星座、满月引发木星与冥王星对分相、狮子座日食正在发生，等等！"
-            },
-            {
-              "title": "Using Zodiacal Releasing to Time Major Career Chapters",
-              "url": "https://alicebell.substack.com/p/using-zodiacal-releasing-to-time",
-              "summary": "Let's break down this timing technique in an easy, applicable way",
-              "published": "2026-07-16T00:03:27+08:00",
-              "ts": 1784131407,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "使用黄道释放来计时主要的职业章节",
-              "summaryZh": "让我们以一种简单、适用的方式分解这种计时技术"
-            },
-            {
-              "title": "How to Interpret a Planetary Return",
-              "url": "https://alicebell.substack.com/p/how-to-interpret-a-planetary-return",
-              "summary": "What to expect with a Jupiter, Mars, Venus, or Mercury return!",
-              "published": "2026-07-10T02:31:24+08:00",
-              "ts": 1783621884,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "如何解读行星回归",
-              "summaryZh": "木星、火星、金星或水星回归会发生什么！"
-            },
-            {
-              "title": "Workshop Replay: Building a Personal Brand with Astrology",
-              "url": "https://alicebell.substack.com/p/workshop-replay-building-a-personal",
-              "summary": "Identifying your brand vision through birth chart placements, and also looking at the timing of rebranding or pivoting at work.",
-              "published": "2026-06-29T23:00:27+08:00",
-              "ts": 1782745227,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "研讨会重播：用占星术打造个人品牌",
-              "summaryZh": "通过出生图的位置来确定您的品牌愿景，并考虑在工作中进行品牌重塑或调整的时机。"
-            }
-          ]
+          "ok": false,
+          "error": "https://alicebell.substack.com/feed -> HTTP Error 403: Forbidden",
+          "items": []
         }
       ]
     },
@@ -415,98 +326,9 @@ window.DIGEST_DATA = {
           "name": "Doomberg",
           "home": "https://doomberg.substack.com/",
           "kind": "newsletter",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "With American Characteristics",
-              "url": "https://newsletter.doomberg.com/p/with-american-characteristics",
-              "summary": "The US enters the great state-owned enterprises game.",
-              "published": "2026-09-01T17:01:37+08:00",
-              "ts": 1788253297,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "具有美国特色",
-              "summaryZh": "美国进入国有企业大博弈。"
-            },
-            {
-              "title": "Maîtres Chez Nous",
-              "url": "https://newsletter.doomberg.com/p/maitres-chez-nous",
-              "summary": "Consider Alberta unstuck.",
-              "published": "2026-08-28T17:02:17+08:00",
-              "ts": 1787907737,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "大师之心",
-              "summaryZh": "考虑一下阿尔伯塔省的困境。"
-            },
-            {
-              "title": "Company Deep Dive: Chevron",
-              "url": "https://newsletter.doomberg.com/p/company-deep-dive-chevron",
-              "summary": "Pro Tier: August 2026 Doom Zoom",
-              "published": "2026-08-26T22:37:02+08:00",
-              "ts": 1787755022,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "公司深度剖析：雪佛龙",
-              "summaryZh": "专业级别：2026 年 8 月 Doom Zoom"
-            },
-            {
-              "title": "Marginal Rations",
-              "url": "https://newsletter.doomberg.com/p/marginal-rations",
-              "summary": "The ominous math driving the current diesel crisis and how it will inevitably resolve.",
-              "published": "2026-08-23T17:01:54+08:00",
-              "ts": 1787475714,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "边际口粮",
-              "summaryZh": "推动当前柴油危机的不祥数学及其将如何不可避免地解决。"
-            },
-            {
-              "title": "Over Target",
-              "url": "https://newsletter.doomberg.com/p/over-target",
-              "summary": "The raw geopolitics of energy foretell an ugly end to the war in Ukraine.",
-              "published": "2026-08-18T17:01:23+08:00",
-              "ts": 1787043683,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "超过目标",
-              "summaryZh": "能源的原始地缘政治预示着乌克兰战争的丑陋结局。"
-            },
-            {
-              "title": "A Minor Detail",
-              "url": "https://newsletter.doomberg.com/p/a-minor-detail",
-              "summary": "Amazingly, Putin will decide whether Europe freezes this winter.",
-              "published": "2026-08-13T17:01:37+08:00",
-              "ts": 1786611697,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "一个小细节",
-              "summaryZh": "令人惊讶的是，普京将决定欧洲今年冬天是否结冰。"
-            },
-            {
-              "title": "Endangered Specious",
-              "url": "https://newsletter.doomberg.com/p/endangered-specious",
-              "summary": "Myths, ghosts, and other oil things that go bump in the night.",
-              "published": "2026-08-09T17:02:14+08:00",
-              "ts": 1786266134,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "濒危似是而非",
-              "summaryZh": "神话、鬼魂和其他在夜间出现的石油事物。"
-            },
-            {
-              "title": "Passing Gas",
-              "url": "https://newsletter.doomberg.com/p/passing-gas",
-              "summary": "As the European Union careens towards a bust up, Brussels goes for broke.",
-              "published": "2026-08-04T17:01:02+08:00",
-              "ts": 1785834062,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "通气",
-              "summaryZh": "随着欧盟濒临崩溃，布鲁塞尔也陷入破产。"
-            }
-          ]
+          "ok": false,
+          "error": "https://doomberg.substack.com/feed -> HTTP Error 403: Forbidden",
+          "items": []
         },
         {
           "id": "maggiulli",
@@ -619,98 +441,9 @@ window.DIGEST_DATA = {
           "name": "Dwarkesh Podcast",
           "home": "https://dwarkesh.substack.com/",
           "kind": "podcast",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "Ajeya Cotra – Inside the OpenAI agent swarm that hacked Hugging Face",
-              "url": "https://www.dwarkesh.com/p/ajeya-cotra",
-              "summary": "\"This might be the clearest warning shot we ever get.\"",
-              "published": "2026-09-01T23:41:06+08:00",
-              "ts": 1788277266,
-              "kind": "podcast",
-              "durationMin": 0,
-              "titleZh": "Ajeya Cotra – 入侵 Hugging Face 的 OpenAI 代理群内部",
-              "summaryZh": "“这可能是我们收到的最明确的警告。”"
-            },
-            {
-              "title": "The rise and fall of agent civilizations",
-              "url": "https://www.dwarkesh.com/p/openai-huggingface-narration",
-              "summary": "The OpenAI/Hugging Face attack, clearly explained",
-              "published": "2026-09-01T04:36:53+08:00",
-              "ts": 1788208613,
-              "kind": "podcast",
-              "durationMin": 0,
-              "titleZh": "特工文明的兴衰",
-              "summaryZh": "清晰解释了 OpenAI/Hugging Face 攻击"
-            },
-            {
-              "title": "The Rise and Fall of Agent Civilizations",
-              "url": "https://www.dwarkesh.com/p/openai-huggingface",
-              "summary": "The whole OpenAI/Hugging Face story in plain English",
-              "published": "2026-08-30T06:47:53+08:00",
-              "ts": 1788043673,
-              "kind": "podcast",
-              "durationMin": 0,
-              "titleZh": "特工文明的兴衰",
-              "summaryZh": "用简单的英语讲述整个 OpenAI/Hugging Face 故事"
-            },
-            {
-              "title": "Dylan Patel – Anthropic & OpenAI will have most of the world’s compute by 2028",
-              "url": "https://www.dwarkesh.com/p/dylan-patel-3",
-              "summary": "\"Every force is screeching towards centralization.\"",
-              "published": "2026-08-25T23:32:57+08:00",
-              "ts": 1787671977,
-              "kind": "podcast",
-              "durationMin": 0,
-              "titleZh": "Dylan Patel – 到 2028 年，Anthropic 和 OpenAI 将拥有世界上大部分的计算能力",
-              "summaryZh": "“每一种力量都在急速走向集权。”"
-            },
-            {
-              "title": "Ryan Greenblatt – What happens once AI can automate AI research?",
-              "url": "https://www.dwarkesh.com/p/ryan-greenblatt",
-              "summary": "A debate about recursive self-improvement.",
-              "published": "2026-08-12T00:31:23+08:00",
-              "ts": 1786465883,
-              "kind": "podcast",
-              "durationMin": 0,
-              "titleZh": "Ryan Greenblatt – 一旦人工智能能够实现人工智能研究自动化，会发生什么？",
-              "summaryZh": "关于递归自我完善的争论。"
-            },
-            {
-              "title": "8 Predictions for the Era of Continual Learning",
-              "url": "https://www.dwarkesh.com/p/era-of-continual-learning",
-              "summary": "Locking in AI safety regulation now is a mistake.",
-              "published": "2026-08-08T01:17:40+08:00",
-              "ts": 1786123060,
-              "kind": "podcast",
-              "durationMin": 0,
-              "titleZh": "对持续学习时代的 8 个预测",
-              "summaryZh": "现在锁定人工智能安全监管是一个错误。"
-            },
-            {
-              "title": "Why smarter AI models could drive up compute prices 10x",
-              "url": "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive-video",
-              "summary": "The end of cheap compute?",
-              "published": "2026-08-04T01:32:13+08:00",
-              "ts": 1785778333,
-              "kind": "podcast",
-              "durationMin": 0,
-              "titleZh": "为什么更智能的 AI 模型可以将计算价格推高 10 倍",
-              "summaryZh": "廉价计算的终结？"
-            },
-            {
-              "title": "Why compute might get 10x+ more expensive in coming years",
-              "url": "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive",
-              "summary": "If a human-level software engineer that could run on an H100 equivalent, at current market rates for software engineers, that H100 should rent for over $250k a…",
-              "published": "2026-07-29T23:01:35+08:00",
-              "ts": 1785337295,
-              "kind": "podcast",
-              "durationMin": 0,
-              "titleZh": "为什么未来几年计算成本可能会上涨 10 倍以上",
-              "summaryZh": "如果一个人类水平的软件工程师可以在 H100 同等设备上运行，按照当前软件工程师的市场价格，H100 的租金应该超过 25 万美元……"
-            }
-          ]
+          "ok": false,
+          "error": "https://dwarkesh.substack.com/feed -> HTTP Error 403: Forbidden",
+          "items": []
         },
         {
           "id": "latent",
@@ -729,7 +462,7 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "[AINews] GPT-6 Astra：OpenAI 有史以来最大规模的法学硕士发布",
-              "summaryZh": "新的 SOTA 计算机使用和编码，每个代币价格高 2.5 倍，但每个任务便宜得多，可监控性较差。总的来说，OpenAI 新领域的推出非常成功……"
+              "summaryZh": "新的 SOTA 计算机使用和编码，每个代币价格高 2.5 倍，但每个任务便宜得多，可监控性较差。总体而言，OpenAI 新领域的推出非常成功……"
             },
             {
               "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
@@ -913,98 +646,9 @@ window.DIGEST_DATA = {
           "name": "ChinAI",
           "home": "https://chinai.substack.com/",
           "kind": "newsletter",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "ChinAI #373: The OpenClaw Hype and Overestimating China’s Diffusion Advantage",
-              "url": "https://chinai.substack.com/p/chinai-373-the-openclaw-hype-and",
-              "summary": "Plus, Ask the Audience about a tricky research ethics question",
-              "published": "2026-08-31T19:29:24+08:00",
-              "ts": 1788175764,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "ChinAI #373：OpenClaw 炒作和高估中国的扩散优势",
-              "summaryZh": "另外，向观众询问一个棘手的研究伦理问题"
-            },
-            {
-              "title": "ChinAI #372: China’s Overhyped Embodied AI Sector",
-              "url": "https://chinai.substack.com/p/chinai-372-chinas-overhyped-embodied",
-              "summary": "Greetings from a world where…",
-              "published": "2026-08-24T19:39:59+08:00",
-              "ts": 1787571599,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "ChinAI #372：中国过度炒作的实体人工智能领域",
-              "summaryZh": "来自一个世界的问候……"
-            },
-            {
-              "title": "ChinAI #371: Quiet Goodbyes, Switching Platforms, and Confrontation: Reactions to China's AI Companion Regulations",
-              "url": "https://chinai.substack.com/p/chinai-371-a-quiet-goodbye-adaptation",
-              "summary": "Greetings from a world where…",
-              "published": "2026-08-17T19:39:28+08:00",
-              "ts": 1786966768,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "ChinAI #371：安静的告别、转换平台和对抗：对中国人工智能伴侣法规的反应",
-              "summaryZh": "来自一个世界的问候……"
-            },
-            {
-              "title": "ChinAI #370: Why is there No Star AI Company from Guangdong?",
-              "url": "https://chinai.substack.com/p/chinai-370-why-is-there-no-star-ai",
-              "summary": "Greetings from a world where…",
-              "published": "2026-08-10T19:59:25+08:00",
-              "ts": 1786363165,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "ChinAI #370：为什么广东没有明星人工智能公司？",
-              "summaryZh": "来自一个世界的问候……"
-            },
-            {
-              "title": "ChinAI #369: My Boss Wants Me to Run Kimi K3, What Should I Do?",
-              "url": "https://chinai.substack.com/p/chinai-369-my-boss-wants-me-to-run",
-              "summary": "Greetings from a world where…",
-              "published": "2026-08-03T19:37:13+08:00",
-              "ts": 1785757033,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "ChinAI #369：我的老板要我运行 Kimi K3，我该怎么办？",
-              "summaryZh": "来自一个世界的问候……"
-            },
-            {
-              "title": "ChinAI #368: The Affordable Luxury of Kimi K3",
-              "url": "https://chinai.substack.com/p/chinai-368-the-affordable-luxury",
-              "summary": "Greetings from a world where…",
-              "published": "2026-07-27T19:03:35+08:00",
-              "ts": 1785150215,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "ChinAI #368：Kimi K3 的实惠奢华",
-              "summaryZh": "来自一个世界的问候……"
-            },
-            {
-              "title": "ChinAI #367: Claude Code's Future in China?",
-              "url": "https://chinai.substack.com/p/chinai-367-claude-codes-future-in",
-              "summary": "Greetings from a world where…",
-              "published": "2026-07-20T19:25:10+08:00",
-              "ts": 1784546710,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "ChinAI #367：Claude Code 在中国的未来？",
-              "summaryZh": "来自一个世界的问候……"
-            },
-            {
-              "title": "ChinAI #366: Most Companion Robots Die by Day 30",
-              "url": "https://chinai.substack.com/p/chinai-366-most-companion-robots",
-              "summary": "Greetings from a world where…",
-              "published": "2026-07-13T19:06:09+08:00",
-              "ts": 1783940769,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "ChinAI #366：大多数伴侣机器人在第 30 天就死亡",
-              "summaryZh": "来自一个世界的问候……"
-            }
-          ]
+          "ok": false,
+          "error": "https://chinai.substack.com/feed -> HTTP Error 403: Forbidden",
+          "items": []
         }
       ]
     },
@@ -1797,7 +1441,7 @@ window.DIGEST_DATA = {
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "The moon is sextile to Saturn, and emotions and responsibilities have a chance to connect, just a little movement.",
-        "endsIn": "约 10 小时后结束"
+        "endsIn": "约 9 小时后结束"
       },
       {
         "a": "Mars",
@@ -1813,7 +1457,7 @@ window.DIGEST_DATA = {
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "The moon is sextile to Jupiter, and emotions and opportunities have a chance to connect, just make a little move.",
-        "endsIn": "约 12 小时后结束"
+        "endsIn": "约 11 小时后结束"
       },
       {
         "a": "Mercury",
