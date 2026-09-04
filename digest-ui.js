@@ -43,6 +43,9 @@
       natMc: "中天",
       natSect: "盘性",
       natRuler: "命主",
+      natHouseSys: "分宫",
+      natAspects: "主要相位",
+      natVerify: "事迹验证",
       natFortune: "福点",
       natSource: "出生数据",
       updating: "正在拉取最新…",
@@ -93,6 +96,9 @@
       natMc: "MC",
       natSect: "Sect",
       natRuler: "Ruler",
+      natHouseSys: "Houses",
+      natAspects: "Aspects",
+      natVerify: "Life check",
       natFortune: "Fortune",
       natSource: "Birth data",
       updating: "Updating…",
@@ -487,11 +493,11 @@
       [t("natBorn"), nat.birthLocal + (nat.tz && nat.tz !== "LMT" ? " (" + nat.tz + ")" : "")],
       [t("natPlace"), lang === "en" ? (nat.placeEn || nat.place) : nat.place],
       [t("natRating"), "Rodden " + (nat.rating || "—")],
+      [t("natHouseSys"), nat.houseSystem || "Placidus"],
       [t("natAsc"), lang === "en" ? (nat.ascLabelEn || nat.ascLabel) : nat.ascLabel],
       [t("natMc"), lang === "en" ? (nat.mcLabelEn || nat.mcLabel) : nat.mcLabel],
       [t("natSect"), lang === "en" ? (nat.sectEn || nat.sectZh) : nat.sectZh],
-      [t("natRuler"), lang === "en" ? (PLANET_EN[nat.ruler] || nat.ruler) : nat.ruler],
-      [t("natFortune"), lang === "en" ? (nat.fortuneLabelEn || nat.fortuneLabel) : ("第" + nat.fortuneHouse + "宫 · " + nat.fortuneLabel)]
+      [t("natRuler"), lang === "en" ? (PLANET_EN[nat.ruler] || nat.ruler) : nat.ruler]
     ];
     var dl = document.getElementById("nat-dl");
     dl.innerHTML = rows.map(function (r) {
@@ -507,17 +513,60 @@
       var extra = b.dignity
         ? " · " + (lang === "en" ? (DIGNITY_EN[b.dignity] || b.dignityEn || b.dignity) : b.dignity)
         : "";
-      el.innerHTML = "<b>" + esc(nm) + "</b>" + esc(lab + " H" + b.house + extra);
+      el.innerHTML = "<b>" + esc(nm) + "</b> " + esc(lab + " · H" + b.house + extra);
       chips.appendChild(el);
     });
-    var findings = lang === "en" ? (nat.findingsEn || nat.findingsZh) : nat.findingsZh;
-    var ol = document.getElementById("nat-findings");
-    ol.innerHTML = "";
-    (findings || []).forEach(function (line) {
-      var li = document.createElement("li");
-      li.textContent = line;
-      ol.appendChild(li);
-    });
+    var aspBox = document.getElementById("nat-aspects");
+    aspBox.innerHTML = "";
+    var aspects = nat.aspects || [];
+    if (aspects.length) {
+      var cap = document.createElement("p");
+      cap.className = "subk";
+      cap.textContent = t("natAspects");
+      aspBox.appendChild(cap);
+      var row = document.createElement("div");
+      row.className = "nat-asp-row";
+      aspects.slice(0, 10).forEach(function (a) {
+        var el = document.createElement("span");
+        el.className = "chip asp-" + (a.nature === "张力" || a.nature === "对峙" ? "hard" : "soft");
+        var an = lang === "en" ? (PLANET_EN[a.a] || a.a) : a.a;
+        var bn = lang === "en" ? (PLANET_EN[a.b] || a.b) : a.b;
+        var as = lang === "en" ? (ASPECT_EN[a.aspect] || a.aspect) : a.aspect;
+        el.textContent = an + " " + as + " " + bn + " (" + a.orb + "°)";
+        row.appendChild(el);
+      });
+      aspBox.appendChild(row);
+    }
+    var sections = nat.sections || [];
+    var boxSec = document.getElementById("nat-sections");
+    boxSec.innerHTML = "";
+    if (sections.length) {
+      sections.forEach(function (sec) {
+        var art = document.createElement("article");
+        art.className = "nat-sec";
+        var h = document.createElement("h4");
+        h.textContent = lang === "en" ? (sec.titleEn || sec.title) : sec.title;
+        var p = document.createElement("p");
+        p.textContent = lang === "en" ? (sec.textEn || sec.text) : sec.text;
+        art.appendChild(h);
+        art.appendChild(p);
+        var ver = lang === "en" ? (sec.verifyEn || sec.verify) : sec.verify;
+        if (ver) {
+          var v = document.createElement("p");
+          v.className = "nat-verify";
+          v.textContent = ver;
+          art.appendChild(v);
+        }
+        boxSec.appendChild(art);
+      });
+    } else {
+      var findings = lang === "en" ? (nat.findingsEn || nat.findingsZh) : nat.findingsZh;
+      (findings || []).forEach(function (line) {
+        var p = document.createElement("p");
+        p.textContent = line;
+        boxSec.appendChild(p);
+      });
+    }
     var src = document.getElementById("nat-source");
     var tech = lang === "en" ? (nat.techniqueEn || nat.techniqueZh) : nat.techniqueZh;
     src.innerHTML = t("natSource") + "：<a href=\"" + esc(nat.source) + "\" target=\"_blank\" rel=\"noopener\">"
