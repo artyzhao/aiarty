@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-04",
   "weekday": "星期五",
-  "fetchedAt": "2026-09-04 16:01",
+  "fetchedAt": "2026-09-04 21:37",
   "freshHours": 36,
   "sections": [
     {
@@ -729,7 +729,7 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "[AINews] GPT-6 Astra：OpenAI 有史以来最大规模的法学硕士发布",
-              "summaryZh": "新的 SOTA 计算机使用和编码，每个代币价格高 2.5 倍，但每个任务便宜得多，可监控性较差。总的来说，OpenAI 新领域的推出非常成功……"
+              "summaryZh": "新的 SOTA 计算机使用和编码，每个代币价格高 2.5 倍，但每个任务便宜得多，可监控性较差。总体而言，OpenAI 新领域的推出非常成功……"
             },
             {
               "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
@@ -1023,6 +1023,17 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "Why Laser Beams Are the Hottest New Tech in Defense",
+              "url": "https://omny.fm/shows/odd-lots/why-laser-beams-are-the-hottest-new-tech-in-defense",
+              "summary": "Our guest today is Colonel Sanders. More precisely, we speak with Wayne Sanders, a retired US army colonel who is currently senior defense research analyst for…",
+              "published": "2026-09-04T16:00:00+08:00",
+              "ts": 1788508800,
+              "kind": "podcast",
+              "durationMin": 53,
+              "titleZh": "为什么激光束是国防领域最热门的新技术",
+              "summaryZh": "今天我们的客人是桑德斯上校。更准确地说，我们采访了韦恩·桑德斯，一位退役的美国陆军上校，目前担任……的高级国防研究分析师。"
+            },
+            {
               "title": "What's Behind the Big Surge in US Government Bond Yields",
               "url": "https://omny.fm/shows/odd-lots/whats-behind-the-big-surge-in-us-government-bond-yields",
               "summary": "Global bond yields are at their highest level since 2008, with the 30-year US Treasury touching 5% just before Treasury Secretary Scott Bessent announced a sur…",
@@ -1098,17 +1109,6 @@ window.DIGEST_DATA = {
               "durationMin": 52,
               "titleZh": "Jasmine Sun 谈人工智能行业对公众强烈反对的误解",
               "summaryZh": "在人工智能行业内，即使是它的建设者也对这项技术感到非常焦虑。他们多年来一直在谈论它造成不稳定的潜力……"
-            },
-            {
-              "title": "Nick Bostrom on What Happens if AI Solves All of Our Problems",
-              "url": "https://omny.fm/shows/odd-lots/nick-bostrom-on-what-happens-if-ai-solves-all-of-our-problems",
-              "summary": "The philosopher Nick Bostrom was one of the first thinkers who mapped out the existential risk of AI. In his 2014 book, Superintelligence: Paths, Dangers, Stra…",
-              "published": "2026-08-20T16:00:00+08:00",
-              "ts": 1787212800,
-              "kind": "podcast",
-              "durationMin": 56,
-              "titleZh": "尼克·博斯特罗姆谈如果人工智能解决我们所有的问题会发生什么",
-              "summaryZh": "哲学家尼克·博斯特罗姆 (Nick Bostrom) 是最早提出人工智能存在风险的思想家之一。在他 2014 年出版的著作《超级智能：路径、危险、策略》中……"
             }
           ]
         },
@@ -1716,18 +1716,18 @@ window.DIGEST_DATA = {
     "date": "2026-09-04"
   },
   "astroEn": {
-    "moonPhase": "Last Quarter",
-    "moonLine": "Glossy 50% · Fading",
-    "blessing": "The moon is half full again, and my mind is a little busy. The moon is close to a bright star, and what you want to do and feel is a bit twisted, and be kind to yourself.",
-    "advice": "When the halfway mark is almost over, put down what needs to be put down.",
+    "moonPhase": "Waning Crescent",
+    "moonLine": "Glossy 47% · Fading",
+    "blessing": "The moon is only a thin crescent, and my mind is a little busy. The moon is close to a bright star. If you have a small chance, you might as well pick it up and do yourself a favor.",
+    "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The shiny surface is about 50%, the age is about 22 days, and it is gradually losing weight."
+        "caption": "The bright side is about 47%, the moon age is about 22 days, and it is gradually losing weight."
       },
       {
         "title": "Moon near Aldebaran",
-        "caption": "About 2 degrees apart, they are both in the night sky next to the moon."
+        "caption": "About 6 degrees apart, they are both in the night sky next to the moon."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -1739,19 +1739,19 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Jupiter is visible in the eastern sky",
-        "caption": "About 27 degrees from the sun, look for it in the eastern sky before dawn."
+        "caption": "About 28 degrees from the sun, look for it in the eastern sky before dawn."
       },
       {
         "title": "Saturn is visible in the eastern sky",
-        "caption": "About 148 degrees from the sun, look for it in the eastern sky before dawn."
-      },
-      {
-        "title": "Moon accompanying Uranus",
-        "caption": "The Moon is close to Uranus, about 6 degrees away."
+        "caption": "About 149 degrees from the sun, look for it in the eastern sky before dawn."
       },
       {
         "title": "Saturn is retrograde",
         "caption": "Saturn moves slowly westward against the stellar background."
+      },
+      {
+        "title": "Neptune is retrograde",
+        "caption": "Neptune moves slowly westward relative to the stellar background."
       }
     ],
     "signs": [
@@ -1762,7 +1762,7 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Moon",
-        "label": "Gemini 12°",
+        "label": "Gemini 16°",
         "influence": "When the moon is in Gemini, the mood is more alert and thoughtful, and it is better to communicate and record more."
       },
       {
@@ -1777,18 +1777,18 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Mars",
-        "label": "Cancer 15°",
+        "label": "Cancer 16°",
         "influence": "Mars is in Cancer, so people tend to be soft-hearted and take care of the family, so they should take care of themselves and have peace of mind."
       }
     ],
     "aspects": [
       {
-        "a": "Sun",
-        "b": "Moon",
-        "aspect": "Square",
-        "tone": "tense",
-        "influence": "If you don't agree with what you mean, don't insist on doing things, settle your mood first.",
-        "endsIn": "约 11 小时后结束"
+        "a": "Moon",
+        "b": "Jupiter",
+        "aspect": "Sextile",
+        "tone": "easy",
+        "influence": "The moon is sextile to Jupiter, and emotions and opportunities have a chance to connect, just make a little move.",
+        "endsIn": "约 5 小时后结束"
       },
       {
         "a": "Moon",
@@ -1796,7 +1796,7 @@ window.DIGEST_DATA = {
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "The moon is sextile to Saturn, and emotions and responsibilities have a chance to connect, just a little movement.",
-        "endsIn": "约 10 小时后结束"
+        "endsIn": "约 4 小时后结束"
       },
       {
         "a": "Mars",
@@ -1807,20 +1807,12 @@ window.DIGEST_DATA = {
         "endsIn": "ends in about 6 days"
       },
       {
-        "a": "Moon",
-        "b": "Jupiter",
-        "aspect": "Sextile",
-        "tone": "easy",
-        "influence": "The moon is sextile to Jupiter, and emotions and opportunities have a chance to connect, just make a little move.",
-        "endsIn": "约 12 小时后结束"
-      },
-      {
-        "a": "Mercury",
-        "b": "Mars",
-        "aspect": "Sextile",
-        "tone": "easy",
-        "influence": "Mercury is sextile to Mars, so there is an opportunity for communication and action to connect, just make a little move.",
-        "endsIn": "约 18 小时后结束"
+        "a": "Sun",
+        "b": "Moon",
+        "aspect": "Square",
+        "tone": "tense",
+        "influence": "If you don't agree with what you mean, don't insist on doing things, settle your mood first.",
+        "endsIn": "约 5 小时后结束"
       },
       {
         "a": "Sun",
@@ -1829,13 +1821,21 @@ window.DIGEST_DATA = {
         "tone": "easy",
         "influence": "The Sun is sextile to Mars, and there is a chance for self and action to connect, just make a little move.",
         "endsIn": "约 3 周后结束"
+      },
+      {
+        "a": "Mercury",
+        "b": "Mars",
+        "aspect": "Sextile",
+        "tone": "easy",
+        "influence": "Mercury is sextile to Mars, so there is an opportunity for communication and action to connect, just make a little move.",
+        "endsIn": "约 12 小时后结束"
       }
     ],
     "influence": {
-      "mood": "The mind is half unloaded, suitable for letting go of obsessions.",
-      "wealth": "It is advisable to stick to established rules and avoid ad hoc decisions.",
+      "mood": "Suitable for adduction and rest, no need to force it.",
+      "wealth": "Take inventory of losses and open new accounts in the coming month.",
       "work": "It is advisable to abide by discipline and do deep work, and change tracks less often.",
-      "love": "Less debate about right and wrong and more room for leeway."
+      "love": "Just stay with them gently and talk less about conclusions."
     }
   }
 };
