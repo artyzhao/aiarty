@@ -790,12 +790,15 @@ def build() -> dict:
                 "feeds": feeds,
             }
         )
+    from digest_nativity import build_nativity
+
     return {
         "date": now.strftime("%Y-%m-%d"),
         "weekday": weekday_cn(now),
         "fetchedAt": now.strftime("%Y-%m-%d %H:%M"),
         "freshHours": 36,
         "sections": sections,
+        "nativity": build_nativity(now),
     }
 
 
