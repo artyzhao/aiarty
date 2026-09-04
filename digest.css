@@ -358,12 +358,12 @@
     }
     .nat-top {
       display: grid;
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: 380px 1fr;
       gap: 28px;
       align-items: start;
       margin-bottom: 14px;
     }
-    .nat-wheel { max-width: 300px; }
+    .nat-wheel { max-width: 380px; }
     .nat-svg { width: 100%; height: auto; display: block; }
     .nat-profile h3 {
       margin: 0 0 4px;
@@ -389,6 +389,24 @@
     .nat-dl dt { color: var(--muted); font-weight: 600; }
     .nat-dl dd { margin: 0; }
     .nat-bio { margin: 0; font-size: 14px; line-height: 1.55; }
+    .nat-asp-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+    .chip.asp-hard { border-color: #c4392a; color: #c4392a; }
+    .chip.asp-soft { border-color: #1d4f91; color: #1d4f91; }
+    .nat-sections { display: grid; gap: 16px; margin: 0 0 16px; }
+    .nat-sec h4 {
+      margin: 0 0 6px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .nat-sec p { margin: 0; font-size: 14px; line-height: 1.6; }
+    .nat-verify {
+      margin-top: 6px !important;
+      padding-left: 10px;
+      border-left: 2px solid var(--accent);
+      color: #333;
+    }
     .nat-findings {
       margin: 0 0 12px;
       padding-left: 18px;
