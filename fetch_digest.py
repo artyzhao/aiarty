@@ -46,7 +46,7 @@ SECTIONS = [
                 "id": "tap",
                 "name": "The Astrology Podcast",
                 "kind": "podcast",
-                "url": "https://theastrologypodcast.com/feed",
+                "url": "https://theastrologypodcast.com/feed/podcast/",
                 "home": "https://theastrologypodcast.com/",
             },
             {
@@ -802,10 +802,11 @@ def write_digest(data: dict, stamp_html: bool = True) -> Path:
         html_path = ROOT / "digest.html"
         if html_path.exists():
             html = html_path.read_text(encoding="utf-8")
-            html = re.sub(r"digest-data\.js(\?v=\d+)?", f"digest-data.js?v={stamp}", html, count=1)
-            html = re.sub(r"stars-data\.js(\?v=\d+)?", f"stars-data.js?v={stamp}", html, count=1)
-            html = re.sub(r"digest-ui\.js(\?v=\d+)?", f"digest-ui.js?v={stamp}", html, count=1)
-            html = re.sub(r"digest\.css(\?v=\d+)?", f"digest.css?v={stamp}", html, count=1)
+            html = re.sub(
+                r'((?:src|href)=")(digest-data\.js|stars-data\.js|digest-ui\.js|digest\.css)(\?v=\d+)?(")',
+                rf"\1\2?v={stamp}\4",
+                html,
+            )
             html_path.write_text(html, encoding="utf-8")
     return js_path
 
