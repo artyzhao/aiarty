@@ -350,8 +350,56 @@
       color: var(--muted);
       font-size: 12px;
     }
+    .nativity {
+      margin: 8px 0 36px;
+      padding: 16px 0 8px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .nat-top {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 28px;
+      align-items: start;
+      margin-bottom: 14px;
+    }
+    .nat-wheel { max-width: 300px; }
+    .nat-svg { width: 100%; height: auto; display: block; }
+    .nat-profile h3 {
+      margin: 0 0 4px;
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+    .nat-role {
+      margin: 0 0 12px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .nat-dl {
+      margin: 0 0 12px;
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 6px 10px;
+      font-size: 13px;
+    }
+    .nat-dl dt { color: var(--muted); font-weight: 600; }
+    .nat-dl dd { margin: 0; }
+    .nat-bio { margin: 0; font-size: 14px; line-height: 1.55; }
+    .nat-findings {
+      margin: 0 0 12px;
+      padding-left: 18px;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .nat-findings li { margin: 0 0 8px; }
+    .nat-source { margin: 0 0 8px; font-size: 12px; color: var(--muted); line-height: 1.5; }
+    .nat-source a { color: inherit; }
     @media (max-width: 980px) {
-      .feed-grid, .feed-grid.cols-4, .sky-facts {
+      .feed-grid, .feed-grid.cols-4, .sky-facts, .nat-top {
         grid-template-columns: 1fr 1fr;
       }
       .feed-grid.cols-4 .feed-col:nth-child(2n) { border-right: none; }
@@ -368,7 +416,7 @@
       .top-right { width: 100%; justify-content: space-between; padding: 6px 0 10px; }
       .nav { width: 100%; overflow-x: auto; }
       .nav a { padding: 10px 12px 12px 0; border-left: none; }
-      .feed-grid, .feed-grid.cols-4, .sky-facts, .fresh-row, .moon-band {
+      .feed-grid, .feed-grid.cols-4, .sky-facts, .fresh-row, .moon-band, .nat-top {
         grid-template-columns: 1fr;
       }
       .feed-col, .feed-col + .feed-col, .sky-facts .card + .card, .sky-facts .card:nth-child(3) {
