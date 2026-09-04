@@ -34,6 +34,17 @@
       today: "今天",
       yesterday: "昨天",
       moonFallback: "月相",
+      nativityKicker: "今日人物盘",
+      nativityFindings: "分析结论",
+      natBorn: "出生",
+      natPlace: "地点",
+      natRating: "评级",
+      natAsc: "上升",
+      natMc: "中天",
+      natSect: "盘性",
+      natRuler: "命主",
+      natFortune: "福点",
+      natSource: "出生数据",
       updating: "正在拉取最新…",
       updatedOk: "已更新",
       updateFail: "仍显示上次数据",
@@ -73,6 +84,17 @@
       today: "Today",
       yesterday: "Yesterday",
       moonFallback: "Moon",
+      nativityKicker: "Chart of the day",
+      nativityFindings: "Reading",
+      natBorn: "Born",
+      natPlace: "Place",
+      natRating: "Rating",
+      natAsc: "Asc",
+      natMc: "MC",
+      natSect: "Sect",
+      natRuler: "Ruler",
+      natFortune: "Fortune",
+      natSource: "Birth data",
       updating: "Updating…",
       updatedOk: "Updated",
       updateFail: "Showing last saved data",
@@ -83,6 +105,7 @@
     "太阳": "Sun", "月亮": "Moon", "水星": "Mercury", "金星": "Venus", "火星": "Mars",
     "木星": "Jupiter", "土星": "Saturn", "天王星": "Uranus", "海王星": "Neptune", "冥王星": "Pluto"
   };
+  var DIGNITY_EN = { "入庙": "domicile", "擢升": "exalted", "落陷": "fall", "失势": "detriment" };
   var SIGN_EN = {
     "白羊": "Aries", "金牛": "Taurus", "双子": "Gemini", "巨蟹": "Cancer",
     "狮子": "Leo", "处女": "Virgo", "天秤": "Libra", "天蝎": "Scorpio",
@@ -447,10 +470,65 @@
     document.getElementById("foot-note").textContent = t("footer");
   }
 
+  function renderNativity() {
+    var box = document.getElementById("nativity-box");
+    if (!box) return;
+    var nat = digest && digest.nativity;
+    if (!nat || !nat.name) {
+      box.hidden = true;
+      return;
+    }
+    box.hidden = false;
+    document.getElementById("nat-wheel").innerHTML = nat.svg || "";
+    document.getElementById("nat-name").textContent = lang === "en" ? (nat.nameEn || nat.name) : nat.name;
+    document.getElementById("nat-role").textContent = lang === "en" ? (nat.roleEn || nat.role) : nat.role;
+    document.getElementById("nat-bio").textContent = lang === "en" ? (nat.bioEn || nat.bio) : nat.bio;
+    var rows = [
+      [t("natBorn"), nat.birthLocal + (nat.tz && nat.tz !== "LMT" ? " (" + nat.tz + ")" : "")],
+      [t("natPlace"), lang === "en" ? (nat.placeEn || nat.place) : nat.place],
+      [t("natRating"), "Rodden " + (nat.rating || "—")],
+      [t("natAsc"), lang === "en" ? (nat.ascLabelEn || nat.ascLabel) : nat.ascLabel],
+      [t("natMc"), lang === "en" ? (nat.mcLabelEn || nat.mcLabel) : nat.mcLabel],
+      [t("natSect"), lang === "en" ? (nat.sectEn || nat.sectZh) : nat.sectZh],
+      [t("natRuler"), lang === "en" ? (PLANET_EN[nat.ruler] || nat.ruler) : nat.ruler],
+      [t("natFortune"), lang === "en" ? (nat.fortuneLabelEn || nat.fortuneLabel) : ("第" + nat.fortuneHouse + "宫 · " + nat.fortuneLabel)]
+    ];
+    var dl = document.getElementById("nat-dl");
+    dl.innerHTML = rows.map(function (r) {
+      return "<dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd>";
+    }).join("");
+    var chips = document.getElementById("nat-chips");
+    chips.innerHTML = "";
+    (nat.bodies || []).forEach(function (b) {
+      var el = document.createElement("span");
+      el.className = "chip";
+      var nm = lang === "en" ? (PLANET_EN[b.name] || b.name) : b.name;
+      var lab = lang === "en" ? (b.labelEn || b.label) : b.label;
+      var extra = b.dignity
+        ? " · " + (lang === "en" ? (DIGNITY_EN[b.dignity] || b.dignityEn || b.dignity) : b.dignity)
+        : "";
+      el.innerHTML = "<b>" + esc(nm) + "</b>" + esc(lab + " H" + b.house + extra);
+      chips.appendChild(el);
+    });
+    var findings = lang === "en" ? (nat.findingsEn || nat.findingsZh) : nat.findingsZh;
+    var ol = document.getElementById("nat-findings");
+    ol.innerHTML = "";
+    (findings || []).forEach(function (line) {
+      var li = document.createElement("li");
+      li.textContent = line;
+      ol.appendChild(li);
+    });
+    var src = document.getElementById("nat-source");
+    var tech = lang === "en" ? (nat.techniqueEn || nat.techniqueZh) : nat.techniqueZh;
+    src.innerHTML = t("natSource") + "：<a href=\"" + esc(nat.source) + "\" target=\"_blank\" rel=\"noopener\">"
+      + esc(nat.sourceName || "Astro-Databank") + "</a> · " + esc(tech);
+  }
+
   function applyLang() {
     bindData();
     renderStaticCopy();
     renderAstro();
+    renderNativity();
     renderFeeds();
   }
 
@@ -493,6 +571,9 @@
       })
       .then(function (payload) {
         if (!payload || !payload.ok || !payload.digest) throw new Error("bad");
+        if (!payload.digest.nativity && window.DIGEST_DATA && window.DIGEST_DATA.nativity) {
+          payload.digest.nativity = window.DIGEST_DATA.nativity;
+        }
         window.DIGEST_DATA = payload.digest;
         if (payload.stars && Object.keys(payload.stars).length) {
           window.STARS_DATA = payload.stars;
