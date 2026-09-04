@@ -485,7 +485,6 @@
       return;
     }
     box.hidden = false;
-    document.getElementById("nat-wheel").innerHTML = nat.svg || "";
     document.getElementById("nat-name").textContent = lang === "en" ? (nat.nameEn || nat.name) : nat.name;
     document.getElementById("nat-role").textContent = lang === "en" ? (nat.roleEn || nat.role) : nat.role;
     document.getElementById("nat-bio").textContent = lang === "en" ? (nat.bioEn || nat.bio) : nat.bio;
