@@ -301,7 +301,7 @@ def http_get(url: str, retries: int = 3) -> bytes:
     for i in range(retries):
         req = urllib.request.Request(url, headers=HEADERS)
         try:
-            with urllib.request.urlopen(req, timeout=28, context=SSL_CTX) as resp:
+            with urllib.request.urlopen(req, timeout=45, context=SSL_CTX) as resp:
                 raw = resp.read()
                 enc = (resp.headers.get("Content-Encoding") or "").lower()
                 if enc == "gzip" or raw[:2] == b"\x1f\x8b":
@@ -330,6 +330,8 @@ def entry_to_item(node: ET.Element, default_kind: str) -> dict | None:
     link = child_text(node, ("link",))
     if not link:
         link = child_attr(node, ("link",), "href")
+    if not link:
+        link = child_text(node, ("guid", "id"))
     summary_src = (
         child_text(node, ("description", "summary", "subtitle"))
         or child_text(node, ("encoded", "content"))
@@ -360,14 +362,20 @@ def entry_to_item(node: ET.Element, default_kind: str) -> dict | None:
 
 def parse_feed(raw: bytes, default_kind: str) -> list[dict]:
     root = parse_xml(raw)
-    items: list[dict] = []
+    nodes: list[ET.Element] = []
     for node in root.iter():
-        if local_name(node.tag) in ("item", "entry"):
-            row = entry_to_item(node, default_kind)
-            if row:
-                items.append(row)
-            if len(items) >= ITEM_LIMIT:
-                break
+        if local_name(node.tag) == "channel":
+            nodes = [child for child in list(node) if local_name(child.tag) == "item"]
+            break
+    if not nodes:
+        nodes = [node for node in root.iter() if local_name(node.tag) in ("item", "entry")]
+    items: list[dict] = []
+    for node in nodes:
+        row = entry_to_item(node, default_kind)
+        if row:
+            items.append(row)
+        if len(items) >= ITEM_LIMIT:
+            break
     return items
 
 
