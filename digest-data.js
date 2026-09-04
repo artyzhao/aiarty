@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-04",
   "weekday": "星期五",
-  "fetchedAt": "2026-09-04 11:21",
+  "fetchedAt": "2026-09-04 13:57",
   "freshHours": 36,
   "sections": [
     {
@@ -721,6 +721,17 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
+              "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
+              "summary": "new SOTA computer use and coding, 2.5x pricier per token, but WAY cheaper per task, less monitorable. overall, a very successful launch of OpenAI’s new frontie…",
+              "published": "2026-09-04T13:18:11+08:00",
+              "ts": 1788499091,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "[AINews] GPT-6 Astra：OpenAI 有史以来最大规模的法学硕士发布",
+              "summaryZh": "新的 SOTA 计算机使用和编码，每个代币价格高 2.5 倍，但每个任务便宜得多，可监控性较差。总的来说，OpenAI 新领域的推出非常成功……"
+            },
+            {
               "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
               "url": "https://www.latent.space/p/astra",
               "summary": "We spent 20B+ tokens of GPT-6 Astra to explore everything. Here’s our learnings.",
@@ -796,17 +807,6 @@ window.DIGEST_DATA = {
               "durationMin": 0,
               "titleZh": "[AINews] OpenAI 将于 2026 年底达到 AGI 标准",
               "summaryZh": "是时候了。我们现在正处于终局阶段。"
-            },
-            {
-              "title": "[AINews] NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro",
-              "url": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
-              "summary": "Open Source wins!",
-              "published": "2026-08-27T09:50:54+08:00",
-              "ts": 1787795454,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "[AINews] NVIDIA 以 13B 美元收购 HuggingFace，OpenAI 发布了他们的 HF 事件回顾",
-              "summaryZh": "开源获胜！"
             }
           ]
         },
@@ -1311,19 +1311,190 @@ window.DIGEST_DATA = {
       ]
     }
   ],
+  "nativity": {
+    "id": "kahlo",
+    "name": "弗里达·卡罗",
+    "nameEn": "Frida Kahlo",
+    "role": "画家",
+    "roleEn": "Painter",
+    "bio": "墨西哥画家。出生证明 8:30，Astro-Databank 评为 AA。",
+    "bioEn": "Mexican painter. Birth certificate 8:30 (Rodden AA).",
+    "place": "科约阿坎，墨西哥",
+    "placeEn": "Coyoacán, Mexico",
+    "rating": "AA",
+    "source": "https://www.astro.com/astro-databank/Kahlo,_Frida",
+    "sourceName": "Astro-Databank",
+    "birthLocal": "1907-07-06 08:30",
+    "tz": "America/Mexico_City",
+    "asc": 143.51,
+    "ascLabel": "狮子 23°31′",
+    "ascLabelEn": "Leo 23°31′",
+    "mcLabel": "金牛 23°20′",
+    "mcLabelEn": "Taurus 23°20′",
+    "sectZh": "昼生盘",
+    "sectEn": "a day chart",
+    "ruler": "太阳",
+    "fortuneHouse": 12,
+    "fortuneLabel": "玄秘",
+    "fortuneLabelEn": "the 12th (withdrawal)",
+    "bodies": [
+      {
+        "name": "太阳",
+        "lon": 103.39,
+        "sign": "巨蟹",
+        "signEn": "Cancer",
+        "deg": 13.4,
+        "label": "巨蟹 13°23′",
+        "labelEn": "Cancer 13°23′",
+        "house": 12,
+        "dignity": "",
+        "dignityEn": "",
+        "glyph": "☉"
+      },
+      {
+        "name": "月亮",
+        "lon": 59.34,
+        "sign": "金牛",
+        "signEn": "Taurus",
+        "deg": 29.3,
+        "label": "金牛 29°20′",
+        "labelEn": "Taurus 29°20′",
+        "house": 10,
+        "dignity": "擢升",
+        "dignityEn": "exaltation",
+        "glyph": "☽"
+      },
+      {
+        "name": "水星",
+        "lon": 126.34,
+        "sign": "狮子",
+        "signEn": "Leo",
+        "deg": 6.3,
+        "label": "狮子 6°21′",
+        "labelEn": "Leo 6°21′",
+        "house": 1,
+        "dignity": "",
+        "dignityEn": "",
+        "glyph": "☿"
+      },
+      {
+        "name": "金星",
+        "lon": 84.35,
+        "sign": "双子",
+        "signEn": "Gemini",
+        "deg": 24.4,
+        "label": "双子 24°21′",
+        "labelEn": "Gemini 24°21′",
+        "house": 11,
+        "dignity": "",
+        "dignityEn": "",
+        "glyph": "♀"
+      },
+      {
+        "name": "火星",
+        "lon": 283.37,
+        "sign": "摩羯",
+        "signEn": "Capricorn",
+        "deg": 13.4,
+        "label": "摩羯 13°22′",
+        "labelEn": "Capricorn 13°22′",
+        "house": 6,
+        "dignity": "擢升",
+        "dignityEn": "exaltation",
+        "glyph": "♂"
+      },
+      {
+        "name": "木星",
+        "lon": 110.25,
+        "sign": "巨蟹",
+        "signEn": "Cancer",
+        "deg": 20.3,
+        "label": "巨蟹 20°15′",
+        "labelEn": "Cancer 20°15′",
+        "house": 12,
+        "dignity": "擢升",
+        "dignityEn": "exaltation",
+        "glyph": "♃"
+      },
+      {
+        "name": "土星",
+        "lon": 357.93,
+        "sign": "双鱼",
+        "signEn": "Pisces",
+        "deg": 27.9,
+        "label": "双鱼 27°56′",
+        "labelEn": "Pisces 27°56′",
+        "house": 8,
+        "dignity": "",
+        "dignityEn": "",
+        "glyph": "♄"
+      }
+    ],
+    "aspects": [
+      {
+        "a": "太阳",
+        "b": "火星",
+        "aspect": "冲相",
+        "orb": 0.0
+      },
+      {
+        "a": "金星",
+        "b": "土星",
+        "aspect": "刑相",
+        "orb": 3.6
+      },
+      {
+        "a": "火星",
+        "b": "木星",
+        "aspect": "冲相",
+        "orb": 6.9
+      },
+      {
+        "a": "月亮",
+        "b": "土星",
+        "aspect": "六分相",
+        "orb": 1.4
+      },
+      {
+        "a": "太阳",
+        "b": "木星",
+        "aspect": "合相",
+        "orb": 6.9
+      }
+    ],
+    "findingsZh": [
+      "此为昼生盘。命主星为上升狮子的庙主太阳，落在第12宫（玄秘）巨蟹。",
+      "日光在巨蟹第12宫，月亮在金牛第10宫。昼星以太阳为证，夜星以月亮为证：本盘见证星为太阳，在第12宫说话更响；另一光体月亮则偏辅助。",
+      "见证星落在玄秘，一生较容易在「玄秘」这一主题上被看见、也容易在这里消耗。",
+      "紧张主轴是太阳与火星的冲相（误差约0.0°），古典上这是需要时间炼的角力，而不是性格缺陷。",
+      "支持来自月亮与土星的六分相，做事时这两颗星的主题容易互相借力。"
+    ],
+    "findingsEn": [
+      "This is a day chart. The chart ruler is Sun, domicile lord of the Leo Ascendant, placed in the 12th (withdrawal) in Cancer.",
+      "The Sun is in Cancer in house 12, the Moon in Taurus in house 10. The luminary of sect is the Sun, which speaks more loudly from house 12.",
+      "The luminary of sect falls in the 12th (withdrawal), so that topic both reveals and spends the native.",
+      "The main tension is a opposition of Sun and Mars (orb 0.0°): in the old texts this is work to be tempered, not a flaw of character.",
+      "Support comes from a sextile of Moon and Saturn; those two topics lend each other a hand."
+    ],
+    "techniqueZh": "技法取希腊化／传统占星：整宫制、昼夜盘、庙旺落陷、福点。论述依盘推演，不是某专栏的逐字转载。出生数据见 Astro-Databank（Rodden 评级）。可对照 Chris Brennan《Hellenistic Astrology》、德博拉·霍尔丁 Skyscript 的传统宫主与尊贵表。",
+    "techniqueEn": "Technique: Hellenistic / traditional — whole-sign houses, sect, essential dignity, Lot of Fortune. The notes are computed from the chart, not copied from a column. Birth data: Astro-Databank (Rodden rating). See Chris Brennan, Hellenistic Astrology, and Deb Houlding’s dignity tables on Skyscript.",
+    "svg": "<svg viewBox=\"0 0 320 320\" class=\"nat-svg\" role=\"img\" aria-label=\"natal chart\"><circle cx=\"160\" cy=\"160\" r=\"148\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"160\" r=\"118\" fill=\"none\" stroke=\"#111\" stroke-width=\"1\"/><circle cx=\"160\" cy=\"160\" r=\"28\" fill=\"none\" stroke=\"#ccc\" stroke-width=\"0.8\"/><line x1=\"42.0\" y1=\"160.0\" x2=\"12.0\" y2=\"160.0\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"32.5\" y=\"125.8\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">白</text><line x1=\"57.8\" y1=\"101.0\" x2=\"31.8\" y2=\"86.0\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"66.7\" y=\"66.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">金</text><line x1=\"101.0\" y1=\"57.8\" x2=\"86.0\" y2=\"31.8\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"125.8\" y=\"32.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">双</text><line x1=\"160.0\" y1=\"42.0\" x2=\"160.0\" y2=\"12.0\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"194.2\" y=\"32.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">巨</text><line x1=\"219.0\" y1=\"57.8\" x2=\"234.0\" y2=\"31.8\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"253.3\" y=\"66.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">狮</text><line x1=\"262.2\" y1=\"101.0\" x2=\"288.2\" y2=\"86.0\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"287.5\" y=\"125.8\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">处</text><line x1=\"278.0\" y1=\"160.0\" x2=\"308.0\" y2=\"160.0\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"287.5\" y=\"194.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">天</text><line x1=\"262.2\" y1=\"219.0\" x2=\"288.2\" y2=\"234.0\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"253.3\" y=\"253.3\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">天</text><line x1=\"219.0\" y1=\"262.2\" x2=\"234.0\" y2=\"288.2\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"194.2\" y=\"287.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">射</text><line x1=\"160.0\" y1=\"278.0\" x2=\"160.0\" y2=\"308.0\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"125.8\" y=\"287.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">摩</text><line x1=\"101.0\" y1=\"262.2\" x2=\"86.0\" y2=\"288.2\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"66.7\" y=\"253.3\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">水</text><line x1=\"57.8\" y1=\"219.0\" x2=\"31.8\" y2=\"234.0\" stroke=\"#111\" stroke-width=\"0.8\"/><text x=\"32.5\" y=\"194.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" fill=\"#111\">双</text><line x1=\"182.5\" y1=\"143.4\" x2=\"279.0\" y2=\"72.0\" stroke=\"#e07000\" stroke-width=\"1.6\"/><text x=\"181.3\" y=\"70.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" fill=\"#111\">☉</text><text x=\"113.1\" y=\"80.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" fill=\"#111\">☽</text><text x=\"214.5\" y=\"85.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" fill=\"#111\">☿</text><text x=\"150.9\" y=\"68.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" fill=\"#111\">♀</text><text x=\"138.7\" y=\"249.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" fill=\"#111\">♂</text><text x=\"191.8\" y=\"73.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" fill=\"#111\">♃</text><text x=\"68.1\" y=\"163.3\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" fill=\"#111\">♄</text><text x=\"160\" y=\"164\" text-anchor=\"middle\" font-size=\"9\" fill=\"#6b6b6b\">ASC</text></svg>",
+    "houseSystem": "整宫制 Whole-sign",
+    "date": "2026-09-04"
+  },
   "astroEn": {
-    "moonPhase": "Waning Gibbous",
-    "moonLine": "Glossy 53% · Fading",
-    "blessing": "The full moon is missing a corner, and my mind is a little busy. When the moon is close to a bright star, it is easy to have sudden whims. It is better to get down to the ground first and then take a good rest.",
-    "advice": "From full to loss, it is better to subtract than to add.",
+    "moonPhase": "Last Quarter",
+    "moonLine": "Glossy 52% · Fading",
+    "blessing": "The moon is half full again, and my mind is a little busy. The moon is close to a bright star, and what you want to do and feel is a bit twisted, and be kind to yourself.",
+    "advice": "When the halfway mark is almost over, put down what needs to be put down.",
     "astronomy": [
       {
-        "title": "waning gibbous moon",
-        "caption": "The bright side is about 53%, the age is about 22 days, and it is gradually losing weight."
+        "title": "waning moon",
+        "caption": "The bright side is about 52%, the age is about 22 days, and it is gradually losing weight."
       },
       {
         "title": "Moon near Aldebaran",
-        "caption": "About 2 degrees apart, they are both in the night sky next to the moon."
+        "caption": "About 0 degrees apart, they are both in the night sky next to the moon."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -1343,7 +1514,7 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Moon accompanying Uranus",
-        "caption": "The Moon is close to Uranus, about 2 degrees away."
+        "caption": "The Moon is close to Uranus, about 4 degrees away."
       },
       {
         "title": "Saturn is retrograde",
@@ -1358,12 +1529,12 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Moon",
-        "label": "Gemini 8°",
+        "label": "Gemini 10°",
         "influence": "When the moon is in Gemini, the mood is more alert and thoughtful, and it is better to communicate and record more."
       },
       {
         "name": "Mercury",
-        "label": "Virgo 18°",
+        "label": "Virgo 19°",
         "influence": "With Mercury in Virgo, communication and thoughts tend to be more detailed and clear, so it is better to organize and be precise."
       },
       {
@@ -1379,6 +1550,14 @@ window.DIGEST_DATA = {
     ],
     "aspects": [
       {
+        "a": "Sun",
+        "b": "Moon",
+        "aspect": "Square",
+        "tone": "tense",
+        "influence": "If you don't agree with what you mean, don't insist on doing things, settle your mood first.",
+        "endsIn": "约 14 小时后结束"
+      },
+      {
         "a": "Mars",
         "b": "Saturn",
         "aspect": "Square",
@@ -1387,28 +1566,20 @@ window.DIGEST_DATA = {
         "endsIn": "ends in about 6 days"
       },
       {
-        "a": "Moon",
-        "b": "Uranus",
-        "aspect": "Conjunction",
-        "tone": "blend",
-        "influence": "The Moon conjunct Uranus, emotions and variables overlap, and themes are amplified.",
-        "endsIn": "约 10 小时后结束"
-      },
-      {
         "a": "Mercury",
         "b": "Mars",
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "Mercury is sextile to Mars, so there is an opportunity for communication and action to connect, just make a little move.",
-        "endsIn": "ends in about 1 days"
+        "endsIn": "约 18 小时后结束"
       },
       {
-        "a": "Sun",
-        "b": "Moon",
-        "aspect": "Square",
-        "tone": "tense",
-        "influence": "If you don't agree with what you mean, don't insist on doing things, settle your mood first.",
-        "endsIn": "约 17 小时后结束"
+        "a": "Moon",
+        "b": "Saturn",
+        "aspect": "Sextile",
+        "tone": "easy",
+        "influence": "The moon is sextile to Saturn, and emotions and responsibilities have a chance to connect, just a little movement.",
+        "endsIn": "约 13 小时后结束"
       },
       {
         "a": "Sun",
@@ -1420,18 +1591,18 @@ window.DIGEST_DATA = {
       },
       {
         "a": "Moon",
-        "b": "Pluto",
-        "aspect": "Trine",
-        "tone": "easy",
-        "influence": "The moon trines Pluto, and emotions can advance more smoothly through the power of transformation.",
-        "endsIn": "约 2 小时后结束"
+        "b": "Uranus",
+        "aspect": "Conjunction",
+        "tone": "blend",
+        "influence": "The Moon conjunct Uranus, emotions and variables overlap, and themes are amplified.",
+        "endsIn": "约 7 小时后结束"
       }
     ],
     "influence": {
-      "mood": "The heat has dropped, suitable for digestion and review.",
-      "wealth": "Reduce expenses and organize your accounts to be more stable.",
+      "mood": "The mind is half unloaded, suitable for letting go of obsessions.",
+      "wealth": "It is advisable to stick to established rules and avoid ad hoc decisions.",
       "work": "It is advisable to abide by discipline and do deep work, and change tracks less often.",
-      "love": "Just finish your words and give the other person a step forward."
+      "love": "Less debate about right and wrong and more room for leeway."
     }
   }
 };
