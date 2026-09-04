@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-04",
   "weekday": "星期五",
-  "fetchedAt": "2026-09-04 15:41",
+  "fetchedAt": "2026-09-04 15:48",
   "freshHours": 36,
   "sections": [
     {
@@ -15,196 +15,18 @@ window.DIGEST_DATA = {
           "name": "The Astrology Podcast",
           "home": "https://theastrologypodcast.com/",
           "kind": "podcast",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "September Astrology Forecast 2026",
-              "url": "https://theastrologypodcast.com/2026/09/02/september-astrology-forecast-2026/",
-              "summary": "A detailed look at the astrology forecast for September 2026, with astrologers Chris Brennan and Austin Coppock. We spend the first hour talking about news and…",
-              "published": "2026-09-03T04:02:06+08:00",
-              "ts": 1788379326,
-              "kind": "podcast",
-              "durationMin": 125,
-              "titleZh": "2026 年 9 月占星预测",
-              "summaryZh": "与占星家 Chris Brennan 和 Austin Coppock 一起详细了解 2026 年 9 月的占星预测。我们花了第一个小时谈论新闻和……"
-            },
-            {
-              "title": "Gnosticism, Hermeticism, and Ancient Astrology",
-              "url": "https://theastrologypodcast.com/2026/08/28/gnosticism-hermeticism-and-ancient-astrology/",
-              "summary": "Scholar M. David Litwa joins the podcast to explore the intersections of Gnosticism, Hermeticism, and ancient astrology. David is a historian of early Christia…",
-              "published": "2026-08-29T03:55:47+08:00",
-              "ts": 1787946947,
-              "kind": "podcast",
-              "durationMin": 115,
-              "titleZh": "诺斯替主义、赫耳墨斯主义和古代占星学",
-              "summaryZh": "学者 M. David Litwa 加入播客，探索诺斯替主义、赫尔墨斯主义和古代占星学的交叉点。大卫是早期基督教的历史学家……"
-            },
-            {
-              "title": "Roland Orzabal on Astrology, Fate, and Tears for Fears",
-              "url": "https://theastrologypodcast.com/2026/08/19/roland-orzabal-on-astrology-fate-and-tears-for-fears/",
-              "summary": "An interview with musician Roland Orzabal from the band Tears for Fears, discussing his new autobiography, Welcome to Your Life, where he tells his life story…",
-              "published": "2026-08-20T04:53:56+08:00",
-              "ts": 1787172836,
-              "kind": "podcast",
-              "durationMin": 95,
-              "titleZh": "罗兰·欧萨巴尔 (Roland Orzabal) 谈占星学、命运和恐惧之泪",
-              "summaryZh": "采访来自 Tears for Fears 乐队的音乐家 Roland Orzabal，讨论他的新自传《欢迎来到你的生活》，其中他讲述了自己的人生故事……"
-            },
-            {
-              "title": "The Origin of the Chaldean Order and Planetary Days of the Week",
-              "url": "https://theastrologypodcast.com/2026/08/16/the-origin-of-the-chaldean-order-and-planetary-days-of-the-week/",
-              "summary": "In this episode I propose a new theory about the origins of the so-called Chaldean order of the planets, as well as the assignment of the seven traditional pla…",
-              "published": "2026-08-17T04:47:23+08:00",
-              "ts": 1786913243,
-              "kind": "podcast",
-              "durationMin": 206,
-              "titleZh": "迦勒底教团的起源和行星一周的日子",
-              "summaryZh": "在这一集中，我提出了一个关于所谓的迦勒底行星秩序起源的新理论，以及七个传统行星的分配……"
-            },
-            {
-              "title": "The Libra Rising Birth Chart of the United States",
-              "url": "https://theastrologypodcast.com/2026/08/07/the-libra-rising-birth-chart-of-the-united-states/",
-              "summary": "In this major new episode, I do a deep dive into the historical evidence for when the Declaration of Independence was finalized on July 4, 1776. There has been…",
-              "published": "2026-08-08T01:44:08+08:00",
-              "ts": 1786124648,
-              "kind": "podcast",
-              "durationMin": 256,
-              "titleZh": "美国天秤座上升出生图",
-              "summaryZh": "在这一重要的新剧集中，我深入探讨了 1776 年 7 月 4 日《独立宣言》最终确定的历史证据。"
-            },
-            {
-              "title": "August Astrology Forecast 2026",
-              "url": "https://theastrologypodcast.com/2026/07/29/august-astrology-forecast-2026/",
-              "summary": "A deep dive into the astrology forecast for August 2026, with astrologers Chris Brennan and Austin Coppock. We spend the first hour talking about the astrology…",
-              "published": "2026-07-30T08:48:48+08:00",
-              "ts": 1785372528,
-              "kind": "podcast",
-              "durationMin": 165,
-              "titleZh": "2026 年 8 月占星预测",
-              "summaryZh": "与占星家 Chris Brennan 和 Austin Coppock 一起深入探讨 2026 年 8 月的占星预测。我们花了第一个小时讨论占星术......"
-            },
-            {
-              "title": "July Astrology Forecast 2026",
-              "url": "https://theastrologypodcast.com/2026/06/29/july-astrology-forecast-2026/",
-              "summary": "A deep dive into the astrology forecast for July 2026, with astrologers Chris Brennan and Austin Coppock. The month opens on highly unstable ground, dominated…",
-              "published": "2026-06-30T04:33:19+08:00",
-              "ts": 1782765199,
-              "kind": "podcast",
-              "durationMin": 141,
-              "titleZh": "2026 年 7 月占星术预测",
-              "summaryZh": "与占星家 Chris Brennan 和 Austin Coppock 一起深入探讨 2026 年 7 月的占星预测。这个月在高度不稳定的基础上开始，主导......"
-            },
-            {
-              "title": "Babylonian Goal Year Periods in Astrology",
-              "url": "https://theastrologypodcast.com/2026/06/27/babylonian-goal-year-periods-in-astrology/",
-              "summary": "Astrologers Chris Brennan and Patrick Watson explore the ancient timing technique known as Babylonian goal year periods, which can be used to identify repeatin…",
-              "published": "2026-06-28T04:41:53+08:00",
-              "ts": 1782592913,
-              "kind": "podcast",
-              "durationMin": 211,
-              "titleZh": "占星学中的巴比伦目标年",
-              "summaryZh": "占星家克里斯·布伦南 (Chris Brennan) 和帕特里克·沃森 (Patrick Watson) 探索了一种被称为巴比伦目标年周期的古老计时技术，该技术可用于识别重复……"
-            }
-          ]
+          "ok": false,
+          "error": "https://theastrologypodcast.com/feed/podcast/ -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "items": []
         },
         {
           "id": "ghost",
           "name": "Ghost of a Podcast",
           "home": "https://www.lovelanyadoo.com/ghost-of-a-podcast",
           "kind": "podcast",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "659: Dying",
-              "url": "1dbe7770-a684-11f1-be89-531c62abbd9f",
-              "summary": "Naomi has received a third cancer diagnosis, and the doctors have told her that this time she will die of it. She's been tending gracefully to her inner life a…",
-              "published": "2026-09-03T01:09:00+08:00",
-              "ts": 1788368940,
-              "kind": "podcast",
-              "durationMin": 86,
-              "titleZh": "659：死亡",
-              "summaryZh": "娜奥米第三次被诊断患有癌症，医生告诉她，这一次她将死于癌症。她一直在优雅地照顾自己的内心生活……"
-            },
-            {
-              "title": "658: Horoscope - Three Men & a Baby",
-              "url": "d7b6d2bc-a3fa-11f1-b0e6-972b90d3c6bf",
-              "summary": "Mars and Saturn clash, but Jupiter and Saturn are playing nice. Tune in for astrology you can actually use, and join Patreon to learn more. Watch the video ver…",
-              "published": "2026-08-30T13:01:00+08:00",
-              "ts": 1788066060,
-              "kind": "podcast",
-              "durationMin": 24,
-              "titleZh": "658：星座运势 - 三个男人和一个婴儿",
-              "summaryZh": "火星和土星发生冲突，但木星和土星表现得很好。收看您可以实际使用的占星术，并加入Patreon以了解更多信息。观看视频版本……"
-            },
-            {
-              "title": "657: Anxiety & the 4 Ns",
-              "url": "e5a8c3ce-a109-11f1-ba1c-cbab59a9ae6f",
-              "summary": "In this special shorty, Jessica breaks down a practical easy-to-remember strategy for handling emotions that may arise around the upcoming eclipse. Watch the v…",
-              "published": "2026-08-27T01:00:00+08:00",
-              "ts": 1787763600,
-              "kind": "podcast",
-              "durationMin": 8,
-              "titleZh": "657：焦虑与 4 N",
-              "summaryZh": "在这篇特别的短片中，杰西卡分解了一种实用且易于记忆的策略，用于处理即将到来的日食可能出现的情绪。观看视频…"
-            },
-            {
-              "title": "656: Horoscope - A Lunar Eclipse and Other Surprises!",
-              "url": "c1de8666-9e40-11f1-96a5-533ffca0a01b",
-              "summary": "Chiron offers its support in this very emotional and unpredictable week, while Uranus causes instability. On the 27th, the Lunar Eclipse in Pisces activates bi…",
-              "published": "2026-08-23T13:10:00+08:00",
-              "ts": 1787461800,
-              "kind": "podcast",
-              "durationMin": 35,
-              "titleZh": "656：星座运势 - 月食和其他惊喜！",
-              "summaryZh": "凯龙星在这非常情绪化且不可预测的一周提供支持，而天王星则带来不稳定。 27日，双鱼座月食激活双..."
-            },
-            {
-              "title": "655: Wildfire",
-              "url": "eba2c8be-9b6f-11f1-9233-bf9bda3e920a",
-              "summary": "Having lost her home to the devastating Spokane wildfire a few days prior, this week's guest joins Jessica for help unpacking this immense loss. They talk abou…",
-              "published": "2026-08-20T00:44:00+08:00",
-              "ts": 1787157840,
-              "kind": "podcast",
-              "durationMin": 60,
-              "titleZh": "655：野火",
-              "summaryZh": "几天前，在毁灭性的斯波坎野火中失去了家园，本周的客人与杰西卡一起寻求帮助，以弥补这一巨大的损失。他们谈论……"
-            },
-            {
-              "title": "654: Horoscope - It's Messy and Emotional, TBH",
-              "url": "14562556-9924-11f1-9143-0f379387ba19",
-              "summary": "In the middle of eclipse season, it's important to reflect on your growth, and Jessica talks you through how to think about it this week. Then she breaks down…",
-              "published": "2026-08-16T13:30:00+08:00",
-              "ts": 1786858200,
-              "kind": "podcast",
-              "durationMin": 26,
-              "titleZh": "654：星座运势 - 很混乱且情绪化，说实话",
-              "summaryZh": "在食相季节中期，反思自己的成长很重要，杰西卡本周将告诉你如何思考这一点。然后她崩溃了……"
-            },
-            {
-              "title": "653: Your Stewardship",
-              "url": "28b66540-9606-11f1-8c15-af79ba51fd93",
-              "summary": "Jessica takes a break from readings this week and instead shares a little something from her Patreon about stewardship—what it is and how to navigate what's in…",
-              "published": "2026-08-13T01:00:00+08:00",
-              "ts": 1786554000,
-              "kind": "podcast",
-              "durationMin": 15,
-              "titleZh": "653：你的管理职责",
-              "summaryZh": "杰西卡本周从阅读中休息一下，转而分享了她的 Patreon 上关于管理权的一些内容——它是什么以及如何驾驭其中的内容……"
-            },
-            {
-              "title": "652: Horoscope - If Only it Was Just the Solar Eclipse",
-              "url": "8c05ef62-93ae-11f1-be63-ef2d1215d1b1",
-              "summary": "On the 12th, there will be a Solar Eclipse in Leo—but not before a bunch of other challenging transits get activated! Mercury and Chiron square off, Venus sits…",
-              "published": "2026-08-09T14:01:00+08:00",
-              "ts": 1786255260,
-              "kind": "podcast",
-              "durationMin": 56,
-              "titleZh": "652：星座运势 - 如果只是日食就好了",
-              "summaryZh": "在12日，狮子座将会有一个日食-但不是在一堆其他具有挑战性的行运被激活之前！水星和凯龙星在广场上，金星坐着……"
-            }
-          ]
+          "ok": false,
+          "error": "https://feeds.megaphone.fm/JESSICALANYADOOGHOSTOFAPODCAST3541145811 -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "items": []
         },
         {
           "id": "alice",
@@ -212,7 +34,7 @@ window.DIGEST_DATA = {
           "home": "https://alicebell.substack.com/",
           "kind": "newsletter",
           "ok": false,
-          "error": "https://alicebell.substack.com/feed -> HTTP Error 403: Forbidden",
+          "error": "https://alicebell.substack.com/feed -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
           "items": []
         }
       ]
@@ -232,92 +54,92 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "Philanthropy's other third wave",
+              "url": "https://collabfund.substack.com/p/philanthropys-other-third-wave",
+              "summary": "The best charity of the next 50 years might be a company.",
+              "published": "2026-07-29T21:56:06+08:00",
+              "ts": 1785333366,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Philanthropy's other third wave",
+              "summaryZh": "未来 50 年最好的慈善机构可能是一家公司。"
+            },
+            {
+              "title": "Plan on the plan not going according to plan",
+              "url": "https://collabfund.substack.com/p/plan-on-the-plan-not-going-according",
+              "summary": "A few quotes, ideas, and links I don't want to forget.",
+              "published": "2026-06-07T17:03:49+08:00",
+              "ts": 1780823029,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "计划中的计划没有按计划进行",
+              "summaryZh": "一些我不想忘记的引言、想法和链接。"
+            },
+            {
               "title": "Long-Term Money",
-              "url": "https://collabfund.com/blog/long-term-money/",
-              "summary": "Adam Smith, the 18th century economist, wrote that it’s not uncommon to meet a mother in the Scottish highlands “who…",
-              "published": "2026-04-03T00:30:00+08:00",
-              "ts": 1775147400,
+              "url": "https://collabfund.substack.com/p/long-term-money",
+              "summary": "Adam Smith, the 18th century economist, wrote that it’s not uncommon to meet a mother in the Scottish highlands “who has born twenty children not to have two a…",
+              "published": "2026-04-26T17:15:55+08:00",
+              "ts": 1777194955,
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "长期资金",
-              "summaryZh": "18 世纪经济学家亚当·斯密 (Adam Smith) 写道，在苏格兰高地遇到一位“......"
+              "summaryZh": "18 世纪经济学家亚当·斯密 (Adam Smith) 写道，在苏格兰高地遇到一位“生了 20 个孩子却没有两个……”的母亲并不罕见。"
             },
             {
-              "title": "A Few Things I’m Pretty Sure About",
-              "url": "https://collabfund.com/blog/a-few-things-im-pretty-sure-about-2026/",
-              "summary": "Things I’ve been thinking about lately ….",
-              "published": "2026-01-07T04:09:00+08:00",
-              "ts": 1767730140,
+              "title": "Collab Holdings",
+              "url": "https://collabfund.substack.com/p/collab-holdings",
+              "summary": "A different approach to private equity for the best consumer brands.",
+              "published": "2026-04-15T23:34:50+08:00",
+              "ts": 1776267290,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "有几件事我很确定",
-              "summaryZh": "最近我一直在思考的事情......"
+              "titleZh": "合作控股",
+              "summaryZh": "为最佳消费品牌提供不同的私募股权方法。"
             },
             {
-              "title": "My New Book: The Art of Spending Money",
-              "url": "https://collabfund.com/blog/my-new-book-the-art-of-spending-money/",
-              "summary": "My new book, The Art of Spending Money, comes out Oct 7th.",
-              "published": "2025-09-04T01:59:00+08:00",
-              "ts": 1756922340,
+              "title": "WHOOP",
+              "url": "https://collabfund.substack.com/p/whoop",
+              "summary": "Backing the future of how we understand the human body.",
+              "published": "2026-04-05T17:45:41+08:00",
+              "ts": 1775382341,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "我的新书：花钱的艺术",
-              "summaryZh": "我的新书《花钱的艺术》将于 10 月 7 日出版。"
+              "titleZh": "呼呼",
+              "summaryZh": "支持我们如何理解人体的未来。"
             },
             {
-              "title": "Little Rules About Big Things",
-              "url": "https://collabfund.com/blog/little-rules-about-big-things/",
-              "summary": "A few things I’ve come to terms with…",
-              "published": "2025-08-14T05:54:00+08:00",
-              "ts": 1755122040,
+              "title": "If an idea is good, the work flows easily",
+              "url": "https://collabfund.substack.com/p/if-an-idea-is-good-the-work-flows",
+              "summary": "A few quotes, ideas, and links I don't want to forget.",
+              "published": "2026-03-29T17:45:43+08:00",
+              "ts": 1774777543,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "关于大事的小规则",
-              "summaryZh": "我已经接受了一些事情……"
+              "titleZh": "If an idea is good, the work flows easily",
+              "summaryZh": "一些我不想忘记的引言、想法和链接。"
             },
             {
-              "title": "What A World (A few Stories)",
-              "url": "https://collabfund.com/blog/what-a-world/",
-              "summary": "A few short stories…",
-              "published": "2025-08-04T17:19:00+08:00",
-              "ts": 1754299140,
+              "title": "Who do you trust to tell you what's good?",
+              "url": "https://collabfund.substack.com/p/who-do-you-trust-to-tell-you-whats",
+              "summary": "A conversation with Tyler Bainbridge of Perfectly Imperfect.",
+              "published": "2026-03-22T20:41:54+08:00",
+              "ts": 1774183314,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "世界多么美好（几个故事）",
-              "summaryZh": "几个短篇故事……"
+              "titleZh": "你相信谁会告诉你什么是好的？",
+              "summaryZh": "A conversation with Tyler Bainbridge of Perfectly Imperfect."
             },
             {
-              "title": "Very Bad Advice",
-              "url": "https://collabfund.com/blog/very-bad-advice/",
-              "summary": "A boy once asked Charlie Munger, “What advice do you have for someone like me to succeed in life?” Munger…",
-              "published": "2025-06-13T02:54:00+08:00",
-              "ts": 1749754440,
+              "title": "Brave Enough To Invest for the Long Run",
+              "url": "https://collabfund.substack.com/p/brave-enough-to-invest-for-the-long",
+              "summary": "A few quotes, ideas, and links I don't want to forget.",
+              "published": "2026-02-22T18:32:16+08:00",
+              "ts": 1771756336,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "非常糟糕的建议",
-              "summaryZh": "曾经有一个男孩问查理·芒格：“对于像我这样的人要在生活中取得成功，你有什么建议？”芒格…"
-            },
-            {
-              "title": "Different Kinds of Smart",
-              "url": "https://collabfund.com/blog/different-kinds-of-smart/",
-              "summary": "“The older I get the more I realize how many kinds of smart there are.",
-              "published": "2025-06-12T00:39:00+08:00",
-              "ts": 1749659940,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "不同类型的智能",
-              "summaryZh": "“随着年龄的增长，我越来越意识到聪明有很多种。"
-            },
-            {
-              "title": "A Few Questions",
-              "url": "https://collabfund.com/blog/a-few-questions-1/",
-              "summary": "Which of my strongest beliefs are formed on second-hand information vs.",
-              "published": "2025-05-09T04:16:00+08:00",
-              "ts": 1746735360,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "几个问题",
-              "summaryZh": "我最强烈的信念中哪些是根据二手信息形成的，哪些是根据二手信息形成的？"
+              "titleZh": "勇敢地进行长期投资",
+              "summaryZh": "一些我不想忘记的引言、想法和链接。"
             }
           ]
         },
@@ -327,7 +149,7 @@ window.DIGEST_DATA = {
           "home": "https://doomberg.substack.com/",
           "kind": "newsletter",
           "ok": false,
-          "error": "https://doomberg.substack.com/feed -> HTTP Error 403: Forbidden",
+          "error": "https://doomberg.substack.com/feed -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
           "items": []
         },
         {
@@ -335,98 +157,9 @@ window.DIGEST_DATA = {
           "name": "Nick Maggiulli（Of Dollars and Data）",
           "home": "https://ofdollarsanddata.com/",
           "kind": "newsletter",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "Which Graduate Degrees Are the Best Investment? (Why I Skipped My MBA)",
-              "url": "https://ofdollarsanddata.com/which-graduate-degrees-are-the-best-investment-why-i-skipped-my-mba/",
-              "summary": "When I was 27 years old I was at a crossroads. I was five years into my career, yet I was stagnating. Though I was making six figures, which was great for my 2…",
-              "published": "2026-09-01T19:45:54+08:00",
-              "ts": 1788263154,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "哪些研究生学位是最好的投资？ （为什么我跳过了 MBA）",
-              "summaryZh": "当我27岁的时候，我正处于十字路口。我的职业生涯已经五年了，但我却停滞不前。虽然我赚了六位数，但这对我的 2 来说很棒……"
-            },
-            {
-              "title": "Why I Was Wrong to Be Bearish on U.S. Stocks",
-              "url": "https://ofdollarsanddata.com/why-i-was-wrong-to-be-bearish-on-us-stocks/",
-              "summary": "A year ago I wrote the blog post Why I'm Bearish on U.S. Stocks (for the Second Time Since 2017). Since then U.S. stocks are up 16% (total return) and my beari…",
-              "published": "2026-08-25T19:45:39+08:00",
-              "ts": 1787658339,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "为什么我看空美国股市是错误的",
-              "summaryZh": "一年前，我写了一篇博文《为什么我看跌美国股市》（自 2017 年以来第二次）。自那以后，美国股市上涨了 16%（总回报率），我的熊市……"
-            },
-            {
-              "title": "The Myth of Owning Your Time",
-              "url": "https://ofdollarsanddata.com/the-myth-of-owning-your-time/",
-              "summary": "You've probably heard it all before. Be your own boss. Control your schedule. Own your time. As attractive as it sounds, it's a lie. Many people believe that w…",
-              "published": "2026-08-18T19:45:54+08:00",
-              "ts": 1787053554,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "拥有自己的时间的神话",
-              "summaryZh": "您以前可能已经听说过这一切。自己当老板。控制你的日程安排。拥有你的时间。尽管听起来很有吸引力，但这只是一个谎言。许多人认为，..."
-            },
-            {
-              "title": "The Best Way to Sell a Concentrated Position",
-              "url": "https://ofdollarsanddata.com/the-best-way-to-sell-a-concentrated-position/",
-              "summary": "Imagine being the typical SpaceX employee over the last few months. Your shares IPO at $135 and within a few days they peak at $225/share (up 67%) before they…",
-              "published": "2026-08-11T19:45:10+08:00",
-              "ts": 1786448710,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "出售集中头寸的最佳方式",
-              "summaryZh": "想象一下过去几个月里你是一名典型的 SpaceX 员工。您的股票首次公开募股价格为 135 美元，几天之内就达到了每股 225 美元的峰值（上涨了 67%），然后……"
-            },
-            {
-              "title": "Why $100 in Your 20s is Worth $500 in Your 60s",
-              "url": "https://ofdollarsanddata.com/why-100-in-your-20s-is-worth-500-in-your-60s/",
-              "summary": "What if I told you that $100 at 25 is worth $500 at 65, even after we adjust for inflation? Well...it is. There's an unspoken belief in personal finance that a…",
-              "published": "2026-08-04T19:45:33+08:00",
-              "ts": 1785843933,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "为什么 20 多岁时的 100 美元在 60 多岁时就值 500 美元",
-              "summaryZh": "如果我告诉你 25 岁时的 100 美元相当于 65 岁时的 500 美元，即使我们根据通货膨胀进行了调整，你会怎样呢？嗯……是的。人们对个人理财有一种不言而喻的信念，那就是……"
-            },
-            {
-              "title": "The Problem with Optionality",
-              "url": "https://ofdollarsanddata.com/the-problem-with-optionality/",
-              "summary": "I’ve seen a lot of discussions this year around maximizing freedom and optionality. For example, consider this tweet: If you ever get up $1M in cash Buy a new…",
-              "published": "2026-07-28T19:45:41+08:00",
-              "ts": 1785239141,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "可选择性的问题",
-              "summaryZh": "今年我看到了很多关于最大化自由和选择性的讨论。例如，考虑一下这条推文：如果您获得 100 万美元现金购买新的……"
-            },
-            {
-              "title": "Money Talks: The Price of Status",
-              "url": "https://ofdollarsanddata.com/money-talks/",
-              "summary": "A year ago, I published my second book The Wealth Ladder. It's sold over 100,000 copies worldwide and hit the New York Times bestseller list in its third week…",
-              "published": "2026-07-21T19:45:28+08:00",
-              "ts": 1784634328,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "有钱能使鬼推磨：地位的代价",
-              "summaryZh": "一年前，我出版了我的第二本书《财富阶梯》。该书在全球销量超过 100,000 册，并在出版第三周就登上了《纽约时报》畅销书排行榜……"
-            },
-            {
-              "title": "Are Stocks Going Up or Is the Dollar Going Down?",
-              "url": "https://ofdollarsanddata.com/are-stocks-going-up-or-is-the-dollar-going-down/",
-              "summary": "As stocks have hit new all-time highs in recent months, I've seen an increasing number of people argue that stocks aren't becoming more valuable, the dollar is…",
-              "published": "2026-07-14T19:45:27+08:00",
-              "ts": 1784029527,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "股市上涨还是美元下跌？",
-              "summaryZh": "随着近几个月股市创下历史新高，我看到越来越多的人认为股票并没有变得更有价值，而是美元......"
-            }
-          ]
+          "ok": false,
+          "error": "https://ofdollarsanddata.com/feed/ -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "items": []
         }
       ]
     },
@@ -442,7 +175,7 @@ window.DIGEST_DATA = {
           "home": "https://dwarkesh.substack.com/",
           "kind": "podcast",
           "ok": false,
-          "error": "https://dwarkesh.substack.com/feed -> HTTP Error 403: Forbidden",
+          "error": "https://dwarkesh.substack.com/feed -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
           "items": []
         },
         {
@@ -450,98 +183,9 @@ window.DIGEST_DATA = {
           "name": "Latent Space",
           "home": "https://www.latent.space/",
           "kind": "newsletter",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
-              "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
-              "summary": "new SOTA computer use and coding, 2.5x pricier per token, but WAY cheaper per task, less monitorable. overall, a very successful launch of OpenAI’s new frontie…",
-              "published": "2026-09-04T13:18:11+08:00",
-              "ts": 1788499091,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "[AINews] GPT-6 Astra：OpenAI 有史以来最大规模的法学硕士发布",
-              "summaryZh": "新的 SOTA 计算机使用和编码，每个代币价格高 2.5 倍，但每个任务便宜得多，可监控性较差。总体而言，OpenAI 新领域的推出非常成功……"
-            },
-            {
-              "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
-              "url": "https://www.latent.space/p/astra",
-              "summary": "We spent 20B+ tokens of GPT-6 Astra to explore everything. Here’s our learnings.",
-              "published": "2026-09-04T05:09:41+08:00",
-              "ts": 1788469781,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "GPT-6 Astra：每小时 6 美元以下的自动化 AI 工程师",
-              "summaryZh": "我们花费了 20B+ 代币的 GPT-6 Astra 来探索一切。这是我们的学习成果。"
-            },
-            {
-              "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
-              "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
-              "summary": "an epic comeback story for Meta",
-              "published": "2026-09-03T12:38:33+08:00",
-              "ts": 1788410313,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "[AINews] Muse Spark 1.3匹配GPT-5.6-Sol，确认Meta Superintelligence为最新前沿实验室，训练折扣>90%",
-              "summaryZh": "Meta 的史诗般的回归故事"
-            },
-            {
-              "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
-              "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
-              "summary": "Queue the usual rush of model launches...",
-              "published": "2026-09-02T15:46:08+08:00",
-              "ts": 1788335168,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "[AINews] Claude Fable/Mythos 5.1：新的 SOTA 模型，缓存价格降低 75%，但产出代币增加 70%",
-              "summaryZh": "排队等待模型发布的通常高峰......"
-            },
-            {
-              "title": "PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors",
-              "url": "https://www.latent.space/p/pr-not-welcome",
-              "summary": "Vercel’s AI SDK, Astro, Flue and tldraw are replacing drive-by community PRs with software factories, where teams of agents apply fixes and features.",
-              "published": "2026-09-02T00:17:15+08:00",
-              "ts": 1788279435,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "PR 不受欢迎：顶级人工智能开源项目如何管理数千名贡献者",
-              "summaryZh": "Vercel 的 AI SDK、Astro、Flue 和 tldraw 正在用软件工厂取代路过式社区 PR，代理团队在软件工厂中应用修复和功能。"
-            },
-            {
-              "title": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
-              "url": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
-              "summary": "You can now create decent video faster than you watch it. This is the start of... something. We’re not sure what.",
-              "published": "2026-09-01T12:36:54+08:00",
-              "ts": 1788237414,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "[AINews] Fal的H3 Max Live打破无限视频生成障碍",
-              "summaryZh": "现在，您可以比观看视频更快地创建精彩的视频。这是……某件事的开始。我们不确定是什么。"
-            },
-            {
-              "title": "[AINews] OpenAI shuts off Cursor",
-              "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
-              "summary": "Elon v Altman has a real consequence.",
-              "published": "2026-08-29T13:11:52+08:00",
-              "ts": 1787980312,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "[AINews] OpenAI 关闭 Cursor",
-              "summaryZh": "埃隆诉奥特曼案有一个真正的后果。"
-            },
-            {
-              "title": "[AINews] OpenAI to reach AGI bar by end-2026",
-              "url": "https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by",
-              "summary": "It’s Time. We’re in the Endgame now.",
-              "published": "2026-08-28T15:12:10+08:00",
-              "ts": 1787901130,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "[AINews] OpenAI 将于 2026 年底达到 AGI 标准",
-              "summaryZh": "是时候了。我们现在正处于终局阶段。"
-            }
-          ]
+          "ok": false,
+          "error": "https://www.latent.space/feed -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "items": []
         },
         {
           "id": "nopriors",
@@ -647,7 +291,7 @@ window.DIGEST_DATA = {
           "home": "https://chinai.substack.com/",
           "kind": "newsletter",
           "ok": false,
-          "error": "https://chinai.substack.com/feed -> HTTP Error 403: Forbidden",
+          "error": "https://chinai.substack.com/feed -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
           "items": []
         }
       ]
@@ -663,294 +307,27 @@ window.DIGEST_DATA = {
           "name": "The Odd Lots",
           "home": "https://www.bloomberg.com/oddlots",
           "kind": "podcast",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "What's Behind the Big Surge in US Government Bond Yields",
-              "url": "https://omny.fm/shows/odd-lots/whats-behind-the-big-surge-in-us-government-bond-yields",
-              "summary": "Global bond yields are at their highest level since 2008, with the 30-year US Treasury touching 5% just before Treasury Secretary Scott Bessent announced a sur…",
-              "published": "2026-09-03T16:00:00+08:00",
-              "ts": 1788422400,
-              "kind": "podcast",
-              "durationMin": 37,
-              "titleZh": "美国国债收益率大幅飙升背后的原因是什么",
-              "summaryZh": "全球债券收益率达到 2008 年以来的最高水平，就在财政部长斯科特·贝森特 (Scott Bessent) 宣布追加利率之前，30 年期美国国债收益率触及 5%。"
-            },
-            {
-              "title": "Adam Posen Thinks Things Could Get Very 'Messy' for the Fed",
-              "url": "https://omny.fm/shows/odd-lots/adam-posen-thinks-things-could-get-very-messy-for-the-fed",
-              "summary": "Kevin Warsh gave a hawkish speech at this year's annual Kansas City Fed Symposium in Jackson Hole, but that doesn't mean the challenges are over. Will the Fed…",
-              "published": "2026-09-01T16:00:00+08:00",
-              "ts": 1788249600,
-              "kind": "podcast",
-              "durationMin": 60,
-              "titleZh": "亚当·波森认为美联储的情况可能会变得非常“混乱”",
-              "summaryZh": "凯文·沃什 (Kevin Warsh) 在今年杰克逊霍尔举行的堪萨斯城联储年度研讨会上发表了鹰派演讲，但这并不意味着挑战已经结束。美联储会..."
-            },
-            {
-              "title": "Richmond Fed’s Tom Barkin on the Surprisingly Resilient Real Economy",
-              "url": "https://omny.fm/shows/odd-lots/richmond-fed-s-tom-barkin-on-the-surprisingly-resilient-real-economy",
-              "summary": "The implications of Fed Chair Kevin Warsh's Jackson Hole speech are pretty clear: Traders expect a rate hike given the hawkish hints littered in his address, l…",
-              "published": "2026-08-31T16:00:00+08:00",
-              "ts": 1788163200,
-              "kind": "podcast",
-              "durationMin": 31,
-              "titleZh": "里士满联储汤姆·巴金 (Tom Barkin) 谈实体经济的惊人弹性",
-              "summaryZh": "美联储主席凯文·沃什 (Kevin Warsh) 在杰克逊霍尔 (Jackson Hole) 演讲的含义非常明确：鉴于他演讲中的鹰派暗示，交易员预计加息，..."
-            },
-            {
-              "title": "Austan Goolsbee Is Worried the Economy Is Overheating",
-              "url": "https://omny.fm/shows/odd-lots/austan-goolsbee-is-worried-the-economy-is-overheating",
-              "summary": "Inflation remains high and the 2% target is farther away than it was this time last year. There are signs all over that the economy is overheating — the strang…",
-              "published": "2026-08-29T01:23:16+08:00",
-              "ts": 1787937796,
-              "kind": "podcast",
-              "durationMin": 47,
-              "titleZh": "奥斯坦·古尔斯比担心经济过热",
-              "summaryZh": "通货膨胀仍然很高，2%的目标比去年同期还遥远。到处都有迹象表明经济正在过热——奇怪的……"
-            },
-            {
-              "title": "Kansas City Fed President Jeffrey Schmid on the First Jackson Hole of the Warsh Era",
-              "url": "https://omny.fm/shows/odd-lots/kansas-city-fed-president-jeffrey-schmid-on-the-first-jackson-hole-of-the-warsh-era",
-              "summary": "We are back in Jackson Hole! And this year's Federal Reserve Bank of Kansas City symposium on monetary policy might be one of the most interesting editions in…",
-              "published": "2026-08-27T19:30:00+08:00",
-              "ts": 1787830200,
-              "kind": "podcast",
-              "durationMin": 29,
-              "titleZh": "堪萨斯城联储主席杰弗里·施密德谈沃什时代的第一个杰克逊霍尔",
-              "summaryZh": "我们回到杰克逊霍尔了！今年堪萨斯城联邦储备银行货币政策研讨会可能是……最有趣的版本之一。"
-            },
-            {
-              "title": "The Nigerian Industrial Behemoth That Could Reshape the African Economy",
-              "url": "https://omny.fm/shows/odd-lots/the-nigerian-industrial-behemoth-that-could-reshape-the-african-economy",
-              "summary": "Earlier in August, it was reported that Nigeria's Dangote Refinery secured a $1 billion underwriting for its upcoming stock market listing, which is set to bec…",
-              "published": "2026-08-24T16:00:00+08:00",
-              "ts": 1787558400,
-              "kind": "podcast",
-              "durationMin": 58,
-              "titleZh": "可以重塑非洲经济的尼日利亚工业巨头",
-              "summaryZh": "8 月初，有报道称尼日利亚丹格特炼油厂 (Dangote Refinery) 为其即将上市的股票获得了 10 亿美元的承销。"
-            },
-            {
-              "title": "Jasmine Sun on What the AI Industry Got Wrong About the Public Backlash",
-              "url": "https://omny.fm/shows/odd-lots/jasmine-sun-on-what-the-ai-industry-got-wrong-about-the-public-backlash",
-              "summary": "Within the AI industry, even the builders of it have been very anxious about the technology. They've talked for years about its potential to create destabilizi…",
-              "published": "2026-08-21T16:00:00+08:00",
-              "ts": 1787299200,
-              "kind": "podcast",
-              "durationMin": 52,
-              "titleZh": "Jasmine Sun 谈人工智能行业对公众强烈反对的误解",
-              "summaryZh": "在人工智能行业内，即使是它的建设者也对这项技术感到非常焦虑。他们多年来一直在谈论它造成不稳定的潜力……"
-            },
-            {
-              "title": "Nick Bostrom on What Happens if AI Solves All of Our Problems",
-              "url": "https://omny.fm/shows/odd-lots/nick-bostrom-on-what-happens-if-ai-solves-all-of-our-problems",
-              "summary": "The philosopher Nick Bostrom was one of the first thinkers who mapped out the existential risk of AI. In his 2014 book, Superintelligence: Paths, Dangers, Stra…",
-              "published": "2026-08-20T16:00:00+08:00",
-              "ts": 1787212800,
-              "kind": "podcast",
-              "durationMin": 56,
-              "titleZh": "尼克·博斯特罗姆谈如果人工智能解决我们所有的问题会发生什么",
-              "summaryZh": "哲学家尼克·博斯特罗姆 (Nick Bostrom) 是最早提出人工智能存在风险的思想家之一。在他 2014 年出版的著作《超级智能：路径、危险、策略》中……"
-            }
-          ]
+          "ok": false,
+          "error": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/982f5071-765c-403d-969d-ae27003a8d83/podcast.rss -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "items": []
         },
         {
           "id": "bond",
           "name": "Bond Vigilantes",
           "home": "https://bondvigilantes.com/",
           "kind": "newsletter",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "1,000 Days of Milei",
-              "url": "https://bondvigilantes.com/blog/2026/09/1000-days-of-milei/",
-              "summary": "thousand days is a long time in politics. When I wrote about Javier Milei's first 100 days in office, Argentina was embarking on yet another attempt to break f…",
-              "published": "2026-09-03T17:40:55+08:00",
-              "ts": 1788428455,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "米莱的 1000 天",
-              "summaryZh": "对于政治来说，一千天是很长的一段时间。当我写到哈维尔·米莱 (Javier Milei) 上任的第一个 100 天时，阿根廷正在开始另一次打破常规的尝试……"
-            },
-            {
-              "title": "Have We Really Learnt the Lessons of the GFC?",
-              "url": "https://bondvigilantes.com/blog/2026/08/have-we-really-learnt-the-lessons-of-the-gfc/",
-              "summary": "is 20 years ago this month that I sat in a pitch and listened to an investment bank describe their latest stroke of genius. In 2006, the Constant Proportion De…",
-              "published": "2026-08-24T16:23:20+08:00",
-              "ts": 1787559800,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "我们真的吸取了全球金融危机的教训吗？",
-              "summaryZh": "20 年前的这个月，我坐在球场上，听一家投资银行描述他们最新的天才之举。 2006年，恒比德…"
-            },
-            {
-              "title": "Europe’s new energy scare: Crisis or false alarm?",
-              "url": "https://bondvigilantes.com/blog/2026/08/europes-new-energy-scare-crisis-or-false-alarm/",
-              "summary": "natural gas prices are rising again, storage levels are lower than expected, and memories of the 2022 energy crisis remain fresh. But does this really constitu…",
-              "published": "2026-08-20T21:03:44+08:00",
-              "ts": 1787231024,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "欧洲新能源恐慌：危机还是虚惊？",
-              "summaryZh": "天然气价格再次上涨，储存水平低于预期，2022 年能源危机的记忆犹新。但这真的构成……"
-            },
-            {
-              "title": "Of Anchovies and Blueberries – why El Niño matters",
-              "url": "https://bondvigilantes.com/blog/2026/08/of-anchovies-and-blueberries-why-el-nino-matters/",
-              "summary": "aren’t we talking more about El Niño?",
-              "published": "2026-08-17T23:36:52+08:00",
-              "ts": 1786981012,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "凤尾鱼和蓝莓——为什么厄尔尼诺现象很重要",
-              "summaryZh": "我们不是更多地谈论厄尔尼诺现象吗？"
-            },
-            {
-              "title": "A distressed tail is wagging high yield spreads",
-              "url": "https://bondvigilantes.com/blog/2026/08/a-distressed-tail-is-wagging-high-yield-spreads/",
-              "summary": "a world of tight credit spreads, one rating bucket flashes value. The European CCC index offers 1,306 bps over government bonds, suggesting generous compensati…",
-              "published": "2026-08-12T17:34:43+08:00",
-              "ts": 1786527283,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "一条苦恼的尾巴正在摇动高收益利差",
-              "summaryZh": "在信用利差紧张的世界里，一个评级桶会闪现出价值。欧洲 CCC 指数较政府债券高出 1,306 个基点，表明慷慨的补偿......"
-            },
-            {
-              "title": "Rolldown – The credit edition",
-              "url": "https://bondvigilantes.com/blog/2026/08/rolldown-the-credit-edition/",
-              "summary": "previously blogged on which area of government bond curves investors should have exposure to if they want to receive the greatest benefit from the passage of t…",
-              "published": "2026-08-10T20:48:08+08:00",
-              "ts": 1786366088,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "Rolldown – 信用版",
-              "summaryZh": "之前曾在博客中讨论过，如果投资者想从法案通过中获得最大利益，他们应该接触政府债券曲线的哪些区域……"
-            },
-            {
-              "title": "Jim Leaviss",
-              "url": "https://bondvigilantes.com/blog/2026/07/jim-leaviss/",
-              "summary": "are very sorry to share the news that Jim Leaviss passed away on 23 July 2026, aged 55.",
-              "published": "2026-07-29T19:31:44+08:00",
-              "ts": 1785324704,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "吉姆·利维斯",
-              "summaryZh": "非常遗憾地宣布吉姆·利维斯 (Jim Leaviss) 于 2026 年 7 月 23 日去世，享年 55 岁。"
-            },
-            {
-              "title": "The foundations of Australia’s housing boom are being tested",
-              "url": "https://bondvigilantes.com/blog/2026/07/the-foundations-of-australias-housing-boom-are-being-tested/",
-              "summary": "years, Australian residential property has been viewed as a one-way bet. Mention the possibility of falling house prices and you’re often met with disbelief. P…",
-              "published": "2026-07-21T21:40:42+08:00",
-              "ts": 1784641242,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "澳大利亚房地产繁荣的基础正在经受考验",
-              "summaryZh": "多年来，澳大利亚住宅物业一直被视为一种单向赌注。提到房价下跌的可能性，你常常会感到难以置信。普…"
-            }
-          ]
+          "ok": false,
+          "error": "https://bondvigilantes.com/feed/ -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "items": []
         },
         {
           "id": "alhambra",
           "name": "Alhambra Investments",
           "home": "https://www.alhambrapartners.com/",
           "kind": "newsletter",
-          "ok": true,
-          "error": null,
-          "items": [
-            {
-              "title": "Weekly Market Pulse: Hiking With Warsh",
-              "url": "https://alhambrapartners.com/weekly-market-pulse-hiking-with-warsh/",
-              "summary": "As I learned years ago, you can take two different kinds of hikes on the trails around Jackson Hole. I can sum up my hikes with former Vice Chairman Don Kohn i…",
-              "published": "2026-08-31T08:33:00+08:00",
-              "ts": 1788136380,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "每周市场脉动：与 Warsh 一起徒步旅行",
-              "summaryZh": "正如我多年前了解到的那样，您可以在杰克逊霍尔周围的小径上进行两种不同的徒步旅行。我可以总结一下我与前副主席 Don Kohn 的徒步旅行……"
-            },
-            {
-              "title": "Weekly Market Pulse: A Debt Crisis?",
-              "url": "https://alhambrapartners.com/weekly-market-pulse-a-debt-crisis/",
-              "summary": "It seems like a lot has happened over the last few weeks. At the end of July, Treasury Secretary Bessent used the exchange stabilization fund to purchase Yen b…",
-              "published": "2026-08-24T10:37:43+08:00",
-              "ts": 1787539063,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "每周市场脉动：债务危机？",
-              "summaryZh": "过去几周似乎发生了很多事情。 7月底，财政部长贝森特动用汇率稳定基金购买日元……"
-            },
-            {
-              "title": "Weekly Market Pulse: Situational Awareness",
-              "url": "https://alhambrapartners.com/weekly-market-pulse-situational-awareness/",
-              "summary": "Questions, questions, questions. Investors always have lots of questions, most of them about the future, which makes them very hard impossible to answer. That…",
-              "published": "2026-08-17T09:14:36+08:00",
-              "ts": 1786929276,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "每周市场脉搏：态势感知",
-              "summaryZh": "问题，问题，问题。投资者总是有很多问题，其中大多数是关于未来的，这使得他们很难回答。那…"
-            },
-            {
-              "title": "Why the Best Investors Aren’t Who You Think",
-              "url": "https://alhambrapartners.com/why-the-best-investors-arent-who-you-think/",
-              "summary": "If you look at the history of Wall Street marketing, it’s all testosterone, lightning-fast trades, and aggressive \"market-beating\" bravado. But if you look at…",
-              "published": "2026-08-11T22:10:37+08:00",
-              "ts": 1786457437,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "为什么最好的投资者不是你想象的那样",
-              "summaryZh": "如果你回顾一下华尔街营销的历史，你会发现这都是睾丸激素、闪电般快速的交易和激进的“击败市场”的虚张声势。但如果你看..."
-            },
-            {
-              "title": "Monthly Macro Monitor: Status Quo",
-              "url": "https://alhambrapartners.com/monthly-macro-monitor-status-quo/",
-              "summary": "I write an overview of the economy about once a month and for the longest time the entire thing could have been summed up in a single sentence: nothing has cha…",
-              "published": "2026-08-10T09:16:34+08:00",
-              "ts": 1786324594,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "每月宏观监测：现状",
-              "summaryZh": "我大约每月写一次经济概述，在最长的时间里，整个事情可以用一句话来概括：没有什么是..."
-            },
-            {
-              "title": "Weekly Market Pulse: Warsh Is Off To A Good Start",
-              "url": "https://alhambrapartners.com/weekly-market-pulse-warsh-is-off-to-a-good-start/",
-              "summary": "Faced with a choice between changing one's mind and proving there is no need to do so, almost everyone gets busy with the proof. J.K. Galbraith I've learned so…",
-              "published": "2026-08-03T10:37:59+08:00",
-              "ts": 1785724679,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "每周市场脉搏：Warsh 有了一个良好的开端",
-              "summaryZh": "面对改变主意和证明没有必要这样做之间的选择，几乎每个人都忙于证明。 J.K.加尔布雷斯 我了解到……"
-            },
-            {
-              "title": "Weekly Market Pulse: The Forgotten Asset",
-              "url": "https://alhambrapartners.com/weekly-market-pulse-the-forgotten-asset/",
-              "summary": "You can't take the same actions as everyone else and expect to outperform. In order to outperform, by definition, you have to depart from the crowd. You have t…",
-              "published": "2026-07-27T11:29:51+08:00",
-              "ts": 1785122991,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "每周市场脉搏：被遗忘的资产",
-              "summaryZh": "你不能采取与其他人相同的行动并期望表现出色。根据定义，为了脱颖而出，你必须脱离人群。你有…"
-            },
-            {
-              "title": "Weekly Market Pulse: It’s Always Something",
-              "url": "https://alhambrapartners.com/weekly-market-pulse-its-always-something/",
-              "summary": "It just goes to show ya. It's always something. If it's not one thing, it's another. - Roseanne Roseannadanna, played by Gilda Radner on SNL So, was that it? I…",
-              "published": "2026-07-20T09:51:00+08:00",
-              "ts": 1784512260,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "每周市场脉搏：总是有变化",
-              "summaryZh": "它只是向你展示。它总是有一些东西。如果这不是一回事，那就是另一回事了。 - Roseanne Roseannadanna，由吉尔达·拉德纳 (Gilda Radner) 在《周六夜现场》(SNL) 中饰演 那么，是这样吗？我…"
-            }
-          ]
+          "ok": false,
+          "error": "https://www.alhambrapartners.com/feed/ -> <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "items": []
         }
       ]
     }
@@ -1354,9 +731,8 @@ window.DIGEST_DATA = {
         "verifyEn": "Life check: 车祸重伤后多次脊椎与截肢手术，仍坚持作画。"
       }
     ],
-    "techniqueZh": "分宫用普拉西德斯制（与星星日记本命盘相同）：看宫头、宫主飞星、落宫与相位。论述按整体、性格、事业、财富、感情、健康展开，再用公开事迹对照，并非某专栏转载。出生数据见 Astro-Databank（Rodden 评级）。星盘画法参考宫神星网：上升在左、宫位线、内圈相位。",
-    "techniqueEn": "Placidus houses, as in the Star Diary natal module: cusps, house rulers, occupancy, aspects. Notes cover overview, personality, career, wealth, love and health, then check public biography. Birth data: Astro-Databank. Wheel in the Almuten / Gongshenxing layout.",
-    "svg": "<svg viewBox=\"0 0 420 420\" class=\"nat-svg\" role=\"img\" aria-label=\"natal chart\"><circle cx=\"210\" cy=\"210\" r=\"200\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.6\"/><circle cx=\"210\" cy=\"210\" r=\"168\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1\"/><circle cx=\"210\" cy=\"210\" r=\"118\" fill=\"#fafafa\" stroke=\"#111\" stroke-width=\"1\"/><circle cx=\"210\" cy=\"210\" r=\"72\" fill=\"#fff\" stroke=\"#bbb\" stroke-width=\"0.8\"/><line x1=\"345.1\" y1=\"309.9\" x2=\"370.8\" y2=\"328.9\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"324.6\" y=\"354.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">白</text><line x1=\"357.6\" y1=\"340.5\" x2=\"359.8\" y2=\"342.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"345.6\" y1=\"352.9\" x2=\"347.7\" y2=\"355.1\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"330.8\" y1=\"361.8\" x2=\"334.5\" y2=\"366.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"318.8\" y1=\"374.3\" x2=\"320.4\" y2=\"376.8\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"304.0\" y1=\"383.1\" x2=\"305.5\" y2=\"385.7\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"277.0\" y1=\"364.1\" x2=\"289.8\" y2=\"393.4\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"237.2\" y=\"392.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">金</text><line x1=\"272.5\" y1=\"396.8\" x2=\"273.5\" y2=\"399.7\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"256.0\" y1=\"401.5\" x2=\"256.7\" y2=\"404.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"238.7\" y1=\"401.9\" x2=\"239.6\" y2=\"407.8\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"222.1\" y1=\"406.6\" x2=\"222.2\" y2=\"409.6\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"204.9\" y1=\"406.9\" x2=\"204.8\" y2=\"409.9\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"191.0\" y1=\"376.9\" x2=\"187.4\" y2=\"408.7\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"142.6\" y=\"381.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">双</text><line x1=\"170.8\" y1=\"403.1\" x2=\"170.2\" y2=\"406.0\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"154.1\" y1=\"398.9\" x2=\"153.2\" y2=\"401.8\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"138.9\" y1=\"390.5\" x2=\"136.7\" y2=\"396.1\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"122.1\" y1=\"386.3\" x2=\"120.8\" y2=\"389.0\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"107.1\" y1=\"378.0\" x2=\"105.5\" y2=\"380.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"110.1\" y1=\"345.1\" x2=\"91.1\" y2=\"370.8\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"66.0\" y=\"324.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">巨</text><line x1=\"79.5\" y1=\"357.6\" x2=\"77.5\" y2=\"359.8\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"67.1\" y1=\"345.6\" x2=\"64.9\" y2=\"347.7\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"58.2\" y1=\"330.8\" x2=\"53.5\" y2=\"334.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"45.7\" y1=\"318.8\" x2=\"43.2\" y2=\"320.4\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"36.9\" y1=\"304.0\" x2=\"34.3\" y2=\"305.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"55.9\" y1=\"277.0\" x2=\"26.6\" y2=\"289.8\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"28.0\" y=\"237.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">狮</text><line x1=\"23.2\" y1=\"272.5\" x2=\"20.3\" y2=\"273.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"18.5\" y1=\"256.0\" x2=\"15.5\" y2=\"256.7\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"18.1\" y1=\"238.7\" x2=\"12.2\" y2=\"239.6\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"13.4\" y1=\"222.1\" x2=\"10.4\" y2=\"222.2\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"13.1\" y1=\"204.9\" x2=\"10.1\" y2=\"204.8\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"43.1\" y1=\"191.0\" x2=\"11.3\" y2=\"187.4\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"38.8\" y=\"142.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">处</text><line x1=\"16.9\" y1=\"170.8\" x2=\"14.0\" y2=\"170.2\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"21.1\" y1=\"154.1\" x2=\"18.2\" y2=\"153.2\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"29.5\" y1=\"138.9\" x2=\"23.9\" y2=\"136.7\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"33.7\" y1=\"122.1\" x2=\"31.0\" y2=\"120.8\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"42.0\" y1=\"107.1\" x2=\"39.5\" y2=\"105.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"74.9\" y1=\"110.1\" x2=\"49.2\" y2=\"91.1\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"95.4\" y=\"66.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">天</text><line x1=\"62.4\" y1=\"79.5\" x2=\"60.2\" y2=\"77.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"74.4\" y1=\"67.1\" x2=\"72.3\" y2=\"64.9\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"89.2\" y1=\"58.2\" x2=\"85.5\" y2=\"53.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"101.2\" y1=\"45.7\" x2=\"99.6\" y2=\"43.2\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"116.0\" y1=\"36.9\" x2=\"114.5\" y2=\"34.3\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"143.0\" y1=\"55.9\" x2=\"130.2\" y2=\"26.6\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"182.8\" y=\"28.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">天</text><line x1=\"147.5\" y1=\"23.2\" x2=\"146.5\" y2=\"20.3\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"164.0\" y1=\"18.5\" x2=\"163.3\" y2=\"15.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"181.3\" y1=\"18.1\" x2=\"180.4\" y2=\"12.2\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"197.9\" y1=\"13.4\" x2=\"197.8\" y2=\"10.4\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"215.1\" y1=\"13.1\" x2=\"215.2\" y2=\"10.1\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"229.0\" y1=\"43.1\" x2=\"232.6\" y2=\"11.3\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"277.4\" y=\"38.8\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">射</text><line x1=\"249.2\" y1=\"16.9\" x2=\"249.8\" y2=\"14.0\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"265.9\" y1=\"21.1\" x2=\"266.8\" y2=\"18.2\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"281.1\" y1=\"29.5\" x2=\"283.3\" y2=\"23.9\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"297.9\" y1=\"33.7\" x2=\"299.2\" y2=\"31.0\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"312.9\" y1=\"42.0\" x2=\"314.5\" y2=\"39.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"309.9\" y1=\"74.9\" x2=\"328.9\" y2=\"49.2\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"354.0\" y=\"95.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">摩</text><line x1=\"340.5\" y1=\"62.4\" x2=\"342.5\" y2=\"60.2\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"352.9\" y1=\"74.4\" x2=\"355.1\" y2=\"72.3\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"361.8\" y1=\"89.2\" x2=\"366.5\" y2=\"85.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"374.3\" y1=\"101.2\" x2=\"376.8\" y2=\"99.6\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"383.1\" y1=\"116.0\" x2=\"385.7\" y2=\"114.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"364.1\" y1=\"143.0\" x2=\"393.4\" y2=\"130.2\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"392.0\" y=\"182.8\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">水</text><line x1=\"396.8\" y1=\"147.5\" x2=\"399.7\" y2=\"146.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"401.5\" y1=\"164.0\" x2=\"404.5\" y2=\"163.3\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"401.9\" y1=\"181.3\" x2=\"407.8\" y2=\"180.4\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"406.6\" y1=\"197.9\" x2=\"409.6\" y2=\"197.8\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"406.9\" y1=\"215.1\" x2=\"409.9\" y2=\"215.2\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"376.9\" y1=\"229.0\" x2=\"408.7\" y2=\"232.6\" stroke=\"#111\" stroke-width=\"1\"/><text x=\"381.2\" y=\"277.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#111\">双</text><line x1=\"403.1\" y1=\"249.2\" x2=\"406.0\" y2=\"249.8\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"398.9\" y1=\"265.9\" x2=\"401.8\" y2=\"266.8\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"390.5\" y1=\"281.1\" x2=\"396.1\" y2=\"283.3\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"386.3\" y1=\"297.9\" x2=\"389.0\" y2=\"299.2\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"378.0\" y1=\"312.9\" x2=\"380.5\" y2=\"314.5\" stroke=\"#666\" stroke-width=\"0.6\"/><line x1=\"138.0\" y1=\"210.0\" x2=\"42.0\" y2=\"210.0\" stroke=\"#111\" stroke-width=\"1.8\"/><text x=\"113.8\" y=\"186.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">1</text><line x1=\"146.2\" y1=\"176.7\" x2=\"61.0\" y2=\"132.3\" stroke=\"#444\" stroke-width=\"1.0\"/><text x=\"137.4\" y=\"142.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">2</text><line x1=\"171.9\" y1=\"148.9\" x2=\"121.1\" y2=\"67.4\" stroke=\"#444\" stroke-width=\"1.0\"/><text x=\"182.6\" y=\"114.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">3</text><line x1=\"209.8\" y1=\"138.0\" x2=\"209.5\" y2=\"42.0\" stroke=\"#111\" stroke-width=\"1.8\"/><text x=\"236.2\" y=\"114.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">4</text><line x1=\"246.9\" y1=\"148.2\" x2=\"296.1\" y2=\"65.8\" stroke=\"#444\" stroke-width=\"1.0\"/><text x=\"281.0\" y=\"141.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">5</text><line x1=\"272.8\" y1=\"174.8\" x2=\"356.6\" y2=\"127.9\" stroke=\"#444\" stroke-width=\"1.0\"/><text x=\"305.8\" y=\"185.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">6</text><line x1=\"282.0\" y1=\"210.0\" x2=\"378.0\" y2=\"210.0\" stroke=\"#111\" stroke-width=\"1.8\"/><text x=\"306.2\" y=\"233.6\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">7</text><line x1=\"273.8\" y1=\"243.3\" x2=\"359.0\" y2=\"287.7\" stroke=\"#444\" stroke-width=\"1.0\"/><text x=\"282.6\" y=\"277.3\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">8</text><line x1=\"248.1\" y1=\"271.1\" x2=\"298.9\" y2=\"352.6\" stroke=\"#444\" stroke-width=\"1.0\"/><text x=\"237.4\" y=\"305.1\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">9</text><line x1=\"210.2\" y1=\"282.0\" x2=\"210.5\" y2=\"378.0\" stroke=\"#111\" stroke-width=\"1.8\"/><text x=\"183.8\" y=\"305.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">10</text><line x1=\"173.1\" y1=\"271.8\" x2=\"123.9\" y2=\"354.2\" stroke=\"#444\" stroke-width=\"1.0\"/><text x=\"139.0\" y=\"279.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">11</text><line x1=\"147.2\" y1=\"245.2\" x2=\"63.4\" y2=\"292.1\" stroke=\"#444\" stroke-width=\"1.0\"/><text x=\"114.2\" y=\"235.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"10\" fill=\"#111\">12</text><line x1=\"159.5\" y1=\"252.5\" x2=\"260.5\" y2=\"167.5\" stroke=\"#8b1e3f\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"260.5\" y1=\"167.5\" x2=\"160.3\" y2=\"253.4\" stroke=\"#8b1e3f\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"258.3\" y1=\"165.0\" x2=\"160.3\" y2=\"253.4\" stroke=\"#8b1e3f\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"159.5\" y1=\"252.5\" x2=\"258.3\" y2=\"165.0\" stroke=\"#8b1e3f\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"264.4\" y1=\"247.3\" x2=\"176.0\" y2=\"266.6\" stroke=\"#c4392a\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"176.2\" y1=\"266.7\" x2=\"264.4\" y2=\"247.3\" stroke=\"#c4392a\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"260.5\" y1=\"167.5\" x2=\"154.8\" y2=\"246.2\" stroke=\"#8b1e3f\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"176.2\" y1=\"266.7\" x2=\"176.0\" y2=\"266.6\" stroke=\"#e07000\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"159.5\" y1=\"252.5\" x2=\"160.3\" y2=\"253.4\" stroke=\"#e07000\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"203.3\" y1=\"275.7\" x2=\"264.4\" y2=\"247.3\" stroke=\"#1a7f4c\" stroke-width=\"1.0\" stroke-dasharray=\"4 3\" opacity=\"0.85\"/><line x1=\"260.5\" y1=\"167.5\" x2=\"258.3\" y2=\"165.0\" stroke=\"#e07000\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"159.5\" y1=\"252.5\" x2=\"154.8\" y2=\"246.2\" stroke=\"#e07000\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><line x1=\"154.8\" y1=\"246.2\" x2=\"160.3\" y2=\"253.4\" stroke=\"#e07000\" stroke-width=\"1.4\" stroke-dasharray=\"none\" opacity=\"0.85\"/><text x=\"101.4\" y=\"301.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" fill=\"#111\">☉</text><text x=\"195.6\" y=\"351.3\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" fill=\"#111\">☽</text><text x=\"74.3\" y=\"251.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" fill=\"#111\">☿</text><text x=\"137.2\" y=\"331.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" fill=\"#111\">♀</text><text x=\"318.6\" y=\"118.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" fill=\"#111\">♂</text><text x=\"91.3\" y=\"287.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" fill=\"#111\">♃</text><text x=\"327.1\" y=\"290.3\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" fill=\"#111\">♄</text><text x=\"305.2\" y=\"121.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" fill=\"#111\">♅</text><text x=\"112.0\" y=\"295.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" fill=\"#111\">♆</text><text x=\"143.1\" y=\"321.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" fill=\"#111\">♇</text><text x=\"-2.0\" y=\"210.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" font-weight=\"700\" fill=\"#e07000\">Asc</text><text x=\"210.7\" y=\"422.0\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"9\" font-weight=\"700\" fill=\"#e07000\">MC</text></svg>",
+    "techniqueZh": "分宫用普拉西德斯制（与星星日记本命盘相同）：看宫头、宫主飞星、落宫与相位。论述按整体、性格、事业、财富、感情、健康展开，再用公开事迹对照，并非某专栏转载。出生数据见 Astro-Databank（Rodden 评级）。",
+    "techniqueEn": "Placidus houses, as in the Star Diary natal module: cusps, house rulers, occupancy, aspects. Notes cover overview, personality, career, wealth, love and health, then check public biography. Birth data: Astro-Databank.",
     "houseSystem": "普拉西德斯制 Placidus",
     "date": "2026-09-04"
   },
@@ -1441,7 +817,7 @@ window.DIGEST_DATA = {
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "The moon is sextile to Saturn, and emotions and responsibilities have a chance to connect, just a little movement.",
-        "endsIn": "约 9 小时后结束"
+        "endsIn": "约 10 小时后结束"
       },
       {
         "a": "Mars",
@@ -1457,7 +833,7 @@ window.DIGEST_DATA = {
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "The moon is sextile to Jupiter, and emotions and opportunities have a chance to connect, just make a little move.",
-        "endsIn": "约 11 小时后结束"
+        "endsIn": "约 12 小时后结束"
       },
       {
         "a": "Mercury",
