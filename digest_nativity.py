@@ -48,7 +48,6 @@ PLANET_EN = {
 }
 ASPECT_EN = {"合相": "Conjunction", "六分相": "Sextile", "刑相": "Square", "拱相": "Trine", "冲相": "Opposition"}
 ASPECT_NATURE = {"合相": "融合", "六分相": "顺畅", "刑相": "张力", "拱相": "和谐", "冲相": "对峙"}
-ASPECT_COLOR = {"合相": "#e07000", "六分相": "#1a7f4c", "刑相": "#c4392a", "拱相": "#1d4f91", "冲相": "#8b1e3f"}
 ASPECT_DEFS = (("合相", 0, 8), ("六分相", 60, 4), ("刑相", 90, 6), ("拱相", 120, 6), ("冲相", 180, 8))
 DIGNITY_EN = {"入庙": "domicile", "擢升": "exaltation", "落陷": "fall", "失势": "detriment"}
 HOUSE_TOPIC = {
@@ -1189,122 +1188,16 @@ def analyze(person: dict, chart: dict) -> dict:
         "techniqueZh": (
             "分宫用普拉西德斯制（与星星日记本命盘相同）：看宫头、宫主飞星、落宫与相位。"
             "论述按整体、性格、事业、财富、感情、健康展开，再用公开事迹对照，并非某专栏转载。"
-            "出生数据见 Astro-Databank（Rodden 评级）。星盘画法参考宫神星网：上升在左、宫位线、内圈相位。"
+            "出生数据见 Astro-Databank（Rodden 评级）。"
         ),
         "techniqueEn": (
             "Placidus houses, as in the Star Diary natal module: cusps, house rulers, occupancy, aspects. "
             "Notes cover overview, personality, career, wealth, love and health, then check public biography. "
-            "Birth data: Astro-Databank. Wheel in the Almuten / Gongshenxing layout."
+            "Birth data: Astro-Databank."
         ),
         "sunHouse": sun["house"] if sun else 1,
     }
 
-
-def xy(cx: float, cy: float, ang_deg: float, r: float) -> tuple[float, float]:
-    a = math.radians(ang_deg)
-    return cx + r * math.cos(a), cy - r * math.sin(a)
-
-
-def svg_wheel(chart: dict) -> str:
-    """Almuten-style wheel: ASC at left, zodiac ring, Placidus spokes, inner aspects."""
-    cx = cy = 210
-    r_out, r_zod, r_house, r_pl, r_asp = 200, 168, 118, 142, 72
-    asc = chart["asc"]["lon"]
-
-    def screen(lon: float) -> float:
-        return 180.0 - (lon - asc)
-
-    parts = [
-        '<svg viewBox="0 0 420 420" class="nat-svg" role="img" aria-label="natal chart">',
-        f'<circle cx="{cx}" cy="{cy}" r="{r_out}" fill="#fff" stroke="#111" stroke-width="1.6"/>',
-        f'<circle cx="{cx}" cy="{cy}" r="{r_zod}" fill="#fff" stroke="#111" stroke-width="1"/>',
-        f'<circle cx="{cx}" cy="{cy}" r="{r_house}" fill="#fafafa" stroke="#111" stroke-width="1"/>',
-        f'<circle cx="{cx}" cy="{cy}" r="{r_asp}" fill="#fff" stroke="#bbb" stroke-width="0.8"/>',
-    ]
-    # Zodiac sectors (equal 30°)
-    for i in range(12):
-        lon0 = i * 30
-        a0, a1 = screen(lon0), screen(lon0 + 30)
-        x1, y1 = xy(cx, cy, a0, r_zod)
-        x2, y2 = xy(cx, cy, a0, r_out)
-        parts.append(
-            f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="#111" stroke-width="1"/>'
-        )
-        mid = screen(lon0 + 15)
-        tx, ty = xy(cx, cy, mid, (r_zod + r_out) / 2)
-        parts.append(
-            f'<text x="{tx:.1f}" y="{ty:.1f}" text-anchor="middle" dominant-baseline="middle" '
-            f'font-size="11" font-weight="700" fill="#111">{ZODIAC[i][:1]}</text>'
-        )
-        # 5° ticks
-        for k in range(1, 6):
-            ta = screen(lon0 + k * 5)
-            inner = r_out - (6 if k == 3 else 3)
-            xa, ya = xy(cx, cy, ta, inner)
-            xb, yb = xy(cx, cy, ta, r_out)
-            parts.append(
-                f'<line x1="{xa:.1f}" y1="{ya:.1f}" x2="{xb:.1f}" y2="{yb:.1f}" stroke="#666" stroke-width="0.6"/>'
-            )
-
-    # House spokes
-    for i, c in enumerate(chart["cusps"]):
-        ang = screen(c["lon"])
-        wide = 1.8 if i in (0, 3, 6, 9) else 1.0
-        col = "#111" if i in (0, 3, 6, 9) else "#444"
-        x1, y1 = xy(cx, cy, ang, r_asp)
-        x2, y2 = xy(cx, cy, ang, r_zod)
-        parts.append(
-            f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{col}" stroke-width="{wide}"/>'
-        )
-        nxt = chart["cusps"][(i + 1) % 12]["lon"]
-        span = (nxt - c["lon"] + 360) % 360
-        mid = screen(c["lon"] + span / 2)
-        hx, hy = xy(cx, cy, mid, (r_house + r_asp) / 2 + 4)
-        parts.append(
-            f'<text x="{hx:.1f}" y="{hy:.1f}" text-anchor="middle" dominant-baseline="middle" '
-            f'font-size="10" fill="#111">{i + 1}</text>'
-        )
-
-    # Aspectarium
-    pos = {}
-    for b in chart["placements"]:
-        pos[b["name"]] = xy(cx, cy, screen(b["lon"]), r_asp - 6)
-    for asp in chart["aspects"][:14]:
-        if asp["a"] not in pos or asp["b"] not in pos:
-            continue
-        x1, y1 = pos[asp["a"]]
-        x2, y2 = pos[asp["b"]]
-        col = ASPECT_COLOR.get(asp["aspect"], "#888")
-        dash = "4 3" if asp["aspect"] in ("六分相", "拱相") else "none"
-        sw = 1.4 if asp["aspect"] in ("冲相", "刑相", "合相") else 1.0
-        parts.append(
-            f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" '
-            f'stroke="{col}" stroke-width="{sw}" stroke-dasharray="{dash}" opacity="0.85"/>'
-        )
-
-    # Planets
-    used = {}
-    for b in chart["placements"]:
-        key = int(round(b["lon"] / 6))
-        bump = used.get(key, 0)
-        used[key] = bump + 1
-        ang = screen(b["lon"])
-        rr = r_pl - bump * 12
-        x, y = xy(cx, cy, ang, rr)
-        parts.append(
-            f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="middle" dominant-baseline="middle" '
-            f'font-size="14" fill="#111">{GLYPH.get(b["name"], b["name"][:1])}</text>'
-        )
-    # ASC / MC marks
-    for label, lon, extra in (("Asc", chart["asc"]["lon"], True), ("MC", chart["mc"]["lon"], False)):
-        ang = screen(lon)
-        x, y = xy(cx, cy, ang, r_out + 12)
-        parts.append(
-            f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="middle" dominant-baseline="middle" '
-            f'font-size="9" font-weight="700" fill="#e07000">{label}</text>'
-        )
-    parts.append("</svg>")
-    return "".join(parts)
 
 
 def compute(person: dict) -> dict:
@@ -1402,7 +1295,6 @@ def compute(person: dict) -> dict:
         "sections": note["sections"],
         "techniqueZh": note["techniqueZh"],
         "techniqueEn": note["techniqueEn"],
-        "svg": svg_wheel(chart),
         "houseSystem": "普拉西德斯制 Placidus",
     }
 
