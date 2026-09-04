@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-04",
   "weekday": "星期五",
-  "fetchedAt": "2026-09-04 11:18",
+  "fetchedAt": "2026-09-04 11:21",
   "freshHours": 36,
   "sections": [
     {
@@ -18,6 +18,17 @@ window.DIGEST_DATA = {
           "ok": true,
           "error": null,
           "items": [
+            {
+              "title": "September Astrology Forecast 2026",
+              "url": "https://theastrologypodcast.com/2026/09/02/september-astrology-forecast-2026/",
+              "summary": "A detailed look at the astrology forecast for September 2026, with astrologers Chris Brennan and Austin Coppock. We spend the first hour talking about news and…",
+              "published": "2026-09-03T04:02:06+08:00",
+              "ts": 1788379326,
+              "kind": "podcast",
+              "durationMin": 125,
+              "titleZh": "2026 年 9 月占星预测",
+              "summaryZh": "与占星家 Chris Brennan 和 Austin Coppock 一起详细了解 2026 年 9 月的占星预测。我们花了第一个小时谈论新闻和……"
+            },
             {
               "title": "Gnosticism, Hermeticism, and Ancient Astrology",
               "url": "https://theastrologypodcast.com/2026/08/28/gnosticism-hermeticism-and-ancient-astrology/",
@@ -94,17 +105,6 @@ window.DIGEST_DATA = {
               "durationMin": 211,
               "titleZh": "占星学中的巴比伦目标年",
               "summaryZh": "占星家克里斯·布伦南 (Chris Brennan) 和帕特里克·沃森 (Patrick Watson) 探索了一种被称为巴比伦目标年周期的古老计时技术，该技术可用于识别重复……"
-            },
-            {
-              "title": "Venus-Jupiter Conjunction Transit Stories",
-              "url": "https://theastrologypodcast.com/2026/06/24/venus-mars-conjunction-transit-stories/",
-              "summary": "In this episode a group of students and patrons join me to reflect on the recent Venus-Jupiter conjunction in Cancer, and to share stories of how it manifested…",
-              "published": "2026-06-25T04:40:03+08:00",
-              "ts": 1782333603,
-              "kind": "podcast",
-              "durationMin": 104,
-              "titleZh": "金星-木星合相过境故事",
-              "summaryZh": "在这一集中，一群学生和赞助人与我一起思考最近金星与木星在巨蟹座的合相，并分享它如何显现的故事……"
             }
           ]
         },
@@ -117,92 +117,92 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
-              "title": "411: Spiritually Alone",
-              "url": "https://podcasters.spotify.com/pod/show/jessica-lanyadoo/episodes/411-Spiritually-Alone-e2gvtda",
-              "summary": "When we can't feel our ancestors presence, is it because we don't matter to them? A listener experiencing a time of deep spiritual aloneness joins Jessica to t…",
-              "published": "2024-03-14T01:03:00+08:00",
-              "ts": 1710349380,
+              "title": "659: Dying",
+              "url": "1dbe7770-a684-11f1-be89-531c62abbd9f",
+              "summary": "Naomi has received a third cancer diagnosis, and the doctors have told her that this time she will die of it. She's been tending gracefully to her inner life a…",
+              "published": "2026-09-03T01:09:00+08:00",
+              "ts": 1788368940,
               "kind": "podcast",
-              "durationMin": 63,
-              "titleZh": "411：精神上孤独",
-              "summaryZh": "当我们感觉不到祖先的存在时，是不是因为我们对他们来说不重要？一位经历过一段深刻的精神孤独的听众与杰西卡一起……"
+              "durationMin": 86,
+              "titleZh": "659：死亡",
+              "summaryZh": "娜奥米第三次被诊断患有癌症，医生告诉她，这一次她将死于癌症。她一直在优雅地照顾自己的内心生活……"
             },
             {
-              "title": "410: Horoscope - New Moon in Pisces",
-              "url": "https://podcasters.spotify.com/pod/show/jessica-lanyadoo/episodes/410-Horoscope---New-Moon-in-Pisces-e2grst3",
-              "summary": "Get ready for the New Moon in Pisces on the 10th — and for eclipse season to begin soon after! Register for Jessica's March 23rd class, Navigating Midlife Tran…",
-              "published": "2024-03-10T12:12:00+08:00",
-              "ts": 1710043920,
+              "title": "658: Horoscope - Three Men & a Baby",
+              "url": "d7b6d2bc-a3fa-11f1-b0e6-972b90d3c6bf",
+              "summary": "Mars and Saturn clash, but Jupiter and Saturn are playing nice. Tune in for astrology you can actually use, and join Patreon to learn more. Watch the video ver…",
+              "published": "2026-08-30T13:01:00+08:00",
+              "ts": 1788066060,
               "kind": "podcast",
-              "durationMin": 34,
-              "titleZh": "410：星座运势 - 双鱼座新月",
-              "summaryZh": "为 10 日的双鱼座新月做好准备，并为不久后即将开始的食相季节做好准备！报名参加杰西卡 3 月 23 日的课程“中年导航”……"
+              "durationMin": 24,
+              "titleZh": "658：星座运势 - 三个男人和一个婴儿",
+              "summaryZh": "火星和土星发生冲突，但木星和土星表现得很好。收看您可以实际使用的占星术，并加入Patreon以了解更多信息。观看视频版本……"
             },
             {
-              "title": "409: How To Show Up in Revolutionary Times",
-              "url": "https://podcasters.spotify.com/pod/show/jessica-lanyadoo/episodes/409-How-To-Show-Up-in-Revolutionary-Times-e2gm2jj",
-              "summary": "These are revolutionary, reactionary times! Logan Grendel joins Jessica to discuss what their chart indicates about how they might best participate and contrib…",
-              "published": "2024-03-07T02:13:00+08:00",
-              "ts": 1709748780,
+              "title": "657: Anxiety & the 4 Ns",
+              "url": "e5a8c3ce-a109-11f1-ba1c-cbab59a9ae6f",
+              "summary": "In this special shorty, Jessica breaks down a practical easy-to-remember strategy for handling emotions that may arise around the upcoming eclipse. Watch the v…",
+              "published": "2026-08-27T01:00:00+08:00",
+              "ts": 1787763600,
               "kind": "podcast",
-              "durationMin": 54,
-              "titleZh": "409：如何出现在革命时代",
-              "summaryZh": "这是一个革命、反动的时代！洛根·格伦德尔 (Logan Grendel) 与杰西卡 (Jessica) 一起讨论他们的图表表明他们如何最好地参与和贡献……"
+              "durationMin": 8,
+              "titleZh": "657：焦虑与 4 N",
+              "summaryZh": "在这篇特别的短片中，杰西卡分解了一种实用且易于记忆的策略，用于处理即将到来的日食可能出现的情绪。观看视频…"
             },
             {
-              "title": "408: Horoscope - Uranus Troubles + a Mercury Conjunction to Neptune",
-              "url": "https://podcasters.spotify.com/pod/show/jessica-lanyadoo/episodes/408-Horoscope---Uranus-Troubles--a-Mercury-Conjunction-to-Neptune-e2gi09p",
-              "summary": "Uranus will be shaking things up this week when both Venus and Mars form challenging aspects to it. These transits are progressive and revolutionary while also…",
-              "published": "2024-03-03T14:01:00+08:00",
-              "ts": 1709445660,
-              "kind": "podcast",
-              "durationMin": 40,
-              "titleZh": "408：星座运势 - 天王星麻烦 + 水星与海王星合相",
-              "summaryZh": "本周，当金星和火星都与天王星形成挑战性相位时，天王星将撼动一切。这些转变是进步和革命性的，同时也......"
-            },
-            {
-              "title": "407: Will I Ever Love My Job?",
-              "url": "https://podcasters.spotify.com/pod/show/jessica-lanyadoo/episodes/407-Will-I-Ever-Love-My-Job-e2gc73b",
-              "summary": "\"Lazy & Unbothered\" asks Jessica how she might find motivation and energy for career. Is it the job or is just her personality that has her lacking interest in…",
-              "published": "2024-02-29T02:26:00+08:00",
-              "ts": 1709144760,
-              "kind": "podcast",
-              "durationMin": 51,
-              "titleZh": "407：我会热爱我的工作吗？",
-              "summaryZh": "《Lazy & Unbothered》询问杰西卡如何找到事业的动力和能量。是工作的原因还是她的性格让她对……缺乏兴趣？"
-            },
-            {
-              "title": "406: Horoscope - Jupiter Opens Some Doors and Saturn Closes Some",
-              "url": "https://podcasters.spotify.com/pod/show/jessica-lanyadoo/episodes/406-Horoscope---Jupiter-Opens-Some-Doors-and-Saturn-Closes-Some-e2g7onv",
-              "summary": "There is such fertile energy for making things happen this week! An expansive square between Mars and Jupiter kicks off the week, and later we'll experience a…",
-              "published": "2024-02-25T14:40:45+08:00",
-              "ts": 1708843245,
+              "title": "656: Horoscope - A Lunar Eclipse and Other Surprises!",
+              "url": "c1de8666-9e40-11f1-96a5-533ffca0a01b",
+              "summary": "Chiron offers its support in this very emotional and unpredictable week, while Uranus causes instability. On the 27th, the Lunar Eclipse in Pisces activates bi…",
+              "published": "2026-08-23T13:10:00+08:00",
+              "ts": 1787461800,
               "kind": "podcast",
               "durationMin": 35,
-              "titleZh": "406：星座运势 - 木星打开一些门，土星关闭一些门",
-              "summaryZh": "本周有如此丰富的能量让事情发生！火星和木星之间的广阔四分相将开启本周，稍后我们将经历……"
+              "titleZh": "656：星座运势 - 月食和其他惊喜！",
+              "summaryZh": "凯龙星在这非常情绪化且不可预测的一周提供支持，而天王星则带来不稳定。 27日，双鱼座月食激活双..."
             },
             {
-              "title": "405: Am I Unknowable?",
-              "url": "https://podcasters.spotify.com/pod/show/jessica-lanyadoo/episodes/405-Am-I-Unknowable-e2g2mdc",
-              "summary": "How can you reach real intimacy with other humans when your feel completely unknowable? RiRi joins Jessica for another #BlackLove reading, and they delve into…",
-              "published": "2024-02-22T03:01:00+08:00",
-              "ts": 1708542060,
+              "title": "655: Wildfire",
+              "url": "eba2c8be-9b6f-11f1-9233-bf9bda3e920a",
+              "summary": "Having lost her home to the devastating Spokane wildfire a few days prior, this week's guest joins Jessica for help unpacking this immense loss. They talk abou…",
+              "published": "2026-08-20T00:44:00+08:00",
+              "ts": 1787157840,
               "kind": "podcast",
-              "durationMin": 87,
-              "titleZh": "405：我不可知吗？",
-              "summaryZh": "当你感到完全不可知时，如何才能与其他人建立真正的亲密关系？ RiRi 与 Jessica 一起进行另一次 #BlackLove 阅读，他们深入研究……"
+              "durationMin": 60,
+              "titleZh": "655：野火",
+              "summaryZh": "几天前，在毁灭性的斯波坎野火中失去了家园，本周的客人与杰西卡一起寻求帮助，以弥补这一巨大的损失。他们谈论……"
             },
             {
-              "title": "404: Horoscope - Full Moon in Virgo + Big Pisces Vibes",
-              "url": "https://podcasters.spotify.com/pod/show/jessica-lanyadoo/episodes/404-Horoscope---Full-Moon-in-Virgo--Big-Pisces-Vibes-e2ftpfg",
-              "summary": "It’s a consequential Full Moon in Virgo on the 24th, and Jessica has tips for the best ways to engage with the upcoming energies. And get ready as the vibe shi…",
-              "published": "2024-02-18T14:24:00+08:00",
-              "ts": 1708237440,
+              "title": "654: Horoscope - It's Messy and Emotional, TBH",
+              "url": "14562556-9924-11f1-9143-0f379387ba19",
+              "summary": "In the middle of eclipse season, it's important to reflect on your growth, and Jessica talks you through how to think about it this week. Then she breaks down…",
+              "published": "2026-08-16T13:30:00+08:00",
+              "ts": 1786858200,
               "kind": "podcast",
-              "durationMin": 33,
-              "titleZh": "404：星座运势 - 处女座满月 + 大双鱼座氛围",
-              "summaryZh": "24 日将是一次重要的处女座满月，杰西卡提供了一些应对即将到来的能量的最佳方法的建议。并准备好作为氛围师......"
+              "durationMin": 26,
+              "titleZh": "654：星座运势 - 很混乱且情绪化，说实话",
+              "summaryZh": "在食相季节中期，反思自己的成长很重要，杰西卡本周将告诉你如何思考这一点。然后她崩溃了……"
+            },
+            {
+              "title": "653: Your Stewardship",
+              "url": "28b66540-9606-11f1-8c15-af79ba51fd93",
+              "summary": "Jessica takes a break from readings this week and instead shares a little something from her Patreon about stewardship—what it is and how to navigate what's in…",
+              "published": "2026-08-13T01:00:00+08:00",
+              "ts": 1786554000,
+              "kind": "podcast",
+              "durationMin": 15,
+              "titleZh": "653：你的管理职责",
+              "summaryZh": "杰西卡本周从阅读中休息一下，转而分享了她的 Patreon 上关于管理权的一些内容——它是什么以及如何驾驭其中的内容……"
+            },
+            {
+              "title": "652: Horoscope - If Only it Was Just the Solar Eclipse",
+              "url": "8c05ef62-93ae-11f1-be63-ef2d1215d1b1",
+              "summary": "On the 12th, there will be a Solar Eclipse in Leo—but not before a bunch of other challenging transits get activated! Mercury and Chiron square off, Venus sits…",
+              "published": "2026-08-09T14:01:00+08:00",
+              "ts": 1786255260,
+              "kind": "podcast",
+              "durationMin": 56,
+              "titleZh": "652：星座运势 - 如果只是日食就好了",
+              "summaryZh": "在12日，狮子座将会有一个日食-但不是在一堆其他具有挑战性的行运被激活之前！水星和凯龙星在广场上，金星坐着……"
             }
           ]
         },
@@ -819,92 +819,92 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
-              "title": "Bringing AI to the Data Cloud, with Snowflake's CEO Frank Slootman",
-              "url": "https://no-priors.com/",
-              "summary": "Frank Slootman, CEO of Snowflake Computing, joins Sarah Guo and Elad Gil this week on No Priors. Before scaling Snowflake to its blockbuster IPO and beyond, Fr…",
-              "published": "2023-06-29T18:00:00+08:00",
-              "ts": 1688032800,
+              "title": "Redefining Chip Architecture with Arm CEO Rene Haas",
+              "url": "8476d0dc-a726-11f1-86e6-bbc25e1787ef",
+              "summary": "From data center orchestrators to AGI and robotics, CPUs remain the heart of modern computing. Arm CEO Rene Haas joins Elad Gil and Sarah Guo to explore how Ar…",
+              "published": "2026-09-03T18:00:00+08:00",
+              "ts": 1788429600,
               "kind": "podcast",
-              "durationMin": 52,
-              "titleZh": "Snowflake 首席执行官 Frank Slootman 将人工智能引入数据云",
-              "summaryZh": "SnowflakeComputing 首席执行官 Frank Slootman 本周将与 SarahGuo 和 EladGil 一起参加 No Priors 节目。在将 Snowflake 规模扩大到其轰动的 IPO 及其他规模之前，Fr…"
+              "durationMin": 37,
+              "titleZh": "与Arm首席执行官Rene Haas一起重新定义芯片架构",
+              "summaryZh": "从数据中心编排器到AGI和机器人技术， CPU仍然是现代计算的核心。ARM首席执行官Rene Haas与Elad Gil和Sarah Guo一起探索AR..."
             },
             {
-              "title": "What's for Dinner? AI-Driven Commerce with Instacart CEO Fidji Simo",
-              "url": "https://no-priors.com/",
-              "summary": "Fidji Simo, the CEO of Instacart and co-founder of Metrodora Institute, a medical center and research institute for neuroimmune axis disorders, shares her pers…",
-              "published": "2023-06-22T18:00:00+08:00",
-              "ts": 1687428000,
-              "kind": "podcast",
-              "durationMin": 40,
-              "titleZh": "晚餐吃什么？ Instacart 首席执行官 Fidji Simo 探讨人工智能驱动的商务",
-              "summaryZh": "Fidji Simo 是 Instacart 的首席执行官，也是 Metrodora Institute 的联合创始人，Metrodora Institute 是一家神经免疫轴疾病医疗中心和研究所，她分享了她的个人经历。"
-            },
-            {
-              "title": "What happens to Observability If Code is AI-Generated? The Potential for AI in DevOps, with Datadog Co-founder/CEO Olivier Pomel",
-              "url": "https://no-priors.com/",
-              "summary": "Olivier Pomel, co-founder and CEO of Datadog, the leading observability company, discusses the company’s founding story, early product sequencing, platform str…",
-              "published": "2023-06-15T18:00:00+08:00",
-              "ts": 1686823200,
-              "kind": "podcast",
-              "durationMin": 45,
-              "titleZh": "如果代码是人工智能生成的，可观察性会发生什么？ Datadog 联合创始人/首席执行官 Olivier Pomel 探讨人工智能在 DevOps 中的潜力",
-              "summaryZh": "领先的可观测性公司 Datadog 的联合创始人兼首席执行官 Olivier Pomel 讨论了公司的创立故事、早期产品排序、平台战略……"
-            },
-            {
-              "title": "Listener Q&A: AI Misconceptions, The Reality of Regulation, Infinite Context, Incumbent AI Execution and Startup Ideas",
-              "url": "https://no-priors.com/",
-              "summary": "This week on No Priors, Sarah and Elad do another hangout to answer listener questions. Topics include debunking common misconceptions about AI and its implica…",
-              "published": "2023-06-08T18:00:00+08:00",
-              "ts": 1686218400,
+              "title": "Rethinking Legacy Data Infrastructure with Eon Co-Founders Ofir Ehrlich and Gonen Stein",
+              "url": "dc36d7b4-a1cb-11f1-a66e-afd86ce968a2",
+              "summary": "Google’s purchase of Spirit Airlines’ data out of bankruptcy signaled a shift in how the tech world values real-world datasets. Although compute and models get…",
+              "published": "2026-08-27T18:00:00+08:00",
+              "ts": 1787824800,
               "kind": "podcast",
               "durationMin": 35,
-              "titleZh": "听众问答：人工智能的误解、监管的现实、无限的背景、现有的人工智能执行和创业理念",
-              "summaryZh": "本周，莎拉和埃拉德在《No Priors》节目中再次进行视频群聊，回答听众的问题。主题包括揭穿关于人工智能及其含义的常见误解……"
+              "titleZh": "与Eon联合创始人Ofir Ehrlich和Gonen Stein一起重新思考遗留数据基础设施",
+              "summaryZh": "谷歌从破产中收购了Spirit Airlines的数据，这标志着科技界对真实世界数据集的重视发生了转变。虽然计算和模型得到……"
             },
             {
-              "title": "AI & Defense Technology with Anduril CEO Brian Schimpf",
-              "url": "https://no-priors.com/",
-              "summary": "Today on No Priors, we discuss defense technology, AI, drones, and autonomous vehicles (think giant submarine drones!) with Brian Schimpf, the co-founder and C…",
-              "published": "2023-06-01T18:00:00+08:00",
-              "ts": 1685613600,
+              "title": "From Restoring Sight to Reimagining the Brain, with Max Hodak",
+              "url": "8ec6281a-9c1a-11f1-b9ab-fb1fa4061363",
+              "summary": "Max Hodak, co-founder and CEO of Science Corporation, joins Sarah Guo to discuss the future of vision, brain-computer interfaces, and the human experience. Max…",
+              "published": "2026-08-20T18:00:00+08:00",
+              "ts": 1787220000,
               "kind": "podcast",
-              "durationMin": 51,
-              "titleZh": "人工智能与国防技术 Anduril 首席执行官 Brian Schimpf",
-              "summaryZh": "今天，在 No Priors 节目中，我们与联合创始人兼首席执行官 Brian Schimpf 讨论了国防技术、人工智能、无人机和自动驾驶车辆（想想巨型潜艇无人机！）……"
+              "durationMin": 32,
+              "titleZh": "与马克斯·霍达克一起从恢复视力到重塑大脑",
+              "summaryZh": "Science Corporation 联合创始人兼首席执行官 Max Hodak 与 SarahGuo 一起讨论视觉、脑机接口和人类体验的未来。最大限度…"
             },
             {
-              "title": "The AI Will See You Now: Exploring Biomedical AI and Google’s Med-PaLM2 With Karan Singhal",
-              "url": "https://no-priors.com/",
-              "summary": "What if AI could revolutionize healthcare with advanced language learning models? Sarah and Elad welcome Karan Singhal, Staff Software Engineer at Google Resea…",
-              "published": "2023-05-18T18:00:00+08:00",
-              "ts": 1684404000,
+              "title": "What Chess.com Teaches US About Superhuman Capabilities, with CEO Erik Allebest",
+              "url": "2f8edaf4-9698-11f1-bdc1-eb068382bf86",
+              "summary": "In a world of infinite gaming and entertainment possibilities, how does a centuries-old game stay so popular? Chess.com co-founder and CEO Erik Allebest joins…",
+              "published": "2026-08-14T01:29:00+08:00",
+              "ts": 1786642140,
               "kind": "podcast",
-              "durationMin": 43,
-              "titleZh": "人工智能即将与您见面：与 Karan Singhal 一起探索生物医学人工智能和 Google Med-PaLM2",
-              "summaryZh": "如果人工智能可以通过先进的语言学习模型彻底改变医疗保健呢？ Sarah 和 Elad 欢迎 Google Resea 的软件工程师 Karan Singhal..."
+              "durationMin": 46,
+              "titleZh": "Chess.com 首席执行官埃里克·阿莱贝斯特 (Erik Allebest) 教给我们关于超人能力的知识",
+              "summaryZh": "在一个充满无限游戏和娱乐可能性的世界中，一款有着数百年历史的游戏如何保持如此受欢迎？ Chess.com 联合创始人兼首席执行官 Erik Allebest 加入……"
             },
             {
-              "title": "Will Everyone Have a Personal AI? With Mustafa Suleyman, Founder of DeepMind and Inflection",
-              "url": "https://no-priors.com/",
-              "summary": "Mustafa Suleyman, co-founder of DeepMind and now co-founder and CEO of Inflection AI, joins Sarah and Elad to discuss how his interests in counseling, conflict…",
-              "published": "2023-05-11T18:00:00+08:00",
-              "ts": 1683799200,
+              "title": "Chasing Trillion-Dollar Companies, Founder Ambition, Token Budgets, and Regulatory Capture with Sarah & Elad",
+              "url": "17b96322-915c-11f1-aad7-53d361bc6996",
+              "summary": "Is the tech industry moving too quickly, or are founders letting fear of AI labs stunt their ambitions? Sarah and Elad explore the current landscape of artific…",
+              "published": "2026-08-06T18:00:00+08:00",
+              "ts": 1786010400,
               "kind": "podcast",
-              "durationMin": 52,
-              "titleZh": "每个人都会有个人人工智能吗？与 DeepMind 和 Inflection 创始人 Mustafa Suleyman 合影",
-              "summaryZh": "DeepMind 联合创始人、现任 Inflection AI 联合创始人兼首席执行官 Mustafa Suleyman 与 Sarah 和 Elad 一起讨论了他对咨询、冲突等方面的兴趣……"
+              "durationMin": 39,
+              "titleZh": "与 Sarah 和 Elad 一起追逐万亿美元的公司、创始人的野心、代币预算和监管捕获",
+              "summaryZh": "是科技行业发展太快，还是创始人因对人工智能实验室的恐惧而阻碍了他们的雄心壮志？莎拉和埃拉德探索当前的人工景观……"
             },
             {
-              "title": "Personalizing AI Models with Kelvin Guu, Senior Staff Research Scientist, Google Brain",
-              "url": "https://no-priors.com/",
-              "summary": "How do you personalize AI models? A popular school of thought in AI is to just dump all the data you need into pre-training or fine tuning. But that may be les…",
-              "published": "2023-05-04T18:00:00+08:00",
-              "ts": 1683194400,
+              "title": "Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak",
+              "url": "db17d1d8-8c79-11f1-9e05-6bb27aab1f6f",
+              "summary": "When your AC fails in a heatwave, you don’t want a busy signal; you need a solution. Netic founder and CEO Melisa Tokmak joins host Elad Gil to explain how Net…",
+              "published": "2026-07-31T18:00:00+08:00",
+              "ts": 1785492000,
               "kind": "podcast",
-              "durationMin": 40,
-              "titleZh": "与 Google Brain 高级研究科学家 Kelvin Guu 一起个性化 AI 模型",
-              "summaryZh": "如何个性化人工智能模型？人工智能领域的一个流行思想是将所有需要的数据转储到预训练或微调中。但这可能是..."
+              "durationMin": 34,
+              "titleZh": "与 Netic 创始人 Melisa Tokmak 一起构建面向现实世界服务的自治企业",
+              "summaryZh": "当您的空调在热浪中出现故障时，您不希望看到繁忙信号；你需要一个解决方案。 Netic 创始人兼首席执行官梅丽莎·托克马克 (Melisa Tokmak) 与主持人埃拉德·吉尔 (Elad Gil) 一起解释 Net..."
+            },
+            {
+              "title": "Building an Autonomous Delivery Experience with DoorDash Co-Founders Andy Fang and Stanley Tang",
+              "url": "67540c92-8640-11f1-8f2a-e322343e668d",
+              "summary": "DoorDash is not just a delivery company. From its inception, co-founders Andy Fang and Stanley Tang operated it as a robotics and autonomy company. Andy and St…",
+              "published": "2026-07-23T18:00:00+08:00",
+              "ts": 1784800800,
+              "kind": "podcast",
+              "durationMin": 49,
+              "titleZh": "与 DoorDash 联合创始人 Andy Fang 和 Stanley Tang 一起打造自主配送体验",
+              "summaryZh": "DoorDash 不仅仅是一家快递公司。从成立之初，联合创始人 Andy Fang 和 Stanley Tang 就将其作为一家机器人和自主公司进行运营。安迪和圣…"
+            },
+            {
+              "title": "Travel Through the Lens of AI with with Booking.com CEO Glenn Fogel",
+              "url": "18a5d0ce-73e6-11f1-80e0-175857be9792",
+              "summary": "When Glenn Fogel joined Priceline in 2000, the business was worth a few hundred million dollars. One week later, the Nasdaq peaked, eventually sending its stoc…",
+              "published": "2026-07-09T18:00:00+08:00",
+              "ts": 1783591200,
+              "kind": "podcast",
+              "durationMin": 41,
+              "titleZh": "与 Booking.com 首席执行官 Glenn Fogel 一起畅游人工智能镜头",
+              "summaryZh": "当 Glenn Fogel 于 2000 年加入 Priceline 时，该公司的业务价值数亿美元。一周后，纳斯达克指数见顶，最终发送其股票……"
             }
           ]
         },
