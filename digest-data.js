@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-05",
   "weekday": "星期六",
-  "fetchedAt": "2026-09-05 06:36",
+  "fetchedAt": "2026-09-05 15:38",
   "freshHours": 36,
   "sections": [
     {
@@ -1708,13 +1708,13 @@ window.DIGEST_DATA = {
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 43% · Fading",
-    "blessing": "The moon is only a thin curve, and thoughts come and go. Venus can be seen in the west. Stop talking for a second before you speak, and be kind to yourself.",
+    "moonLine": "Glossy 38% · Fading",
+    "blessing": "The crescent moon is almost gone, and my mind is a little busy. Venus can be seen in the west, and good intentions are easily received. It’s more practical to write down your thoughts and take a good rest.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 43%, the age is about 23 days, and it is gradually losing weight."
+        "caption": "The bright side is about 38%, the age is about 23 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -1748,17 +1748,17 @@ window.DIGEST_DATA = {
     "signs": [
       {
         "name": "Sun",
-        "label": "Virgo 12°",
+        "label": "Virgo 13°",
         "influence": "If the Sun is in Virgo, your temperament will be delicate and clear, and you should be organized and precise."
       },
       {
         "name": "Moon",
-        "label": "Gemini 21°",
+        "label": "Gemini 27°",
         "influence": "When the moon is in Gemini, the mood is more alert and thoughtful, and it is better to communicate and record more."
       },
       {
         "name": "Mercury",
-        "label": "Virgo 20°",
+        "label": "Virgo 21°",
         "influence": "With Mercury in Virgo, communication and thoughts tend to be more detailed and clear, so it is better to organize and be precise."
       },
       {
@@ -1775,11 +1775,11 @@ window.DIGEST_DATA = {
     "aspects": [
       {
         "a": "Moon",
-        "b": "Mercury",
-        "aspect": "Square",
-        "tone": "tense",
-        "influence": "The moon is square to Mercury, so emotions and communication are prone to awkwardness, so you should slow down before making a decision.",
-        "endsIn": "约 10 小时后结束"
+        "b": "Venus",
+        "aspect": "Trine",
+        "tone": "easy",
+        "influence": "The moon trines Venus, and emotions can advance smoothly through the power of emotions.",
+        "endsIn": "约 11 小时后结束"
       },
       {
         "a": "Mars",
@@ -1799,11 +1799,11 @@ window.DIGEST_DATA = {
       },
       {
         "a": "Moon",
-        "b": "Venus",
-        "aspect": "Trine",
-        "tone": "easy",
-        "influence": "The moon trines Venus, and emotions can advance smoothly through the power of emotions.",
-        "endsIn": "约 20 小时后结束"
+        "b": "Mercury",
+        "aspect": "Square",
+        "tone": "tense",
+        "influence": "The moon is square to Mercury, so emotions and communication are prone to awkwardness, so you should slow down before making a decision.",
+        "endsIn": "约 1 小时内结束"
       },
       {
         "a": "Sun",
@@ -1811,7 +1811,7 @@ window.DIGEST_DATA = {
         "aspect": "Conjunction",
         "tone": "blend",
         "influence": "The mind is bright and the words are dense. It is suitable to think clearly before speaking.",
-        "endsIn": "约 18 小时后结束"
+        "endsIn": "约 6 小时后结束"
       }
     ],
     "influence": {
