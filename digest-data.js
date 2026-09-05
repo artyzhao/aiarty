@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-05",
   "weekday": "星期六",
-  "fetchedAt": "2026-09-05 15:38",
+  "fetchedAt": "2026-09-05 21:34",
   "freshHours": 36,
   "sections": [
     {
@@ -1708,13 +1708,13 @@ window.DIGEST_DATA = {
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 38% · Fading",
-    "blessing": "The crescent moon is almost gone, and my mind is a little busy. Venus can be seen in the west, and good intentions are easily received. It’s more practical to write down your thoughts and take a good rest.",
+    "moonLine": "Glossy 35% · Fading",
+    "blessing": "The moon is only a thin curve, wanting to be warmed. Venus can be seen in the west, and I feel a bit awkward about it, so I need to settle myself first.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 38%, the age is about 23 days, and it is gradually losing weight."
+        "caption": "The bright side is about 35%, the age is about 24 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -1730,7 +1730,7 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Saturn is visible in the eastern sky",
-        "caption": "About 149 degrees from the sun, look for it in the eastern sky before dawn."
+        "caption": "About 150 degrees from the sun, look for it in the eastern sky before dawn."
       },
       {
         "title": "Saturn is retrograde",
@@ -1753,8 +1753,8 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Moon",
-        "label": "Gemini 27°",
-        "influence": "When the moon is in Gemini, the mood is more alert and thoughtful, and it is better to communicate and record more."
+        "label": "Cancer 0°",
+        "influence": "With the moon in Cancer, the mood is soft and family-oriented, and it is appropriate to take care of and calm the mind."
       },
       {
         "name": "Mercury",
@@ -1763,7 +1763,7 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Venus",
-        "label": "Libra 26°",
+        "label": "Libra 27°",
         "influence": "With Venus in Libra, aesthetics and emotions tend to be harmonious, and it is advisable to negotiate and seek balance."
       },
       {
@@ -1774,20 +1774,12 @@ window.DIGEST_DATA = {
     ],
     "aspects": [
       {
-        "a": "Moon",
-        "b": "Venus",
-        "aspect": "Trine",
-        "tone": "easy",
-        "influence": "The moon trines Venus, and emotions can advance smoothly through the power of emotions.",
-        "endsIn": "约 11 小时后结束"
-      },
-      {
         "a": "Mars",
         "b": "Saturn",
         "aspect": "Square",
         "tone": "tense",
         "influence": "If you want to move but get stuck, it is better to break it into small steps and avoid forcing the move.",
-        "endsIn": "ends in about 5 days"
+        "endsIn": "ends in about 4 days"
       },
       {
         "a": "Sun",
@@ -1799,19 +1791,19 @@ window.DIGEST_DATA = {
       },
       {
         "a": "Moon",
-        "b": "Mercury",
+        "b": "Neptune",
         "aspect": "Square",
         "tone": "tense",
-        "influence": "The moon is square to Mercury, so emotions and communication are prone to awkwardness, so you should slow down before making a decision.",
-        "endsIn": "约 1 小时内结束"
+        "influence": "The moon is square to Neptune, and your emotions and intuition can easily get awkward, so you should slow down before making a decision.",
+        "endsIn": "约 16 小时后结束"
       },
       {
-        "a": "Sun",
-        "b": "Mercury",
-        "aspect": "Conjunction",
-        "tone": "blend",
-        "influence": "The mind is bright and the words are dense. It is suitable to think clearly before speaking.",
-        "endsIn": "约 6 小时后结束"
+        "a": "Moon",
+        "b": "Venus",
+        "aspect": "Trine",
+        "tone": "easy",
+        "influence": "The moon trines Venus, and emotions can advance smoothly through the power of emotions.",
+        "endsIn": "约 5 小时后结束"
       }
     ],
     "influence": {
