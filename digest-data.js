@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
-  "date": "2026-09-05",
-  "weekday": "星期六",
-  "fetchedAt": "2026-09-05 21:34",
+  "date": "2026-09-06",
+  "weekday": "星期日",
+  "fetchedAt": "2026-09-06 06:35",
   "freshHours": 36,
   "sections": [
     {
@@ -721,6 +721,17 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot",
+              "url": "https://www.latent.space/p/grok-bot",
+              "summary": "SpaceXAI’s Grok Bot has the same level of programming power as OpenClaw, but it’s programmable at a different level of abstraction.",
+              "published": "2026-09-05T23:01:02+08:00",
+              "ts": 1788620462,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "OpenClaw Power、MacBook 简单：使用 Grok Bot 五天",
+              "summaryZh": "SpaceXAI 的 Grok Bot 具有与 OpenClaw 相同级别的编程能力，但它可以在不同的抽象级别上进行编程。"
+            },
+            {
               "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
               "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
               "summary": "new SOTA computer use and coding, 2.5x pricier per token, but WAY cheaper per task, less monitorable. overall, a very successful launch of OpenAI’s new frontie…",
@@ -796,17 +807,6 @@ window.DIGEST_DATA = {
               "durationMin": 0,
               "titleZh": "[AINews] OpenAI 关闭 Cursor",
               "summaryZh": "埃隆诉奥特曼案有一个真正的后果。"
-            },
-            {
-              "title": "[AINews] OpenAI to reach AGI bar by end-2026",
-              "url": "https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by",
-              "summary": "It’s Time. We’re in the Endgame now.",
-              "published": "2026-08-28T15:12:10+08:00",
-              "ts": 1787901130,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "[AINews] OpenAI 将于 2026 年底达到 AGI 标准",
-              "summaryZh": "是时候了。我们现在正处于终局阶段。"
             }
           ]
         },
@@ -1312,151 +1312,150 @@ window.DIGEST_DATA = {
     }
   ],
   "nativity": {
-    "id": "picasso",
-    "name": "巴勃罗·毕加索",
-    "nameEn": "Pablo Picasso",
-    "role": "画家",
-    "roleEn": "Painter",
-    "bio": "立体主义代表人物。马拉加出生登记 23:15，Astro-Databank 评为 AA。",
-    "bioEn": "A leading Cubist. Málaga civil register 23:15 (Rodden AA).",
-    "place": "马拉加，西班牙",
-    "placeEn": "Málaga, Spain",
+    "id": "woolf",
+    "name": "弗吉尼亚·伍尔夫",
+    "nameEn": "Virginia Woolf",
+    "role": "作家",
+    "roleEn": "Writer",
+    "bio": "意识流小说家。家庭记录 12:15，Astro-Databank 评为 AA。",
+    "bioEn": "Novelist of the stream of consciousness. Family record 12:15 (Rodden AA).",
+    "place": "伦敦，英国",
+    "placeEn": "London, England",
     "rating": "AA",
-    "source": "https://www.astro.com/astro-databank/Picasso,_Pablo",
+    "source": "https://www.astro.com/astro-databank/Woolf,_Virginia",
     "sourceName": "Astro-Databank",
-    "birthLocal": "1881-10-25 23:15",
-    "tz": "Europe/Madrid",
-    "asc": 125.04,
-    "ascLabel": "狮子 5°02′",
-    "ascLabelEn": "Leo 5°02′",
-    "mcLabel": "白羊 24°17′",
-    "mcLabelEn": "Aries 24°17′",
-    "sectZh": "夜生盘",
-    "sectEn": "night chart",
-    "ruler": "太阳",
-    "fortuneHouse": 11,
-    "fortuneLabel": "社群愿景",
-    "fortuneLabelEn": "networks",
+    "birthLocal": "1882-01-25 12:15",
+    "tz": "Europe/London",
+    "asc": 70.53,
+    "ascLabel": "双子 10°32′",
+    "ascLabelEn": "Gemini 10°32′",
+    "mcLabel": "水瓶 5°56′",
+    "mcLabelEn": "Aquarius 5°56′",
+    "sectZh": "昼生盘",
+    "sectEn": "day chart",
+    "ruler": "水星",
+    "fortuneHouse": 4,
+    "fortuneLabel": "家庭根基",
+    "fortuneLabelEn": "home",
     "bodies": [
       {
         "name": "太阳",
-        "lon": 212.71,
-        "sign": "天蝎",
-        "signEn": "Scorpio",
-        "deg": 2.7,
-        "label": "天蝎 2°43′",
-        "labelEn": "Scorpio 2°43′",
-        "house": 4,
-        "dignity": "",
-        "glyph": "☉"
+        "lon": 305.49,
+        "sign": "水瓶",
+        "signEn": "Aquarius",
+        "deg": 5.5,
+        "label": "水瓶 5°30′",
+        "labelEn": "Aquarius 5°30′",
+        "house": 9,
+        "dignity": "失势",
+        "glyph": "☉",
+        "dignityEn": "detriment"
       },
       {
         "name": "月亮",
-        "lon": 246.57,
-        "sign": "射手",
-        "signEn": "Sagittarius",
-        "deg": 6.6,
-        "label": "射手 6°34′",
-        "labelEn": "Sagittarius 6°34′",
-        "house": 5,
+        "lon": 23.74,
+        "sign": "白羊",
+        "signEn": "Aries",
+        "deg": 23.7,
+        "label": "白羊 23°44′",
+        "labelEn": "Aries 23°44′",
+        "house": 12,
         "dignity": "",
         "glyph": "☽"
       },
       {
         "name": "水星",
-        "lon": 234.24,
-        "sign": "天蝎",
-        "signEn": "Scorpio",
-        "deg": 24.2,
-        "label": "天蝎 24°14′",
-        "labelEn": "Scorpio 24°14′",
-        "house": 4,
+        "lon": 318.06,
+        "sign": "水瓶",
+        "signEn": "Aquarius",
+        "deg": 18.1,
+        "label": "水瓶 18°04′",
+        "labelEn": "Aquarius 18°04′",
+        "house": 10,
         "dignity": "",
         "glyph": "☿"
       },
       {
         "name": "金星",
-        "lon": 184.53,
-        "sign": "天秤",
-        "signEn": "Libra",
-        "deg": 4.5,
-        "label": "天秤 4°32′",
-        "labelEn": "Libra 4°32′",
-        "house": 3,
-        "dignity": "入庙",
-        "glyph": "♀",
-        "dignityEn": "domicile"
+        "lon": 299.08,
+        "sign": "摩羯",
+        "signEn": "Capricorn",
+        "deg": 29.1,
+        "label": "摩羯 29°05′",
+        "labelEn": "Capricorn 29°05′",
+        "house": 9,
+        "dignity": "",
+        "glyph": "♀"
       },
       {
         "name": "火星",
-        "lon": 102.36,
-        "sign": "巨蟹",
-        "signEn": "Cancer",
-        "deg": 12.4,
-        "label": "巨蟹 12°22′",
-        "labelEn": "Cancer 12°22′",
-        "house": 12,
-        "dignity": "落陷",
-        "glyph": "♂",
-        "dignityEn": "fall"
+        "lon": 87.42,
+        "sign": "双子",
+        "signEn": "Gemini",
+        "deg": 27.4,
+        "label": "双子 27°25′",
+        "labelEn": "Gemini 27°25′",
+        "house": 1,
+        "dignity": "",
+        "glyph": "♂"
       },
       {
         "name": "木星",
-        "lon": 53.26,
+        "lon": 46.35,
         "sign": "金牛",
         "signEn": "Taurus",
-        "deg": 23.3,
-        "label": "金牛 23°16′",
-        "labelEn": "Taurus 23°16′",
-        "house": 10,
+        "deg": 16.3,
+        "label": "金牛 16°21′",
+        "labelEn": "Taurus 16°21′",
+        "house": 12,
         "dignity": "",
         "glyph": "♃"
       },
       {
         "name": "土星",
-        "lon": 40.04,
+        "lon": 36.39,
         "sign": "金牛",
         "signEn": "Taurus",
-        "deg": 10.0,
-        "label": "金牛 10°02′",
-        "labelEn": "Taurus 10°02′",
-        "house": 10,
+        "deg": 6.4,
+        "label": "金牛 6°24′",
+        "labelEn": "Taurus 6°24′",
+        "house": 12,
         "dignity": "",
         "glyph": "♄"
       },
       {
         "name": "天王星",
-        "lon": 167.07,
+        "lon": 168.12,
         "sign": "处女",
         "signEn": "Virgo",
-        "deg": 17.1,
-        "label": "处女 17°04′",
-        "labelEn": "Virgo 17°04′",
-        "house": 2,
+        "deg": 18.1,
+        "label": "处女 18°07′",
+        "labelEn": "Virgo 18°07′",
+        "house": 5,
         "dignity": "",
         "glyph": "♅"
       },
       {
         "name": "海王星",
-        "lon": 45.51,
+        "lon": 43.77,
         "sign": "金牛",
         "signEn": "Taurus",
-        "deg": 15.5,
-        "label": "金牛 15°30′",
-        "labelEn": "Taurus 15°30′",
-        "house": 10,
+        "deg": 13.8,
+        "label": "金牛 13°46′",
+        "labelEn": "Taurus 13°46′",
+        "house": 12,
         "dignity": "",
         "glyph": "♆"
       },
       {
         "name": "冥王星",
-        "lon": 59.72,
+        "lon": 58.31,
         "sign": "金牛",
         "signEn": "Taurus",
-        "deg": 29.7,
-        "label": "金牛 29°43′",
-        "labelEn": "Taurus 29°43′",
-        "house": 10,
+        "deg": 28.3,
+        "label": "金牛 28°19′",
+        "labelEn": "Taurus 28°19′",
+        "house": 12,
         "dignity": "",
         "glyph": "♇"
       }
@@ -1464,185 +1463,177 @@ window.DIGEST_DATA = {
     "cusps": [
       {
         "house": 1,
-        "lon": 125.04,
-        "sign": "狮子",
-        "label": "狮子 5°02′",
-        "labelEn": "Leo 5°02′"
+        "lon": 70.53,
+        "sign": "双子",
+        "label": "双子 10°32′",
+        "labelEn": "Gemini 10°32′"
       },
       {
         "house": 2,
-        "lon": 146.68,
-        "sign": "狮子",
-        "label": "狮子 26°41′",
-        "labelEn": "Leo 26°41′"
+        "lon": 90.33,
+        "sign": "巨蟹",
+        "label": "巨蟹 0°20′",
+        "labelEn": "Cancer 0°20′"
       },
       {
         "house": 3,
-        "lon": 172.62,
-        "sign": "处女",
-        "label": "处女 22°37′",
-        "labelEn": "Virgo 22°37′"
+        "lon": 107.24,
+        "sign": "巨蟹",
+        "label": "巨蟹 17°15′",
+        "labelEn": "Cancer 17°15′"
       },
       {
         "house": 4,
-        "lon": 204.29,
-        "sign": "天秤",
-        "label": "天秤 24°17′",
-        "labelEn": "Libra 24°17′"
+        "lon": 125.94,
+        "sign": "狮子",
+        "label": "狮子 5°56′",
+        "labelEn": "Leo 5°56′"
       },
       {
         "house": 5,
-        "lon": 239.97,
-        "sign": "天蝎",
-        "label": "天蝎 29°58′",
-        "labelEn": "Scorpio 29°58′"
+        "lon": 151.63,
+        "sign": "处女",
+        "label": "处女 1°38′",
+        "labelEn": "Virgo 1°38′"
       },
       {
         "house": 6,
-        "lon": 274.62,
-        "sign": "摩羯",
-        "label": "摩羯 4°37′",
-        "labelEn": "Capricorn 4°37′"
+        "lon": 194.16,
+        "sign": "天秤",
+        "label": "天秤 14°09′",
+        "labelEn": "Libra 14°09′"
       },
       {
         "house": 7,
-        "lon": 305.04,
-        "sign": "水瓶",
-        "label": "水瓶 5°02′",
-        "labelEn": "Aquarius 5°02′"
+        "lon": 250.53,
+        "sign": "射手",
+        "label": "射手 10°32′",
+        "labelEn": "Sagittarius 10°32′"
       },
       {
         "house": 8,
-        "lon": 326.68,
-        "sign": "水瓶",
-        "label": "水瓶 26°41′",
-        "labelEn": "Aquarius 26°41′"
+        "lon": 270.33,
+        "sign": "摩羯",
+        "label": "摩羯 0°20′",
+        "labelEn": "Capricorn 0°20′"
       },
       {
         "house": 9,
-        "lon": 352.62,
-        "sign": "双鱼",
-        "label": "双鱼 22°37′",
-        "labelEn": "Pisces 22°37′"
+        "lon": 287.24,
+        "sign": "摩羯",
+        "label": "摩羯 17°15′",
+        "labelEn": "Capricorn 17°15′"
       },
       {
         "house": 10,
-        "lon": 24.29,
-        "sign": "白羊",
-        "label": "白羊 24°17′",
-        "labelEn": "Aries 24°17′"
+        "lon": 305.94,
+        "sign": "水瓶",
+        "label": "水瓶 5°56′",
+        "labelEn": "Aquarius 5°56′"
       },
       {
         "house": 11,
-        "lon": 59.97,
-        "sign": "金牛",
-        "label": "金牛 29°58′",
-        "labelEn": "Taurus 29°58′"
+        "lon": 331.63,
+        "sign": "双鱼",
+        "label": "双鱼 1°38′",
+        "labelEn": "Pisces 1°38′"
       },
       {
         "house": 12,
-        "lon": 94.62,
-        "sign": "巨蟹",
-        "label": "巨蟹 4°37′",
-        "labelEn": "Cancer 4°37′"
+        "lon": 14.16,
+        "sign": "白羊",
+        "label": "白羊 14°09′",
+        "labelEn": "Aries 14°09′"
       }
     ],
     "aspects": [
       {
-        "a": "水星",
-        "b": "木星",
-        "aspect": "冲相",
-        "nature": "对峙",
-        "orb": 1.0,
-        "sep": 179.0
-      },
-      {
-        "a": "水星",
-        "b": "冥王星",
-        "aspect": "冲相",
-        "nature": "对峙",
-        "orb": 5.5,
-        "sep": 174.5
-      },
-      {
-        "a": "月亮",
-        "b": "冥王星",
-        "aspect": "冲相",
-        "nature": "对峙",
-        "orb": 6.8,
-        "sep": 173.2
-      },
-      {
         "a": "太阳",
         "b": "土星",
-        "aspect": "冲相",
-        "nature": "对峙",
-        "orb": 7.3,
-        "sep": 172.7
+        "aspect": "刑相",
+        "nature": "张力",
+        "orb": 0.9,
+        "sep": 90.9
       },
       {
-        "a": "天王星",
+        "a": "水星",
+        "b": "木星",
+        "aspect": "刑相",
+        "nature": "张力",
+        "orb": 1.7,
+        "sep": 88.3
+      },
+      {
+        "a": "水星",
         "b": "海王星",
-        "aspect": "拱相",
-        "nature": "和谐",
-        "orb": 1.6,
-        "sep": 121.6
+        "aspect": "刑相",
+        "nature": "张力",
+        "orb": 4.3,
+        "sep": 85.7
       },
       {
         "a": "月亮",
         "b": "金星",
-        "aspect": "六分相",
-        "nature": "顺畅",
-        "orb": 2.0,
-        "sep": 62.0
-      },
-      {
-        "a": "火星",
-        "b": "土星",
-        "aspect": "六分相",
-        "nature": "顺畅",
-        "orb": 2.3,
-        "sep": 62.3
-      },
-      {
-        "a": "火星",
-        "b": "海王星",
-        "aspect": "六分相",
-        "nature": "顺畅",
-        "orb": 3.1,
-        "sep": 56.9
+        "aspect": "刑相",
+        "nature": "张力",
+        "orb": 5.3,
+        "sep": 84.7
       },
       {
         "a": "金星",
         "b": "冥王星",
         "aspect": "拱相",
         "nature": "和谐",
-        "orb": 4.8,
-        "sep": 124.8
+        "orb": 0.8,
+        "sep": 119.2
+      },
+      {
+        "a": "木星",
+        "b": "天王星",
+        "aspect": "拱相",
+        "nature": "和谐",
+        "orb": 1.8,
+        "sep": 121.8
+      },
+      {
+        "a": "木星",
+        "b": "海王星",
+        "aspect": "合相",
+        "nature": "融合",
+        "orb": 2.6,
+        "sep": 2.6
+      },
+      {
+        "a": "月亮",
+        "b": "火星",
+        "aspect": "六分相",
+        "nature": "顺畅",
+        "orb": 3.7,
+        "sep": 63.7
+      },
+      {
+        "a": "天王星",
+        "b": "海王星",
+        "aspect": "拱相",
+        "nature": "和谐",
+        "orb": 4.3,
+        "sep": 124.3
+      },
+      {
+        "a": "太阳",
+        "b": "金星",
+        "aspect": "合相",
+        "nature": "融合",
+        "orb": 6.4,
+        "sep": 6.4
       },
       {
         "a": "土星",
         "b": "海王星",
         "aspect": "合相",
         "nature": "融合",
-        "orb": 5.5,
-        "sep": 5.5
-      },
-      {
-        "a": "木星",
-        "b": "冥王星",
-        "aspect": "合相",
-        "nature": "融合",
-        "orb": 6.5,
-        "sep": 6.5
-      },
-      {
-        "a": "木星",
-        "b": "海王星",
-        "aspect": "合相",
-        "nature": "融合",
-        "orb": 7.8,
-        "sep": 7.8
+        "orb": 7.4,
+        "sep": 7.4
       }
     ],
     "sections": [
@@ -1650,71 +1641,71 @@ window.DIGEST_DATA = {
         "id": "overall",
         "title": "整体",
         "titleEn": "Overview",
-        "text": "巴勃罗·毕加索的主轴是天蝎太阳、射手月亮、狮子上升：别人先看到自信外放的一面，心里其实更需要开阔乐观的感觉，做选择时又常按深沉专注的太阳来定方向。太阳在第4宫，成就感多半来自「家庭根基」。月亮在第5宫，心情也常跟「恋爱创造」绑在一起。此为夜生盘。",
-        "textEn": "Sun in Scorpio (house 4), Moon in Sagittarius (house 5), Leo rising — first impression radiant, inner need expansive, will intense.",
-        "verify": "事迹验证：立体主义与不断变风，使个人风格本身成为 20 世纪艺术史主线。",
-        "verifyEn": "Life check: 立体主义与不断变风，使个人风格本身成为 20 世纪艺术史主线。"
+        "text": "弗吉尼亚·伍尔夫的主轴是水瓶太阳、白羊月亮、双子上升：别人先看到灵活善言的一面，心里其实更需要主动果断的感觉，做选择时又常按独立创新的太阳来定方向。太阳在第9宫，成就感多半来自「远行信念」。月亮在第12宫，心情也常跟「内在修复」绑在一起。此为昼生盘。",
+        "textEn": "Sun in Aquarius (house 9), Moon in Aries (house 12), Gemini rising — first impression quick-witted, inner need decisive, will independent.",
+        "verify": "事迹验证：意识流小说与布卢姆斯伯里圈子，把内心独白写成现代主义方法。",
+        "verifyEn": "Life check: 意识流小说与布卢姆斯伯里圈子，把内心独白写成现代主义方法。"
       },
       {
         "id": "personality",
         "title": "性格",
         "titleEn": "Personality",
-        "text": "性格底色：上升狮子给外界的第一印象是自信外放；月亮射手管情绪习惯，偏开阔乐观；太阳天蝎管意志，做事时更深沉专注。水星在天蝎第4宫，思考和表达会往「家庭根基」上靠。水星与木星的冲相会写进性格里，成为别人一眼能感到的节奏。",
-        "textEn": "Rising Leo (radiant); Moon Sagittarius (expansive); Sun Scorpio (intense).",
-        "verify": "事迹验证：精力旺盛、占有欲强，工作与私生活都极度自我中心。",
-        "verifyEn": "Life check: 精力旺盛、占有欲强，工作与私生活都极度自我中心。"
+        "text": "性格底色：上升双子给外界的第一印象是灵活善言；月亮白羊管情绪习惯，偏主动果断；太阳水瓶管意志，做事时更独立创新。水星在水瓶第10宫，思考和表达会往「事业声望」上靠。一宫有火星坐守，自我气质会被这些星直接点亮。太阳与土星的刑相会写进性格里，成为别人一眼能感到的节奏。",
+        "textEn": "Rising Gemini (quick-witted); Moon Aries (decisive); Sun Aquarius (independent).",
+        "verify": "事迹验证：敏锐、易受刺激，对声音与评价极度敏感。",
+        "verifyEn": "Life check: 敏锐、易受刺激，对声音与评价极度敏感。"
       },
       {
         "id": "career",
         "title": "事业",
         "titleEn": "Career",
-        "text": "中天在白羊，公开成就的底色偏主动果断；十宫主火星飞入第12宫（内在修复），事业起伏常跟这里连在一起；十宫有木星、土星、海王星和冥王星坐守，公开成绩主题会被点亮；太阳在天蝎第4宫，干劲多半使在「不动产、家庭事业或后方支持」上。适合方向：适合开创、带队或需要决断力的一线岗位。做事风格偏务实克制（六宫在摩羯）。火星六分相土星偏顺，合作或曝光更自然。",
-        "textEn": "MC in Aries: 适合开创、带队或需要决断力的一线岗位 Tenth-ruler story sits in house 12.",
-        "verify": "事迹验证：从蓝色时期到格尔尼卡，长期占据画市与博物馆核心。",
-        "verifyEn": "Life check: 从蓝色时期到格尔尼卡，长期占据画市与博物馆核心。"
+        "text": "中天在水瓶，公开成就的底色偏独立创新；十宫主土星飞入第12宫（内在修复），事业起伏常跟这里连在一起；十宫有水星坐守，公开成绩主题会被点亮；太阳在水瓶第9宫，干劲多半使在「高等教育、出版传媒、跨境业务」上。适合方向：适合科技、社会创新、研究发明或非常规路径。做事风格偏讲究和谐（六宫在天秤）。太阳刑相土星带来张力，升迁路上宜耐得住磨。",
+        "textEn": "MC in Aquarius: 适合科技、社会创新、研究发明或非常规路径 Tenth-ruler story sits in house 12.",
+        "verify": "事迹验证：霍加斯出版社与《到灯塔去》《达洛维夫人》奠定地位。",
+        "verifyEn": "Life check: 霍加斯出版社与《到灯塔去》《达洛维夫人》奠定地位。"
       },
       {
         "id": "wealth",
         "title": "财富",
         "titleEn": "Wealth",
-        "text": "二宫在狮子，钱袋脾气偏自信外放；二宫主太阳飞入第4宫（家庭根基），进账松紧常跟这里连在一起；二宫有天王星坐守，自己挣钱存钱的主题会被点亮；金星在天秤第3宫，花钱更听「信息差、写作沟通、短途奔波与技能变现」的话。财富主要来自家庭支持、房产置业或老家资源。对金钱的态度：舍得在体面、兴趣和让自己出彩的地方花钱。水星冲相木星带来张力，理财上宜设规则。",
-        "textEn": "2nd house in Leo. Money path leans on 家庭支持、房产置业或老家资源.",
-        "verify": "事迹验证：生前已是超级富豪，作品成为资产。",
-        "verifyEn": "Life check: 生前已是超级富豪，作品成为资产。"
+        "text": "二宫在巨蟹，钱袋脾气偏细腻顾家；二宫主月亮飞入第12宫（内在修复），进账松紧常跟这里连在一起；金星在摩羯第9宫，花钱更听「远行、学历、出版、跨文化与开阔视野」的话。财富主要来自幕后、疗愈、隐秘渠道或需要独处的工作。对金钱的态度：安全感优先，存钱常为家人和情绪底盘服务。金星拱相冥王星偏顺，合作或顺势进账更自然。",
+        "textEn": "2nd house in Cancer. Money path leans on 幕后、疗愈、隐秘渠道或需要独处的工作.",
+        "verify": "事迹验证：出身文化中产，出版事业提供相对独立的经济。",
+        "verifyEn": "Life check: 出身文化中产，出版事业提供相对独立的经济。"
       },
       {
         "id": "love",
         "title": "感情",
         "titleEn": "Love",
-        "text": "七宫在水瓶，伴侣性格偏性格独立理性，需要被尊重空间；七宫主土星飞入第10宫，相处重心常在「事业声望」；金星在天秤第3宫，喜好滤镜偏讲究和谐。月亮六分相金星偏顺，吸引与互动来得更自然。",
-        "textEn": "7th house in Aquarius: partners tend to feel independent.",
-        "verify": "事迹验证：多段重要伴侣与子女关系，感情生活几乎与创作分期重叠。",
-        "verifyEn": "Life check: 多段重要伴侣与子女关系，感情生活几乎与创作分期重叠。"
+        "text": "七宫在射手，伴侣性格偏性格乐观开阔，不喜被绑太死；七宫主木星飞入第12宫，相处重心常在「内在修复」；金星在摩羯第9宫，喜好滤镜偏务实克制。金星拱相冥王星偏顺，吸引与互动来得更自然。",
+        "textEn": "7th house in Sagittarius: partners tend to feel expansive.",
+        "verify": "事迹验证：与伦纳德的婚姻稳定，同时有与维塔等女性的重要情感。",
+        "verifyEn": "Life check: 与伦纳德的婚姻稳定，同时有与维塔等女性的重要情感。"
       },
       {
         "id": "health",
         "title": "健康",
         "titleEn": "Health",
-        "text": "六宫在摩羯，日常保养节奏偏务实克制；上升在狮子，体质底色偏自信外放；六宫主土星飞入第10宫，体能起伏常跟「事业声望」绑在一起；十二宫有火星，独处恢复与睡眠格外重要。日常更需留意骨骼关节、皮肤屏障与慢性劳损，宜保暖、量力运动。十二宫在巨蟹，休息不足时更易出现隐性疲惫。",
-        "textEn": "6th house in Capricorn. Watch the body themes tied to Capricorn.",
-        "verify": "事迹验证：高寿，晚期仍大量工作，1973 年在法国去世。",
-        "verifyEn": "Life check: 高寿，晚期仍大量工作，1973 年在法国去世。"
+        "text": "六宫在天秤，日常保养节奏偏讲究和谐；上升在双子，体质底色偏灵活善言；六宫主金星飞入第9宫，体能起伏常跟「远行信念」绑在一起；十二宫有月亮、木星、土星、海王星和冥王星，独处恢复与睡眠格外重要。日常更需留意腰肾、皮肤与平衡感，宜作息对称、少久坐。十二宫在白羊，休息不足时更易出现隐性疲惫。",
+        "textEn": "6th house in Libra. Watch the body themes tied to Libra.",
+        "verify": "事迹验证：反复抑郁，1941 年投河自尽。",
+        "verifyEn": "Life check: 反复抑郁，1941 年投河自尽。"
       }
     ],
     "techniqueZh": "分宫用普拉西德斯制（与星星日记本命盘相同）：看宫头、宫主飞星、落宫与相位。论述按整体、性格、事业、财富、感情、健康展开，再用公开事迹对照，并非某专栏转载。出生数据见 Astro-Databank（Rodden 评级）。",
     "techniqueEn": "Placidus houses, as in the Star Diary natal module: cusps, house rulers, occupancy, aspects. Notes cover overview, personality, career, wealth, love and health, then check public biography. Birth data: Astro-Databank.",
     "houseSystem": "普拉西德斯制 Placidus",
-    "date": "2026-09-05"
+    "date": "2026-09-06"
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 35% · Fading",
+    "moonLine": "Glossy 31% · Fading",
     "blessing": "The moon is only a thin curve, wanting to be warmed. Venus can be seen in the west, and I feel a bit awkward about it, so I need to settle myself first.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 35%, the age is about 24 days, and it is gradually losing weight."
+        "caption": "The bright side is about 31%, the moon age is about 24 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -1726,7 +1717,7 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Jupiter is visible in the eastern sky",
-        "caption": "About 28 degrees from the sun, look for it in the eastern sky before dawn."
+        "caption": "About 29 degrees from the sun, look for it in the eastern sky before dawn."
       },
       {
         "title": "Saturn is visible in the eastern sky",
@@ -1753,12 +1744,12 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Moon",
-        "label": "Cancer 0°",
+        "label": "Cancer 6°",
         "influence": "With the moon in Cancer, the mood is soft and family-oriented, and it is appropriate to take care of and calm the mind."
       },
       {
         "name": "Mercury",
-        "label": "Virgo 21°",
+        "label": "Virgo 22°",
         "influence": "With Mercury in Virgo, communication and thoughts tend to be more detailed and clear, so it is better to organize and be precise."
       },
       {
@@ -1768,18 +1759,18 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Mars",
-        "label": "Cancer 16°",
+        "label": "Cancer 17°",
         "influence": "Mars is in Cancer, so people tend to be soft-hearted and take care of the family, so they should take care of themselves and have peace of mind."
       }
     ],
     "aspects": [
       {
-        "a": "Mars",
-        "b": "Saturn",
+        "a": "Moon",
+        "b": "Neptune",
         "aspect": "Square",
         "tone": "tense",
-        "influence": "If you want to move but get stuck, it is better to break it into small steps and avoid forcing the move.",
-        "endsIn": "ends in about 4 days"
+        "influence": "The moon is square to Neptune, and your emotions and intuition can easily get awkward, so you should slow down before making a decision.",
+        "endsIn": "约 7 小时后结束"
       },
       {
         "a": "Sun",
@@ -1790,20 +1781,12 @@ window.DIGEST_DATA = {
         "endsIn": "约 3 周后结束"
       },
       {
-        "a": "Moon",
-        "b": "Neptune",
+        "a": "Mars",
+        "b": "Saturn",
         "aspect": "Square",
         "tone": "tense",
-        "influence": "The moon is square to Neptune, and your emotions and intuition can easily get awkward, so you should slow down before making a decision.",
-        "endsIn": "约 16 小时后结束"
-      },
-      {
-        "a": "Moon",
-        "b": "Venus",
-        "aspect": "Trine",
-        "tone": "easy",
-        "influence": "The moon trines Venus, and emotions can advance smoothly through the power of emotions.",
-        "endsIn": "约 5 小时后结束"
+        "influence": "If you want to move but get stuck, it is better to break it into small steps and avoid forcing the move.",
+        "endsIn": "ends in about 4 days"
       }
     ],
     "influence": {
