@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-06",
   "weekday": "星期日",
-  "fetchedAt": "2026-09-06 06:35",
+  "fetchedAt": "2026-09-06 15:39",
   "freshHours": 36,
   "sections": [
     {
@@ -117,6 +117,17 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "660: New Moon in Virgo & Other Rituals",
+              "url": "812a0bac-a9a5-11f1-84ad-cf7d12f79559",
+              "summary": "A New Moon in Virgo! Venus and Chiron at odds! Mercury and Neptune are opposite! It's another week in paradise, on Ghost of a Podcast. Watch the video version…",
+              "published": "2026-09-06T13:30:00+08:00",
+              "ts": 1788672600,
+              "kind": "podcast",
+              "durationMin": 29,
+              "titleZh": "660：处女座新月及其他仪式",
+              "summaryZh": "处女座新月！金星和凯龙星不和！水星和海王星对冲！播客幽灵又迎来了天堂般的一周。观看视频版本..."
+            },
+            {
               "title": "659: Dying",
               "url": "1dbe7770-a684-11f1-be89-531c62abbd9f",
               "summary": "Naomi has received a third cancer diagnosis, and the doctors have told her that this time she will die of it. She's been tending gracefully to her inner life a…",
@@ -192,17 +203,6 @@ window.DIGEST_DATA = {
               "durationMin": 15,
               "titleZh": "653：你的管理职责",
               "summaryZh": "杰西卡本周从阅读中休息一下，转而分享了她的 Patreon 上关于管理权的一些内容——它是什么以及如何驾驭其中的内容……"
-            },
-            {
-              "title": "652: Horoscope - If Only it Was Just the Solar Eclipse",
-              "url": "8c05ef62-93ae-11f1-be63-ef2d1215d1b1",
-              "summary": "On the 12th, there will be a Solar Eclipse in Leo—but not before a bunch of other challenging transits get activated! Mercury and Chiron square off, Venus sits…",
-              "published": "2026-08-09T14:01:00+08:00",
-              "ts": 1786255260,
-              "kind": "podcast",
-              "durationMin": 56,
-              "titleZh": "652：星座运势 - 如果只是日食就好了",
-              "summaryZh": "在12日，狮子座将会有一个日食-但不是在一堆其他具有挑战性的行运被激活之前！水星和凯龙星在广场上，金星坐着……"
             }
           ]
         },
@@ -1699,17 +1699,21 @@ window.DIGEST_DATA = {
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 31% · Fading",
-    "blessing": "The moon is only a thin curve, wanting to be warmed. Venus can be seen in the west, and I feel a bit awkward about it, so I need to settle myself first.",
+    "moonLine": "Glossy 27% · Fading",
+    "blessing": "The moon is only a thin curve, wanting to be warmed. Venus can be seen in the west. If you get stuck, break it into small steps and settle yourself first.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 31%, the moon age is about 24 days, and it is gradually losing weight."
+        "caption": "The bright side is about 27%, the moon age is about 24 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
-        "caption": "About 44 degrees from the sun, look for it in the western sky after sunset."
+        "caption": "About 43 degrees from the sun, look for it in the western sky after sunset."
+      },
+      {
+        "title": "Moon accompanying Mars",
+        "caption": "The Moon is close to Mars, about 5 degrees away."
       },
       {
         "title": "Mars is visible in the eastern sky",
@@ -1721,7 +1725,7 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Saturn is visible in the eastern sky",
-        "caption": "About 150 degrees from the sun, look for it in the eastern sky before dawn."
+        "caption": "About 151 degrees from the sun, look for it in the eastern sky before dawn."
       },
       {
         "title": "Saturn is retrograde",
@@ -1730,21 +1734,17 @@ window.DIGEST_DATA = {
       {
         "title": "Neptune is retrograde",
         "caption": "Neptune moves slowly westward relative to the stellar background."
-      },
-      {
-        "title": "Pluto in retrograde",
-        "caption": "Pluto moves slowly westward relative to the stellar background."
       }
     ],
     "signs": [
       {
         "name": "Sun",
-        "label": "Virgo 13°",
+        "label": "Virgo 14°",
         "influence": "If the Sun is in Virgo, your temperament will be delicate and clear, and you should be organized and precise."
       },
       {
         "name": "Moon",
-        "label": "Cancer 6°",
+        "label": "Cancer 11°",
         "influence": "With the moon in Cancer, the mood is soft and family-oriented, and it is appropriate to take care of and calm the mind."
       },
       {
@@ -1766,11 +1766,19 @@ window.DIGEST_DATA = {
     "aspects": [
       {
         "a": "Moon",
-        "b": "Neptune",
+        "b": "Saturn",
         "aspect": "Square",
         "tone": "tense",
-        "influence": "The moon is square to Neptune, and your emotions and intuition can easily get awkward, so you should slow down before making a decision.",
-        "endsIn": "约 7 小时后结束"
+        "influence": "When the moon is square to Saturn, emotions and responsibilities can easily get awkward, so you should slow down before making a decision.",
+        "endsIn": "约 13 小时后结束"
+      },
+      {
+        "a": "Sun",
+        "b": "Moon",
+        "aspect": "Sextile",
+        "tone": "easy",
+        "influence": "With the Sun sextile the Moon, there is a chance for self and emotions to connect, just a little movement.",
+        "endsIn": "约 12 小时后结束"
       },
       {
         "a": "Sun",
@@ -1787,6 +1795,22 @@ window.DIGEST_DATA = {
         "tone": "tense",
         "influence": "If you want to move but get stuck, it is better to break it into small steps and avoid forcing the move.",
         "endsIn": "ends in about 4 days"
+      },
+      {
+        "a": "Moon",
+        "b": "Mars",
+        "aspect": "Conjunction",
+        "tone": "blend",
+        "influence": "Emotions are fiery, quick to respond, and avoid irritating those close to you.",
+        "endsIn": "ends in about 1 days"
+      },
+      {
+        "a": "Venus",
+        "b": "Pluto",
+        "aspect": "Square",
+        "tone": "tense",
+        "influence": "Venus squares Pluto, relationships and transformations are prone to awkwardness, so it’s better to slow down before making a decision.",
+        "endsIn": "约 8 周后结束"
       }
     ],
     "influence": {
