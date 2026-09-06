@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-06",
   "weekday": "星期日",
-  "fetchedAt": "2026-09-06 15:39",
+  "fetchedAt": "2026-09-06 21:35",
   "freshHours": 36,
   "sections": [
     {
@@ -1699,13 +1699,13 @@ window.DIGEST_DATA = {
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 27% · Fading",
-    "blessing": "The moon is only a thin curve, wanting to be warmed. Venus can be seen in the west. If you get stuck, break it into small steps and settle yourself first.",
+    "moonLine": "Glossy 24% · Fading",
+    "blessing": "The moon is only a thin curve, wanting to be warmed. Venus can be seen in the west. If your work matches your mood, settle yourself first.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 27%, the moon age is about 24 days, and it is gradually losing weight."
+        "caption": "The bright side is about 24%, the age is about 25 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -1713,7 +1713,7 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Moon accompanying Mars",
-        "caption": "The Moon is close to Mars, about 5 degrees away."
+        "caption": "The Moon is close to Mars, about 2 degrees away."
       },
       {
         "title": "Mars is visible in the eastern sky",
@@ -1744,12 +1744,12 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Moon",
-        "label": "Cancer 11°",
+        "label": "Cancer 15°",
         "influence": "With the moon in Cancer, the mood is soft and family-oriented, and it is appropriate to take care of and calm the mind."
       },
       {
         "name": "Mercury",
-        "label": "Virgo 22°",
+        "label": "Virgo 23°",
         "influence": "With Mercury in Virgo, communication and thoughts tend to be more detailed and clear, so it is better to organize and be precise."
       },
       {
@@ -1765,20 +1765,28 @@ window.DIGEST_DATA = {
     ],
     "aspects": [
       {
-        "a": "Moon",
-        "b": "Saturn",
-        "aspect": "Square",
-        "tone": "tense",
-        "influence": "When the moon is square to Saturn, emotions and responsibilities can easily get awkward, so you should slow down before making a decision.",
-        "endsIn": "约 13 小时后结束"
-      },
-      {
         "a": "Sun",
         "b": "Moon",
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "With the Sun sextile the Moon, there is a chance for self and emotions to connect, just a little movement.",
-        "endsIn": "约 12 小时后结束"
+        "endsIn": "约 6 小时后结束"
+      },
+      {
+        "a": "Moon",
+        "b": "Saturn",
+        "aspect": "Square",
+        "tone": "tense",
+        "influence": "When the moon is square to Saturn, emotions and responsibilities can easily get awkward, so you should slow down before making a decision.",
+        "endsIn": "约 8 小时后结束"
+      },
+      {
+        "a": "Moon",
+        "b": "Mars",
+        "aspect": "Conjunction",
+        "tone": "blend",
+        "influence": "Emotions are fiery, quick to respond, and avoid irritating those close to you.",
+        "endsIn": "约 18 小时后结束"
       },
       {
         "a": "Sun",
@@ -1795,14 +1803,6 @@ window.DIGEST_DATA = {
         "tone": "tense",
         "influence": "If you want to move but get stuck, it is better to break it into small steps and avoid forcing the move.",
         "endsIn": "ends in about 4 days"
-      },
-      {
-        "a": "Moon",
-        "b": "Mars",
-        "aspect": "Conjunction",
-        "tone": "blend",
-        "influence": "Emotions are fiery, quick to respond, and avoid irritating those close to you.",
-        "endsIn": "ends in about 1 days"
       },
       {
         "a": "Venus",
