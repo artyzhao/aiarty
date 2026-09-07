@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-07",
   "weekday": "星期一",
-  "fetchedAt": "2026-09-07 06:36",
+  "fetchedAt": "2026-09-07 15:42",
   "freshHours": 36,
   "sections": [
     {
@@ -1121,6 +1121,17 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "The Fire Horse at Mid-Year: When Capital Flows Outrun Fundamentals",
+              "url": "https://bondvigilantes.com/blog/2026/09/the-fire-horse-at-mid-year-when-capital-flows-outrun-fundamentals/",
+              "summary": "the start of the Year of the Fire Horse, we argued that Asian currencies were approaching a potentially important turning point. Stronger trade balances and ev…",
+              "published": "2026-09-07T15:11:47+08:00",
+              "ts": 1788765107,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "年中的火马：当资本流动超出基本面时",
+              "summaryZh": "在火马年伊始，我们认为亚洲货币正在接近一个潜在的重要转折点。更强劲的贸易平衡和…"
+            },
+            {
               "title": "1,000 Days of Milei",
               "url": "https://bondvigilantes.com/blog/2026/09/1000-days-of-milei/",
               "summary": "thousand days is a long time in politics. When I wrote about Javier Milei's first 100 days in office, Argentina was embarking on yet another attempt to break f…",
@@ -1196,17 +1207,6 @@ window.DIGEST_DATA = {
               "durationMin": 0,
               "titleZh": "吉姆·利维斯",
               "summaryZh": "非常遗憾地宣布吉姆·利维斯 (Jim Leaviss) 于 2026 年 7 月 23 日去世，享年 55 岁。"
-            },
-            {
-              "title": "The foundations of Australia’s housing boom are being tested",
-              "url": "https://bondvigilantes.com/blog/2026/07/the-foundations-of-australias-housing-boom-are-being-tested/",
-              "summary": "years, Australian residential property has been viewed as a one-way bet. Mention the possibility of falling house prices and you’re often met with disbelief. P…",
-              "published": "2026-07-21T21:40:42+08:00",
-              "ts": 1784641242,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "澳大利亚房地产繁荣的基础正在经受考验",
-              "summaryZh": "多年来，澳大利亚住宅物业一直被视为一种单向赌注。提到房价下跌的可能性，你常常会感到难以置信。普…"
             }
           ]
         },
@@ -1702,21 +1702,17 @@ window.DIGEST_DATA = {
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 21% · Fading",
+    "moonLine": "Glossy 17% · Fading",
     "blessing": "The moon is only a thin curve, wanting to be warmed. Venus can be seen in the west, and my speech and thoughts are quite smooth. I need to settle myself first.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 21%, the age is about 25 days, and it is gradually losing weight."
+        "caption": "The bright side is about 17%, the moon age is about 26 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
         "caption": "About 43 degrees from the sun, look for it in the western sky after sunset."
-      },
-      {
-        "title": "Moon accompanying Mars",
-        "caption": "The Moon is close to Mars, about 3 degrees away."
       },
       {
         "title": "Mars is visible in the eastern sky",
@@ -1724,11 +1720,11 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Jupiter is visible in the eastern sky",
-        "caption": "About 29 degrees from the sun, look for it in the eastern sky before dawn."
+        "caption": "About 30 degrees from the sun, look for it in the eastern sky before dawn."
       },
       {
         "title": "Saturn is visible in the eastern sky",
-        "caption": "About 151 degrees from the sun, look for it in the eastern sky before dawn."
+        "caption": "About 152 degrees from the sun, look for it in the eastern sky before dawn."
       },
       {
         "title": "Saturn is retrograde",
@@ -1737,17 +1733,21 @@ window.DIGEST_DATA = {
       {
         "title": "Neptune is retrograde",
         "caption": "Neptune moves slowly westward relative to the stellar background."
+      },
+      {
+        "title": "Pluto in retrograde",
+        "caption": "Pluto moves slowly westward relative to the stellar background."
       }
     ],
     "signs": [
       {
         "name": "Sun",
-        "label": "Virgo 14°",
+        "label": "Virgo 15°",
         "influence": "If the Sun is in Virgo, your temperament will be delicate and clear, and you should be organized and precise."
       },
       {
         "name": "Moon",
-        "label": "Cancer 20°",
+        "label": "Cancer 26°",
         "influence": "With the moon in Cancer, the mood is soft and family-oriented, and it is appropriate to take care of and calm the mind."
       },
       {
@@ -1768,28 +1768,28 @@ window.DIGEST_DATA = {
     ],
     "aspects": [
       {
+        "a": "Moon",
+        "b": "Mercury",
+        "aspect": "Sextile",
+        "tone": "easy",
+        "influence": "The moon is sextile to Mercury, and emotions and communication have a chance to connect, just move a little bit.",
+        "endsIn": "约 5 小时后结束"
+      },
+      {
+        "a": "Moon",
+        "b": "Venus",
+        "aspect": "Square",
+        "tone": "tense",
+        "influence": "When the moon is square to Venus, emotions and feelings can easily get awkward, so you should slow down before making a decision.",
+        "endsIn": "约 15 小时后结束"
+      },
+      {
         "a": "Sun",
         "b": "Mars",
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "The Sun is sextile to Mars, and there is a chance for self and action to connect, just make a little move.",
         "endsIn": "约 3 周后结束"
-      },
-      {
-        "a": "Moon",
-        "b": "Mercury",
-        "aspect": "Sextile",
-        "tone": "easy",
-        "influence": "The moon is sextile to Mercury, and emotions and communication have a chance to connect, just move a little bit.",
-        "endsIn": "约 14 小时后结束"
-      },
-      {
-        "a": "Moon",
-        "b": "Mars",
-        "aspect": "Conjunction",
-        "tone": "blend",
-        "influence": "Emotions are fiery, quick to respond, and avoid irritating those close to you.",
-        "endsIn": "约 9 小时后结束"
       },
       {
         "a": "Mars",
@@ -1806,6 +1806,14 @@ window.DIGEST_DATA = {
         "tone": "tense",
         "influence": "Venus squares Pluto, relationships and transformations are prone to awkwardness, so it’s better to slow down before making a decision.",
         "endsIn": "约 8 周后结束"
+      },
+      {
+        "a": "Moon",
+        "b": "Pluto",
+        "aspect": "Opposition",
+        "tone": "tense",
+        "influence": "The moon opposes Pluto, and emotions and transformations are pulled together, so you need to find a middle point.",
+        "endsIn": "ends in about 1 days"
       }
     ],
     "influence": {
