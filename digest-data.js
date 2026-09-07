@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-07",
   "weekday": "星期一",
-  "fetchedAt": "2026-09-07 15:42",
+  "fetchedAt": "2026-09-07 21:39",
   "freshHours": 36,
   "sections": [
     {
@@ -1023,6 +1023,17 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "Why Money Launderers Love $100 Bills",
+              "url": "https://omny.fm/shows/odd-lots/why-money-launderers-love-100-bills",
+              "summary": "Hardly anyone nowadays seems to carry much cash, never mind carrying around a bunch of $100 bills. So why does the amount of physical cash in circulation — esp…",
+              "published": "2026-09-07T16:00:00+08:00",
+              "ts": 1788768000,
+              "kind": "podcast",
+              "durationMin": 55,
+              "titleZh": "为什么洗钱者喜欢 100 美元的钞票",
+              "summaryZh": "如今几乎没有人携带大量现金，更不用说随身携带一堆 100 美元的钞票了。那么为什么流通中的实物现金数量——尤其是……"
+            },
+            {
               "title": "Why Laser Beams Are the Hottest New Tech in Defense",
               "url": "https://omny.fm/shows/odd-lots/why-laser-beams-are-the-hottest-new-tech-in-defense",
               "summary": "Our guest today is Colonel Sanders. More precisely, we speak with Wayne Sanders, a retired US army colonel who is currently senior defense research analyst for…",
@@ -1098,17 +1109,6 @@ window.DIGEST_DATA = {
               "durationMin": 58,
               "titleZh": "可以重塑非洲经济的尼日利亚工业巨头",
               "summaryZh": "8 月初，有报道称尼日利亚丹格特炼油厂 (Dangote Refinery) 为其即将上市的股票获得了 10 亿美元的承销。"
-            },
-            {
-              "title": "Jasmine Sun on What the AI Industry Got Wrong About the Public Backlash",
-              "url": "https://omny.fm/shows/odd-lots/jasmine-sun-on-what-the-ai-industry-got-wrong-about-the-public-backlash",
-              "summary": "Within the AI industry, even the builders of it have been very anxious about the technology. They've talked for years about its potential to create destabilizi…",
-              "published": "2026-08-21T16:00:00+08:00",
-              "ts": 1787299200,
-              "kind": "podcast",
-              "durationMin": 52,
-              "titleZh": "Jasmine Sun 谈人工智能行业对公众强烈反对的误解",
-              "summaryZh": "在人工智能行业内，即使是它的建设者也对这项技术感到非常焦虑。他们多年来一直在谈论它造成不稳定的潜力……"
             }
           ]
         },
@@ -1702,13 +1702,13 @@ window.DIGEST_DATA = {
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 17% · Fading",
-    "blessing": "The moon is only a thin curve, wanting to be warmed. Venus can be seen in the west, and my speech and thoughts are quite smooth. I need to settle myself first.",
+    "moonLine": "Glossy 15% · Fading",
+    "blessing": "The moon is only a thin curve, wanting to be warmed. Venus can be seen in the west, so don’t rush to judgment emotionally, settle yourself first.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 17%, the moon age is about 26 days, and it is gradually losing weight."
+        "caption": "The bright side is about 15%, the moon age is about 26 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -1747,12 +1747,12 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Moon",
-        "label": "Cancer 26°",
+        "label": "Cancer 30°",
         "influence": "With the moon in Cancer, the mood is soft and family-oriented, and it is appropriate to take care of and calm the mind."
       },
       {
         "name": "Mercury",
-        "label": "Virgo 24°",
+        "label": "Virgo 25°",
         "influence": "With Mercury in Virgo, communication and thoughts tend to be more detailed and clear, so it is better to organize and be precise."
       },
       {
@@ -1762,26 +1762,18 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Mars",
-        "label": "Cancer 17°",
+        "label": "Cancer 18°",
         "influence": "Mars is in Cancer, so people tend to be soft-hearted and take care of the family, so they should take care of themselves and have peace of mind."
       }
     ],
     "aspects": [
       {
         "a": "Moon",
-        "b": "Mercury",
-        "aspect": "Sextile",
-        "tone": "easy",
-        "influence": "The moon is sextile to Mercury, and emotions and communication have a chance to connect, just move a little bit.",
-        "endsIn": "约 5 小时后结束"
-      },
-      {
-        "a": "Moon",
         "b": "Venus",
         "aspect": "Square",
         "tone": "tense",
         "influence": "When the moon is square to Venus, emotions and feelings can easily get awkward, so you should slow down before making a decision.",
-        "endsIn": "约 15 小时后结束"
+        "endsIn": "约 9 小时后结束"
       },
       {
         "a": "Sun",
@@ -1792,12 +1784,28 @@ window.DIGEST_DATA = {
         "endsIn": "约 3 周后结束"
       },
       {
+        "a": "Moon",
+        "b": "Pluto",
+        "aspect": "Opposition",
+        "tone": "tense",
+        "influence": "The moon opposes Pluto, and emotions and transformations are pulled together, so you need to find a middle point.",
+        "endsIn": "约 20 小时后结束"
+      },
+      {
+        "a": "Moon",
+        "b": "Neptune",
+        "aspect": "Trine",
+        "tone": "easy",
+        "influence": "The moon trines Neptune, and emotions can advance more smoothly through the power of intuition.",
+        "endsIn": "约 17 小时后结束"
+      },
+      {
         "a": "Mars",
         "b": "Saturn",
         "aspect": "Square",
         "tone": "tense",
         "influence": "If you want to move but get stuck, it is better to break it into small steps and avoid forcing the move.",
-        "endsIn": "ends in about 3 days"
+        "endsIn": "ends in about 2 days"
       },
       {
         "a": "Venus",
@@ -1806,14 +1814,6 @@ window.DIGEST_DATA = {
         "tone": "tense",
         "influence": "Venus squares Pluto, relationships and transformations are prone to awkwardness, so it’s better to slow down before making a decision.",
         "endsIn": "约 8 周后结束"
-      },
-      {
-        "a": "Moon",
-        "b": "Pluto",
-        "aspect": "Opposition",
-        "tone": "tense",
-        "influence": "The moon opposes Pluto, and emotions and transformations are pulled together, so you need to find a middle point.",
-        "endsIn": "ends in about 1 days"
       }
     ],
     "influence": {
