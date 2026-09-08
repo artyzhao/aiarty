@@ -143,37 +143,148 @@ SECTIONS = [
         "id": "work",
         "name": "工作",
         "nameEn": "Work",
-        "kicker": "市场、利率与宏观现场",
-        "feeds": [
+        "kicker": "全球宏观、金融软件、产品设计、央行与政策",
+        "groups": [
             {
-                "id": "oddlots",
-                "name": "The Odd Lots",
-                "kind": "podcast",
-                "url": (
-                    "https://www.omnycontent.com/d/playlist/"
-                    "e73c998e-6e60-432f-8610-ae210140c5b1/"
-                    "8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/"
-                    "982f5071-765c-403d-969d-ae27003a8d83/podcast.rss"
-                ),
-                "home": "https://www.bloomberg.com/oddlots",
+                "id": "macro",
+                "name": "全球宏观",
+                "nameEn": "Global Macro",
+                "feeds": [
+                    {
+                        "id": "oddlots",
+                        "name": "The Odd Lots",
+                        "kind": "podcast",
+                        "url": (
+                            "https://www.omnycontent.com/d/playlist/"
+                            "e73c998e-6e60-432f-8610-ae210140c5b1/"
+                            "8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/"
+                            "982f5071-765c-403d-969d-ae27003a8d83/podcast.rss"
+                        ),
+                        "home": "https://www.bloomberg.com/oddlots",
+                    },
+                    {
+                        "id": "bond",
+                        "name": "Bond Vigilantes",
+                        "kind": "newsletter",
+                        "url": "https://bondvigilantes.com/feed/",
+                        "home": "https://bondvigilantes.com/",
+                    },
+                    {
+                        "id": "alhambra",
+                        "name": "Alhambra Investments",
+                        "kind": "newsletter",
+                        "url": "https://www.alhambrapartners.com/feed/",
+                        "home": "https://www.alhambrapartners.com/",
+                    },
+                ],
             },
             {
-                "id": "bond",
-                "name": "Bond Vigilantes",
-                "kind": "newsletter",
-                "url": "https://bondvigilantes.com/feed/",
-                "home": "https://bondvigilantes.com/",
+                "id": "finsoft",
+                "name": "金融软件",
+                "nameEn": "Financial Software",
+                "feeds": [
+                    {
+                        "id": "finextra",
+                        "name": "Finextra",
+                        "kind": "newsletter",
+                        "url": "https://www.finextra.com/rss/headlines.aspx",
+                        "home": "https://www.finextra.com/",
+                    },
+                    {
+                        "id": "tearsheet",
+                        "name": "Tearsheet",
+                        "kind": "newsletter",
+                        "url": "https://tearsheet.co/feed/",
+                        "home": "https://tearsheet.co/",
+                    },
+                    {
+                        "id": "bankingdive",
+                        "name": "Banking Dive",
+                        "kind": "newsletter",
+                        "url": "https://www.bankingdive.com/feeds/news/",
+                        "home": "https://www.bankingdive.com/",
+                    },
+                ],
             },
             {
-                "id": "alhambra",
-                "name": "Alhambra Investments",
-                "kind": "newsletter",
-                "url": "https://www.alhambrapartners.com/feed/",
-                "home": "https://www.alhambrapartners.com/",
+                "id": "design",
+                "name": "产品设计",
+                "nameEn": "Product Design",
+                "feeds": [
+                    {
+                        "id": "core77",
+                        "name": "Core77",
+                        "kind": "newsletter",
+                        "url": "https://www.core77.com/blog/rss.xml",
+                        "home": "https://www.core77.com/",
+                    },
+                    {
+                        "id": "yanko",
+                        "name": "Yanko Design",
+                        "kind": "newsletter",
+                        "url": "https://www.yankodesign.com/feed/",
+                        "home": "https://www.yankodesign.com/",
+                    },
+                    {
+                        "id": "fastco",
+                        "name": "Fast Company Co.Design",
+                        "kind": "newsletter",
+                        "url": "https://www.fastcompany.com/section/co-design/rss",
+                        "home": "https://www.fastcompany.com/co-design",
+                    },
+                ],
+            },
+            {
+                "id": "policy",
+                "name": "央行与政策",
+                "nameEn": "Central Banks & Policy",
+                "feeds": [
+                    {
+                        "id": "fed",
+                        "name": "Federal Reserve",
+                        "kind": "newsletter",
+                        "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+                        "home": "https://www.federalreserve.gov/",
+                    },
+                    {
+                        "id": "ecb",
+                        "name": "European Central Bank",
+                        "kind": "newsletter",
+                        "url": "https://www.ecb.europa.eu/rss/press.xml",
+                        "home": "https://www.ecb.europa.eu/",
+                    },
+                    {
+                        "id": "pbc",
+                        "name": "中国人民银行",
+                        "nameEn": "PBOC",
+                        "kind": "newsletter",
+                        "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
+                        "home": "https://www.pbc.gov.cn/",
+                        "mode": "pbc",
+                        "headers": {"Referer": "https://www.pbc.gov.cn/"},
+                    },
+                    {
+                        "id": "govcn",
+                        "name": "中国政府网",
+                        "nameEn": "gov.cn",
+                        "kind": "newsletter",
+                        "url": "https://www.gov.cn/pushinfo/v150203/rss.xml",
+                        "home": "https://www.gov.cn/",
+                    },
+                ],
             },
         ],
     },
 ]
+
+
+def section_feeds(sec: dict) -> list[dict]:
+    if sec.get("groups"):
+        out: list[dict] = []
+        for group in sec["groups"]:
+            out.extend(group.get("feeds") or [])
+        return out
+    return list(sec.get("feeds") or [])
 
 
 class _TextExtractor(HTMLParser):
@@ -304,16 +415,27 @@ def find_enclosure(node: ET.Element) -> str:
     return ""
 
 
-def http_get_curl(url: str) -> bytes:
+def merge_headers(extra: dict | None = None) -> dict:
+    headers = dict(HEADERS)
+    if extra:
+        headers.update(extra)
+    return headers
+
+
+def http_get_curl(url: str, extra_headers: dict | None = None) -> bytes:
     import subprocess
 
+    headers = merge_headers(extra_headers)
     cmd = [
         "curl", "-fsSL", "--max-time", "45", "--retry", "2", "--retry-delay", "1",
         "--http1.1", "--compressed",
-        "-A", HEADERS["User-Agent"],
-        "-H", "Accept: " + HEADERS["Accept"],
-        url,
+        "-A", headers.get("User-Agent", HEADERS["User-Agent"]),
     ]
+    for key, value in headers.items():
+        if key.lower() == "user-agent":
+            continue
+        cmd.extend(["-H", f"{key}: {value}"])
+    cmd.append(url)
     proc = subprocess.run(cmd, capture_output=True)
     if proc.returncode != 0 or not proc.stdout:
         err = (proc.stderr or b"").decode("utf-8", errors="replace").strip()[:240]
@@ -324,11 +446,12 @@ def http_get_curl(url: str) -> bytes:
     return raw
 
 
-def http_get(url: str, retries: int = 2) -> bytes:
+def http_get(url: str, retries: int = 2, extra_headers: dict | None = None) -> bytes:
     last_err: Exception | None = None
+    headers = merge_headers(extra_headers)
     for ctx in (SSL_CTX, SSL_CTX_TLS12):
         for i in range(retries):
-            req = urllib.request.Request(url, headers=HEADERS)
+            req = urllib.request.Request(url, headers=headers)
             try:
                 with urllib.request.urlopen(req, timeout=45, context=ctx) as resp:
                     raw = resp.read()
@@ -340,7 +463,7 @@ def http_get(url: str, retries: int = 2) -> bytes:
                 last_err = exc
                 time.sleep(0.5 * (i + 1))
     try:
-        return http_get_curl(url)
+        return http_get_curl(url, extra_headers)
     except Exception as exc:
         last_err = exc
     raise RuntimeError(f"{url} -> {last_err}")
@@ -466,24 +589,62 @@ def scrape_housel(html: str) -> list[dict]:
     return items
 
 
+def scrape_pbc(html: str) -> list[dict]:
+    items: list[dict] = []
+    seen: set[str] = set()
+    pattern = re.compile(
+        r'<a href="(/goutongjiaoliu/[^"]+)"[^>]*>([^<]+)</a></font>'
+        r'<span class="hui12">(\d{4}-\d{2}-\d{2})</span>',
+        re.I,
+    )
+    for match in pattern.finditer(html):
+        href = match.group(1).strip()
+        title = unescape(match.group(2).strip())
+        if href.startswith("/"):
+            href = "https://www.pbc.gov.cn" + href
+        if href in seen or not title:
+            continue
+        seen.add(href)
+        dt = parse_datetime(match.group(3))
+        items.append(
+            {
+                "title": re.sub(r"\s+", " ", title).strip(),
+                "url": href,
+                "summary": "",
+                "published": dt.isoformat() if dt else "",
+                "ts": int(dt.timestamp()) if dt else 0,
+                "kind": "newsletter",
+                "durationMin": 0,
+            }
+        )
+        if len(items) >= ITEM_LIMIT:
+            break
+    return items
+
+
 def fetch_one(spec: dict) -> dict:
     out = {
         "id": spec["id"],
         "name": spec["name"],
+        "nameEn": spec.get("nameEn") or spec["name"],
         "home": spec["home"],
         "kind": spec["kind"],
         "ok": False,
         "error": None,
         "items": [],
     }
+    extra = spec.get("headers")
     try:
-        raw = http_get(spec["url"])
-        if spec.get("mode") == "housel":
+        raw = http_get(spec["url"], extra_headers=extra)
+        mode = spec.get("mode")
+        if mode == "housel":
             items = scrape_housel(raw.decode("utf-8", errors="replace"))
             if not items:
                 # 作者页改版时退到 Collaborative Fund 通讯
                 raw = http_get("https://collabfund.substack.com/feed")
                 items = parse_feed(raw, "newsletter")
+        elif mode == "pbc":
+            items = scrape_pbc(raw.decode("utf-8", errors="replace"))
         else:
             items = parse_feed(raw, spec["kind"])
         out["items"] = items
@@ -692,8 +853,17 @@ def attach_translations(data: dict) -> dict:
     for sec in data.get("sections") or []:
         for feed in sec.get("feeds") or []:
             for item in feed.get("items") or []:
-                queue(item.get("title") or "", "en", "zh-CN")
-                queue(item.get("summary") or "", "en", "zh-CN")
+                title = item.get("title") or ""
+                summary = item.get("summary") or ""
+                if cjk_ratio(title) >= 0.3:
+                    queue(title, "zh-CN", "en")
+                else:
+                    queue(title, "en", "zh-CN")
+                if summary:
+                    if cjk_ratio(summary) >= 0.3:
+                        queue(summary, "zh-CN", "en")
+                    else:
+                        queue(summary, "en", "zh-CN")
 
     stars = load_stars()
     diary = stars.get("diary") or {}
@@ -733,8 +903,20 @@ def attach_translations(data: dict) -> dict:
     for sec in data.get("sections") or []:
         for feed in sec.get("feeds") or []:
             for item in feed.get("items") or []:
-                item["titleZh"] = translate_text(item.get("title") or "", "en", "zh-CN", cache)
-                item["summaryZh"] = translate_text(item.get("summary") or "", "en", "zh-CN", cache)
+                title = item.get("title") or ""
+                summary = item.get("summary") or ""
+                if cjk_ratio(title) >= 0.3:
+                    item["titleZh"] = title
+                    item["titleEn"] = translate_text(title, "zh-CN", "en", cache)
+                else:
+                    item["titleZh"] = translate_text(title, "en", "zh-CN", cache)
+                    item["titleEn"] = title
+                if cjk_ratio(summary) >= 0.3:
+                    item["summaryZh"] = summary
+                    item["summaryEn"] = translate_text(summary, "zh-CN", "en", cache) if summary else ""
+                else:
+                    item["summaryZh"] = translate_text(summary, "en", "zh-CN", cache) if summary else ""
+                    item["summaryEn"] = summary
 
     astro_en = {
         "moonPhase": MOON_EN.get(stars.get("moonPhase") or "", stars.get("moonPhase") or ""),
@@ -823,7 +1005,7 @@ def build() -> dict:
     now = datetime.now(TZ)
     jobs = []
     for sec in SECTIONS:
-        for feed in sec["feeds"]:
+        for feed in section_feeds(sec):
             jobs.append(feed)
 
     results: dict[str, dict] = {}
@@ -838,6 +1020,7 @@ def build() -> dict:
                 results[fid] = {
                     "id": fid,
                     "name": spec["name"],
+                    "nameEn": spec.get("nameEn") or spec["name"],
                     "home": spec["home"],
                     "kind": spec["kind"],
                     "ok": False,
@@ -847,16 +1030,33 @@ def build() -> dict:
 
     sections = []
     for sec in SECTIONS:
-        feeds = [results[f["id"]] for f in sec["feeds"]]
-        sections.append(
-            {
-                "id": sec["id"],
-                "name": sec["name"],
-                "nameEn": sec.get("nameEn") or sec["name"],
-                "kicker": sec["kicker"],
-                "feeds": feeds,
-            }
-        )
+        if sec.get("groups"):
+            groups = []
+            feeds: list[dict] = []
+            for group in sec["groups"]:
+                gfeeds = [results[f["id"]] for f in group["feeds"]]
+                groups.append(
+                    {
+                        "id": group["id"],
+                        "name": group["name"],
+                        "nameEn": group.get("nameEn") or group["name"],
+                        "feeds": gfeeds,
+                    }
+                )
+                feeds.extend(gfeeds)
+        else:
+            groups = []
+            feeds = [results[f["id"]] for f in sec["feeds"]]
+        row = {
+            "id": sec["id"],
+            "name": sec["name"],
+            "nameEn": sec.get("nameEn") or sec["name"],
+            "kicker": sec["kicker"],
+            "feeds": feeds,
+        }
+        if groups:
+            row["groups"] = groups
+        sections.append(row)
     from digest_nativity import build_nativity
 
     saved = load_saved_digest()
@@ -908,14 +1108,26 @@ def main() -> None:
     total = 0
     for sec in data["sections"]:
         print(f"## {sec['name']}")
-        for feed in sec["feeds"]:
-            n = len(feed["items"])
-            total += n
-            flag = "ok" if feed["ok"] else "FAIL"
-            extra = f"  {feed['error']}" if feed.get("error") else ""
-            print(f"  [{flag}] {feed['name']}: {n}{extra}")
-            if feed["items"]:
-                print(f"       · {feed['items'][0]['title'][:72]}")
+        if sec.get("groups"):
+            for group in sec["groups"]:
+                print(f"  -- {group['name']}")
+                for feed in group["feeds"]:
+                    n = len(feed["items"])
+                    total += n
+                    flag = "ok" if feed["ok"] else "FAIL"
+                    extra = f"  {feed['error']}" if feed.get("error") else ""
+                    print(f"    [{flag}] {feed['name']}: {n}{extra}")
+                    if feed["items"]:
+                        print(f"         · {feed['items'][0]['title'][:72]}")
+        else:
+            for feed in sec["feeds"]:
+                n = len(feed["items"])
+                total += n
+                flag = "ok" if feed["ok"] else "FAIL"
+                extra = f"  {feed['error']}" if feed.get("error") else ""
+                print(f"  [{flag}] {feed['name']}: {n}{extra}")
+                if feed["items"]:
+                    print(f"       · {feed['items'][0]['title'][:72]}")
     print(f"wrote {js_path}  items={total}  {data['fetchedAt']}")
 
 
