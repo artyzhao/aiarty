@@ -227,6 +227,12 @@
       text-transform: uppercase;
       color: var(--muted);
     }
+    .work-group { margin: 0 0 32px; }
+    .work-group .subk {
+      margin: 0 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--line);
+    }
     .astro-list { display: flex; flex-direction: column; }
     .astro-item {
       font-size: 13px;
