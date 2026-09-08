@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
-  "date": "2026-09-08",
-  "weekday": "星期二",
-  "fetchedAt": "2026-09-08 21:39",
+  "date": "2026-09-09",
+  "weekday": "星期三",
+  "fetchedAt": "2026-09-09 06:38",
   "freshHours": 36,
   "sections": [
     {
@@ -1539,6 +1539,19 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "Circle to buy Singapore-based cross-border payments platform Tazapay",
+              "url": "https://www.finextra.com/newsarticle/48363/circle-to-buy-singapore-based-cross-border-payments-platform-tazapay?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "Stablecoin-issuer Circle has agreed to buy Tazapay, a Singapore-headquartered B2B cross-border payments infrastructure provider. Financial terms of the deal we…",
+              "published": "2026-09-08T22:32:00+08:00",
+              "ts": 1788877920,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Circle 收购新加坡跨境支付平台 Tazapay",
+              "titleEn": "Circle to buy Singapore-based cross-border payments platform Tazapay",
+              "summaryZh": "稳定币发行商 Circle 已同意收购总部位于新加坡的 B2B 跨境支付基础设施提供商 Tazapay。交易的财务条款我们……",
+              "summaryEn": "Stablecoin-issuer Circle has agreed to buy Tazapay, a Singapore-headquartered B2B cross-border payments infrastructure provider. Financial terms of the deal we…"
+            },
+            {
               "title": "UniCredit acquires stake in German fintech VC Trade",
               "url": "https://www.finextra.com/newsarticle/48361/unicredit-acquires-stake-in-german-fintech-vc-trade?utm_medium=rssfinextra&utm_source=finextrafeed",
               "summary": "UniCredit has acquired a minority stake in VC Trade, a Frankfurt-based fintech company operating digital marketplaces and infrastructure for debt transactions.",
@@ -1567,15 +1580,15 @@ window.DIGEST_DATA = {
             {
               "title": "TSB shakes up executive team ahead of Santander integration",
               "url": "https://www.finextra.com/newsarticle/48359/tsb-shakes-up-executive-team-ahead-of-santander-integration?utm_medium=rssfinextra&utm_source=finextrafeed",
-              "summary": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communicatins lead as integration with Santander commences.",
+              "summary": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communications lead as integration with Santander commences.",
               "published": "2026-09-08T18:43:00+08:00",
               "ts": 1788864180,
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "TSB 在桑坦德银行整合之前重组了执行团队",
               "titleEn": "TSB shakes up executive team ahead of Santander integration",
-              "summaryZh": "随着与桑坦德银行整合的开始，TSB 正在失去其首席信息官、首席风险官、首席人力官和媒体传播主管。",
-              "summaryEn": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communicatins lead as integration with Santander commences."
+              "summaryZh": "随着与桑坦德银行的整合开始，TSB 将失去其首席信息官、首席风险官、首席人力官和媒体传播主管。",
+              "summaryEn": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communications lead as integration with Santander commences."
             },
             {
               "title": "French fintech startup Outline raises $3 million for financial planning AI",
@@ -1593,15 +1606,15 @@ window.DIGEST_DATA = {
             {
               "title": "Mastercard predicts that over the next four years one-in-ten will use AI agents for online shopping",
               "url": "https://www.finextra.com/newsarticle/48357/mastercard-predicts-that-over-the-next-four-years-one-in-ten-will-use-ai-agents-for-online-shopping?utm_medium=rssfinextra&utm_source=finextrafeed",
-              "summary": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report",
+              "summary": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report.",
               "published": "2026-09-08T13:00:00+08:00",
               "ts": 1788843600,
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "万事达卡预测，未来四年，十分之一的人将使用人工智能代理进行在线购物",
               "titleEn": "Mastercard predicts that over the next four years one-in-ten will use AI agents for online shopping",
-              "summaryZh": "根据万事达卡的一份新报告，预计到 2030 年，超过十分之一的在线购物者将经常使用人工智能代理代表他们购买产品",
-              "summaryEn": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report"
+              "summaryZh": "根据万事达卡的一份新报告，预计到 2030 年，超过十分之一的在线购物者将经常使用人工智能代理代表他们购买产品。",
+              "summaryEn": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report."
             },
             {
               "title": "PayTabs to acquire Amazon Payments Mena operations",
@@ -1628,19 +1641,6 @@ window.DIGEST_DATA = {
               "titleEn": "Can AI write better PR? Hyundai Card puts it to the test",
               "summaryZh": "韩国现代卡已将其媒体传播团队置于人工智能显微镜下，进行直接测试以确定人类和……之间的差异。",
               "summaryEn": "South Korea's Hyundai Card has put its media communications team under the AI micrososcope, running head-to-tests to determine the differences between human an…"
-            },
-            {
-              "title": "European wealthtech funding drops amid investor caution",
-              "url": "https://www.finextra.com/newsarticle/48354/european-wealthtech-funding-drops-amid-investor-caution?utm_medium=rssfinextra&utm_source=finextrafeed",
-              "summary": "Caution among investors led to a 46% reduction in wealthtech funding in Q2 this year.",
-              "published": "2026-09-07T20:28:00+08:00",
-              "ts": 1788784080,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "由于投资者谨慎，欧洲财富科技融资下降",
-              "titleEn": "European wealthtech funding drops amid investor caution",
-              "summaryZh": "投资者的谨慎导致今年第二季度财富科技融资减少了 46%。",
-              "summaryEn": "Caution among investors led to a 46% reduction in wealthtech funding in Q2 this year."
             }
           ]
         },
@@ -1769,6 +1769,32 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "Georgia de novo opts to recapitalize Virginia bank",
+              "url": "https://www.bankingdive.com/news/georgia-de-novo-opts-recapitalize-virginia-bank/829803/",
+              "summary": "“It would have taken us a year and a half to two years to get near a $200 million bank,” Georgia Skyline Bank co-founder Ryan Floyd said. “Now we’re that on Da…",
+              "published": "2026-09-08T23:37:54+08:00",
+              "ts": 1788881874,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "乔治亚州从头选择对弗吉尼亚银行进行资本重组",
+              "titleEn": "Georgia de novo opts to recapitalize Virginia bank",
+              "summaryZh": "佐治亚天际线银行联合创始人瑞安·弗洛伊德 (Ryan Floyd) 表示：“我们需要一年半到两年的时间才能建成一家价值 2 亿美元的银行。” “现在我们就在 Da…",
+              "summaryEn": "“It would have taken us a year and a half to two years to get near a $200 million bank,” Georgia Skyline Bank co-founder Ryan Floyd said. “Now we’re that on Da…"
+            },
+            {
+              "title": "Huntington elevates Standridge to president",
+              "url": "https://www.bankingdive.com/news/huntington-bank-standridge-president/829786/",
+              "summary": "Brant Standridge, president of consumer and business banking since joining the lender in 2022, will oversee all of Huntington’s revenue-generating businesses.",
+              "published": "2026-09-08T22:21:26+08:00",
+              "ts": 1788877286,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "亨廷顿任命斯坦德里奇为总统",
+              "titleEn": "Huntington elevates Standridge to president",
+              "summaryZh": "自 2022 年加入该银行以来，消费者和商业银行业务总裁布兰特·斯坦德里奇 (Brant Standridge) 将负责监管亨廷顿的所有创收业务。",
+              "summaryEn": "Brant Standridge, president of consumer and business banking since joining the lender in 2022, will oversee all of Huntington’s revenue-generating businesses."
+            },
+            {
               "title": "EverBank, WaFd to merge in $3.9B deal",
               "url": "https://www.bankingdive.com/news/everbank-wafd-merger-4-billion-california/829754/",
               "summary": "The transaction, set to close in the first quarter of 2027, would create a lender with $75 billion in assets, $59 billion in deposits and $58 billion in loans.",
@@ -1845,32 +1871,6 @@ window.DIGEST_DATA = {
               "titleEn": "Banks can question customer activity without disclosing SARs",
               "summaryZh": "五位联邦监管机构阐明了金融机构如何在不违反《银行保密法》的情况下与客户谈论可疑活动。",
               "summaryEn": "Five federal regulators clarified how financial institutions can talk to customers about suspicious activity without violating the Bank Secrecy Act."
-            },
-            {
-              "title": "TD pushes US branch expansion amid AML reform",
-              "url": "https://www.bankingdive.com/news/td-us-bank-100-branches-2028-southeast-aml-asset-cap/829477/",
-              "summary": "The Canadian bank plans to open 100 U.S. branches by 2028, mostly in the Southeast. But satisfying its long-running consent order remains a top priority, execu…",
-              "published": "2026-09-03T02:47:19+08:00",
-              "ts": 1788374839,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "道明在反洗钱改革中推动美国分行扩张",
-              "titleEn": "TD pushes US branch expansion amid AML reform",
-              "summaryZh": "这家加拿大银行计划到 2028 年在美国开设 100 家分行，其中大部分位于东南部。但满足其长期运行的同意令仍然是首要任务，执行……",
-              "summaryEn": "The Canadian bank plans to open 100 U.S. branches by 2028, mostly in the Southeast. But satisfying its long-running consent order remains a top priority, execu…"
-            },
-            {
-              "title": "TabaPay eyes OCC charter with Denver bank deal",
-              "url": "https://www.bankingdive.com/news/tabapay-to-buy-transact-bank-ftv-capital-155-million-investment-occ-charter/829459/",
-              "summary": "The money movement platform, which once sought to buy Synapse’s assets, received a $155 million investment to pursue Transact Bank.",
-              "published": "2026-09-03T00:52:32+08:00",
-              "ts": 1788367952,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "TabaPay 考虑与丹佛银行达成 OCC 特许协议",
-              "titleEn": "TabaPay eyes OCC charter with Denver bank deal",
-              "summaryZh": "这家资金流动平台曾试图收购 Synapse 的资产，后来获得了 1.55 亿美元的投资来收购 Transact Bank。",
-              "summaryEn": "The money movement platform, which once sought to buy Synapse’s assets, received a $155 million investment to pursue Transact Bank."
             }
           ]
         },
@@ -1883,6 +1883,32 @@ window.DIGEST_DATA = {
           "ok": true,
           "error": null,
           "items": [
+            {
+              "title": "Experimental Linkage-Based Clocks",
+              "url": "https://www.core77.com/posts/145286/Experimental-Linkage-Based-Clocks",
+              "summary": "Mexican industrial designer Mauricio Romano works for Meta, but keeps his skills sharp with self-directed projects on the side. One such project is this mechan…",
+              "published": "2026-09-08T23:00:00+08:00",
+              "ts": 1788879600,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "基于实验链接的时钟",
+              "titleEn": "Experimental Linkage-Based Clocks",
+              "summaryZh": "墨西哥工业设计师 Mauricio Romano 在 Meta 工作，但同时通过自主项目保持敏锐的技能。一个这样的项目就是这个机制……",
+              "summaryEn": "Mexican industrial designer Mauricio Romano works for Meta, but keeps his skills sharp with self-directed projects on the side. One such project is this mechan…"
+            },
+            {
+              "title": "Handsome, Utilitarian Pop-Up Furniture by Industrial Designer Tom Ducarouge",
+              "url": "https://www.core77.com/posts/145285/Handsome-Utilitarian-Pop-Up-Furniture-by-Industrial-Designer-Tom-Ducarouge",
+              "summary": "I'm really digging these utilitarian furniture pieces, by Paris-based industrial designer Tom Ducarouge. They're made from sheets of 25mm Baltic Birch plywood…",
+              "published": "2026-09-08T22:00:00+08:00",
+              "ts": 1788876000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "工业设计师 Tom Ducarouge 设计的美观实用的弹出式家具",
+              "titleEn": "Handsome, Utilitarian Pop-Up Furniture by Industrial Designer Tom Ducarouge",
+              "summaryZh": "我真的很喜欢巴黎工业设计师 Tom Ducarouge 设计的这些实用家具。它们由 25 毫米波罗的海桦木胶合板制成……",
+              "summaryEn": "I'm really digging these utilitarian furniture pieces, by Paris-based industrial designer Tom Ducarouge. They're made from sheets of 25mm Baltic Birch plywood…"
+            },
             {
               "title": "ShiftLens: A System for 3D-Printing Lenticular Objects",
               "url": "https://www.core77.com/posts/145281/ShiftLens-A-System-for-3D-Printing-Lenticular-Objects",
@@ -1960,32 +1986,6 @@ window.DIGEST_DATA = {
               "titleEn": "Real Object or AI?",
               "summaryZh": "在欧洲亚马逊上发现这个东西：我的第一个想法是这到底是什么？显然它就是你想要的任何东西：一个遥控球童、一支铅笔……",
               "summaryEn": "Spotted on European Amazon, this thing: My first thought was What the heck is it? Apparently it's whatever you want it to be: A remote control caddy, a pencil…"
-            },
-            {
-              "title": "An Unusual Rolling Stool for the Chinese Market",
-              "url": "https://www.core77.com/posts/145253/An-Unusual-Rolling-Stool-for-the-Chinese-Market",
-              "summary": "Chinese and Western aesthetic tastes diverge wildly, with stuff for sale over there that would never fly over here. Still, it's interesting to peek over the fe…",
-              "published": "2026-09-03T21:00:00+08:00",
-              "ts": 1788440400,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "适合中国市场的不寻常的滚凳",
-              "titleEn": "An Unusual Rolling Stool for the Chinese Market",
-              "summaryZh": "中国和西方的审美品味差异很大，那里卖的东西永远不会飞到这里。尽管如此，浏览一下这些功能还是很有趣的……",
-              "summaryEn": "Chinese and Western aesthetic tastes diverge wildly, with stuff for sale over there that would never fly over here. Still, it's interesting to peek over the fe…"
-            },
-            {
-              "title": "Studio Gorm Designs a Better Doorstop",
-              "url": "https://www.core77.com/posts/145248/Studio-Gorm-Designs-a-Better-Doorstop",
-              "summary": "Using a wedge as a door stopper seems like a perfect solution, and it's probably been around for centuries, in one material or another. Because the object is u…",
-              "published": "2026-09-02T23:00:00+08:00",
-              "ts": 1788361200,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "Studio Gorm 设计了更好的门挡",
-              "titleEn": "Studio Gorm Designs a Better Doorstop",
-              "summaryZh": "使用楔子作为门塞似乎是一个完美的解决方案，并且它可能已经存在了几个世纪，无论是哪种材料。因为对象是你...",
-              "summaryEn": "Using a wedge as a door stopper seems like a perfect solution, and it's probably been around for centuries, in one material or another. Because the object is u…"
             }
           ]
         },
@@ -1999,108 +1999,108 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
-              "title": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper",
-              "url": "https://www.yankodesign.com/2026/09/08/an-android-drawing-tablet-with-127-layers-that-still-feels-like-paper/?utm_source=rss&utm_medium=rss&utm_campaign=an-android-drawing-tablet-with-127-layers-that-still-feels-like-paper",
-              "summary": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper Most Android drawing tablets make you choose between a screen that feels like paper and h…",
-              "published": "2026-09-08T21:20:51+08:00",
-              "ts": 1788873651,
+              "title": "Two Bedrooms, a Loft, and 396 Square Feet That Sleep Six Without Anyone on the Couch",
+              "url": "https://www.yankodesign.com/2026/09/08/two-bedrooms-a-loft-and-396-square-feet-that-sleep-six-without-anyone-on-the-couch/?utm_source=rss&utm_medium=rss&utm_campaign=two-bedrooms-a-loft-and-396-square-feet-that-sleep-six-without-anyone-on-the-couch",
+              "summary": "Two Bedrooms, a Loft, and 396 Square Feet That Sleep Six Without Anyone on the Couch Most park models ask you to choose between space and portability. Zook Cab…",
+              "published": "2026-09-09T06:30:16+08:00",
+              "ts": 1788906616,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "一款 127 层的 Android 绘图板，感觉仍然像纸一样",
-              "titleEn": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper",
-              "summaryZh": "具有 127 层的 Android 绘图板，感觉仍然像纸大多数 Android 绘图板让您在感觉像纸的屏幕和 h…",
-              "summaryEn": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper Most Android drawing tablets make you choose between a screen that feels like paper and h…"
+              "titleZh": "两间卧室，一间阁楼，面积 396 平方英尺，可供六人入住，沙发上无人",
+              "titleEn": "Two Bedrooms, a Loft, and 396 Square Feet That Sleep Six Without Anyone on the Couch",
+              "summaryZh": "两间卧室、一间阁楼和 396 平方英尺的空间，可供六人入住，沙发上无人。 大多数公园模型要求您在空间和便携性之间做出选择。而且，祖克出租车和…",
+              "summaryEn": "Two Bedrooms, a Loft, and 396 Square Feet That Sleep Six Without Anyone on the Couch Most park models ask you to choose between space and portability. Zook Cab…"
             },
             {
-              "title": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys)",
-              "url": "https://www.yankodesign.com/2026/09/08/the-5-home-upgrades-every-pet-parent-actually-uses-not-just-buys/?utm_source=rss&utm_medium=rss&utm_campaign=the-5-home-upgrades-every-pet-parent-actually-uses-not-just-buys",
-              "summary": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys) Pet furniture & products have operated under a different standard than everything else in th…",
-              "published": "2026-09-08T19:40:13+08:00",
-              "ts": 1788867613,
+              "title": "Anker’s Sleep Earbuds 4 Pro Silence Snoring in Real Time With Adaptive Masking: Hands-on at IFA 2026",
+              "url": "https://www.yankodesign.com/2026/09/08/ankers-sleep-earbuds-4-pro-silence-snoring-in-real-time-with-adaptive-masking-hands-on-at-ifa-2026/?utm_source=rss&utm_medium=rss&utm_campaign=ankers-sleep-earbuds-4-pro-silence-snoring-in-real-time-with-adaptive-masking-hands-on-at-ifa-2026",
+              "summary": "Anker’s Sleep Earbuds 4 Pro Silence Snoring in Real Time With Adaptive Masking: Hands-on at IFA 2026 Anker’s new Soundcore Sleep Earbuds 4 Pro stuff a heart ra…",
+              "published": "2026-09-09T05:30:25+08:00",
+              "ts": 1788903025,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "每个宠物父母实际使用（不仅仅是购买）的 5 种房屋升级",
-              "titleEn": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys)",
-              "summaryZh": "每个宠物父母实际使用（不仅仅是购买）的 5 种家居升级 宠物家具和产品的运行标准与世界上其他所有东西都不同……",
-              "summaryEn": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys) Pet furniture & products have operated under a different standard than everything else in th…"
+              "titleZh": "Anker 的睡眠耳塞 4 Pro 通过自适应掩蔽实时静音打鼾：IFA 2026 上的实践",
+              "titleEn": "Anker’s Sleep Earbuds 4 Pro Silence Snoring in Real Time With Adaptive Masking: Hands-on at IFA 2026",
+              "summaryZh": "Anker 的睡眠耳塞 4 Pro 通过自适应掩蔽实时静音打鼾：IFA 2026 上的实际操作 Anker 的新款 Soundcore 睡眠耳塞 4 Pro 让人心旷神怡……",
+              "summaryEn": "Anker’s Sleep Earbuds 4 Pro Silence Snoring in Real Time With Adaptive Masking: Hands-on at IFA 2026 Anker’s new Soundcore Sleep Earbuds 4 Pro stuff a heart ra…"
             },
             {
-              "title": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung?",
-              "url": "https://www.yankodesign.com/2026/09/08/xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung/?utm_source=rss&utm_medium=rss&utm_campaign=xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung",
-              "summary": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung? Xiaomi has chosen an interesting moment to return to foldables. The company has not releas…",
-              "published": "2026-09-08T15:40:41+08:00",
-              "ts": 1788853241,
+              "title": "The Paper Clock That Hides Its Hands in Plain Sight",
+              "url": "https://www.yankodesign.com/2026/09/08/the-paper-clock-that-hides-its-hands-in-plain-sight/?utm_source=rss&utm_medium=rss&utm_campaign=the-paper-clock-that-hides-its-hands-in-plain-sight",
+              "summary": "The Paper Clock That Hides Its Hands in Plain Sight Most clocks announce the time whether you asked or not. Digital displays blink at you in red or blue, count…",
+              "published": "2026-09-09T04:30:18+08:00",
+              "ts": 1788899418,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "小米18 Fold上手：先于苹果，能打败三星吗？",
-              "titleEn": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung?",
-              "summaryZh": "小米18 Fold上手：先于苹果，能打败三星吗？小米选择了一个有趣的时刻回归可折叠产品。该公司尚未发布...",
-              "summaryEn": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung? Xiaomi has chosen an interesting moment to return to foldables. The company has not releas…"
+              "titleZh": "隐藏指针的纸钟",
+              "titleEn": "The Paper Clock That Hides Its Hands in Plain Sight",
+              "summaryZh": "隐藏指针的纸钟 无论你是否询问，大多数时钟都会报时。数字显示屏以红色或蓝色向您闪烁，数数……",
+              "summaryEn": "The Paper Clock That Hides Its Hands in Plain Sight Most clocks announce the time whether you asked or not. Digital displays blink at you in red or blue, count…"
             },
             {
-              "title": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab",
-              "url": "https://www.yankodesign.com/2026/09/07/infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab/?utm_source=rss&utm_medium=rss&utm_campaign=infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab",
-              "summary": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab Every serious maker has hit the same wall at some point. You…",
-              "published": "2026-09-08T09:45:10+08:00",
-              "ts": 1788831910,
+              "title": "This Self-Moving Harry Potter Chessboard Stole The Show At IFA 2026 From Every AI Gadget",
+              "url": "https://www.yankodesign.com/2026/09/08/this-self-moving-harry-potter-chessboard-stole-the-show-at-ifa-2026-from-every-ai-gadget/?utm_source=rss&utm_medium=rss&utm_campaign=this-self-moving-harry-potter-chessboard-stole-the-show-at-ifa-2026-from-every-ai-gadget",
+              "summary": "This Self-Moving Harry Potter Chessboard Stole The Show At IFA 2026 From Every AI Gadget IFA in 2026 was wall to wall AI. Every fridge had an assistant, every…",
+              "published": "2026-09-09T03:20:36+08:00",
+              "ts": 1788895236,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "IFA 2026 上的 InfiMaker K1：5 轴桌面 CNC 将任何创作者空间变成制造实验室",
-              "titleEn": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab",
-              "summaryZh": "IFA 2026 上的 InfiMaker K1：5 轴桌面 CNC 将任何创作者空间变成制造实验室 每个认真的创客都会在某个时候遇到同样的困难。你…",
-              "summaryEn": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab Every serious maker has hit the same wall at some point. You…"
+              "titleZh": "这个自动移动的哈利波特棋盘在 IFA 2026 上抢尽了所有 AI 小工具的风头",
+              "titleEn": "This Self-Moving Harry Potter Chessboard Stole The Show At IFA 2026 From Every AI Gadget",
+              "summaryZh": "这个自动移动的哈利·波特棋盘在 IFA 2026 上抢尽了所有人工智能小工具的风头 2026 年的 IFA 是全方位的人工智能。每个冰箱都有一个助手，每个…",
+              "summaryEn": "This Self-Moving Harry Potter Chessboard Stole The Show At IFA 2026 From Every AI Gadget IFA in 2026 was wall to wall AI. Every fridge had an assistant, every…"
             },
             {
-              "title": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS",
-              "url": "https://www.yankodesign.com/2026/09/07/max-space-thunderbird-is-an-expandable-space-station-module-that-could-eventually-replace-iss/?utm_source=rss&utm_medium=rss&utm_campaign=max-space-thunderbird-is-an-expandable-space-station-module-that-could-eventually-replace-iss",
-              "summary": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS Space is the final frontier as NASA plans to go deeper into the d…",
-              "published": "2026-09-08T08:30:30+08:00",
-              "ts": 1788827430,
+              "title": "This CO2-powered cooling jacket could keep you comfortable in extreme heat without a battery",
+              "url": "https://www.yankodesign.com/2026/09/08/this-co2-powered-cooling-jacket-could-keep-you-comfortable-in-extreme-heat-without-a-battery/?utm_source=rss&utm_medium=rss&utm_campaign=this-co2-powered-cooling-jacket-could-keep-you-comfortable-in-extreme-heat-without-a-battery",
+              "summary": "This CO2-powered cooling jacket could keep you comfortable in extreme heat without a battery Most wearable cooling devices add more hardware to what you are al…",
+              "published": "2026-09-09T02:20:29+08:00",
+              "ts": 1788891629,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "Max Space Thunderbird 是一个可扩展的空间站模块，最终可能取代国际空间站",
-              "titleEn": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS",
-              "summaryZh": "Max Space Thunderbird 是一个可扩展的空间站模块，最终可能取代国际空间站。随着 NASA 计划更深入地探索太空，太空是最后的前沿……",
-              "summaryEn": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS Space is the final frontier as NASA plans to go deeper into the d…"
+              "titleZh": "这款二氧化碳驱动的冷却夹克无需电池即可让您在酷热中保持舒适",
+              "titleEn": "This CO2-powered cooling jacket could keep you comfortable in extreme heat without a battery",
+              "summaryZh": "这种二氧化碳驱动的冷却夹克可以让您在极热的情况下保持舒适，无需电池大多数可穿戴冷却设备都会为您的设备添加更多硬件……",
+              "summaryEn": "This CO2-powered cooling jacket could keep you comfortable in extreme heat without a battery Most wearable cooling devices add more hardware to what you are al…"
             },
             {
-              "title": "The 5 Best Architectural Designs of September 2026",
-              "url": "https://www.yankodesign.com/2026/09/07/the-5-best-architectural-designs-of-september-2026/?utm_source=rss&utm_medium=rss&utm_campaign=the-5-best-architectural-designs-of-september-2026",
-              "summary": "The 5 Best Architectural Designs of September 2026 September’s best projects prove that good architecture rarely announces itself. A house buried into a Polish…",
-              "published": "2026-09-08T07:30:00+08:00",
-              "ts": 1788823800,
+              "title": "Huawei Finally Fixed the One Flaw That Followed Its Tri-Fold Phone",
+              "url": "https://www.yankodesign.com/2026/09/08/huawei-finally-fixed-the-one-flaw-that-followed-its-tri-fold-phone/?utm_source=rss&utm_medium=rss&utm_campaign=huawei-finally-fixed-the-one-flaw-that-followed-its-tri-fold-phone",
+              "summary": "Huawei Finally Fixed the One Flaw That Followed Its Tri-Fold Phone Huawei’s original tri-fold phone made headlines for unfolding into a tablet, but closing it…",
+              "published": "2026-09-09T01:20:47+08:00",
+              "ts": 1788888047,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "2026 年 9 月 5 项最佳建筑设计",
-              "titleEn": "The 5 Best Architectural Designs of September 2026",
-              "summaryZh": "2026 年 9 月 5 项最佳建筑设计 9 月的最佳项目证明，好的建筑很少会自行显现。一座被波兰人埋没的房子……",
-              "summaryEn": "The 5 Best Architectural Designs of September 2026 September’s best projects prove that good architecture rarely announces itself. A house buried into a Polish…"
+              "titleZh": "华为终于修复了三折手机的一个缺陷",
+              "titleEn": "Huawei Finally Fixed the One Flaw That Followed Its Tri-Fold Phone",
+              "summaryZh": "华为终于解决了三折手机的一个缺陷华为最初的三折手机因展开成平板电脑而成为头条新闻，但将其关闭......",
+              "summaryEn": "Huawei Finally Fixed the One Flaw That Followed Its Tri-Fold Phone Huawei’s original tri-fold phone made headlines for unfolding into a tablet, but closing it…"
             },
             {
-              "title": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living",
-              "url": "https://www.yankodesign.com/2026/09/07/from-self-caring-plants-to-smokeless-steaks-these-ifa-2026-innovations-redesign-everyday-living/?utm_source=rss&utm_medium=rss&utm_campaign=from-self-caring-plants-to-smokeless-steaks-these-ifa-2026-innovations-redesign-everyday-living",
-              "summary": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living The most significant home upgrade happening right now doesn’t…",
-              "published": "2026-09-08T06:30:55+08:00",
-              "ts": 1788820255,
+              "title": "This Paper Pet Made of 400+ Circles Actually Moves When You Touch It",
+              "url": "https://www.yankodesign.com/2026/09/08/this-paper-pet-made-of-400-circles-actually-moves-when-you-touch-it/?utm_source=rss&utm_medium=rss&utm_campaign=this-paper-pet-made-of-400-circles-actually-moves-when-you-touch-it",
+              "summary": "This Paper Pet Made of 400+ Circles Actually Moves When You Touch It We live in a society where it seems like everything around us has to be functional. Every…",
+              "published": "2026-09-09T00:20:56+08:00",
+              "ts": 1788884456,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "从自理植物到无烟牛排：IFA 2026 的这些创新重新设计了日常生活",
-              "titleEn": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living",
-              "summaryZh": "从自理植物到无烟牛排：这些 IFA 2026 创新重新设计日常生活目前最重大的家居升级并不……",
-              "summaryEn": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living The most significant home upgrade happening right now doesn’t…"
+              "titleZh": "这个由 400 多个圆圈组成的纸宠物，当你触摸它时，它实际上会移动",
+              "titleEn": "This Paper Pet Made of 400+ Circles Actually Moves When You Touch It",
+              "summaryZh": "这款由 400 多个圆圈制成的纸宠物，当你触摸它时，它实际上会移动 我们生活在一个似乎我们周围的一切都必须具有功能性的社会。每一个…",
+              "summaryEn": "This Paper Pet Made of 400+ Circles Actually Moves When You Touch It We live in a society where it seems like everything around us has to be functional. Every…"
             },
             {
-              "title": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem",
-              "url": "https://www.yankodesign.com/2026/09/07/nikes-220-air-liquid-max-finally-fixes-the-comfort-problem/?utm_source=rss&utm_medium=rss&utm_campaign=nikes-220-air-liquid-max-finally-fixes-the-comfort-problem",
-              "summary": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem Nike Air Max sneakers have spent four decades winning arguments about style and losing them about…",
-              "published": "2026-09-08T05:30:03+08:00",
-              "ts": 1788816603,
+              "title": "Foldable Cubivan Camping System gives your van kitchen, bathroom, and rooftop bedroom",
+              "url": "https://www.yankodesign.com/2026/09/08/foldable-cubivan-camping-system-gives-your-van-kitchen-bathroom-and-rooftop-bedroom/?utm_source=rss&utm_medium=rss&utm_campaign=foldable-cubivan-camping-system-gives-your-van-kitchen-bathroom-and-rooftop-bedroom",
+              "summary": "Foldable Cubivan Camping System gives your van kitchen, bathroom, and rooftop bedroom If your camping requirements are different from other adventurers, and yo…",
+              "published": "2026-09-08T23:20:55+08:00",
+              "ts": 1788880855,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "Nike 售价 220 美元的 Air Liquid Max 终于解决了舒适度问题",
-              "titleEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem",
-              "summaryZh": "Nike 售价 220 美元的 Air Liquid Max 终于解决了舒适度问题 Nike Air Max 运动鞋花了四十年的时间赢得了有关风格的争论，但又因……而输掉了争论。",
-              "summaryEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem Nike Air Max sneakers have spent four decades winning arguments about style and losing them about…"
+              "titleZh": "可折叠 Cubivan 露营系统为您的货车提供厨房、浴室和屋顶卧室",
+              "titleEn": "Foldable Cubivan Camping System gives your van kitchen, bathroom, and rooftop bedroom",
+              "summaryZh": "可折叠的 Cubivan 露营系统为您的货车提供厨房、浴室和屋顶卧室如果您的露营要求与其他冒险家不同，并且您...",
+              "summaryEn": "Foldable Cubivan Camping System gives your van kitchen, bathroom, and rooftop bedroom If your camping requirements are different from other adventurers, and yo…"
             }
           ]
         },
@@ -2344,6 +2344,19 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "Frank Elderson: Fireside chat",
+              "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260908~3652aa828f.en.html",
+              "summary": "",
+              "published": "2026-09-08T23:00:00+08:00",
+              "ts": 1788879600,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "弗兰克·埃尔德森：炉边谈话",
+              "titleEn": "Frank Elderson: Fireside chat",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
               "title": "Philip R. Lane: Diversity at the European Central Bank",
               "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260904~7b9257099b.en.pdf",
               "summary": "",
@@ -2431,19 +2444,6 @@ window.DIGEST_DATA = {
               "durationMin": 0,
               "titleZh": "欧洲央行消费者预期调查结果 – 2026 年 7 月",
               "titleEn": "ECB Consumer Expectations Survey results – July 2026",
-              "summaryZh": "",
-              "summaryEn": ""
-            },
-            {
-              "title": "Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum",
-              "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260819~98ddf24b7b.en.html",
-              "summary": "",
-              "published": "2026-08-19T15:10:00+08:00",
-              "ts": 1787123400,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "克里斯蒂娜·拉加德：世界经济论坛全球经济前景讨论中有关欧洲经济的小组评论",
-              "titleEn": "Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum",
               "summaryZh": "",
               "summaryEn": ""
             }
@@ -3048,6 +3048,19 @@ window.DIGEST_DATA = {
               "error": null,
               "items": [
                 {
+                  "title": "Circle to buy Singapore-based cross-border payments platform Tazapay",
+                  "url": "https://www.finextra.com/newsarticle/48363/circle-to-buy-singapore-based-cross-border-payments-platform-tazapay?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "Stablecoin-issuer Circle has agreed to buy Tazapay, a Singapore-headquartered B2B cross-border payments infrastructure provider. Financial terms of the deal we…",
+                  "published": "2026-09-08T22:32:00+08:00",
+                  "ts": 1788877920,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Circle 收购新加坡跨境支付平台 Tazapay",
+                  "titleEn": "Circle to buy Singapore-based cross-border payments platform Tazapay",
+                  "summaryZh": "稳定币发行商 Circle 已同意收购总部位于新加坡的 B2B 跨境支付基础设施提供商 Tazapay。交易的财务条款我们……",
+                  "summaryEn": "Stablecoin-issuer Circle has agreed to buy Tazapay, a Singapore-headquartered B2B cross-border payments infrastructure provider. Financial terms of the deal we…"
+                },
+                {
                   "title": "UniCredit acquires stake in German fintech VC Trade",
                   "url": "https://www.finextra.com/newsarticle/48361/unicredit-acquires-stake-in-german-fintech-vc-trade?utm_medium=rssfinextra&utm_source=finextrafeed",
                   "summary": "UniCredit has acquired a minority stake in VC Trade, a Frankfurt-based fintech company operating digital marketplaces and infrastructure for debt transactions.",
@@ -3076,15 +3089,15 @@ window.DIGEST_DATA = {
                 {
                   "title": "TSB shakes up executive team ahead of Santander integration",
                   "url": "https://www.finextra.com/newsarticle/48359/tsb-shakes-up-executive-team-ahead-of-santander-integration?utm_medium=rssfinextra&utm_source=finextrafeed",
-                  "summary": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communicatins lead as integration with Santander commences.",
+                  "summary": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communications lead as integration with Santander commences.",
                   "published": "2026-09-08T18:43:00+08:00",
                   "ts": 1788864180,
                   "kind": "newsletter",
                   "durationMin": 0,
                   "titleZh": "TSB 在桑坦德银行整合之前重组了执行团队",
                   "titleEn": "TSB shakes up executive team ahead of Santander integration",
-                  "summaryZh": "随着与桑坦德银行整合的开始，TSB 正在失去其首席信息官、首席风险官、首席人力官和媒体传播主管。",
-                  "summaryEn": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communicatins lead as integration with Santander commences."
+                  "summaryZh": "随着与桑坦德银行的整合开始，TSB 将失去其首席信息官、首席风险官、首席人力官和媒体传播主管。",
+                  "summaryEn": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communications lead as integration with Santander commences."
                 },
                 {
                   "title": "French fintech startup Outline raises $3 million for financial planning AI",
@@ -3102,15 +3115,15 @@ window.DIGEST_DATA = {
                 {
                   "title": "Mastercard predicts that over the next four years one-in-ten will use AI agents for online shopping",
                   "url": "https://www.finextra.com/newsarticle/48357/mastercard-predicts-that-over-the-next-four-years-one-in-ten-will-use-ai-agents-for-online-shopping?utm_medium=rssfinextra&utm_source=finextrafeed",
-                  "summary": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report",
+                  "summary": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report.",
                   "published": "2026-09-08T13:00:00+08:00",
                   "ts": 1788843600,
                   "kind": "newsletter",
                   "durationMin": 0,
                   "titleZh": "万事达卡预测，未来四年，十分之一的人将使用人工智能代理进行在线购物",
                   "titleEn": "Mastercard predicts that over the next four years one-in-ten will use AI agents for online shopping",
-                  "summaryZh": "根据万事达卡的一份新报告，预计到 2030 年，超过十分之一的在线购物者将经常使用人工智能代理代表他们购买产品",
-                  "summaryEn": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report"
+                  "summaryZh": "根据万事达卡的一份新报告，预计到 2030 年，超过十分之一的在线购物者将经常使用人工智能代理代表他们购买产品。",
+                  "summaryEn": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report."
                 },
                 {
                   "title": "PayTabs to acquire Amazon Payments Mena operations",
@@ -3137,19 +3150,6 @@ window.DIGEST_DATA = {
                   "titleEn": "Can AI write better PR? Hyundai Card puts it to the test",
                   "summaryZh": "韩国现代卡已将其媒体传播团队置于人工智能显微镜下，进行直接测试以确定人类和……之间的差异。",
                   "summaryEn": "South Korea's Hyundai Card has put its media communications team under the AI micrososcope, running head-to-tests to determine the differences between human an…"
-                },
-                {
-                  "title": "European wealthtech funding drops amid investor caution",
-                  "url": "https://www.finextra.com/newsarticle/48354/european-wealthtech-funding-drops-amid-investor-caution?utm_medium=rssfinextra&utm_source=finextrafeed",
-                  "summary": "Caution among investors led to a 46% reduction in wealthtech funding in Q2 this year.",
-                  "published": "2026-09-07T20:28:00+08:00",
-                  "ts": 1788784080,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "由于投资者谨慎，欧洲财富科技融资下降",
-                  "titleEn": "European wealthtech funding drops amid investor caution",
-                  "summaryZh": "投资者的谨慎导致今年第二季度财富科技融资减少了 46%。",
-                  "summaryEn": "Caution among investors led to a 46% reduction in wealthtech funding in Q2 this year."
                 }
               ]
             },
@@ -3278,6 +3278,32 @@ window.DIGEST_DATA = {
               "error": null,
               "items": [
                 {
+                  "title": "Georgia de novo opts to recapitalize Virginia bank",
+                  "url": "https://www.bankingdive.com/news/georgia-de-novo-opts-recapitalize-virginia-bank/829803/",
+                  "summary": "“It would have taken us a year and a half to two years to get near a $200 million bank,” Georgia Skyline Bank co-founder Ryan Floyd said. “Now we’re that on Da…",
+                  "published": "2026-09-08T23:37:54+08:00",
+                  "ts": 1788881874,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "乔治亚州从头选择对弗吉尼亚银行进行资本重组",
+                  "titleEn": "Georgia de novo opts to recapitalize Virginia bank",
+                  "summaryZh": "佐治亚天际线银行联合创始人瑞安·弗洛伊德 (Ryan Floyd) 表示：“我们需要一年半到两年的时间才能建成一家价值 2 亿美元的银行。” “现在我们就在 Da…",
+                  "summaryEn": "“It would have taken us a year and a half to two years to get near a $200 million bank,” Georgia Skyline Bank co-founder Ryan Floyd said. “Now we’re that on Da…"
+                },
+                {
+                  "title": "Huntington elevates Standridge to president",
+                  "url": "https://www.bankingdive.com/news/huntington-bank-standridge-president/829786/",
+                  "summary": "Brant Standridge, president of consumer and business banking since joining the lender in 2022, will oversee all of Huntington’s revenue-generating businesses.",
+                  "published": "2026-09-08T22:21:26+08:00",
+                  "ts": 1788877286,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "亨廷顿任命斯坦德里奇为总统",
+                  "titleEn": "Huntington elevates Standridge to president",
+                  "summaryZh": "自 2022 年加入该银行以来，消费者和商业银行业务总裁布兰特·斯坦德里奇 (Brant Standridge) 将负责监管亨廷顿的所有创收业务。",
+                  "summaryEn": "Brant Standridge, president of consumer and business banking since joining the lender in 2022, will oversee all of Huntington’s revenue-generating businesses."
+                },
+                {
                   "title": "EverBank, WaFd to merge in $3.9B deal",
                   "url": "https://www.bankingdive.com/news/everbank-wafd-merger-4-billion-california/829754/",
                   "summary": "The transaction, set to close in the first quarter of 2027, would create a lender with $75 billion in assets, $59 billion in deposits and $58 billion in loans.",
@@ -3354,32 +3380,6 @@ window.DIGEST_DATA = {
                   "titleEn": "Banks can question customer activity without disclosing SARs",
                   "summaryZh": "五位联邦监管机构阐明了金融机构如何在不违反《银行保密法》的情况下与客户谈论可疑活动。",
                   "summaryEn": "Five federal regulators clarified how financial institutions can talk to customers about suspicious activity without violating the Bank Secrecy Act."
-                },
-                {
-                  "title": "TD pushes US branch expansion amid AML reform",
-                  "url": "https://www.bankingdive.com/news/td-us-bank-100-branches-2028-southeast-aml-asset-cap/829477/",
-                  "summary": "The Canadian bank plans to open 100 U.S. branches by 2028, mostly in the Southeast. But satisfying its long-running consent order remains a top priority, execu…",
-                  "published": "2026-09-03T02:47:19+08:00",
-                  "ts": 1788374839,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "道明在反洗钱改革中推动美国分行扩张",
-                  "titleEn": "TD pushes US branch expansion amid AML reform",
-                  "summaryZh": "这家加拿大银行计划到 2028 年在美国开设 100 家分行，其中大部分位于东南部。但满足其长期运行的同意令仍然是首要任务，执行……",
-                  "summaryEn": "The Canadian bank plans to open 100 U.S. branches by 2028, mostly in the Southeast. But satisfying its long-running consent order remains a top priority, execu…"
-                },
-                {
-                  "title": "TabaPay eyes OCC charter with Denver bank deal",
-                  "url": "https://www.bankingdive.com/news/tabapay-to-buy-transact-bank-ftv-capital-155-million-investment-occ-charter/829459/",
-                  "summary": "The money movement platform, which once sought to buy Synapse’s assets, received a $155 million investment to pursue Transact Bank.",
-                  "published": "2026-09-03T00:52:32+08:00",
-                  "ts": 1788367952,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "TabaPay 考虑与丹佛银行达成 OCC 特许协议",
-                  "titleEn": "TabaPay eyes OCC charter with Denver bank deal",
-                  "summaryZh": "这家资金流动平台曾试图收购 Synapse 的资产，后来获得了 1.55 亿美元的投资来收购 Transact Bank。",
-                  "summaryEn": "The money movement platform, which once sought to buy Synapse’s assets, received a $155 million investment to pursue Transact Bank."
                 }
               ]
             }
@@ -3399,6 +3399,32 @@ window.DIGEST_DATA = {
               "ok": true,
               "error": null,
               "items": [
+                {
+                  "title": "Experimental Linkage-Based Clocks",
+                  "url": "https://www.core77.com/posts/145286/Experimental-Linkage-Based-Clocks",
+                  "summary": "Mexican industrial designer Mauricio Romano works for Meta, but keeps his skills sharp with self-directed projects on the side. One such project is this mechan…",
+                  "published": "2026-09-08T23:00:00+08:00",
+                  "ts": 1788879600,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "基于实验链接的时钟",
+                  "titleEn": "Experimental Linkage-Based Clocks",
+                  "summaryZh": "墨西哥工业设计师 Mauricio Romano 在 Meta 工作，但同时通过自主项目保持敏锐的技能。一个这样的项目就是这个机制……",
+                  "summaryEn": "Mexican industrial designer Mauricio Romano works for Meta, but keeps his skills sharp with self-directed projects on the side. One such project is this mechan…"
+                },
+                {
+                  "title": "Handsome, Utilitarian Pop-Up Furniture by Industrial Designer Tom Ducarouge",
+                  "url": "https://www.core77.com/posts/145285/Handsome-Utilitarian-Pop-Up-Furniture-by-Industrial-Designer-Tom-Ducarouge",
+                  "summary": "I'm really digging these utilitarian furniture pieces, by Paris-based industrial designer Tom Ducarouge. They're made from sheets of 25mm Baltic Birch plywood…",
+                  "published": "2026-09-08T22:00:00+08:00",
+                  "ts": 1788876000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "工业设计师 Tom Ducarouge 设计的美观实用的弹出式家具",
+                  "titleEn": "Handsome, Utilitarian Pop-Up Furniture by Industrial Designer Tom Ducarouge",
+                  "summaryZh": "我真的很喜欢巴黎工业设计师 Tom Ducarouge 设计的这些实用家具。它们由 25 毫米波罗的海桦木胶合板制成……",
+                  "summaryEn": "I'm really digging these utilitarian furniture pieces, by Paris-based industrial designer Tom Ducarouge. They're made from sheets of 25mm Baltic Birch plywood…"
+                },
                 {
                   "title": "ShiftLens: A System for 3D-Printing Lenticular Objects",
                   "url": "https://www.core77.com/posts/145281/ShiftLens-A-System-for-3D-Printing-Lenticular-Objects",
@@ -3476,32 +3502,6 @@ window.DIGEST_DATA = {
                   "titleEn": "Real Object or AI?",
                   "summaryZh": "在欧洲亚马逊上发现这个东西：我的第一个想法是这到底是什么？显然它就是你想要的任何东西：一个遥控球童、一支铅笔……",
                   "summaryEn": "Spotted on European Amazon, this thing: My first thought was What the heck is it? Apparently it's whatever you want it to be: A remote control caddy, a pencil…"
-                },
-                {
-                  "title": "An Unusual Rolling Stool for the Chinese Market",
-                  "url": "https://www.core77.com/posts/145253/An-Unusual-Rolling-Stool-for-the-Chinese-Market",
-                  "summary": "Chinese and Western aesthetic tastes diverge wildly, with stuff for sale over there that would never fly over here. Still, it's interesting to peek over the fe…",
-                  "published": "2026-09-03T21:00:00+08:00",
-                  "ts": 1788440400,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "适合中国市场的不寻常的滚凳",
-                  "titleEn": "An Unusual Rolling Stool for the Chinese Market",
-                  "summaryZh": "中国和西方的审美品味差异很大，那里卖的东西永远不会飞到这里。尽管如此，浏览一下这些功能还是很有趣的……",
-                  "summaryEn": "Chinese and Western aesthetic tastes diverge wildly, with stuff for sale over there that would never fly over here. Still, it's interesting to peek over the fe…"
-                },
-                {
-                  "title": "Studio Gorm Designs a Better Doorstop",
-                  "url": "https://www.core77.com/posts/145248/Studio-Gorm-Designs-a-Better-Doorstop",
-                  "summary": "Using a wedge as a door stopper seems like a perfect solution, and it's probably been around for centuries, in one material or another. Because the object is u…",
-                  "published": "2026-09-02T23:00:00+08:00",
-                  "ts": 1788361200,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "Studio Gorm 设计了更好的门挡",
-                  "titleEn": "Studio Gorm Designs a Better Doorstop",
-                  "summaryZh": "使用楔子作为门塞似乎是一个完美的解决方案，并且它可能已经存在了几个世纪，无论是哪种材料。因为对象是你...",
-                  "summaryEn": "Using a wedge as a door stopper seems like a perfect solution, and it's probably been around for centuries, in one material or another. Because the object is u…"
                 }
               ]
             },
@@ -3515,108 +3515,108 @@ window.DIGEST_DATA = {
               "error": null,
               "items": [
                 {
-                  "title": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper",
-                  "url": "https://www.yankodesign.com/2026/09/08/an-android-drawing-tablet-with-127-layers-that-still-feels-like-paper/?utm_source=rss&utm_medium=rss&utm_campaign=an-android-drawing-tablet-with-127-layers-that-still-feels-like-paper",
-                  "summary": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper Most Android drawing tablets make you choose between a screen that feels like paper and h…",
-                  "published": "2026-09-08T21:20:51+08:00",
-                  "ts": 1788873651,
+                  "title": "Two Bedrooms, a Loft, and 396 Square Feet That Sleep Six Without Anyone on the Couch",
+                  "url": "https://www.yankodesign.com/2026/09/08/two-bedrooms-a-loft-and-396-square-feet-that-sleep-six-without-anyone-on-the-couch/?utm_source=rss&utm_medium=rss&utm_campaign=two-bedrooms-a-loft-and-396-square-feet-that-sleep-six-without-anyone-on-the-couch",
+                  "summary": "Two Bedrooms, a Loft, and 396 Square Feet That Sleep Six Without Anyone on the Couch Most park models ask you to choose between space and portability. Zook Cab…",
+                  "published": "2026-09-09T06:30:16+08:00",
+                  "ts": 1788906616,
                   "kind": "newsletter",
                   "durationMin": 0,
-                  "titleZh": "一款 127 层的 Android 绘图板，感觉仍然像纸一样",
-                  "titleEn": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper",
-                  "summaryZh": "具有 127 层的 Android 绘图板，感觉仍然像纸大多数 Android 绘图板让您在感觉像纸的屏幕和 h…",
-                  "summaryEn": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper Most Android drawing tablets make you choose between a screen that feels like paper and h…"
+                  "titleZh": "两间卧室，一间阁楼，面积 396 平方英尺，可供六人入住，沙发上无人",
+                  "titleEn": "Two Bedrooms, a Loft, and 396 Square Feet That Sleep Six Without Anyone on the Couch",
+                  "summaryZh": "两间卧室、一间阁楼和 396 平方英尺的空间，可供六人入住，沙发上无人。 大多数公园模型要求您在空间和便携性之间做出选择。而且，祖克出租车和…",
+                  "summaryEn": "Two Bedrooms, a Loft, and 396 Square Feet That Sleep Six Without Anyone on the Couch Most park models ask you to choose between space and portability. Zook Cab…"
                 },
                 {
-                  "title": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys)",
-                  "url": "https://www.yankodesign.com/2026/09/08/the-5-home-upgrades-every-pet-parent-actually-uses-not-just-buys/?utm_source=rss&utm_medium=rss&utm_campaign=the-5-home-upgrades-every-pet-parent-actually-uses-not-just-buys",
-                  "summary": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys) Pet furniture & products have operated under a different standard than everything else in th…",
-                  "published": "2026-09-08T19:40:13+08:00",
-                  "ts": 1788867613,
+                  "title": "Anker’s Sleep Earbuds 4 Pro Silence Snoring in Real Time With Adaptive Masking: Hands-on at IFA 2026",
+                  "url": "https://www.yankodesign.com/2026/09/08/ankers-sleep-earbuds-4-pro-silence-snoring-in-real-time-with-adaptive-masking-hands-on-at-ifa-2026/?utm_source=rss&utm_medium=rss&utm_campaign=ankers-sleep-earbuds-4-pro-silence-snoring-in-real-time-with-adaptive-masking-hands-on-at-ifa-2026",
+                  "summary": "Anker’s Sleep Earbuds 4 Pro Silence Snoring in Real Time With Adaptive Masking: Hands-on at IFA 2026 Anker’s new Soundcore Sleep Earbuds 4 Pro stuff a heart ra…",
+                  "published": "2026-09-09T05:30:25+08:00",
+                  "ts": 1788903025,
                   "kind": "newsletter",
                   "durationMin": 0,
-                  "titleZh": "每个宠物父母实际使用（不仅仅是购买）的 5 种房屋升级",
-                  "titleEn": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys)",
-                  "summaryZh": "每个宠物父母实际使用（不仅仅是购买）的 5 种家居升级 宠物家具和产品的运行标准与世界上其他所有东西都不同……",
-                  "summaryEn": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys) Pet furniture & products have operated under a different standard than everything else in th…"
+                  "titleZh": "Anker 的睡眠耳塞 4 Pro 通过自适应掩蔽实时静音打鼾：IFA 2026 上的实践",
+                  "titleEn": "Anker’s Sleep Earbuds 4 Pro Silence Snoring in Real Time With Adaptive Masking: Hands-on at IFA 2026",
+                  "summaryZh": "Anker 的睡眠耳塞 4 Pro 通过自适应掩蔽实时静音打鼾：IFA 2026 上的实际操作 Anker 的新款 Soundcore 睡眠耳塞 4 Pro 让人心旷神怡……",
+                  "summaryEn": "Anker’s Sleep Earbuds 4 Pro Silence Snoring in Real Time With Adaptive Masking: Hands-on at IFA 2026 Anker’s new Soundcore Sleep Earbuds 4 Pro stuff a heart ra…"
                 },
                 {
-                  "title": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung?",
-                  "url": "https://www.yankodesign.com/2026/09/08/xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung/?utm_source=rss&utm_medium=rss&utm_campaign=xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung",
-                  "summary": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung? Xiaomi has chosen an interesting moment to return to foldables. The company has not releas…",
-                  "published": "2026-09-08T15:40:41+08:00",
-                  "ts": 1788853241,
+                  "title": "The Paper Clock That Hides Its Hands in Plain Sight",
+                  "url": "https://www.yankodesign.com/2026/09/08/the-paper-clock-that-hides-its-hands-in-plain-sight/?utm_source=rss&utm_medium=rss&utm_campaign=the-paper-clock-that-hides-its-hands-in-plain-sight",
+                  "summary": "The Paper Clock That Hides Its Hands in Plain Sight Most clocks announce the time whether you asked or not. Digital displays blink at you in red or blue, count…",
+                  "published": "2026-09-09T04:30:18+08:00",
+                  "ts": 1788899418,
                   "kind": "newsletter",
                   "durationMin": 0,
-                  "titleZh": "小米18 Fold上手：先于苹果，能打败三星吗？",
-                  "titleEn": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung?",
-                  "summaryZh": "小米18 Fold上手：先于苹果，能打败三星吗？小米选择了一个有趣的时刻回归可折叠产品。该公司尚未发布...",
-                  "summaryEn": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung? Xiaomi has chosen an interesting moment to return to foldables. The company has not releas…"
+                  "titleZh": "隐藏指针的纸钟",
+                  "titleEn": "The Paper Clock That Hides Its Hands in Plain Sight",
+                  "summaryZh": "隐藏指针的纸钟 无论你是否询问，大多数时钟都会报时。数字显示屏以红色或蓝色向您闪烁，数数……",
+                  "summaryEn": "The Paper Clock That Hides Its Hands in Plain Sight Most clocks announce the time whether you asked or not. Digital displays blink at you in red or blue, count…"
                 },
                 {
-                  "title": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab",
-                  "url": "https://www.yankodesign.com/2026/09/07/infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab/?utm_source=rss&utm_medium=rss&utm_campaign=infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab",
-                  "summary": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab Every serious maker has hit the same wall at some point. You…",
-                  "published": "2026-09-08T09:45:10+08:00",
-                  "ts": 1788831910,
+                  "title": "This Self-Moving Harry Potter Chessboard Stole The Show At IFA 2026 From Every AI Gadget",
+                  "url": "https://www.yankodesign.com/2026/09/08/this-self-moving-harry-potter-chessboard-stole-the-show-at-ifa-2026-from-every-ai-gadget/?utm_source=rss&utm_medium=rss&utm_campaign=this-self-moving-harry-potter-chessboard-stole-the-show-at-ifa-2026-from-every-ai-gadget",
+                  "summary": "This Self-Moving Harry Potter Chessboard Stole The Show At IFA 2026 From Every AI Gadget IFA in 2026 was wall to wall AI. Every fridge had an assistant, every…",
+                  "published": "2026-09-09T03:20:36+08:00",
+                  "ts": 1788895236,
                   "kind": "newsletter",
                   "durationMin": 0,
-                  "titleZh": "IFA 2026 上的 InfiMaker K1：5 轴桌面 CNC 将任何创作者空间变成制造实验室",
-                  "titleEn": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab",
-                  "summaryZh": "IFA 2026 上的 InfiMaker K1：5 轴桌面 CNC 将任何创作者空间变成制造实验室 每个认真的创客都会在某个时候遇到同样的困难。你…",
-                  "summaryEn": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab Every serious maker has hit the same wall at some point. You…"
+                  "titleZh": "这个自动移动的哈利波特棋盘在 IFA 2026 上抢尽了所有 AI 小工具的风头",
+                  "titleEn": "This Self-Moving Harry Potter Chessboard Stole The Show At IFA 2026 From Every AI Gadget",
+                  "summaryZh": "这个自动移动的哈利·波特棋盘在 IFA 2026 上抢尽了所有人工智能小工具的风头 2026 年的 IFA 是全方位的人工智能。每个冰箱都有一个助手，每个…",
+                  "summaryEn": "This Self-Moving Harry Potter Chessboard Stole The Show At IFA 2026 From Every AI Gadget IFA in 2026 was wall to wall AI. Every fridge had an assistant, every…"
                 },
                 {
-                  "title": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS",
-                  "url": "https://www.yankodesign.com/2026/09/07/max-space-thunderbird-is-an-expandable-space-station-module-that-could-eventually-replace-iss/?utm_source=rss&utm_medium=rss&utm_campaign=max-space-thunderbird-is-an-expandable-space-station-module-that-could-eventually-replace-iss",
-                  "summary": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS Space is the final frontier as NASA plans to go deeper into the d…",
-                  "published": "2026-09-08T08:30:30+08:00",
-                  "ts": 1788827430,
+                  "title": "This CO2-powered cooling jacket could keep you comfortable in extreme heat without a battery",
+                  "url": "https://www.yankodesign.com/2026/09/08/this-co2-powered-cooling-jacket-could-keep-you-comfortable-in-extreme-heat-without-a-battery/?utm_source=rss&utm_medium=rss&utm_campaign=this-co2-powered-cooling-jacket-could-keep-you-comfortable-in-extreme-heat-without-a-battery",
+                  "summary": "This CO2-powered cooling jacket could keep you comfortable in extreme heat without a battery Most wearable cooling devices add more hardware to what you are al…",
+                  "published": "2026-09-09T02:20:29+08:00",
+                  "ts": 1788891629,
                   "kind": "newsletter",
                   "durationMin": 0,
-                  "titleZh": "Max Space Thunderbird 是一个可扩展的空间站模块，最终可能取代国际空间站",
-                  "titleEn": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS",
-                  "summaryZh": "Max Space Thunderbird 是一个可扩展的空间站模块，最终可能取代国际空间站。随着 NASA 计划更深入地探索太空，太空是最后的前沿……",
-                  "summaryEn": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS Space is the final frontier as NASA plans to go deeper into the d…"
+                  "titleZh": "这款二氧化碳驱动的冷却夹克无需电池即可让您在酷热中保持舒适",
+                  "titleEn": "This CO2-powered cooling jacket could keep you comfortable in extreme heat without a battery",
+                  "summaryZh": "这种二氧化碳驱动的冷却夹克可以让您在极热的情况下保持舒适，无需电池大多数可穿戴冷却设备都会为您的设备添加更多硬件……",
+                  "summaryEn": "This CO2-powered cooling jacket could keep you comfortable in extreme heat without a battery Most wearable cooling devices add more hardware to what you are al…"
                 },
                 {
-                  "title": "The 5 Best Architectural Designs of September 2026",
-                  "url": "https://www.yankodesign.com/2026/09/07/the-5-best-architectural-designs-of-september-2026/?utm_source=rss&utm_medium=rss&utm_campaign=the-5-best-architectural-designs-of-september-2026",
-                  "summary": "The 5 Best Architectural Designs of September 2026 September’s best projects prove that good architecture rarely announces itself. A house buried into a Polish…",
-                  "published": "2026-09-08T07:30:00+08:00",
-                  "ts": 1788823800,
+                  "title": "Huawei Finally Fixed the One Flaw That Followed Its Tri-Fold Phone",
+                  "url": "https://www.yankodesign.com/2026/09/08/huawei-finally-fixed-the-one-flaw-that-followed-its-tri-fold-phone/?utm_source=rss&utm_medium=rss&utm_campaign=huawei-finally-fixed-the-one-flaw-that-followed-its-tri-fold-phone",
+                  "summary": "Huawei Finally Fixed the One Flaw That Followed Its Tri-Fold Phone Huawei’s original tri-fold phone made headlines for unfolding into a tablet, but closing it…",
+                  "published": "2026-09-09T01:20:47+08:00",
+                  "ts": 1788888047,
                   "kind": "newsletter",
                   "durationMin": 0,
-                  "titleZh": "2026 年 9 月 5 项最佳建筑设计",
-                  "titleEn": "The 5 Best Architectural Designs of September 2026",
-                  "summaryZh": "2026 年 9 月 5 项最佳建筑设计 9 月的最佳项目证明，好的建筑很少会自行显现。一座被波兰人埋没的房子……",
-                  "summaryEn": "The 5 Best Architectural Designs of September 2026 September’s best projects prove that good architecture rarely announces itself. A house buried into a Polish…"
+                  "titleZh": "华为终于修复了三折手机的一个缺陷",
+                  "titleEn": "Huawei Finally Fixed the One Flaw That Followed Its Tri-Fold Phone",
+                  "summaryZh": "华为终于解决了三折手机的一个缺陷华为最初的三折手机因展开成平板电脑而成为头条新闻，但将其关闭......",
+                  "summaryEn": "Huawei Finally Fixed the One Flaw That Followed Its Tri-Fold Phone Huawei’s original tri-fold phone made headlines for unfolding into a tablet, but closing it…"
                 },
                 {
-                  "title": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living",
-                  "url": "https://www.yankodesign.com/2026/09/07/from-self-caring-plants-to-smokeless-steaks-these-ifa-2026-innovations-redesign-everyday-living/?utm_source=rss&utm_medium=rss&utm_campaign=from-self-caring-plants-to-smokeless-steaks-these-ifa-2026-innovations-redesign-everyday-living",
-                  "summary": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living The most significant home upgrade happening right now doesn’t…",
-                  "published": "2026-09-08T06:30:55+08:00",
-                  "ts": 1788820255,
+                  "title": "This Paper Pet Made of 400+ Circles Actually Moves When You Touch It",
+                  "url": "https://www.yankodesign.com/2026/09/08/this-paper-pet-made-of-400-circles-actually-moves-when-you-touch-it/?utm_source=rss&utm_medium=rss&utm_campaign=this-paper-pet-made-of-400-circles-actually-moves-when-you-touch-it",
+                  "summary": "This Paper Pet Made of 400+ Circles Actually Moves When You Touch It We live in a society where it seems like everything around us has to be functional. Every…",
+                  "published": "2026-09-09T00:20:56+08:00",
+                  "ts": 1788884456,
                   "kind": "newsletter",
                   "durationMin": 0,
-                  "titleZh": "从自理植物到无烟牛排：IFA 2026 的这些创新重新设计了日常生活",
-                  "titleEn": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living",
-                  "summaryZh": "从自理植物到无烟牛排：这些 IFA 2026 创新重新设计日常生活目前最重大的家居升级并不……",
-                  "summaryEn": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living The most significant home upgrade happening right now doesn’t…"
+                  "titleZh": "这个由 400 多个圆圈组成的纸宠物，当你触摸它时，它实际上会移动",
+                  "titleEn": "This Paper Pet Made of 400+ Circles Actually Moves When You Touch It",
+                  "summaryZh": "这款由 400 多个圆圈制成的纸宠物，当你触摸它时，它实际上会移动 我们生活在一个似乎我们周围的一切都必须具有功能性的社会。每一个…",
+                  "summaryEn": "This Paper Pet Made of 400+ Circles Actually Moves When You Touch It We live in a society where it seems like everything around us has to be functional. Every…"
                 },
                 {
-                  "title": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem",
-                  "url": "https://www.yankodesign.com/2026/09/07/nikes-220-air-liquid-max-finally-fixes-the-comfort-problem/?utm_source=rss&utm_medium=rss&utm_campaign=nikes-220-air-liquid-max-finally-fixes-the-comfort-problem",
-                  "summary": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem Nike Air Max sneakers have spent four decades winning arguments about style and losing them about…",
-                  "published": "2026-09-08T05:30:03+08:00",
-                  "ts": 1788816603,
+                  "title": "Foldable Cubivan Camping System gives your van kitchen, bathroom, and rooftop bedroom",
+                  "url": "https://www.yankodesign.com/2026/09/08/foldable-cubivan-camping-system-gives-your-van-kitchen-bathroom-and-rooftop-bedroom/?utm_source=rss&utm_medium=rss&utm_campaign=foldable-cubivan-camping-system-gives-your-van-kitchen-bathroom-and-rooftop-bedroom",
+                  "summary": "Foldable Cubivan Camping System gives your van kitchen, bathroom, and rooftop bedroom If your camping requirements are different from other adventurers, and yo…",
+                  "published": "2026-09-08T23:20:55+08:00",
+                  "ts": 1788880855,
                   "kind": "newsletter",
                   "durationMin": 0,
-                  "titleZh": "Nike 售价 220 美元的 Air Liquid Max 终于解决了舒适度问题",
-                  "titleEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem",
-                  "summaryZh": "Nike 售价 220 美元的 Air Liquid Max 终于解决了舒适度问题 Nike Air Max 运动鞋花了四十年的时间赢得了有关风格的争论，但又因……而输掉了争论。",
-                  "summaryEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem Nike Air Max sneakers have spent four decades winning arguments about style and losing them about…"
+                  "titleZh": "可折叠 Cubivan 露营系统为您的货车提供厨房、浴室和屋顶卧室",
+                  "titleEn": "Foldable Cubivan Camping System gives your van kitchen, bathroom, and rooftop bedroom",
+                  "summaryZh": "可折叠的 Cubivan 露营系统为您的货车提供厨房、浴室和屋顶卧室如果您的露营要求与其他冒险家不同，并且您...",
+                  "summaryEn": "Foldable Cubivan Camping System gives your van kitchen, bathroom, and rooftop bedroom If your camping requirements are different from other adventurers, and yo…"
                 }
               ]
             },
@@ -3867,6 +3867,19 @@ window.DIGEST_DATA = {
               "error": null,
               "items": [
                 {
+                  "title": "Frank Elderson: Fireside chat",
+                  "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260908~3652aa828f.en.html",
+                  "summary": "",
+                  "published": "2026-09-08T23:00:00+08:00",
+                  "ts": 1788879600,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "弗兰克·埃尔德森：炉边谈话",
+                  "titleEn": "Frank Elderson: Fireside chat",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
                   "title": "Philip R. Lane: Diversity at the European Central Bank",
                   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260904~7b9257099b.en.pdf",
                   "summary": "",
@@ -3954,19 +3967,6 @@ window.DIGEST_DATA = {
                   "durationMin": 0,
                   "titleZh": "欧洲央行消费者预期调查结果 – 2026 年 7 月",
                   "titleEn": "ECB Consumer Expectations Survey results – July 2026",
-                  "summaryZh": "",
-                  "summaryEn": ""
-                },
-                {
-                  "title": "Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum",
-                  "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260819~98ddf24b7b.en.html",
-                  "summary": "",
-                  "published": "2026-08-19T15:10:00+08:00",
-                  "ts": 1787123400,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "克里斯蒂娜·拉加德：世界经济论坛全球经济前景讨论中有关欧洲经济的小组评论",
-                  "titleEn": "Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum",
                   "summaryZh": "",
                   "summaryEn": ""
                 }
@@ -4208,100 +4208,101 @@ window.DIGEST_DATA = {
     }
   ],
   "nativity": {
-    "id": "turing",
-    "name": "艾伦·图灵",
-    "nameEn": "Alan Turing",
-    "role": "数学家、密码学家",
-    "roleEn": "Mathematician and cryptanalyst",
-    "bio": "现代计算理论先驱。出生记录约 2:15，Astro-Databank 评为 A。",
-    "bioEn": "Pioneer of computing theory. Birth record about 2:15 (Rodden A).",
-    "place": "伦敦，英国",
-    "placeEn": "London, England",
-    "rating": "A",
-    "source": "https://www.astro.com/astro-databank/Turing,_Alan",
+    "id": "nightingale",
+    "name": "弗洛伦斯·南丁格尔",
+    "nameEn": "Florence Nightingale",
+    "role": "护士、统计学家",
+    "roleEn": "Nurse and statistician",
+    "bio": "现代护理学奠基人，克里米亚战争中改革战地医护，并以统计图说服政府改善卫生。佛罗伦萨出生记录 13:00，Astro-Databank 评为 AA。",
+    "bioEn": "Founder of modern nursing. Florence civil time 13:00 (Rodden AA).",
+    "place": "佛罗伦萨，意大利",
+    "placeEn": "Florence, Italy",
+    "rating": "AA",
+    "source": "https://www.astro.com/astro-databank/Nightingale,_Florence",
     "sourceName": "Astro-Databank",
-    "birthLocal": "1912-06-23 02:15",
-    "tz": "Europe/London",
-    "asc": 65.68,
-    "ascLabel": "双子 5°41′",
-    "ascLabelEn": "Gemini 5°41′",
-    "mcLabel": "水瓶 2°11′",
-    "mcLabelEn": "Aquarius 2°11′",
-    "sectZh": "夜生盘",
-    "sectEn": "night chart",
+    "birthLocal": "1820-05-12 13:00",
+    "tz": "Europe/Rome",
+    "asc": 159.98,
+    "ascLabel": "处女 9°59′",
+    "ascLabelEn": "Virgo 9°59′",
+    "mcLabel": "双子 5°51′",
+    "mcLabelEn": "Gemini 5°51′",
+    "sectZh": "昼生盘",
+    "sectEn": "day chart",
     "ruler": "水星",
-    "fortuneHouse": 10,
-    "fortuneLabel": "事业声望",
-    "fortuneLabelEn": "career",
+    "fortuneHouse": 1,
+    "fortuneLabel": "自我气质",
+    "fortuneLabelEn": "self",
     "bodies": [
       {
         "name": "太阳",
-        "lon": 91.23,
-        "sign": "巨蟹",
-        "signEn": "Cancer",
-        "deg": 1.2,
-        "label": "巨蟹 1°14′",
-        "labelEn": "Cancer 1°14′",
-        "house": 2,
+        "lon": 51.63,
+        "sign": "金牛",
+        "signEn": "Taurus",
+        "deg": 21.6,
+        "label": "金牛 21°38′",
+        "labelEn": "Taurus 21°38′",
+        "house": 9,
         "dignity": "",
         "glyph": "☉"
       },
       {
         "name": "月亮",
-        "lon": 195.9,
-        "sign": "天秤",
-        "signEn": "Libra",
-        "deg": 15.9,
-        "label": "天秤 15°54′",
-        "labelEn": "Libra 15°54′",
-        "house": 6,
-        "dignity": "",
-        "glyph": "☽"
+        "lon": 54.74,
+        "sign": "金牛",
+        "signEn": "Taurus",
+        "deg": 24.7,
+        "label": "金牛 24°45′",
+        "labelEn": "Taurus 24°45′",
+        "house": 9,
+        "dignity": "擢升",
+        "glyph": "☽",
+        "dignityEn": "exaltation"
       },
       {
         "name": "水星",
-        "lon": 98.03,
-        "sign": "巨蟹",
-        "signEn": "Cancer",
-        "deg": 8.0,
-        "label": "巨蟹 8°02′",
-        "labelEn": "Cancer 8°02′",
-        "house": 2,
+        "lon": 25.78,
+        "sign": "白羊",
+        "signEn": "Aries",
+        "deg": 25.8,
+        "label": "白羊 25°47′",
+        "labelEn": "Aries 25°47′",
+        "house": 8,
         "dignity": "",
         "glyph": "☿"
       },
       {
         "name": "金星",
-        "lon": 87.66,
-        "sign": "双子",
-        "signEn": "Gemini",
-        "deg": 27.7,
-        "label": "双子 27°40′",
-        "labelEn": "Gemini 27°40′",
-        "house": 2,
+        "lon": 96.69,
+        "sign": "巨蟹",
+        "signEn": "Cancer",
+        "deg": 6.7,
+        "label": "巨蟹 6°41′",
+        "labelEn": "Cancer 6°41′",
+        "house": 10,
         "dignity": "",
         "glyph": "♀"
       },
       {
         "name": "火星",
-        "lon": 135.36,
+        "lon": 130.53,
         "sign": "狮子",
         "signEn": "Leo",
-        "deg": 15.4,
-        "label": "狮子 15°21′",
-        "labelEn": "Leo 15°21′",
-        "house": 4,
+        "deg": 10.5,
+        "label": "狮子 10°32′",
+        "labelEn": "Leo 10°32′",
+        "house": 11,
         "dignity": "",
         "glyph": "♂"
       },
       {
         "name": "木星",
-        "lon": 247.61,
-        "sign": "射手",
-        "signEn": "Sagittarius",
-        "deg": 7.6,
-        "label": "射手 7°37′",
-        "labelEn": "Sagittarius 7°37′",
+        "lon": 347.53,
+        "sign": "双鱼",
+        "signEn": "Pisces",
+        "deg": 17.5,
+        "label": "双鱼 17°32′",
+        "labelEn": "Pisces 17°32′",
         "house": 7,
         "dignity": "入庙",
         "glyph": "♃",
@@ -4309,49 +4310,50 @@ window.DIGEST_DATA = {
       },
       {
         "name": "土星",
-        "lon": 59.02,
-        "sign": "金牛",
-        "signEn": "Taurus",
-        "deg": 29.0,
-        "label": "金牛 29°01′",
-        "labelEn": "Taurus 29°01′",
-        "house": 12,
-        "dignity": "",
-        "glyph": "♄"
+        "lon": 9.91,
+        "sign": "白羊",
+        "signEn": "Aries",
+        "deg": 9.9,
+        "label": "白羊 9°55′",
+        "labelEn": "Aries 9°55′",
+        "house": 8,
+        "dignity": "落陷",
+        "glyph": "♄",
+        "dignityEn": "fall"
       },
       {
         "name": "天王星",
-        "lon": 302.64,
-        "sign": "水瓶",
-        "signEn": "Aquarius",
-        "deg": 2.6,
-        "label": "水瓶 2°38′",
-        "labelEn": "Aquarius 2°38′",
-        "house": 10,
+        "lon": 268.11,
+        "sign": "射手",
+        "signEn": "Sagittarius",
+        "deg": 28.1,
+        "label": "射手 28°07′",
+        "labelEn": "Sagittarius 28°07′",
+        "house": 4,
         "dignity": "",
         "glyph": "♅"
       },
       {
         "name": "海王星",
-        "lon": 112.67,
-        "sign": "巨蟹",
-        "signEn": "Cancer",
-        "deg": 22.7,
-        "label": "巨蟹 22°40′",
-        "labelEn": "Cancer 22°40′",
-        "house": 3,
+        "lon": 270.46,
+        "sign": "摩羯",
+        "signEn": "Capricorn",
+        "deg": 0.5,
+        "label": "摩羯 0°27′",
+        "labelEn": "Capricorn 0°27′",
+        "house": 4,
         "dignity": "",
         "glyph": "♆"
       },
       {
         "name": "冥王星",
-        "lon": 89.28,
-        "sign": "双子",
-        "signEn": "Gemini",
-        "deg": 29.3,
-        "label": "双子 29°17′",
-        "labelEn": "Gemini 29°17′",
-        "house": 2,
+        "lon": 359.68,
+        "sign": "双鱼",
+        "signEn": "Pisces",
+        "deg": 29.7,
+        "label": "双鱼 29°41′",
+        "labelEn": "Pisces 29°41′",
+        "house": 7,
         "dignity": "",
         "glyph": "♇"
       }
@@ -4359,137 +4361,161 @@ window.DIGEST_DATA = {
     "cusps": [
       {
         "house": 1,
-        "lon": 65.68,
-        "sign": "双子",
-        "label": "双子 5°41′",
-        "labelEn": "Gemini 5°41′"
+        "lon": 159.98,
+        "sign": "处女",
+        "label": "处女 9°59′",
+        "labelEn": "Virgo 9°59′"
       },
       {
         "house": 2,
-        "lon": 86.75,
-        "sign": "双子",
-        "label": "双子 26°45′",
-        "labelEn": "Gemini 26°45′"
+        "lon": 183.37,
+        "sign": "天秤",
+        "label": "天秤 3°22′",
+        "labelEn": "Libra 3°22′"
       },
       {
         "house": 3,
-        "lon": 103.86,
-        "sign": "巨蟹",
-        "label": "巨蟹 13°52′",
-        "labelEn": "Cancer 13°52′"
+        "lon": 212.13,
+        "sign": "天蝎",
+        "label": "天蝎 2°08′",
+        "labelEn": "Scorpio 2°08′"
       },
       {
         "house": 4,
-        "lon": 122.18,
-        "sign": "狮子",
-        "label": "狮子 2°11′",
-        "labelEn": "Leo 2°11′"
+        "lon": 245.84,
+        "sign": "射手",
+        "label": "射手 5°51′",
+        "labelEn": "Sagittarius 5°51′"
       },
       {
         "house": 5,
-        "lon": 146.79,
-        "sign": "狮子",
-        "label": "狮子 26°47′",
-        "labelEn": "Leo 26°47′"
+        "lon": 280.98,
+        "sign": "摩羯",
+        "label": "摩羯 10°59′",
+        "labelEn": "Capricorn 10°59′"
       },
       {
         "house": 6,
-        "lon": 187.61,
-        "sign": "天秤",
-        "label": "天秤 7°37′",
-        "labelEn": "Libra 7°37′"
+        "lon": 312.81,
+        "sign": "水瓶",
+        "label": "水瓶 12°49′",
+        "labelEn": "Aquarius 12°49′"
       },
       {
         "house": 7,
-        "lon": 245.68,
-        "sign": "射手",
-        "label": "射手 5°41′",
-        "labelEn": "Sagittarius 5°41′"
+        "lon": 339.98,
+        "sign": "双鱼",
+        "label": "双鱼 9°59′",
+        "labelEn": "Pisces 9°59′"
       },
       {
         "house": 8,
-        "lon": 266.75,
-        "sign": "射手",
-        "label": "射手 26°45′",
-        "labelEn": "Sagittarius 26°45′"
+        "lon": 3.37,
+        "sign": "白羊",
+        "label": "白羊 3°22′",
+        "labelEn": "Aries 3°22′"
       },
       {
         "house": 9,
-        "lon": 283.86,
-        "sign": "摩羯",
-        "label": "摩羯 13°52′",
-        "labelEn": "Capricorn 13°52′"
+        "lon": 32.13,
+        "sign": "金牛",
+        "label": "金牛 2°08′",
+        "labelEn": "Taurus 2°08′"
       },
       {
         "house": 10,
-        "lon": 302.18,
-        "sign": "水瓶",
-        "label": "水瓶 2°11′",
-        "labelEn": "Aquarius 2°11′"
+        "lon": 65.84,
+        "sign": "双子",
+        "label": "双子 5°51′",
+        "labelEn": "Gemini 5°51′"
       },
       {
         "house": 11,
-        "lon": 326.79,
-        "sign": "水瓶",
-        "label": "水瓶 26°47′",
-        "labelEn": "Aquarius 26°47′"
+        "lon": 100.98,
+        "sign": "巨蟹",
+        "label": "巨蟹 10°59′",
+        "labelEn": "Cancer 10°59′"
       },
       {
         "house": 12,
-        "lon": 7.61,
-        "sign": "白羊",
-        "label": "白羊 7°37′",
-        "labelEn": "Aries 7°37′"
+        "lon": 132.81,
+        "sign": "狮子",
+        "label": "狮子 12°49′",
+        "labelEn": "Leo 12°49′"
       }
     ],
     "aspects": [
       {
-        "a": "月亮",
-        "b": "火星",
-        "aspect": "六分相",
-        "nature": "顺畅",
-        "orb": 0.5,
-        "sep": 60.5
+        "a": "海王星",
+        "b": "冥王星",
+        "aspect": "刑相",
+        "nature": "张力",
+        "orb": 0.8,
+        "sep": 89.2
+      },
+      {
+        "a": "天王星",
+        "b": "冥王星",
+        "aspect": "刑相",
+        "nature": "张力",
+        "orb": 1.6,
+        "sep": 91.6
       },
       {
         "a": "金星",
-        "b": "冥王星",
-        "aspect": "合相",
-        "nature": "融合",
-        "orb": 1.6,
-        "sep": 1.6
+        "b": "土星",
+        "aspect": "刑相",
+        "nature": "张力",
+        "orb": 3.2,
+        "sep": 86.8
       },
       {
-        "a": "太阳",
-        "b": "冥王星",
-        "aspect": "合相",
-        "nature": "融合",
-        "orb": 2.0,
-        "sep": 2.0
+        "a": "金星",
+        "b": "海王星",
+        "aspect": "冲相",
+        "nature": "对峙",
+        "orb": 6.2,
+        "sep": 173.8
       },
       {
-        "a": "太阳",
-        "b": "金星",
-        "aspect": "合相",
-        "nature": "融合",
-        "orb": 3.6,
-        "sep": 3.6
+        "a": "火星",
+        "b": "土星",
+        "aspect": "拱相",
+        "nature": "和谐",
+        "orb": 0.6,
+        "sep": 120.6
       },
       {
-        "a": "土星",
+        "a": "水星",
         "b": "天王星",
         "aspect": "拱相",
         "nature": "和谐",
-        "orb": 3.6,
-        "sep": 116.4
+        "orb": 2.3,
+        "sep": 117.7
+      },
+      {
+        "a": "天王星",
+        "b": "海王星",
+        "aspect": "合相",
+        "nature": "融合",
+        "orb": 2.3,
+        "sep": 2.3
       },
       {
         "a": "太阳",
-        "b": "水星",
+        "b": "月亮",
         "aspect": "合相",
         "nature": "融合",
-        "orb": 6.8,
-        "sep": 6.8
+        "orb": 3.1,
+        "sep": 3.1
+      },
+      {
+        "a": "水星",
+        "b": "海王星",
+        "aspect": "拱相",
+        "nature": "和谐",
+        "orb": 4.7,
+        "sep": 115.3
       }
     ],
     "sections": [
@@ -4497,71 +4523,71 @@ window.DIGEST_DATA = {
         "id": "overall",
         "title": "整体",
         "titleEn": "Overview",
-        "text": "艾伦·图灵的主轴是巨蟹太阳、天秤月亮、双子上升：别人先看到灵活善言的一面，心里其实更需要讲究和谐的感觉，做选择时又常按细腻顾家的太阳来定方向。太阳在第2宫，成就感多半来自「财富资源」。月亮在第6宫，心情也常跟「工作健康」绑在一起。此为夜生盘。",
-        "textEn": "Sun in Cancer (house 2), Moon in Libra (house 6), Gemini rising — first impression quick-witted, inner need diplomatic, will protective.",
-        "verify": "事迹验证：可计算性与破译工作改写战争与计算机史。",
-        "verifyEn": "Life check: 可计算性与破译工作改写战争与计算机史。"
+        "text": "弗洛伦斯·南丁格尔的主轴是金牛太阳、金牛月亮、处女上升：别人先看到细致严谨的一面，心里其实更需要稳健务实的感觉，做选择时又常按稳健务实的太阳来定方向。太阳在第9宫，成就感多半来自「远行信念」。月亮在第9宫，心情也常跟「远行信念」绑在一起。此为昼生盘。",
+        "textEn": "Sun in Taurus (house 9), Moon in Taurus (house 9), Virgo rising — first impression exacting, inner need steady, will steady.",
+        "verify": "事迹验证：用统计与管理把护理从经验变成可改革的制度。",
+        "verifyEn": "Life check: 用统计与管理把护理从经验变成可改革的制度。"
       },
       {
         "id": "personality",
         "title": "性格",
         "titleEn": "Personality",
-        "text": "性格底色：上升双子给外界的第一印象是灵活善言；月亮天秤管情绪习惯，偏讲究和谐；太阳巨蟹管意志，做事时更细腻顾家。水星在巨蟹第2宫，思考和表达会往「财富资源」上靠。月亮与火星的六分相会写进性格里，成为别人一眼能感到的节奏。",
-        "textEn": "Rising Gemini (quick-witted); Moon Libra (diplomatic); Sun Cancer (protective).",
-        "verify": "事迹验证：话少、直来直去，对社交规则不耐烦。",
-        "verifyEn": "Life check: 话少、直来直去，对社交规则不耐烦。"
+        "text": "性格底色：上升处女给外界的第一印象是细致严谨；月亮金牛管情绪习惯，偏稳健务实；太阳金牛管意志，做事时更稳健务实。水星在白羊第8宫，思考和表达会往「共享资源」上靠。水星与天王星的拱相会写进性格里，成为别人一眼能感到的节奏。",
+        "textEn": "Rising Virgo (exacting); Moon Taurus (steady); Sun Taurus (steady).",
+        "verify": "事迹验证：意志极强，不喜被家庭角色定义。",
+        "verifyEn": "Life check: 意志极强，不喜被家庭角色定义。"
       },
       {
         "id": "career",
         "title": "事业",
         "titleEn": "Career",
-        "text": "中天在水瓶，公开成就的底色偏独立创新；十宫主土星飞入第12宫（内在修复），事业起伏常跟这里连在一起；十宫有天王星坐守，公开成绩主题会被点亮；太阳在巨蟹第2宫，干劲多半使在「财务、产品、销售变现或资源经营」上。适合方向：适合科技、社会创新、研究发明或非常规路径。做事风格偏讲究和谐（六宫在天秤）。太阳合相冥王星偏顺，合作或曝光更自然。",
-        "textEn": "MC in Aquarius: 适合科技、社会创新、研究发明或非常规路径 Tenth-ruler story sits in house 12.",
-        "verify": "事迹验证：布莱切利园、ACE、曼彻斯特，学术与国家项目交织。",
-        "verifyEn": "Life check: 布莱切利园、ACE、曼彻斯特，学术与国家项目交织。"
+        "text": "中天在双子，公开成就的底色偏灵活善言；十宫主水星飞入第8宫（共享资源），事业起伏常跟这里连在一起；十宫有金星坐守，公开成绩主题会被点亮；太阳在金牛第9宫，干劲多半使在「高等教育、出版传媒、跨境业务」上。适合方向：适合媒体写作、教育培训、商务对接与资讯协作。做事风格偏独立创新（六宫在水瓶）。火星拱相土星偏顺，合作或曝光更自然。",
+        "textEn": "MC in Gemini: 适合媒体写作、教育培训、商务对接与资讯协作 Tenth-ruler story sits in house 8.",
+        "verify": "事迹验证：克里米亚之后推动英国军医与护士培训改革。",
+        "verifyEn": "Life check: 克里米亚之后推动英国军医与护士培训改革。"
       },
       {
         "id": "wealth",
         "title": "财富",
         "titleEn": "Wealth",
-        "text": "二宫在双子，钱袋脾气偏灵活善言；二宫主水星飞入第2宫（财富资源），进账松紧常跟这里连在一起；二宫有太阳、水星、金星和冥王星坐守，自己挣钱存钱的主题会被点亮；金星在双子第2宫，花钱更听「本职收入、储蓄与可掌控的资源」的话。财富主要来自本职收入、储蓄与可掌控的资源。对金钱的态度：钱用在学习、社交和新鲜体验上更开心。金星合相冥王星偏顺，合作或顺势进账更自然。",
-        "textEn": "2nd house in Gemini. Money path leans on 本职收入、储蓄与可掌控的资源.",
-        "verify": "事迹验证：公务员与学者薪资，不以财富著称。",
-        "verifyEn": "Life check: 公务员与学者薪资，不以财富著称。"
+        "text": "二宫在天秤，钱袋脾气偏讲究和谐；二宫主金星飞入第10宫（事业声望），进账松紧常跟这里连在一起；八宫有水星和土星，共同财务或投资议题更醒目；金星在巨蟹第10宫，花钱更听「事业成就、职位声望与公开成绩」的话。财富主要来自事业成就、职位声望与公开成绩。对金钱的态度：为关系和美感买单更容易。金星刑相土星带来张力，理财上宜设规则。",
+        "textEn": "2nd house in Libra. Money path leans on 事业成就、职位声望与公开成绩.",
+        "verify": "事迹验证：出身世家，把资源投进改革而非个人享受。",
+        "verifyEn": "Life check: 出身世家，把资源投进改革而非个人享受。"
       },
       {
         "id": "love",
         "title": "感情",
         "titleEn": "Love",
-        "text": "七宫在射手，伴侣性格偏性格乐观开阔，不喜被绑太死；七宫主木星飞入第7宫，相处重心常在「伴侣合作」；七宫有木星坐守，对方身上这些星的特质会更明显；金星在双子第2宫，喜好滤镜偏灵活善言。月亮六分相火星偏顺，吸引与互动来得更自然。",
-        "textEn": "7th house in Sagittarius: partners tend to feel expansive.",
-        "verify": "事迹验证：同性关系在当时被定罪，私人生活被法律碾压。",
-        "verifyEn": "Life check: 同性关系在当时被定罪，私人生活被法律碾压。"
+        "text": "七宫在双鱼，伴侣性格偏性格温柔感性，共情强；七宫主木星飞入第7宫，相处重心常在「伴侣合作」；七宫有木星和冥王星坐守，对方身上这些星的特质会更明显；金星在巨蟹第10宫，喜好滤镜偏细腻顾家。太阳合相月亮偏顺，吸引与互动来得更自然。",
+        "textEn": "7th house in Pisces: partners tend to feel empathic.",
+        "verify": "事迹验证：终身未嫁，把精力放在事业与通信网络。",
+        "verifyEn": "Life check: 终身未嫁，把精力放在事业与通信网络。"
       },
       {
         "id": "health",
         "title": "健康",
         "titleEn": "Health",
-        "text": "六宫在天秤，日常保养节奏偏讲究和谐；上升在双子，体质底色偏灵活善言；六宫主金星飞入第2宫，体能起伏常跟「财富资源」绑在一起；六宫有月亮，工作消耗会更快反映到身上。日常更需留意腰肾、皮肤与平衡感，宜作息对称、少久坐。十二宫在白羊，休息不足时更易出现隐性疲惫。",
-        "textEn": "6th house in Libra. Watch the body themes tied to Libra.",
-        "verify": "事迹验证：化学阉割后于 1954 年去世，普遍认为是自杀。",
-        "verifyEn": "Life check: 化学阉割后于 1954 年去世，普遍认为是自杀。"
+        "text": "六宫在水瓶，日常保养节奏偏独立创新；上升在处女，体质底色偏细致严谨；六宫主土星飞入第8宫，体能起伏常跟「共享资源」绑在一起。日常更需留意小腿踝、循环与神经过敏，宜保暖末梢、规律休息。十二宫在狮子，休息不足时更易出现隐性疲惫。",
+        "textEn": "6th house in Aquarius. Watch the body themes tied to Aquarius.",
+        "verify": "事迹验证：战后长期卧病，仍以书信指挥改革，享年 90 岁。",
+        "verifyEn": "Life check: 战后长期卧病，仍以书信指挥改革，享年 90 岁。"
       }
     ],
     "techniqueZh": "分宫用普拉西德斯制（与星星日记本命盘相同）：看宫头、宫主飞星、落宫与相位。论述按整体、性格、事业、财富、感情、健康展开，再用公开事迹对照，并非某专栏转载。出生数据见 Astro-Databank（Rodden 评级）。",
     "techniqueEn": "Placidus houses, as in the Star Diary natal module: cusps, house rulers, occupancy, aspects. Notes cover overview, personality, career, wealth, love and health, then check public biography. Birth data: Astro-Databank.",
     "houseSystem": "普拉西德斯制 Placidus",
-    "date": "2026-09-08"
+    "date": "2026-09-09"
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 8% · Fading",
-    "blessing": "The moon has only a thin curve left, wanting to be seen and praised. Venus can be seen in the west, so keep a steady rhythm and remember to take a breath.",
+    "moonLine": "Glossy 5% · Fading",
+    "blessing": "The moon has only a thin curve left, wanting to be seen and praised. Venus can be seen in the west. If luck gives you a little push, remember to take a breath.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 8%, the age is about 27 days, and it is gradually losing weight."
+        "caption": "The bright side is about 5%, the age is about 27 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -4573,7 +4599,7 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Moon accompanying Jupiter",
-        "caption": "The Moon is close to Jupiter, about 1 degree away."
+        "caption": "The Moon is close to Jupiter, about 4 degrees away."
       },
       {
         "title": "Jupiter is visible in the eastern sky",
@@ -4600,12 +4626,12 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Moon",
-        "label": "Leo 14°",
+        "label": "Leo 19°",
         "influence": "If the Moon is in Leo, your mood is bright and confident, and you should express yourself and be seen."
       },
       {
         "name": "Mercury",
-        "label": "Virgo 26°",
+        "label": "Virgo 27°",
         "influence": "With Mercury in Virgo, communication and thoughts tend to be more detailed and clear, so it is better to organize and be precise."
       },
       {
@@ -4621,22 +4647,6 @@ window.DIGEST_DATA = {
     ],
     "aspects": [
       {
-        "a": "Moon",
-        "b": "Saturn",
-        "aspect": "Trine",
-        "tone": "easy",
-        "influence": "The moon trines Saturn, and emotions can advance smoothly through the power of responsibility.",
-        "endsIn": "约 9 小时后结束"
-      },
-      {
-        "a": "Moon",
-        "b": "Jupiter",
-        "aspect": "Conjunction",
-        "tone": "blend",
-        "influence": "The Moon conjunct Jupiter, emotions and opportunities overlap, and themes are amplified.",
-        "endsIn": "约 17 小时后结束"
-      },
-      {
         "a": "Sun",
         "b": "Mars",
         "aspect": "Sextile",
@@ -4645,12 +4655,20 @@ window.DIGEST_DATA = {
         "endsIn": "约 2 周后结束"
       },
       {
+        "a": "Moon",
+        "b": "Jupiter",
+        "aspect": "Conjunction",
+        "tone": "blend",
+        "influence": "The Moon conjunct Jupiter, emotions and opportunities overlap, and themes are amplified.",
+        "endsIn": "约 8 小时后结束"
+      },
+      {
         "a": "Venus",
         "b": "Pluto",
         "aspect": "Square",
         "tone": "tense",
         "influence": "Venus squares Pluto, relationships and transformations are prone to awkwardness, so it’s better to slow down before making a decision.",
-        "endsIn": "约 8 周后结束"
+        "endsIn": "约 7 周后结束"
       },
       {
         "a": "Mars",
@@ -4658,7 +4676,7 @@ window.DIGEST_DATA = {
         "aspect": "Square",
         "tone": "tense",
         "influence": "If you want to move but get stuck, it is better to break it into small steps and avoid forcing the move.",
-        "endsIn": "ends in about 2 days"
+        "endsIn": "ends in about 1 days"
       },
       {
         "a": "Mercury",
