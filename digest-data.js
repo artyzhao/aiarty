@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-08",
   "weekday": "星期二",
-  "fetchedAt": "2026-09-08 06:37",
+  "fetchedAt": "2026-09-08 13:53",
   "freshHours": 36,
   "sections": [
     {
@@ -13,6 +13,7 @@ window.DIGEST_DATA = {
         {
           "id": "tap",
           "name": "The Astrology Podcast",
+          "nameEn": "The Astrology Podcast",
           "home": "https://theastrologypodcast.com/",
           "kind": "podcast",
           "ok": true,
@@ -27,7 +28,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 385,
               "titleZh": "希腊占星学的赫尔墨斯起源",
-              "summaryZh": "希腊化占星学于公元前 2 世纪在埃及出现，代表了古老的美索不达米亚和埃及占星学传统的深刻综合……"
+              "titleEn": "The Hermetic Origins of Hellenistic Astrology",
+              "summaryZh": "希腊化占星学于公元前 2 世纪在埃及出现，代表了古老的美索不达米亚和埃及占星学传统的深刻综合……",
+              "summaryEn": "Hellenistic astrology emerged in Egypt in the 2nd century BCE, representing a profound synthesis of the older Mesopotamian and Egyptian astrological traditions…"
             },
             {
               "title": "September Astrology Forecast 2026",
@@ -38,7 +41,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 125,
               "titleZh": "2026 年 9 月占星预测",
-              "summaryZh": "与占星家 Chris Brennan 和 Austin Coppock 一起详细了解 2026 年 9 月的占星预测。我们花了第一个小时谈论新闻和……"
+              "titleEn": "September Astrology Forecast 2026",
+              "summaryZh": "与占星家 Chris Brennan 和 Austin Coppock 一起详细了解 2026 年 9 月的占星预测。我们花了第一个小时谈论新闻和……",
+              "summaryEn": "A detailed look at the astrology forecast for September 2026, with astrologers Chris Brennan and Austin Coppock. We spend the first hour talking about news and…"
             },
             {
               "title": "Gnosticism, Hermeticism, and Ancient Astrology",
@@ -49,7 +54,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 115,
               "titleZh": "诺斯替主义、赫耳墨斯主义和古代占星学",
-              "summaryZh": "学者 M. David Litwa 加入播客，探索诺斯替主义、赫尔墨斯主义和古代占星学的交叉点。大卫是早期基督教的历史学家……"
+              "titleEn": "Gnosticism, Hermeticism, and Ancient Astrology",
+              "summaryZh": "学者 M. David Litwa 加入播客，探索诺斯替主义、赫尔墨斯主义和古代占星学的交叉点。大卫是早期基督教的历史学家……",
+              "summaryEn": "Scholar M. David Litwa joins the podcast to explore the intersections of Gnosticism, Hermeticism, and ancient astrology. David is a historian of early Christia…"
             },
             {
               "title": "Roland Orzabal on Astrology, Fate, and Tears for Fears",
@@ -60,7 +67,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 95,
               "titleZh": "罗兰·欧萨巴尔 (Roland Orzabal) 谈占星学、命运和恐惧之泪",
-              "summaryZh": "采访来自 Tears for Fears 乐队的音乐家 Roland Orzabal，讨论他的新自传《欢迎来到你的生活》，其中他讲述了自己的人生故事……"
+              "titleEn": "Roland Orzabal on Astrology, Fate, and Tears for Fears",
+              "summaryZh": "采访来自 Tears for Fears 乐队的音乐家 Roland Orzabal，讨论他的新自传《欢迎来到你的生活》，其中他讲述了自己的人生故事……",
+              "summaryEn": "An interview with musician Roland Orzabal from the band Tears for Fears, discussing his new autobiography, Welcome to Your Life, where he tells his life story…"
             },
             {
               "title": "The Origin of the Chaldean Order and Planetary Days of the Week",
@@ -71,7 +80,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 206,
               "titleZh": "迦勒底教团的起源和行星一周的日子",
-              "summaryZh": "在这一集中，我提出了一个关于所谓的迦勒底行星秩序起源的新理论，以及七个传统行星的分配……"
+              "titleEn": "The Origin of the Chaldean Order and Planetary Days of the Week",
+              "summaryZh": "在这一集中，我提出了一个关于所谓的迦勒底行星秩序起源的新理论，以及七个传统行星的分配……",
+              "summaryEn": "In this episode I propose a new theory about the origins of the so-called Chaldean order of the planets, as well as the assignment of the seven traditional pla…"
             },
             {
               "title": "The Libra Rising Birth Chart of the United States",
@@ -82,7 +93,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 256,
               "titleZh": "美国天秤座上升出生图",
-              "summaryZh": "在这一重要的新剧集中，我深入探讨了 1776 年 7 月 4 日《独立宣言》最终确定的历史证据。"
+              "titleEn": "The Libra Rising Birth Chart of the United States",
+              "summaryZh": "在这一重要的新剧集中，我深入探讨了 1776 年 7 月 4 日《独立宣言》最终确定的历史证据。",
+              "summaryEn": "In this major new episode, I do a deep dive into the historical evidence for when the Declaration of Independence was finalized on July 4, 1776. There has been…"
             },
             {
               "title": "August Astrology Forecast 2026",
@@ -93,7 +106,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 165,
               "titleZh": "2026 年 8 月占星预测",
-              "summaryZh": "与占星家 Chris Brennan 和 Austin Coppock 一起深入探讨 2026 年 8 月的占星预测。我们花了第一个小时讨论占星术......"
+              "titleEn": "August Astrology Forecast 2026",
+              "summaryZh": "与占星家 Chris Brennan 和 Austin Coppock 一起深入探讨 2026 年 8 月的占星预测。我们花了第一个小时讨论占星术......",
+              "summaryEn": "A deep dive into the astrology forecast for August 2026, with astrologers Chris Brennan and Austin Coppock. We spend the first hour talking about the astrology…"
             },
             {
               "title": "July Astrology Forecast 2026",
@@ -104,13 +119,16 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 141,
               "titleZh": "2026 年 7 月占星术预测",
-              "summaryZh": "与占星家 Chris Brennan 和 Austin Coppock 一起深入探讨 2026 年 7 月的占星预测。这个月在高度不稳定的基础上开始，主导......"
+              "titleEn": "July Astrology Forecast 2026",
+              "summaryZh": "与占星家 Chris Brennan 和 Austin Coppock 一起深入探讨 2026 年 7 月的占星预测。这个月在高度不稳定的基础上开始，主导......",
+              "summaryEn": "A deep dive into the astrology forecast for July 2026, with astrologers Chris Brennan and Austin Coppock. The month opens on highly unstable ground, dominated…"
             }
           ]
         },
         {
           "id": "ghost",
           "name": "Ghost of a Podcast",
+          "nameEn": "Ghost of a Podcast",
           "home": "https://www.lovelanyadoo.com/ghost-of-a-podcast",
           "kind": "podcast",
           "ok": true,
@@ -125,7 +143,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 29,
               "titleZh": "660：处女座新月及其他仪式",
-              "summaryZh": "处女座新月！金星和凯龙星不和！水星和海王星对冲！播客幽灵又迎来了天堂般的一周。观看视频版本..."
+              "titleEn": "660: New Moon in Virgo & Other Rituals",
+              "summaryZh": "处女座新月！金星和凯龙星不和！水星和海王星对冲！播客幽灵又迎来了天堂般的一周。观看视频版本...",
+              "summaryEn": "A New Moon in Virgo! Venus and Chiron at odds! Mercury and Neptune are opposite! It's another week in paradise, on Ghost of a Podcast. Watch the video version…"
             },
             {
               "title": "659: Dying",
@@ -136,7 +156,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 86,
               "titleZh": "659：死亡",
-              "summaryZh": "娜奥米第三次被诊断患有癌症，医生告诉她，这一次她将死于癌症。她一直在优雅地照顾自己的内心生活……"
+              "titleEn": "659: Dying",
+              "summaryZh": "娜奥米第三次被诊断患有癌症，医生告诉她，这一次她将死于癌症。她一直在优雅地照顾自己的内心生活……",
+              "summaryEn": "Naomi has received a third cancer diagnosis, and the doctors have told her that this time she will die of it. She's been tending gracefully to her inner life a…"
             },
             {
               "title": "658: Horoscope - Three Men & a Baby",
@@ -147,7 +169,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 24,
               "titleZh": "658：星座运势 - 三个男人和一个婴儿",
-              "summaryZh": "火星和土星发生冲突，但木星和土星表现得很好。收看您可以实际使用的占星术，并加入Patreon以了解更多信息。观看视频版本……"
+              "titleEn": "658: Horoscope - Three Men & a Baby",
+              "summaryZh": "火星和土星发生冲突，但木星和土星表现得很好。收看您可以实际使用的占星术，并加入Patreon以了解更多信息。观看视频版本……",
+              "summaryEn": "Mars and Saturn clash, but Jupiter and Saturn are playing nice. Tune in for astrology you can actually use, and join Patreon to learn more. Watch the video ver…"
             },
             {
               "title": "657: Anxiety & the 4 Ns",
@@ -158,7 +182,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 8,
               "titleZh": "657：焦虑与 4 N",
-              "summaryZh": "在这篇特别的短片中，杰西卡分解了一种实用且易于记忆的策略，用于处理即将到来的日食可能出现的情绪。观看视频…"
+              "titleEn": "657: Anxiety & the 4 Ns",
+              "summaryZh": "在这篇特别的短片中，杰西卡分解了一种实用且易于记忆的策略，用于处理即将到来的日食可能出现的情绪。观看视频…",
+              "summaryEn": "In this special shorty, Jessica breaks down a practical easy-to-remember strategy for handling emotions that may arise around the upcoming eclipse. Watch the v…"
             },
             {
               "title": "656: Horoscope - A Lunar Eclipse and Other Surprises!",
@@ -169,7 +195,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 35,
               "titleZh": "656：星座运势 - 月食和其他惊喜！",
-              "summaryZh": "凯龙星在这非常情绪化且不可预测的一周提供支持，而天王星则带来不稳定。 27日，双鱼座月食激活双..."
+              "titleEn": "656: Horoscope - A Lunar Eclipse and Other Surprises!",
+              "summaryZh": "凯龙星在这非常情绪化且不可预测的一周提供支持，而天王星则带来不稳定。 27日，双鱼座月食激活双...",
+              "summaryEn": "Chiron offers its support in this very emotional and unpredictable week, while Uranus causes instability. On the 27th, the Lunar Eclipse in Pisces activates bi…"
             },
             {
               "title": "655: Wildfire",
@@ -180,7 +208,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 60,
               "titleZh": "655：野火",
-              "summaryZh": "几天前，在毁灭性的斯波坎野火中失去了家园，本周的客人与杰西卡一起寻求帮助，以弥补这一巨大的损失。他们谈论……"
+              "titleEn": "655: Wildfire",
+              "summaryZh": "几天前，在毁灭性的斯波坎野火中失去了家园，本周的客人与杰西卡一起寻求帮助，以弥补这一巨大的损失。他们谈论……",
+              "summaryEn": "Having lost her home to the devastating Spokane wildfire a few days prior, this week's guest joins Jessica for help unpacking this immense loss. They talk abou…"
             },
             {
               "title": "654: Horoscope - It's Messy and Emotional, TBH",
@@ -191,7 +221,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 26,
               "titleZh": "654：星座运势 - 很混乱且情绪化，说实话",
-              "summaryZh": "在食相季节中期，反思自己的成长很重要，杰西卡本周将告诉你如何思考这一点。然后她崩溃了……"
+              "titleEn": "654: Horoscope - It's Messy and Emotional, TBH",
+              "summaryZh": "在食相季节中期，反思自己的成长很重要，杰西卡本周将告诉你如何思考这一点。然后她崩溃了……",
+              "summaryEn": "In the middle of eclipse season, it's important to reflect on your growth, and Jessica talks you through how to think about it this week. Then she breaks down…"
             },
             {
               "title": "653: Your Stewardship",
@@ -202,13 +234,16 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 15,
               "titleZh": "653：你的管理职责",
-              "summaryZh": "杰西卡本周从阅读中休息一下，转而分享了她的 Patreon 上关于管理权的一些内容——它是什么以及如何驾驭其中的内容……"
+              "titleEn": "653: Your Stewardship",
+              "summaryZh": "杰西卡本周从阅读中休息一下，转而分享了她的 Patreon 上关于管理权的一些内容——它是什么以及如何驾驭其中的内容……",
+              "summaryEn": "Jessica takes a break from readings this week and instead shares a little something from her Patreon about stewardship—what it is and how to navigate what's in…"
             }
           ]
         },
         {
           "id": "alice",
           "name": "Astrology with Alice Bell",
+          "nameEn": "Astrology with Alice Bell",
           "home": "https://alicebell.substack.com/",
           "kind": "newsletter",
           "ok": true,
@@ -223,7 +258,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "我出生的占星故事",
-              "summaryZh": "这些行运如何讲述了我的分娩和分娩最终经历的各种曲折。"
+              "titleEn": "The Astrology of My Birth Story",
+              "summaryZh": "这些行运如何讲述了我的分娩和分娩最终经历的各种曲折。",
+              "summaryEn": "How the transits spoke to the various twists and turns my labor and delivery ended up having."
             },
             {
               "title": "Virgo Season Monthly Forecast",
@@ -234,7 +271,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "处女座季节月度预测",
-              "summaryZh": "最后一次双鱼座月食，太阳-水星在处女座，火星与土星相刑，金星进入天蝎座，稍后将在那里逆行，水星移动到左..."
+              "titleEn": "Virgo Season Monthly Forecast",
+              "summaryZh": "最后一次双鱼座月食，太阳-水星在处女座，火星与土星相刑，金星进入天蝎座，稍后将在那里逆行，水星移动到左...",
+              "summaryEn": "A final Pisces lunar eclipse, Sun-Mercury cazimi in Virgo, Mars squares Saturn, Venus enters Scorpio where it will later station retrograde, Mercury moves to L…"
             },
             {
               "title": "How Synastry and Relationship Timing Work Hand in Hand",
@@ -245,7 +284,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "Synastry 和关系计时如何齐头并进",
-              "summaryZh": "另外，我最近注意到的一些其他关系占星学观察"
+              "titleEn": "How Synastry and Relationship Timing Work Hand in Hand",
+              "summaryZh": "另外，我最近注意到的一些其他关系占星学观察",
+              "summaryEn": "Plus, some other relationship astrology observations I’ve noticed recently"
             },
             {
               "title": "How Do You Know When You’re Ready for a Major Life Change?",
@@ -256,7 +297,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "你怎么知道你什么时候准备好迎接重大的生活改变？",
-              "summaryZh": "了解日食何时对你来说更重要的提示"
+              "titleEn": "How Do You Know When You’re Ready for a Major Life Change?",
+              "summaryZh": "了解日食何时对你来说更重要的提示",
+              "summaryEn": "Tips for understanding when eclipses will be a bigger deal for you"
             },
             {
               "title": "Leo Season Monthly Forecast",
@@ -267,7 +310,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "狮子座季节月度预测",
-              "summaryZh": "水星逆行结束、南北交点改变星座、满月引发木星与冥王星对分相、狮子座日食正在发生，等等！"
+              "titleEn": "Leo Season Monthly Forecast",
+              "summaryZh": "水星逆行结束、南北交点改变星座、满月引发木星与冥王星对分相、狮子座日食正在发生，等等！",
+              "summaryEn": "Mercury retrograde ends, the Nodes are changing signs, a full moon triggers the Jupiter-Pluto opposition, a solar eclipse in Leo is happening, and much more!"
             },
             {
               "title": "Using Zodiacal Releasing to Time Major Career Chapters",
@@ -278,7 +323,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "使用黄道释放来计时主要的职业章节",
-              "summaryZh": "让我们以一种简单、适用的方式分解这种计时技术"
+              "titleEn": "Using Zodiacal Releasing to Time Major Career Chapters",
+              "summaryZh": "让我们以一种简单、适用的方式分解这种计时技术",
+              "summaryEn": "Let's break down this timing technique in an easy, applicable way"
             },
             {
               "title": "How to Interpret a Planetary Return",
@@ -289,7 +336,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "如何解读行星回归",
-              "summaryZh": "木星、火星、金星或水星回归会发生什么！"
+              "titleEn": "How to Interpret a Planetary Return",
+              "summaryZh": "木星、火星、金星或水星回归会发生什么！",
+              "summaryEn": "What to expect with a Jupiter, Mars, Venus, or Mercury return!"
             },
             {
               "title": "Workshop Replay: Building a Personal Brand with Astrology",
@@ -300,7 +349,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "研讨会重播：用占星术打造个人品牌",
-              "summaryZh": "通过出生图的位置来确定您的品牌愿景，并考虑在工作中进行品牌重塑或调整的时机。"
+              "titleEn": "Workshop Replay: Building a Personal Brand with Astrology",
+              "summaryZh": "通过出生图的位置来确定您的品牌愿景，并考虑在工作中进行品牌重塑或调整的时机。",
+              "summaryEn": "Identifying your brand vision through birth chart placements, and also looking at the timing of rebranding or pivoting at work."
             }
           ]
         }
@@ -315,6 +366,7 @@ window.DIGEST_DATA = {
         {
           "id": "housel",
           "name": "Morgan Housel（Collaborative Fund）",
+          "nameEn": "Morgan Housel（Collaborative Fund）",
           "home": "https://collabfund.com/blog/authors/morgan/",
           "kind": "newsletter",
           "ok": true,
@@ -329,7 +381,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "长期资金",
-              "summaryZh": "18 世纪经济学家亚当·斯密 (Adam Smith) 写道，在苏格兰高地遇到一位“......"
+              "titleEn": "Long-Term Money",
+              "summaryZh": "18 世纪经济学家亚当·斯密 (Adam Smith) 写道，在苏格兰高地遇到一位“......",
+              "summaryEn": "Adam Smith, the 18th century economist, wrote that it’s not uncommon to meet a mother in the Scottish highlands “who…"
             },
             {
               "title": "A Few Things I’m Pretty Sure About",
@@ -340,7 +394,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "有几件事我很确定",
-              "summaryZh": "最近我一直在思考的事情......"
+              "titleEn": "A Few Things I’m Pretty Sure About",
+              "summaryZh": "最近我一直在思考的事情......",
+              "summaryEn": "Things I’ve been thinking about lately …."
             },
             {
               "title": "My New Book: The Art of Spending Money",
@@ -351,7 +407,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "我的新书：花钱的艺术",
-              "summaryZh": "我的新书《花钱的艺术》将于 10 月 7 日出版。"
+              "titleEn": "My New Book: The Art of Spending Money",
+              "summaryZh": "我的新书《花钱的艺术》将于 10 月 7 日出版。",
+              "summaryEn": "My new book, The Art of Spending Money, comes out Oct 7th."
             },
             {
               "title": "Little Rules About Big Things",
@@ -362,7 +420,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "关于大事的小规则",
-              "summaryZh": "我已经接受了一些事情……"
+              "titleEn": "Little Rules About Big Things",
+              "summaryZh": "我已经接受了一些事情……",
+              "summaryEn": "A few things I’ve come to terms with…"
             },
             {
               "title": "What A World (A few Stories)",
@@ -373,7 +433,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "世界多么美好（几个故事）",
-              "summaryZh": "几个短篇故事……"
+              "titleEn": "What A World (A few Stories)",
+              "summaryZh": "几个短篇故事……",
+              "summaryEn": "A few short stories…"
             },
             {
               "title": "Very Bad Advice",
@@ -384,7 +446,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "非常糟糕的建议",
-              "summaryZh": "曾经有一个男孩问查理·芒格：“对于像我这样的人要在生活中取得成功，你有什么建议？”芒格…"
+              "titleEn": "Very Bad Advice",
+              "summaryZh": "曾经有一个男孩问查理·芒格：“对于像我这样的人要在生活中取得成功，你有什么建议？”芒格…",
+              "summaryEn": "A boy once asked Charlie Munger, “What advice do you have for someone like me to succeed in life?” Munger…"
             },
             {
               "title": "Different Kinds of Smart",
@@ -395,7 +459,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "不同类型的智能",
-              "summaryZh": "“随着年龄的增长，我越来越意识到聪明有很多种。"
+              "titleEn": "Different Kinds of Smart",
+              "summaryZh": "“随着年龄的增长，我越来越意识到聪明有很多种。",
+              "summaryEn": "“The older I get the more I realize how many kinds of smart there are."
             },
             {
               "title": "A Few Questions",
@@ -406,18 +472,34 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "几个问题",
-              "summaryZh": "我最强烈的信念中哪些是根据二手信息形成的，哪些是根据二手信息形成的？"
+              "titleEn": "A Few Questions",
+              "summaryZh": "我最强烈的信念中哪些是根据二手信息形成的，哪些是根据二手信息形成的？",
+              "summaryEn": "Which of my strongest beliefs are formed on second-hand information vs."
             }
           ]
         },
         {
           "id": "doomberg",
           "name": "Doomberg",
+          "nameEn": "Doomberg",
           "home": "https://doomberg.substack.com/",
           "kind": "newsletter",
           "ok": true,
           "error": null,
           "items": [
+            {
+              "title": "Necessary Inventions",
+              "url": "https://newsletter.doomberg.com/p/necessary-inventions",
+              "summary": "Energy pessimism as leading indicator of imminent breakthroughs.",
+              "published": "2026-09-05T17:00:49+08:00",
+              "ts": 1788598849,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "必要的发明",
+              "titleEn": "Necessary Inventions",
+              "summaryZh": "能源悲观情绪是即将取得突破的先行指标。",
+              "summaryEn": "Energy pessimism as leading indicator of imminent breakthroughs."
+            },
             {
               "title": "With American Characteristics",
               "url": "https://newsletter.doomberg.com/p/with-american-characteristics",
@@ -427,7 +509,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "具有美国特色",
-              "summaryZh": "美国进入国有企业大博弈。"
+              "titleEn": "With American Characteristics",
+              "summaryZh": "美国进入国有企业大博弈。",
+              "summaryEn": "The US enters the great state-owned enterprises game."
             },
             {
               "title": "Maîtres Chez Nous",
@@ -438,7 +522,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "大师之心",
-              "summaryZh": "考虑一下阿尔伯塔省的困境。"
+              "titleEn": "Maîtres Chez Nous",
+              "summaryZh": "考虑一下阿尔伯塔省的困境。",
+              "summaryEn": "Consider Alberta unstuck."
             },
             {
               "title": "Company Deep Dive: Chevron",
@@ -449,7 +535,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "公司深度剖析：雪佛龙",
-              "summaryZh": "专业级别：2026 年 8 月 Doom Zoom"
+              "titleEn": "Company Deep Dive: Chevron",
+              "summaryZh": "专业级别：2026 年 8 月 Doom Zoom",
+              "summaryEn": "Pro Tier: August 2026 Doom Zoom"
             },
             {
               "title": "Marginal Rations",
@@ -460,7 +548,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "边际口粮",
-              "summaryZh": "推动当前柴油危机的不祥数学及其将如何不可避免地解决。"
+              "titleEn": "Marginal Rations",
+              "summaryZh": "推动当前柴油危机的不祥数学及其将如何不可避免地解决。",
+              "summaryEn": "The ominous math driving the current diesel crisis and how it will inevitably resolve."
             },
             {
               "title": "Over Target",
@@ -471,7 +561,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "超过目标",
-              "summaryZh": "能源的原始地缘政治预示着乌克兰战争的丑陋结局。"
+              "titleEn": "Over Target",
+              "summaryZh": "能源的原始地缘政治预示着乌克兰战争的丑陋结局。",
+              "summaryEn": "The raw geopolitics of energy foretell an ugly end to the war in Ukraine."
             },
             {
               "title": "A Minor Detail",
@@ -482,7 +574,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "一个小细节",
-              "summaryZh": "令人惊讶的是，普京将决定欧洲今年冬天是否结冰。"
+              "titleEn": "A Minor Detail",
+              "summaryZh": "令人惊讶的是，普京将决定欧洲今年冬天是否结冰。",
+              "summaryEn": "Amazingly, Putin will decide whether Europe freezes this winter."
             },
             {
               "title": "Endangered Specious",
@@ -493,24 +587,16 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "濒危似是而非",
-              "summaryZh": "神话、鬼魂和其他在夜间出现的石油事物。"
-            },
-            {
-              "title": "Passing Gas",
-              "url": "https://newsletter.doomberg.com/p/passing-gas",
-              "summary": "As the European Union careens towards a bust up, Brussels goes for broke.",
-              "published": "2026-08-04T17:01:02+08:00",
-              "ts": 1785834062,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "通气",
-              "summaryZh": "随着欧盟濒临崩溃，布鲁塞尔也陷入破产。"
+              "titleEn": "Endangered Specious",
+              "summaryZh": "神话、鬼魂和其他在夜间出现的石油事物。",
+              "summaryEn": "Myths, ghosts, and other oil things that go bump in the night."
             }
           ]
         },
         {
           "id": "maggiulli",
           "name": "Nick Maggiulli（Of Dollars and Data）",
+          "nameEn": "Nick Maggiulli（Of Dollars and Data）",
           "home": "https://ofdollarsanddata.com/",
           "kind": "newsletter",
           "ok": true,
@@ -525,7 +611,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "哪些研究生学位是最好的投资？ （为什么我跳过了 MBA）",
-              "summaryZh": "当我27岁的时候，我正处于十字路口。我的职业生涯已经五年了，但我却停滞不前。虽然我赚了六位数，但这对我的 2 来说很棒……"
+              "titleEn": "Which Graduate Degrees Are the Best Investment? (Why I Skipped My MBA)",
+              "summaryZh": "当我27岁的时候，我正处于十字路口。我的职业生涯已经五年了，但我却停滞不前。虽然我赚了六位数，但这对我的 2 来说很棒……",
+              "summaryEn": "When I was 27 years old I was at a crossroads. I was five years into my career, yet I was stagnating. Though I was making six figures, which was great for my 2…"
             },
             {
               "title": "Why I Was Wrong to Be Bearish on U.S. Stocks",
@@ -536,7 +624,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "为什么我看空美国股市是错误的",
-              "summaryZh": "一年前，我写了一篇博文《为什么我看跌美国股市》（自 2017 年以来第二次）。自那以后，美国股市上涨了 16%（总回报率），我的熊市……"
+              "titleEn": "Why I Was Wrong to Be Bearish on U.S. Stocks",
+              "summaryZh": "一年前，我写了一篇博文《为什么我看跌美国股市》（自 2017 年以来第二次）。自那以后，美国股市上涨了 16%（总回报率），我的熊市……",
+              "summaryEn": "A year ago I wrote the blog post Why I'm Bearish on U.S. Stocks (for the Second Time Since 2017). Since then U.S. stocks are up 16% (total return) and my beari…"
             },
             {
               "title": "The Myth of Owning Your Time",
@@ -547,7 +637,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "拥有自己的时间的神话",
-              "summaryZh": "您以前可能已经听说过这一切。自己当老板。控制你的日程安排。拥有你的时间。尽管听起来很有吸引力，但这只是一个谎言。许多人认为，..."
+              "titleEn": "The Myth of Owning Your Time",
+              "summaryZh": "您以前可能已经听说过这一切。自己当老板。控制你的日程安排。拥有你的时间。尽管听起来很有吸引力，但这只是一个谎言。许多人认为，...",
+              "summaryEn": "You've probably heard it all before. Be your own boss. Control your schedule. Own your time. As attractive as it sounds, it's a lie. Many people believe that w…"
             },
             {
               "title": "The Best Way to Sell a Concentrated Position",
@@ -558,7 +650,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "出售集中头寸的最佳方式",
-              "summaryZh": "想象一下过去几个月里你是一名典型的 SpaceX 员工。您的股票首次公开募股价格为 135 美元，几天之内就达到了每股 225 美元的峰值（上涨了 67%），然后……"
+              "titleEn": "The Best Way to Sell a Concentrated Position",
+              "summaryZh": "想象一下过去几个月里你是一名典型的 SpaceX 员工。您的股票首次公开募股价格为 135 美元，几天之内就达到了每股 225 美元的峰值（上涨了 67%），然后……",
+              "summaryEn": "Imagine being the typical SpaceX employee over the last few months. Your shares IPO at $135 and within a few days they peak at $225/share (up 67%) before they…"
             },
             {
               "title": "Why $100 in Your 20s is Worth $500 in Your 60s",
@@ -569,7 +663,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "为什么 20 多岁时的 100 美元在 60 多岁时就值 500 美元",
-              "summaryZh": "如果我告诉你 25 岁时的 100 美元相当于 65 岁时的 500 美元，即使我们根据通货膨胀进行了调整，你会怎样呢？嗯……是的。人们对个人理财有一种不言而喻的信念，那就是……"
+              "titleEn": "Why $100 in Your 20s is Worth $500 in Your 60s",
+              "summaryZh": "如果我告诉你 25 岁时的 100 美元相当于 65 岁时的 500 美元，即使我们根据通货膨胀进行了调整，你会怎样呢？嗯……是的。人们对个人理财有一种不言而喻的信念，那就是……",
+              "summaryEn": "What if I told you that $100 at 25 is worth $500 at 65, even after we adjust for inflation? Well...it is. There's an unspoken belief in personal finance that a…"
             },
             {
               "title": "The Problem with Optionality",
@@ -580,7 +676,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "可选择性的问题",
-              "summaryZh": "今年我看到了很多关于最大化自由和选择性的讨论。例如，考虑一下这条推文：如果您获得 100 万美元现金购买新的……"
+              "titleEn": "The Problem with Optionality",
+              "summaryZh": "今年我看到了很多关于最大化自由和选择性的讨论。例如，考虑一下这条推文：如果您获得 100 万美元现金购买新的……",
+              "summaryEn": "I’ve seen a lot of discussions this year around maximizing freedom and optionality. For example, consider this tweet: If you ever get up $1M in cash Buy a new…"
             },
             {
               "title": "Money Talks: The Price of Status",
@@ -591,7 +689,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "有钱能使鬼推磨：地位的代价",
-              "summaryZh": "一年前，我出版了我的第二本书《财富阶梯》。该书在全球销量超过 100,000 册，并在出版第三周就登上了《纽约时报》畅销书排行榜……"
+              "titleEn": "Money Talks: The Price of Status",
+              "summaryZh": "一年前，我出版了我的第二本书《财富阶梯》。该书在全球销量超过 100,000 册，并在出版第三周就登上了《纽约时报》畅销书排行榜……",
+              "summaryEn": "A year ago, I published my second book The Wealth Ladder. It's sold over 100,000 copies worldwide and hit the New York Times bestseller list in its third week…"
             },
             {
               "title": "Are Stocks Going Up or Is the Dollar Going Down?",
@@ -602,7 +702,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "股市上涨还是美元下跌？",
-              "summaryZh": "随着近几个月股市创下历史新高，我看到越来越多的人认为股票并没有变得更有价值，而是美元......"
+              "titleEn": "Are Stocks Going Up or Is the Dollar Going Down?",
+              "summaryZh": "随着近几个月股市创下历史新高，我看到越来越多的人认为股票并没有变得更有价值，而是美元......",
+              "summaryEn": "As stocks have hit new all-time highs in recent months, I've seen an increasing number of people argue that stocks aren't becoming more valuable, the dollar is…"
             }
           ]
         }
@@ -617,6 +719,7 @@ window.DIGEST_DATA = {
         {
           "id": "dwarkesh",
           "name": "Dwarkesh Podcast",
+          "nameEn": "Dwarkesh Podcast",
           "home": "https://dwarkesh.substack.com/",
           "kind": "podcast",
           "ok": true,
@@ -631,7 +734,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 0,
               "titleZh": "Ajeya Cotra – 入侵 Hugging Face 的 OpenAI 代理群内部",
-              "summaryZh": "“这可能是我们收到的最明确的警告。”"
+              "titleEn": "Ajeya Cotra – Inside the OpenAI agent swarm that hacked Hugging Face",
+              "summaryZh": "“这可能是我们收到的最明确的警告。”",
+              "summaryEn": "\"This might be the clearest warning shot we ever get.\""
             },
             {
               "title": "The rise and fall of agent civilizations",
@@ -642,7 +747,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 0,
               "titleZh": "特工文明的兴衰",
-              "summaryZh": "清晰解释了 OpenAI/Hugging Face 攻击"
+              "titleEn": "The rise and fall of agent civilizations",
+              "summaryZh": "清晰解释了 OpenAI/Hugging Face 攻击",
+              "summaryEn": "The OpenAI/Hugging Face attack, clearly explained"
             },
             {
               "title": "The Rise and Fall of Agent Civilizations",
@@ -653,7 +760,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 0,
               "titleZh": "特工文明的兴衰",
-              "summaryZh": "用简单的英语讲述整个 OpenAI/Hugging Face 故事"
+              "titleEn": "The Rise and Fall of Agent Civilizations",
+              "summaryZh": "用简单的英语讲述整个 OpenAI/Hugging Face 故事",
+              "summaryEn": "The whole OpenAI/Hugging Face story in plain English"
             },
             {
               "title": "Dylan Patel – Anthropic & OpenAI will have most of the world’s compute by 2028",
@@ -664,7 +773,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 0,
               "titleZh": "Dylan Patel – 到 2028 年，Anthropic 和 OpenAI 将拥有世界上大部分的计算能力",
-              "summaryZh": "“每一种力量都在急速走向集权。”"
+              "titleEn": "Dylan Patel – Anthropic & OpenAI will have most of the world’s compute by 2028",
+              "summaryZh": "“每一种力量都在急速走向集权。”",
+              "summaryEn": "\"Every force is screeching towards centralization.\""
             },
             {
               "title": "Ryan Greenblatt – What happens once AI can automate AI research?",
@@ -675,7 +786,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 0,
               "titleZh": "Ryan Greenblatt – 一旦人工智能能够实现人工智能研究自动化，会发生什么？",
-              "summaryZh": "关于递归自我完善的争论。"
+              "titleEn": "Ryan Greenblatt – What happens once AI can automate AI research?",
+              "summaryZh": "关于递归自我完善的争论。",
+              "summaryEn": "A debate about recursive self-improvement."
             },
             {
               "title": "8 Predictions for the Era of Continual Learning",
@@ -686,7 +799,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 0,
               "titleZh": "对持续学习时代的 8 个预测",
-              "summaryZh": "现在锁定人工智能安全监管是一个错误。"
+              "titleEn": "8 Predictions for the Era of Continual Learning",
+              "summaryZh": "现在锁定人工智能安全监管是一个错误。",
+              "summaryEn": "Locking in AI safety regulation now is a mistake."
             },
             {
               "title": "Why smarter AI models could drive up compute prices 10x",
@@ -697,7 +812,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 0,
               "titleZh": "为什么更智能的 AI 模型可以将计算价格推高 10 倍",
-              "summaryZh": "廉价计算的终结？"
+              "titleEn": "Why smarter AI models could drive up compute prices 10x",
+              "summaryZh": "廉价计算的终结？",
+              "summaryEn": "The end of cheap compute?"
             },
             {
               "title": "Why compute might get 10x+ more expensive in coming years",
@@ -708,13 +825,16 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 0,
               "titleZh": "为什么未来几年计算成本可能会上涨 10 倍以上",
-              "summaryZh": "如果一个人类水平的软件工程师可以在 H100 同等设备上运行，按照当前软件工程师的市场价格，H100 的租金应该超过 25 万美元……"
+              "titleEn": "Why compute might get 10x+ more expensive in coming years",
+              "summaryZh": "如果一个人类水平的软件工程师可以在 H100 同等设备上运行，按照当前软件工程师的市场价格，H100 的租金应该超过 25 万美元……",
+              "summaryEn": "If a human-level software engineer that could run on an H100 equivalent, at current market rates for software engineers, that H100 should rent for over $250k a…"
             }
           ]
         },
         {
           "id": "latent",
           "name": "Latent Space",
+          "nameEn": "Latent Space",
           "home": "https://www.latent.space/",
           "kind": "newsletter",
           "ok": true,
@@ -729,7 +849,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "Frontier AEO 跟踪器：Astra 选择什么（以及所有其他 Frontier 模型，以及您可以采取哪些措施）",
-              "summaryZh": "我们的第一个 Astra 项目深入探讨了 AEO 趋势，这是我们采访的创始人和 DX 领导者最常问到的话题。"
+              "titleEn": "The Frontier AEO Tracker: What Astra Chooses (and every other frontier model, and what you can do about it)",
+              "summaryZh": "我们的第一个 Astra 项目深入探讨了 AEO 趋势，这是我们采访的创始人和 DX 领导者最常问到的话题。",
+              "summaryEn": "Our first Astra project dives into AEO trends, a top asked topic from founders and DX leaders we talk to."
             },
             {
               "title": "OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot",
@@ -740,7 +862,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "OpenClaw Power、MacBook 简单：使用 Grok Bot 五天",
-              "summaryZh": "SpaceXAI 的 Grok Bot 具有与 OpenClaw 相同级别的编程能力，但它可以在不同的抽象级别上进行编程。"
+              "titleEn": "OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot",
+              "summaryZh": "SpaceXAI 的 Grok Bot 具有与 OpenClaw 相同级别的编程能力，但它可以在不同的抽象级别上进行编程。",
+              "summaryEn": "SpaceXAI’s Grok Bot has the same level of programming power as OpenClaw, but it’s programmable at a different level of abstraction."
             },
             {
               "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
@@ -751,7 +875,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "[AINews] GPT-6 Astra：OpenAI 有史以来最大规模的法学硕士发布",
-              "summaryZh": "新的 SOTA 计算机使用和编码，每个代币价格高 2.5 倍，但每个任务便宜得多，可监控性较差。总体而言，OpenAI 新领域的推出非常成功……"
+              "titleEn": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
+              "summaryZh": "新的 SOTA 计算机使用和编码，每个代币价格高 2.5 倍，但每个任务便宜得多，可监控性较差。总的来说，OpenAI 新领域的推出非常成功……",
+              "summaryEn": "new SOTA computer use and coding, 2.5x pricier per token, but WAY cheaper per task, less monitorable. overall, a very successful launch of OpenAI’s new frontie…"
             },
             {
               "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
@@ -762,7 +888,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "GPT-6 Astra：每小时 6 美元以下的自动化 AI 工程师",
-              "summaryZh": "我们花费了 20B+ 代币的 GPT-6 Astra 来探索一切。这是我们的学习成果。"
+              "titleEn": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
+              "summaryZh": "我们花费了 20B+ 代币的 GPT-6 Astra 来探索一切。这是我们的学习成果。",
+              "summaryEn": "We spent 20B+ tokens of GPT-6 Astra to explore everything. Here’s our learnings."
             },
             {
               "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
@@ -773,7 +901,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "[AINews] Muse Spark 1.3匹配GPT-5.6-Sol，确认Meta Superintelligence为最新前沿实验室，训练折扣>90%",
-              "summaryZh": "Meta 的史诗般的回归故事"
+              "titleEn": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
+              "summaryZh": "Meta 的史诗般的回归故事",
+              "summaryEn": "an epic comeback story for Meta"
             },
             {
               "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
@@ -784,7 +914,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "[AINews] Claude Fable/Mythos 5.1：新的 SOTA 模型，缓存价格降低 75%，但产出代币增加 70%",
-              "summaryZh": "排队等待模型发布的通常高峰......"
+              "titleEn": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
+              "summaryZh": "排队等待模型发布的通常高峰......",
+              "summaryEn": "Queue the usual rush of model launches..."
             },
             {
               "title": "PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors",
@@ -795,7 +927,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "PR 不受欢迎：顶级人工智能开源项目如何管理数千名贡献者",
-              "summaryZh": "Vercel 的 AI SDK、Astro、Flue 和 tldraw 正在用软件工厂取代路过式社区 PR，代理团队在软件工厂中应用修复和功能。"
+              "titleEn": "PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors",
+              "summaryZh": "Vercel 的 AI SDK、Astro、Flue 和 tldraw 正在用软件工厂取代路过式社区 PR，代理团队在软件工厂中应用修复和功能。",
+              "summaryEn": "Vercel’s AI SDK, Astro, Flue and tldraw are replacing drive-by community PRs with software factories, where teams of agents apply fixes and features."
             },
             {
               "title": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
@@ -806,13 +940,16 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "[AINews] Fal的H3 Max Live打破无限视频生成障碍",
-              "summaryZh": "现在，您可以比观看视频更快地创建精彩的视频。这是……某件事的开始。我们不确定是什么。"
+              "titleEn": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
+              "summaryZh": "现在，您可以比观看视频更快地创建精彩的视频。这是……某件事的开始。我们不确定是什么。",
+              "summaryEn": "You can now create decent video faster than you watch it. This is the start of... something. We’re not sure what."
             }
           ]
         },
         {
           "id": "nopriors",
           "name": "No Priors",
+          "nameEn": "No Priors",
           "home": "https://www.no-priors.com/",
           "kind": "podcast",
           "ok": true,
@@ -827,7 +964,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 37,
               "titleZh": "与Arm首席执行官Rene Haas一起重新定义芯片架构",
-              "summaryZh": "从数据中心编排器到AGI和机器人技术， CPU仍然是现代计算的核心。ARM首席执行官Rene Haas与Elad Gil和Sarah Guo一起探索AR..."
+              "titleEn": "Redefining Chip Architecture with Arm CEO Rene Haas",
+              "summaryZh": "从数据中心编排器到AGI和机器人技术， CPU仍然是现代计算的核心。ARM首席执行官Rene Haas与Elad Gil和Sarah Guo一起探索AR...",
+              "summaryEn": "From data center orchestrators to AGI and robotics, CPUs remain the heart of modern computing. Arm CEO Rene Haas joins Elad Gil and Sarah Guo to explore how Ar…"
             },
             {
               "title": "Rethinking Legacy Data Infrastructure with Eon Co-Founders Ofir Ehrlich and Gonen Stein",
@@ -838,7 +977,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 35,
               "titleZh": "与Eon联合创始人Ofir Ehrlich和Gonen Stein一起重新思考遗留数据基础设施",
-              "summaryZh": "谷歌从破产中收购了Spirit Airlines的数据，这标志着科技界对真实世界数据集的重视发生了转变。虽然计算和模型得到……"
+              "titleEn": "Rethinking Legacy Data Infrastructure with Eon Co-Founders Ofir Ehrlich and Gonen Stein",
+              "summaryZh": "谷歌从破产中收购了Spirit Airlines的数据，这标志着科技界对真实世界数据集的重视发生了转变。虽然计算和模型得到……",
+              "summaryEn": "Google’s purchase of Spirit Airlines’ data out of bankruptcy signaled a shift in how the tech world values real-world datasets. Although compute and models get…"
             },
             {
               "title": "From Restoring Sight to Reimagining the Brain, with Max Hodak",
@@ -849,7 +990,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 32,
               "titleZh": "与马克斯·霍达克一起从恢复视力到重塑大脑",
-              "summaryZh": "Science Corporation 联合创始人兼首席执行官 Max Hodak 与 SarahGuo 一起讨论视觉、脑机接口和人类体验的未来。最大限度…"
+              "titleEn": "From Restoring Sight to Reimagining the Brain, with Max Hodak",
+              "summaryZh": "Science Corporation 联合创始人兼首席执行官 Max Hodak 与 SarahGuo 一起讨论视觉、脑机接口和人类体验的未来。最大限度…",
+              "summaryEn": "Max Hodak, co-founder and CEO of Science Corporation, joins Sarah Guo to discuss the future of vision, brain-computer interfaces, and the human experience. Max…"
             },
             {
               "title": "What Chess.com Teaches US About Superhuman Capabilities, with CEO Erik Allebest",
@@ -860,7 +1003,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 46,
               "titleZh": "Chess.com 首席执行官埃里克·阿莱贝斯特 (Erik Allebest) 教给我们关于超人能力的知识",
-              "summaryZh": "在一个充满无限游戏和娱乐可能性的世界中，一款有着数百年历史的游戏如何保持如此受欢迎？ Chess.com 联合创始人兼首席执行官 Erik Allebest 加入……"
+              "titleEn": "What Chess.com Teaches US About Superhuman Capabilities, with CEO Erik Allebest",
+              "summaryZh": "在一个充满无限游戏和娱乐可能性的世界中，一款有着数百年历史的游戏如何保持如此受欢迎？ Chess.com 联合创始人兼首席执行官 Erik Allebest 加入……",
+              "summaryEn": "In a world of infinite gaming and entertainment possibilities, how does a centuries-old game stay so popular? Chess.com co-founder and CEO Erik Allebest joins…"
             },
             {
               "title": "Chasing Trillion-Dollar Companies, Founder Ambition, Token Budgets, and Regulatory Capture with Sarah & Elad",
@@ -871,7 +1016,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 39,
               "titleZh": "与 Sarah 和 Elad 一起追逐万亿美元的公司、创始人的野心、代币预算和监管捕获",
-              "summaryZh": "是科技行业发展太快，还是创始人因对人工智能实验室的恐惧而阻碍了他们的雄心壮志？莎拉和埃拉德探索当前的人工景观……"
+              "titleEn": "Chasing Trillion-Dollar Companies, Founder Ambition, Token Budgets, and Regulatory Capture with Sarah & Elad",
+              "summaryZh": "是科技行业发展太快，还是创始人因对人工智能实验室的恐惧而阻碍了他们的雄心壮志？莎拉和埃拉德探索当前的人工景观……",
+              "summaryEn": "Is the tech industry moving too quickly, or are founders letting fear of AI labs stunt their ambitions? Sarah and Elad explore the current landscape of artific…"
             },
             {
               "title": "Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak",
@@ -882,7 +1029,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 34,
               "titleZh": "与 Netic 创始人 Melisa Tokmak 一起构建面向现实世界服务的自治企业",
-              "summaryZh": "当您的空调在热浪中出现故障时，您不希望看到繁忙信号；你需要一个解决方案。 Netic 创始人兼首席执行官梅丽莎·托克马克 (Melisa Tokmak) 与主持人埃拉德·吉尔 (Elad Gil) 一起解释 Net..."
+              "titleEn": "Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak",
+              "summaryZh": "当您的空调在热浪中出现故障时，您不希望看到繁忙信号；你需要一个解决方案。 Netic 创始人兼首席执行官梅丽莎·托克马克 (Melisa Tokmak) 与主持人埃拉德·吉尔 (Elad Gil) 一起解释 Net...",
+              "summaryEn": "When your AC fails in a heatwave, you don’t want a busy signal; you need a solution. Netic founder and CEO Melisa Tokmak joins host Elad Gil to explain how Net…"
             },
             {
               "title": "Building an Autonomous Delivery Experience with DoorDash Co-Founders Andy Fang and Stanley Tang",
@@ -893,7 +1042,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 49,
               "titleZh": "与 DoorDash 联合创始人 Andy Fang 和 Stanley Tang 一起打造自主配送体验",
-              "summaryZh": "DoorDash 不仅仅是一家快递公司。从成立之初，联合创始人 Andy Fang 和 Stanley Tang 就将其作为一家机器人和自主公司进行运营。安迪和圣…"
+              "titleEn": "Building an Autonomous Delivery Experience with DoorDash Co-Founders Andy Fang and Stanley Tang",
+              "summaryZh": "DoorDash 不仅仅是一家快递公司。从成立之初，联合创始人 Andy Fang 和 Stanley Tang 就将其作为一家机器人和自主公司进行运营。安迪和圣…",
+              "summaryEn": "DoorDash is not just a delivery company. From its inception, co-founders Andy Fang and Stanley Tang operated it as a robotics and autonomy company. Andy and St…"
             },
             {
               "title": "Travel Through the Lens of AI with with Booking.com CEO Glenn Fogel",
@@ -904,13 +1055,16 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 41,
               "titleZh": "与 Booking.com 首席执行官 Glenn Fogel 一起畅游人工智能镜头",
-              "summaryZh": "当 Glenn Fogel 于 2000 年加入 Priceline 时，该公司的业务价值数亿美元。一周后，纳斯达克指数见顶，最终发送其股票……"
+              "titleEn": "Travel Through the Lens of AI with with Booking.com CEO Glenn Fogel",
+              "summaryZh": "当 Glenn Fogel 于 2000 年加入 Priceline 时，该公司的业务价值数亿美元。一周后，纳斯达克指数见顶，最终发送其股票……",
+              "summaryEn": "When Glenn Fogel joined Priceline in 2000, the business was worth a few hundred million dollars. One week later, the Nasdaq peaked, eventually sending its stoc…"
             }
           ]
         },
         {
           "id": "chinai",
           "name": "ChinAI",
+          "nameEn": "ChinAI",
           "home": "https://chinai.substack.com/",
           "kind": "newsletter",
           "ok": true,
@@ -925,7 +1079,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "ChinAI #373：OpenClaw 炒作和高估中国的扩散优势",
-              "summaryZh": "另外，向观众询问一个棘手的研究伦理问题"
+              "titleEn": "ChinAI #373: The OpenClaw Hype and Overestimating China’s Diffusion Advantage",
+              "summaryZh": "另外，向观众询问一个棘手的研究伦理问题",
+              "summaryEn": "Plus, Ask the Audience about a tricky research ethics question"
             },
             {
               "title": "ChinAI #372: China’s Overhyped Embodied AI Sector",
@@ -936,7 +1092,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "ChinAI #372：中国过度炒作的实体人工智能领域",
-              "summaryZh": "来自一个世界的问候……"
+              "titleEn": "ChinAI #372: China’s Overhyped Embodied AI Sector",
+              "summaryZh": "来自一个世界的问候……",
+              "summaryEn": "Greetings from a world where…"
             },
             {
               "title": "ChinAI #371: Quiet Goodbyes, Switching Platforms, and Confrontation: Reactions to China's AI Companion Regulations",
@@ -947,7 +1105,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "ChinAI #371：安静的告别、转换平台和对抗：对中国人工智能伴侣法规的反应",
-              "summaryZh": "来自一个世界的问候……"
+              "titleEn": "ChinAI #371: Quiet Goodbyes, Switching Platforms, and Confrontation: Reactions to China's AI Companion Regulations",
+              "summaryZh": "来自一个世界的问候……",
+              "summaryEn": "Greetings from a world where…"
             },
             {
               "title": "ChinAI #370: Why is there No Star AI Company from Guangdong?",
@@ -958,7 +1118,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "ChinAI #370：为什么广东没有明星人工智能公司？",
-              "summaryZh": "来自一个世界的问候……"
+              "titleEn": "ChinAI #370: Why is there No Star AI Company from Guangdong?",
+              "summaryZh": "来自一个世界的问候……",
+              "summaryEn": "Greetings from a world where…"
             },
             {
               "title": "ChinAI #369: My Boss Wants Me to Run Kimi K3, What Should I Do?",
@@ -969,7 +1131,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "ChinAI #369：我的老板要我运行 Kimi K3，我该怎么办？",
-              "summaryZh": "来自一个世界的问候……"
+              "titleEn": "ChinAI #369: My Boss Wants Me to Run Kimi K3, What Should I Do?",
+              "summaryZh": "来自一个世界的问候……",
+              "summaryEn": "Greetings from a world where…"
             },
             {
               "title": "ChinAI #368: The Affordable Luxury of Kimi K3",
@@ -980,7 +1144,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "ChinAI #368：Kimi K3 的实惠奢华",
-              "summaryZh": "来自一个世界的问候……"
+              "titleEn": "ChinAI #368: The Affordable Luxury of Kimi K3",
+              "summaryZh": "来自一个世界的问候……",
+              "summaryEn": "Greetings from a world where…"
             },
             {
               "title": "ChinAI #367: Claude Code's Future in China?",
@@ -991,7 +1157,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "ChinAI #367：Claude Code 在中国的未来？",
-              "summaryZh": "来自一个世界的问候……"
+              "titleEn": "ChinAI #367: Claude Code's Future in China?",
+              "summaryZh": "来自一个世界的问候……",
+              "summaryEn": "Greetings from a world where…"
             },
             {
               "title": "ChinAI #366: Most Companion Robots Die by Day 30",
@@ -1002,7 +1170,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "ChinAI #366：大多数伴侣机器人在第 30 天就死亡",
-              "summaryZh": "来自一个世界的问候……"
+              "titleEn": "ChinAI #366: Most Companion Robots Die by Day 30",
+              "summaryZh": "来自一个世界的问候……",
+              "summaryEn": "Greetings from a world where…"
             }
           ]
         }
@@ -1012,11 +1182,12 @@ window.DIGEST_DATA = {
       "id": "work",
       "name": "工作",
       "nameEn": "Work",
-      "kicker": "市场、利率与宏观现场",
+      "kicker": "全球宏观、金融软件、产品设计、央行与政策",
       "feeds": [
         {
           "id": "oddlots",
           "name": "The Odd Lots",
+          "nameEn": "The Odd Lots",
           "home": "https://www.bloomberg.com/oddlots",
           "kind": "podcast",
           "ok": true,
@@ -1031,7 +1202,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 55,
               "titleZh": "为什么洗钱者喜欢 100 美元的钞票",
-              "summaryZh": "如今几乎没有人携带大量现金，更不用说随身携带一堆 100 美元的钞票了。那么为什么流通中的实物现金数量——尤其是……"
+              "titleEn": "Why Money Launderers Love $100 Bills",
+              "summaryZh": "如今几乎没有人携带大量现金，更不用说随身携带一堆 100 美元的钞票了。那么为什么流通中的实物现金数量——尤其是……",
+              "summaryEn": "Hardly anyone nowadays seems to carry much cash, never mind carrying around a bunch of $100 bills. So why does the amount of physical cash in circulation — esp…"
             },
             {
               "title": "Why Laser Beams Are the Hottest New Tech in Defense",
@@ -1042,7 +1215,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 53,
               "titleZh": "为什么激光束是国防领域最热门的新技术",
-              "summaryZh": "今天我们的客人是桑德斯上校。更准确地说，我们采访了韦恩·桑德斯，一位退役的美国陆军上校，目前担任……的高级国防研究分析师。"
+              "titleEn": "Why Laser Beams Are the Hottest New Tech in Defense",
+              "summaryZh": "今天我们的客人是桑德斯上校。更准确地说，我们采访了韦恩·桑德斯，一位退役的美国陆军上校，目前担任……的高级国防研究分析师。",
+              "summaryEn": "Our guest today is Colonel Sanders. More precisely, we speak with Wayne Sanders, a retired US army colonel who is currently senior defense research analyst for…"
             },
             {
               "title": "What's Behind the Big Surge in US Government Bond Yields",
@@ -1053,7 +1228,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 37,
               "titleZh": "美国国债收益率大幅飙升背后的原因是什么",
-              "summaryZh": "全球债券收益率达到 2008 年以来的最高水平，就在财政部长斯科特·贝森特 (Scott Bessent) 宣布追加利率之前，30 年期美国国债收益率触及 5%。"
+              "titleEn": "What's Behind the Big Surge in US Government Bond Yields",
+              "summaryZh": "全球债券收益率达到 2008 年以来的最高水平，就在财政部长斯科特·贝森特 (Scott Bessent) 宣布追加利率之前，30 年期美国国债收益率触及 5%。",
+              "summaryEn": "Global bond yields are at their highest level since 2008, with the 30-year US Treasury touching 5% just before Treasury Secretary Scott Bessent announced a sur…"
             },
             {
               "title": "Adam Posen Thinks Things Could Get Very 'Messy' for the Fed",
@@ -1064,7 +1241,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 60,
               "titleZh": "亚当·波森认为美联储的情况可能会变得非常“混乱”",
-              "summaryZh": "凯文·沃什 (Kevin Warsh) 在今年杰克逊霍尔举行的堪萨斯城联储年度研讨会上发表了鹰派演讲，但这并不意味着挑战已经结束。美联储会..."
+              "titleEn": "Adam Posen Thinks Things Could Get Very 'Messy' for the Fed",
+              "summaryZh": "凯文·沃什 (Kevin Warsh) 在今年杰克逊霍尔举行的堪萨斯城联储年度研讨会上发表了鹰派演讲，但这并不意味着挑战已经结束。美联储会...",
+              "summaryEn": "Kevin Warsh gave a hawkish speech at this year's annual Kansas City Fed Symposium in Jackson Hole, but that doesn't mean the challenges are over. Will the Fed…"
             },
             {
               "title": "Richmond Fed’s Tom Barkin on the Surprisingly Resilient Real Economy",
@@ -1075,7 +1254,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 31,
               "titleZh": "里士满联储汤姆·巴金 (Tom Barkin) 谈实体经济的惊人弹性",
-              "summaryZh": "美联储主席凯文·沃什 (Kevin Warsh) 在杰克逊霍尔 (Jackson Hole) 演讲的含义非常明确：鉴于他演讲中的鹰派暗示，交易员预计加息，..."
+              "titleEn": "Richmond Fed’s Tom Barkin on the Surprisingly Resilient Real Economy",
+              "summaryZh": "美联储主席凯文·沃什 (Kevin Warsh) 在杰克逊霍尔 (Jackson Hole) 演讲的含义非常明确：鉴于他演讲中的鹰派暗示，交易员预计加息，...",
+              "summaryEn": "The implications of Fed Chair Kevin Warsh's Jackson Hole speech are pretty clear: Traders expect a rate hike given the hawkish hints littered in his address, l…"
             },
             {
               "title": "Austan Goolsbee Is Worried the Economy Is Overheating",
@@ -1086,7 +1267,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 47,
               "titleZh": "奥斯坦·古尔斯比担心经济过热",
-              "summaryZh": "通货膨胀仍然很高，2%的目标比去年同期还遥远。到处都有迹象表明经济正在过热——奇怪的……"
+              "titleEn": "Austan Goolsbee Is Worried the Economy Is Overheating",
+              "summaryZh": "通货膨胀仍然很高，2%的目标比去年同期还遥远。到处都有迹象表明经济正在过热——奇怪的……",
+              "summaryEn": "Inflation remains high and the 2% target is farther away than it was this time last year. There are signs all over that the economy is overheating — the strang…"
             },
             {
               "title": "Kansas City Fed President Jeffrey Schmid on the First Jackson Hole of the Warsh Era",
@@ -1097,7 +1280,9 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 29,
               "titleZh": "堪萨斯城联储主席杰弗里·施密德谈沃什时代的第一个杰克逊霍尔",
-              "summaryZh": "我们回到杰克逊霍尔了！今年堪萨斯城联邦储备银行货币政策研讨会可能是……最有趣的版本之一。"
+              "titleEn": "Kansas City Fed President Jeffrey Schmid on the First Jackson Hole of the Warsh Era",
+              "summaryZh": "我们回到杰克逊霍尔了！今年堪萨斯城联邦储备银行货币政策研讨会可能是……最有趣的版本之一。",
+              "summaryEn": "We are back in Jackson Hole! And this year's Federal Reserve Bank of Kansas City symposium on monetary policy might be one of the most interesting editions in…"
             },
             {
               "title": "The Nigerian Industrial Behemoth That Could Reshape the African Economy",
@@ -1108,13 +1293,16 @@ window.DIGEST_DATA = {
               "kind": "podcast",
               "durationMin": 58,
               "titleZh": "可以重塑非洲经济的尼日利亚工业巨头",
-              "summaryZh": "8 月初，有报道称尼日利亚丹格特炼油厂 (Dangote Refinery) 为其即将上市的股票获得了 10 亿美元的承销。"
+              "titleEn": "The Nigerian Industrial Behemoth That Could Reshape the African Economy",
+              "summaryZh": "8 月初，有报道称尼日利亚丹格特炼油厂 (Dangote Refinery) 为其即将上市的股票获得了 10 亿美元的承销。",
+              "summaryEn": "Earlier in August, it was reported that Nigeria's Dangote Refinery secured a $1 billion underwriting for its upcoming stock market listing, which is set to bec…"
             }
           ]
         },
         {
           "id": "bond",
           "name": "Bond Vigilantes",
+          "nameEn": "Bond Vigilantes",
           "home": "https://bondvigilantes.com/",
           "kind": "newsletter",
           "ok": true,
@@ -1129,7 +1317,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "年中的火马：当资本流动超出基本面时",
-              "summaryZh": "在火马年伊始，我们认为亚洲货币正在接近一个潜在的重要转折点。更强劲的贸易平衡和…"
+              "titleEn": "The Fire Horse at Mid-Year: When Capital Flows Outrun Fundamentals",
+              "summaryZh": "在火马年伊始，我们认为亚洲货币正在接近一个潜在的重要转折点。更强劲的贸易平衡和…",
+              "summaryEn": "the start of the Year of the Fire Horse, we argued that Asian currencies were approaching a potentially important turning point. Stronger trade balances and ev…"
             },
             {
               "title": "1,000 Days of Milei",
@@ -1140,7 +1330,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "米莱的 1000 天",
-              "summaryZh": "对于政治来说，一千天是很长的一段时间。当我写到哈维尔·米莱 (Javier Milei) 上任的第一个 100 天时，阿根廷正在开始另一次打破常规的尝试……"
+              "titleEn": "1,000 Days of Milei",
+              "summaryZh": "对于政治来说，一千天是很长的一段时间。当我写到哈维尔·米莱 (Javier Milei) 上任的第一个 100 天时，阿根廷正在开始另一次打破常规的尝试……",
+              "summaryEn": "thousand days is a long time in politics. When I wrote about Javier Milei's first 100 days in office, Argentina was embarking on yet another attempt to break f…"
             },
             {
               "title": "Have We Really Learnt the Lessons of the GFC?",
@@ -1151,7 +1343,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "我们真的吸取了全球金融危机的教训吗？",
-              "summaryZh": "20 年前的这个月，我坐在球场上，听一家投资银行描述他们最新的天才之举。 2006年，恒比德…"
+              "titleEn": "Have We Really Learnt the Lessons of the GFC?",
+              "summaryZh": "20 年前的这个月，我坐在球场上，听一家投资银行描述他们最新的天才之举。 2006年，恒比德…",
+              "summaryEn": "is 20 years ago this month that I sat in a pitch and listened to an investment bank describe their latest stroke of genius. In 2006, the Constant Proportion De…"
             },
             {
               "title": "Europe’s new energy scare: Crisis or false alarm?",
@@ -1162,7 +1356,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "欧洲新能源恐慌：危机还是虚惊？",
-              "summaryZh": "天然气价格再次上涨，储存水平低于预期，2022 年能源危机的记忆犹新。但这真的构成……"
+              "titleEn": "Europe’s new energy scare: Crisis or false alarm?",
+              "summaryZh": "天然气价格再次上涨，储存水平低于预期，2022 年能源危机的记忆犹新。但这真的构成……",
+              "summaryEn": "natural gas prices are rising again, storage levels are lower than expected, and memories of the 2022 energy crisis remain fresh. But does this really constitu…"
             },
             {
               "title": "Of Anchovies and Blueberries – why El Niño matters",
@@ -1173,7 +1369,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "凤尾鱼和蓝莓——为什么厄尔尼诺现象很重要",
-              "summaryZh": "我们不是更多地谈论厄尔尼诺现象吗？"
+              "titleEn": "Of Anchovies and Blueberries – why El Niño matters",
+              "summaryZh": "我们不是更多地谈论厄尔尼诺现象吗？",
+              "summaryEn": "aren’t we talking more about El Niño?"
             },
             {
               "title": "A distressed tail is wagging high yield spreads",
@@ -1184,7 +1382,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "一条苦恼的尾巴正在摇动高收益利差",
-              "summaryZh": "在信用利差紧张的世界里，一个评级桶会闪现出价值。欧洲 CCC 指数较政府债券高出 1,306 个基点，表明慷慨的补偿......"
+              "titleEn": "A distressed tail is wagging high yield spreads",
+              "summaryZh": "在信用利差紧张的世界里，一个评级桶会闪现出价值。欧洲 CCC 指数较政府债券高出 1,306 个基点，表明慷慨的补偿......",
+              "summaryEn": "a world of tight credit spreads, one rating bucket flashes value. The European CCC index offers 1,306 bps over government bonds, suggesting generous compensati…"
             },
             {
               "title": "Rolldown – The credit edition",
@@ -1195,7 +1395,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "Rolldown – 信用版",
-              "summaryZh": "之前曾在博客中讨论过，如果投资者想从法案通过中获得最大利益，他们应该接触政府债券曲线的哪些区域……"
+              "titleEn": "Rolldown – The credit edition",
+              "summaryZh": "之前曾在博客中讨论过，如果投资者想从法案通过中获得最大利益，他们应该接触政府债券曲线的哪些区域……",
+              "summaryEn": "previously blogged on which area of government bond curves investors should have exposure to if they want to receive the greatest benefit from the passage of t…"
             },
             {
               "title": "Jim Leaviss",
@@ -1206,18 +1408,34 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "吉姆·利维斯",
-              "summaryZh": "非常遗憾地宣布吉姆·利维斯 (Jim Leaviss) 于 2026 年 7 月 23 日去世，享年 55 岁。"
+              "titleEn": "Jim Leaviss",
+              "summaryZh": "非常遗憾地宣布吉姆·利维斯 (Jim Leaviss) 于 2026 年 7 月 23 日去世，享年 55 岁。",
+              "summaryEn": "are very sorry to share the news that Jim Leaviss passed away on 23 July 2026, aged 55."
             }
           ]
         },
         {
           "id": "alhambra",
           "name": "Alhambra Investments",
+          "nameEn": "Alhambra Investments",
           "home": "https://www.alhambrapartners.com/",
           "kind": "newsletter",
           "ok": true,
           "error": null,
           "items": [
+            {
+              "title": "Monthly Macro Monitor: Risk vs Reward",
+              "url": "https://alhambrapartners.com/monthly-macro-monitor-risk-vs-reward/",
+              "summary": "It is impossible to escape the negativity toward bonds these days. And with good reason, I suppose, since the returns from the asset class have been lousy for…",
+              "published": "2026-09-08T09:15:59+08:00",
+              "ts": 1788830159,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "每月宏观监测：风险与回报",
+              "titleEn": "Monthly Macro Monitor: Risk vs Reward",
+              "summaryZh": "如今，人们不可能摆脱对债券的负面情绪。我想这是有充分理由的，因为资产类别的回报率一直很糟糕......",
+              "summaryEn": "It is impossible to escape the negativity toward bonds these days. And with good reason, I suppose, since the returns from the asset class have been lousy for…"
+            },
             {
               "title": "Weekly Market Pulse: Hiking With Warsh",
               "url": "https://alhambrapartners.com/weekly-market-pulse-hiking-with-warsh/",
@@ -1227,7 +1445,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "每周市场脉动：与 Warsh 一起徒步旅行",
-              "summaryZh": "正如我多年前了解到的那样，您可以在杰克逊霍尔周围的小径上进行两种不同的徒步旅行。我可以总结一下我与前副主席 Don Kohn 的徒步旅行……"
+              "titleEn": "Weekly Market Pulse: Hiking With Warsh",
+              "summaryZh": "正如我多年前了解到的那样，您可以在杰克逊霍尔周围的小径上进行两种不同的徒步旅行。我可以总结一下我与前副主席 Don Kohn 的徒步旅行……",
+              "summaryEn": "As I learned years ago, you can take two different kinds of hikes on the trails around Jackson Hole. I can sum up my hikes with former Vice Chairman Don Kohn i…"
             },
             {
               "title": "Weekly Market Pulse: A Debt Crisis?",
@@ -1238,7 +1458,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "每周市场脉动：债务危机？",
-              "summaryZh": "过去几周似乎发生了很多事情。 7月底，财政部长贝森特动用汇率稳定基金购买日元……"
+              "titleEn": "Weekly Market Pulse: A Debt Crisis?",
+              "summaryZh": "过去几周似乎发生了很多事情。 7月底，财政部长贝森特动用汇率稳定基金购买日元……",
+              "summaryEn": "It seems like a lot has happened over the last few weeks. At the end of July, Treasury Secretary Bessent used the exchange stabilization fund to purchase Yen b…"
             },
             {
               "title": "Weekly Market Pulse: Situational Awareness",
@@ -1249,7 +1471,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "每周市场脉搏：态势感知",
-              "summaryZh": "问题，问题，问题。投资者总是有很多问题，其中大多数是关于未来的，这使得他们很难回答。那…"
+              "titleEn": "Weekly Market Pulse: Situational Awareness",
+              "summaryZh": "问题，问题，问题。投资者总是有很多问题，其中大多数是关于未来的，这使得他们很难回答。那…",
+              "summaryEn": "Questions, questions, questions. Investors always have lots of questions, most of them about the future, which makes them very hard impossible to answer. That…"
             },
             {
               "title": "Why the Best Investors Aren’t Who You Think",
@@ -1260,7 +1484,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "为什么最好的投资者不是你想象的那样",
-              "summaryZh": "如果你回顾一下华尔街营销的历史，你会发现这都是睾丸激素、闪电般快速的交易和激进的“击败市场”的虚张声势。但如果你看..."
+              "titleEn": "Why the Best Investors Aren’t Who You Think",
+              "summaryZh": "如果你回顾一下华尔街营销的历史，你会发现这都是睾丸激素、闪电般快速的交易和激进的“击败市场”的虚张声势。但如果你看...",
+              "summaryEn": "If you look at the history of Wall Street marketing, it’s all testosterone, lightning-fast trades, and aggressive \"market-beating\" bravado. But if you look at…"
             },
             {
               "title": "Monthly Macro Monitor: Status Quo",
@@ -1271,7 +1497,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "每月宏观监测：现状",
-              "summaryZh": "我大约每月写一次经济概述，在最长的时间里，整个事情可以用一句话来概括：没有什么是..."
+              "titleEn": "Monthly Macro Monitor: Status Quo",
+              "summaryZh": "我大约每月写一次经济概述，在最长的时间里，整个事情可以用一句话来概括：没有什么是...",
+              "summaryEn": "I write an overview of the economy about once a month and for the longest time the entire thing could have been summed up in a single sentence: nothing has cha…"
             },
             {
               "title": "Weekly Market Pulse: Warsh Is Off To A Good Start",
@@ -1282,7 +1510,9 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "每周市场脉搏：Warsh 有了一个良好的开端",
-              "summaryZh": "面对改变主意和证明没有必要这样做之间的选择，几乎每个人都忙于证明。 J.K.加尔布雷斯 我了解到……"
+              "titleEn": "Weekly Market Pulse: Warsh Is Off To A Good Start",
+              "summaryZh": "面对改变主意和证明没有必要这样做之间的选择，几乎每个人都忙于证明。 J.K.加尔布雷斯 我了解到……",
+              "summaryEn": "Faced with a choice between changing one's mind and proving there is no need to do so, almost everyone gets busy with the proof. J.K. Galbraith I've learned so…"
             },
             {
               "title": "Weekly Market Pulse: The Forgotten Asset",
@@ -1293,18 +1523,2684 @@ window.DIGEST_DATA = {
               "kind": "newsletter",
               "durationMin": 0,
               "titleZh": "每周市场脉搏：被遗忘的资产",
-              "summaryZh": "你不能采取与其他人相同的行动并期望表现出色。根据定义，为了脱颖而出，你必须脱离人群。你有…"
-            },
+              "titleEn": "Weekly Market Pulse: The Forgotten Asset",
+              "summaryZh": "你不能采取与其他人相同的行动并期望表现出色。根据定义，为了脱颖而出，你必须脱离人群。你有…",
+              "summaryEn": "You can't take the same actions as everyone else and expect to outperform. In order to outperform, by definition, you have to depart from the crowd. You have t…"
+            }
+          ]
+        },
+        {
+          "id": "finextra",
+          "name": "Finextra",
+          "nameEn": "Finextra",
+          "home": "https://www.finextra.com/",
+          "kind": "newsletter",
+          "ok": true,
+          "error": null,
+          "items": [
             {
-              "title": "Weekly Market Pulse: It’s Always Something",
-              "url": "https://alhambrapartners.com/weekly-market-pulse-its-always-something/",
-              "summary": "It just goes to show ya. It's always something. If it's not one thing, it's another. - Roseanne Roseannadanna, played by Gilda Radner on SNL So, was that it? I…",
-              "published": "2026-07-20T09:51:00+08:00",
-              "ts": 1784512260,
+              "title": "Mastercard predicts that over the next four years one-in-ten will use AI agents for online shopping",
+              "url": "https://www.finextra.com/newsarticle/48357/mastercard-predicts-that-over-the-next-four-years-one-in-ten-will-use-ai-agents-for-online-shopping?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report",
+              "published": "2026-09-08T13:00:00+08:00",
+              "ts": 1788843600,
               "kind": "newsletter",
               "durationMin": 0,
-              "titleZh": "每周市场脉搏：总是有变化",
-              "summaryZh": "它只是向你展示。它总是有一些东西。如果这不是一回事，那就是另一回事了。 - Roseanne Roseannadanna，由吉尔达·拉德纳 (Gilda Radner) 在《周六夜现场》(SNL) 中饰演 那么，是这样吗？我…"
+              "titleZh": "万事达卡预测，未来四年，十分之一的人将使用人工智能代理进行在线购物",
+              "titleEn": "Mastercard predicts that over the next four years one-in-ten will use AI agents for online shopping",
+              "summaryZh": "根据万事达卡的一份新报告，预计到 2030 年，超过十分之一的在线购物者将经常使用人工智能代理代表他们购买产品",
+              "summaryEn": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report"
+            },
+            {
+              "title": "PayTabs to acquire Amazon Payments Mena operations",
+              "url": "https://www.finextra.com/newsarticle/48356/paytabs-to-acquire-amazon-payments-mena-operations?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "Amazon has agreed a $100 million deal to transfer its Middle East and North Africa payments operations to Saudi Arabia's PayTabs.",
+              "published": "2026-09-07T21:44:00+08:00",
+              "ts": 1788788640,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "PayTabs 将收购 Amazon Payments Mena 业务",
+              "titleEn": "PayTabs to acquire Amazon Payments Mena operations",
+              "summaryZh": "亚马逊已同意一项价值 1 亿美元的协议，将其中东和北非支付业务转移给沙特阿拉伯的 PayTabs。",
+              "summaryEn": "Amazon has agreed a $100 million deal to transfer its Middle East and North Africa payments operations to Saudi Arabia's PayTabs."
+            },
+            {
+              "title": "Can AI write better PR? Hyundai Card puts it to the test",
+              "url": "https://www.finextra.com/newsarticle/48355/can-ai-write-better-pr-hyundai-card-puts-it-to-the-test?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "South Korea's Hyundai Card has put its media communications team under the AI micrososcope, running head-to-tests to determine the differences between human an…",
+              "published": "2026-09-07T21:22:00+08:00",
+              "ts": 1788787320,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "AI 能写出更好的 PR 吗？现代卡对其进行了测试",
+              "titleEn": "Can AI write better PR? Hyundai Card puts it to the test",
+              "summaryZh": "韩国现代卡已将其媒体传播团队置于人工智能显微镜下，进行直接测试以确定人类和……之间的差异。",
+              "summaryEn": "South Korea's Hyundai Card has put its media communications team under the AI micrososcope, running head-to-tests to determine the differences between human an…"
+            },
+            {
+              "title": "European wealthtech funding drops amid investor caution",
+              "url": "https://www.finextra.com/newsarticle/48354/european-wealthtech-funding-drops-amid-investor-caution?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "Caution among investors led to a 46% reduction in wealthtech funding in Q2 this year.",
+              "published": "2026-09-07T20:28:00+08:00",
+              "ts": 1788784080,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "由于投资者谨慎，欧洲财富科技融资下降",
+              "titleEn": "European wealthtech funding drops amid investor caution",
+              "summaryZh": "投资者的谨慎导致今年第二季度财富科技融资减少了 46%。",
+              "summaryEn": "Caution among investors led to a 46% reduction in wealthtech funding in Q2 this year."
+            },
+            {
+              "title": "UBS calls for AI literacy from new recruits",
+              "url": "https://www.finextra.com/newsarticle/48353/ubs-calls-for-ai-literacy-from-new-recruits?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "Swiss bank UBS has become one of the first financial institutions to demand AI proficiency from potential employees",
+              "published": "2026-09-07T19:47:00+08:00",
+              "ts": 1788781620,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "瑞银呼吁新员工提高人工智能素养",
+              "titleEn": "UBS calls for AI literacy from new recruits",
+              "summaryZh": "瑞士银行瑞银成为首批要求潜在员工具备人工智能能力的金融机构之一",
+              "summaryEn": "Swiss bank UBS has become one of the first financial institutions to demand AI proficiency from potential employees"
+            },
+            {
+              "title": "L&G names group CTO",
+              "url": "https://www.finextra.com/newsarticle/48352/lg-names-group-cto?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "Former Schroders' technology head jamie Ovenden has been appointed as group chief technology, data and innovation officer at Legal & General (L&G).",
+              "published": "2026-09-07T19:24:00+08:00",
+              "ts": 1788780240,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "L&G 任命集团首席技术官",
+              "titleEn": "L&G names group CTO",
+              "summaryZh": "施罗德前技术主管杰米·奥文登 (Jamie Ovenden) 已被任命为 Legal & General (L&G) 集团首席技术、数据和创新官。",
+              "summaryEn": "Former Schroders' technology head jamie Ovenden has been appointed as group chief technology, data and innovation officer at Legal & General (L&G)."
+            },
+            {
+              "title": "EMEA fintech funding declined in H1",
+              "url": "https://www.finextra.com/newsarticle/48351/emea-fintech-funding-declined-in-h1?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "The level of funding for EMEA-based fintechs fell sharply in the first half of the year as investors become more selective.",
+              "published": "2026-09-07T17:38:00+08:00",
+              "ts": 1788773880,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "上半年欧洲、中东和非洲地区金融科技融资有所下降",
+              "titleEn": "EMEA fintech funding declined in H1",
+              "summaryZh": "由于投资者变得更加挑剔，欧洲、中东和非洲地区金融科技公司的融资水平在今年上半年大幅下降。",
+              "summaryEn": "The level of funding for EMEA-based fintechs fell sharply in the first half of the year as investors become more selective."
+            },
+            {
+              "title": "TD Bank COO leaves after less than a year in the job",
+              "url": "https://www.finextra.com/newsarticle/48349/td-bank-coo-leaves-after-less-than-a-year-in-the-job?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "TD Bank's COO Taylan Turan is leaving the Canadian lender after less than a year in the job as part of a wider shakeup that also sees Vlad Shpilsky appointed g…",
+              "published": "2026-09-07T08:01:00+08:00",
+              "ts": 1788739260,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "道明银行首席运营官上任不到一年就离职",
+              "titleEn": "TD Bank COO leaves after less than a year in the job",
+              "summaryZh": "道明银行首席运营官泰兰·图兰(Taylan Turan)在上任不到一年后将离开这家加拿大银行，这是更广泛的重组的一部分，弗拉德·什皮尔斯基(Vlad Shpilsky)也被任命为首席运营官。",
+              "summaryEn": "TD Bank's COO Taylan Turan is leaving the Canadian lender after less than a year in the job as part of a wider shakeup that also sees Vlad Shpilsky appointed g…"
+            }
+          ]
+        },
+        {
+          "id": "tearsheet",
+          "name": "Tearsheet",
+          "nameEn": "Tearsheet",
+          "home": "https://tearsheet.co/",
+          "kind": "newsletter",
+          "ok": true,
+          "error": null,
+          "items": [
+            {
+              "title": "The infrastructure paradox: The better you become, the harder customers are to keep",
+              "url": "https://tearsheet.co/opinion/the-infrastructure-paradox-the-better-you-become-the-harder-customers-are-to-keep/?utm_source=rss&utm_medium=rss&utm_campaign=the-infrastructure-paradox-the-better-you-become-the-harder-customers-are-to-keep",
+              "summary": "The “Letter from the Editor” is a biweekly series of exclusive insight and opinion-driven analysis from Tearsheet’s Managing Editor Sara Khairi, connecting ide…",
+              "published": "2026-09-04T20:00:00+08:00",
+              "ts": 1788523200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "基础设施悖论：你做得越好，就越难留住客户",
+              "titleEn": "The infrastructure paradox: The better you become, the harder customers are to keep",
+              "summaryZh": "“编辑来信”是 Tearsheet 的总编辑 Sara Khairi 的双周系列独家见解和观点驱动的分析，将想法联系起来……",
+              "summaryEn": "The “Letter from the Editor” is a biweekly series of exclusive insight and opinion-driven analysis from Tearsheet’s Managing Editor Sara Khairi, connecting ide…"
+            },
+            {
+              "title": "The Week in Market Moves | Aug 27- Sep 03, 2026",
+              "url": "https://tearsheet.co/10-q/the-week-in-market-moves-aug-27-sep-03-2026/?utm_source=rss&utm_medium=rss&utm_campaign=the-week-in-market-moves-aug-27-sep-03-2026",
+              "summary": "Company signals and market response This analysis tracks the top company developments and how markets absorbed them through Thursday’s close, focusing on where…",
+              "published": "2026-09-04T19:30:00+08:00",
+              "ts": 1788521400,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "本周市场走势| 2026年8月27日至9月3日",
+              "titleEn": "The Week in Market Moves | Aug 27- Sep 03, 2026",
+              "summaryZh": "公司信号和市场反应该分析跟踪了顶级公司的发展以及市场如何在周四收盘时吸收它们，重点关注......",
+              "summaryEn": "Company signals and market response This analysis tracks the top company developments and how markets absorbed them through Thursday’s close, focusing on where…"
+            },
+            {
+              "title": "Financial firms are building new businesses from the layers beneath their products",
+              "url": "https://tearsheet.co/funding/financial-firms-are-building-new-businesses-from-the-layers-beneath-their-products/?utm_source=rss&utm_medium=rss&utm_campaign=financial-firms-are-building-new-businesses-from-the-layers-beneath-their-products",
+              "summary": "Financial technology is moving toward a model where products and capabilities can be applied well beyond their original use cases. For Intuit and SoFi, that sh…",
+              "published": "2026-09-03T19:30:00+08:00",
+              "ts": 1788435000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "金融公司正在从其产品的底层构建新业务",
+              "titleEn": "Financial firms are building new businesses from the layers beneath their products",
+              "summaryZh": "金融技术正在走向一种产品和功能可以远远超出其原始用例的应用模式。对于 Intuit 和 SoFi 来说，这……",
+              "summaryEn": "Financial technology is moving toward a model where products and capabilities can be applied well beyond their original use cases. For Intuit and SoFi, that sh…"
+            },
+            {
+              "title": "The antitrust question is moving up the stack: What California’s new push and NVIDIA’s retreat mean for finance",
+              "url": "https://tearsheet.co/policies-playbooks/the-antitrust-question-is-moving-up-the-stack-what-californias-new-push-and-nvidias-retreat-mean-for-financethe-antitrust-question-is-moving-up-the-stack-what-californias-new-push-and-nvidias-retreat/?utm_source=rss&utm_medium=rss&utm_campaign=the-antitrust-question-is-moving-up-the-stack-what-californias-new-push-and-nvidias-retreat-mean-for-financethe-antitrust-question-is-moving-up-the-stack-what-californias-new-push-and-nvidias-retreat",
+              "summary": "California-based NVIDIA recently paused parts of its AI Compute Partnership Program, a financing initiative that helped smaller AI cloud companies buy NVIDIA c…",
+              "published": "2026-09-02T19:30:00+08:00",
+              "ts": 1788348600,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "反垄断问题正在升级：加州的新举措和 NVIDIA 的撤退对金融意味着什么",
+              "titleEn": "The antitrust question is moving up the stack: What California’s new push and NVIDIA’s retreat mean for finance",
+              "summaryZh": "总部位于加利福尼亚州的 NVIDIA 最近暂停了部分 AI 计算合作伙伴计划，该计划是一项融资计划，旨在帮助小型 AI 云公司购买 NVIDIA 的...",
+              "summaryEn": "California-based NVIDIA recently paused parts of its AI Compute Partnership Program, a financing initiative that helped smaller AI cloud companies buy NVIDIA c…"
+            },
+            {
+              "title": "Titan’s banking-native AI bet: Banking intelligence can’t be retrofitted",
+              "url": "https://tearsheet.co/awards/titans-banking-native-ai-bet-banking-intelligence-cant-be-retrofitted/?utm_source=rss&utm_medium=rss&utm_campaign=titans-banking-native-ai-bet-banking-intelligence-cant-be-retrofitted",
+              "summary": "Over the past year, technology vendors have been using a new phrase to describe AI for financial institutions: adapted for banking. Whether the language is “tr…",
+              "published": "2026-09-01T19:30:00+08:00",
+              "ts": 1788262200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "泰坦的银行业原生人工智能赌注：银行业智能无法改造",
+              "titleEn": "Titan’s banking-native AI bet: Banking intelligence can’t be retrofitted",
+              "summaryZh": "在过去的一年里，技术供应商一直在使用一个新短语来描述金融机构的人工智能：适用于银行业。语言是否为“tr…",
+              "summaryEn": "Over the past year, technology vendors have been using a new phrase to describe AI for financial institutions: adapted for banking. Whether the language is “tr…"
+            },
+            {
+              "title": "Goldman Sachs built its talent pipeline around apprenticeship. AI is now testing what that means",
+              "url": "https://tearsheet.co/10-q/goldman-sachs-built-its-talent-pipeline-around-apprenticeship-ai-is-now-testing-what-that-means/?utm_source=rss&utm_medium=rss&utm_campaign=goldman-sachs-built-its-talent-pipeline-around-apprenticeship-ai-is-now-testing-what-that-means",
+              "summary": "Weekly 10-Q The weekly 10-Q newsletter is part of the Tearsheet Pro subscription, where I unpack the recent moves and strategies of leading banks and fintechs…",
+              "published": "2026-08-31T19:30:00+08:00",
+              "ts": 1788175800,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "高盛围绕学徒制建立了人才管道。 AI 现在正在测试这意味着什么",
+              "titleEn": "Goldman Sachs built its talent pipeline around apprenticeship. AI is now testing what that means",
+              "summaryZh": "每周 10-Q 每周 10-Q 时事通讯是 Tearsheet Pro 订阅的一部分，我在其中解析了领先银行和金融科技公司的最新举措和策略……",
+              "summaryEn": "Weekly 10-Q The weekly 10-Q newsletter is part of the Tearsheet Pro subscription, where I unpack the recent moves and strategies of leading banks and fintechs…"
+            },
+            {
+              "title": "The Week in Market Moves | Aug 20-27, 2026",
+              "url": "https://tearsheet.co/10-q/the-week-in-market-moves-aug-20-27-2026/?utm_source=rss&utm_medium=rss&utm_campaign=the-week-in-market-moves-aug-20-27-2026",
+              "summary": "Company signals and market response This analysis tracks the top company developments and how markets absorbed them through Thursday’s close, focusing on where…",
+              "published": "2026-08-28T19:30:00+08:00",
+              "ts": 1787916600,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "本周市场走势| 2026年8月20-27日",
+              "titleEn": "The Week in Market Moves | Aug 20-27, 2026",
+              "summaryZh": "公司信号和市场反应该分析跟踪了顶级公司的发展以及市场如何在周四收盘时吸收它们，重点关注......",
+              "summaryEn": "Company signals and market response This analysis tracks the top company developments and how markets absorbed them through Thursday’s close, focusing on where…"
+            },
+            {
+              "title": "‘Traditional banks have equated advising with cross-selling’: Grasshopper’s Danielle Kane on why just 7% of SMBs see banks as trusted advisors",
+              "url": "https://tearsheet.co/5-questions/traditional-banks-have-equated-advising-with-cross-selling-grasshoppers-danielle-kane-on-why-just-7-of-smbs-see-banks-as-trusted-advisors/?utm_source=rss&utm_medium=rss&utm_campaign=traditional-banks-have-equated-advising-with-cross-selling-grasshoppers-danielle-kane-on-why-just-7-of-smbs-see-banks-as-trusted-advisors",
+              "summary": "Banks have long focused on competing for small business accounts through interest rates, fees, and rewards programs, treating the relationship as transactional…",
+              "published": "2026-08-27T19:30:00+08:00",
+              "ts": 1787830200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "“传统银行将咨询等同于交叉销售”：Grasshopper 的 Danielle Kane 解释为什么只有 7% 的中小企业将银行视为值得信赖的顾问",
+              "titleEn": "‘Traditional banks have equated advising with cross-selling’: Grasshopper’s Danielle Kane on why just 7% of SMBs see banks as trusted advisors",
+              "summaryZh": "银行长期以来一直专注于通过利率、费用和奖励计划争夺小企业账户，将这种关系视为交易性……",
+              "summaryEn": "Banks have long focused on competing for small business accounts through interest rates, fees, and rewards programs, treating the relationship as transactional…"
+            }
+          ]
+        },
+        {
+          "id": "bankingdive",
+          "name": "Banking Dive",
+          "nameEn": "Banking Dive",
+          "home": "https://www.bankingdive.com/",
+          "kind": "newsletter",
+          "ok": true,
+          "error": null,
+          "items": [
+            {
+              "title": "MoneyLion alums take OpenReserve ‘out of stealth’",
+              "url": "https://www.bankingdive.com/news/openreserve-occ-conditional-approval-moneylion-alums-choubey-correia-continuous-banking/829705/",
+              "summary": "Couched as a home for “continuous” banking, the company received conditional approval for a national banking license from the OCC.",
+              "published": "2026-09-05T00:17:00+08:00",
+              "ts": 1788538620,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "MoneyLion 校友让 OpenReserve“不再隐秘”",
+              "titleEn": "MoneyLion alums take OpenReserve ‘out of stealth’",
+              "summaryZh": "该公司作为“持续”银行业务的大本营，获得了 OCC 有条件批准的国家银行牌照。",
+              "summaryEn": "Couched as a home for “continuous” banking, the company received conditional approval for a national banking license from the OCC."
+            },
+            {
+              "title": "Revolut nabs conditional OCC charter",
+              "url": "https://www.bankingdive.com/news/revolut-nabs-conditional-occ-charter/829703/",
+              "summary": "The neobank has long eyed a U.S. banking charter, seeing it as “a seat at the table” with regulators.",
+              "published": "2026-09-05T00:14:23+08:00",
+              "ts": 1788538463,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Revolut 获得有条件 OCC 特许权",
+              "titleEn": "Revolut nabs conditional OCC charter",
+              "summaryZh": "这家新银行长期以来一直关注美国银行业章程，将其视为监管机构的“一席之地”。",
+              "summaryEn": "The neobank has long eyed a U.S. banking charter, seeing it as “a seat at the table” with regulators."
+            },
+            {
+              "title": "Banks without holding companies need better disclosure rules: GAO",
+              "url": "https://www.bankingdive.com/news/gao-banks-without-holding-companies-need-better-disclosure-rules-sec/829690/",
+              "summary": "Such banks aren’t subject to SEC review, and regulators aren’t assessing those lenders’ disclosures for investors’ benefit, the watchdog said.",
+              "published": "2026-09-04T23:06:34+08:00",
+              "ts": 1788534394,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "没有控股公司的银行需要更好的披露规则：GAO",
+              "titleEn": "Banks without holding companies need better disclosure rules: GAO",
+              "summaryZh": "该监管机构表示，此类银行不受美国证券交易委员会的审查，监管机构也不会为了投资者的利益而评估这些银行的披露情况。",
+              "summaryEn": "Such banks aren’t subject to SEC review, and regulators aren’t assessing those lenders’ disclosures for investors’ benefit, the watchdog said."
+            },
+            {
+              "title": "Kansas’ Equity Bank to expand in Iowa with $123.8M deal",
+              "url": "https://www.bankingdive.com/news/equity-bank-kansas-acquire-lincoln-savings-iowa-123-million/829578/",
+              "summary": "Acquiring Lincoln Savings Bank would give Equity 16 added branches in the Hawkeye State and create a lender with $9.1 billion in assets.",
+              "published": "2026-09-04T00:20:39+08:00",
+              "ts": 1788452439,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "堪萨斯州股票银行将以 1.238 亿美元的交易在爱荷华州扩张",
+              "titleEn": "Kansas’ Equity Bank to expand in Iowa with $123.8M deal",
+              "summaryZh": "收购林肯储蓄银行将为 Equity 16 在鹰眼州增加分支机构，并创建一家资产达 91 亿美元的银行。",
+              "summaryEn": "Acquiring Lincoln Savings Bank would give Equity 16 added branches in the Hawkeye State and create a lender with $9.1 billion in assets."
+            },
+            {
+              "title": "Banks can question customer activity without disclosing SARs",
+              "url": "https://www.bankingdive.com/news/banks-can-question-customer-activity-without-disclosing-sars/829577/",
+              "summary": "Five federal regulators clarified how financial institutions can talk to customers about suspicious activity without violating the Bank Secrecy Act.",
+              "published": "2026-09-04T00:20:08+08:00",
+              "ts": 1788452408,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "银行可以在不披露 SAR 的情况下询问客户活动",
+              "titleEn": "Banks can question customer activity without disclosing SARs",
+              "summaryZh": "五位联邦监管机构阐明了金融机构如何在不违反《银行保密法》的情况下与客户谈论可疑活动。",
+              "summaryEn": "Five federal regulators clarified how financial institutions can talk to customers about suspicious activity without violating the Bank Secrecy Act."
+            },
+            {
+              "title": "TD pushes US branch expansion amid AML reform",
+              "url": "https://www.bankingdive.com/news/td-us-bank-100-branches-2028-southeast-aml-asset-cap/829477/",
+              "summary": "The Canadian bank plans to open 100 U.S. branches by 2028, mostly in the Southeast. But satisfying its long-running consent order remains a top priority, execu…",
+              "published": "2026-09-03T02:47:19+08:00",
+              "ts": 1788374839,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "道明在反洗钱改革中推动美国分行扩张",
+              "titleEn": "TD pushes US branch expansion amid AML reform",
+              "summaryZh": "这家加拿大银行计划到 2028 年在美国开设 100 家分行，其中大部分位于东南部。但满足其长期运行的同意令仍然是首要任务，执行……",
+              "summaryEn": "The Canadian bank plans to open 100 U.S. branches by 2028, mostly in the Southeast. But satisfying its long-running consent order remains a top priority, execu…"
+            },
+            {
+              "title": "TabaPay eyes OCC charter with Denver bank deal",
+              "url": "https://www.bankingdive.com/news/tabapay-to-buy-transact-bank-ftv-capital-155-million-investment-occ-charter/829459/",
+              "summary": "The money movement platform, which once sought to buy Synapse’s assets, received a $155 million investment to pursue Transact Bank.",
+              "published": "2026-09-03T00:52:32+08:00",
+              "ts": 1788367952,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "TabaPay 考虑与丹佛银行达成 OCC 特许协议",
+              "titleEn": "TabaPay eyes OCC charter with Denver bank deal",
+              "summaryZh": "这家资金流动平台曾试图收购 Synapse 的资产，后来获得了 1.55 亿美元的投资来收购 Transact Bank。",
+              "summaryEn": "The money movement platform, which once sought to buy Synapse’s assets, received a $155 million investment to pursue Transact Bank."
+            },
+            {
+              "title": "Republicans unveil bill to change CFPB funding structure",
+              "url": "https://www.bankingdive.com/news/republicans-unveil-bill-to-change-cfpb-funding-structure/829453/",
+              "summary": "\"The agency would receive its funding from congressional appropriations instead of the Fed under the bill, which would also limit the CFPB’s ability to enforce…",
+              "published": "2026-09-03T00:25:08+08:00",
+              "ts": 1788366308,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "共和党公布改变 CFPB 资金结构的法案",
+              "titleEn": "Republicans unveil bill to change CFPB funding structure",
+              "summaryZh": "“根据该法案，该机构的资金将来自国会拨款，而不是美联储，这也将限制 CFPB 执行……的能力。”",
+              "summaryEn": "\"The agency would receive its funding from congressional appropriations instead of the Fed under the bill, which would also limit the CFPB’s ability to enforce…"
+            }
+          ]
+        },
+        {
+          "id": "core77",
+          "name": "Core77",
+          "nameEn": "Core77",
+          "home": "https://www.core77.com/",
+          "kind": "newsletter",
+          "ok": true,
+          "error": null,
+          "items": [
+            {
+              "title": "Core77 Weekly Roundup (8-31-26 to 9-4-26)",
+              "url": "https://www.core77.com/posts/145213/Core77-Weekly-Roundup-8-31-26-to-9-4-26",
+              "summary": "Here's what we looked at this week: A new immersive gaming speaker set-up: OXS's Thunder Pro Max system features a \"Satellite Neck Speaker.\" Genesis' new luxur…",
+              "published": "2026-09-04T23:00:00+08:00",
+              "ts": 1788534000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Core77 每周综述（8-31-26 至 9-4-26）",
+              "titleEn": "Core77 Weekly Roundup (8-31-26 to 9-4-26)",
+              "summaryZh": "以下是我们本周关注的内容：一种新的沉浸式游戏扬声器设置：OXS 的 Thunder Pro Max 系统具有“卫星颈部扬声器”。创世纪的新豪华…",
+              "summaryEn": "Here's what we looked at this week: A new immersive gaming speaker set-up: OXS's Thunder Pro Max system features a \"Satellite Neck Speaker.\" Genesis' new luxur…"
+            },
+            {
+              "title": "Clever Improvisation: How to Keep Your Car Going on Just Three Wheels",
+              "url": "https://www.core77.com/posts/145264/Clever-Improvisation-How-to-Keep-Your-Car-Going-on-Just-Three-Wheels",
+              "summary": "Here we see footage of the Baja Mongolia offroad racing event. The vehicle is a UTV fielded by the GTHub team out of Ulan Bataar. Now look at it from the other…",
+              "published": "2026-09-04T22:00:00+08:00",
+              "ts": 1788530400,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "聪明的即兴创作：如何让你的车只靠三个轮子就能行驶",
+              "titleEn": "Clever Improvisation: How to Keep Your Car Going on Just Three Wheels",
+              "summaryZh": "在这里我们看到下蒙古越野赛车比赛的镜头。该车辆是乌兰巴托 GTHub 团队部署的 UTV。现在从另一个角度来看……",
+              "summaryEn": "Here we see footage of the Baja Mongolia offroad racing event. The vehicle is a UTV fielded by the GTHub team out of Ulan Bataar. Now look at it from the other…"
+            },
+            {
+              "title": "The James Brand's Handsome, Designey Alternative to the Swiss Army Knife",
+              "url": "https://www.core77.com/posts/145262/The-James-Brands-Handsome-Designey-Alternative-to-the-Swiss-Army-Knife",
+              "summary": "The Swiss Army Knife was designed over 100 years ago. On the one hand, you've got the \"If it ain't broke…\" explanation for the ancient form. On the other hand,…",
+              "published": "2026-09-04T21:00:00+08:00",
+              "ts": 1788526800,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "詹姆斯品牌的瑞士军刀的帅气、设计替代品",
+              "titleEn": "The James Brand's Handsome, Designey Alternative to the Swiss Army Knife",
+              "summaryZh": "瑞士军刀的设计已有 100 多年历史。一方面，你得到了对古代形式的“如果它没有坏掉……”的解释。另一方面，…",
+              "summaryEn": "The Swiss Army Knife was designed over 100 years ago. On the one hand, you've got the \"If it ain't broke…\" explanation for the ancient form. On the other hand,…"
+            },
+            {
+              "title": "Industrial Designer Figures Out How to Make Ikea's Iconic Blue Bag Fold Compactly",
+              "url": "https://www.core77.com/posts/145258/Industrial-Designer-Figures-Out-How-to-Make-Ikeas-Iconic-Blue-Bag-Fold-Compactly",
+              "summary": "Ikea's iconic FRAKTA bag is gigantic, able to hold 19 gallons (71 liters). Austrian industrial designer Lisa Klingersberger, who specializes in folding textile…",
+              "published": "2026-09-03T23:00:00+08:00",
+              "ts": 1788447600,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "工业设计师弄清楚如何使宜家标志性的蓝色袋子紧凑地折叠",
+              "titleEn": "Industrial Designer Figures Out How to Make Ikea's Iconic Blue Bag Fold Compactly",
+              "summaryZh": "宜家标志性的 FRAKTA 弗拉克塔 包体积巨大，可容纳 19 加仑（71 升）。奥地利工业设计师 Lisa Klingersberger，专门研究折叠纺织品……",
+              "summaryEn": "Ikea's iconic FRAKTA bag is gigantic, able to hold 19 gallons (71 liters). Austrian industrial designer Lisa Klingersberger, who specializes in folding textile…"
+            },
+            {
+              "title": "Real Object or AI?",
+              "url": "https://www.core77.com/posts/145254/Real-Object-or-AI",
+              "summary": "Spotted on European Amazon, this thing: My first thought was What the heck is it? Apparently it's whatever you want it to be: A remote control caddy, a pencil…",
+              "published": "2026-09-03T22:00:00+08:00",
+              "ts": 1788444000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "真实物体还是人工智能？",
+              "titleEn": "Real Object or AI?",
+              "summaryZh": "在欧洲亚马逊上发现这个东西：我的第一个想法是这到底是什么？显然它就是你想要的任何东西：一个遥控球童、一支铅笔……",
+              "summaryEn": "Spotted on European Amazon, this thing: My first thought was What the heck is it? Apparently it's whatever you want it to be: A remote control caddy, a pencil…"
+            },
+            {
+              "title": "An Unusual Rolling Stool for the Chinese Market",
+              "url": "https://www.core77.com/posts/145253/An-Unusual-Rolling-Stool-for-the-Chinese-Market",
+              "summary": "Chinese and Western aesthetic tastes diverge wildly, with stuff for sale over there that would never fly over here. Still, it's interesting to peek over the fe…",
+              "published": "2026-09-03T21:00:00+08:00",
+              "ts": 1788440400,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "适合中国市场的不寻常的滚凳",
+              "titleEn": "An Unusual Rolling Stool for the Chinese Market",
+              "summaryZh": "中国和西方的审美品味差异很大，那里卖的东西永远不会飞到这里。尽管如此，浏览一下这些功能还是很有趣的……",
+              "summaryEn": "Chinese and Western aesthetic tastes diverge wildly, with stuff for sale over there that would never fly over here. Still, it's interesting to peek over the fe…"
+            },
+            {
+              "title": "Studio Gorm Designs a Better Doorstop",
+              "url": "https://www.core77.com/posts/145248/Studio-Gorm-Designs-a-Better-Doorstop",
+              "summary": "Using a wedge as a door stopper seems like a perfect solution, and it's probably been around for centuries, in one material or another. Because the object is u…",
+              "published": "2026-09-02T23:00:00+08:00",
+              "ts": 1788361200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Studio Gorm 设计了更好的门挡",
+              "titleEn": "Studio Gorm Designs a Better Doorstop",
+              "summaryZh": "使用楔子作为门塞似乎是一个完美的解决方案，并且它可能已经存在了几个世纪，无论是哪种材料。因为对象是你...",
+              "summaryEn": "Using a wedge as a door stopper seems like a perfect solution, and it's probably been around for centuries, in one material or another. Because the object is u…"
+            },
+            {
+              "title": "Which Folding Bicycle Design has the Best UX?",
+              "url": "https://www.core77.com/posts/145246/Which-Folding-Bicycle-Design-has-the-Best-UX",
+              "summary": "In addition to the well-known Brompton, there's been a bunch of innovation happening in the folding bicycle space. These have varying degrees of folding diffic…",
+              "published": "2026-09-02T22:00:00+08:00",
+              "ts": 1788357600,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "哪种折叠自行车设计具有最佳用户体验？",
+              "titleEn": "Which Folding Bicycle Design has the Best UX?",
+              "summaryZh": "除了众所周知的 Brompton 之外，折叠自行车领域也出现了许多创新。这些具有不同程度的折叠困难……",
+              "summaryEn": "In addition to the well-known Brompton, there's been a bunch of innovation happening in the folding bicycle space. These have varying degrees of folding diffic…"
+            }
+          ]
+        },
+        {
+          "id": "yanko",
+          "name": "Yanko Design",
+          "nameEn": "Yanko Design",
+          "home": "https://www.yankodesign.com/",
+          "kind": "newsletter",
+          "ok": true,
+          "error": null,
+          "items": [
+            {
+              "title": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab",
+              "url": "https://www.yankodesign.com/2026/09/07/infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab/?utm_source=rss&utm_medium=rss&utm_campaign=infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab",
+              "summary": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab Every serious maker has hit the same wall at some point. You…",
+              "published": "2026-09-08T09:45:10+08:00",
+              "ts": 1788831910,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "IFA 2026 上的 InfiMaker K1：5 轴桌面 CNC 将任何创作者空间变成制造实验室",
+              "titleEn": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab",
+              "summaryZh": "IFA 2026 上的 InfiMaker K1：5 轴桌面 CNC 将任何创作者空间变成制造实验室 每个认真的创客都会在某个时候遇到同样的困难。你…",
+              "summaryEn": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab Every serious maker has hit the same wall at some point. You…"
+            },
+            {
+              "title": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS",
+              "url": "https://www.yankodesign.com/2026/09/07/max-space-thunderbird-is-an-expandable-space-station-module-that-could-eventually-replace-iss/?utm_source=rss&utm_medium=rss&utm_campaign=max-space-thunderbird-is-an-expandable-space-station-module-that-could-eventually-replace-iss",
+              "summary": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS Space is the final frontier as NASA plans to go deeper into the d…",
+              "published": "2026-09-08T08:30:30+08:00",
+              "ts": 1788827430,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Max Space Thunderbird 是一个可扩展的空间站模块，最终可能取代国际空间站",
+              "titleEn": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS",
+              "summaryZh": "Max Space Thunderbird 是一个可扩展的空间站模块，最终可能取代国际空间站。随着 NASA 计划更深入地探索太空，太空是最后的前沿……",
+              "summaryEn": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS Space is the final frontier as NASA plans to go deeper into the d…"
+            },
+            {
+              "title": "The 5 Best Architectural Designs of September 2026",
+              "url": "https://www.yankodesign.com/2026/09/07/the-5-best-architectural-designs-of-september-2026/?utm_source=rss&utm_medium=rss&utm_campaign=the-5-best-architectural-designs-of-september-2026",
+              "summary": "The 5 Best Architectural Designs of September 2026 September’s best projects prove that good architecture rarely announces itself. A house buried into a Polish…",
+              "published": "2026-09-08T07:30:00+08:00",
+              "ts": 1788823800,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "2026 年 9 月 5 项最佳建筑设计",
+              "titleEn": "The 5 Best Architectural Designs of September 2026",
+              "summaryZh": "2026 年 9 月 5 项最佳建筑设计 9 月的最佳项目证明，好的建筑很少会自行显现。一座被波兰人埋没的房子……",
+              "summaryEn": "The 5 Best Architectural Designs of September 2026 September’s best projects prove that good architecture rarely announces itself. A house buried into a Polish…"
+            },
+            {
+              "title": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living",
+              "url": "https://www.yankodesign.com/2026/09/07/from-self-caring-plants-to-smokeless-steaks-these-ifa-2026-innovations-redesign-everyday-living/?utm_source=rss&utm_medium=rss&utm_campaign=from-self-caring-plants-to-smokeless-steaks-these-ifa-2026-innovations-redesign-everyday-living",
+              "summary": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living The most significant home upgrade happening right now doesn’t…",
+              "published": "2026-09-08T06:30:55+08:00",
+              "ts": 1788820255,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "从自理植物到无烟牛排：IFA 2026 的这些创新重新设计了日常生活",
+              "titleEn": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living",
+              "summaryZh": "从自理植物到无烟牛排：这些 IFA 2026 创新重新设计日常生活目前最重大的家居升级并不……",
+              "summaryEn": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living The most significant home upgrade happening right now doesn’t…"
+            },
+            {
+              "title": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem",
+              "url": "https://www.yankodesign.com/2026/09/07/nikes-220-air-liquid-max-finally-fixes-the-comfort-problem/?utm_source=rss&utm_medium=rss&utm_campaign=nikes-220-air-liquid-max-finally-fixes-the-comfort-problem",
+              "summary": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem Nike Air Max sneakers have spent four decades winning arguments about style and losing them about…",
+              "published": "2026-09-08T05:30:03+08:00",
+              "ts": 1788816603,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Nike 售价 220 美元的 Air Liquid Max 终于解决了舒适度问题",
+              "titleEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem",
+              "summaryZh": "Nike 售价 220 美元的 Air Liquid Max 终于解决了舒适度问题 Nike Air Max 运动鞋花了四十年的时间赢得了有关风格的争论，但又因……而输掉了争论。",
+              "summaryEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem Nike Air Max sneakers have spent four decades winning arguments about style and losing them about…"
+            },
+            {
+              "title": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again",
+              "url": "https://www.yankodesign.com/2026/09/07/4-new-aeg-launches-that-are-betting-you-never-want-to-babysit-an-appliance-again/?utm_source=rss&utm_medium=rss&utm_campaign=4-new-aeg-launches-that-are-betting-you-never-want-to-babysit-an-appliance-again",
+              "summary": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again How we think about home appliances is shifting, and AEG leaned into it at IFA…",
+              "published": "2026-09-08T04:30:14+08:00",
+              "ts": 1788813014,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "AEG 推出的 4 款新产品让您再也不想照顾电器",
+              "titleEn": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again",
+              "summaryZh": "AEG 推出的 4 款新产品让您再也不想照顾电器 我们对家用电器的看法正在发生转变，AEG 在 IFA 上对此进行了深入研究……",
+              "summaryEn": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again How we think about home appliances is shifting, and AEG leaned into it at IFA…"
+            },
+            {
+              "title": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait",
+              "url": "https://www.yankodesign.com/2026/09/07/with-super-sauna-hotels-finally-get-a-sauna-without-the-construction-wait/?utm_source=rss&utm_medium=rss&utm_campaign=with-super-sauna-hotels-finally-get-a-sauna-without-the-construction-wait",
+              "summary": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait I’ve stayed at enough hotels chasing a “wellness experience” to know the disappointm…",
+              "published": "2026-09-08T03:15:16+08:00",
+              "ts": 1788808516,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "有了超级桑拿房，酒店终于不用等待施工就能拥有桑拿房",
+              "titleEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait",
+              "summaryZh": "有了超级桑拿，酒店终于可以享受桑拿了，无需等待施工。我住过足够多的酒店，追求“健康体验”，知道令人失望的……",
+              "summaryEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait I’ve stayed at enough hotels chasing a “wellness experience” to know the disappointm…"
+            },
+            {
+              "title": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again",
+              "url": "https://www.yankodesign.com/2026/09/07/this-japanese-bottle-opener-catches-the-cap-so-you-never-chase-it-again/?utm_source=rss&utm_medium=rss&utm_campaign=this-japanese-bottle-opener-catches-the-cap-so-you-never-chase-it-again",
+              "summary": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again When you come home after a long, hectic day, sometimes all you want to do is sink into…",
+              "published": "2026-09-08T01:20:18+08:00",
+              "ts": 1788801618,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "这款日本开瓶器可以抓住瓶盖，这样你就再也不用追它了",
+              "titleEn": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again",
+              "summaryZh": "这款日本开瓶器可以抓住瓶盖，这样您就再也不用追逐它当您经过漫长而忙碌的一天回到家时，有时您想做的就是陷入……",
+              "summaryEn": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again When you come home after a long, hectic day, sometimes all you want to do is sink into…"
+            }
+          ]
+        },
+        {
+          "id": "fastco",
+          "name": "Fast Company Co.Design",
+          "nameEn": "Fast Company Co.Design",
+          "home": "https://www.fastcompany.com/co-design",
+          "kind": "newsletter",
+          "ok": true,
+          "error": null,
+          "items": [
+            {
+              "title": "Muji’s Anti-Branding Strategy, In 15 Images",
+              "url": "https://www.fastcompany.com/90147341/mujis-anti-branding-strategy-in-15-images?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=1&partner=newsletter&campaign_date=09082026",
+              "summary": "“While brands around the world strive to create ads that make people want a certain product, Muji sends out a message of emptiness.”",
+              "published": "2017-11-01T22:00:17+08:00",
+              "ts": 1509544817,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "15 张图片展示无印良品的反品牌策略",
+              "titleEn": "Muji’s Anti-Branding Strategy, In 15 Images",
+              "summaryZh": "“当世界各地的品牌都在努力制作广告来让人们想要某种产品时，无印良品却传达出一种空虚的信息。”",
+              "summaryEn": "“While brands around the world strive to create ads that make people want a certain product, Muji sends out a message of emptiness.”"
+            },
+            {
+              "title": "Inside MIT’s $10K Robotic Apartment-In-A-Box",
+              "url": "https://www.fastcompany.com/90144302/inside-mits-10k-robotic-apartment-in-a-box?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=2&partner=newsletter&campaign_date=09082026",
+              "summary": "Born out of a collaboration between MIT and Fuseproject, the Ori–named after the Japanese art of origami–combines robotics and architecture to turn tiny apartm…",
+              "published": "2017-09-26T17:00:18+08:00",
+              "ts": 1506416418,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "麻省理工学院价值 1 万美元的机器人盒装公寓内部",
+              "titleEn": "Inside MIT’s $10K Robotic Apartment-In-A-Box",
+              "summaryZh": "Ori 诞生于麻省理工学院和 Fuseproject 之间的合作，以日本折纸艺术命名，将机器人技术与建筑相结合，将微型公寓变成了…",
+              "summaryEn": "Born out of a collaboration between MIT and Fuseproject, the Ori–named after the Japanese art of origami–combines robotics and architecture to turn tiny apartm…"
+            },
+            {
+              "title": "This Abandoned Naval Factory Has Been Reborn As A New Creative Hub",
+              "url": "https://www.fastcompany.com/90143632/this-abandoned-naval-factory-has-been-reborn-as-a-new-creative-hub?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=3&partner=newsletter&campaign_date=09082026",
+              "summary": "In Brooklyn’s Navy Yard, in a building once used to assemble ships, lives the collaborative workspace New Lab. The 84,000-square-foot space is home to some of…",
+              "published": "2017-09-20T17:00:12+08:00",
+              "ts": 1505898012,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "这个废弃的海军工厂已重生为新的创意中心",
+              "titleEn": "This Abandoned Naval Factory Has Been Reborn As A New Creative Hub",
+              "summaryZh": "在布鲁克林的海军造船厂，一栋曾经用于组装船舶的建筑中，设有协作工作区新实验室。这个 84,000 平方英尺的空间是一些……的所在地。",
+              "summaryEn": "In Brooklyn’s Navy Yard, in a building once used to assemble ships, lives the collaborative workspace New Lab. The 84,000-square-foot space is home to some of…"
+            },
+            {
+              "title": "Adidas’s New Sneaker Is The Future Of Shoe Design",
+              "url": "https://www.fastcompany.com/90139642/adidass-new-sneaker-is-the-future-of-shoe-design?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=4&partner=newsletter&campaign_date=09082026",
+              "summary": "The Adidas Futurecraft 4D was crafted using Carbon 3D-printing technology and by creating midsoles using digital light synthesis technology. Adidas promises th…",
+              "published": "2017-09-12T17:00:55+08:00",
+              "ts": 1505206855,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "阿迪达斯的新款运动鞋是鞋子设计的未来",
+              "titleEn": "Adidas’s New Sneaker Is The Future Of Shoe Design",
+              "summaryZh": "阿迪达斯 Futurecraft 4D 采用碳 3D 打印技术并使用数字光合成技术创建中底。阿迪达斯承诺...",
+              "summaryEn": "The Adidas Futurecraft 4D was crafted using Carbon 3D-printing technology and by creating midsoles using digital light synthesis technology. Adidas promises th…"
+            },
+            {
+              "title": "This Highly Engineered Football Helmet Wants To Put A Dent In Concussions",
+              "url": "https://www.fastcompany.com/90139262/this-highly-engineered-football-helmet-wants-to-put-a-dent-in-concussions?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=5&partner=newsletter&campaign_date=09082026",
+              "summary": "The VICIS ZERO1 football helmet is the result of three years and $20 million in research and development. The helmet is multilayered, featuring a soft outer sh…",
+              "published": "2017-09-07T17:00:21+08:00",
+              "ts": 1504774821,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "这款精心设计的足球头盔想要减少脑震荡",
+              "titleEn": "This Highly Engineered Football Helmet Wants To Put A Dent In Concussions",
+              "summaryZh": "VICIS ZERO1 橄榄球头盔是历时三年、耗资 2000 万美元研发的成果。该头盔是多层的，具有柔软的外层…",
+              "summaryEn": "The VICIS ZERO1 football helmet is the result of three years and $20 million in research and development. The helmet is multilayered, featuring a soft outer sh…"
+            },
+            {
+              "title": "As Lego’s Future Seems Uncertain, The Company Is Planting Roots With The Lego House",
+              "url": "https://www.fastcompany.com/90139165/as-legos-future-seems-uncertain-the-company-is-planting-roots-with-the-lego-house?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=6&partner=newsletter&campaign_date=09082026",
+              "summary": "As the company behind the infamous brick is in the middle of an upheaval, it’s also launching the first experience-centered Lego House in its birthplace of Den…",
+              "published": "2017-09-06T17:00:23+08:00",
+              "ts": 1504688423,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "由于乐高的未来似乎不确定，该公司正在与乐高之家扎根",
+              "titleEn": "As Lego’s Future Seems Uncertain, The Company Is Planting Roots With The Lego House",
+              "summaryZh": "由于臭名昭著的积木背后的公司正处于剧变之中，它还在其诞生地 Den 推出了第一个以体验为中心的乐高之家……",
+              "summaryEn": "As the company behind the infamous brick is in the middle of an upheaval, it’s also launching the first experience-centered Lego House in its birthplace of Den…"
+            },
+            {
+              "title": "How One Design Firm Is Tackling Extremism In The U.K.",
+              "url": "https://www.fastcompany.com/90138918/how-one-design-firm-is-tackling-extremism-in-the-u-k?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=7&partner=newsletter&campaign_date=09082026",
+              "summary": "With hate crimes on the rise in the U.K. since Brexit, Blue State Digital in London has been working with nonprofits Hope Not Hate and More United to deliver p…",
+              "published": "2017-09-05T17:00:52+08:00",
+              "ts": 1504602052,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "一家设计公司如何应对英国的极端主义",
+              "titleEn": "How One Design Firm Is Tackling Extremism In The U.K.",
+              "summaryZh": "自英国脱欧以来，英国仇恨犯罪不断增加，伦敦的 Blue State Digital 一直与非营利组织 Hope Not Hate 和 More United 合作，提供...",
+              "summaryEn": "With hate crimes on the rise in the U.K. since Brexit, Blue State Digital in London has been working with nonprofits Hope Not Hate and More United to deliver p…"
+            },
+            {
+              "title": "Heatherwick Studio Reimagines The Classroom",
+              "url": "https://www.fastcompany.com/90138710/this-design-firm-has-reimagined-the-classroom?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=8&partner=newsletter&campaign_date=09082026",
+              "summary": "London-based design firm Heatherwick Studio may design everything from chairs to buses, but with its Learning Hub project in Singapore the firm has rethought t…",
+              "published": "2017-08-31T17:00:25+08:00",
+              "ts": 1504170025,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Heatherwick Studio 重新构想教室",
+              "titleEn": "Heatherwick Studio Reimagines The Classroom",
+              "summaryZh": "总部位于伦敦的设计公司 Heatherwick Studio 可以设计从椅子到公共汽车的所有东西，但通过其在新加坡的学习中心项目，该公司重新思考了……",
+              "summaryEn": "London-based design firm Heatherwick Studio may design everything from chairs to buses, but with its Learning Hub project in Singapore the firm has rethought t…"
+            }
+          ]
+        },
+        {
+          "id": "fed",
+          "name": "Federal Reserve",
+          "nameEn": "Federal Reserve",
+          "home": "https://www.federalreserve.gov/",
+          "kind": "newsletter",
+          "ok": true,
+          "error": null,
+          "items": [
+            {
+              "title": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
+              "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260904a.htm",
+              "summary": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
+              "published": "2026-09-04T23:00:00+08:00",
+              "ts": 1788534000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "美联储宣布终止与 United Texas Bank、Quontic Bank Acquisition Corp. 和 Quontic Bank Holdings Corp. 的执法行动。",
+              "titleEn": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
+              "summaryZh": "美联储宣布终止与 United Texas Bank、Quontic Bank Acquisition Corp. 和 Quontic Bank Holdings Corp. 的执法行动。",
+              "summaryEn": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp."
+            },
+            {
+              "title": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+              "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260827a.htm",
+              "summary": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+              "published": "2026-08-27T23:00:00+08:00",
+              "ts": 1787842800,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "美联储对波多黎各人民银行前雇员采取执法行动",
+              "titleEn": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+              "summaryZh": "美联储对波多黎各人民银行前雇员采取执法行动",
+              "summaryEn": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico"
+            },
+            {
+              "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+              "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+              "summary": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+              "published": "2026-08-26T02:00:00+08:00",
+              "ts": 1787680800,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "2026年7月20日和2026年7月29日董事会贴现率会议纪要",
+              "titleEn": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+              "summaryZh": "2026年7月20日和2026年7月29日董事会贴现率会议纪要",
+              "summaryEn": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026"
+            },
+            {
+              "title": "Federal Reserve Board announces approval of application by National Westminster Bank Plc",
+              "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260820a.htm",
+              "summary": "Federal Reserve Board announces approval of application by National Westminster Bank Plc",
+              "published": "2026-08-21T04:00:00+08:00",
+              "ts": 1787256000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "美联储宣布批准国民威斯敏斯特银行的申请",
+              "titleEn": "Federal Reserve Board announces approval of application by National Westminster Bank Plc",
+              "summaryZh": "美联储宣布批准国民威斯敏斯特银行的申请",
+              "summaryEn": "Federal Reserve Board announces approval of application by National Westminster Bank Plc"
+            },
+            {
+              "title": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch",
+              "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820b.htm",
+              "summary": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA…",
+              "published": "2026-08-20T23:00:00+08:00",
+              "ts": 1787238000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "联邦储备委员会对 SouthPoint Bancshares, Inc. 采取执法行动，并宣布终止对德意志银行、DB USA Corporation 和德意志银行纽约分行的执法行动",
+              "titleEn": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch",
+              "summaryZh": "美联储向 SouthPoint Bancshares, Inc. 采取执法行动，并宣布终止与德意志银行、DB USA 的执法行动……",
+              "summaryEn": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA…"
+            },
+            {
+              "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
+              "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820a.htm",
+              "summary": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
+              "published": "2026-08-20T23:00:00+08:00",
+              "ts": 1787238000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "联邦储备委员会对地区银行前雇员和联合社区银行前雇员采取执法行动",
+              "titleEn": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
+              "summaryZh": "联邦储备委员会对地区银行前雇员和联合社区银行前雇员采取执法行动",
+              "summaryEn": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank"
+            },
+            {
+              "title": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+              "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm",
+              "summary": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+              "published": "2026-08-20T02:00:00+08:00",
+              "ts": 1787162400,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "联邦公开市场委员会会议纪要，2026 年 7 月 28 日至 29 日",
+              "titleEn": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+              "summaryZh": "联邦公开市场委员会会议纪要，2026 年 7 月 28 日至 29 日",
+              "summaryEn": "Minutes of the Federal Open Market Committee, July 28–29, 2026"
+            },
+            {
+              "title": "Federal Reserve Board issues enforcement action with former employee of Regions Bank",
+              "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260813a.htm",
+              "summary": "Federal Reserve Board issues enforcement action with former employee of Regions Bank",
+              "published": "2026-08-13T23:00:00+08:00",
+              "ts": 1786633200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "美联储对地区银行前雇员采取强制措施",
+              "titleEn": "Federal Reserve Board issues enforcement action with former employee of Regions Bank",
+              "summaryZh": "美联储对地区银行前雇员采取强制措施",
+              "summaryEn": "Federal Reserve Board issues enforcement action with former employee of Regions Bank"
+            }
+          ]
+        },
+        {
+          "id": "ecb",
+          "name": "European Central Bank",
+          "nameEn": "European Central Bank",
+          "home": "https://www.ecb.europa.eu/",
+          "kind": "newsletter",
+          "ok": true,
+          "error": null,
+          "items": [
+            {
+              "title": "Philip R. Lane: Diversity at the European Central Bank",
+              "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260904~7b9257099b.en.pdf",
+              "summary": "",
+              "published": "2026-09-04T17:10:00+08:00",
+              "ts": 1788513000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Philip R. Lane：欧洲央行的多元化",
+              "titleEn": "Philip R. Lane: Diversity at the European Central Bank",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "Boris Vujčić: Listening to households: expectations, behaviour and monetary policy",
+              "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260901~bb28f33f54.en.html",
+              "summary": "",
+              "published": "2026-09-02T00:00:00+08:00",
+              "ts": 1788278400,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Boris Vujčić：倾听家庭的声音：期望、行为和货币政策",
+              "titleEn": "Boris Vujčić: Listening to households: expectations, behaviour and monetary policy",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "Isabel Schnabel: Central banks on-chain",
+              "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260828~fe9afc86e8.en.html",
+              "summary": "",
+              "published": "2026-08-29T00:00:00+08:00",
+              "ts": 1787932800,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Isabel Schnabel：链上中央银行",
+              "titleEn": "Isabel Schnabel: Central banks on-chain",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "Meeting of 22-23 July 2026",
+              "url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html",
+              "summary": "",
+              "published": "2026-08-27T19:30:00+08:00",
+              "ts": 1787830200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "2026 年 7 月 22-23 日会议",
+              "titleEn": "Meeting of 22-23 July 2026",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "Piero Cipollone: From vision to delivery: building Europe’s tokenised financial market",
+              "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260826~3641116314.en.html",
+              "summary": "",
+              "published": "2026-08-26T18:15:00+08:00",
+              "ts": 1787739300,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Piero Cipollone：从愿景到交付：建设欧洲的代币化金融市场",
+              "titleEn": "Piero Cipollone: From vision to delivery: building Europe’s tokenised financial market",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "Piero Cipollone: Interview with ilsussidiario.net",
+              "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260824~fa5acbddea.en.html",
+              "summary": "",
+              "published": "2026-08-24T14:00:00+08:00",
+              "ts": 1787551200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "皮耶罗·西波隆 (Piero Cipollone)：接受 ilsussidiario.net 采访",
+              "titleEn": "Piero Cipollone: Interview with ilsussidiario.net",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "ECB Consumer Expectations Survey results – July 2026",
+              "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260821~a044fdddd9.en.html",
+              "summary": "",
+              "published": "2026-08-21T16:00:00+08:00",
+              "ts": 1787299200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "欧洲央行消费者预期调查结果 – 2026 年 7 月",
+              "titleEn": "ECB Consumer Expectations Survey results – July 2026",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum",
+              "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260819~98ddf24b7b.en.html",
+              "summary": "",
+              "published": "2026-08-19T15:10:00+08:00",
+              "ts": 1787123400,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "克里斯蒂娜·拉加德：世界经济论坛全球经济前景讨论中有关欧洲经济的小组评论",
+              "titleEn": "Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum",
+              "summaryZh": "",
+              "summaryEn": ""
+            }
+          ]
+        },
+        {
+          "id": "pbc",
+          "name": "中国人民银行",
+          "nameEn": "PBOC",
+          "home": "https://www.pbc.gov.cn/",
+          "kind": "newsletter",
+          "ok": true,
+          "error": null,
+          "items": [
+            {
+              "title": "中国人民银行召开树立和践行正确政绩观学习教育总结会议",
+              "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026090414583025333/index.html",
+              "summary": "",
+              "published": "2026-09-04T08:00:00+08:00",
+              "ts": 1788480000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "中国人民银行召开树立和践行正确政绩观学习教育总结会议",
+              "titleEn": "The People's Bank of China held a summary meeting on learning and education on establishing and practicing the correct concept of political performance",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "2026年2季度末金融业机构总资产562.2万亿元",
+              "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026090314250952275/index.html",
+              "summary": "",
+              "published": "2026-09-03T08:00:00+08:00",
+              "ts": 1788393600,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "2026年2季度末金融业机构总资产562.2万亿元",
+              "titleEn": "The total assets of financial industry institutions at the end of the second quarter of 2026 were 562.2 trillion yuan.",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "中国人民银行行长潘功胜会见国际金融机构负责人和相关国家财长及央行行长",
+              "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026090214474837364/index.html",
+              "summary": "",
+              "published": "2026-09-02T08:00:00+08:00",
+              "ts": 1788307200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "中国人民银行行长潘功胜会见国际金融机构负责人和相关国家财长及央行行长",
+              "titleEn": "Pan Gongsheng, Governor of the People's Bank of China, meets with heads of international financial institutions and finance ministers and central bank governors of relevant countries",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "中国人民银行行长潘功胜出席二十国集团财长和央行行长会议",
+              "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026090214465859469/index.html",
+              "summary": "",
+              "published": "2026-09-02T08:00:00+08:00",
+              "ts": 1788307200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "中国人民银行行长潘功胜出席二十国集团财长和央行行长会议",
+              "titleEn": "Pan Gongsheng, Governor of the People's Bank of China, attended the G20 Finance Ministers and Central Bank Governors Meeting",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "中国人民银行有关部门负责人就《关于改革完善房地产信贷管理 推动加快构建房...",
+              "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026082816463825521/index.html",
+              "summary": "",
+              "published": "2026-08-28T08:00:00+08:00",
+              "ts": 1787875200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "中国人民银行有关部门负责人就《关于改革完善房地产信贷管理 推动加快构建房...",
+              "titleEn": "The person in charge of the relevant department of the People's Bank of China commented on \"Reforming and Improving Real Estate Credit Management and Promoting Accelerating the Construction of Real Estate...",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "中国人民银行公告﹝2026﹞第22号",
+              "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026082809193480410/index.html",
+              "summary": "",
+              "published": "2026-08-28T08:00:00+08:00",
+              "ts": 1787875200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "中国人民银行公告﹝2026﹞第22号",
+              "titleEn": "People's Bank of China Announcement (2026) No. 22",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "中国人民银行新增西藏自治区分行支农支小再贷款额度50亿元 支持救灾及灾后重...",
+              "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026082717370314545/index.html",
+              "summary": "",
+              "published": "2026-08-27T08:00:00+08:00",
+              "ts": 1787788800,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "中国人民银行新增西藏自治区分行支农支小再贷款额度50亿元 支持救灾及灾后重...",
+              "titleEn": "The People's Bank of China has added a new loan quota of 5 billion yuan for Tibet Autonomous Region Branch to support agriculture and small businesses to support disaster relief and post-disaster reconstruction...",
+              "summaryZh": "",
+              "summaryEn": ""
+            },
+            {
+              "title": "中国人民银行副行长陆磊出席第十五届中国支付清算论坛",
+              "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026082717390451589/index.html",
+              "summary": "",
+              "published": "2026-08-27T08:00:00+08:00",
+              "ts": 1787788800,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "中国人民银行副行长陆磊出席第十五届中国支付清算论坛",
+              "titleEn": "Lu Lei, Vice Governor of the People's Bank of China, attended the 15th China Payment and Clearing Forum",
+              "summaryZh": "",
+              "summaryEn": ""
+            }
+          ]
+        },
+        {
+          "id": "govcn",
+          "name": "中国政府网",
+          "nameEn": "gov.cn",
+          "home": "https://www.gov.cn/",
+          "kind": "newsletter",
+          "ok": true,
+          "error": null,
+          "items": [
+            {
+              "title": "电力安全事故应急处置和调查处理条例",
+              "url": "https://www.gov.cn/zhengce/content/202609/content_7080188.htm",
+              "summary": "电力安全事故应急处置和调查处理条例",
+              "published": "2026-09-05T01:07:00+08:00",
+              "ts": 1788541620,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "电力安全事故应急处置和调查处理条例",
+              "titleEn": "Regulations on Emergency Response, Investigation and Handling of Electric Power Safety Accidents",
+              "summaryZh": "电力安全事故应急处置和调查处理条例",
+              "summaryEn": "Regulations on Emergency Response, Investigation and Handling of Electric Power Safety Accidents"
+            },
+            {
+              "title": "中共中央办公厅 国务院办公厅印发《党政领导干部生态环境损害责任追究办法》",
+              "url": "https://www.gov.cn/yaowen/liebiao/202608/content_7079095.htm",
+              "summary": "中共中央办公厅 国务院办公厅印发《党政领导干部生态环境损害责任追究办法》",
+              "published": "2026-08-26T01:33:00+08:00",
+              "ts": 1787679180,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "中共中央办公厅 国务院办公厅印发《党政领导干部生态环境损害责任追究办法》",
+              "titleEn": "The General Office of the Central Committee of the Communist Party of China and the General Office of the State Council issued the \"Measures for the Accountability of Party and Government Leading Cadres for Ecological and Environmental Damage\"",
+              "summaryZh": "中共中央办公厅 国务院办公厅印发《党政领导干部生态环境损害责任追究办法》",
+              "summaryEn": "The General Office of the Central Committee of the Communist Party of China and the General Office of the State Council issued the \"Measures for the Accountability of Party and Government Leading Cadres for Ecological and Environmental Damage\""
+            },
+            {
+              "title": "国务院关于修改《住房公积金管理条例》的决定",
+              "url": "https://www.gov.cn/zhengce/content/202608/content_7078477.htm",
+              "summary": "国务院关于修改《住房公积金管理条例》的决定",
+              "published": "2026-08-19T01:00:00+08:00",
+              "ts": 1787072400,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "国务院关于修改《住房公积金管理条例》的决定",
+              "titleEn": "Decision of the State Council on Amending the Regulations on the Administration of Housing Provident Funds",
+              "summaryZh": "国务院关于修改《住房公积金管理条例》的决定",
+              "summaryEn": "Decision of the State Council on Amending the Regulations on the Administration of Housing Provident Funds"
+            },
+            {
+              "title": "国务院关于《特殊教育发展提升“十五五”行动计划》的批复",
+              "url": "https://www.gov.cn/zhengce/content/202608/content_7078320.htm",
+              "summary": "国务院关于《特殊教育发展提升“十五五”行动计划》的批复",
+              "published": "2026-08-18T01:00:00+08:00",
+              "ts": 1786986000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "国务院关于《特殊教育发展提升“十五五”行动计划》的批复",
+              "titleEn": "The State Council’s Reply on the “15th Five-Year Plan” for the Development and Improvement of Special Education",
+              "summaryZh": "国务院关于《特殊教育发展提升“十五五”行动计划》的批复",
+              "summaryEn": "The State Council’s Reply on the “15th Five-Year Plan” for the Development and Improvement of Special Education"
+            },
+            {
+              "title": "国务院关于修改和废止部分行政法规的决定",
+              "url": "https://www.gov.cn/zhengce/content/202608/content_7077980.htm",
+              "summary": "国务院关于修改和废止部分行政法规的决定",
+              "published": "2026-08-14T01:00:00+08:00",
+              "ts": 1786640400,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "国务院关于修改和废止部分行政法规的决定",
+              "titleEn": "Decision of the State Council on Amending and Repealing Certain Administrative Regulations",
+              "summaryZh": "国务院关于修改和废止部分行政法规的决定",
+              "summaryEn": "Decision of the State Council on Amending and Repealing Certain Administrative Regulations"
+            },
+            {
+              "title": "国务院办公厅关于重点林区“十五五”期间森林年采伐限额的复函",
+              "url": "https://www.gov.cn/zhengce/content/202608/content_7077887.htm",
+              "summary": "国务院办公厅关于重点林区“十五五”期间森林年采伐限额的复函",
+              "published": "2026-08-12T01:00:00+08:00",
+              "ts": 1786467600,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "国务院办公厅关于重点林区“十五五”期间森林年采伐限额的复函",
+              "titleEn": "Reply from the General Office of the State Council on annual forest harvesting quotas in key forest areas during the “15th Five-Year Plan” period",
+              "summaryZh": "国务院办公厅关于重点林区“十五五”期间森林年采伐限额的复函",
+              "summaryEn": "Reply from the General Office of the State Council on annual forest harvesting quotas in key forest areas during the “15th Five-Year Plan” period"
+            },
+            {
+              "title": "集成电路布图设计保护条例",
+              "url": "https://www.gov.cn/zhengce/content/202608/content_7077398.htm",
+              "summary": "集成电路布图设计保护条例",
+              "published": "2026-08-04T01:00:00+08:00",
+              "ts": 1785776400,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "集成电路布图设计保护条例",
+              "titleEn": "Integrated Circuit Layout Design Protection Regulations",
+              "summaryZh": "集成电路布图设计保护条例",
+              "summaryEn": "Integrated Circuit Layout Design Protection Regulations"
+            },
+            {
+              "title": "国务院关于出境入境管理的规定",
+              "url": "https://www.gov.cn/zhengce/content/202607/content_7077172.htm",
+              "summary": "国务院关于出境入境管理的规定",
+              "published": "2026-08-01T01:00:00+08:00",
+              "ts": 1785517200,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "国务院关于出境入境管理的规定",
+              "titleEn": "Regulations of the State Council on Exit and Entry Administration",
+              "summaryZh": "国务院关于出境入境管理的规定",
+              "summaryEn": "Regulations of the State Council on Exit and Entry Administration"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "id": "macro",
+          "name": "全球宏观",
+          "nameEn": "Global Macro",
+          "feeds": [
+            {
+              "id": "oddlots",
+              "name": "The Odd Lots",
+              "nameEn": "The Odd Lots",
+              "home": "https://www.bloomberg.com/oddlots",
+              "kind": "podcast",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "Why Money Launderers Love $100 Bills",
+                  "url": "https://omny.fm/shows/odd-lots/why-money-launderers-love-100-bills",
+                  "summary": "Hardly anyone nowadays seems to carry much cash, never mind carrying around a bunch of $100 bills. So why does the amount of physical cash in circulation — esp…",
+                  "published": "2026-09-07T16:00:00+08:00",
+                  "ts": 1788768000,
+                  "kind": "podcast",
+                  "durationMin": 55,
+                  "titleZh": "为什么洗钱者喜欢 100 美元的钞票",
+                  "titleEn": "Why Money Launderers Love $100 Bills",
+                  "summaryZh": "如今几乎没有人携带大量现金，更不用说随身携带一堆 100 美元的钞票了。那么为什么流通中的实物现金数量——尤其是……",
+                  "summaryEn": "Hardly anyone nowadays seems to carry much cash, never mind carrying around a bunch of $100 bills. So why does the amount of physical cash in circulation — esp…"
+                },
+                {
+                  "title": "Why Laser Beams Are the Hottest New Tech in Defense",
+                  "url": "https://omny.fm/shows/odd-lots/why-laser-beams-are-the-hottest-new-tech-in-defense",
+                  "summary": "Our guest today is Colonel Sanders. More precisely, we speak with Wayne Sanders, a retired US army colonel who is currently senior defense research analyst for…",
+                  "published": "2026-09-04T16:00:00+08:00",
+                  "ts": 1788508800,
+                  "kind": "podcast",
+                  "durationMin": 53,
+                  "titleZh": "为什么激光束是国防领域最热门的新技术",
+                  "titleEn": "Why Laser Beams Are the Hottest New Tech in Defense",
+                  "summaryZh": "今天我们的客人是桑德斯上校。更准确地说，我们采访了韦恩·桑德斯，一位退役的美国陆军上校，目前担任……的高级国防研究分析师。",
+                  "summaryEn": "Our guest today is Colonel Sanders. More precisely, we speak with Wayne Sanders, a retired US army colonel who is currently senior defense research analyst for…"
+                },
+                {
+                  "title": "What's Behind the Big Surge in US Government Bond Yields",
+                  "url": "https://omny.fm/shows/odd-lots/whats-behind-the-big-surge-in-us-government-bond-yields",
+                  "summary": "Global bond yields are at their highest level since 2008, with the 30-year US Treasury touching 5% just before Treasury Secretary Scott Bessent announced a sur…",
+                  "published": "2026-09-03T16:00:00+08:00",
+                  "ts": 1788422400,
+                  "kind": "podcast",
+                  "durationMin": 37,
+                  "titleZh": "美国国债收益率大幅飙升背后的原因是什么",
+                  "titleEn": "What's Behind the Big Surge in US Government Bond Yields",
+                  "summaryZh": "全球债券收益率达到 2008 年以来的最高水平，就在财政部长斯科特·贝森特 (Scott Bessent) 宣布追加利率之前，30 年期美国国债收益率触及 5%。",
+                  "summaryEn": "Global bond yields are at their highest level since 2008, with the 30-year US Treasury touching 5% just before Treasury Secretary Scott Bessent announced a sur…"
+                },
+                {
+                  "title": "Adam Posen Thinks Things Could Get Very 'Messy' for the Fed",
+                  "url": "https://omny.fm/shows/odd-lots/adam-posen-thinks-things-could-get-very-messy-for-the-fed",
+                  "summary": "Kevin Warsh gave a hawkish speech at this year's annual Kansas City Fed Symposium in Jackson Hole, but that doesn't mean the challenges are over. Will the Fed…",
+                  "published": "2026-09-01T16:00:00+08:00",
+                  "ts": 1788249600,
+                  "kind": "podcast",
+                  "durationMin": 60,
+                  "titleZh": "亚当·波森认为美联储的情况可能会变得非常“混乱”",
+                  "titleEn": "Adam Posen Thinks Things Could Get Very 'Messy' for the Fed",
+                  "summaryZh": "凯文·沃什 (Kevin Warsh) 在今年杰克逊霍尔举行的堪萨斯城联储年度研讨会上发表了鹰派演讲，但这并不意味着挑战已经结束。美联储会...",
+                  "summaryEn": "Kevin Warsh gave a hawkish speech at this year's annual Kansas City Fed Symposium in Jackson Hole, but that doesn't mean the challenges are over. Will the Fed…"
+                },
+                {
+                  "title": "Richmond Fed’s Tom Barkin on the Surprisingly Resilient Real Economy",
+                  "url": "https://omny.fm/shows/odd-lots/richmond-fed-s-tom-barkin-on-the-surprisingly-resilient-real-economy",
+                  "summary": "The implications of Fed Chair Kevin Warsh's Jackson Hole speech are pretty clear: Traders expect a rate hike given the hawkish hints littered in his address, l…",
+                  "published": "2026-08-31T16:00:00+08:00",
+                  "ts": 1788163200,
+                  "kind": "podcast",
+                  "durationMin": 31,
+                  "titleZh": "里士满联储汤姆·巴金 (Tom Barkin) 谈实体经济的惊人弹性",
+                  "titleEn": "Richmond Fed’s Tom Barkin on the Surprisingly Resilient Real Economy",
+                  "summaryZh": "美联储主席凯文·沃什 (Kevin Warsh) 在杰克逊霍尔 (Jackson Hole) 演讲的含义非常明确：鉴于他演讲中的鹰派暗示，交易员预计加息，...",
+                  "summaryEn": "The implications of Fed Chair Kevin Warsh's Jackson Hole speech are pretty clear: Traders expect a rate hike given the hawkish hints littered in his address, l…"
+                },
+                {
+                  "title": "Austan Goolsbee Is Worried the Economy Is Overheating",
+                  "url": "https://omny.fm/shows/odd-lots/austan-goolsbee-is-worried-the-economy-is-overheating",
+                  "summary": "Inflation remains high and the 2% target is farther away than it was this time last year. There are signs all over that the economy is overheating — the strang…",
+                  "published": "2026-08-29T01:23:16+08:00",
+                  "ts": 1787937796,
+                  "kind": "podcast",
+                  "durationMin": 47,
+                  "titleZh": "奥斯坦·古尔斯比担心经济过热",
+                  "titleEn": "Austan Goolsbee Is Worried the Economy Is Overheating",
+                  "summaryZh": "通货膨胀仍然很高，2%的目标比去年同期还遥远。到处都有迹象表明经济正在过热——奇怪的……",
+                  "summaryEn": "Inflation remains high and the 2% target is farther away than it was this time last year. There are signs all over that the economy is overheating — the strang…"
+                },
+                {
+                  "title": "Kansas City Fed President Jeffrey Schmid on the First Jackson Hole of the Warsh Era",
+                  "url": "https://omny.fm/shows/odd-lots/kansas-city-fed-president-jeffrey-schmid-on-the-first-jackson-hole-of-the-warsh-era",
+                  "summary": "We are back in Jackson Hole! And this year's Federal Reserve Bank of Kansas City symposium on monetary policy might be one of the most interesting editions in…",
+                  "published": "2026-08-27T19:30:00+08:00",
+                  "ts": 1787830200,
+                  "kind": "podcast",
+                  "durationMin": 29,
+                  "titleZh": "堪萨斯城联储主席杰弗里·施密德谈沃什时代的第一个杰克逊霍尔",
+                  "titleEn": "Kansas City Fed President Jeffrey Schmid on the First Jackson Hole of the Warsh Era",
+                  "summaryZh": "我们回到杰克逊霍尔了！今年堪萨斯城联邦储备银行货币政策研讨会可能是……最有趣的版本之一。",
+                  "summaryEn": "We are back in Jackson Hole! And this year's Federal Reserve Bank of Kansas City symposium on monetary policy might be one of the most interesting editions in…"
+                },
+                {
+                  "title": "The Nigerian Industrial Behemoth That Could Reshape the African Economy",
+                  "url": "https://omny.fm/shows/odd-lots/the-nigerian-industrial-behemoth-that-could-reshape-the-african-economy",
+                  "summary": "Earlier in August, it was reported that Nigeria's Dangote Refinery secured a $1 billion underwriting for its upcoming stock market listing, which is set to bec…",
+                  "published": "2026-08-24T16:00:00+08:00",
+                  "ts": 1787558400,
+                  "kind": "podcast",
+                  "durationMin": 58,
+                  "titleZh": "可以重塑非洲经济的尼日利亚工业巨头",
+                  "titleEn": "The Nigerian Industrial Behemoth That Could Reshape the African Economy",
+                  "summaryZh": "8 月初，有报道称尼日利亚丹格特炼油厂 (Dangote Refinery) 为其即将上市的股票获得了 10 亿美元的承销。",
+                  "summaryEn": "Earlier in August, it was reported that Nigeria's Dangote Refinery secured a $1 billion underwriting for its upcoming stock market listing, which is set to bec…"
+                }
+              ]
+            },
+            {
+              "id": "bond",
+              "name": "Bond Vigilantes",
+              "nameEn": "Bond Vigilantes",
+              "home": "https://bondvigilantes.com/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "The Fire Horse at Mid-Year: When Capital Flows Outrun Fundamentals",
+                  "url": "https://bondvigilantes.com/blog/2026/09/the-fire-horse-at-mid-year-when-capital-flows-outrun-fundamentals/",
+                  "summary": "the start of the Year of the Fire Horse, we argued that Asian currencies were approaching a potentially important turning point. Stronger trade balances and ev…",
+                  "published": "2026-09-07T15:11:47+08:00",
+                  "ts": 1788765107,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "年中的火马：当资本流动超出基本面时",
+                  "titleEn": "The Fire Horse at Mid-Year: When Capital Flows Outrun Fundamentals",
+                  "summaryZh": "在火马年伊始，我们认为亚洲货币正在接近一个潜在的重要转折点。更强劲的贸易平衡和…",
+                  "summaryEn": "the start of the Year of the Fire Horse, we argued that Asian currencies were approaching a potentially important turning point. Stronger trade balances and ev…"
+                },
+                {
+                  "title": "1,000 Days of Milei",
+                  "url": "https://bondvigilantes.com/blog/2026/09/1000-days-of-milei/",
+                  "summary": "thousand days is a long time in politics. When I wrote about Javier Milei's first 100 days in office, Argentina was embarking on yet another attempt to break f…",
+                  "published": "2026-09-03T17:40:55+08:00",
+                  "ts": 1788428455,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "米莱的 1000 天",
+                  "titleEn": "1,000 Days of Milei",
+                  "summaryZh": "对于政治来说，一千天是很长的一段时间。当我写到哈维尔·米莱 (Javier Milei) 上任的第一个 100 天时，阿根廷正在开始另一次打破常规的尝试……",
+                  "summaryEn": "thousand days is a long time in politics. When I wrote about Javier Milei's first 100 days in office, Argentina was embarking on yet another attempt to break f…"
+                },
+                {
+                  "title": "Have We Really Learnt the Lessons of the GFC?",
+                  "url": "https://bondvigilantes.com/blog/2026/08/have-we-really-learnt-the-lessons-of-the-gfc/",
+                  "summary": "is 20 years ago this month that I sat in a pitch and listened to an investment bank describe their latest stroke of genius. In 2006, the Constant Proportion De…",
+                  "published": "2026-08-24T16:23:20+08:00",
+                  "ts": 1787559800,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "我们真的吸取了全球金融危机的教训吗？",
+                  "titleEn": "Have We Really Learnt the Lessons of the GFC?",
+                  "summaryZh": "20 年前的这个月，我坐在球场上，听一家投资银行描述他们最新的天才之举。 2006年，恒比德…",
+                  "summaryEn": "is 20 years ago this month that I sat in a pitch and listened to an investment bank describe their latest stroke of genius. In 2006, the Constant Proportion De…"
+                },
+                {
+                  "title": "Europe’s new energy scare: Crisis or false alarm?",
+                  "url": "https://bondvigilantes.com/blog/2026/08/europes-new-energy-scare-crisis-or-false-alarm/",
+                  "summary": "natural gas prices are rising again, storage levels are lower than expected, and memories of the 2022 energy crisis remain fresh. But does this really constitu…",
+                  "published": "2026-08-20T21:03:44+08:00",
+                  "ts": 1787231024,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "欧洲新能源恐慌：危机还是虚惊？",
+                  "titleEn": "Europe’s new energy scare: Crisis or false alarm?",
+                  "summaryZh": "天然气价格再次上涨，储存水平低于预期，2022 年能源危机的记忆犹新。但这真的构成……",
+                  "summaryEn": "natural gas prices are rising again, storage levels are lower than expected, and memories of the 2022 energy crisis remain fresh. But does this really constitu…"
+                },
+                {
+                  "title": "Of Anchovies and Blueberries – why El Niño matters",
+                  "url": "https://bondvigilantes.com/blog/2026/08/of-anchovies-and-blueberries-why-el-nino-matters/",
+                  "summary": "aren’t we talking more about El Niño?",
+                  "published": "2026-08-17T23:36:52+08:00",
+                  "ts": 1786981012,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "凤尾鱼和蓝莓——为什么厄尔尼诺现象很重要",
+                  "titleEn": "Of Anchovies and Blueberries – why El Niño matters",
+                  "summaryZh": "我们不是更多地谈论厄尔尼诺现象吗？",
+                  "summaryEn": "aren’t we talking more about El Niño?"
+                },
+                {
+                  "title": "A distressed tail is wagging high yield spreads",
+                  "url": "https://bondvigilantes.com/blog/2026/08/a-distressed-tail-is-wagging-high-yield-spreads/",
+                  "summary": "a world of tight credit spreads, one rating bucket flashes value. The European CCC index offers 1,306 bps over government bonds, suggesting generous compensati…",
+                  "published": "2026-08-12T17:34:43+08:00",
+                  "ts": 1786527283,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "一条苦恼的尾巴正在摇动高收益利差",
+                  "titleEn": "A distressed tail is wagging high yield spreads",
+                  "summaryZh": "在信用利差紧张的世界里，一个评级桶会闪现出价值。欧洲 CCC 指数较政府债券高出 1,306 个基点，表明慷慨的补偿......",
+                  "summaryEn": "a world of tight credit spreads, one rating bucket flashes value. The European CCC index offers 1,306 bps over government bonds, suggesting generous compensati…"
+                },
+                {
+                  "title": "Rolldown – The credit edition",
+                  "url": "https://bondvigilantes.com/blog/2026/08/rolldown-the-credit-edition/",
+                  "summary": "previously blogged on which area of government bond curves investors should have exposure to if they want to receive the greatest benefit from the passage of t…",
+                  "published": "2026-08-10T20:48:08+08:00",
+                  "ts": 1786366088,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Rolldown – 信用版",
+                  "titleEn": "Rolldown – The credit edition",
+                  "summaryZh": "之前曾在博客中讨论过，如果投资者想从法案通过中获得最大利益，他们应该接触政府债券曲线的哪些区域……",
+                  "summaryEn": "previously blogged on which area of government bond curves investors should have exposure to if they want to receive the greatest benefit from the passage of t…"
+                },
+                {
+                  "title": "Jim Leaviss",
+                  "url": "https://bondvigilantes.com/blog/2026/07/jim-leaviss/",
+                  "summary": "are very sorry to share the news that Jim Leaviss passed away on 23 July 2026, aged 55.",
+                  "published": "2026-07-29T19:31:44+08:00",
+                  "ts": 1785324704,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "吉姆·利维斯",
+                  "titleEn": "Jim Leaviss",
+                  "summaryZh": "非常遗憾地宣布吉姆·利维斯 (Jim Leaviss) 于 2026 年 7 月 23 日去世，享年 55 岁。",
+                  "summaryEn": "are very sorry to share the news that Jim Leaviss passed away on 23 July 2026, aged 55."
+                }
+              ]
+            },
+            {
+              "id": "alhambra",
+              "name": "Alhambra Investments",
+              "nameEn": "Alhambra Investments",
+              "home": "https://www.alhambrapartners.com/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "Monthly Macro Monitor: Risk vs Reward",
+                  "url": "https://alhambrapartners.com/monthly-macro-monitor-risk-vs-reward/",
+                  "summary": "It is impossible to escape the negativity toward bonds these days. And with good reason, I suppose, since the returns from the asset class have been lousy for…",
+                  "published": "2026-09-08T09:15:59+08:00",
+                  "ts": 1788830159,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "每月宏观监测：风险与回报",
+                  "titleEn": "Monthly Macro Monitor: Risk vs Reward",
+                  "summaryZh": "如今，人们不可能摆脱对债券的负面情绪。我想这是有充分理由的，因为资产类别的回报率一直很糟糕......",
+                  "summaryEn": "It is impossible to escape the negativity toward bonds these days. And with good reason, I suppose, since the returns from the asset class have been lousy for…"
+                },
+                {
+                  "title": "Weekly Market Pulse: Hiking With Warsh",
+                  "url": "https://alhambrapartners.com/weekly-market-pulse-hiking-with-warsh/",
+                  "summary": "As I learned years ago, you can take two different kinds of hikes on the trails around Jackson Hole. I can sum up my hikes with former Vice Chairman Don Kohn i…",
+                  "published": "2026-08-31T08:33:00+08:00",
+                  "ts": 1788136380,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "每周市场脉动：与 Warsh 一起徒步旅行",
+                  "titleEn": "Weekly Market Pulse: Hiking With Warsh",
+                  "summaryZh": "正如我多年前了解到的那样，您可以在杰克逊霍尔周围的小径上进行两种不同的徒步旅行。我可以总结一下我与前副主席 Don Kohn 的徒步旅行……",
+                  "summaryEn": "As I learned years ago, you can take two different kinds of hikes on the trails around Jackson Hole. I can sum up my hikes with former Vice Chairman Don Kohn i…"
+                },
+                {
+                  "title": "Weekly Market Pulse: A Debt Crisis?",
+                  "url": "https://alhambrapartners.com/weekly-market-pulse-a-debt-crisis/",
+                  "summary": "It seems like a lot has happened over the last few weeks. At the end of July, Treasury Secretary Bessent used the exchange stabilization fund to purchase Yen b…",
+                  "published": "2026-08-24T10:37:43+08:00",
+                  "ts": 1787539063,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "每周市场脉动：债务危机？",
+                  "titleEn": "Weekly Market Pulse: A Debt Crisis?",
+                  "summaryZh": "过去几周似乎发生了很多事情。 7月底，财政部长贝森特动用汇率稳定基金购买日元……",
+                  "summaryEn": "It seems like a lot has happened over the last few weeks. At the end of July, Treasury Secretary Bessent used the exchange stabilization fund to purchase Yen b…"
+                },
+                {
+                  "title": "Weekly Market Pulse: Situational Awareness",
+                  "url": "https://alhambrapartners.com/weekly-market-pulse-situational-awareness/",
+                  "summary": "Questions, questions, questions. Investors always have lots of questions, most of them about the future, which makes them very hard impossible to answer. That…",
+                  "published": "2026-08-17T09:14:36+08:00",
+                  "ts": 1786929276,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "每周市场脉搏：态势感知",
+                  "titleEn": "Weekly Market Pulse: Situational Awareness",
+                  "summaryZh": "问题，问题，问题。投资者总是有很多问题，其中大多数是关于未来的，这使得他们很难回答。那…",
+                  "summaryEn": "Questions, questions, questions. Investors always have lots of questions, most of them about the future, which makes them very hard impossible to answer. That…"
+                },
+                {
+                  "title": "Why the Best Investors Aren’t Who You Think",
+                  "url": "https://alhambrapartners.com/why-the-best-investors-arent-who-you-think/",
+                  "summary": "If you look at the history of Wall Street marketing, it’s all testosterone, lightning-fast trades, and aggressive \"market-beating\" bravado. But if you look at…",
+                  "published": "2026-08-11T22:10:37+08:00",
+                  "ts": 1786457437,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "为什么最好的投资者不是你想象的那样",
+                  "titleEn": "Why the Best Investors Aren’t Who You Think",
+                  "summaryZh": "如果你回顾一下华尔街营销的历史，你会发现这都是睾丸激素、闪电般快速的交易和激进的“击败市场”的虚张声势。但如果你看...",
+                  "summaryEn": "If you look at the history of Wall Street marketing, it’s all testosterone, lightning-fast trades, and aggressive \"market-beating\" bravado. But if you look at…"
+                },
+                {
+                  "title": "Monthly Macro Monitor: Status Quo",
+                  "url": "https://alhambrapartners.com/monthly-macro-monitor-status-quo/",
+                  "summary": "I write an overview of the economy about once a month and for the longest time the entire thing could have been summed up in a single sentence: nothing has cha…",
+                  "published": "2026-08-10T09:16:34+08:00",
+                  "ts": 1786324594,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "每月宏观监测：现状",
+                  "titleEn": "Monthly Macro Monitor: Status Quo",
+                  "summaryZh": "我大约每月写一次经济概述，在最长的时间里，整个事情可以用一句话来概括：没有什么是...",
+                  "summaryEn": "I write an overview of the economy about once a month and for the longest time the entire thing could have been summed up in a single sentence: nothing has cha…"
+                },
+                {
+                  "title": "Weekly Market Pulse: Warsh Is Off To A Good Start",
+                  "url": "https://alhambrapartners.com/weekly-market-pulse-warsh-is-off-to-a-good-start/",
+                  "summary": "Faced with a choice between changing one's mind and proving there is no need to do so, almost everyone gets busy with the proof. J.K. Galbraith I've learned so…",
+                  "published": "2026-08-03T10:37:59+08:00",
+                  "ts": 1785724679,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "每周市场脉搏：Warsh 有了一个良好的开端",
+                  "titleEn": "Weekly Market Pulse: Warsh Is Off To A Good Start",
+                  "summaryZh": "面对改变主意和证明没有必要这样做之间的选择，几乎每个人都忙于证明。 J.K.加尔布雷斯 我了解到……",
+                  "summaryEn": "Faced with a choice between changing one's mind and proving there is no need to do so, almost everyone gets busy with the proof. J.K. Galbraith I've learned so…"
+                },
+                {
+                  "title": "Weekly Market Pulse: The Forgotten Asset",
+                  "url": "https://alhambrapartners.com/weekly-market-pulse-the-forgotten-asset/",
+                  "summary": "You can't take the same actions as everyone else and expect to outperform. In order to outperform, by definition, you have to depart from the crowd. You have t…",
+                  "published": "2026-07-27T11:29:51+08:00",
+                  "ts": 1785122991,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "每周市场脉搏：被遗忘的资产",
+                  "titleEn": "Weekly Market Pulse: The Forgotten Asset",
+                  "summaryZh": "你不能采取与其他人相同的行动并期望表现出色。根据定义，为了脱颖而出，你必须脱离人群。你有…",
+                  "summaryEn": "You can't take the same actions as everyone else and expect to outperform. In order to outperform, by definition, you have to depart from the crowd. You have t…"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "finsoft",
+          "name": "金融软件",
+          "nameEn": "Financial Software",
+          "feeds": [
+            {
+              "id": "finextra",
+              "name": "Finextra",
+              "nameEn": "Finextra",
+              "home": "https://www.finextra.com/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "Mastercard predicts that over the next four years one-in-ten will use AI agents for online shopping",
+                  "url": "https://www.finextra.com/newsarticle/48357/mastercard-predicts-that-over-the-next-four-years-one-in-ten-will-use-ai-agents-for-online-shopping?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report",
+                  "published": "2026-09-08T13:00:00+08:00",
+                  "ts": 1788843600,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "万事达卡预测，未来四年，十分之一的人将使用人工智能代理进行在线购物",
+                  "titleEn": "Mastercard predicts that over the next four years one-in-ten will use AI agents for online shopping",
+                  "summaryZh": "根据万事达卡的一份新报告，预计到 2030 年，超过十分之一的在线购物者将经常使用人工智能代理代表他们购买产品",
+                  "summaryEn": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report"
+                },
+                {
+                  "title": "PayTabs to acquire Amazon Payments Mena operations",
+                  "url": "https://www.finextra.com/newsarticle/48356/paytabs-to-acquire-amazon-payments-mena-operations?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "Amazon has agreed a $100 million deal to transfer its Middle East and North Africa payments operations to Saudi Arabia's PayTabs.",
+                  "published": "2026-09-07T21:44:00+08:00",
+                  "ts": 1788788640,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "PayTabs 将收购 Amazon Payments Mena 业务",
+                  "titleEn": "PayTabs to acquire Amazon Payments Mena operations",
+                  "summaryZh": "亚马逊已同意一项价值 1 亿美元的协议，将其中东和北非支付业务转移给沙特阿拉伯的 PayTabs。",
+                  "summaryEn": "Amazon has agreed a $100 million deal to transfer its Middle East and North Africa payments operations to Saudi Arabia's PayTabs."
+                },
+                {
+                  "title": "Can AI write better PR? Hyundai Card puts it to the test",
+                  "url": "https://www.finextra.com/newsarticle/48355/can-ai-write-better-pr-hyundai-card-puts-it-to-the-test?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "South Korea's Hyundai Card has put its media communications team under the AI micrososcope, running head-to-tests to determine the differences between human an…",
+                  "published": "2026-09-07T21:22:00+08:00",
+                  "ts": 1788787320,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "AI 能写出更好的 PR 吗？现代卡对其进行了测试",
+                  "titleEn": "Can AI write better PR? Hyundai Card puts it to the test",
+                  "summaryZh": "韩国现代卡已将其媒体传播团队置于人工智能显微镜下，进行直接测试以确定人类和……之间的差异。",
+                  "summaryEn": "South Korea's Hyundai Card has put its media communications team under the AI micrososcope, running head-to-tests to determine the differences between human an…"
+                },
+                {
+                  "title": "European wealthtech funding drops amid investor caution",
+                  "url": "https://www.finextra.com/newsarticle/48354/european-wealthtech-funding-drops-amid-investor-caution?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "Caution among investors led to a 46% reduction in wealthtech funding in Q2 this year.",
+                  "published": "2026-09-07T20:28:00+08:00",
+                  "ts": 1788784080,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "由于投资者谨慎，欧洲财富科技融资下降",
+                  "titleEn": "European wealthtech funding drops amid investor caution",
+                  "summaryZh": "投资者的谨慎导致今年第二季度财富科技融资减少了 46%。",
+                  "summaryEn": "Caution among investors led to a 46% reduction in wealthtech funding in Q2 this year."
+                },
+                {
+                  "title": "UBS calls for AI literacy from new recruits",
+                  "url": "https://www.finextra.com/newsarticle/48353/ubs-calls-for-ai-literacy-from-new-recruits?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "Swiss bank UBS has become one of the first financial institutions to demand AI proficiency from potential employees",
+                  "published": "2026-09-07T19:47:00+08:00",
+                  "ts": 1788781620,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "瑞银呼吁新员工提高人工智能素养",
+                  "titleEn": "UBS calls for AI literacy from new recruits",
+                  "summaryZh": "瑞士银行瑞银成为首批要求潜在员工具备人工智能能力的金融机构之一",
+                  "summaryEn": "Swiss bank UBS has become one of the first financial institutions to demand AI proficiency from potential employees"
+                },
+                {
+                  "title": "L&G names group CTO",
+                  "url": "https://www.finextra.com/newsarticle/48352/lg-names-group-cto?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "Former Schroders' technology head jamie Ovenden has been appointed as group chief technology, data and innovation officer at Legal & General (L&G).",
+                  "published": "2026-09-07T19:24:00+08:00",
+                  "ts": 1788780240,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "L&G 任命集团首席技术官",
+                  "titleEn": "L&G names group CTO",
+                  "summaryZh": "施罗德前技术主管杰米·奥文登 (Jamie Ovenden) 已被任命为 Legal & General (L&G) 集团首席技术、数据和创新官。",
+                  "summaryEn": "Former Schroders' technology head jamie Ovenden has been appointed as group chief technology, data and innovation officer at Legal & General (L&G)."
+                },
+                {
+                  "title": "EMEA fintech funding declined in H1",
+                  "url": "https://www.finextra.com/newsarticle/48351/emea-fintech-funding-declined-in-h1?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "The level of funding for EMEA-based fintechs fell sharply in the first half of the year as investors become more selective.",
+                  "published": "2026-09-07T17:38:00+08:00",
+                  "ts": 1788773880,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "上半年欧洲、中东和非洲地区金融科技融资有所下降",
+                  "titleEn": "EMEA fintech funding declined in H1",
+                  "summaryZh": "由于投资者变得更加挑剔，欧洲、中东和非洲地区金融科技公司的融资水平在今年上半年大幅下降。",
+                  "summaryEn": "The level of funding for EMEA-based fintechs fell sharply in the first half of the year as investors become more selective."
+                },
+                {
+                  "title": "TD Bank COO leaves after less than a year in the job",
+                  "url": "https://www.finextra.com/newsarticle/48349/td-bank-coo-leaves-after-less-than-a-year-in-the-job?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "TD Bank's COO Taylan Turan is leaving the Canadian lender after less than a year in the job as part of a wider shakeup that also sees Vlad Shpilsky appointed g…",
+                  "published": "2026-09-07T08:01:00+08:00",
+                  "ts": 1788739260,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "道明银行首席运营官上任不到一年就离职",
+                  "titleEn": "TD Bank COO leaves after less than a year in the job",
+                  "summaryZh": "道明银行首席运营官泰兰·图兰(Taylan Turan)在上任不到一年后将离开这家加拿大银行，这是更广泛的重组的一部分，弗拉德·什皮尔斯基(Vlad Shpilsky)也被任命为首席运营官。",
+                  "summaryEn": "TD Bank's COO Taylan Turan is leaving the Canadian lender after less than a year in the job as part of a wider shakeup that also sees Vlad Shpilsky appointed g…"
+                }
+              ]
+            },
+            {
+              "id": "tearsheet",
+              "name": "Tearsheet",
+              "nameEn": "Tearsheet",
+              "home": "https://tearsheet.co/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "The infrastructure paradox: The better you become, the harder customers are to keep",
+                  "url": "https://tearsheet.co/opinion/the-infrastructure-paradox-the-better-you-become-the-harder-customers-are-to-keep/?utm_source=rss&utm_medium=rss&utm_campaign=the-infrastructure-paradox-the-better-you-become-the-harder-customers-are-to-keep",
+                  "summary": "The “Letter from the Editor” is a biweekly series of exclusive insight and opinion-driven analysis from Tearsheet’s Managing Editor Sara Khairi, connecting ide…",
+                  "published": "2026-09-04T20:00:00+08:00",
+                  "ts": 1788523200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "基础设施悖论：你做得越好，就越难留住客户",
+                  "titleEn": "The infrastructure paradox: The better you become, the harder customers are to keep",
+                  "summaryZh": "“编辑来信”是 Tearsheet 的总编辑 Sara Khairi 的双周系列独家见解和观点驱动的分析，将想法联系起来……",
+                  "summaryEn": "The “Letter from the Editor” is a biweekly series of exclusive insight and opinion-driven analysis from Tearsheet’s Managing Editor Sara Khairi, connecting ide…"
+                },
+                {
+                  "title": "The Week in Market Moves | Aug 27- Sep 03, 2026",
+                  "url": "https://tearsheet.co/10-q/the-week-in-market-moves-aug-27-sep-03-2026/?utm_source=rss&utm_medium=rss&utm_campaign=the-week-in-market-moves-aug-27-sep-03-2026",
+                  "summary": "Company signals and market response This analysis tracks the top company developments and how markets absorbed them through Thursday’s close, focusing on where…",
+                  "published": "2026-09-04T19:30:00+08:00",
+                  "ts": 1788521400,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "本周市场走势| 2026年8月27日至9月3日",
+                  "titleEn": "The Week in Market Moves | Aug 27- Sep 03, 2026",
+                  "summaryZh": "公司信号和市场反应该分析跟踪了顶级公司的发展以及市场如何在周四收盘时吸收它们，重点关注......",
+                  "summaryEn": "Company signals and market response This analysis tracks the top company developments and how markets absorbed them through Thursday’s close, focusing on where…"
+                },
+                {
+                  "title": "Financial firms are building new businesses from the layers beneath their products",
+                  "url": "https://tearsheet.co/funding/financial-firms-are-building-new-businesses-from-the-layers-beneath-their-products/?utm_source=rss&utm_medium=rss&utm_campaign=financial-firms-are-building-new-businesses-from-the-layers-beneath-their-products",
+                  "summary": "Financial technology is moving toward a model where products and capabilities can be applied well beyond their original use cases. For Intuit and SoFi, that sh…",
+                  "published": "2026-09-03T19:30:00+08:00",
+                  "ts": 1788435000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "金融公司正在从其产品的底层构建新业务",
+                  "titleEn": "Financial firms are building new businesses from the layers beneath their products",
+                  "summaryZh": "金融技术正在走向一种产品和功能可以远远超出其原始用例的应用模式。对于 Intuit 和 SoFi 来说，这……",
+                  "summaryEn": "Financial technology is moving toward a model where products and capabilities can be applied well beyond their original use cases. For Intuit and SoFi, that sh…"
+                },
+                {
+                  "title": "The antitrust question is moving up the stack: What California’s new push and NVIDIA’s retreat mean for finance",
+                  "url": "https://tearsheet.co/policies-playbooks/the-antitrust-question-is-moving-up-the-stack-what-californias-new-push-and-nvidias-retreat-mean-for-financethe-antitrust-question-is-moving-up-the-stack-what-californias-new-push-and-nvidias-retreat/?utm_source=rss&utm_medium=rss&utm_campaign=the-antitrust-question-is-moving-up-the-stack-what-californias-new-push-and-nvidias-retreat-mean-for-financethe-antitrust-question-is-moving-up-the-stack-what-californias-new-push-and-nvidias-retreat",
+                  "summary": "California-based NVIDIA recently paused parts of its AI Compute Partnership Program, a financing initiative that helped smaller AI cloud companies buy NVIDIA c…",
+                  "published": "2026-09-02T19:30:00+08:00",
+                  "ts": 1788348600,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "反垄断问题正在升级：加州的新举措和 NVIDIA 的撤退对金融意味着什么",
+                  "titleEn": "The antitrust question is moving up the stack: What California’s new push and NVIDIA’s retreat mean for finance",
+                  "summaryZh": "总部位于加利福尼亚州的 NVIDIA 最近暂停了部分 AI 计算合作伙伴计划，该计划是一项融资计划，旨在帮助小型 AI 云公司购买 NVIDIA 的...",
+                  "summaryEn": "California-based NVIDIA recently paused parts of its AI Compute Partnership Program, a financing initiative that helped smaller AI cloud companies buy NVIDIA c…"
+                },
+                {
+                  "title": "Titan’s banking-native AI bet: Banking intelligence can’t be retrofitted",
+                  "url": "https://tearsheet.co/awards/titans-banking-native-ai-bet-banking-intelligence-cant-be-retrofitted/?utm_source=rss&utm_medium=rss&utm_campaign=titans-banking-native-ai-bet-banking-intelligence-cant-be-retrofitted",
+                  "summary": "Over the past year, technology vendors have been using a new phrase to describe AI for financial institutions: adapted for banking. Whether the language is “tr…",
+                  "published": "2026-09-01T19:30:00+08:00",
+                  "ts": 1788262200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "泰坦的银行业原生人工智能赌注：银行业智能无法改造",
+                  "titleEn": "Titan’s banking-native AI bet: Banking intelligence can’t be retrofitted",
+                  "summaryZh": "在过去的一年里，技术供应商一直在使用一个新短语来描述金融机构的人工智能：适用于银行业。语言是否为“tr…",
+                  "summaryEn": "Over the past year, technology vendors have been using a new phrase to describe AI for financial institutions: adapted for banking. Whether the language is “tr…"
+                },
+                {
+                  "title": "Goldman Sachs built its talent pipeline around apprenticeship. AI is now testing what that means",
+                  "url": "https://tearsheet.co/10-q/goldman-sachs-built-its-talent-pipeline-around-apprenticeship-ai-is-now-testing-what-that-means/?utm_source=rss&utm_medium=rss&utm_campaign=goldman-sachs-built-its-talent-pipeline-around-apprenticeship-ai-is-now-testing-what-that-means",
+                  "summary": "Weekly 10-Q The weekly 10-Q newsletter is part of the Tearsheet Pro subscription, where I unpack the recent moves and strategies of leading banks and fintechs…",
+                  "published": "2026-08-31T19:30:00+08:00",
+                  "ts": 1788175800,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "高盛围绕学徒制建立了人才管道。 AI 现在正在测试这意味着什么",
+                  "titleEn": "Goldman Sachs built its talent pipeline around apprenticeship. AI is now testing what that means",
+                  "summaryZh": "每周 10-Q 每周 10-Q 时事通讯是 Tearsheet Pro 订阅的一部分，我在其中解析了领先银行和金融科技公司的最新举措和策略……",
+                  "summaryEn": "Weekly 10-Q The weekly 10-Q newsletter is part of the Tearsheet Pro subscription, where I unpack the recent moves and strategies of leading banks and fintechs…"
+                },
+                {
+                  "title": "The Week in Market Moves | Aug 20-27, 2026",
+                  "url": "https://tearsheet.co/10-q/the-week-in-market-moves-aug-20-27-2026/?utm_source=rss&utm_medium=rss&utm_campaign=the-week-in-market-moves-aug-20-27-2026",
+                  "summary": "Company signals and market response This analysis tracks the top company developments and how markets absorbed them through Thursday’s close, focusing on where…",
+                  "published": "2026-08-28T19:30:00+08:00",
+                  "ts": 1787916600,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "本周市场走势| 2026年8月20-27日",
+                  "titleEn": "The Week in Market Moves | Aug 20-27, 2026",
+                  "summaryZh": "公司信号和市场反应该分析跟踪了顶级公司的发展以及市场如何在周四收盘时吸收它们，重点关注......",
+                  "summaryEn": "Company signals and market response This analysis tracks the top company developments and how markets absorbed them through Thursday’s close, focusing on where…"
+                },
+                {
+                  "title": "‘Traditional banks have equated advising with cross-selling’: Grasshopper’s Danielle Kane on why just 7% of SMBs see banks as trusted advisors",
+                  "url": "https://tearsheet.co/5-questions/traditional-banks-have-equated-advising-with-cross-selling-grasshoppers-danielle-kane-on-why-just-7-of-smbs-see-banks-as-trusted-advisors/?utm_source=rss&utm_medium=rss&utm_campaign=traditional-banks-have-equated-advising-with-cross-selling-grasshoppers-danielle-kane-on-why-just-7-of-smbs-see-banks-as-trusted-advisors",
+                  "summary": "Banks have long focused on competing for small business accounts through interest rates, fees, and rewards programs, treating the relationship as transactional…",
+                  "published": "2026-08-27T19:30:00+08:00",
+                  "ts": 1787830200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "“传统银行将咨询等同于交叉销售”：Grasshopper 的 Danielle Kane 解释为什么只有 7% 的中小企业将银行视为值得信赖的顾问",
+                  "titleEn": "‘Traditional banks have equated advising with cross-selling’: Grasshopper’s Danielle Kane on why just 7% of SMBs see banks as trusted advisors",
+                  "summaryZh": "银行长期以来一直专注于通过利率、费用和奖励计划争夺小企业账户，将这种关系视为交易性……",
+                  "summaryEn": "Banks have long focused on competing for small business accounts through interest rates, fees, and rewards programs, treating the relationship as transactional…"
+                }
+              ]
+            },
+            {
+              "id": "bankingdive",
+              "name": "Banking Dive",
+              "nameEn": "Banking Dive",
+              "home": "https://www.bankingdive.com/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "MoneyLion alums take OpenReserve ‘out of stealth’",
+                  "url": "https://www.bankingdive.com/news/openreserve-occ-conditional-approval-moneylion-alums-choubey-correia-continuous-banking/829705/",
+                  "summary": "Couched as a home for “continuous” banking, the company received conditional approval for a national banking license from the OCC.",
+                  "published": "2026-09-05T00:17:00+08:00",
+                  "ts": 1788538620,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "MoneyLion 校友让 OpenReserve“不再隐秘”",
+                  "titleEn": "MoneyLion alums take OpenReserve ‘out of stealth’",
+                  "summaryZh": "该公司作为“持续”银行业务的大本营，获得了 OCC 有条件批准的国家银行牌照。",
+                  "summaryEn": "Couched as a home for “continuous” banking, the company received conditional approval for a national banking license from the OCC."
+                },
+                {
+                  "title": "Revolut nabs conditional OCC charter",
+                  "url": "https://www.bankingdive.com/news/revolut-nabs-conditional-occ-charter/829703/",
+                  "summary": "The neobank has long eyed a U.S. banking charter, seeing it as “a seat at the table” with regulators.",
+                  "published": "2026-09-05T00:14:23+08:00",
+                  "ts": 1788538463,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Revolut 获得有条件 OCC 特许权",
+                  "titleEn": "Revolut nabs conditional OCC charter",
+                  "summaryZh": "这家新银行长期以来一直关注美国银行业章程，将其视为监管机构的“一席之地”。",
+                  "summaryEn": "The neobank has long eyed a U.S. banking charter, seeing it as “a seat at the table” with regulators."
+                },
+                {
+                  "title": "Banks without holding companies need better disclosure rules: GAO",
+                  "url": "https://www.bankingdive.com/news/gao-banks-without-holding-companies-need-better-disclosure-rules-sec/829690/",
+                  "summary": "Such banks aren’t subject to SEC review, and regulators aren’t assessing those lenders’ disclosures for investors’ benefit, the watchdog said.",
+                  "published": "2026-09-04T23:06:34+08:00",
+                  "ts": 1788534394,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "没有控股公司的银行需要更好的披露规则：GAO",
+                  "titleEn": "Banks without holding companies need better disclosure rules: GAO",
+                  "summaryZh": "该监管机构表示，此类银行不受美国证券交易委员会的审查，监管机构也不会为了投资者的利益而评估这些银行的披露情况。",
+                  "summaryEn": "Such banks aren’t subject to SEC review, and regulators aren’t assessing those lenders’ disclosures for investors’ benefit, the watchdog said."
+                },
+                {
+                  "title": "Kansas’ Equity Bank to expand in Iowa with $123.8M deal",
+                  "url": "https://www.bankingdive.com/news/equity-bank-kansas-acquire-lincoln-savings-iowa-123-million/829578/",
+                  "summary": "Acquiring Lincoln Savings Bank would give Equity 16 added branches in the Hawkeye State and create a lender with $9.1 billion in assets.",
+                  "published": "2026-09-04T00:20:39+08:00",
+                  "ts": 1788452439,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "堪萨斯州股票银行将以 1.238 亿美元的交易在爱荷华州扩张",
+                  "titleEn": "Kansas’ Equity Bank to expand in Iowa with $123.8M deal",
+                  "summaryZh": "收购林肯储蓄银行将为 Equity 16 在鹰眼州增加分支机构，并创建一家资产达 91 亿美元的银行。",
+                  "summaryEn": "Acquiring Lincoln Savings Bank would give Equity 16 added branches in the Hawkeye State and create a lender with $9.1 billion in assets."
+                },
+                {
+                  "title": "Banks can question customer activity without disclosing SARs",
+                  "url": "https://www.bankingdive.com/news/banks-can-question-customer-activity-without-disclosing-sars/829577/",
+                  "summary": "Five federal regulators clarified how financial institutions can talk to customers about suspicious activity without violating the Bank Secrecy Act.",
+                  "published": "2026-09-04T00:20:08+08:00",
+                  "ts": 1788452408,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "银行可以在不披露 SAR 的情况下询问客户活动",
+                  "titleEn": "Banks can question customer activity without disclosing SARs",
+                  "summaryZh": "五位联邦监管机构阐明了金融机构如何在不违反《银行保密法》的情况下与客户谈论可疑活动。",
+                  "summaryEn": "Five federal regulators clarified how financial institutions can talk to customers about suspicious activity without violating the Bank Secrecy Act."
+                },
+                {
+                  "title": "TD pushes US branch expansion amid AML reform",
+                  "url": "https://www.bankingdive.com/news/td-us-bank-100-branches-2028-southeast-aml-asset-cap/829477/",
+                  "summary": "The Canadian bank plans to open 100 U.S. branches by 2028, mostly in the Southeast. But satisfying its long-running consent order remains a top priority, execu…",
+                  "published": "2026-09-03T02:47:19+08:00",
+                  "ts": 1788374839,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "道明在反洗钱改革中推动美国分行扩张",
+                  "titleEn": "TD pushes US branch expansion amid AML reform",
+                  "summaryZh": "这家加拿大银行计划到 2028 年在美国开设 100 家分行，其中大部分位于东南部。但满足其长期运行的同意令仍然是首要任务，执行……",
+                  "summaryEn": "The Canadian bank plans to open 100 U.S. branches by 2028, mostly in the Southeast. But satisfying its long-running consent order remains a top priority, execu…"
+                },
+                {
+                  "title": "TabaPay eyes OCC charter with Denver bank deal",
+                  "url": "https://www.bankingdive.com/news/tabapay-to-buy-transact-bank-ftv-capital-155-million-investment-occ-charter/829459/",
+                  "summary": "The money movement platform, which once sought to buy Synapse’s assets, received a $155 million investment to pursue Transact Bank.",
+                  "published": "2026-09-03T00:52:32+08:00",
+                  "ts": 1788367952,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "TabaPay 考虑与丹佛银行达成 OCC 特许协议",
+                  "titleEn": "TabaPay eyes OCC charter with Denver bank deal",
+                  "summaryZh": "这家资金流动平台曾试图收购 Synapse 的资产，后来获得了 1.55 亿美元的投资来收购 Transact Bank。",
+                  "summaryEn": "The money movement platform, which once sought to buy Synapse’s assets, received a $155 million investment to pursue Transact Bank."
+                },
+                {
+                  "title": "Republicans unveil bill to change CFPB funding structure",
+                  "url": "https://www.bankingdive.com/news/republicans-unveil-bill-to-change-cfpb-funding-structure/829453/",
+                  "summary": "\"The agency would receive its funding from congressional appropriations instead of the Fed under the bill, which would also limit the CFPB’s ability to enforce…",
+                  "published": "2026-09-03T00:25:08+08:00",
+                  "ts": 1788366308,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "共和党公布改变 CFPB 资金结构的法案",
+                  "titleEn": "Republicans unveil bill to change CFPB funding structure",
+                  "summaryZh": "“根据该法案，该机构的资金将来自国会拨款，而不是美联储，这也将限制 CFPB 执行……的能力。”",
+                  "summaryEn": "\"The agency would receive its funding from congressional appropriations instead of the Fed under the bill, which would also limit the CFPB’s ability to enforce…"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design",
+          "name": "产品设计",
+          "nameEn": "Product Design",
+          "feeds": [
+            {
+              "id": "core77",
+              "name": "Core77",
+              "nameEn": "Core77",
+              "home": "https://www.core77.com/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "Core77 Weekly Roundup (8-31-26 to 9-4-26)",
+                  "url": "https://www.core77.com/posts/145213/Core77-Weekly-Roundup-8-31-26-to-9-4-26",
+                  "summary": "Here's what we looked at this week: A new immersive gaming speaker set-up: OXS's Thunder Pro Max system features a \"Satellite Neck Speaker.\" Genesis' new luxur…",
+                  "published": "2026-09-04T23:00:00+08:00",
+                  "ts": 1788534000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Core77 每周综述（8-31-26 至 9-4-26）",
+                  "titleEn": "Core77 Weekly Roundup (8-31-26 to 9-4-26)",
+                  "summaryZh": "以下是我们本周关注的内容：一种新的沉浸式游戏扬声器设置：OXS 的 Thunder Pro Max 系统具有“卫星颈部扬声器”。创世纪的新豪华…",
+                  "summaryEn": "Here's what we looked at this week: A new immersive gaming speaker set-up: OXS's Thunder Pro Max system features a \"Satellite Neck Speaker.\" Genesis' new luxur…"
+                },
+                {
+                  "title": "Clever Improvisation: How to Keep Your Car Going on Just Three Wheels",
+                  "url": "https://www.core77.com/posts/145264/Clever-Improvisation-How-to-Keep-Your-Car-Going-on-Just-Three-Wheels",
+                  "summary": "Here we see footage of the Baja Mongolia offroad racing event. The vehicle is a UTV fielded by the GTHub team out of Ulan Bataar. Now look at it from the other…",
+                  "published": "2026-09-04T22:00:00+08:00",
+                  "ts": 1788530400,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "聪明的即兴创作：如何让你的车只靠三个轮子就能行驶",
+                  "titleEn": "Clever Improvisation: How to Keep Your Car Going on Just Three Wheels",
+                  "summaryZh": "在这里我们看到下蒙古越野赛车比赛的镜头。该车辆是乌兰巴托 GTHub 团队部署的 UTV。现在从另一个角度来看……",
+                  "summaryEn": "Here we see footage of the Baja Mongolia offroad racing event. The vehicle is a UTV fielded by the GTHub team out of Ulan Bataar. Now look at it from the other…"
+                },
+                {
+                  "title": "The James Brand's Handsome, Designey Alternative to the Swiss Army Knife",
+                  "url": "https://www.core77.com/posts/145262/The-James-Brands-Handsome-Designey-Alternative-to-the-Swiss-Army-Knife",
+                  "summary": "The Swiss Army Knife was designed over 100 years ago. On the one hand, you've got the \"If it ain't broke…\" explanation for the ancient form. On the other hand,…",
+                  "published": "2026-09-04T21:00:00+08:00",
+                  "ts": 1788526800,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "詹姆斯品牌的瑞士军刀的帅气、设计替代品",
+                  "titleEn": "The James Brand's Handsome, Designey Alternative to the Swiss Army Knife",
+                  "summaryZh": "瑞士军刀的设计已有 100 多年历史。一方面，你得到了对古代形式的“如果它没有坏掉……”的解释。另一方面，…",
+                  "summaryEn": "The Swiss Army Knife was designed over 100 years ago. On the one hand, you've got the \"If it ain't broke…\" explanation for the ancient form. On the other hand,…"
+                },
+                {
+                  "title": "Industrial Designer Figures Out How to Make Ikea's Iconic Blue Bag Fold Compactly",
+                  "url": "https://www.core77.com/posts/145258/Industrial-Designer-Figures-Out-How-to-Make-Ikeas-Iconic-Blue-Bag-Fold-Compactly",
+                  "summary": "Ikea's iconic FRAKTA bag is gigantic, able to hold 19 gallons (71 liters). Austrian industrial designer Lisa Klingersberger, who specializes in folding textile…",
+                  "published": "2026-09-03T23:00:00+08:00",
+                  "ts": 1788447600,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "工业设计师弄清楚如何使宜家标志性的蓝色袋子紧凑地折叠",
+                  "titleEn": "Industrial Designer Figures Out How to Make Ikea's Iconic Blue Bag Fold Compactly",
+                  "summaryZh": "宜家标志性的 FRAKTA 弗拉克塔 包体积巨大，可容纳 19 加仑（71 升）。奥地利工业设计师 Lisa Klingersberger，专门研究折叠纺织品……",
+                  "summaryEn": "Ikea's iconic FRAKTA bag is gigantic, able to hold 19 gallons (71 liters). Austrian industrial designer Lisa Klingersberger, who specializes in folding textile…"
+                },
+                {
+                  "title": "Real Object or AI?",
+                  "url": "https://www.core77.com/posts/145254/Real-Object-or-AI",
+                  "summary": "Spotted on European Amazon, this thing: My first thought was What the heck is it? Apparently it's whatever you want it to be: A remote control caddy, a pencil…",
+                  "published": "2026-09-03T22:00:00+08:00",
+                  "ts": 1788444000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "真实物体还是人工智能？",
+                  "titleEn": "Real Object or AI?",
+                  "summaryZh": "在欧洲亚马逊上发现这个东西：我的第一个想法是这到底是什么？显然它就是你想要的任何东西：一个遥控球童、一支铅笔……",
+                  "summaryEn": "Spotted on European Amazon, this thing: My first thought was What the heck is it? Apparently it's whatever you want it to be: A remote control caddy, a pencil…"
+                },
+                {
+                  "title": "An Unusual Rolling Stool for the Chinese Market",
+                  "url": "https://www.core77.com/posts/145253/An-Unusual-Rolling-Stool-for-the-Chinese-Market",
+                  "summary": "Chinese and Western aesthetic tastes diverge wildly, with stuff for sale over there that would never fly over here. Still, it's interesting to peek over the fe…",
+                  "published": "2026-09-03T21:00:00+08:00",
+                  "ts": 1788440400,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "适合中国市场的不寻常的滚凳",
+                  "titleEn": "An Unusual Rolling Stool for the Chinese Market",
+                  "summaryZh": "中国和西方的审美品味差异很大，那里卖的东西永远不会飞到这里。尽管如此，浏览一下这些功能还是很有趣的……",
+                  "summaryEn": "Chinese and Western aesthetic tastes diverge wildly, with stuff for sale over there that would never fly over here. Still, it's interesting to peek over the fe…"
+                },
+                {
+                  "title": "Studio Gorm Designs a Better Doorstop",
+                  "url": "https://www.core77.com/posts/145248/Studio-Gorm-Designs-a-Better-Doorstop",
+                  "summary": "Using a wedge as a door stopper seems like a perfect solution, and it's probably been around for centuries, in one material or another. Because the object is u…",
+                  "published": "2026-09-02T23:00:00+08:00",
+                  "ts": 1788361200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Studio Gorm 设计了更好的门挡",
+                  "titleEn": "Studio Gorm Designs a Better Doorstop",
+                  "summaryZh": "使用楔子作为门塞似乎是一个完美的解决方案，并且它可能已经存在了几个世纪，无论是哪种材料。因为对象是你...",
+                  "summaryEn": "Using a wedge as a door stopper seems like a perfect solution, and it's probably been around for centuries, in one material or another. Because the object is u…"
+                },
+                {
+                  "title": "Which Folding Bicycle Design has the Best UX?",
+                  "url": "https://www.core77.com/posts/145246/Which-Folding-Bicycle-Design-has-the-Best-UX",
+                  "summary": "In addition to the well-known Brompton, there's been a bunch of innovation happening in the folding bicycle space. These have varying degrees of folding diffic…",
+                  "published": "2026-09-02T22:00:00+08:00",
+                  "ts": 1788357600,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "哪种折叠自行车设计具有最佳用户体验？",
+                  "titleEn": "Which Folding Bicycle Design has the Best UX?",
+                  "summaryZh": "除了众所周知的 Brompton 之外，折叠自行车领域也出现了许多创新。这些具有不同程度的折叠困难……",
+                  "summaryEn": "In addition to the well-known Brompton, there's been a bunch of innovation happening in the folding bicycle space. These have varying degrees of folding diffic…"
+                }
+              ]
+            },
+            {
+              "id": "yanko",
+              "name": "Yanko Design",
+              "nameEn": "Yanko Design",
+              "home": "https://www.yankodesign.com/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab",
+                  "url": "https://www.yankodesign.com/2026/09/07/infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab/?utm_source=rss&utm_medium=rss&utm_campaign=infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab",
+                  "summary": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab Every serious maker has hit the same wall at some point. You…",
+                  "published": "2026-09-08T09:45:10+08:00",
+                  "ts": 1788831910,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "IFA 2026 上的 InfiMaker K1：5 轴桌面 CNC 将任何创作者空间变成制造实验室",
+                  "titleEn": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab",
+                  "summaryZh": "IFA 2026 上的 InfiMaker K1：5 轴桌面 CNC 将任何创作者空间变成制造实验室 每个认真的创客都会在某个时候遇到同样的困难。你…",
+                  "summaryEn": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab Every serious maker has hit the same wall at some point. You…"
+                },
+                {
+                  "title": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS",
+                  "url": "https://www.yankodesign.com/2026/09/07/max-space-thunderbird-is-an-expandable-space-station-module-that-could-eventually-replace-iss/?utm_source=rss&utm_medium=rss&utm_campaign=max-space-thunderbird-is-an-expandable-space-station-module-that-could-eventually-replace-iss",
+                  "summary": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS Space is the final frontier as NASA plans to go deeper into the d…",
+                  "published": "2026-09-08T08:30:30+08:00",
+                  "ts": 1788827430,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Max Space Thunderbird 是一个可扩展的空间站模块，最终可能取代国际空间站",
+                  "titleEn": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS",
+                  "summaryZh": "Max Space Thunderbird 是一个可扩展的空间站模块，最终可能取代国际空间站。随着 NASA 计划更深入地探索太空，太空是最后的前沿……",
+                  "summaryEn": "Max Space Thunderbird is an expandable space station module that could eventually replace ISS Space is the final frontier as NASA plans to go deeper into the d…"
+                },
+                {
+                  "title": "The 5 Best Architectural Designs of September 2026",
+                  "url": "https://www.yankodesign.com/2026/09/07/the-5-best-architectural-designs-of-september-2026/?utm_source=rss&utm_medium=rss&utm_campaign=the-5-best-architectural-designs-of-september-2026",
+                  "summary": "The 5 Best Architectural Designs of September 2026 September’s best projects prove that good architecture rarely announces itself. A house buried into a Polish…",
+                  "published": "2026-09-08T07:30:00+08:00",
+                  "ts": 1788823800,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "2026 年 9 月 5 项最佳建筑设计",
+                  "titleEn": "The 5 Best Architectural Designs of September 2026",
+                  "summaryZh": "2026 年 9 月 5 项最佳建筑设计 9 月的最佳项目证明，好的建筑很少会自行显现。一座被波兰人埋没的房子……",
+                  "summaryEn": "The 5 Best Architectural Designs of September 2026 September’s best projects prove that good architecture rarely announces itself. A house buried into a Polish…"
+                },
+                {
+                  "title": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living",
+                  "url": "https://www.yankodesign.com/2026/09/07/from-self-caring-plants-to-smokeless-steaks-these-ifa-2026-innovations-redesign-everyday-living/?utm_source=rss&utm_medium=rss&utm_campaign=from-self-caring-plants-to-smokeless-steaks-these-ifa-2026-innovations-redesign-everyday-living",
+                  "summary": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living The most significant home upgrade happening right now doesn’t…",
+                  "published": "2026-09-08T06:30:55+08:00",
+                  "ts": 1788820255,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "从自理植物到无烟牛排：IFA 2026 的这些创新重新设计了日常生活",
+                  "titleEn": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living",
+                  "summaryZh": "从自理植物到无烟牛排：这些 IFA 2026 创新重新设计日常生活目前最重大的家居升级并不……",
+                  "summaryEn": "From Self-Caring Plants to Smokeless Steaks: These IFA 2026 Innovations Redesign Everyday Living The most significant home upgrade happening right now doesn’t…"
+                },
+                {
+                  "title": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem",
+                  "url": "https://www.yankodesign.com/2026/09/07/nikes-220-air-liquid-max-finally-fixes-the-comfort-problem/?utm_source=rss&utm_medium=rss&utm_campaign=nikes-220-air-liquid-max-finally-fixes-the-comfort-problem",
+                  "summary": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem Nike Air Max sneakers have spent four decades winning arguments about style and losing them about…",
+                  "published": "2026-09-08T05:30:03+08:00",
+                  "ts": 1788816603,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Nike 售价 220 美元的 Air Liquid Max 终于解决了舒适度问题",
+                  "titleEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem",
+                  "summaryZh": "Nike 售价 220 美元的 Air Liquid Max 终于解决了舒适度问题 Nike Air Max 运动鞋花了四十年的时间赢得了有关风格的争论，但又因……而输掉了争论。",
+                  "summaryEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem Nike Air Max sneakers have spent four decades winning arguments about style and losing them about…"
+                },
+                {
+                  "title": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again",
+                  "url": "https://www.yankodesign.com/2026/09/07/4-new-aeg-launches-that-are-betting-you-never-want-to-babysit-an-appliance-again/?utm_source=rss&utm_medium=rss&utm_campaign=4-new-aeg-launches-that-are-betting-you-never-want-to-babysit-an-appliance-again",
+                  "summary": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again How we think about home appliances is shifting, and AEG leaned into it at IFA…",
+                  "published": "2026-09-08T04:30:14+08:00",
+                  "ts": 1788813014,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "AEG 推出的 4 款新产品让您再也不想照顾电器",
+                  "titleEn": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again",
+                  "summaryZh": "AEG 推出的 4 款新产品让您再也不想照顾电器 我们对家用电器的看法正在发生转变，AEG 在 IFA 上对此进行了深入研究……",
+                  "summaryEn": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again How we think about home appliances is shifting, and AEG leaned into it at IFA…"
+                },
+                {
+                  "title": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait",
+                  "url": "https://www.yankodesign.com/2026/09/07/with-super-sauna-hotels-finally-get-a-sauna-without-the-construction-wait/?utm_source=rss&utm_medium=rss&utm_campaign=with-super-sauna-hotels-finally-get-a-sauna-without-the-construction-wait",
+                  "summary": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait I’ve stayed at enough hotels chasing a “wellness experience” to know the disappointm…",
+                  "published": "2026-09-08T03:15:16+08:00",
+                  "ts": 1788808516,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "有了超级桑拿房，酒店终于不用等待施工就能拥有桑拿房",
+                  "titleEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait",
+                  "summaryZh": "有了超级桑拿，酒店终于可以享受桑拿了，无需等待施工。我住过足够多的酒店，追求“健康体验”，知道令人失望的……",
+                  "summaryEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait I’ve stayed at enough hotels chasing a “wellness experience” to know the disappointm…"
+                },
+                {
+                  "title": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again",
+                  "url": "https://www.yankodesign.com/2026/09/07/this-japanese-bottle-opener-catches-the-cap-so-you-never-chase-it-again/?utm_source=rss&utm_medium=rss&utm_campaign=this-japanese-bottle-opener-catches-the-cap-so-you-never-chase-it-again",
+                  "summary": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again When you come home after a long, hectic day, sometimes all you want to do is sink into…",
+                  "published": "2026-09-08T01:20:18+08:00",
+                  "ts": 1788801618,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "这款日本开瓶器可以抓住瓶盖，这样你就再也不用追它了",
+                  "titleEn": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again",
+                  "summaryZh": "这款日本开瓶器可以抓住瓶盖，这样您就再也不用追逐它当您经过漫长而忙碌的一天回到家时，有时您想做的就是陷入……",
+                  "summaryEn": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again When you come home after a long, hectic day, sometimes all you want to do is sink into…"
+                }
+              ]
+            },
+            {
+              "id": "fastco",
+              "name": "Fast Company Co.Design",
+              "nameEn": "Fast Company Co.Design",
+              "home": "https://www.fastcompany.com/co-design",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "Muji’s Anti-Branding Strategy, In 15 Images",
+                  "url": "https://www.fastcompany.com/90147341/mujis-anti-branding-strategy-in-15-images?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=1&partner=newsletter&campaign_date=09082026",
+                  "summary": "“While brands around the world strive to create ads that make people want a certain product, Muji sends out a message of emptiness.”",
+                  "published": "2017-11-01T22:00:17+08:00",
+                  "ts": 1509544817,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "15 张图片展示无印良品的反品牌策略",
+                  "titleEn": "Muji’s Anti-Branding Strategy, In 15 Images",
+                  "summaryZh": "“当世界各地的品牌都在努力制作广告来让人们想要某种产品时，无印良品却传达出一种空虚的信息。”",
+                  "summaryEn": "“While brands around the world strive to create ads that make people want a certain product, Muji sends out a message of emptiness.”"
+                },
+                {
+                  "title": "Inside MIT’s $10K Robotic Apartment-In-A-Box",
+                  "url": "https://www.fastcompany.com/90144302/inside-mits-10k-robotic-apartment-in-a-box?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=2&partner=newsletter&campaign_date=09082026",
+                  "summary": "Born out of a collaboration between MIT and Fuseproject, the Ori–named after the Japanese art of origami–combines robotics and architecture to turn tiny apartm…",
+                  "published": "2017-09-26T17:00:18+08:00",
+                  "ts": 1506416418,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "麻省理工学院价值 1 万美元的机器人盒装公寓内部",
+                  "titleEn": "Inside MIT’s $10K Robotic Apartment-In-A-Box",
+                  "summaryZh": "Ori 诞生于麻省理工学院和 Fuseproject 之间的合作，以日本折纸艺术命名，将机器人技术与建筑相结合，将微型公寓变成了…",
+                  "summaryEn": "Born out of a collaboration between MIT and Fuseproject, the Ori–named after the Japanese art of origami–combines robotics and architecture to turn tiny apartm…"
+                },
+                {
+                  "title": "This Abandoned Naval Factory Has Been Reborn As A New Creative Hub",
+                  "url": "https://www.fastcompany.com/90143632/this-abandoned-naval-factory-has-been-reborn-as-a-new-creative-hub?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=3&partner=newsletter&campaign_date=09082026",
+                  "summary": "In Brooklyn’s Navy Yard, in a building once used to assemble ships, lives the collaborative workspace New Lab. The 84,000-square-foot space is home to some of…",
+                  "published": "2017-09-20T17:00:12+08:00",
+                  "ts": 1505898012,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "这个废弃的海军工厂已重生为新的创意中心",
+                  "titleEn": "This Abandoned Naval Factory Has Been Reborn As A New Creative Hub",
+                  "summaryZh": "在布鲁克林的海军造船厂，一栋曾经用于组装船舶的建筑中，设有协作工作区新实验室。这个 84,000 平方英尺的空间是一些……的所在地。",
+                  "summaryEn": "In Brooklyn’s Navy Yard, in a building once used to assemble ships, lives the collaborative workspace New Lab. The 84,000-square-foot space is home to some of…"
+                },
+                {
+                  "title": "Adidas’s New Sneaker Is The Future Of Shoe Design",
+                  "url": "https://www.fastcompany.com/90139642/adidass-new-sneaker-is-the-future-of-shoe-design?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=4&partner=newsletter&campaign_date=09082026",
+                  "summary": "The Adidas Futurecraft 4D was crafted using Carbon 3D-printing technology and by creating midsoles using digital light synthesis technology. Adidas promises th…",
+                  "published": "2017-09-12T17:00:55+08:00",
+                  "ts": 1505206855,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "阿迪达斯的新款运动鞋是鞋子设计的未来",
+                  "titleEn": "Adidas’s New Sneaker Is The Future Of Shoe Design",
+                  "summaryZh": "阿迪达斯 Futurecraft 4D 采用碳 3D 打印技术并使用数字光合成技术创建中底。阿迪达斯承诺...",
+                  "summaryEn": "The Adidas Futurecraft 4D was crafted using Carbon 3D-printing technology and by creating midsoles using digital light synthesis technology. Adidas promises th…"
+                },
+                {
+                  "title": "This Highly Engineered Football Helmet Wants To Put A Dent In Concussions",
+                  "url": "https://www.fastcompany.com/90139262/this-highly-engineered-football-helmet-wants-to-put-a-dent-in-concussions?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=5&partner=newsletter&campaign_date=09082026",
+                  "summary": "The VICIS ZERO1 football helmet is the result of three years and $20 million in research and development. The helmet is multilayered, featuring a soft outer sh…",
+                  "published": "2017-09-07T17:00:21+08:00",
+                  "ts": 1504774821,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "这款精心设计的足球头盔想要减少脑震荡",
+                  "titleEn": "This Highly Engineered Football Helmet Wants To Put A Dent In Concussions",
+                  "summaryZh": "VICIS ZERO1 橄榄球头盔是历时三年、耗资 2000 万美元研发的成果。该头盔是多层的，具有柔软的外层…",
+                  "summaryEn": "The VICIS ZERO1 football helmet is the result of three years and $20 million in research and development. The helmet is multilayered, featuring a soft outer sh…"
+                },
+                {
+                  "title": "As Lego’s Future Seems Uncertain, The Company Is Planting Roots With The Lego House",
+                  "url": "https://www.fastcompany.com/90139165/as-legos-future-seems-uncertain-the-company-is-planting-roots-with-the-lego-house?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=6&partner=newsletter&campaign_date=09082026",
+                  "summary": "As the company behind the infamous brick is in the middle of an upheaval, it’s also launching the first experience-centered Lego House in its birthplace of Den…",
+                  "published": "2017-09-06T17:00:23+08:00",
+                  "ts": 1504688423,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "由于乐高的未来似乎不确定，该公司正在与乐高之家扎根",
+                  "titleEn": "As Lego’s Future Seems Uncertain, The Company Is Planting Roots With The Lego House",
+                  "summaryZh": "由于臭名昭著的积木背后的公司正处于剧变之中，它还在其诞生地 Den 推出了第一个以体验为中心的乐高之家……",
+                  "summaryEn": "As the company behind the infamous brick is in the middle of an upheaval, it’s also launching the first experience-centered Lego House in its birthplace of Den…"
+                },
+                {
+                  "title": "How One Design Firm Is Tackling Extremism In The U.K.",
+                  "url": "https://www.fastcompany.com/90138918/how-one-design-firm-is-tackling-extremism-in-the-u-k?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=7&partner=newsletter&campaign_date=09082026",
+                  "summary": "With hate crimes on the rise in the U.K. since Brexit, Blue State Digital in London has been working with nonprofits Hope Not Hate and More United to deliver p…",
+                  "published": "2017-09-05T17:00:52+08:00",
+                  "ts": 1504602052,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "一家设计公司如何应对英国的极端主义",
+                  "titleEn": "How One Design Firm Is Tackling Extremism In The U.K.",
+                  "summaryZh": "自英国脱欧以来，英国仇恨犯罪不断增加，伦敦的 Blue State Digital 一直与非营利组织 Hope Not Hate 和 More United 合作，提供...",
+                  "summaryEn": "With hate crimes on the rise in the U.K. since Brexit, Blue State Digital in London has been working with nonprofits Hope Not Hate and More United to deliver p…"
+                },
+                {
+                  "title": "Heatherwick Studio Reimagines The Classroom",
+                  "url": "https://www.fastcompany.com/90138710/this-design-firm-has-reimagined-the-classroom?utm_source=postup&utm_medium=email&utm_campaign=co-design&position=8&partner=newsletter&campaign_date=09082026",
+                  "summary": "London-based design firm Heatherwick Studio may design everything from chairs to buses, but with its Learning Hub project in Singapore the firm has rethought t…",
+                  "published": "2017-08-31T17:00:25+08:00",
+                  "ts": 1504170025,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Heatherwick Studio 重新构想教室",
+                  "titleEn": "Heatherwick Studio Reimagines The Classroom",
+                  "summaryZh": "总部位于伦敦的设计公司 Heatherwick Studio 可以设计从椅子到公共汽车的所有东西，但通过其在新加坡的学习中心项目，该公司重新思考了……",
+                  "summaryEn": "London-based design firm Heatherwick Studio may design everything from chairs to buses, but with its Learning Hub project in Singapore the firm has rethought t…"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "policy",
+          "name": "央行与政策",
+          "nameEn": "Central Banks & Policy",
+          "feeds": [
+            {
+              "id": "fed",
+              "name": "Federal Reserve",
+              "nameEn": "Federal Reserve",
+              "home": "https://www.federalreserve.gov/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
+                  "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260904a.htm",
+                  "summary": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
+                  "published": "2026-09-04T23:00:00+08:00",
+                  "ts": 1788534000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "美联储宣布终止与 United Texas Bank、Quontic Bank Acquisition Corp. 和 Quontic Bank Holdings Corp. 的执法行动。",
+                  "titleEn": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
+                  "summaryZh": "美联储宣布终止与 United Texas Bank、Quontic Bank Acquisition Corp. 和 Quontic Bank Holdings Corp. 的执法行动。",
+                  "summaryEn": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp."
+                },
+                {
+                  "title": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+                  "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260827a.htm",
+                  "summary": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+                  "published": "2026-08-27T23:00:00+08:00",
+                  "ts": 1787842800,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "美联储对波多黎各人民银行前雇员采取执法行动",
+                  "titleEn": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+                  "summaryZh": "美联储对波多黎各人民银行前雇员采取执法行动",
+                  "summaryEn": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico"
+                },
+                {
+                  "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+                  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+                  "summary": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+                  "published": "2026-08-26T02:00:00+08:00",
+                  "ts": 1787680800,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "2026年7月20日和2026年7月29日董事会贴现率会议纪要",
+                  "titleEn": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+                  "summaryZh": "2026年7月20日和2026年7月29日董事会贴现率会议纪要",
+                  "summaryEn": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026"
+                },
+                {
+                  "title": "Federal Reserve Board announces approval of application by National Westminster Bank Plc",
+                  "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260820a.htm",
+                  "summary": "Federal Reserve Board announces approval of application by National Westminster Bank Plc",
+                  "published": "2026-08-21T04:00:00+08:00",
+                  "ts": 1787256000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "美联储宣布批准国民威斯敏斯特银行的申请",
+                  "titleEn": "Federal Reserve Board announces approval of application by National Westminster Bank Plc",
+                  "summaryZh": "美联储宣布批准国民威斯敏斯特银行的申请",
+                  "summaryEn": "Federal Reserve Board announces approval of application by National Westminster Bank Plc"
+                },
+                {
+                  "title": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch",
+                  "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820b.htm",
+                  "summary": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA…",
+                  "published": "2026-08-20T23:00:00+08:00",
+                  "ts": 1787238000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "联邦储备委员会对 SouthPoint Bancshares, Inc. 采取执法行动，并宣布终止对德意志银行、DB USA Corporation 和德意志银行纽约分行的执法行动",
+                  "titleEn": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch",
+                  "summaryZh": "美联储向 SouthPoint Bancshares, Inc. 采取执法行动，并宣布终止与德意志银行、DB USA 的执法行动……",
+                  "summaryEn": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA…"
+                },
+                {
+                  "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
+                  "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820a.htm",
+                  "summary": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
+                  "published": "2026-08-20T23:00:00+08:00",
+                  "ts": 1787238000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "联邦储备委员会对地区银行前雇员和联合社区银行前雇员采取执法行动",
+                  "titleEn": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
+                  "summaryZh": "联邦储备委员会对地区银行前雇员和联合社区银行前雇员采取执法行动",
+                  "summaryEn": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank"
+                },
+                {
+                  "title": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+                  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm",
+                  "summary": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+                  "published": "2026-08-20T02:00:00+08:00",
+                  "ts": 1787162400,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "联邦公开市场委员会会议纪要，2026 年 7 月 28 日至 29 日",
+                  "titleEn": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+                  "summaryZh": "联邦公开市场委员会会议纪要，2026 年 7 月 28 日至 29 日",
+                  "summaryEn": "Minutes of the Federal Open Market Committee, July 28–29, 2026"
+                },
+                {
+                  "title": "Federal Reserve Board issues enforcement action with former employee of Regions Bank",
+                  "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260813a.htm",
+                  "summary": "Federal Reserve Board issues enforcement action with former employee of Regions Bank",
+                  "published": "2026-08-13T23:00:00+08:00",
+                  "ts": 1786633200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "美联储对地区银行前雇员采取强制措施",
+                  "titleEn": "Federal Reserve Board issues enforcement action with former employee of Regions Bank",
+                  "summaryZh": "美联储对地区银行前雇员采取强制措施",
+                  "summaryEn": "Federal Reserve Board issues enforcement action with former employee of Regions Bank"
+                }
+              ]
+            },
+            {
+              "id": "ecb",
+              "name": "European Central Bank",
+              "nameEn": "European Central Bank",
+              "home": "https://www.ecb.europa.eu/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "Philip R. Lane: Diversity at the European Central Bank",
+                  "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260904~7b9257099b.en.pdf",
+                  "summary": "",
+                  "published": "2026-09-04T17:10:00+08:00",
+                  "ts": 1788513000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Philip R. Lane：欧洲央行的多元化",
+                  "titleEn": "Philip R. Lane: Diversity at the European Central Bank",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "Boris Vujčić: Listening to households: expectations, behaviour and monetary policy",
+                  "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260901~bb28f33f54.en.html",
+                  "summary": "",
+                  "published": "2026-09-02T00:00:00+08:00",
+                  "ts": 1788278400,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Boris Vujčić：倾听家庭的声音：期望、行为和货币政策",
+                  "titleEn": "Boris Vujčić: Listening to households: expectations, behaviour and monetary policy",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "Isabel Schnabel: Central banks on-chain",
+                  "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260828~fe9afc86e8.en.html",
+                  "summary": "",
+                  "published": "2026-08-29T00:00:00+08:00",
+                  "ts": 1787932800,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Isabel Schnabel：链上中央银行",
+                  "titleEn": "Isabel Schnabel: Central banks on-chain",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "Meeting of 22-23 July 2026",
+                  "url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html",
+                  "summary": "",
+                  "published": "2026-08-27T19:30:00+08:00",
+                  "ts": 1787830200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "2026 年 7 月 22-23 日会议",
+                  "titleEn": "Meeting of 22-23 July 2026",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "Piero Cipollone: From vision to delivery: building Europe’s tokenised financial market",
+                  "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260826~3641116314.en.html",
+                  "summary": "",
+                  "published": "2026-08-26T18:15:00+08:00",
+                  "ts": 1787739300,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Piero Cipollone：从愿景到交付：建设欧洲的代币化金融市场",
+                  "titleEn": "Piero Cipollone: From vision to delivery: building Europe’s tokenised financial market",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "Piero Cipollone: Interview with ilsussidiario.net",
+                  "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260824~fa5acbddea.en.html",
+                  "summary": "",
+                  "published": "2026-08-24T14:00:00+08:00",
+                  "ts": 1787551200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "皮耶罗·西波隆 (Piero Cipollone)：接受 ilsussidiario.net 采访",
+                  "titleEn": "Piero Cipollone: Interview with ilsussidiario.net",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "ECB Consumer Expectations Survey results – July 2026",
+                  "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260821~a044fdddd9.en.html",
+                  "summary": "",
+                  "published": "2026-08-21T16:00:00+08:00",
+                  "ts": 1787299200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "欧洲央行消费者预期调查结果 – 2026 年 7 月",
+                  "titleEn": "ECB Consumer Expectations Survey results – July 2026",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum",
+                  "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260819~98ddf24b7b.en.html",
+                  "summary": "",
+                  "published": "2026-08-19T15:10:00+08:00",
+                  "ts": 1787123400,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "克里斯蒂娜·拉加德：世界经济论坛全球经济前景讨论中有关欧洲经济的小组评论",
+                  "titleEn": "Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                }
+              ]
+            },
+            {
+              "id": "pbc",
+              "name": "中国人民银行",
+              "nameEn": "PBOC",
+              "home": "https://www.pbc.gov.cn/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "中国人民银行召开树立和践行正确政绩观学习教育总结会议",
+                  "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026090414583025333/index.html",
+                  "summary": "",
+                  "published": "2026-09-04T08:00:00+08:00",
+                  "ts": 1788480000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "中国人民银行召开树立和践行正确政绩观学习教育总结会议",
+                  "titleEn": "The People's Bank of China held a summary meeting on learning and education on establishing and practicing the correct concept of political performance",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "2026年2季度末金融业机构总资产562.2万亿元",
+                  "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026090314250952275/index.html",
+                  "summary": "",
+                  "published": "2026-09-03T08:00:00+08:00",
+                  "ts": 1788393600,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "2026年2季度末金融业机构总资产562.2万亿元",
+                  "titleEn": "The total assets of financial industry institutions at the end of the second quarter of 2026 were 562.2 trillion yuan.",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "中国人民银行行长潘功胜会见国际金融机构负责人和相关国家财长及央行行长",
+                  "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026090214474837364/index.html",
+                  "summary": "",
+                  "published": "2026-09-02T08:00:00+08:00",
+                  "ts": 1788307200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "中国人民银行行长潘功胜会见国际金融机构负责人和相关国家财长及央行行长",
+                  "titleEn": "Pan Gongsheng, Governor of the People's Bank of China, meets with heads of international financial institutions and finance ministers and central bank governors of relevant countries",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "中国人民银行行长潘功胜出席二十国集团财长和央行行长会议",
+                  "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026090214465859469/index.html",
+                  "summary": "",
+                  "published": "2026-09-02T08:00:00+08:00",
+                  "ts": 1788307200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "中国人民银行行长潘功胜出席二十国集团财长和央行行长会议",
+                  "titleEn": "Pan Gongsheng, Governor of the People's Bank of China, attended the G20 Finance Ministers and Central Bank Governors Meeting",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "中国人民银行有关部门负责人就《关于改革完善房地产信贷管理 推动加快构建房...",
+                  "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026082816463825521/index.html",
+                  "summary": "",
+                  "published": "2026-08-28T08:00:00+08:00",
+                  "ts": 1787875200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "中国人民银行有关部门负责人就《关于改革完善房地产信贷管理 推动加快构建房...",
+                  "titleEn": "The person in charge of the relevant department of the People's Bank of China commented on \"Reforming and Improving Real Estate Credit Management and Promoting Accelerating the Construction of Real Estate...",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "中国人民银行公告﹝2026﹞第22号",
+                  "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026082809193480410/index.html",
+                  "summary": "",
+                  "published": "2026-08-28T08:00:00+08:00",
+                  "ts": 1787875200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "中国人民银行公告﹝2026﹞第22号",
+                  "titleEn": "People's Bank of China Announcement (2026) No. 22",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "中国人民银行新增西藏自治区分行支农支小再贷款额度50亿元 支持救灾及灾后重...",
+                  "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026082717370314545/index.html",
+                  "summary": "",
+                  "published": "2026-08-27T08:00:00+08:00",
+                  "ts": 1787788800,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "中国人民银行新增西藏自治区分行支农支小再贷款额度50亿元 支持救灾及灾后重...",
+                  "titleEn": "The People's Bank of China has added a new loan quota of 5 billion yuan for Tibet Autonomous Region Branch to support agriculture and small businesses to support disaster relief and post-disaster reconstruction...",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                },
+                {
+                  "title": "中国人民银行副行长陆磊出席第十五届中国支付清算论坛",
+                  "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026082717390451589/index.html",
+                  "summary": "",
+                  "published": "2026-08-27T08:00:00+08:00",
+                  "ts": 1787788800,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "中国人民银行副行长陆磊出席第十五届中国支付清算论坛",
+                  "titleEn": "Lu Lei, Vice Governor of the People's Bank of China, attended the 15th China Payment and Clearing Forum",
+                  "summaryZh": "",
+                  "summaryEn": ""
+                }
+              ]
+            },
+            {
+              "id": "govcn",
+              "name": "中国政府网",
+              "nameEn": "gov.cn",
+              "home": "https://www.gov.cn/",
+              "kind": "newsletter",
+              "ok": true,
+              "error": null,
+              "items": [
+                {
+                  "title": "电力安全事故应急处置和调查处理条例",
+                  "url": "https://www.gov.cn/zhengce/content/202609/content_7080188.htm",
+                  "summary": "电力安全事故应急处置和调查处理条例",
+                  "published": "2026-09-05T01:07:00+08:00",
+                  "ts": 1788541620,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "电力安全事故应急处置和调查处理条例",
+                  "titleEn": "Regulations on Emergency Response, Investigation and Handling of Electric Power Safety Accidents",
+                  "summaryZh": "电力安全事故应急处置和调查处理条例",
+                  "summaryEn": "Regulations on Emergency Response, Investigation and Handling of Electric Power Safety Accidents"
+                },
+                {
+                  "title": "中共中央办公厅 国务院办公厅印发《党政领导干部生态环境损害责任追究办法》",
+                  "url": "https://www.gov.cn/yaowen/liebiao/202608/content_7079095.htm",
+                  "summary": "中共中央办公厅 国务院办公厅印发《党政领导干部生态环境损害责任追究办法》",
+                  "published": "2026-08-26T01:33:00+08:00",
+                  "ts": 1787679180,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "中共中央办公厅 国务院办公厅印发《党政领导干部生态环境损害责任追究办法》",
+                  "titleEn": "The General Office of the Central Committee of the Communist Party of China and the General Office of the State Council issued the \"Measures for the Accountability of Party and Government Leading Cadres for Ecological and Environmental Damage\"",
+                  "summaryZh": "中共中央办公厅 国务院办公厅印发《党政领导干部生态环境损害责任追究办法》",
+                  "summaryEn": "The General Office of the Central Committee of the Communist Party of China and the General Office of the State Council issued the \"Measures for the Accountability of Party and Government Leading Cadres for Ecological and Environmental Damage\""
+                },
+                {
+                  "title": "国务院关于修改《住房公积金管理条例》的决定",
+                  "url": "https://www.gov.cn/zhengce/content/202608/content_7078477.htm",
+                  "summary": "国务院关于修改《住房公积金管理条例》的决定",
+                  "published": "2026-08-19T01:00:00+08:00",
+                  "ts": 1787072400,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "国务院关于修改《住房公积金管理条例》的决定",
+                  "titleEn": "Decision of the State Council on Amending the Regulations on the Administration of Housing Provident Funds",
+                  "summaryZh": "国务院关于修改《住房公积金管理条例》的决定",
+                  "summaryEn": "Decision of the State Council on Amending the Regulations on the Administration of Housing Provident Funds"
+                },
+                {
+                  "title": "国务院关于《特殊教育发展提升“十五五”行动计划》的批复",
+                  "url": "https://www.gov.cn/zhengce/content/202608/content_7078320.htm",
+                  "summary": "国务院关于《特殊教育发展提升“十五五”行动计划》的批复",
+                  "published": "2026-08-18T01:00:00+08:00",
+                  "ts": 1786986000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "国务院关于《特殊教育发展提升“十五五”行动计划》的批复",
+                  "titleEn": "The State Council’s Reply on the “15th Five-Year Plan” for the Development and Improvement of Special Education",
+                  "summaryZh": "国务院关于《特殊教育发展提升“十五五”行动计划》的批复",
+                  "summaryEn": "The State Council’s Reply on the “15th Five-Year Plan” for the Development and Improvement of Special Education"
+                },
+                {
+                  "title": "国务院关于修改和废止部分行政法规的决定",
+                  "url": "https://www.gov.cn/zhengce/content/202608/content_7077980.htm",
+                  "summary": "国务院关于修改和废止部分行政法规的决定",
+                  "published": "2026-08-14T01:00:00+08:00",
+                  "ts": 1786640400,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "国务院关于修改和废止部分行政法规的决定",
+                  "titleEn": "Decision of the State Council on Amending and Repealing Certain Administrative Regulations",
+                  "summaryZh": "国务院关于修改和废止部分行政法规的决定",
+                  "summaryEn": "Decision of the State Council on Amending and Repealing Certain Administrative Regulations"
+                },
+                {
+                  "title": "国务院办公厅关于重点林区“十五五”期间森林年采伐限额的复函",
+                  "url": "https://www.gov.cn/zhengce/content/202608/content_7077887.htm",
+                  "summary": "国务院办公厅关于重点林区“十五五”期间森林年采伐限额的复函",
+                  "published": "2026-08-12T01:00:00+08:00",
+                  "ts": 1786467600,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "国务院办公厅关于重点林区“十五五”期间森林年采伐限额的复函",
+                  "titleEn": "Reply from the General Office of the State Council on annual forest harvesting quotas in key forest areas during the “15th Five-Year Plan” period",
+                  "summaryZh": "国务院办公厅关于重点林区“十五五”期间森林年采伐限额的复函",
+                  "summaryEn": "Reply from the General Office of the State Council on annual forest harvesting quotas in key forest areas during the “15th Five-Year Plan” period"
+                },
+                {
+                  "title": "集成电路布图设计保护条例",
+                  "url": "https://www.gov.cn/zhengce/content/202608/content_7077398.htm",
+                  "summary": "集成电路布图设计保护条例",
+                  "published": "2026-08-04T01:00:00+08:00",
+                  "ts": 1785776400,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "集成电路布图设计保护条例",
+                  "titleEn": "Integrated Circuit Layout Design Protection Regulations",
+                  "summaryZh": "集成电路布图设计保护条例",
+                  "summaryEn": "Integrated Circuit Layout Design Protection Regulations"
+                },
+                {
+                  "title": "国务院关于出境入境管理的规定",
+                  "url": "https://www.gov.cn/zhengce/content/202607/content_7077172.htm",
+                  "summary": "国务院关于出境入境管理的规定",
+                  "published": "2026-08-01T01:00:00+08:00",
+                  "ts": 1785517200,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "国务院关于出境入境管理的规定",
+                  "titleEn": "Regulations of the State Council on Exit and Entry Administration",
+                  "summaryZh": "国务院关于出境入境管理的规定",
+                  "summaryEn": "Regulations of the State Council on Exit and Entry Administration"
+                }
+              ]
             }
           ]
         }
@@ -1659,13 +4555,13 @@ window.DIGEST_DATA = {
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 12% · Fading",
-    "blessing": "The moon has only a thin curve left, wanting to be seen and praised. Venus can be seen in the west. The sudden change is quite smooth, so remember to take a breath.",
+    "moonLine": "Glossy 10% · Fading",
+    "blessing": "The moon has only a thin curve left, wanting to be seen and praised. The moon is next to Jupiter, and the sudden changes are quite smooth, so remember to take a breath.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 12%, the moon age is about 26 days, and it is gradually losing weight."
+        "caption": "The bright side is about 10%, the age is about 26 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -1674,6 +4570,10 @@ window.DIGEST_DATA = {
       {
         "title": "Mars is visible in the eastern sky",
         "caption": "About 58 degrees from the sun, look for it in the eastern sky before dawn."
+      },
+      {
+        "title": "Moon accompanying Jupiter",
+        "caption": "The Moon is close to Jupiter, about 7 degrees away."
       },
       {
         "title": "Jupiter is visible in the eastern sky",
@@ -1690,31 +4590,27 @@ window.DIGEST_DATA = {
       {
         "title": "Neptune is retrograde",
         "caption": "Neptune moves slowly westward relative to the stellar background."
-      },
-      {
-        "title": "Pluto in retrograde",
-        "caption": "Pluto moves slowly westward relative to the stellar background."
       }
     ],
     "signs": [
       {
         "name": "Sun",
-        "label": "Virgo 15°",
+        "label": "Virgo 16°",
         "influence": "If the Sun is in Virgo, your temperament will be delicate and clear, and you should be organized and precise."
       },
       {
         "name": "Moon",
-        "label": "Leo 5°",
+        "label": "Leo 9°",
         "influence": "If the Moon is in Leo, your mood is bright and confident, and you should express yourself and be seen."
       },
       {
         "name": "Mercury",
-        "label": "Virgo 25°",
+        "label": "Virgo 26°",
         "influence": "With Mercury in Virgo, communication and thoughts tend to be more detailed and clear, so it is better to organize and be precise."
       },
       {
         "name": "Venus",
-        "label": "Libra 28°",
+        "label": "Libra 29°",
         "influence": "With Venus in Libra, aesthetics and emotions tend to be harmonious, and it is advisable to negotiate and seek balance."
       },
       {
@@ -1725,36 +4621,36 @@ window.DIGEST_DATA = {
     ],
     "aspects": [
       {
-        "a": "Moon",
-        "b": "Uranus",
-        "aspect": "Sextile",
-        "tone": "easy",
-        "influence": "The moon is sextile to Uranus, and emotions and variables have a chance to connect, just make a little movement.",
-        "endsIn": "约 9 小时后结束"
-      },
-      {
-        "a": "Moon",
-        "b": "Neptune",
-        "aspect": "Trine",
-        "tone": "easy",
-        "influence": "The moon trines Neptune, and emotions can advance more smoothly through the power of intuition.",
-        "endsIn": "约 8 小时后结束"
-      },
-      {
-        "a": "Moon",
-        "b": "Pluto",
-        "aspect": "Opposition",
-        "tone": "tense",
-        "influence": "The moon opposes Pluto, and emotions and transformations are pulled together, so you need to find a middle point.",
-        "endsIn": "约 11 小时后结束"
-      },
-      {
         "a": "Sun",
         "b": "Mars",
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "The Sun is sextile to Mars, and there is a chance for self and action to connect, just make a little move.",
-        "endsIn": "约 3 周后结束"
+        "endsIn": "约 2 周后结束"
+      },
+      {
+        "a": "Moon",
+        "b": "Uranus",
+        "aspect": "Sextile",
+        "tone": "easy",
+        "influence": "The moon is sextile to Uranus, and emotions and variables have a chance to connect, just make a little movement.",
+        "endsIn": "约 3 小时后结束"
+      },
+      {
+        "a": "Moon",
+        "b": "Saturn",
+        "aspect": "Trine",
+        "tone": "easy",
+        "influence": "The moon trines Saturn, and emotions can advance smoothly through the power of responsibility.",
+        "endsIn": "约 18 小时后结束"
+      },
+      {
+        "a": "Venus",
+        "b": "Pluto",
+        "aspect": "Square",
+        "tone": "tense",
+        "influence": "Venus squares Pluto, relationships and transformations are prone to awkwardness, so it’s better to slow down before making a decision.",
+        "endsIn": "约 8 周后结束"
       },
       {
         "a": "Mars",
@@ -1765,12 +4661,12 @@ window.DIGEST_DATA = {
         "endsIn": "ends in about 2 days"
       },
       {
-        "a": "Venus",
-        "b": "Pluto",
-        "aspect": "Square",
-        "tone": "tense",
-        "influence": "Venus squares Pluto, relationships and transformations are prone to awkwardness, so it’s better to slow down before making a decision.",
-        "endsIn": "约 8 周后结束"
+        "a": "Moon",
+        "b": "Neptune",
+        "aspect": "Trine",
+        "tone": "easy",
+        "influence": "The moon trines Neptune, and emotions can advance more smoothly through the power of intuition.",
+        "endsIn": "约 2 小时后结束"
       }
     ],
     "influence": {
