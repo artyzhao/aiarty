@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-08",
   "weekday": "星期二",
-  "fetchedAt": "2026-09-08 15:42",
+  "fetchedAt": "2026-09-08 21:39",
   "freshHours": 36,
   "sections": [
     {
@@ -603,6 +603,19 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "Living Poor to Die Rich",
+              "url": "https://ofdollarsanddata.com/living-poor-to-die-rich/",
+              "summary": "I recently joined a professional organization to discuss various topics in wealth management. On our first Zoom call there was a debate around the use of lever…",
+              "published": "2026-09-08T19:45:51+08:00",
+              "ts": 1788867951,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "生而贫穷，死而富贵",
+              "titleEn": "Living Poor to Die Rich",
+              "summaryZh": "我最近加入了一个专业组织，讨论财富管理的各种话题。在我们的第一次 Zoom 通话中，围绕杠杆的使用展开了一场辩论……",
+              "summaryEn": "I recently joined a professional organization to discuss various topics in wealth management. On our first Zoom call there was a debate around the use of lever…"
+            },
+            {
               "title": "Which Graduate Degrees Are the Best Investment? (Why I Skipped My MBA)",
               "url": "https://ofdollarsanddata.com/which-graduate-degrees-are-the-best-investment-why-i-skipped-my-mba/",
               "summary": "When I was 27 years old I was at a crossroads. I was five years into my career, yet I was stagnating. Though I was making six figures, which was great for my 2…",
@@ -692,19 +705,6 @@ window.DIGEST_DATA = {
               "titleEn": "Money Talks: The Price of Status",
               "summaryZh": "一年前，我出版了我的第二本书《财富阶梯》。该书在全球销量超过 100,000 册，并在出版第三周就登上了《纽约时报》畅销书排行榜……",
               "summaryEn": "A year ago, I published my second book The Wealth Ladder. It's sold over 100,000 copies worldwide and hit the New York Times bestseller list in its third week…"
-            },
-            {
-              "title": "Are Stocks Going Up or Is the Dollar Going Down?",
-              "url": "https://ofdollarsanddata.com/are-stocks-going-up-or-is-the-dollar-going-down/",
-              "summary": "As stocks have hit new all-time highs in recent months, I've seen an increasing number of people argue that stocks aren't becoming more valuable, the dollar is…",
-              "published": "2026-07-14T19:45:27+08:00",
-              "ts": 1784029527,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "股市上涨还是美元下跌？",
-              "titleEn": "Are Stocks Going Up or Is the Dollar Going Down?",
-              "summaryZh": "随着近几个月股市创下历史新高，我看到越来越多的人认为股票并没有变得更有价值，而是美元......",
-              "summaryEn": "As stocks have hit new all-time highs in recent months, I've seen an increasing number of people argue that stocks aren't becoming more valuable, the dollar is…"
             }
           ]
         }
@@ -1309,6 +1309,19 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "Avios, gilts and the art of (stealth) default",
+              "url": "https://bondvigilantes.com/blog/2026/09/avios-gilts-and-the-art-of-stealth-default/",
+              "summary": "can the UK government learn from British Airways' handling of the Avios programme? Quite a lot, as it turns out.",
+              "published": "2026-09-08T19:21:11+08:00",
+              "ts": 1788866471,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "Avios 积分、国债和（隐性）违约的艺术",
+              "titleEn": "Avios, gilts and the art of (stealth) default",
+              "summaryZh": "英国政府是否可以借鉴英国航空公司对 Avios 积分计划的处理方式？事实证明，相当多。",
+              "summaryEn": "can the UK government learn from British Airways' handling of the Avios programme? Quite a lot, as it turns out."
+            },
+            {
               "title": "The Fire Horse at Mid-Year: When Capital Flows Outrun Fundamentals",
               "url": "https://bondvigilantes.com/blog/2026/09/the-fire-horse-at-mid-year-when-capital-flows-outrun-fundamentals/",
               "summary": "the start of the Year of the Fire Horse, we argued that Asian currencies were approaching a potentially important turning point. Stronger trade balances and ev…",
@@ -1398,19 +1411,6 @@ window.DIGEST_DATA = {
               "titleEn": "Rolldown – The credit edition",
               "summaryZh": "之前曾在博客中讨论过，如果投资者想从法案通过中获得最大利益，他们应该接触政府债券曲线的哪些区域……",
               "summaryEn": "previously blogged on which area of government bond curves investors should have exposure to if they want to receive the greatest benefit from the passage of t…"
-            },
-            {
-              "title": "Jim Leaviss",
-              "url": "https://bondvigilantes.com/blog/2026/07/jim-leaviss/",
-              "summary": "are very sorry to share the news that Jim Leaviss passed away on 23 July 2026, aged 55.",
-              "published": "2026-07-29T19:31:44+08:00",
-              "ts": 1785324704,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "吉姆·利维斯",
-              "titleEn": "Jim Leaviss",
-              "summaryZh": "非常遗憾地宣布吉姆·利维斯 (Jim Leaviss) 于 2026 年 7 月 23 日去世，享年 55 岁。",
-              "summaryEn": "are very sorry to share the news that Jim Leaviss passed away on 23 July 2026, aged 55."
             }
           ]
         },
@@ -1539,6 +1539,58 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "UniCredit acquires stake in German fintech VC Trade",
+              "url": "https://www.finextra.com/newsarticle/48361/unicredit-acquires-stake-in-german-fintech-vc-trade?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "UniCredit has acquired a minority stake in VC Trade, a Frankfurt-based fintech company operating digital marketplaces and infrastructure for debt transactions.",
+              "published": "2026-09-08T20:00:00+08:00",
+              "ts": 1788868800,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "裕信银行收购德国金融科技 VC Trade 股份",
+              "titleEn": "UniCredit acquires stake in German fintech VC Trade",
+              "summaryZh": "UniCredit 收购了 VC Trade 的少数股权，这是一家总部位于法兰克福的金融科技公司，运营数字市场和债务交易基础设施。",
+              "summaryEn": "UniCredit has acquired a minority stake in VC Trade, a Frankfurt-based fintech company operating digital marketplaces and infrastructure for debt transactions."
+            },
+            {
+              "title": "SIX and Twint join Swiss bank stablecoin project",
+              "url": "https://www.finextra.com/newsarticle/48360/six-and-twint-join-swiss-bank-stablecoin-project?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "Swiss exchange SIX and mobile payment service Twint have joined a CHF stablecoin initiative promoted by six of the country's leading banks.",
+              "published": "2026-09-08T19:28:00+08:00",
+              "ts": 1788866880,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "SIX 和 Twint 加入瑞士银行稳定币项目",
+              "titleEn": "SIX and Twint join Swiss bank stablecoin project",
+              "summaryZh": "瑞士交易所 SIX 和移动支付服务 Twint 已加入由该国六家领先银行推动的瑞士法郎稳定币计划。",
+              "summaryEn": "Swiss exchange SIX and mobile payment service Twint have joined a CHF stablecoin initiative promoted by six of the country's leading banks."
+            },
+            {
+              "title": "TSB shakes up executive team ahead of Santander integration",
+              "url": "https://www.finextra.com/newsarticle/48359/tsb-shakes-up-executive-team-ahead-of-santander-integration?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communicatins lead as integration with Santander commences.",
+              "published": "2026-09-08T18:43:00+08:00",
+              "ts": 1788864180,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "TSB 在桑坦德银行整合之前重组了执行团队",
+              "titleEn": "TSB shakes up executive team ahead of Santander integration",
+              "summaryZh": "随着与桑坦德银行整合的开始，TSB 正在失去其首席信息官、首席风险官、首席人力官和媒体传播主管。",
+              "summaryEn": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communicatins lead as integration with Santander commences."
+            },
+            {
+              "title": "French fintech startup Outline raises $3 million for financial planning AI",
+              "url": "https://www.finextra.com/newsarticle/48358/french-fintech-startup-outline-raises-3-million-for-financial-planning-ai?utm_medium=rssfinextra&utm_source=finextrafeed",
+              "summary": "French fintech startup Outline has raised $3 million to reinvent financial planning with AI.",
+              "published": "2026-09-08T17:13:00+08:00",
+              "ts": 1788858780,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "法国金融科技初创公司 Outline 融资 300 万美元用于财务规划人工智能",
+              "titleEn": "French fintech startup Outline raises $3 million for financial planning AI",
+              "summaryZh": "法国金融科技初创公司 Outline 筹集了 300 万美元，用于利用人工智能重塑财务规划。",
+              "summaryEn": "French fintech startup Outline has raised $3 million to reinvent financial planning with AI."
+            },
+            {
               "title": "Mastercard predicts that over the next four years one-in-ten will use AI agents for online shopping",
               "url": "https://www.finextra.com/newsarticle/48357/mastercard-predicts-that-over-the-next-four-years-one-in-ten-will-use-ai-agents-for-online-shopping?utm_medium=rssfinextra&utm_source=finextrafeed",
               "summary": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report",
@@ -1589,58 +1641,6 @@ window.DIGEST_DATA = {
               "titleEn": "European wealthtech funding drops amid investor caution",
               "summaryZh": "投资者的谨慎导致今年第二季度财富科技融资减少了 46%。",
               "summaryEn": "Caution among investors led to a 46% reduction in wealthtech funding in Q2 this year."
-            },
-            {
-              "title": "UBS calls for AI literacy from new recruits",
-              "url": "https://www.finextra.com/newsarticle/48353/ubs-calls-for-ai-literacy-from-new-recruits?utm_medium=rssfinextra&utm_source=finextrafeed",
-              "summary": "Swiss bank UBS has become one of the first financial institutions to demand AI proficiency from potential employees",
-              "published": "2026-09-07T19:47:00+08:00",
-              "ts": 1788781620,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "瑞银呼吁新员工提高人工智能素养",
-              "titleEn": "UBS calls for AI literacy from new recruits",
-              "summaryZh": "瑞士银行瑞银成为首批要求潜在员工具备人工智能能力的金融机构之一",
-              "summaryEn": "Swiss bank UBS has become one of the first financial institutions to demand AI proficiency from potential employees"
-            },
-            {
-              "title": "L&G names group CTO",
-              "url": "https://www.finextra.com/newsarticle/48352/lg-names-group-cto?utm_medium=rssfinextra&utm_source=finextrafeed",
-              "summary": "Former Schroders' technology head jamie Ovenden has been appointed as group chief technology, data and innovation officer at Legal & General (L&G).",
-              "published": "2026-09-07T19:24:00+08:00",
-              "ts": 1788780240,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "L&G 任命集团首席技术官",
-              "titleEn": "L&G names group CTO",
-              "summaryZh": "施罗德前技术主管杰米·奥文登 (Jamie Ovenden) 已被任命为 Legal & General (L&G) 集团首席技术、数据和创新官。",
-              "summaryEn": "Former Schroders' technology head jamie Ovenden has been appointed as group chief technology, data and innovation officer at Legal & General (L&G)."
-            },
-            {
-              "title": "EMEA fintech funding declined in H1",
-              "url": "https://www.finextra.com/newsarticle/48351/emea-fintech-funding-declined-in-h1?utm_medium=rssfinextra&utm_source=finextrafeed",
-              "summary": "The level of funding for EMEA-based fintechs fell sharply in the first half of the year as investors become more selective.",
-              "published": "2026-09-07T17:38:00+08:00",
-              "ts": 1788773880,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "上半年欧洲、中东和非洲地区金融科技融资有所下降",
-              "titleEn": "EMEA fintech funding declined in H1",
-              "summaryZh": "由于投资者变得更加挑剔，欧洲、中东和非洲地区金融科技公司的融资水平在今年上半年大幅下降。",
-              "summaryEn": "The level of funding for EMEA-based fintechs fell sharply in the first half of the year as investors become more selective."
-            },
-            {
-              "title": "TD Bank COO leaves after less than a year in the job",
-              "url": "https://www.finextra.com/newsarticle/48349/td-bank-coo-leaves-after-less-than-a-year-in-the-job?utm_medium=rssfinextra&utm_source=finextrafeed",
-              "summary": "TD Bank's COO Taylan Turan is leaving the Canadian lender after less than a year in the job as part of a wider shakeup that also sees Vlad Shpilsky appointed g…",
-              "published": "2026-09-07T08:01:00+08:00",
-              "ts": 1788739260,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "道明银行首席运营官上任不到一年就离职",
-              "titleEn": "TD Bank COO leaves after less than a year in the job",
-              "summaryZh": "道明银行首席运营官泰兰·图兰(Taylan Turan)在上任不到一年后将离开这家加拿大银行，这是更广泛的重组的一部分，弗拉德·什皮尔斯基(Vlad Shpilsky)也被任命为首席运营官。",
-              "summaryEn": "TD Bank's COO Taylan Turan is leaving the Canadian lender after less than a year in the job as part of a wider shakeup that also sees Vlad Shpilsky appointed g…"
             }
           ]
         },
@@ -1653,6 +1653,19 @@ window.DIGEST_DATA = {
           "ok": true,
           "error": null,
           "items": [
+            {
+              "title": "The Quarterly Review: BNY’s Carl Slabicki is pushing toward practical innovation",
+              "url": "https://tearsheet.co/the-quarterly-review/the-quarterly-review-bnys-carl-slabicki-is-pushing-toward-practical-innovation/?utm_source=rss&utm_medium=rss&utm_campaign=the-quarterly-review-bnys-carl-slabicki-is-pushing-toward-practical-innovation",
+              "summary": "In this edition, we spotlight Carl Slabicki, Head of Commercial for Global Payments & Trade at BNY. At BNY, Carl Slabicki oversees the firm’s work connecting p…",
+              "published": "2026-09-08T19:30:00+08:00",
+              "ts": 1788867000,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "季刊评论：纽约银行的 Carl Slabicki 正在推动实用创新",
+              "titleEn": "The Quarterly Review: BNY’s Carl Slabicki is pushing toward practical innovation",
+              "summaryZh": "在本期中，我们重点关注纽约银行全球支付与贸易商务主管 Carl Slabicki。在纽约银行，卡尔·斯拉比茨基 (Carl Slabicki) 负责监督公司连接 p 的工作……",
+              "summaryEn": "In this edition, we spotlight Carl Slabicki, Head of Commercial for Global Payments & Trade at BNY. At BNY, Carl Slabicki oversees the firm’s work connecting p…"
+            },
             {
               "title": "The infrastructure paradox: The better you become, the harder customers are to keep",
               "url": "https://tearsheet.co/opinion/the-infrastructure-paradox-the-better-you-become-the-harder-customers-are-to-keep/?utm_source=rss&utm_medium=rss&utm_campaign=the-infrastructure-paradox-the-better-you-become-the-harder-customers-are-to-keep",
@@ -1743,19 +1756,6 @@ window.DIGEST_DATA = {
               "titleEn": "The Week in Market Moves | Aug 20-27, 2026",
               "summaryZh": "公司信号和市场反应该分析跟踪了顶级公司的发展以及市场如何在周四收盘时吸收它们，重点关注......",
               "summaryEn": "Company signals and market response This analysis tracks the top company developments and how markets absorbed them through Thursday’s close, focusing on where…"
-            },
-            {
-              "title": "‘Traditional banks have equated advising with cross-selling’: Grasshopper’s Danielle Kane on why just 7% of SMBs see banks as trusted advisors",
-              "url": "https://tearsheet.co/5-questions/traditional-banks-have-equated-advising-with-cross-selling-grasshoppers-danielle-kane-on-why-just-7-of-smbs-see-banks-as-trusted-advisors/?utm_source=rss&utm_medium=rss&utm_campaign=traditional-banks-have-equated-advising-with-cross-selling-grasshoppers-danielle-kane-on-why-just-7-of-smbs-see-banks-as-trusted-advisors",
-              "summary": "Banks have long focused on competing for small business accounts through interest rates, fees, and rewards programs, treating the relationship as transactional…",
-              "published": "2026-08-27T19:30:00+08:00",
-              "ts": 1787830200,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "“传统银行将咨询等同于交叉销售”：Grasshopper 的 Danielle Kane 解释为什么只有 7% 的中小企业将银行视为值得信赖的顾问",
-              "titleEn": "‘Traditional banks have equated advising with cross-selling’: Grasshopper’s Danielle Kane on why just 7% of SMBs see banks as trusted advisors",
-              "summaryZh": "银行长期以来一直专注于通过利率、费用和奖励计划争夺小企业账户，将这种关系视为交易性……",
-              "summaryEn": "Banks have long focused on competing for small business accounts through interest rates, fees, and rewards programs, treating the relationship as transactional…"
             }
           ]
         },
@@ -1768,6 +1768,19 @@ window.DIGEST_DATA = {
           "ok": true,
           "error": null,
           "items": [
+            {
+              "title": "EverBank, WaFd to merge in $3.9B deal",
+              "url": "https://www.bankingdive.com/news/everbank-wafd-merger-4-billion-california/829754/",
+              "summary": "The transaction, set to close in the first quarter of 2027, would create a lender with $75 billion in assets, $59 billion in deposits and $58 billion in loans.",
+              "published": "2026-09-08T18:41:54+08:00",
+              "ts": 1788864114,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "EverBank 与 WaFd 将以 3.9B 美元的交易合并",
+              "titleEn": "EverBank, WaFd to merge in $3.9B deal",
+              "summaryZh": "该交易定于 2027 年第一季度完成，将创建一家拥有 750 亿美元资产、590 亿美元存款和 580 亿美元贷款的贷方。",
+              "summaryEn": "The transaction, set to close in the first quarter of 2027, would create a lender with $75 billion in assets, $59 billion in deposits and $58 billion in loans."
+            },
             {
               "title": "MoneyLion alums take OpenReserve ‘out of stealth’",
               "url": "https://www.bankingdive.com/news/openreserve-occ-conditional-approval-moneylion-alums-choubey-correia-continuous-banking/829705/",
@@ -1858,19 +1871,6 @@ window.DIGEST_DATA = {
               "titleEn": "TabaPay eyes OCC charter with Denver bank deal",
               "summaryZh": "这家资金流动平台曾试图收购 Synapse 的资产，后来获得了 1.55 亿美元的投资来收购 Transact Bank。",
               "summaryEn": "The money movement platform, which once sought to buy Synapse’s assets, received a $155 million investment to pursue Transact Bank."
-            },
-            {
-              "title": "Republicans unveil bill to change CFPB funding structure",
-              "url": "https://www.bankingdive.com/news/republicans-unveil-bill-to-change-cfpb-funding-structure/829453/",
-              "summary": "\"The agency would receive its funding from congressional appropriations instead of the Fed under the bill, which would also limit the CFPB’s ability to enforce…",
-              "published": "2026-09-03T00:25:08+08:00",
-              "ts": 1788366308,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "共和党公布改变 CFPB 资金结构的法案",
-              "titleEn": "Republicans unveil bill to change CFPB funding structure",
-              "summaryZh": "“根据该法案，该机构的资金将来自国会拨款，而不是美联储，这也将限制 CFPB 执行……的能力。”",
-              "summaryEn": "\"The agency would receive its funding from congressional appropriations instead of the Fed under the bill, which would also limit the CFPB’s ability to enforce…"
             }
           ]
         },
@@ -1883,6 +1883,19 @@ window.DIGEST_DATA = {
           "ok": true,
           "error": null,
           "items": [
+            {
+              "title": "ShiftLens: A System for 3D-Printing Lenticular Objects",
+              "url": "https://www.core77.com/posts/145281/ShiftLens-A-System-for-3D-Printing-Lenticular-Objects",
+              "summary": "Let's say you're designing a switch that must change color when a user activates it. You'd typically think of integrating an LED. But researchers at MIT have d…",
+              "published": "2026-09-08T21:00:00+08:00",
+              "ts": 1788872400,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "ShiftLens：3D 打印光栅物体的系统",
+              "titleEn": "ShiftLens: A System for 3D-Printing Lenticular Objects",
+              "summaryZh": "假设您正在设计一个开关，当用户激活它时它必须改变颜色。您通常会考虑集成 LED。但麻省理工学院的研究人员已经...",
+              "summaryEn": "Let's say you're designing a switch that must change color when a user activates it. You'd typically think of integrating an LED. But researchers at MIT have d…"
+            },
             {
               "title": "Core77 Weekly Roundup (8-31-26 to 9-4-26)",
               "url": "https://www.core77.com/posts/145213/Core77-Weekly-Roundup-8-31-26-to-9-4-26",
@@ -1973,19 +1986,6 @@ window.DIGEST_DATA = {
               "titleEn": "Studio Gorm Designs a Better Doorstop",
               "summaryZh": "使用楔子作为门塞似乎是一个完美的解决方案，并且它可能已经存在了几个世纪，无论是哪种材料。因为对象是你...",
               "summaryEn": "Using a wedge as a door stopper seems like a perfect solution, and it's probably been around for centuries, in one material or another. Because the object is u…"
-            },
-            {
-              "title": "Which Folding Bicycle Design has the Best UX?",
-              "url": "https://www.core77.com/posts/145246/Which-Folding-Bicycle-Design-has-the-Best-UX",
-              "summary": "In addition to the well-known Brompton, there's been a bunch of innovation happening in the folding bicycle space. These have varying degrees of folding diffic…",
-              "published": "2026-09-02T22:00:00+08:00",
-              "ts": 1788357600,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "哪种折叠自行车设计具有最佳用户体验？",
-              "titleEn": "Which Folding Bicycle Design has the Best UX?",
-              "summaryZh": "除了众所周知的 Brompton 之外，折叠自行车领域也出现了许多创新。这些具有不同程度的折叠困难……",
-              "summaryEn": "In addition to the well-known Brompton, there's been a bunch of innovation happening in the folding bicycle space. These have varying degrees of folding diffic…"
             }
           ]
         },
@@ -1998,6 +1998,32 @@ window.DIGEST_DATA = {
           "ok": true,
           "error": null,
           "items": [
+            {
+              "title": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper",
+              "url": "https://www.yankodesign.com/2026/09/08/an-android-drawing-tablet-with-127-layers-that-still-feels-like-paper/?utm_source=rss&utm_medium=rss&utm_campaign=an-android-drawing-tablet-with-127-layers-that-still-feels-like-paper",
+              "summary": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper Most Android drawing tablets make you choose between a screen that feels like paper and h…",
+              "published": "2026-09-08T21:20:51+08:00",
+              "ts": 1788873651,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "一款 127 层的 Android 绘图板，感觉仍然像纸一样",
+              "titleEn": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper",
+              "summaryZh": "具有 127 层的 Android 绘图板，感觉仍然像纸大多数 Android 绘图板让您在感觉像纸的屏幕和 h…",
+              "summaryEn": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper Most Android drawing tablets make you choose between a screen that feels like paper and h…"
+            },
+            {
+              "title": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys)",
+              "url": "https://www.yankodesign.com/2026/09/08/the-5-home-upgrades-every-pet-parent-actually-uses-not-just-buys/?utm_source=rss&utm_medium=rss&utm_campaign=the-5-home-upgrades-every-pet-parent-actually-uses-not-just-buys",
+              "summary": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys) Pet furniture & products have operated under a different standard than everything else in th…",
+              "published": "2026-09-08T19:40:13+08:00",
+              "ts": 1788867613,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "每个宠物父母实际使用（不仅仅是购买）的 5 种房屋升级",
+              "titleEn": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys)",
+              "summaryZh": "每个宠物父母实际使用（不仅仅是购买）的 5 种家居升级 宠物家具和产品的运行标准与世界上其他所有东西都不同……",
+              "summaryEn": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys) Pet furniture & products have operated under a different standard than everything else in th…"
+            },
             {
               "title": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung?",
               "url": "https://www.yankodesign.com/2026/09/08/xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung/?utm_source=rss&utm_medium=rss&utm_campaign=xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung",
@@ -2075,32 +2101,6 @@ window.DIGEST_DATA = {
               "titleEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem",
               "summaryZh": "Nike 售价 220 美元的 Air Liquid Max 终于解决了舒适度问题 Nike Air Max 运动鞋花了四十年的时间赢得了有关风格的争论，但又因……而输掉了争论。",
               "summaryEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem Nike Air Max sneakers have spent four decades winning arguments about style and losing them about…"
-            },
-            {
-              "title": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again",
-              "url": "https://www.yankodesign.com/2026/09/07/4-new-aeg-launches-that-are-betting-you-never-want-to-babysit-an-appliance-again/?utm_source=rss&utm_medium=rss&utm_campaign=4-new-aeg-launches-that-are-betting-you-never-want-to-babysit-an-appliance-again",
-              "summary": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again How we think about home appliances is shifting, and AEG leaned into it at IFA…",
-              "published": "2026-09-08T04:30:14+08:00",
-              "ts": 1788813014,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "AEG 推出的 4 款新产品让您再也不想照顾电器",
-              "titleEn": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again",
-              "summaryZh": "AEG 推出的 4 款新产品让您再也不想照顾电器 我们对家用电器的看法正在发生转变，AEG 在 IFA 上对此进行了深入研究……",
-              "summaryEn": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again How we think about home appliances is shifting, and AEG leaned into it at IFA…"
-            },
-            {
-              "title": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait",
-              "url": "https://www.yankodesign.com/2026/09/07/with-super-sauna-hotels-finally-get-a-sauna-without-the-construction-wait/?utm_source=rss&utm_medium=rss&utm_campaign=with-super-sauna-hotels-finally-get-a-sauna-without-the-construction-wait",
-              "summary": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait I’ve stayed at enough hotels chasing a “wellness experience” to know the disappointm…",
-              "published": "2026-09-08T03:15:16+08:00",
-              "ts": 1788808516,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "有了超级桑拿房，酒店终于不用等待施工就能拥有桑拿房",
-              "titleEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait",
-              "summaryZh": "有了超级桑拿，酒店终于可以享受桑拿了，无需等待施工。我住过足够多的酒店，追求“健康体验”，知道令人失望的……",
-              "summaryEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait I’ve stayed at enough hotels chasing a “wellness experience” to know the disappointm…"
             }
           ]
         },
@@ -2811,6 +2811,19 @@ window.DIGEST_DATA = {
               "error": null,
               "items": [
                 {
+                  "title": "Avios, gilts and the art of (stealth) default",
+                  "url": "https://bondvigilantes.com/blog/2026/09/avios-gilts-and-the-art-of-stealth-default/",
+                  "summary": "can the UK government learn from British Airways' handling of the Avios programme? Quite a lot, as it turns out.",
+                  "published": "2026-09-08T19:21:11+08:00",
+                  "ts": 1788866471,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "Avios 积分、国债和（隐性）违约的艺术",
+                  "titleEn": "Avios, gilts and the art of (stealth) default",
+                  "summaryZh": "英国政府是否可以借鉴英国航空公司对 Avios 积分计划的处理方式？事实证明，相当多。",
+                  "summaryEn": "can the UK government learn from British Airways' handling of the Avios programme? Quite a lot, as it turns out."
+                },
+                {
                   "title": "The Fire Horse at Mid-Year: When Capital Flows Outrun Fundamentals",
                   "url": "https://bondvigilantes.com/blog/2026/09/the-fire-horse-at-mid-year-when-capital-flows-outrun-fundamentals/",
                   "summary": "the start of the Year of the Fire Horse, we argued that Asian currencies were approaching a potentially important turning point. Stronger trade balances and ev…",
@@ -2900,19 +2913,6 @@ window.DIGEST_DATA = {
                   "titleEn": "Rolldown – The credit edition",
                   "summaryZh": "之前曾在博客中讨论过，如果投资者想从法案通过中获得最大利益，他们应该接触政府债券曲线的哪些区域……",
                   "summaryEn": "previously blogged on which area of government bond curves investors should have exposure to if they want to receive the greatest benefit from the passage of t…"
-                },
-                {
-                  "title": "Jim Leaviss",
-                  "url": "https://bondvigilantes.com/blog/2026/07/jim-leaviss/",
-                  "summary": "are very sorry to share the news that Jim Leaviss passed away on 23 July 2026, aged 55.",
-                  "published": "2026-07-29T19:31:44+08:00",
-                  "ts": 1785324704,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "吉姆·利维斯",
-                  "titleEn": "Jim Leaviss",
-                  "summaryZh": "非常遗憾地宣布吉姆·利维斯 (Jim Leaviss) 于 2026 年 7 月 23 日去世，享年 55 岁。",
-                  "summaryEn": "are very sorry to share the news that Jim Leaviss passed away on 23 July 2026, aged 55."
                 }
               ]
             },
@@ -3048,6 +3048,58 @@ window.DIGEST_DATA = {
               "error": null,
               "items": [
                 {
+                  "title": "UniCredit acquires stake in German fintech VC Trade",
+                  "url": "https://www.finextra.com/newsarticle/48361/unicredit-acquires-stake-in-german-fintech-vc-trade?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "UniCredit has acquired a minority stake in VC Trade, a Frankfurt-based fintech company operating digital marketplaces and infrastructure for debt transactions.",
+                  "published": "2026-09-08T20:00:00+08:00",
+                  "ts": 1788868800,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "裕信银行收购德国金融科技 VC Trade 股份",
+                  "titleEn": "UniCredit acquires stake in German fintech VC Trade",
+                  "summaryZh": "UniCredit 收购了 VC Trade 的少数股权，这是一家总部位于法兰克福的金融科技公司，运营数字市场和债务交易基础设施。",
+                  "summaryEn": "UniCredit has acquired a minority stake in VC Trade, a Frankfurt-based fintech company operating digital marketplaces and infrastructure for debt transactions."
+                },
+                {
+                  "title": "SIX and Twint join Swiss bank stablecoin project",
+                  "url": "https://www.finextra.com/newsarticle/48360/six-and-twint-join-swiss-bank-stablecoin-project?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "Swiss exchange SIX and mobile payment service Twint have joined a CHF stablecoin initiative promoted by six of the country's leading banks.",
+                  "published": "2026-09-08T19:28:00+08:00",
+                  "ts": 1788866880,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "SIX 和 Twint 加入瑞士银行稳定币项目",
+                  "titleEn": "SIX and Twint join Swiss bank stablecoin project",
+                  "summaryZh": "瑞士交易所 SIX 和移动支付服务 Twint 已加入由该国六家领先银行推动的瑞士法郎稳定币计划。",
+                  "summaryEn": "Swiss exchange SIX and mobile payment service Twint have joined a CHF stablecoin initiative promoted by six of the country's leading banks."
+                },
+                {
+                  "title": "TSB shakes up executive team ahead of Santander integration",
+                  "url": "https://www.finextra.com/newsarticle/48359/tsb-shakes-up-executive-team-ahead-of-santander-integration?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communicatins lead as integration with Santander commences.",
+                  "published": "2026-09-08T18:43:00+08:00",
+                  "ts": 1788864180,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "TSB 在桑坦德银行整合之前重组了执行团队",
+                  "titleEn": "TSB shakes up executive team ahead of Santander integration",
+                  "summaryZh": "随着与桑坦德银行整合的开始，TSB 正在失去其首席信息官、首席风险官、首席人力官和媒体传播主管。",
+                  "summaryEn": "TSB is losing its chief information officer, chief risk officer, chief people officer and media communicatins lead as integration with Santander commences."
+                },
+                {
+                  "title": "French fintech startup Outline raises $3 million for financial planning AI",
+                  "url": "https://www.finextra.com/newsarticle/48358/french-fintech-startup-outline-raises-3-million-for-financial-planning-ai?utm_medium=rssfinextra&utm_source=finextrafeed",
+                  "summary": "French fintech startup Outline has raised $3 million to reinvent financial planning with AI.",
+                  "published": "2026-09-08T17:13:00+08:00",
+                  "ts": 1788858780,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "法国金融科技初创公司 Outline 融资 300 万美元用于财务规划人工智能",
+                  "titleEn": "French fintech startup Outline raises $3 million for financial planning AI",
+                  "summaryZh": "法国金融科技初创公司 Outline 筹集了 300 万美元，用于利用人工智能重塑财务规划。",
+                  "summaryEn": "French fintech startup Outline has raised $3 million to reinvent financial planning with AI."
+                },
+                {
                   "title": "Mastercard predicts that over the next four years one-in-ten will use AI agents for online shopping",
                   "url": "https://www.finextra.com/newsarticle/48357/mastercard-predicts-that-over-the-next-four-years-one-in-ten-will-use-ai-agents-for-online-shopping?utm_medium=rssfinextra&utm_source=finextrafeed",
                   "summary": "More than one in ten online shoppers are expected to routinely use AI agents to purchase products on their behalf by 2030, according to a new Mastercard report",
@@ -3098,58 +3150,6 @@ window.DIGEST_DATA = {
                   "titleEn": "European wealthtech funding drops amid investor caution",
                   "summaryZh": "投资者的谨慎导致今年第二季度财富科技融资减少了 46%。",
                   "summaryEn": "Caution among investors led to a 46% reduction in wealthtech funding in Q2 this year."
-                },
-                {
-                  "title": "UBS calls for AI literacy from new recruits",
-                  "url": "https://www.finextra.com/newsarticle/48353/ubs-calls-for-ai-literacy-from-new-recruits?utm_medium=rssfinextra&utm_source=finextrafeed",
-                  "summary": "Swiss bank UBS has become one of the first financial institutions to demand AI proficiency from potential employees",
-                  "published": "2026-09-07T19:47:00+08:00",
-                  "ts": 1788781620,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "瑞银呼吁新员工提高人工智能素养",
-                  "titleEn": "UBS calls for AI literacy from new recruits",
-                  "summaryZh": "瑞士银行瑞银成为首批要求潜在员工具备人工智能能力的金融机构之一",
-                  "summaryEn": "Swiss bank UBS has become one of the first financial institutions to demand AI proficiency from potential employees"
-                },
-                {
-                  "title": "L&G names group CTO",
-                  "url": "https://www.finextra.com/newsarticle/48352/lg-names-group-cto?utm_medium=rssfinextra&utm_source=finextrafeed",
-                  "summary": "Former Schroders' technology head jamie Ovenden has been appointed as group chief technology, data and innovation officer at Legal & General (L&G).",
-                  "published": "2026-09-07T19:24:00+08:00",
-                  "ts": 1788780240,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "L&G 任命集团首席技术官",
-                  "titleEn": "L&G names group CTO",
-                  "summaryZh": "施罗德前技术主管杰米·奥文登 (Jamie Ovenden) 已被任命为 Legal & General (L&G) 集团首席技术、数据和创新官。",
-                  "summaryEn": "Former Schroders' technology head jamie Ovenden has been appointed as group chief technology, data and innovation officer at Legal & General (L&G)."
-                },
-                {
-                  "title": "EMEA fintech funding declined in H1",
-                  "url": "https://www.finextra.com/newsarticle/48351/emea-fintech-funding-declined-in-h1?utm_medium=rssfinextra&utm_source=finextrafeed",
-                  "summary": "The level of funding for EMEA-based fintechs fell sharply in the first half of the year as investors become more selective.",
-                  "published": "2026-09-07T17:38:00+08:00",
-                  "ts": 1788773880,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "上半年欧洲、中东和非洲地区金融科技融资有所下降",
-                  "titleEn": "EMEA fintech funding declined in H1",
-                  "summaryZh": "由于投资者变得更加挑剔，欧洲、中东和非洲地区金融科技公司的融资水平在今年上半年大幅下降。",
-                  "summaryEn": "The level of funding for EMEA-based fintechs fell sharply in the first half of the year as investors become more selective."
-                },
-                {
-                  "title": "TD Bank COO leaves after less than a year in the job",
-                  "url": "https://www.finextra.com/newsarticle/48349/td-bank-coo-leaves-after-less-than-a-year-in-the-job?utm_medium=rssfinextra&utm_source=finextrafeed",
-                  "summary": "TD Bank's COO Taylan Turan is leaving the Canadian lender after less than a year in the job as part of a wider shakeup that also sees Vlad Shpilsky appointed g…",
-                  "published": "2026-09-07T08:01:00+08:00",
-                  "ts": 1788739260,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "道明银行首席运营官上任不到一年就离职",
-                  "titleEn": "TD Bank COO leaves after less than a year in the job",
-                  "summaryZh": "道明银行首席运营官泰兰·图兰(Taylan Turan)在上任不到一年后将离开这家加拿大银行，这是更广泛的重组的一部分，弗拉德·什皮尔斯基(Vlad Shpilsky)也被任命为首席运营官。",
-                  "summaryEn": "TD Bank's COO Taylan Turan is leaving the Canadian lender after less than a year in the job as part of a wider shakeup that also sees Vlad Shpilsky appointed g…"
                 }
               ]
             },
@@ -3162,6 +3162,19 @@ window.DIGEST_DATA = {
               "ok": true,
               "error": null,
               "items": [
+                {
+                  "title": "The Quarterly Review: BNY’s Carl Slabicki is pushing toward practical innovation",
+                  "url": "https://tearsheet.co/the-quarterly-review/the-quarterly-review-bnys-carl-slabicki-is-pushing-toward-practical-innovation/?utm_source=rss&utm_medium=rss&utm_campaign=the-quarterly-review-bnys-carl-slabicki-is-pushing-toward-practical-innovation",
+                  "summary": "In this edition, we spotlight Carl Slabicki, Head of Commercial for Global Payments & Trade at BNY. At BNY, Carl Slabicki oversees the firm’s work connecting p…",
+                  "published": "2026-09-08T19:30:00+08:00",
+                  "ts": 1788867000,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "季刊评论：纽约银行的 Carl Slabicki 正在推动实用创新",
+                  "titleEn": "The Quarterly Review: BNY’s Carl Slabicki is pushing toward practical innovation",
+                  "summaryZh": "在本期中，我们重点关注纽约银行全球支付与贸易商务主管 Carl Slabicki。在纽约银行，卡尔·斯拉比茨基 (Carl Slabicki) 负责监督公司连接 p 的工作……",
+                  "summaryEn": "In this edition, we spotlight Carl Slabicki, Head of Commercial for Global Payments & Trade at BNY. At BNY, Carl Slabicki oversees the firm’s work connecting p…"
+                },
                 {
                   "title": "The infrastructure paradox: The better you become, the harder customers are to keep",
                   "url": "https://tearsheet.co/opinion/the-infrastructure-paradox-the-better-you-become-the-harder-customers-are-to-keep/?utm_source=rss&utm_medium=rss&utm_campaign=the-infrastructure-paradox-the-better-you-become-the-harder-customers-are-to-keep",
@@ -3252,19 +3265,6 @@ window.DIGEST_DATA = {
                   "titleEn": "The Week in Market Moves | Aug 20-27, 2026",
                   "summaryZh": "公司信号和市场反应该分析跟踪了顶级公司的发展以及市场如何在周四收盘时吸收它们，重点关注......",
                   "summaryEn": "Company signals and market response This analysis tracks the top company developments and how markets absorbed them through Thursday’s close, focusing on where…"
-                },
-                {
-                  "title": "‘Traditional banks have equated advising with cross-selling’: Grasshopper’s Danielle Kane on why just 7% of SMBs see banks as trusted advisors",
-                  "url": "https://tearsheet.co/5-questions/traditional-banks-have-equated-advising-with-cross-selling-grasshoppers-danielle-kane-on-why-just-7-of-smbs-see-banks-as-trusted-advisors/?utm_source=rss&utm_medium=rss&utm_campaign=traditional-banks-have-equated-advising-with-cross-selling-grasshoppers-danielle-kane-on-why-just-7-of-smbs-see-banks-as-trusted-advisors",
-                  "summary": "Banks have long focused on competing for small business accounts through interest rates, fees, and rewards programs, treating the relationship as transactional…",
-                  "published": "2026-08-27T19:30:00+08:00",
-                  "ts": 1787830200,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "“传统银行将咨询等同于交叉销售”：Grasshopper 的 Danielle Kane 解释为什么只有 7% 的中小企业将银行视为值得信赖的顾问",
-                  "titleEn": "‘Traditional banks have equated advising with cross-selling’: Grasshopper’s Danielle Kane on why just 7% of SMBs see banks as trusted advisors",
-                  "summaryZh": "银行长期以来一直专注于通过利率、费用和奖励计划争夺小企业账户，将这种关系视为交易性……",
-                  "summaryEn": "Banks have long focused on competing for small business accounts through interest rates, fees, and rewards programs, treating the relationship as transactional…"
                 }
               ]
             },
@@ -3277,6 +3277,19 @@ window.DIGEST_DATA = {
               "ok": true,
               "error": null,
               "items": [
+                {
+                  "title": "EverBank, WaFd to merge in $3.9B deal",
+                  "url": "https://www.bankingdive.com/news/everbank-wafd-merger-4-billion-california/829754/",
+                  "summary": "The transaction, set to close in the first quarter of 2027, would create a lender with $75 billion in assets, $59 billion in deposits and $58 billion in loans.",
+                  "published": "2026-09-08T18:41:54+08:00",
+                  "ts": 1788864114,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "EverBank 与 WaFd 将以 3.9B 美元的交易合并",
+                  "titleEn": "EverBank, WaFd to merge in $3.9B deal",
+                  "summaryZh": "该交易定于 2027 年第一季度完成，将创建一家拥有 750 亿美元资产、590 亿美元存款和 580 亿美元贷款的贷方。",
+                  "summaryEn": "The transaction, set to close in the first quarter of 2027, would create a lender with $75 billion in assets, $59 billion in deposits and $58 billion in loans."
+                },
                 {
                   "title": "MoneyLion alums take OpenReserve ‘out of stealth’",
                   "url": "https://www.bankingdive.com/news/openreserve-occ-conditional-approval-moneylion-alums-choubey-correia-continuous-banking/829705/",
@@ -3367,19 +3380,6 @@ window.DIGEST_DATA = {
                   "titleEn": "TabaPay eyes OCC charter with Denver bank deal",
                   "summaryZh": "这家资金流动平台曾试图收购 Synapse 的资产，后来获得了 1.55 亿美元的投资来收购 Transact Bank。",
                   "summaryEn": "The money movement platform, which once sought to buy Synapse’s assets, received a $155 million investment to pursue Transact Bank."
-                },
-                {
-                  "title": "Republicans unveil bill to change CFPB funding structure",
-                  "url": "https://www.bankingdive.com/news/republicans-unveil-bill-to-change-cfpb-funding-structure/829453/",
-                  "summary": "\"The agency would receive its funding from congressional appropriations instead of the Fed under the bill, which would also limit the CFPB’s ability to enforce…",
-                  "published": "2026-09-03T00:25:08+08:00",
-                  "ts": 1788366308,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "共和党公布改变 CFPB 资金结构的法案",
-                  "titleEn": "Republicans unveil bill to change CFPB funding structure",
-                  "summaryZh": "“根据该法案，该机构的资金将来自国会拨款，而不是美联储，这也将限制 CFPB 执行……的能力。”",
-                  "summaryEn": "\"The agency would receive its funding from congressional appropriations instead of the Fed under the bill, which would also limit the CFPB’s ability to enforce…"
                 }
               ]
             }
@@ -3399,6 +3399,19 @@ window.DIGEST_DATA = {
               "ok": true,
               "error": null,
               "items": [
+                {
+                  "title": "ShiftLens: A System for 3D-Printing Lenticular Objects",
+                  "url": "https://www.core77.com/posts/145281/ShiftLens-A-System-for-3D-Printing-Lenticular-Objects",
+                  "summary": "Let's say you're designing a switch that must change color when a user activates it. You'd typically think of integrating an LED. But researchers at MIT have d…",
+                  "published": "2026-09-08T21:00:00+08:00",
+                  "ts": 1788872400,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "ShiftLens：3D 打印光栅物体的系统",
+                  "titleEn": "ShiftLens: A System for 3D-Printing Lenticular Objects",
+                  "summaryZh": "假设您正在设计一个开关，当用户激活它时它必须改变颜色。您通常会考虑集成 LED。但麻省理工学院的研究人员已经...",
+                  "summaryEn": "Let's say you're designing a switch that must change color when a user activates it. You'd typically think of integrating an LED. But researchers at MIT have d…"
+                },
                 {
                   "title": "Core77 Weekly Roundup (8-31-26 to 9-4-26)",
                   "url": "https://www.core77.com/posts/145213/Core77-Weekly-Roundup-8-31-26-to-9-4-26",
@@ -3489,19 +3502,6 @@ window.DIGEST_DATA = {
                   "titleEn": "Studio Gorm Designs a Better Doorstop",
                   "summaryZh": "使用楔子作为门塞似乎是一个完美的解决方案，并且它可能已经存在了几个世纪，无论是哪种材料。因为对象是你...",
                   "summaryEn": "Using a wedge as a door stopper seems like a perfect solution, and it's probably been around for centuries, in one material or another. Because the object is u…"
-                },
-                {
-                  "title": "Which Folding Bicycle Design has the Best UX?",
-                  "url": "https://www.core77.com/posts/145246/Which-Folding-Bicycle-Design-has-the-Best-UX",
-                  "summary": "In addition to the well-known Brompton, there's been a bunch of innovation happening in the folding bicycle space. These have varying degrees of folding diffic…",
-                  "published": "2026-09-02T22:00:00+08:00",
-                  "ts": 1788357600,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "哪种折叠自行车设计具有最佳用户体验？",
-                  "titleEn": "Which Folding Bicycle Design has the Best UX?",
-                  "summaryZh": "除了众所周知的 Brompton 之外，折叠自行车领域也出现了许多创新。这些具有不同程度的折叠困难……",
-                  "summaryEn": "In addition to the well-known Brompton, there's been a bunch of innovation happening in the folding bicycle space. These have varying degrees of folding diffic…"
                 }
               ]
             },
@@ -3514,6 +3514,32 @@ window.DIGEST_DATA = {
               "ok": true,
               "error": null,
               "items": [
+                {
+                  "title": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper",
+                  "url": "https://www.yankodesign.com/2026/09/08/an-android-drawing-tablet-with-127-layers-that-still-feels-like-paper/?utm_source=rss&utm_medium=rss&utm_campaign=an-android-drawing-tablet-with-127-layers-that-still-feels-like-paper",
+                  "summary": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper Most Android drawing tablets make you choose between a screen that feels like paper and h…",
+                  "published": "2026-09-08T21:20:51+08:00",
+                  "ts": 1788873651,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "一款 127 层的 Android 绘图板，感觉仍然像纸一样",
+                  "titleEn": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper",
+                  "summaryZh": "具有 127 层的 Android 绘图板，感觉仍然像纸大多数 Android 绘图板让您在感觉像纸的屏幕和 h…",
+                  "summaryEn": "An Android Drawing Tablet With 127 Layers That Still Feels Like Paper Most Android drawing tablets make you choose between a screen that feels like paper and h…"
+                },
+                {
+                  "title": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys)",
+                  "url": "https://www.yankodesign.com/2026/09/08/the-5-home-upgrades-every-pet-parent-actually-uses-not-just-buys/?utm_source=rss&utm_medium=rss&utm_campaign=the-5-home-upgrades-every-pet-parent-actually-uses-not-just-buys",
+                  "summary": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys) Pet furniture & products have operated under a different standard than everything else in th…",
+                  "published": "2026-09-08T19:40:13+08:00",
+                  "ts": 1788867613,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "每个宠物父母实际使用（不仅仅是购买）的 5 种房屋升级",
+                  "titleEn": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys)",
+                  "summaryZh": "每个宠物父母实际使用（不仅仅是购买）的 5 种家居升级 宠物家具和产品的运行标准与世界上其他所有东西都不同……",
+                  "summaryEn": "The 5 Home Upgrades Every Pet Parent Actually Uses (Not Just Buys) Pet furniture & products have operated under a different standard than everything else in th…"
+                },
                 {
                   "title": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung?",
                   "url": "https://www.yankodesign.com/2026/09/08/xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung/?utm_source=rss&utm_medium=rss&utm_campaign=xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung",
@@ -3591,32 +3617,6 @@ window.DIGEST_DATA = {
                   "titleEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem",
                   "summaryZh": "Nike 售价 220 美元的 Air Liquid Max 终于解决了舒适度问题 Nike Air Max 运动鞋花了四十年的时间赢得了有关风格的争论，但又因……而输掉了争论。",
                   "summaryEn": "Nike’s $220 Air Liquid Max Finally Fixes the Comfort Problem Nike Air Max sneakers have spent four decades winning arguments about style and losing them about…"
-                },
-                {
-                  "title": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again",
-                  "url": "https://www.yankodesign.com/2026/09/07/4-new-aeg-launches-that-are-betting-you-never-want-to-babysit-an-appliance-again/?utm_source=rss&utm_medium=rss&utm_campaign=4-new-aeg-launches-that-are-betting-you-never-want-to-babysit-an-appliance-again",
-                  "summary": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again How we think about home appliances is shifting, and AEG leaned into it at IFA…",
-                  "published": "2026-09-08T04:30:14+08:00",
-                  "ts": 1788813014,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "AEG 推出的 4 款新产品让您再也不想照顾电器",
-                  "titleEn": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again",
-                  "summaryZh": "AEG 推出的 4 款新产品让您再也不想照顾电器 我们对家用电器的看法正在发生转变，AEG 在 IFA 上对此进行了深入研究……",
-                  "summaryEn": "4 New AEG Launches That Are Betting You Never Want to Babysit an Appliance Again How we think about home appliances is shifting, and AEG leaned into it at IFA…"
-                },
-                {
-                  "title": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait",
-                  "url": "https://www.yankodesign.com/2026/09/07/with-super-sauna-hotels-finally-get-a-sauna-without-the-construction-wait/?utm_source=rss&utm_medium=rss&utm_campaign=with-super-sauna-hotels-finally-get-a-sauna-without-the-construction-wait",
-                  "summary": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait I’ve stayed at enough hotels chasing a “wellness experience” to know the disappointm…",
-                  "published": "2026-09-08T03:15:16+08:00",
-                  "ts": 1788808516,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "有了超级桑拿房，酒店终于不用等待施工就能拥有桑拿房",
-                  "titleEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait",
-                  "summaryZh": "有了超级桑拿，酒店终于可以享受桑拿了，无需等待施工。我住过足够多的酒店，追求“健康体验”，知道令人失望的……",
-                  "summaryEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait I’ve stayed at enough hotels chasing a “wellness experience” to know the disappointm…"
                 }
               ]
             },
@@ -4555,13 +4555,13 @@ window.DIGEST_DATA = {
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 9% · Fading",
+    "moonLine": "Glossy 8% · Fading",
     "blessing": "The moon has only a thin curve left, wanting to be seen and praised. Venus can be seen in the west, so keep a steady rhythm and remember to take a breath.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 9%, the age is about 27 days, and it is gradually losing weight."
+        "caption": "The bright side is about 8%, the age is about 27 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -4573,11 +4573,11 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Moon accompanying Jupiter",
-        "caption": "The moon is close to Jupiter, about 5 degrees away."
+        "caption": "The Moon is close to Jupiter, about 1 degree away."
       },
       {
         "title": "Jupiter is visible in the eastern sky",
-        "caption": "About 30 degrees from the sun, look for it in the eastern sky before dawn."
+        "caption": "About 31 degrees from the sun, look for it in the eastern sky before dawn."
       },
       {
         "title": "Saturn is visible in the eastern sky",
@@ -4600,7 +4600,7 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Moon",
-        "label": "Leo 10°",
+        "label": "Leo 14°",
         "influence": "If the Moon is in Leo, your mood is bright and confident, and you should express yourself and be seen."
       },
       {
@@ -4621,20 +4621,28 @@ window.DIGEST_DATA = {
     ],
     "aspects": [
       {
+        "a": "Moon",
+        "b": "Saturn",
+        "aspect": "Trine",
+        "tone": "easy",
+        "influence": "The moon trines Saturn, and emotions can advance smoothly through the power of responsibility.",
+        "endsIn": "约 9 小时后结束"
+      },
+      {
+        "a": "Moon",
+        "b": "Jupiter",
+        "aspect": "Conjunction",
+        "tone": "blend",
+        "influence": "The Moon conjunct Jupiter, emotions and opportunities overlap, and themes are amplified.",
+        "endsIn": "约 17 小时后结束"
+      },
+      {
         "a": "Sun",
         "b": "Mars",
         "aspect": "Sextile",
         "tone": "easy",
         "influence": "The Sun is sextile to Mars, and there is a chance for self and action to connect, just make a little move.",
         "endsIn": "约 2 周后结束"
-      },
-      {
-        "a": "Moon",
-        "b": "Saturn",
-        "aspect": "Trine",
-        "tone": "easy",
-        "influence": "The moon trines Saturn, and emotions can advance smoothly through the power of responsibility.",
-        "endsIn": "约 15 小时后结束"
       },
       {
         "a": "Venus",
@@ -4645,14 +4653,6 @@ window.DIGEST_DATA = {
         "endsIn": "约 8 周后结束"
       },
       {
-        "a": "Moon",
-        "b": "Jupiter",
-        "aspect": "Conjunction",
-        "tone": "blend",
-        "influence": "The Moon conjunct Jupiter, emotions and opportunities overlap, and themes are amplified.",
-        "endsIn": "约 23 小时后结束"
-      },
-      {
         "a": "Mars",
         "b": "Saturn",
         "aspect": "Square",
@@ -4661,12 +4661,12 @@ window.DIGEST_DATA = {
         "endsIn": "ends in about 2 days"
       },
       {
-        "a": "Moon",
-        "b": "Pluto",
+        "a": "Mercury",
+        "b": "Neptune",
         "aspect": "Opposition",
         "tone": "tense",
-        "influence": "The moon opposes Pluto, and emotions and transformations are pulled together, so you need to find a middle point.",
-        "endsIn": "约 2 小时后结束"
+        "influence": "Mercury opposes Neptune, communication and intuition are at odds, and you need to find a middle point.",
+        "endsIn": "ends in about 9 days"
       }
     ],
     "influence": {
