@@ -1,7 +1,7 @@
 window.DIGEST_DATA = {
   "date": "2026-09-08",
   "weekday": "星期二",
-  "fetchedAt": "2026-09-08 13:53",
+  "fetchedAt": "2026-09-08 15:42",
   "freshHours": 36,
   "sections": [
     {
@@ -1999,6 +1999,19 @@ window.DIGEST_DATA = {
           "error": null,
           "items": [
             {
+              "title": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung?",
+              "url": "https://www.yankodesign.com/2026/09/08/xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung/?utm_source=rss&utm_medium=rss&utm_campaign=xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung",
+              "summary": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung? Xiaomi has chosen an interesting moment to return to foldables. The company has not releas…",
+              "published": "2026-09-08T15:40:41+08:00",
+              "ts": 1788853241,
+              "kind": "newsletter",
+              "durationMin": 0,
+              "titleZh": "小米18 Fold上手：先于苹果，能打败三星吗？",
+              "titleEn": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung?",
+              "summaryZh": "小米18 Fold上手：先于苹果，能打败三星吗？小米选择了一个有趣的时刻回归可折叠产品。该公司尚未发布...",
+              "summaryEn": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung? Xiaomi has chosen an interesting moment to return to foldables. The company has not releas…"
+            },
+            {
               "title": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab",
               "url": "https://www.yankodesign.com/2026/09/07/infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab/?utm_source=rss&utm_medium=rss&utm_campaign=infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab",
               "summary": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab Every serious maker has hit the same wall at some point. You…",
@@ -2088,19 +2101,6 @@ window.DIGEST_DATA = {
               "titleEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait",
               "summaryZh": "有了超级桑拿，酒店终于可以享受桑拿了，无需等待施工。我住过足够多的酒店，追求“健康体验”，知道令人失望的……",
               "summaryEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait I’ve stayed at enough hotels chasing a “wellness experience” to know the disappointm…"
-            },
-            {
-              "title": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again",
-              "url": "https://www.yankodesign.com/2026/09/07/this-japanese-bottle-opener-catches-the-cap-so-you-never-chase-it-again/?utm_source=rss&utm_medium=rss&utm_campaign=this-japanese-bottle-opener-catches-the-cap-so-you-never-chase-it-again",
-              "summary": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again When you come home after a long, hectic day, sometimes all you want to do is sink into…",
-              "published": "2026-09-08T01:20:18+08:00",
-              "ts": 1788801618,
-              "kind": "newsletter",
-              "durationMin": 0,
-              "titleZh": "这款日本开瓶器可以抓住瓶盖，这样你就再也不用追它了",
-              "titleEn": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again",
-              "summaryZh": "这款日本开瓶器可以抓住瓶盖，这样您就再也不用追逐它当您经过漫长而忙碌的一天回到家时，有时您想做的就是陷入……",
-              "summaryEn": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again When you come home after a long, hectic day, sometimes all you want to do is sink into…"
             }
           ]
         },
@@ -3515,6 +3515,19 @@ window.DIGEST_DATA = {
               "error": null,
               "items": [
                 {
+                  "title": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung?",
+                  "url": "https://www.yankodesign.com/2026/09/08/xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung/?utm_source=rss&utm_medium=rss&utm_campaign=xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung",
+                  "summary": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung? Xiaomi has chosen an interesting moment to return to foldables. The company has not releas…",
+                  "published": "2026-09-08T15:40:41+08:00",
+                  "ts": 1788853241,
+                  "kind": "newsletter",
+                  "durationMin": 0,
+                  "titleZh": "小米18 Fold上手：先于苹果，能打败三星吗？",
+                  "titleEn": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung?",
+                  "summaryZh": "小米18 Fold上手：先于苹果，能打败三星吗？小米选择了一个有趣的时刻回归可折叠产品。该公司尚未发布...",
+                  "summaryEn": "Xiaomi 18 Fold Hands-On: Got Here Before Apple, Can It Beat Samsung? Xiaomi has chosen an interesting moment to return to foldables. The company has not releas…"
+                },
+                {
                   "title": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab",
                   "url": "https://www.yankodesign.com/2026/09/07/infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab/?utm_source=rss&utm_medium=rss&utm_campaign=infimaker-k1-at-ifa-2026-the-5-axis-desktop-cnc-turning-any-creator-space-into-a-fabrication-lab",
                   "summary": "InfiMaker K1 at IFA 2026: The 5-Axis Desktop CNC Turning Any Creator Space Into A Fabrication Lab Every serious maker has hit the same wall at some point. You…",
@@ -3604,19 +3617,6 @@ window.DIGEST_DATA = {
                   "titleEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait",
                   "summaryZh": "有了超级桑拿，酒店终于可以享受桑拿了，无需等待施工。我住过足够多的酒店，追求“健康体验”，知道令人失望的……",
                   "summaryEn": "With Super Sauna, Hotels Finally Get a Sauna Without the Construction Wait I’ve stayed at enough hotels chasing a “wellness experience” to know the disappointm…"
-                },
-                {
-                  "title": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again",
-                  "url": "https://www.yankodesign.com/2026/09/07/this-japanese-bottle-opener-catches-the-cap-so-you-never-chase-it-again/?utm_source=rss&utm_medium=rss&utm_campaign=this-japanese-bottle-opener-catches-the-cap-so-you-never-chase-it-again",
-                  "summary": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again When you come home after a long, hectic day, sometimes all you want to do is sink into…",
-                  "published": "2026-09-08T01:20:18+08:00",
-                  "ts": 1788801618,
-                  "kind": "newsletter",
-                  "durationMin": 0,
-                  "titleZh": "这款日本开瓶器可以抓住瓶盖，这样你就再也不用追它了",
-                  "titleEn": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again",
-                  "summaryZh": "这款日本开瓶器可以抓住瓶盖，这样您就再也不用追逐它当您经过漫长而忙碌的一天回到家时，有时您想做的就是陷入……",
-                  "summaryEn": "This Japanese Bottle Opener Catches the Cap So You Never Chase It Again When you come home after a long, hectic day, sometimes all you want to do is sink into…"
                 }
               ]
             },
@@ -4555,13 +4555,13 @@ window.DIGEST_DATA = {
   },
   "astroEn": {
     "moonPhase": "Waning Crescent",
-    "moonLine": "Glossy 10% · Fading",
-    "blessing": "The moon has only a thin curve left, wanting to be seen and praised. The moon is next to Jupiter, and the sudden changes are quite smooth, so remember to take a breath.",
+    "moonLine": "Glossy 9% · Fading",
+    "blessing": "The moon has only a thin curve left, wanting to be seen and praised. Venus can be seen in the west, so keep a steady rhythm and remember to take a breath.",
     "advice": "When the moon is over, life will come. Go to bed early tonight to recuperate your energy.",
     "astronomy": [
       {
         "title": "waning moon",
-        "caption": "The bright side is about 10%, the age is about 26 days, and it is gradually losing weight."
+        "caption": "The bright side is about 9%, the age is about 27 days, and it is gradually losing weight."
       },
       {
         "title": "Venus is visible in the western sky",
@@ -4573,7 +4573,7 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Moon accompanying Jupiter",
-        "caption": "The Moon is close to Jupiter, about 7 degrees away."
+        "caption": "The moon is close to Jupiter, about 5 degrees away."
       },
       {
         "title": "Jupiter is visible in the eastern sky",
@@ -4581,7 +4581,7 @@ window.DIGEST_DATA = {
       },
       {
         "title": "Saturn is visible in the eastern sky",
-        "caption": "About 152 degrees from the sun, look for it in the eastern sky before dawn."
+        "caption": "About 153 degrees from the sun, look for it in the eastern sky before dawn."
       },
       {
         "title": "Saturn is retrograde",
@@ -4600,7 +4600,7 @@ window.DIGEST_DATA = {
       },
       {
         "name": "Moon",
-        "label": "Leo 9°",
+        "label": "Leo 10°",
         "influence": "If the Moon is in Leo, your mood is bright and confident, and you should express yourself and be seen."
       },
       {
@@ -4630,19 +4630,11 @@ window.DIGEST_DATA = {
       },
       {
         "a": "Moon",
-        "b": "Uranus",
-        "aspect": "Sextile",
-        "tone": "easy",
-        "influence": "The moon is sextile to Uranus, and emotions and variables have a chance to connect, just make a little movement.",
-        "endsIn": "约 3 小时后结束"
-      },
-      {
-        "a": "Moon",
         "b": "Saturn",
         "aspect": "Trine",
         "tone": "easy",
         "influence": "The moon trines Saturn, and emotions can advance smoothly through the power of responsibility.",
-        "endsIn": "约 18 小时后结束"
+        "endsIn": "约 15 小时后结束"
       },
       {
         "a": "Venus",
@@ -4651,6 +4643,14 @@ window.DIGEST_DATA = {
         "tone": "tense",
         "influence": "Venus squares Pluto, relationships and transformations are prone to awkwardness, so it’s better to slow down before making a decision.",
         "endsIn": "约 8 周后结束"
+      },
+      {
+        "a": "Moon",
+        "b": "Jupiter",
+        "aspect": "Conjunction",
+        "tone": "blend",
+        "influence": "The Moon conjunct Jupiter, emotions and opportunities overlap, and themes are amplified.",
+        "endsIn": "约 23 小时后结束"
       },
       {
         "a": "Mars",
@@ -4662,10 +4662,10 @@ window.DIGEST_DATA = {
       },
       {
         "a": "Moon",
-        "b": "Neptune",
-        "aspect": "Trine",
-        "tone": "easy",
-        "influence": "The moon trines Neptune, and emotions can advance more smoothly through the power of intuition.",
+        "b": "Pluto",
+        "aspect": "Opposition",
+        "tone": "tense",
+        "influence": "The moon opposes Pluto, and emotions and transformations are pulled together, so you need to find a middle point.",
         "endsIn": "约 2 小时后结束"
       }
     ],
