@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>每日精选</title>
-  <script src="stars-data.js?v=20260907223719"></script>
-  <script src="digest-data.js?v=20260907223719"></script>
+  <script src="stars-data.js?v=20260908135230"></script>
+  <script src="digest-data.js?v=20260908135230"></script>
   <!-- 版式源码：digest.css；结构：本文件；交互：digest-ui.js -->
-  <link rel="stylesheet" href="digest.css?v=20260907223719" />
+  <link rel="stylesheet" href="digest.css?v=20260908135230" />
 </head>
 <body>
   <header class="topbar">
@@ -96,12 +96,27 @@
       <div class="feed-grid cols-4" id="feeds-ai"></div>
     </section>
     <section class="block" id="work">
-      <div class="sec-head"><h2 data-i18n="navWork">工作</h2><p data-i18n="workLead">宏观现场、利率与信用</p></div>
-      <div class="feed-grid" id="feeds-work"></div>
+      <div class="sec-head"><h2 data-i18n="navWork">工作</h2><p data-i18n="workLead">全球宏观、金融软件、产品设计、央行与政策</p></div>
+      <div class="work-group">
+        <p class="subk" data-i18n="workMacro">全球宏观</p>
+        <div class="feed-grid" id="feeds-work-macro"></div>
+      </div>
+      <div class="work-group">
+        <p class="subk" data-i18n="workFinsoft">金融软件</p>
+        <div class="feed-grid" id="feeds-work-finsoft"></div>
+      </div>
+      <div class="work-group">
+        <p class="subk" data-i18n="workDesign">产品设计</p>
+        <div class="feed-grid" id="feeds-work-design"></div>
+      </div>
+      <div class="work-group">
+        <p class="subk" data-i18n="workPolicy">央行与政策</p>
+        <div class="feed-grid cols-4" id="feeds-work-policy"></div>
+      </div>
     </section>
     <footer class="note" id="foot-note"></footer>
   </div>
-  <script src="digest-ui.js?v=20260907223719"></script>
+  <script src="digest-ui.js?v=20260908135230"></script>
   <script src="sky-refresh.js?v=202609011733"></script>
 </body>
 </html>
