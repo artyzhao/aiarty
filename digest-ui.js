@@ -11,7 +11,11 @@
       astroLead: "当日天文学 / 占星学星象，及订阅栏目",
       investLead: "长期资金、周期与个人理财",
       aiLead: "研究访谈、工程现场与中国观察",
-      workLead: "宏观现场、利率与信用",
+      workLead: "全球宏观、金融软件、产品设计、央行与政策",
+      workMacro: "全球宏观",
+      workFinsoft: "金融软件",
+      workDesign: "产品设计",
+      workPolicy: "央行与政策",
       astroSky: "天文学 · 今夜可见",
       signs: "占星 · 日月金水火星座",
       aspects: "主要相位与影响",
@@ -64,7 +68,11 @@
       astroLead: "Today's sky, aspects, and subscribed shows",
       investLead: "Long-term capital, cycles, and personal finance",
       aiLead: "Research interviews, engineering, and China",
-      workLead: "Markets, rates, and the real economy",
+      workLead: "Global macro, financial software, product design, central banks and policy",
+      workMacro: "Global Macro",
+      workFinsoft: "Financial Software",
+      workDesign: "Product Design",
+      workPolicy: "Central Banks & Policy",
       astroSky: "Astronomy · Visible tonight",
       signs: "Signs · Sun, Moon, Mercury, Venus, Mars",
       aspects: "Key aspects and effects",
@@ -192,11 +200,11 @@
   }
   function itemTitle(item) {
     if (lang === "zh") return item.titleZh || item.title || "";
-    return item.title || item.titleZh || "";
+    return item.titleEn || item.title || item.titleZh || "";
   }
   function itemSummary(item) {
     if (lang === "zh") return item.summaryZh || item.summary || "";
-    return item.summary || item.summaryZh || "";
+    return item.summaryEn || item.summary || item.summaryZh || "";
   }
   function secName(sec) {
     if (lang === "en") return sec.nameEn || sec.name || "";
@@ -207,21 +215,30 @@
     if (!el) return;
     var k = Math.max(0, Math.min(1, Number(frac) || 0));
     var r = 28, cx = 32, cy = 32;
-    var uid = "m" + Math.random().toString(36).slice(2, 8);
-    var svg = '<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs>';
-    svg += '<clipPath id="' + uid + 'clip"><circle cx="' + cx + '" cy="' + cy + '" r="' + r + '"/></clipPath></defs>';
-    var lit = "#d8d8d8", dark = "#2a2a2a", clip = "url(#" + uid + "clip)";
-    if (k < 0.02) svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + dark + '"/>';
-    else if (k > 0.98) svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + lit + '"/>';
-    else {
-      var offset = (2 * k - 1) * r;
-      if (!waxing) offset = -offset;
-      if (k >= 0.5) {
+    var wax = waxing !== false;
+    var svg = '<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">';
+    var lit = "#d8d8d8", dark = "#2a2a2a";
+    svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + dark + '"/>';
+    if (k > 0.02) {
+      if (k > 0.98) {
         svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + lit + '"/>';
-        svg += '<g clip-path="' + clip + '"><circle cx="' + (cx - offset) + '" cy="' + cy + '" r="' + r + '" fill="' + dark + '"/></g>';
       } else {
-        svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + dark + '"/>';
-        svg += '<g clip-path="' + clip + '"><circle cx="' + (cx + offset) + '" cy="' + cy + '" r="' + r + '" fill="' + lit + '"/></g>';
+        var rx = Math.abs(2 * k - 1) * r;
+        var top = cx + "," + (cy - r);
+        var bot = cx + "," + (cy + r);
+        var sweepRim = wax ? 1 : 0;
+        var path;
+        if (rx < 0.8) {
+          path = "M" + top + " A" + r + "," + r + " 0 0 " + sweepRim + " " + bot + " Z";
+        } else if (k >= 0.5) {
+          var sweepTerm = wax ? 0 : 1;
+          path = "M" + top + " A" + r + "," + r + " 0 0 " + sweepRim + " " + bot +
+            " A" + rx.toFixed(2) + "," + r + " 0 0 " + sweepTerm + " " + top + " Z";
+        } else {
+          path = "M" + top + " A" + r + "," + r + " 0 0 " + sweepRim + " " + bot +
+            " A" + rx.toFixed(2) + "," + r + " 0 0 " + sweepRim + " " + top + " Z";
+        }
+        svg += '<path d="' + path + '" fill="' + lit + '"/>';
       }
     }
     svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none" stroke="#111" stroke-width="1.2"/></svg>';
@@ -383,7 +400,8 @@
     var col = document.createElement("article");
     col.className = "feed-col";
     var h = document.createElement("h3");
-    h.innerHTML = '<a href="' + esc(feed.home) + '" target="_blank" rel="noopener">' + esc(feed.name) + "</a>";
+    var fname = lang === "en" ? (feed.nameEn || feed.name) : feed.name;
+    h.innerHTML = '<a href="' + esc(feed.home) + '" target="_blank" rel="noopener">' + esc(fname) + "</a>";
     col.appendChild(h);
     var k = document.createElement("p");
     k.className = "feed-kind";
@@ -419,10 +437,27 @@
     return col;
   }
 
+  function feedHost(sec, group) {
+    if (group) return document.getElementById("feeds-" + sec.id + "-" + group.id);
+    return document.getElementById("feeds-" + sec.id);
+  }
+
+  function collectFresh(sec, feed, fresh, freshHours) {
+    (feed.items || []).forEach(function (item) {
+      if (isFresh(item.ts, freshHours)) {
+        fresh.push({
+          name: secName(sec),
+          title: itemTitle(item),
+          url: item.url,
+          ts: item.ts
+        });
+      }
+    });
+  }
+
   function renderFeeds() {
-    ["astrology", "invest", "ai", "work"].forEach(function (id) {
-      var host = document.getElementById("feeds-" + id);
-      if (host) host.innerHTML = "";
+    document.querySelectorAll("[id^='feeds-']").forEach(function (host) {
+      host.innerHTML = "";
     });
     var list = document.getElementById("fresh-list");
     list.innerHTML = "";
@@ -435,19 +470,13 @@
     var freshHours = digest.freshHours || 36;
     var fresh = [];
     digest.sections.forEach(function (sec) {
-      var host = document.getElementById("feeds-" + sec.id);
-      if (!host) return;
-      (sec.feeds || []).forEach(function (feed) {
-        host.appendChild(renderFeed(feed));
-        (feed.items || []).forEach(function (item) {
-          if (isFresh(item.ts, freshHours)) {
-            fresh.push({
-              name: secName(sec),
-              title: itemTitle(item),
-              url: item.url,
-              ts: item.ts
-            });
-          }
+      var groups = sec.groups && sec.groups.length ? sec.groups : [{ id: "", feeds: sec.feeds || [] }];
+      groups.forEach(function (group) {
+        var host = feedHost(sec, group.id ? group : null);
+        if (!host) return;
+        (group.feeds || []).forEach(function (feed) {
+          host.appendChild(renderFeed(feed));
+          collectFresh(sec, feed, fresh, freshHours);
         });
       });
     });
