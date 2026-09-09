@@ -637,11 +637,20 @@
     if (!next) return prev;
     if (!prev) return next;
     var old = {};
-    (prev.sections || []).forEach(function (sec) {
-      (sec.feeds || []).forEach(function (f) { old[f.id] = f; });
-    });
+    function indexFeeds(sec) {
+      var groups = sec.groups && sec.groups.length ? sec.groups : null;
+      var feeds = groups
+        ? groups.reduce(function (acc, g) { return acc.concat(g.feeds || []); }, [])
+        : (sec.feeds || []);
+      feeds.forEach(function (f) { if (f && f.id) old[f.id] = f; });
+    }
+    (prev.sections || []).forEach(indexFeeds);
     (next.sections || []).forEach(function (sec) {
-      (sec.feeds || []).forEach(function (f) {
+      var groups = sec.groups && sec.groups.length ? sec.groups : null;
+      var feeds = groups
+        ? groups.reduce(function (acc, g) { return acc.concat(g.feeds || []); }, [])
+        : (sec.feeds || []);
+      feeds.forEach(function (f) {
         var prevFeed = old[f.id];
         if ((!f.items || !f.items.length) && prevFeed && prevFeed.items && prevFeed.items.length) {
           f.items = prevFeed.items;
@@ -655,7 +664,14 @@
     return next;
   }
 
+  function isLocalPreview() {
+    var h = location.hostname;
+    return h === "127.0.0.1" || h === "localhost";
+  }
+
   function liveRefresh() {
+    // GitHub Pages has no /api/digest; skip re-download of the same large data files.
+    if (!isLocalPreview()) return;
     setLive("", t("updating"));
     fetch("/api/digest?t=" + Date.now(), { cache: "no-store" })
       .then(function (res) {
