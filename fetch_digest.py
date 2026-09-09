@@ -31,7 +31,8 @@ try:
     SSL_CTX_TLS12.maximum_version = ssl.TLSVersion.TLSv1_2
 except Exception:
     SSL_CTX_TLS12 = SSL_CTX
-ITEM_LIMIT = 8
+ITEM_LIMIT = 5
+SUMMARY_LIMIT = 100
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -279,12 +280,25 @@ SECTIONS = [
 
 
 def section_feeds(sec: dict) -> list[dict]:
+    """Flatten feed specs from SECTIONS (config) or built section rows."""
     if sec.get("groups"):
         out: list[dict] = []
         for group in sec["groups"]:
             out.extend(group.get("feeds") or [])
         return out
     return list(sec.get("feeds") or [])
+
+
+def iter_built_feeds(sec: dict):
+    """Yield feed result dicts from a built section (prefer groups, no double-count)."""
+    groups = sec.get("groups") or []
+    if groups:
+        for group in groups:
+            for feed in group.get("feeds") or []:
+                yield feed
+        return
+    for feed in sec.get("feeds") or []:
+        yield feed
 
 
 class _TextExtractor(HTMLParser):
@@ -316,7 +330,9 @@ def local_name(tag: str) -> str:
     return tag.split("}", 1)[-1] if "}" in tag else tag
 
 
-def strip_html(raw: str, limit: int = 160) -> str:
+def strip_html(raw: str, limit: int | None = None) -> str:
+    if limit is None:
+        limit = SUMMARY_LIMIT
     if not raw:
         return ""
     parser = _TextExtractor()
@@ -835,6 +851,34 @@ def ends_in_en(text: str) -> str:
     return text
 
 
+def slim_item(item: dict) -> None:
+    title = item.get("title") or ""
+    summary = item.get("summary") or ""
+    if item.get("titleEn") == title:
+        item.pop("titleEn", None)
+    if item.get("titleZh") == title:
+        item.pop("titleZh", None)
+    if item.get("summaryEn") == summary:
+        item.pop("summaryEn", None)
+    if item.get("summaryZh") == summary:
+        item.pop("summaryZh", None)
+    if not summary:
+        item.pop("summary", None)
+        item.pop("summaryZh", None)
+        item.pop("summaryEn", None)
+    if not item.get("durationMin"):
+        item.pop("durationMin", None)
+    if not item.get("published"):
+        item.pop("published", None)
+
+
+def slim_feed(feed: dict) -> None:
+    if feed.get("error") is None:
+        feed.pop("error", None)
+    if feed.get("nameEn") == feed.get("name"):
+        feed.pop("nameEn", None)
+
+
 def attach_translations(data: dict) -> dict:
     cache = load_tr_cache()
     jobs: list[tuple[str, str, str]] = []
@@ -851,7 +895,7 @@ def attach_translations(data: dict) -> dict:
         jobs.append((src, sl, tl))
 
     for sec in data.get("sections") or []:
-        for feed in sec.get("feeds") or []:
+        for feed in iter_built_feeds(sec):
             for item in feed.get("items") or []:
                 title = item.get("title") or ""
                 summary = item.get("summary") or ""
@@ -901,7 +945,7 @@ def attach_translations(data: dict) -> dict:
                 print(f"  translated {done}/{len(jobs)}", flush=True)
 
     for sec in data.get("sections") or []:
-        for feed in sec.get("feeds") or []:
+        for feed in iter_built_feeds(sec):
             for item in feed.get("items") or []:
                 title = item.get("title") or ""
                 summary = item.get("summary") or ""
@@ -917,6 +961,8 @@ def attach_translations(data: dict) -> dict:
                 else:
                     item["summaryZh"] = translate_text(summary, "en", "zh-CN", cache) if summary else ""
                     item["summaryEn"] = summary
+                slim_item(item)
+            slim_feed(feed)
 
     astro_en = {
         "moonPhase": MOON_EN.get(stars.get("moonPhase") or "", stars.get("moonPhase") or ""),
@@ -972,7 +1018,7 @@ def load_saved_digest() -> dict:
     if not path.exists():
         return {}
     text = path.read_text(encoding="utf-8")
-    match = re.match(r"window\.DIGEST_DATA = (.*);\s*$", text, re.S)
+    match = re.match(r"window\.DIGEST_DATA\s*=\s*(.*);\s*$", text, re.S)
     if not match:
         return {}
     try:
@@ -985,12 +1031,12 @@ def load_saved_digest() -> dict:
 def keep_previous_items(sections: list[dict], saved: dict) -> list[dict]:
     prev = {}
     for sec in saved.get("sections") or []:
-        for feed in sec.get("feeds") or []:
+        for feed in iter_built_feeds(sec):
             fid = feed.get("id")
             if fid:
                 prev[fid] = feed
     for sec in sections:
-        for feed in sec.get("feeds") or []:
+        for feed in iter_built_feeds(sec):
             old = prev.get(feed.get("id"))
             if feed.get("items"):
                 continue
@@ -1032,7 +1078,6 @@ def build() -> dict:
     for sec in SECTIONS:
         if sec.get("groups"):
             groups = []
-            feeds: list[dict] = []
             for group in sec["groups"]:
                 gfeeds = [results[f["id"]] for f in group["feeds"]]
                 groups.append(
@@ -1043,19 +1088,22 @@ def build() -> dict:
                         "feeds": gfeeds,
                     }
                 )
-                feeds.extend(gfeeds)
+            # groups only — avoid duplicating the same feeds under feeds[]
+            row = {
+                "id": sec["id"],
+                "name": sec["name"],
+                "nameEn": sec.get("nameEn") or sec["name"],
+                "kicker": sec["kicker"],
+                "groups": groups,
+            }
         else:
-            groups = []
-            feeds = [results[f["id"]] for f in sec["feeds"]]
-        row = {
-            "id": sec["id"],
-            "name": sec["name"],
-            "nameEn": sec.get("nameEn") or sec["name"],
-            "kicker": sec["kicker"],
-            "feeds": feeds,
-        }
-        if groups:
-            row["groups"] = groups
+            row = {
+                "id": sec["id"],
+                "name": sec["name"],
+                "nameEn": sec.get("nameEn") or sec["name"],
+                "kicker": sec["kicker"],
+                "feeds": [results[f["id"]] for f in sec["feeds"]],
+            }
         sections.append(row)
     from digest_nativity import build_nativity
 
@@ -1078,7 +1126,9 @@ def build() -> dict:
 def write_digest(data: dict, stamp_html: bool = True) -> Path:
     js_path = ROOT / "digest-data.js"
     js_path.write_text(
-        "window.DIGEST_DATA = " + json.dumps(data, ensure_ascii=False, indent=2) + ";\n",
+        "window.DIGEST_DATA="
+        + json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+        + ";\n",
         encoding="utf-8",
     )
     if stamp_html:
