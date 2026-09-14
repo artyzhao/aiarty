@@ -16,6 +16,7 @@
       historyLead: "1950–1980 中国、美国、日本、东南亚、欧洲同期对照",
       historySlice: "今日切片",
       historyTimeline: "同期时间线",
+      historyChina: "中国近现代史",
       historyEmpty: "本日切片暂无事件",
       workMacro: "全球宏观",
       workFinsoft: "金融软件",
@@ -78,6 +79,7 @@
       historyLead: "1950–1980 same-period view: China, U.S., Japan, Southeast Asia, Europe",
       historySlice: "Today's slice",
       historyTimeline: "Same-period timeline",
+      historyChina: "Modern China",
       historyEmpty: "No events in today's slice",
       workMacro: "Global Macro",
       workFinsoft: "Financial Software",
@@ -565,6 +567,21 @@
         '<span class="ttl">' + esc(title) + "</span>";
       line.appendChild(row);
     });
+    var cnTitle = document.getElementById("hist-cn-title");
+    var cnEra = document.getElementById("hist-cn-era");
+    var cnBody = document.getElementById("hist-cn-body");
+    if (cnTitle && cnEra && cnBody) {
+      var essay = hist.chinaEssay || {};
+      cnTitle.textContent = lang === "en" ? (essay.titleEn || essay.title || "—") : (essay.title || "—");
+      cnEra.textContent = lang === "en" ? (essay.eraEn || essay.era || "") : (essay.era || "");
+      cnBody.innerHTML = "";
+      var paras = lang === "en" ? (essay.parasEn || essay.paras || []) : (essay.paras || []);
+      paras.forEach(function (p) {
+        var el = document.createElement("p");
+        el.textContent = p;
+        cnBody.appendChild(el);
+      });
+    }
   }
 
   function renderNativity() {
