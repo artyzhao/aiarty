@@ -414,10 +414,78 @@
     .nat-findings li { margin: 0 0 8px; }
     .nat-source { margin: 0 0 8px; font-size: 12px; color: var(--muted); line-height: 1.5; }
     .nat-source a { color: inherit; }
+    .hist-head { margin: 0 0 16px; }
+    .hist-head h3 {
+      margin: 0 0 6px;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .hist-note { margin: 0; font-size: 13px; color: var(--muted); }
+    .hist-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--line);
+    }
+    .hist-col {
+      padding: 12px 14px 8px 0;
+      border-right: 1px solid var(--line);
+    }
+    .hist-col:last-child { border-right: none; padding-right: 0; }
+    .hist-col + .hist-col { padding-left: 14px; }
+    .hist-col h3 {
+      margin: 0 0 10px;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+    .hist-item {
+      padding: 10px 0;
+      border-top: 1px solid var(--line);
+    }
+    .hist-item .meta {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .hist-item .ttl {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 4px;
+    }
+    .hist-item .sum {
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .hist-timeline { border-top: 1px solid var(--line); }
+    .hist-row {
+      display: grid;
+      grid-template-columns: 120px 72px 1fr;
+      gap: 10px;
+      align-items: baseline;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .hist-row .when { font-size: 12px; color: var(--muted); }
+    .hist-row .tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .hist-row .ttl { font-size: 14px; font-weight: 700; }
     @media (max-width: 980px) {
-      .feed-grid, .feed-grid.cols-4, .sky-facts {
+      .feed-grid, .feed-grid.cols-4, .sky-facts, .hist-grid {
         grid-template-columns: 1fr 1fr;
       }
+      .hist-col:nth-child(2n) { border-right: none; }
+      .hist-row { grid-template-columns: 100px 64px 1fr; }
       .feed-grid.cols-4 .feed-col:nth-child(2n) { border-right: none; }
       .sky-facts .card:nth-child(3) {
         grid-column: 1 / -1;
@@ -432,15 +500,17 @@
       .top-right { width: 100%; justify-content: space-between; padding: 6px 0 10px; }
       .nav { width: 100%; overflow-x: auto; }
       .nav a { padding: 10px 12px 12px 0; border-left: none; }
-      .feed-grid, .feed-grid.cols-4, .sky-facts, .fresh-row, .moon-band {
+      .feed-grid, .feed-grid.cols-4, .sky-facts, .fresh-row, .moon-band, .hist-grid {
         grid-template-columns: 1fr;
       }
-      .feed-col, .feed-col + .feed-col, .sky-facts .card + .card, .sky-facts .card:nth-child(3) {
+      .feed-col, .feed-col + .feed-col, .sky-facts .card + .card, .sky-facts .card:nth-child(3),
+      .hist-col, .hist-col + .hist-col {
         border: none;
         border-bottom: 1px solid var(--line);
         padding: 0 0 16px;
         margin-bottom: 16px;
       }
+      .hist-row { grid-template-columns: 1fr; gap: 4px; }
       .page { padding: 16px 16px 56px; }
       .sec-head h2 { font-size: 22px; }
     }
