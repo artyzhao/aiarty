@@ -504,6 +504,155 @@ def _pick_for_region(events: list[dict], region: str, year: int, month: int, lim
     return picked
 
 
+def _china_essay(year: int, month: int, cn_events: list[dict]) -> dict:
+    """当日切片对应的中国近现代史专述：先交代近代脉络，再写本阶段具体进程。"""
+    eras = [
+        {
+            "lo": 1950, "hi": 1953,
+            "title": "建国初期：一边倒、土改与抗美援朝",
+            "titleEn": "Early PRC: alliance, land reform, Korea",
+            "era": "中国近现代史 · 1949年后的巩固阶段",
+            "eraEn": "Modern China · consolidation after 1949",
+            "paras": [
+                "近代中国自鸦片战争后陷入半殖民地半封建社会：条约口岸、赔款与法外特权不断加深，洋务运动未能改变国力结构。辛亥革命推翻帝制，但军阀割据与日本侵华使统一长期落空；抗日战争与解放战争之后，中华人民共和国于1949年成立，近代史的“救亡”命题转入如何在冷战夹缝中站稳脚跟。",
+                "1950年前后，新政权同时推进土地改革、镇压反革命与向苏联“一边倒”。朝鲜战争爆发后，志愿军入朝作战，把东北边境安全与国际承认问题绑在一起。战争直到1953年停战，国内则加速把乡村地主土地所有制改成农民个体所有，为国家工业化抽取剩余准备条件。",
+                "与时间线对照：此时美国在亚太搭同盟，欧洲谈煤钢联营，日本尚在占领体制尾声。中国选择站在社会主义阵营一侧，用热战与土改完成“站起来”的第一课——代价是与西方隔绝、财政军事负担加重，也使新中国第一次以大国身份进入东北亚均势。",
+            ],
+            "parasEn": [
+                "After the Opium War, China was forced into a semi-colonial order of ports, indemnities and extraterritoriality. The 1911 Revolution ended the monarchy but not fragmentation; war with Japan and then civil war delayed unity. The PRC’s founding in 1949 shifted the modern-history question from survival to holding ground in a Cold War world.",
+                "Around 1950 the new state combined land reform, political consolidation and a Soviet-leaning alliance. The Korean War tied border security to international recognition until the 1953 armistice. Land reform also created the rural surplus later used for industrialization.",
+                "On the same timeline the U.S. built Pacific alliances, Europe sketched the coal-steel community, and Japan was leaving occupation. China entered Northeast Asian balance as a socialist-camp power—at the cost of Western isolation and a heavy military burden.",
+            ],
+        },
+        {
+            "lo": 1954, "hi": 1957,
+            "title": "社会主义改造与八大前后",
+            "titleEn": "Socialist transformation and the Eighth Congress",
+            "era": "中国近现代史 · 从新民主主义转向社会主义",
+            "eraEn": "Modern China · from New Democracy to socialism",
+            "paras": [
+                "近代史留下的课题是：如何把一个被战争打烂的农业国变成有计划的工业国。1954年一届全国人大通过宪法，国家政治架构成型；农业合作化、手工业与资本主义工商业改造在数年内基本完成，城市里的公私合营改变了产权结构。",
+                "1956年中共八大判断国内主要矛盾已是先进工业国要求与落后农业国现实之间的矛盾，强调集体领导与经济建设。国际上，万隆会议让中国在亚非世界获得舞台，日内瓦会议则确认印度支那停火。整风随即转向反右，政治空气在1957年迅速收紧。",
+                "时间线上欧洲签《罗马条约》、苏联放卫星，东南亚去殖民。中国此阶段的关键，不是再打一场对外战争，而是用制度改造把近代以来“一盘散沙”的社会重新组织起来——也为随后的跃进准备了集中动员的管道。",
+            ],
+            "parasEn": [
+                "The modern-history task was to industrialize a war-torn agrarian country. The 1954 constitution set the state form; cooperativization and joint state-private ownership remade property in city and countryside.",
+                "The 1956 Eighth Congress stressed economic construction; Bandung and Geneva raised China’s Afro-Asian profile. The 1957 Anti-Rightist turn then tightened politics.",
+                "While Europe signed the Treaties of Rome and the USSR launched Sputnik, China reorganized a fragmented society—creating the mobilization channels later used in the Great Leap.",
+            ],
+        },
+        {
+            "lo": 1958, "hi": 1961,
+            "title": "大跃进、人民公社与严重困难",
+            "titleEn": "Great Leap, communes, and crisis",
+            "era": "中国近现代史 · 高速度工业化的挫折",
+            "eraEn": "Modern China · a failed sprint to industry",
+            "paras": [
+                "近代中国屡次想用“跃进”追上列强：洋务、维新、国民政府十年建设都受制于战争与分裂。1958年的大跃进把这一冲动推到极端——大炼钢铁、公共食堂、人民公社，试图在短时间内完成英国用百年走完的工业化。",
+                "高指标与浮夸风破坏了农业统计和分配，1959–1961年出现严重经济困难与人口损失。中苏关系也在此时裂痕扩大，援助和技术来源变得不确定。调整政策要到1961年才逐步收缩公社规模、恢复部分自留地。",
+                "对照时间线：美国进入太空竞赛，欧洲共同体运转，日本高速增长起步。中国这一页说明，近代史中的赶超焦虑一旦脱离物质约束，会把国家能力消耗在错误的速度上；此后调整，正是为了把工业化拉回可计算的轨道。",
+            ],
+            "parasEn": [
+                "Modern China repeatedly tried to leapfrog: Self-Strengthening, Reform, and Nanjing-decade construction all hit war and fragmentation. The 1958 Great Leap pushed that impulse to an extreme—steel campaigns, mess halls, people’s communes.",
+                "Inflated targets wrecked information and distribution; 1959–1961 brought severe hardship. The Sino-Soviet split also made aid uncertain. Only around 1961 did policy scale back communes and restore some private plots.",
+                "The U.S. raced in space, the EEC ran, Japan’s high growth began. This page of modern history shows how catch-up anxiety, unbound from material limits, can burn state capacity.",
+            ],
+        },
+        {
+            "lo": 1962, "hi": 1965,
+            "title": "调整、核试验与中苏交恶",
+            "titleEn": "Readjustment, the bomb, and the Sino-Soviet split",
+            "era": "中国近现代史 · 在两个超级大国之间寻路",
+            "eraEn": "Modern China · finding a path between superpowers",
+            "paras": [
+                "近代中国长期在列强均势中求生存。1960年代初，国民经济“调整、巩固、充实、提高”，工业与粮食生产缓慢恢复；同时中苏论战公开化，边境与意识形态双重紧张。1962年中印边境战争，又把西南边疆拉进地缘博弈。",
+                "1964年10月第一颗原子弹爆炸，近代以来“有国无防”的屈辱记忆被核威慑改写。对外，中国既批评美帝，也批评苏修，开始摸索一条不依附两大阵营的道路。对内则社会主义教育运动升温，为更大规模政治运动埋下线索。",
+                "时间线上越战升级、东盟成立、日韩接近。中国此时的近代史含义是：终于拥有了阻止外敌大规模入侵的终极手段，却仍未解决如何在和平条件下发展经济与治理社会的问题。",
+            ],
+            "parasEn": [
+                "In the early 1960s the economy was readjusted while the Sino-Soviet split went public. The 1962 border war with India pulled the southwest into geopolitics.",
+                "The October 1964 nuclear test recast a modern-history memory of defenselessness. Beijing criticized both Washington and Moscow, while the Socialist Education Movement heated domestic politics.",
+                "Vietnam escalated, ASEAN was founded, Japan and Korea drew closer. China now had an ultimate deterrent—but not yet a settled formula for peacetime growth and governance.",
+            ],
+        },
+        {
+            "lo": 1966, "hi": 1969,
+            "title": "文化大革命发动与社会动荡",
+            "titleEn": "The Cultural Revolution and social upheaval",
+            "era": "中国近现代史 · 以群众运动重塑政权",
+            "eraEn": "Modern China · remaking power through mass movement",
+            "paras": [
+                "近代中国的政治动员传统，从义和团、辛亥革命到土地革命，都习惯用群众运动打破旧秩序。1966年“五一六通知”后，文化大革命把这一传统推向党内：红卫兵冲击党政机构，学校停课，大批干部被打倒，国家日常治理严重受损。",
+                "1967–1968年各地夺权与武斗交织，军队介入“三支两军”。1969年中共九大把文革体制固定下来，同年珍宝岛冲突使中苏几乎走到战争边缘，对外战略被迫重新评估联美制苏的可能。",
+                "对照时间线：美国深陷越战与民权撕裂，欧洲有五月风暴与布拉格之春，日本学生运动高涨。中国这一段说明，近代史中“继续革命”若失去法治与生产约束，会把建国后刚刚织起的国家机器再次撕开。",
+            ],
+            "parasEn": [
+                "Mass mobilization runs through modern China. After May 1966 the Cultural Revolution turned that tradition inward: Red Guards, closed schools, fallen cadres, broken routine governance.",
+                "Power seizures and factional fighting in 1967–68 brought in the army. The 1969 Ninth Congress locked in the new order; the Zhenbao clash pushed Beijing to rethink a possible opening to the United States.",
+                "The U.S. was in Vietnam and civil-rights strife; Europe had May 1968 and Prague; Japan’s campuses erupted. “Continuous revolution,” unconstrained, tore at the state just rebuilt after 1949.",
+            ],
+        },
+        {
+            "lo": 1970, "hi": 1976,
+            "title": "从解冻外交到文革结束",
+            "titleEn": "Diplomatic thaw and the end of the Cultural Revolution",
+            "era": "中国近现代史 · 打开国门的前夜",
+            "eraEn": "Modern China · on the eve of opening",
+            "paras": [
+                "近代中国的外交长期在“以夷制夷”与闭关之间摇摆。1971年基辛格秘密访华、联合国恢复中华人民共和国席位，1972年尼克松访华与中日邦交正常化，使中国从两个超级大国的夹击中抽出一条缝：联美、防苏、重返国际组织。",
+                "国内则林彪事件后政治更加扑朔，批林批孔与“反击右倾翻案风”交替。1976年周恩来、毛泽东相继去世，唐山地震加重创伤，粉碎“四人帮”标志文化大革命结束。近代史意义上，长达十年的运动周期被打断。",
+                "时间线上美元与黄金脱钩、石油危机打击日欧、西贡解放。中国抓住的是战略窗口：先解决“谁是主要敌人”，再为几年后的改革开放腾出外部空间。没有这一页破冰，1978年的转向很难落地。",
+            ],
+            "parasEn": [
+                "Modern Chinese diplomacy long oscillated between playing powers off each other and closing the door. Kissinger’s 1971 visit, the UN seat, Nixon in 1972 and Japan normalization opened a gap between the superpowers.",
+                "At home, politics stayed opaque after Lin Biao. 1976 brought the deaths of Zhou and Mao, the Tangshan earthquake, and the arrest of the Gang of Four—ending the Cultural Revolution’s decade.",
+                "Bretton Woods cracked, oil shocked Japan and Europe, Saigon fell. China used the window to redefine its main adversary and clear space for the 1978 turn.",
+            ],
+        },
+        {
+            "lo": 1977, "hi": 1980,
+            "title": "拨乱反正与改革开放起步",
+            "titleEn": "Setting things right and launching reform",
+            "era": "中国近现代史 · 从革命建国转向建设强国",
+            "eraEn": "Modern China · from revolutionary founding to building",
+            "paras": [
+                "近代史的主线是救亡与启蒙纠缠。1978年12月十一届三中全会把工作重心转到经济建设，否定以阶级斗争为纲，等于给1840年以来反复中断的现代化补上和平时期的制度入口。农村联产承包随后铺开，特区试验开始出现。",
+                "1979年中美建交、对越自卫反击战、中日和平友好条约生效，构成“改革必须有一个可预测的外部环境”。审判林彪、江青集团则用法律形式给文革做结。中国不再以输出革命为外交主轴，而开始计算市场、技术和投资。",
+                "对照时间线：撒切尔上台、苏军入阿富汗、第二次石油冲击。中国选择的道路与苏联对峙、与西方有限接轨。近代中国追求的富强，第一次有了持续数十年的国内共识——尽管代价、争论与未完成的改革，都要留到1980年之后。",
+            ],
+            "parasEn": [
+                "Modern history tangled national salvation with enlightenment. The December 1978 Third Plenum shifted the center of gravity to the economy, opening a peacetime path that war had repeatedly cut off. Household contracting and special zones followed.",
+                "1979’s U.S. recognition, the brief war with Vietnam, and the Japan treaty sought a predictable exterior; the trial of the Lin-Jiang cliques legally closed the Cultural Revolution. Diplomacy turned from exporting revolution toward markets and technology.",
+                "Thatcher won, the USSR entered Afghanistan, oil shocked again. China chose limited engagement with the West. The modern quest for wealth and power at last had a multi-decade domestic consensus—its costs deferred past 1980.",
+            ],
+        },
+    ]
+    era = next((e for e in eras if e["lo"] <= year <= e["hi"]), eras[-1])
+    names = [e.get("title") for e in cn_events if e.get("title")]
+    extra = ""
+    extra_en = ""
+    if names:
+        extra = f"与本页切片直接相关的中国事件包括：{'、'.join(names)}。可将它们读作上述进程在{year}年前后的具体节点。"
+        extra_en = (
+            "Chinese items on this slice: "
+            + "; ".join(e.get("titleEn") or e.get("title") for e in cn_events)
+            + f". Read them as nodes of this process around {year}."
+        )
+    paras = list(era["paras"])
+    paras_en = list(era["parasEn"])
+    if extra:
+        paras.append(extra)
+        paras_en.append(extra_en)
+    return {
+        "title": era["title"],
+        "titleEn": era["titleEn"],
+        "era": era["era"],
+        "eraEn": era["eraEn"],
+        "paras": paras,
+        "parasEn": paras_en,
+    }
+
+
 def build_history(now: datetime | None = None) -> dict:
     now = now or datetime.now(TZ)
     day = now.astimezone(TZ).date()
@@ -560,6 +709,11 @@ def build_history(now: datetime | None = None) -> dict:
         "noteEn": "Same-period snapshots across five regions, 1950–1980; the year–month window rotates daily (nearby years fill gaps).",
         "regions": regions_out,
         "timeline": timeline,
+        "chinaEssay": _china_essay(
+            year,
+            month,
+            next((r["events"] for r in regions_out if r["id"] == "cn"), []),
+        ),
     }
 
 
