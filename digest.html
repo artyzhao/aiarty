@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>每日精选</title>
   <!-- 版式源码：digest.css；结构：本文件；交互：digest-ui.js -->
-  <link rel="stylesheet" href="digest.css?v=20260913223858" />
+  <link rel="stylesheet" href="digest.css?v=20260914111036" />
 </head>
 <body>
   <header class="topbar">
@@ -16,6 +16,7 @@
         <a href="#invest" data-i18n="navInvest">投资</a>
         <a href="#ai" data-i18n="navAi">AI</a>
         <a href="#work" data-i18n="navWork">工作</a>
+        <a href="#history" data-i18n="navHistory">历史</a>
       </nav>
       <div class="top-right">
         <div class="top-meta">
@@ -112,11 +113,25 @@
         <div class="feed-grid cols-4" id="feeds-work-policy"></div>
       </div>
     </section>
+    <section class="block" id="history">
+      <div class="sec-head">
+        <h2 data-i18n="navHistory">历史</h2>
+        <p data-i18n="historyLead">1950–1980 中国、美国、日本、东南亚、欧洲同期对照</p>
+      </div>
+      <div class="hist-head">
+        <p class="subk" data-i18n="historySlice">今日切片</p>
+        <h3 id="hist-label">—</h3>
+        <p class="hist-note" id="hist-note"></p>
+      </div>
+      <div class="hist-grid" id="hist-grid"></div>
+      <p class="subk" data-i18n="historyTimeline" style="margin-top:20px">同期时间线</p>
+      <div class="hist-timeline" id="hist-timeline"></div>
+    </section>
     <footer class="note" id="foot-note"></footer>
   </div>
-  <script src="stars-data.js?v=20260913223858"></script>
-  <script src="digest-data.js?v=20260913223858"></script>
-  <script src="digest-ui.js?v=20260913223858"></script>
+  <script src="stars-data.js?v=20260914111036"></script>
+  <script src="digest-data.js?v=20260914111036"></script>
+  <script src="digest-ui.js?v=20260914111036"></script>
   <script src="sky-refresh.js?v=202609011733"></script>
 </body>
 </html>
