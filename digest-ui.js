@@ -6,12 +6,17 @@
       navInvest: "投资",
       navAi: "AI",
       navWork: "工作",
+      navHistory: "历史",
       latestKicker: "最新",
       latest: "今日更新",
       astroLead: "当日天文学 / 占星学星象，及订阅栏目",
       investLead: "长期资金、周期与个人理财",
       aiLead: "研究访谈、工程现场与中国观察",
       workLead: "全球宏观、金融软件、产品设计、央行与政策",
+      historyLead: "1950–1980 中国、美国、日本、东南亚、欧洲同期对照",
+      historySlice: "今日切片",
+      historyTimeline: "同期时间线",
+      historyEmpty: "本日切片暂无事件",
       workMacro: "全球宏观",
       workFinsoft: "金融软件",
       workDesign: "产品设计",
@@ -63,12 +68,17 @@
       navInvest: "Investing",
       navAi: "AI",
       navWork: "Work",
+      navHistory: "History",
       latestKicker: "Latest",
       latest: "Today's Updates",
       astroLead: "Today's sky, aspects, and subscribed shows",
       investLead: "Long-term capital, cycles, and personal finance",
       aiLead: "Research interviews, engineering, and China",
       workLead: "Global macro, financial software, product design, central banks and policy",
+      historyLead: "1950–1980 same-period view: China, U.S., Japan, Southeast Asia, Europe",
+      historySlice: "Today's slice",
+      historyTimeline: "Same-period timeline",
+      historyEmpty: "No events in today's slice",
       workMacro: "Global Macro",
       workFinsoft: "Financial Software",
       workDesign: "Product Design",
@@ -499,6 +509,64 @@
     document.getElementById("foot-note").textContent = t("footer");
   }
 
+  function renderHistory() {
+    var grid = document.getElementById("hist-grid");
+    var line = document.getElementById("hist-timeline");
+    var label = document.getElementById("hist-label");
+    var note = document.getElementById("hist-note");
+    if (!grid || !line || !label || !note) return;
+    grid.innerHTML = "";
+    line.innerHTML = "";
+    var hist = digest && digest.history;
+    if (!hist || !hist.regions) {
+      label.textContent = "—";
+      note.textContent = t("historyEmpty");
+      return;
+    }
+    label.textContent = lang === "en" ? (hist.labelEn || hist.label) : hist.label;
+    note.textContent = lang === "en" ? (hist.noteEn || hist.note || "") : (hist.note || "");
+    (hist.regions || []).forEach(function (reg) {
+      var col = document.createElement("article");
+      col.className = "hist-col";
+      var h = document.createElement("h3");
+      h.textContent = lang === "en" ? (reg.nameEn || reg.name) : reg.name;
+      col.appendChild(h);
+      var events = reg.events || [];
+      if (!events.length) {
+        var empty = document.createElement("p");
+        empty.className = "empty";
+        empty.textContent = t("historyEmpty");
+        col.appendChild(empty);
+      } else {
+        events.forEach(function (ev) {
+          var div = document.createElement("div");
+          div.className = "hist-item";
+          var when = lang === "en" ? (ev.dateLabelEn || ev.dateLabel) : ev.dateLabel;
+          var title = lang === "en" ? (ev.titleEn || ev.title) : ev.title;
+          var sum = lang === "en" ? (ev.summaryEn || ev.summary) : ev.summary;
+          div.innerHTML =
+            '<div class="meta">' + esc(when) + "</div>" +
+            '<span class="ttl">' + esc(title) + "</span>" +
+            (sum ? '<p class="sum">' + esc(sum) + "</p>" : "");
+          col.appendChild(div);
+        });
+      }
+      grid.appendChild(col);
+    });
+    (hist.timeline || []).forEach(function (ev) {
+      var row = document.createElement("div");
+      row.className = "hist-row";
+      var when = lang === "en" ? (ev.dateLabelEn || ev.dateLabel) : ev.dateLabel;
+      var region = lang === "en" ? (ev.regionNameEn || ev.regionName) : ev.regionName;
+      var title = lang === "en" ? (ev.titleEn || ev.title) : ev.title;
+      row.innerHTML =
+        '<span class="when">' + esc(when) + "</span>" +
+        '<span class="tag">' + esc(region) + "</span>" +
+        '<span class="ttl">' + esc(title) + "</span>";
+      line.appendChild(row);
+    });
+  }
+
   function renderNativity() {
     var box = document.getElementById("nativity-box");
     if (!box) return;
@@ -601,6 +669,7 @@
     renderAstro();
     renderNativity();
     renderFeeds();
+    renderHistory();
   }
 
   function setLive(kind, text) {
@@ -660,6 +729,7 @@
       });
     });
     if (!next.nativity && prev.nativity) next.nativity = prev.nativity;
+    if (!next.history && prev.history) next.history = prev.history;
     if (!next.astroEn && prev.astroEn) next.astroEn = prev.astroEn;
     return next;
   }
