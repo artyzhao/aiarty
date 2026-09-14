@@ -1106,12 +1106,16 @@ def build() -> dict:
             }
         sections.append(row)
     from digest_nativity import build_nativity
+    from digest_history import build_history
 
     saved = load_saved_digest()
     sections = keep_previous_items(sections, saved)
     nativity = build_nativity(now)
     if saved.get("nativity") and not nativity.get("name"):
         nativity = saved["nativity"]
+    history = build_history(now)
+    if saved.get("history") and not history.get("regions"):
+        history = saved["history"]
 
     return {
         "date": now.strftime("%Y-%m-%d"),
@@ -1120,6 +1124,7 @@ def build() -> dict:
         "freshHours": 36,
         "sections": sections,
         "nativity": nativity,
+        "history": history,
     }
 
 
