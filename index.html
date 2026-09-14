@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>每日精选</title>
   <!-- 版式源码：digest.css；结构：本文件；交互：digest-ui.js -->
-  <link rel="stylesheet" href="digest.css?v=20260914111142" />
+  <link rel="stylesheet" href="digest.css?v=20260914161727" />
 </head>
 <body>
   <header class="topbar">
@@ -124,14 +124,24 @@
         <p class="hist-note" id="hist-note"></p>
       </div>
       <div class="hist-grid" id="hist-grid"></div>
-      <p class="subk" data-i18n="historyTimeline" style="margin-top:20px">同期时间线</p>
-      <div class="hist-timeline" id="hist-timeline"></div>
+      <div class="hist-split">
+        <div class="hist-split-main">
+          <p class="subk" data-i18n="historyTimeline">同期时间线</p>
+          <div class="hist-timeline" id="hist-timeline"></div>
+        </div>
+        <aside class="hist-cn">
+          <p class="subk" data-i18n="historyChina">中国近现代史</p>
+          <h3 id="hist-cn-title">—</h3>
+          <p class="hist-cn-era" id="hist-cn-era"></p>
+          <div id="hist-cn-body"></div>
+        </aside>
+      </div>
     </section>
     <footer class="note" id="foot-note"></footer>
   </div>
-  <script src="stars-data.js?v=20260914111142"></script>
-  <script src="digest-data.js?v=20260914111142"></script>
-  <script src="digest-ui.js?v=20260914111142"></script>
+  <script src="stars-data.js?v=20260914161727"></script>
+  <script src="digest-data.js?v=20260914161727"></script>
+  <script src="digest-ui.js?v=20260914161727"></script>
   <script src="sky-refresh.js?v=202609011733"></script>
 </body>
 </html>
