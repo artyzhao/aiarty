@@ -644,8 +644,8 @@ def _china_essay(year: int, month: int, cn_events: list[dict]) -> dict:
         paras.append(extra)
         paras_en.append(extra_en)
     return {
-        "title": era["title"],
-        "titleEn": era["titleEn"],
+        "title": f"{year}年{month}月 · {era['title']}",
+        "titleEn": f"{datetime(year, month, 1).strftime('%B %Y')} · {era['titleEn']}",
         "era": era["era"],
         "eraEn": era["eraEn"],
         "paras": paras,
