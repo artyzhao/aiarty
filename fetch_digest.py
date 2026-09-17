@@ -1129,6 +1129,15 @@ def build() -> dict:
 
 
 def write_digest(data: dict, stamp_html: bool = True) -> Path:
+    # 防止历史字段在中途丢失：写入前若缺失则补算
+    if not (data.get("history") or {}).get("regions"):
+        from digest_history import build_history
+
+        data["history"] = build_history(
+            datetime.now(TZ)
+            if not data.get("date")
+            else datetime.strptime(data["date"], "%Y-%m-%d").replace(tzinfo=TZ)
+        )
     js_path = ROOT / "digest-data.js"
     js_path.write_text(
         "window.DIGEST_DATA="
@@ -1184,6 +1193,8 @@ def main() -> None:
                 if feed["items"]:
                     print(f"       · {feed['items'][0]['title'][:72]}")
     print(f"wrote {js_path}  items={total}  {data['fetchedAt']}")
+    hist = data.get("history") or {}
+    print(f"history {hist.get('label', 'MISSING')}  essay={(hist.get('chinaEssay') or {}).get('title', '')[:40]}")
 
 
 if __name__ == "__main__":
