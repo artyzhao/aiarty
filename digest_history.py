@@ -445,13 +445,15 @@ def _valid_events() -> list[dict]:
 
 
 def _slot_for(day: date) -> tuple[int, int]:
-    """把日历日映射到 1950–1980 的某年某月，每天换切片。"""
-    months = (YEAR_END - YEAR_START + 1) * 12
-    # 以固定原点计日，保证同一上海日期全球一致
+    """把日历日映射到 1950–1980 切片。
+
+    每天换一个年份（差异更明显）；月份取当天公历月，形成「这一年的这个月」对照。
+    旧算法按月连号推进，相邻两天常同属一年，事件几乎不变，看起来像没刷新。
+    """
+    years = YEAR_END - YEAR_START + 1
     origin = date(2020, 1, 1)
-    idx = (day.toordinal() - origin.toordinal()) % months
-    year = YEAR_START + idx // 12
-    month = 1 + idx % 12
+    year = YEAR_START + ((day.toordinal() - origin.toordinal()) % years)
+    month = day.month
     return year, month
 
 
@@ -476,20 +478,29 @@ def _date_label(ev: dict, lang: str = "zh") -> str:
 
 def _pick_for_region(events: list[dict], region: str, year: int, month: int, limit: int = 4) -> list[dict]:
     pool = [e for e in events if e["region"] == region]
+    day_seed = (year * 12 + month) % 7
 
     def score(e: dict) -> tuple:
-        # 同年优先，再看月份距离；保证五列都能横向对照
+        # 月份距离优先，再同年；避免「换月不换事件」
         year_dist = abs(e["year"] - year)
-        month_dist = abs(e["month"] - month) if e["year"] == year else 12 + abs(e["month"] - month)
+        if e["year"] == year:
+            month_dist = abs(e["month"] - month)
+        else:
+            month_dist = 6 + abs(e["month"] - month)
         day_bias = abs((e["day"] or 15) - 15)
-        return (year_dist, month_dist, day_bias, e["year"], e["month"], e["day"])
+        # 轻微打散，让相邻切片排序不同
+        jitter = (hash((e["title"], e["year"], e["month"])) + day_seed) % 5
+        return (year_dist, month_dist, jitter, day_bias, e["year"], e["month"], e["day"])
 
-    # 先取同年；不足再扩到相邻年
     same_year = [e for e in pool if e["year"] == year]
     near = [e for e in pool if abs(e["year"] - year) == 1]
+    # 再扩到同年份段，保证每月都有料
+    band = [e for e in pool if abs(e["year"] - year) <= 2]
     candidates = sorted(same_year, key=score)
     if len(candidates) < limit:
         candidates = candidates + sorted(near, key=score)
+    if len(candidates) < limit:
+        candidates = candidates + sorted(band, key=score)
 
     picked = []
     seen = set()
@@ -705,8 +716,8 @@ def build_history(now: datetime | None = None) -> dict:
         "month": month,
         "label": f"{year}年{month}月",
         "labelEn": datetime(year, month, 1).strftime("%B %Y"),
-        "note": "1950–1980 五地同期对照，按日轮换年月切片；优先展示同一年事件，不足时扩到相邻年。",
-        "noteEn": "Same-period snapshots across five regions, 1950–1980; the year–month window rotates daily (nearby years fill gaps).",
+        "note": "1950–1980 五地同期对照：每天更换年份，月份对齐今天公历月。",
+        "noteEn": "Same-period snapshots across five regions, 1950–1980: the year rotates daily; the month matches today's calendar month.",
         "regions": regions_out,
         "timeline": timeline,
         "chinaEssay": _china_essay(
