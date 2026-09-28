@@ -1151,7 +1151,7 @@ def write_digest(data: dict, stamp_html: bool = True) -> Path:
         if html_path.exists():
             html = html_path.read_text(encoding="utf-8")
             html = re.sub(
-                r'((?:src|href)=")(digest-data\.js|stars-data\.js|digest-ui\.js|digest\.css)(\?v=\d+)?(")',
+                r'((?:src|href)=")(digest-data\.js|stars-data\.js|digest-ui\.js|digest\.css|sky-refresh\.js)(\?v=\d+)?(")',
                 rf"\1\2?v={stamp}\4",
                 html,
             )
