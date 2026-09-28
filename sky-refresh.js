@@ -1,19 +1,14 @@
 /**
  * 星象页定时刷新：
- * - 与 launchd 每 3 小时（:30）对齐
- * - 进入新的一天后自动刷新，拉取最新天象 / 相位 / 星座
- * - 切回前台时若跨日或数据超过 3 小时也会刷新
- *
- * 公网（GitHub Pages）注意：若线上数据停更，绝不能无限整页重载，
- * 否则会卡住浏览器；落后数据只重试有限次（计数存在 sessionStorage）。
+ * - 本机预览：与 launchd 每 3 小时（:30）对齐；跨日也会刷新
+ * - 公网（GitHub Pages / CDN）：禁止整页自动重载。线上数据一旦停更，
+ *   重载只会卡死浏览器，不会拿到新数据。
  */
 (function () {
   var SLOT_HOURS = [0, 3, 6, 9, 12, 15, 18, 21];
   var MAX_MS = 3 * 60 * 60 * 1000;
   var DAY_RETRY_MS = 90 * 1000;
   var TZ = "Asia/Shanghai";
-  var MAX_BEHIND_RELOADS = 2;
-  var STORE_KEY = "sky-refresh-behind";
   var timer = null;
 
   function pad2(n) {
@@ -69,43 +64,8 @@
     return !!(t && d && d !== t);
   }
 
-  function readBehindCount() {
-    try {
-      var raw = sessionStorage.getItem(STORE_KEY);
-      if (!raw) return 0;
-      var obj = JSON.parse(raw);
-      if (!obj || obj.day !== todayYmd()) return 0;
-      return Number(obj.n) || 0;
-    } catch (e) {
-      return 0;
-    }
-  }
-
-  function writeBehindCount(n) {
-    try {
-      sessionStorage.setItem(STORE_KEY, JSON.stringify({ day: todayYmd(), n: n }));
-    } catch (e) { /* ignore */ }
-  }
-
-  function clearBehindCount() {
-    try { sessionStorage.removeItem(STORE_KEY); } catch (e) { /* ignore */ }
-  }
-
-  function behindExhausted() {
-    return !isLocalPreview() && readBehindCount() >= MAX_BEHIND_RELOADS;
-  }
-
   function reloadFresh() {
-    if (isDataBehindDay()) {
-      var n = readBehindCount() + 1;
-      writeBehindCount(n);
-      if (!isLocalPreview() && n > MAX_BEHIND_RELOADS) {
-        scheduleNext(true);
-        return;
-      }
-    } else {
-      clearBehindCount();
-    }
+    if (!isLocalPreview()) return;
     var u = new URL(location.href);
     u.searchParams.set("r", String(Date.now()));
     location.replace(u.pathname + u.search + u.hash);
@@ -136,7 +96,6 @@
     var tomorrowSlot = new Date(p.year, p.month - 1, p.day + 1, 0, 30, 45).getTime();
 
     if (isDataBehindDay()) {
-      if (behindExhausted()) return Math.min(msUntilNextSlot(), MAX_MS);
       if (now < todaySlot) return Math.max(todaySlot - now, 5000);
       return DAY_RETRY_MS;
     }
@@ -154,24 +113,25 @@
   }
 
   function shouldReloadNow() {
-    if (isDataBehindDay()) {
-      if (behindExhausted()) return false;
-      return true;
-    }
+    if (!isLocalPreview()) return false;
+    if (isDataBehindDay()) return true;
     if (dataAgeMs() > MAX_MS) return true;
     return false;
   }
 
-  function scheduleNext(stoppedBehind) {
+  function scheduleNext() {
+    if (!isLocalPreview()) return;
     if (timer) clearTimeout(timer);
     var wait = Math.min(msUntilNextSlot(), msUntilDayDataReady());
     if (!isFinite(wait) || wait < 5000) wait = 5000;
     if (wait > MAX_MS && !isDataBehindDay()) wait = MAX_MS;
-    if (stoppedBehind) wait = Math.max(wait, MAX_MS);
     timer = setTimeout(reloadFresh, wait);
   }
 
-  if (isDataBehindDay() && !behindExhausted()) {
+  // 公网永不自动整页刷新
+  if (!isLocalPreview()) return;
+
+  if (isDataBehindDay()) {
     setTimeout(reloadFresh, 2500);
   }
 
