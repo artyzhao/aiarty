@@ -3,19 +3,28 @@
  * - 与 launchd 每 3 小时（:30）对齐
  * - 进入新的一天后自动刷新，拉取最新天象 / 相位 / 星座
  * - 切回前台时若跨日或数据超过 3 小时也会刷新
+ *
+ * 公网（GitHub Pages）注意：若线上数据停更，绝不能无限整页重载，
+ * 否则会卡住浏览器；落后数据只重试有限次（计数存在 sessionStorage）。
  */
 (function () {
   var SLOT_HOURS = [0, 3, 6, 9, 12, 15, 18, 21];
   var MAX_MS = 3 * 60 * 60 * 1000;
   var DAY_RETRY_MS = 90 * 1000;
   var TZ = "Asia/Shanghai";
+  var MAX_BEHIND_RELOADS = 2;
+  var STORE_KEY = "sky-refresh-behind";
   var timer = null;
 
   function pad2(n) {
     return n < 10 ? "0" + n : String(n);
   }
 
-  /** 上海时区当前年月日 / 时分秒 */
+  function isLocalPreview() {
+    var h = location.hostname;
+    return h === "127.0.0.1" || h === "localhost";
+  }
+
   function shanghaiParts(date) {
     var d = date || new Date();
     var parts = new Intl.DateTimeFormat("en-US", {
@@ -32,7 +41,6 @@
     parts.forEach(function (p) {
       if (p.type !== "literal") map[p.type] = p.value;
     });
-    // en-US hour12:false 可能给出 "24"，归一到 0
     var hour = Number(map.hour);
     if (hour === 24) hour = 0;
     return {
@@ -55,14 +63,49 @@
     return d && d.date ? String(d.date).slice(0, 10) : "";
   }
 
-  /** 页面上的星象数据是否已不是「今天」 */
   function isDataBehindDay() {
     var t = todayYmd();
     var d = dataYmd();
     return !!(t && d && d !== t);
   }
 
+  function readBehindCount() {
+    try {
+      var raw = sessionStorage.getItem(STORE_KEY);
+      if (!raw) return 0;
+      var obj = JSON.parse(raw);
+      if (!obj || obj.day !== todayYmd()) return 0;
+      return Number(obj.n) || 0;
+    } catch (e) {
+      return 0;
+    }
+  }
+
+  function writeBehindCount(n) {
+    try {
+      sessionStorage.setItem(STORE_KEY, JSON.stringify({ day: todayYmd(), n: n }));
+    } catch (e) { /* ignore */ }
+  }
+
+  function clearBehindCount() {
+    try { sessionStorage.removeItem(STORE_KEY); } catch (e) { /* ignore */ }
+  }
+
+  function behindExhausted() {
+    return !isLocalPreview() && readBehindCount() >= MAX_BEHIND_RELOADS;
+  }
+
   function reloadFresh() {
+    if (isDataBehindDay()) {
+      var n = readBehindCount() + 1;
+      writeBehindCount(n);
+      if (!isLocalPreview() && n > MAX_BEHIND_RELOADS) {
+        scheduleNext(true);
+        return;
+      }
+    } else {
+      clearBehindCount();
+    }
     var u = new URL(location.href);
     u.searchParams.set("r", String(Date.now()));
     location.replace(u.pathname + u.search + u.hash);
@@ -74,7 +117,6 @@
     var best = Infinity;
     for (var day = 0; day < 2; day++) {
       for (var i = 0; i < SLOT_HOURS.length; i++) {
-        // 比 launchd 晚约 45 秒，等 stars-data.js 写完再刷
         var t = new Date(
           base.getFullYear(), base.getMonth(), base.getDate() + day,
           SLOT_HOURS[i], 30, 45
@@ -87,24 +129,17 @@
     return best;
   }
 
-  /**
-   * 距离「下一个日历日的 0:30:45（上海）」还有多久。
-   * 跨日后等定时任务写出新数据再刷新；若已过 0:30 且数据仍旧，立即短间隔重试。
-   */
   function msUntilDayDataReady() {
     var p = shanghaiParts();
     var now = Date.now();
-    // 构造「今天 0:30:45」与「明天 0:30:45」的近似：用本地 Date 按上海日历字段拼
-    // （机器一般在东八区；与上海差一天边界的极端场景极少）
     var todaySlot = new Date(p.year, p.month - 1, p.day, 0, 30, 45).getTime();
     var tomorrowSlot = new Date(p.year, p.month - 1, p.day + 1, 0, 30, 45).getTime();
 
     if (isDataBehindDay()) {
-      // 已过 0:30 仍旧数据 → 快重试；未到 0:30 → 等到点再刷
+      if (behindExhausted()) return Math.min(msUntilNextSlot(), MAX_MS);
       if (now < todaySlot) return Math.max(todaySlot - now, 5000);
       return DAY_RETRY_MS;
     }
-    // 数据已是今天：约到明天 0:30:45 再刷
     var wait = tomorrowSlot - now;
     if (wait < 15000) wait = DAY_RETRY_MS;
     return wait;
@@ -119,22 +154,24 @@
   }
 
   function shouldReloadNow() {
-    if (isDataBehindDay()) return true;
+    if (isDataBehindDay()) {
+      if (behindExhausted()) return false;
+      return true;
+    }
     if (dataAgeMs() > MAX_MS) return true;
     return false;
   }
 
-  function scheduleNext() {
+  function scheduleNext(stoppedBehind) {
     if (timer) clearTimeout(timer);
     var wait = Math.min(msUntilNextSlot(), msUntilDayDataReady());
     if (!isFinite(wait) || wait < 5000) wait = 5000;
     if (wait > MAX_MS && !isDataBehindDay()) wait = MAX_MS;
-    // 到点一律刷新：对齐 3 小时槽 / 跨日 0:30 数据槽 / 隔日重试
+    if (stoppedBehind) wait = Math.max(wait, MAX_MS);
     timer = setTimeout(reloadFresh, wait);
   }
 
-  // 打开时若已是隔日旧数据，稍等再刷（避免与首屏抢）
-  if (isDataBehindDay()) {
+  if (isDataBehindDay() && !behindExhausted()) {
     setTimeout(reloadFresh, 2500);
   }
 
