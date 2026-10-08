@@ -3,25 +3,25 @@ window.STARS_DATA = {
   "weekday": "星期四",
   "lunar": "农历八月廿八",
   "moonPhase": "残月",
-  "moonIllumination": "7%",
-  "moonFraction": 0.0689,
+  "moonIllumination": "4%",
+  "moonFraction": 0.0426,
   "waxing": false,
   "sky": [
     {
       "title": "残月在处女",
-      "caption": "残月约7%，日落后南天可见。",
+      "caption": "残月约4%，日落后南天可见。",
       "image": "stars/today-1.svg",
       "alt": "残月位于处女座"
     },
     {
       "title": "土星东天可见",
-      "caption": "土星距日约176度，东天寻找即可。",
+      "caption": "土星距日约175度，东天寻找即可。",
       "image": "stars/today-2.svg",
       "alt": "土星位于东天"
     },
     {
       "title": "海王星东天可见",
-      "caption": "海王星距日约168度，东天寻找即可。",
+      "caption": "海王星距日约167度，东天寻找即可。",
       "image": "stars/today-3.svg",
       "alt": "海王星位于东天"
     }
@@ -36,63 +36,63 @@ window.STARS_DATA = {
   "bodies": [
     {
       "name": "太阳",
-      "lon": 194.82,
+      "lon": 195.34,
       "sign": "天秤",
-      "deg": 14.8,
+      "deg": 15.3,
       "label": "天秤座15°",
       "meaning": "自我"
     },
     {
       "name": "月亮",
-      "lon": 164.38,
+      "lon": 171.51,
       "sign": "处女",
-      "deg": 14.4,
-      "label": "处女座14°",
+      "deg": 21.5,
+      "label": "处女座22°",
       "meaning": "情绪"
     },
     {
       "name": "水星",
-      "lon": 219.48,
+      "lon": 220.08,
       "sign": "天蝎",
-      "deg": 9.5,
-      "label": "天蝎座9°",
+      "deg": 10.1,
+      "label": "天蝎座10°",
       "meaning": "沟通"
     },
     {
       "name": "金星",
-      "lon": 218.04,
+      "lon": 217.93,
       "sign": "天蝎",
-      "deg": 8.0,
+      "deg": 7.9,
       "label": "天蝎座8°",
       "meaning": "感情"
     },
     {
       "name": "火星",
-      "lon": 125.77,
+      "lon": 126.07,
       "sign": "狮子",
-      "deg": 5.8,
+      "deg": 6.1,
       "label": "狮子座6°",
       "meaning": "行动"
     },
     {
       "name": "木星",
-      "lon": 140.85,
+      "lon": 140.94,
       "sign": "狮子",
-      "deg": 20.8,
+      "deg": 20.9,
       "label": "狮子座21°",
       "meaning": "机遇"
     },
     {
       "name": "土星",
-      "lon": 10.88,
+      "lon": 10.84,
       "sign": "白羊",
-      "deg": 10.9,
+      "deg": 10.8,
       "label": "白羊座11°",
       "meaning": "责任"
     },
     {
       "name": "天王星",
-      "lon": 65.4,
+      "lon": 65.39,
       "sign": "双子",
       "deg": 5.4,
       "label": "双子座5°",
@@ -100,9 +100,9 @@ window.STARS_DATA = {
     },
     {
       "name": "海王星",
-      "lon": 2.66,
+      "lon": 2.64,
       "sign": "白羊",
-      "deg": 2.7,
+      "deg": 2.6,
       "label": "白羊座3°",
       "meaning": "直觉"
     },
@@ -135,22 +135,10 @@ window.STARS_DATA = {
       "nature": "顺畅",
       "tone": "easy",
       "angle": 60,
-      "sep": 60.4,
-      "orbUsed": 0.4,
+      "sep": 60.7,
+      "orbUsed": 0.7,
       "orbMax": 4.0,
       "influence": "火星六分天王星，行动与变数有机会衔接，稍动即可。"
-    },
-    {
-      "a": "水星",
-      "b": "金星",
-      "aspect": "合相",
-      "nature": "融合",
-      "tone": "blend",
-      "angle": 0,
-      "sep": 1.4,
-      "orbUsed": 1.4,
-      "orbMax": 8.0,
-      "influence": "说话好听，适合谈合作、谈价钱、谈心意。"
     },
     {
       "a": "金星",
@@ -159,10 +147,22 @@ window.STARS_DATA = {
       "nature": "张力",
       "tone": "tense",
       "angle": 90,
-      "sep": 92.3,
-      "orbUsed": 2.3,
+      "sep": 91.9,
+      "orbUsed": 1.9,
       "orbMax": 6.0,
       "influence": "情感易急躁，口角来得快，宜降温再沟通。"
+    },
+    {
+      "a": "水星",
+      "b": "金星",
+      "aspect": "合相",
+      "nature": "融合",
+      "tone": "blend",
+      "angle": 0,
+      "sep": 2.2,
+      "orbUsed": 2.2,
+      "orbMax": 8.0,
+      "influence": "说话好听，适合谈合作、谈价钱、谈心意。"
     },
     {
       "a": "天王星",
@@ -183,8 +183,8 @@ window.STARS_DATA = {
       "nature": "顺畅",
       "tone": "easy",
       "angle": 60,
-      "sep": 62.7,
-      "orbUsed": 2.7,
+      "sep": 62.8,
+      "orbUsed": 2.8,
       "orbMax": 4.0,
       "influence": "天王星六分海王星，变数与直觉有机会衔接，稍动即可。"
     },
@@ -195,8 +195,8 @@ window.STARS_DATA = {
       "nature": "对峙",
       "tone": "tense",
       "angle": 180,
-      "sep": 177.1,
-      "orbUsed": 2.9,
+      "sep": 176.8,
+      "orbUsed": 3.2,
       "orbMax": 8.0,
       "influence": "火星冲冥王星，行动与转化拉扯，需找中间点。"
     },
@@ -207,8 +207,8 @@ window.STARS_DATA = {
       "nature": "和谐",
       "tone": "easy",
       "angle": 120,
-      "sep": 123.1,
-      "orbUsed": 3.1,
+      "sep": 123.4,
+      "orbUsed": 3.4,
       "orbMax": 6.0,
       "influence": "火星拱海王星，行动能借直觉的力，推进较顺。"
     },
@@ -219,8 +219,8 @@ window.STARS_DATA = {
       "nature": "张力",
       "tone": "tense",
       "angle": 90,
-      "sep": 93.7,
-      "orbUsed": 3.7,
+      "sep": 94.0,
+      "orbUsed": 4.0,
       "orbMax": 6.0,
       "influence": "言辞带刺，发出去前先停一秒。"
     },
@@ -231,8 +231,8 @@ window.STARS_DATA = {
       "nature": "对峙",
       "tone": "tense",
       "angle": 180,
-      "sep": 176.1,
-      "orbUsed": 3.9,
+      "sep": 175.5,
+      "orbUsed": 4.5,
       "orbMax": 8.0,
       "influence": "想冲又被绊，接受节奏限制反而顺。"
     },
@@ -243,8 +243,8 @@ window.STARS_DATA = {
       "nature": "和谐",
       "tone": "easy",
       "angle": 120,
-      "sep": 114.9,
-      "orbUsed": 5.1,
+      "sep": 115.2,
+      "orbUsed": 4.8,
       "orbMax": 6.0,
       "influence": "火星拱土星，行动能借责任的力，推进较顺。"
     },
@@ -255,8 +255,8 @@ window.STARS_DATA = {
       "nature": "张力",
       "tone": "tense",
       "angle": 90,
-      "sep": 84.8,
-      "orbUsed": 5.2,
+      "sep": 84.9,
+      "orbUsed": 5.1,
       "orbMax": 6.0,
       "influence": "金星刑冥王星，感情和转化容易别扭，宜放慢再决定。"
     }
@@ -266,7 +266,7 @@ window.STARS_DATA = {
     "mod1": {
       "kicker": "天文学 · 月相",
       "title": "残月",
-      "line": "亮面 7% · 渐亏",
+      "line": "亮面 4% · 渐亏",
       "hint": "查看今夜全部天象"
     },
     "mod2": {
@@ -288,7 +288,7 @@ window.STARS_DATA = {
         "kind": "moon",
         "label": "月相",
         "title": "残月",
-        "caption": "亮面约7%，月龄约27日，渐亏。",
+        "caption": "亮面约4%，月龄约28日，渐亏。",
         "detail": "日落后向南天寻找最亮的月盘即可，今夜月色是主画面。"
       },
       {
@@ -323,7 +323,7 @@ window.STARS_DATA = {
         "kind": "planet",
         "label": "行星可见",
         "title": "土星东天可见",
-        "caption": "距日约176度，黎明前于东天寻找。",
+        "caption": "距日约175度，黎明前于东天寻找。",
         "detail": "土星是夜空里较稳的光点，可与月亮对照。"
       },
       {
@@ -371,25 +371,11 @@ window.STARS_DATA = {
         "nature": "顺畅",
         "tone": "easy",
         "angle": 60,
-        "sep": 60.4,
-        "orbUsed": 0.4,
+        "sep": 60.7,
+        "orbUsed": 0.7,
         "orbMax": 4.0,
         "influence": "火星六分天王星，行动与变数有机会衔接，稍动即可。",
         "endsIn": "约 6 天后结束",
-        "motion": "正在分离"
-      },
-      {
-        "a": "水星",
-        "b": "金星",
-        "aspect": "合相",
-        "nature": "融合",
-        "tone": "blend",
-        "angle": 0,
-        "sep": 1.4,
-        "orbUsed": 1.4,
-        "orbMax": 8.0,
-        "influence": "说话好听，适合谈合作、谈价钱、谈心意。",
-        "endsIn": "约 5 天后结束",
         "motion": "正在分离"
       },
       {
@@ -399,12 +385,26 @@ window.STARS_DATA = {
         "nature": "张力",
         "tone": "tense",
         "angle": 90,
-        "sep": 92.3,
-        "orbUsed": 2.3,
+        "sep": 91.9,
+        "orbUsed": 1.9,
         "orbMax": 6.0,
         "influence": "情感易急躁，口角来得快，宜降温再沟通。",
         "endsIn": "约 9 天后结束",
         "motion": "趋近精确"
+      },
+      {
+        "a": "水星",
+        "b": "金星",
+        "aspect": "合相",
+        "nature": "融合",
+        "tone": "blend",
+        "angle": 0,
+        "sep": 2.2,
+        "orbUsed": 2.2,
+        "orbMax": 8.0,
+        "influence": "说话好听，适合谈合作、谈价钱、谈心意。",
+        "endsIn": "约 4 天后结束",
+        "motion": "正在分离"
       },
       {
         "a": "火星",
@@ -413,8 +413,8 @@ window.STARS_DATA = {
         "nature": "对峙",
         "tone": "tense",
         "angle": 180,
-        "sep": 177.1,
-        "orbUsed": 2.9,
+        "sep": 176.8,
+        "orbUsed": 3.2,
         "orbMax": 8.0,
         "influence": "火星冲冥王星，行动与转化拉扯，需找中间点。",
         "endsIn": "约 9 天后结束",
@@ -427,11 +427,11 @@ window.STARS_DATA = {
         "nature": "和谐",
         "tone": "easy",
         "angle": 120,
-        "sep": 123.1,
-        "orbUsed": 3.1,
+        "sep": 123.4,
+        "orbUsed": 3.4,
         "orbMax": 6.0,
         "influence": "火星拱海王星，行动能借直觉的力，推进较顺。",
-        "endsIn": "约 5 天后结束",
+        "endsIn": "约 4 天后结束",
         "motion": "正在分离"
       },
       {
@@ -441,11 +441,11 @@ window.STARS_DATA = {
         "nature": "张力",
         "tone": "tense",
         "angle": 90,
-        "sep": 93.7,
-        "orbUsed": 3.7,
+        "sep": 94.0,
+        "orbUsed": 4.0,
         "orbMax": 6.0,
         "influence": "言辞带刺，发出去前先停一秒。",
-        "endsIn": "约 5 天后结束",
+        "endsIn": "约 4 天后结束",
         "motion": "正在分离"
       },
       {
@@ -455,8 +455,8 @@ window.STARS_DATA = {
         "nature": "对峙",
         "tone": "tense",
         "angle": 180,
-        "sep": 176.1,
-        "orbUsed": 3.9,
+        "sep": 175.5,
+        "orbUsed": 4.5,
         "orbMax": 8.0,
         "influence": "想冲又被绊，接受节奏限制反而顺。",
         "endsIn": "约 4 天后结束",
@@ -469,11 +469,11 @@ window.STARS_DATA = {
         "nature": "和谐",
         "tone": "easy",
         "angle": 120,
-        "sep": 114.9,
-        "orbUsed": 5.1,
+        "sep": 115.2,
+        "orbUsed": 4.8,
         "orbMax": 6.0,
         "influence": "火星拱土星，行动能借责任的力，推进较顺。",
-        "endsIn": "约 3 周后结束",
+        "endsIn": "约 2 周后结束",
         "motion": "趋近精确"
       },
       {
@@ -483,8 +483,8 @@ window.STARS_DATA = {
         "nature": "张力",
         "tone": "tense",
         "angle": 90,
-        "sep": 84.8,
-        "orbUsed": 5.2,
+        "sep": 84.9,
+        "orbUsed": 5.1,
         "orbMax": 6.0,
         "influence": "金星刑冥王星，感情和转化容易别扭，宜放慢再决定。",
         "endsIn": "约 3 周后结束",
@@ -496,39 +496,39 @@ window.STARS_DATA = {
         "name": "太阳",
         "sign": "天秤",
         "label": "天秤座15°",
-        "deg": 14.8,
+        "deg": 15.3,
         "influence": "太阳在天秤，自我气质偏讲究和谐，宜协商、求平衡。"
       },
       {
         "name": "月亮",
         "sign": "处女",
-        "label": "处女座14°",
-        "deg": 14.4,
+        "label": "处女座22°",
+        "deg": 21.5,
         "influence": "月亮在处女，心情偏细致清明，宜整理、求精确。"
       },
       {
         "name": "水星",
         "sign": "天蝎",
-        "label": "天蝎座9°",
-        "deg": 9.5,
+        "label": "天蝎座10°",
+        "deg": 10.1,
         "influence": "水星在天蝎，沟通与思绪偏深沉专注，宜深耕、少试探。"
       },
       {
         "name": "金星",
         "sign": "天蝎",
         "label": "天蝎座8°",
-        "deg": 8.0,
+        "deg": 7.9,
         "influence": "金星在天蝎，审美与感情偏深沉专注，宜深耕、少试探。"
       },
       {
         "name": "火星",
         "sign": "狮子",
         "label": "狮子座6°",
-        "deg": 5.8,
+        "deg": 6.1,
         "influence": "火星在狮子，行动欲偏明亮自信，宜表达、被看见。"
       }
     ],
     "outerSignChanges": []
   },
-  "updatedAt": "2026-10-08 10:10"
+  "updatedAt": "2026-10-08 22:47"
 };
