@@ -1,0 +1,2299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>星星日记</title>
+  <script src="stars-data.js?v=20260903153005"></script>
+  <script>
+    (function () {
+      var PAGE_VER = "202609041656";
+      /** 仅改这个数字才会强制重新登录；日常改 UI / 刷缓存别动它 */
+      var AUTH_VER = "1";
+      window.DIARY_PAGE_VER = PAGE_VER;
+      window.DIARY_AUTH_VER = AUTH_VER;
+      function ensureFresh() {
+        if (!document.getElementById("chart-form-view")) {
+          location.replace("diary.html?v=" + PAGE_VER + (location.hash || ""));
+        }
+      }
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", ensureFresh);
+      } else {
+        ensureFresh();
+      }
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #04050a;
+      --ink: #f4efe4;
+      --muted: #a8a095;
+      --gold: #e8c98a;
+      --gold-dim: #c4a36a;
+      --line: rgba(232, 201, 138, 0.2);
+      --card: rgba(12, 13, 18, 0.86);
+      --gap: 10px;
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    .sky {
+      position: fixed; inset: 0; z-index: 0; overflow: hidden;
+      background:
+        radial-gradient(640px 320px at 50% 16%, #101218 0%, transparent 58%),
+        radial-gradient(480px 300px at 90% 50%, #121018 0%, transparent 52%),
+        linear-gradient(180deg, #06070c 0%, #04050a 52%, #030308 100%);
+    }
+    .sky-orbits {
+      position: absolute; inset: -8% -20% -10%;
+      width: 140%; height: 120%; pointer-events: none; opacity: 0.4;
+    }
+    .planet {
+      position: absolute; border-radius: 50%; pointer-events: none;
+      animation: drift 18s ease-in-out infinite;
+    }
+    .planet-saturn {
+      top: 42%; right: -18%; width: 120px; height: 120px;
+      background:
+        radial-gradient(circle at 34% 30%, #f6ead0 0%, #e2c48a 28%, #b8894a 62%, #6d4e28 100%);
+      box-shadow: 0 0 36px rgba(232, 201, 138, 0.16);
+      opacity: 0.22;
+    }
+    .planet-saturn::before {
+      content: ""; position: absolute; inset: 18%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 28%, rgba(255,255,255,0.18), transparent 42%);
+    }
+    .planet-saturn::after {
+      content: ""; position: absolute; left: -34%; top: 44%;
+      width: 168%; height: 26%;
+      border: 3px solid rgba(232, 201, 138, 0.38);
+      border-left-color: rgba(232, 201, 138, 0.08);
+      border-right-color: rgba(232, 201, 138, 0.08);
+      border-radius: 50%;
+      transform: rotate(-22deg);
+      box-shadow: 0 0 10px rgba(232, 201, 138, 0.12);
+    }
+    .planet-mars {
+      left: -6%; bottom: 22%; width: 108px; height: 108px;
+      background: radial-gradient(circle at 36% 32%, #e08a6a 0%, #c45b3a 48%, #6a2c1e 100%);
+      box-shadow: 0 0 36px rgba(196, 91, 58, 0.28);
+      opacity: 0.34; animation-delay: -6s; animation-duration: 22s;
+    }
+    .planet-neptune {
+      left: 68%; bottom: 4%; width: 126px; height: 126px;
+      background: radial-gradient(circle at 38% 30%, #7a90b0 0%, #3d4f6e 46%, #161d2c 100%);
+      box-shadow: 0 0 36px rgba(60, 78, 110, 0.18);
+      opacity: 0.2; animation-delay: -11s; animation-duration: 26s;
+    }
+    .planet-venus {
+      top: 36%; left: 4%; width: 64px; height: 64px;
+      background: radial-gradient(circle at 32% 28%, #fff4d6 0%, #e8c98a 46%, #a07a3a 100%);
+      box-shadow: 0 0 28px rgba(232, 201, 138, 0.35);
+      opacity: 0.32; animation-delay: -3s; animation-duration: 16s;
+    }
+    @keyframes drift {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(6px, -10px); }
+    }
+    .star {
+      position: absolute; width: 2px; height: 2px; background: #fff;
+      border-radius: 50%; opacity: 0.7; animation: twinkle 3.6s ease-in-out infinite;
+    }
+    @keyframes twinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.95; } }
+    .phone {
+      position: relative; z-index: 1;
+      max-width: 430px; margin: 0 auto; min-height: 100vh;
+      padding: calc(16px + env(safe-area-inset-top)) 14px calc(16px + env(safe-area-inset-bottom));
+    }
+    .view[hidden] { display: none !important; }
+    .topbar {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 8px; margin-bottom: 8px; padding: 2px 0 8px;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+    }
+    .topbar-wash {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.28;
+    }
+    .topbar-wash svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+    }
+    .topbar::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(232, 201, 138, 0.55), transparent);
+    }
+    .brand {
+      display: flex; flex-direction: column; align-items: flex-start;
+      position: relative; z-index: 1;
+      flex: 1 1 auto;
+      min-width: 0;
+      text-align: left;
+    }
+    .brand-mark { display: none; }
+    .topbar h1 {
+      margin: 0;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 22px; font-weight: 700; letter-spacing: 0.18em;
+      line-height: 1.2;
+      white-space: nowrap;
+      text-align: left;
+      background: linear-gradient(180deg, #fff6de 0%, #e8c98a 46%, #c4a36a 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      filter: drop-shadow(0 0 10px rgba(232, 201, 138, 0.28));
+    }
+    .brand-sub {
+      margin: 2px 0 0; font-size: 11px; letter-spacing: 0.08em; color: var(--gold-dim);
+      white-space: nowrap;
+      text-align: left;
+    }
+    .topbar .when {
+      display: flex; align-items: center; justify-content: flex-end; gap: 8px;
+      text-align: right; color: var(--muted); font-size: 13px; letter-spacing: 0.04em;
+      position: relative; z-index: 1; flex-shrink: 0;
+      align-self: center;
+    }
+    .when-text {
+      min-width: 0; line-height: 1.25;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .topbar .when strong {
+      display: block; color: var(--ink); font-size: 16px; font-weight: 600;
+      line-height: 1.2;
+    }
+    .topbar .when #week-line {
+      display: block; margin-top: 2px; line-height: 1.2;
+    }
+    .auth-entry {
+      appearance: none; flex-shrink: 0;
+      width: 36px; height: 36px; padding: 0;
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 1px solid var(--line); background: rgba(232, 201, 138, 0.08);
+      color: var(--gold); border-radius: 50%; cursor: pointer; line-height: 0;
+    }
+    .auth-entry svg { width: 22px; height: 22px; display: block; }
+    .auth-entry.is-in {
+      border-color: rgba(232, 201, 138, 0.55);
+      background: rgba(232, 201, 138, 0.16);
+    }
+    .auth-entry:active { transform: scale(0.94); opacity: 0.85; }
+    .auth-panel { max-width: 100%; }
+    .auth-panel .lead { text-align: center; }
+    .login-brand {
+      text-align: center; margin: 8px 0 18px;
+    }
+    .login-brand strong {
+      display: block;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 22px; letter-spacing: 0.16em; color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .login-brand span { font-size: 12px; color: var(--muted); letter-spacing: 0.08em; }
+    .login-error {
+      margin: 0 0 10px; font-size: 12px; color: #e08a6a; text-align: center;
+    }
+    .login-tip {
+      margin: 0 0 12px; font-size: 12px; color: var(--gold-dim); text-align: center;
+      line-height: 1.55;
+    }
+    .login-tabs {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+      margin-bottom: 14px;
+    }
+    .login-tab {
+      appearance: none; border: 1px solid var(--line); background: transparent;
+      color: var(--muted); border-radius: 999px; padding: 8px 10px;
+      font-size: 13px; letter-spacing: 0.08em; cursor: pointer;
+    }
+    .login-tab.active {
+      color: var(--gold); border-color: rgba(232, 201, 138, 0.55);
+      background: rgba(232, 201, 138, 0.1);
+    }
+    .code-row {
+      display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: stretch;
+    }
+    .code-row input { min-width: 0; }
+    .code-send {
+      appearance: none; border: 1px solid var(--line);
+      background: rgba(232, 201, 138, 0.08); color: var(--gold);
+      border-radius: 12px; padding: 0 12px; font-size: 12px;
+      letter-spacing: 0.04em; cursor: pointer; white-space: nowrap;
+      min-width: 6.5em;
+    }
+    .code-send:disabled {
+      opacity: 0.55; cursor: not-allowed; color: var(--muted);
+    }
+    .profile-avatar {
+      width: 64px; height: 64px; margin: 6px auto 14px;
+      border-radius: 50%; border: 1px solid rgba(232, 201, 138, 0.4);
+      background: rgba(232, 201, 138, 0.1);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold);
+    }
+    .profile-avatar svg { width: 30px; height: 30px; }
+    .profile-meta { text-align: center; margin-bottom: 18px; }
+    .profile-meta strong {
+      display: block; font-size: 18px; color: var(--gold); letter-spacing: 0.08em;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      margin-bottom: 6px;
+    }
+    .profile-meta span { font-size: 13px; color: var(--muted); }
+    .auth-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+    .btn.ghost {
+      background: transparent; color: var(--muted);
+      border-color: rgba(232, 201, 138, 0.22);
+    }
+    .place-pin {
+      appearance: none; border: 1px solid var(--line); background: rgba(232, 201, 138, 0.08);
+      color: var(--gold); border-radius: 999px; padding: 5px 9px 5px 7px;
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 12px; letter-spacing: 0.04em; cursor: pointer;
+      max-width: 7.5em; line-height: 1.2; flex-shrink: 0;
+    }
+    .place-pin svg { width: 13px; height: 13px; flex-shrink: 0; opacity: 0.9; }
+    .place-pin span {
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .place-pin.is-loading { opacity: 0.55; }
+    .place-pin:active { transform: scale(0.97); }
+    .subbar {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 14px; padding: 4px 0 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    .back {
+      appearance: none; flex-shrink: 0;
+      width: 36px; height: 36px; padding: 0;
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 1px solid var(--line); background: var(--card);
+      color: var(--gold); border-radius: 50%;
+      cursor: pointer; line-height: 0;
+    }
+    .back svg { width: 18px; height: 18px; display: block; }
+    .back:active { transform: scale(0.94); opacity: 0.8; }
+    .subbar h2 {
+      margin: 0; font-size: 16px; font-weight: 650; letter-spacing: 0.14em; color: var(--gold);
+    }
+    /* 六宫格功能页：标题顶栏居中，左右对称留白 */
+    .subbar.subbar-center {
+      display: grid; grid-template-columns: 36px 1fr 36px;
+      align-items: center; gap: 8px;
+    }
+    .subbar.subbar-center h2 {
+      text-align: center; justify-self: stretch;
+      font-size: 18px; font-weight: 700; letter-spacing: 0.12em;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+    }
+    .subbar.subbar-center::after {
+      content: ""; width: 36px; height: 36px;
+    }
+    .home-grid { display: flex; flex-direction: column; gap: var(--gap); }
+    .mods-top { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+      backdrop-filter: blur(10px);
+    }
+    .panel { padding: 20px; }
+    .lead { margin: 0 0 14px; font-size: 14px; line-height: 1.7; color: var(--ink); }
+    .tap {
+      display: block; width: 100%; text-align: left; color: inherit;
+      text-decoration: none; cursor: pointer; padding: 12px 12px 14px;
+    }
+    .tap:active { transform: scale(0.985); }
+    .mod-tall { min-height: 188px; background: rgba(12, 13, 18, 0.96); }
+    .mod-tall .tap {
+      min-height: 188px; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .kicker {
+      font-size: 11px; letter-spacing: 0.18em; color: var(--gold-dim); margin-bottom: 8px;
+    }
+    .mod-title {
+      margin: 0 0 4px; font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 20px; font-weight: 700; letter-spacing: 0.08em;
+    }
+    .mod-line { margin: 0; font-size: 13px; color: var(--muted); }
+    .hint { margin: 12px 0 0; font-size: 11px; letter-spacing: 0.12em; color: var(--gold-dim); }
+    .moon-wrap {
+      display: flex; justify-content: center; padding: 6px 0 10px;
+      position: relative; z-index: 2;
+    }
+    .moon {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: #12141c;
+      box-shadow: 0 0 26px rgba(232, 201, 138, 0.42);
+      position: relative; z-index: 2;
+      isolation: isolate;
+      overflow: hidden;
+    }
+    .moon svg { display: block; width: 72px; height: 72px; position: relative; z-index: 1; }
+    .aspect-mini { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+    .chip {
+      font-size: 12px; color: var(--ink); border: 1px solid var(--line);
+      border-radius: 999px; padding: 3px 8px; width: fit-content;
+    }
+    .chip.tense { color: #e0a090; }
+    .mod-wide .tap { min-height: 78px; }
+    .blessing {
+      padding: 12px 16px; text-align: center;
+    }
+    .blessing .kicker { margin-bottom: 8px; }
+    .blessing p {
+      margin: 0; font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 16px; line-height: 1.65; color: var(--ink);
+    }
+    .fun-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
+    .fun {
+      aspect-ratio: 1; display: flex; flex-direction: column; align-items: center;
+      justify-content: flex-end; gap: 6px; text-decoration: none; color: inherit;
+      padding: 10px 4px 8px; position: relative; overflow: visible;
+    }
+    .fun::before {
+      content: ""; position: absolute; inset: -20% -20% 40%;
+      background: radial-gradient(circle at 50% 40%, rgba(232, 201, 138, 0.16), transparent 68%);
+      pointer-events: none;
+    }
+    .fun:active { transform: scale(0.97); }
+    .fun .ico {
+      width: min(74px, 64%);
+      aspect-ratio: 1 / 1;
+      height: auto;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      display: grid; place-items: center; color: var(--gold); position: relative;
+      background:
+        radial-gradient(circle at 32% 28%, rgba(255, 244, 214, 0.32), transparent 44%),
+        radial-gradient(circle at 50% 54%, rgba(12, 13, 18, 0.12), rgba(4, 5, 10, 0.78) 78%);
+      box-shadow:
+        0 0 0 1px rgba(232, 201, 138, 0.5),
+        0 0 0 5px rgba(232, 201, 138, 0.08),
+        0 0 22px rgba(232, 201, 138, 0.28),
+        inset 0 0 12px rgba(232, 201, 138, 0.16);
+    }
+    .fun .ico svg { width: 73%; height: 73%; display: block; }
+    .fun span {
+      position: relative;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 13px; letter-spacing: 0.16em; color: var(--gold);
+    }
+    .stack { display: flex; flex-direction: column; gap: 10px; }
+    .item { padding: 14px 16px; }
+    .item .meta { margin: 4px 0 0; font-size: 12px; color: var(--muted); }
+    .item h3 { margin: 0 0 6px; font-size: 16px; letter-spacing: 0.06em; color: var(--gold); }
+    .item p { margin: 0; font-size: 14px; color: var(--ink); }
+    .badge {
+      display: inline-block; font-size: 11px; letter-spacing: 0.12em; color: var(--gold);
+      border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; margin-right: 6px;
+    }
+    .badge.tense { color: #e0a090; }
+    .group-title {
+      margin: 8px 2px 0; font-size: 13px; letter-spacing: 0.16em; color: var(--gold-dim);
+    }
+    .empty { margin: 0; color: var(--muted); font-size: 14px; padding: 8px 4px; }
+    .note { margin: 10px 2px 0; color: var(--muted); font-size: 11px; letter-spacing: 0.04em; }
+    .chart-private-tip {
+      margin: 18px 4px 8px; text-align: center;
+      font-size: 12px; line-height: 1.7; color: var(--muted);
+    }
+    .chart-private-tip .wx-id {
+      color: var(--gold);
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      letter-spacing: 0.04em;
+    }
+    /* 合盘 */
+    .syn-pair {
+      display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      gap: 10px; align-items: stretch; margin-bottom: 14px;
+    }
+    .syn-pair > #syn-left,
+    .syn-pair > #syn-right {
+      min-width: 0; display: flex;
+    }
+    .syn-vs {
+      align-self: center; font-size: 13px; letter-spacing: 0.12em;
+      color: var(--gold-dim); font-weight: 600;
+    }
+    .syn-person-card, .syn-add-slot {
+      appearance: none; width: 100%; height: 100%; min-height: 108px;
+      box-sizing: border-box;
+      border: 1px solid var(--line); background: var(--card);
+      border-radius: 14px; padding: 12px 10px; cursor: pointer;
+      color: var(--ink); text-align: left;
+      display: flex; flex-direction: column; gap: 4px; justify-content: center;
+      position: relative; overflow: hidden; z-index: 0;
+    }
+    .syn-person-card { padding-right: 58px; }
+    .syn-person-card > *:not(.syn-zodiac-bg),
+    .syn-add-slot > * { position: relative; z-index: 1; }
+    /* 档案卡右侧：太阳星座图案 */
+    .syn-zodiac-bg {
+      position: absolute; right: 2px; top: 50%;
+      width: 88px; height: 88px; transform: translateY(-50%);
+      pointer-events: none; z-index: 0;
+      color: rgba(232, 201, 138, 0.28);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+    }
+    .syn-zodiac-bg svg { width: 78px; height: 78px; display: block; }
+    .syn-add-slot::after {
+      content: ""; position: absolute; right: -14px; bottom: -16px;
+      width: 72px; height: 72px; pointer-events: none; z-index: 0; opacity: 0.28;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 72'%3E%3Ccircle cx='40' cy='36' r='18' fill='none' stroke='%23e8c98a' stroke-width='1.6' opacity='0.7'/%3E%3Ccircle cx='40' cy='36' r='6' fill='%23e8c98a' opacity='0.35'/%3E%3Cellipse cx='40' cy='40' rx='28' ry='7' fill='none' stroke='%23e8c98a' stroke-width='1.2' opacity='0.4' transform='rotate(-20 40 40)'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-size: contain;
+    }
+    .syn-person-card strong, .syn-add-slot span:last-child {
+      color: var(--gold); font-size: 15px;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+    }
+    .syn-person-card span {
+      font-size: 12px; color: var(--muted);
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+      max-width: 100%;
+    }
+    .syn-person-card strong {
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+      max-width: 100%;
+    }
+    .syn-person-card .syn-switch-hint {
+      margin-top: 4px; font-size: 11px; font-style: normal;
+      color: var(--gold-dim); letter-spacing: 0.08em; opacity: 0.85;
+    }
+    .syn-add-slot {
+      align-items: center; text-align: center; color: var(--gold-dim);
+      border-style: dashed;
+    }
+    .syn-add-plus { font-size: 28px; font-weight: 300; color: var(--gold); line-height: 1; }
+    .syn-person-empty {
+      min-height: 88px; border: 1px solid var(--line); border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--muted); font-size: 13px; background: var(--card);
+    }
+    .syn-block { margin-bottom: 12px; }
+    .syn-block .kicker,
+    .syn-block > .syn-title {
+      margin: 0 0 10px; font-size: 14px; letter-spacing: 0.12em; color: var(--gold);
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-weight: 600;
+    }
+    .syn-block .analysis-sub {
+      margin: 12px 0 6px; font-size: 13px; letter-spacing: 0.12em; color: var(--gold-dim);
+      font-weight: 600;
+    }
+    .syn-score {
+      text-align: center; font-size: 52px; font-weight: 700; color: var(--gold);
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      line-height: 1.1; margin: 4px 0 12px;
+    }
+    .syn-bar {
+      display: flex; height: 10px; border-radius: 999px; overflow: hidden;
+      background: rgba(232, 201, 138, 0.12);
+    }
+    .syn-bar .soft { background: linear-gradient(90deg, #c4a36a, #e8c98a); }
+    .syn-bar .hard { background: rgba(196, 91, 58, 0.55); }
+    .syn-bar-labels {
+      display: flex; justify-content: space-between;
+      margin-top: 6px; font-size: 12px; color: var(--muted);
+    }
+    .syn-percentile {
+      margin: 10px 0 0; text-align: center; font-size: 13px; color: var(--gold-dim);
+      line-height: 1.6;
+    }
+    .syn-quote {
+      margin: 0; text-align: center; font-size: 16px; line-height: 1.75; color: var(--gold);
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+    }
+    .syn-rel-row + .syn-rel-row { margin-top: 12px; }
+    .syn-rel-top {
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin-bottom: 6px; font-size: 14px;
+    }
+    .syn-rel-top strong { color: var(--ink); font-weight: 600; }
+    .syn-rel-top span { color: var(--gold); font-size: 14px; }
+    .syn-rel-track {
+      height: 8px; border-radius: 999px; background: rgba(232, 201, 138, 0.12); overflow: hidden;
+    }
+    .syn-rel-track i {
+      display: block; height: 100%; border-radius: 999px;
+      background: linear-gradient(90deg, #c4a36a, #e8c98a);
+    }
+    .syn-stage-row {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 0; border-bottom: 1px solid rgba(232, 201, 138, 0.12);
+    }
+    .syn-stage-row:last-child { border-bottom: 0; padding-bottom: 0; }
+    .syn-stage-row:first-child { padding-top: 0; }
+    .syn-ring { width: 56px; height: 56px; flex-shrink: 0; }
+    .syn-stage-row strong { display: block; color: var(--gold); margin-bottom: 4px; font-size: 15px; }
+    .syn-stage-row p { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.65; }
+    .syn-dims {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+    }
+    .syn-dim {
+      text-align: center; padding: 12px 6px; border-radius: 12px;
+      border: 1px solid rgba(232, 201, 138, 0.16);
+      background: rgba(7, 8, 15, 0.35);
+    }
+    .syn-dim-score {
+      display: block; font-size: 22px; font-weight: 700; color: var(--gold); margin-bottom: 4px;
+    }
+    .syn-dim strong { display: block; font-size: 14px; color: var(--ink); margin-bottom: 4px; }
+    .syn-dim span { font-size: 12px; color: var(--muted); line-height: 1.4; }
+    .syn-ol, .syn-ul {
+      margin: 0; padding-left: 1.2em; font-size: 13px; line-height: 1.75; color: var(--ink);
+    }
+    .syn-ol li + li, .syn-ul li + li { margin-top: 8px; }
+    .syn-pick-sheet .modal-sheet { width: min(100%, 360px); }
+    .syn-pick-actions { margin-top: 12px; display: flex; flex-direction: column; gap: 8px; }
+    .div-mods { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+    .div-mod { padding: 14px 14px 16px; }
+    .div-mod .kicker {
+      margin-bottom: 10px; font-size: 16px; font-weight: 650;
+      letter-spacing: 0.14em; color: var(--gold);
+    }
+    .video-pick { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .video-pick-item {
+      display: block; text-decoration: none; color: inherit; padding: 8px 8px 12px;
+    }
+    .video-pick-item:active { transform: scale(0.985); }
+    .video-thumb {
+      aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden;
+      border: 1px solid var(--line); background: #0a0b10; position: relative;
+    }
+    .video-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .video-thumb .play {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: rgba(7, 8, 15, 0.22); color: var(--gold);
+    }
+    .video-thumb .play svg { width: 28px; height: 28px; filter: drop-shadow(0 0 8px rgba(232, 201, 138, 0.45)); }
+    .video-pick-item h3 {
+      margin: 8px 0 0; text-align: center;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 13px; letter-spacing: 0.06em; color: var(--gold); line-height: 1.35;
+    }
+    .div-mod.private p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+    .div-mod.private .wx-id {
+      color: var(--gold); font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      letter-spacing: 0.04em;
+    }
+    .video-player-wrap { padding: 0; overflow: hidden; margin-bottom: 12px; }
+    .video-player-wrap video {
+      display: block; width: 100%; max-height: 52vh; background: #000;
+    }
+    .video-desc { padding: 16px; }
+    .video-desc p { margin: 0; font-size: 15px; line-height: 1.75; color: var(--ink); }
+    .card-pick { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .card-pick-item {
+      display: block; text-decoration: none; color: inherit; padding: 8px 8px 12px;
+    }
+    .card-pick-item:active { transform: scale(0.985); }
+    .card-thumb {
+      aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden;
+      border: 1px solid var(--line); background: #0a0b10;
+    }
+    .card-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .card-pick-item h3 {
+      margin: 8px 0 0; text-align: center;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 13px; letter-spacing: 0.04em; color: var(--gold); line-height: 1.4;
+    }
+    .card-hero { padding: 0; overflow: hidden; margin-bottom: 12px; }
+    .card-hero img { display: block; width: 100%; }
+    .card-options { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+    .card-opt {
+      display: block; text-decoration: none; color: var(--gold);
+      border: 1px solid var(--line); background: rgba(232, 201, 138, 0.08);
+      border-radius: 12px; padding: 12px 14px;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 15px; letter-spacing: 0.08em; text-align: center;
+    }
+    .card-opt:active { transform: scale(0.985); }
+    .card-opt-img { padding: 0; overflow: hidden; margin-bottom: 12px; }
+    .card-opt-img img { display: block; width: 100%; }
+    .card-opt-body h3 {
+      margin: 0 0 10px;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 20px; letter-spacing: 0.1em; color: var(--gold);
+    }
+    .oracle-card {
+      min-height: 240px; display: flex; flex-direction: column; justify-content: center;
+      text-align: center; padding: 28px 20px; margin-bottom: 12px;
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(ellipse 90% 70% at 50% 18%, rgba(255, 244, 214, 0.12), transparent 62%),
+        var(--card);
+    }
+    .oracle-bg {
+      position: absolute; inset: 0; pointer-events: none; color: var(--gold);
+      opacity: 0.3;
+      background:
+        radial-gradient(circle at 16% 22%, rgba(255, 246, 222, 0.45) 0 1.2px, transparent 2.2px),
+        radial-gradient(circle at 82% 28%, rgba(255, 246, 222, 0.32) 0 1px, transparent 2px),
+        radial-gradient(circle at 70% 78%, rgba(255, 246, 222, 0.28) 0 1.4px, transparent 2.4px),
+        radial-gradient(circle at 28% 70%, rgba(232, 201, 138, 0.2) 0 1px, transparent 2px);
+    }
+    .oracle-bg svg { display: block; width: 100%; height: 100%; }
+    .oracle-card .tag,
+    .oracle-card h3,
+    .oracle-card p { position: relative; z-index: 1; }
+    .oracle-card .tag { letter-spacing: 0.28em; color: var(--gold-dim); font-size: 12px; margin-bottom: 14px; }
+    .oracle-card h3 {
+      margin: 0 0 12px; font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 32px; letter-spacing: 0.2em; color: var(--gold);
+    }
+    .oracle-card p { margin: 0; font-size: 15px; line-height: 1.75; }
+    .lot-q {
+      margin: 0 0 10px; font-size: 12px; color: var(--muted); letter-spacing: 0.04em;
+      position: relative; z-index: 1;
+    }
+    .lot-q strong { color: var(--gold-dim); font-weight: 500; }
+    .lot-answer {
+      margin: 12px 0 0; padding-top: 12px;
+      border-top: 1px solid rgba(232, 201, 138, 0.16);
+      font-size: 15px; line-height: 1.75; color: var(--ink);
+      position: relative; z-index: 1;
+    }
+    .lot-base {
+      margin: 10px 0 0; font-size: 12px; line-height: 1.65; color: var(--muted);
+      position: relative; z-index: 1;
+    }
+    .oracle-history { margin-top: 18px; }
+    .oracle-history .kicker { margin-bottom: 8px; padding-left: 2px; }
+    .oracle-row {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      padding: 12px 14px;
+    }
+    .oracle-row .day { color: var(--muted); font-size: 13px; letter-spacing: 0.04em; }
+    .oracle-row .name {
+      appearance: none; border: 0; background: none; padding: 0;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 16px; letter-spacing: 0.16em; color: var(--gold); cursor: pointer;
+    }
+    .oracle-row .name:active { opacity: 0.7; }
+    .modal-mask {
+      position: fixed; inset: 0; z-index: 40;
+      background: rgba(7, 8, 15, 0.88);
+      display: flex; align-items: center; justify-content: center;
+      padding: 28px 18px;
+    }
+    .modal-mask[hidden] { display: none; }
+    .modal-sheet { width: min(100%, 360px); }
+    .modal-sheet .oracle-card { margin-bottom: 10px; min-height: 200px; }
+    .modal-head {
+      display: flex; align-items: center; gap: 8px;
+      margin: 0 0 14px;
+    }
+    .modal-head .lead { margin: 0; flex: 1; min-width: 0; }
+    .modal-head-actions {
+      display: flex; align-items: center; gap: 4px; flex-shrink: 0;
+    }
+    .modal-icon-btn {
+      appearance: none; border: none; background: none;
+      color: var(--gold); cursor: pointer; line-height: 1;
+      padding: 4px 6px;
+    }
+    .modal-icon-btn.add {
+      font-size: 26px; font-weight: 300; padding: 0 4px;
+    }
+    .modal-icon-btn.close {
+      font-size: 22px; font-weight: 300; opacity: 0.9;
+    }
+    .modal-icon-btn:active { transform: scale(0.94); opacity: 0.75; }
+    .modal-actions {
+      display: flex; align-items: stretch; gap: 10px;
+      margin-top: 4px;
+    }
+    .modal-actions .btn {
+      flex: 1; width: auto; margin: 0;
+    }
+    .modal-actions .btn.ghost {
+      background: transparent;
+      color: var(--muted);
+      border-color: rgba(232, 201, 138, 0.22);
+    }
+    .btn {
+      appearance: none; width: 100%; border: 1px solid var(--line); background: rgba(232, 201, 138, 0.08);
+      color: var(--gold); border-radius: 12px; padding: 12px; font-size: 14px;
+      letter-spacing: 0.12em; cursor: pointer;
+    }
+    textarea, input[type="text"], input[type="tel"], input[type="password"], input[type="datetime-local"], select {
+      width: 100%; border: 1px solid var(--line); background: rgba(7, 8, 15, 0.55);
+      color: var(--ink); border-radius: 12px; padding: 12px; font-size: 14px;
+      font-family: inherit; outline: none;
+      box-sizing: border-box;
+    }
+    select { appearance: none; }
+    .field { margin-bottom: 12px; }
+    .field label { display: block; font-size: 12px; color: var(--gold-dim); letter-spacing: 0.1em; margin-bottom: 6px; }
+    .chart-subbar {
+      display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 8px;
+    }
+    .chart-head-main {
+      display: flex; align-items: center; justify-content: center; gap: 8px; min-width: 0;
+    }
+    .chart-head-main h2 {
+      margin: 0; font-size: 22px; font-weight: 700; letter-spacing: 0.1em; color: var(--gold);
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      line-height: 1.2;
+    }
+    .chart-switch {
+      appearance: none; flex-shrink: 0;
+      width: 30px; height: 30px; padding: 0;
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 1px solid var(--line); background: var(--card);
+      color: var(--gold); border-radius: 50%;
+      cursor: pointer; line-height: 0;
+    }
+    .chart-switch svg { width: 16px; height: 16px; display: block; }
+    .chart-switch:active { transform: scale(0.94); opacity: 0.8; }
+    .chart-add {
+      appearance: none; border: none; background: none; padding: 0 2px;
+      color: var(--gold); font-size: 28px; font-weight: 300; line-height: 1; cursor: pointer;
+    }
+    .gender-seg { display: flex; gap: 10px; }
+    .gender-seg label {
+      flex: 1; text-align: center; padding: 10px 0; border-radius: 12px;
+      border: 1px solid var(--line); color: var(--muted); cursor: pointer; font-size: 14px;
+    }
+    .gender-seg input { position: absolute; opacity: 0; pointer-events: none; }
+    .gender-seg label:has(input:checked) {
+      color: var(--gold); border-color: rgba(232, 201, 138, 0.55);
+      background: rgba(232, 201, 138, 0.1);
+    }
+    .picker-labels {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 0;
+      margin-bottom: 6px; text-align: center; font-size: 11px; letter-spacing: 0.12em; color: var(--gold-dim);
+    }
+    .birth-wheel {
+      display: flex; position: relative; height: 108px;
+      border: 1px solid var(--line); border-radius: 12px;
+      background: rgba(7, 8, 15, 0.55); overflow: hidden;
+    }
+    .birth-wheel::before {
+      content: ""; position: absolute; left: 0; right: 0; top: 50%; z-index: 1;
+      transform: translateY(-50%); height: 36px; pointer-events: none;
+      border-top: 1px solid rgba(232, 201, 138, 0.28);
+      border-bottom: 1px solid rgba(232, 201, 138, 0.28);
+      background: rgba(232, 201, 138, 0.06);
+    }
+    .picker-col {
+      flex: 1; overflow-y: auto; scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch; scrollbar-width: none; z-index: 0;
+      padding: 36px 0;
+    }
+    .picker-col::-webkit-scrollbar { display: none; }
+    .picker-item {
+      height: 36px; line-height: 36px; text-align: center; scroll-snap-align: center;
+      font-size: 14px; color: rgba(168, 160, 149, 0.45); transition: color 0.15s;
+    }
+    .picker-item.is-active {
+      color: var(--gold); font-size: 15px; font-weight: 500;
+    }
+    .place-labels { grid-template-columns: 1fr 1fr; }
+    .place-labels.place-labels-cn { grid-template-columns: 1fr 1fr 1fr; }
+    .place-labels span[hidden] { display: none; }
+    .chart-form-panel { position: relative; }
+    .chart-loading {
+      position: absolute; inset: 0; z-index: 5;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(7, 8, 15, 0.78); border-radius: inherit;
+    }
+    .chart-loading[hidden] { display: none !important; }
+    .chart-loading-inner { text-align: center; color: var(--gold); }
+    .chart-loading-spin {
+      display: block; width: 28px; height: 28px; margin: 0 auto 10px;
+      border: 2px solid rgba(232, 201, 138, 0.25);
+      border-top-color: var(--gold); border-radius: 50%;
+      animation: chart-spin 0.8s linear infinite;
+    }
+    @keyframes chart-spin { to { transform: rotate(360deg); } }
+    .chart-loading-inner p { margin: 0; font-size: 13px; color: var(--muted); }
+    .place-wheel .picker-col { flex: 1; }
+    .group-title {
+      margin: 16px 0 8px; font-size: 12px; letter-spacing: 0.16em; color: var(--gold-dim);
+    }
+    .stack { display: flex; flex-direction: column; gap: 8px; }
+    .stack .item h3 { margin: 0 0 4px; font-size: 14px; color: var(--gold); }
+    .stack .item p { margin: 0; font-size: 13px; color: var(--muted); }
+    .analysis-block { margin-top: 8px; }
+    .analysis-block h3 {
+      margin: 0 0 6px; font-size: 14px; letter-spacing: 0.12em; color: var(--gold);
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+    }
+    .analysis-head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 10px; margin: 0 0 6px;
+    }
+    .analysis-head h3 { margin: 0; }
+    .syn-entry-btn {
+      appearance: none; flex-shrink: 0;
+      border: 1px solid rgba(232, 201, 138, 0.4);
+      background: rgba(232, 201, 138, 0.1);
+      color: var(--gold); border-radius: 999px;
+      padding: 4px 12px; font-size: 12px; letter-spacing: 0.1em;
+      cursor: pointer; line-height: 1.3;
+      text-decoration: none;
+    }
+    .syn-entry-btn:link,
+    .syn-entry-btn:visited,
+    .syn-entry-btn:hover {
+      text-decoration: none; color: var(--gold);
+    }
+    .syn-entry-btn:active {
+      text-decoration: none; color: var(--gold); transform: scale(0.96);
+    }
+    .analysis-block .analysis-sub {
+      margin: 10px 0 4px; font-size: 12px; letter-spacing: 0.14em; color: var(--gold-dim);
+      font-weight: 600;
+    }
+    .analysis-block .analysis-sub:first-of-type { margin-top: 2px; }
+    .analysis-block p { margin: 0; font-size: 13px; line-height: 1.75; color: var(--ink); }
+    .chart-birth-meta {
+      margin: 0 0 14px; padding: 0; list-style: none;
+      font-size: 13px; line-height: 1.8; color: var(--muted);
+    }
+    .chart-birth-meta li + li { margin-top: 4px; }
+    .chart-birth-meta strong { color: var(--gold-dim); font-weight: 500; margin-right: 6px; }
+    .chart-sign-grid {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px; margin: 0 0 16px;
+    }
+    .chart-sign-item {
+      border: 1px solid rgba(232, 201, 138, 0.18);
+      background: rgba(232, 201, 138, 0.05);
+      border-radius: 12px; padding: 12px 10px 10px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 4px; text-align: center; min-height: 88px;
+    }
+    .chart-sign-item .glyph {
+      width: 28px; height: 28px; color: var(--gold);
+      display: grid; place-items: center; line-height: 1;
+    }
+    .chart-sign-item .glyph svg { width: 100%; height: 100%; display: block; }
+    .chart-sign-item .body {
+      font-size: 11px; letter-spacing: 0.1em; color: var(--gold-dim);
+    }
+    .chart-sign-item .sign {
+      font-size: 14px; color: var(--gold);
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      letter-spacing: 0.06em;
+    }
+    @media (min-width: 420px) {
+      .chart-sign-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    .chart-profile-btn {
+      appearance: none; flex: 1; min-width: 0; text-align: left;
+      border: 1px solid var(--line); background: var(--card); color: var(--ink);
+      border-radius: 12px; padding: 12px; cursor: pointer;
+    }
+    .chart-profile-btn.active { border-color: rgba(232, 201, 138, 0.55); }
+    .chart-profile-btn strong { display: block; color: var(--gold); margin-bottom: 4px; }
+    .chart-profile-btn span { font-size: 12px; color: var(--muted); }
+    .chart-profile-row {
+      display: flex; align-items: stretch; gap: 6px; margin-bottom: 8px;
+    }
+    .chart-profile-del,
+    .chart-profile-edit {
+      appearance: none; flex-shrink: 0; width: 44px;
+      border-radius: 12px; font-size: 12px; letter-spacing: 0.04em;
+      cursor: pointer;
+    }
+    .chart-profile-del {
+      border: 1px solid rgba(196, 91, 58, 0.35);
+      background: rgba(196, 91, 58, 0.1); color: #e08a6a;
+    }
+    .chart-profile-edit {
+      border: 1px solid rgba(232, 201, 138, 0.35);
+      background: rgba(232, 201, 138, 0.1); color: var(--gold);
+    }
+    .chart-profile-del:active,
+    .chart-profile-edit:active { transform: scale(0.96); }
+    .modal-sheet .field { margin-bottom: 10px; }
+    #chart-form-view[hidden], #chart-result-view[hidden] { display: none !important; }
+    #view-chart[data-mode="form"] #chart-form-view { display: block !important; }
+    #view-chart[data-mode="form"] #chart-result-view { display: none !important; }
+    #view-chart[data-mode="result"] #chart-form-view { display: none !important; }
+    #view-chart[data-mode="result"] #chart-result-view { display: block !important; }
+    textarea { min-height: 88px; resize: vertical; }
+    .list { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+    .list .item p { color: var(--muted); }
+    .wheel-wrap { display: flex; justify-content: center; padding: 8px 0 16px; }
+    .wheel-wrap svg { width: 100%; max-width: 320px; height: auto; }
+    .planet-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; box-shadow: 0 0 8px currentColor; }
+    .wish-compose { margin-bottom: 4px; }
+    .wish-compose .btn { margin-top: 10px; }
+    .wish-compose input[type="text"] {
+      min-height: 48px;
+      color: var(--ink);
+      border-color: rgba(232, 201, 138, 0.28);
+      background-color: rgba(18, 20, 32, 0.78);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 120'%3E%3Cpolygon points='168,18 172,32 186,32 175,41 179,55 168,46 157,55 161,41 150,32 164,32' fill='%23e8c98a' opacity='0.42'/%3E%3Cpolygon points='128,48 130,56 138,56 132,61 134,69 128,64 122,69 124,61 118,56 126,56' fill='%23e8c98a' opacity='0.28'/%3E%3Ccircle cx='196' cy='58' r='2.2' fill='%23e8c98a' opacity='0.55'/%3E%3Ccircle cx='152' cy='22' r='1.6' fill='%23e8c98a' opacity='0.4'/%3E%3Ccircle cx='188' cy='88' r='1.8' fill='%23e8c98a' opacity='0.35'/%3E%3Ccircle cx='112' cy='78' r='1.4' fill='%23e8c98a' opacity='0.3'/%3E%3Cpath d='M150 32L168 46L186 32M168 46L168 18' fill='none' stroke='%23e8c98a' stroke-width='0.8' opacity='0.18'/%3E%3Cellipse cx='170' cy='70' rx='48' ry='14' fill='none' stroke='%23e8c98a' stroke-width='1.2' opacity='0.16' transform='rotate(-18 170 70)'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      background-size: 120px auto;
+    }
+    .wish-grid { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
+    .wish-card {
+      position: relative; overflow: hidden; min-height: 112px;
+      border: 1px solid rgba(232, 201, 138, 0.22); border-radius: 16px;
+      background-color: rgba(14, 16, 28, 0.86);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 160'%3E%3Cpolygon points='168,22 173,40 192,40 177,52 182,70 168,58 154,70 159,52 144,40 163,40' fill='%23e8c98a' opacity='0.22'/%3E%3Cpolygon points='118,58 121,68 131,68 123,74 126,84 118,78 110,84 113,74 105,68 115,68' fill='%23e8c98a' opacity='0.16'/%3E%3Ccircle cx='198' cy='72' r='2.4' fill='%23e8c98a' opacity='0.35'/%3E%3Ccircle cx='142' cy='28' r='1.8' fill='%23e8c98a' opacity='0.28'/%3E%3Ccircle cx='190' cy='108' r='2' fill='%23e8c98a' opacity='0.24'/%3E%3Ccircle cx='108' cy='98' r='1.5' fill='%23e8c98a' opacity='0.2'/%3E%3Cellipse cx='168' cy='88' rx='56' ry='16' fill='none' stroke='%23e8c98a' stroke-width='1.2' opacity='0.12' transform='rotate(-16 168 88)'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right -4px bottom -8px;
+      background-size: 148px auto;
+      padding: 16px 14px 34px;
+    }
+    .wish-card-bg {
+      position: absolute; right: -6px; bottom: -10px; width: 118px; height: 118px;
+      color: rgba(232, 201, 138, 0.22); pointer-events: none;
+    }
+    .wish-card-bg svg { width: 100%; height: 100%; display: block; }
+    .wish-card-body { position: relative; z-index: 1; }
+    .wish-card-row { display: flex; align-items: flex-start; gap: 10px; flex-wrap: wrap; }
+    .wish-card-text {
+      flex: 1 1 140px; margin: 0; min-width: 0;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 15px; line-height: 1.65; color: var(--ink);
+    }
+    .wish-say-btn {
+      flex: 0 0 auto; appearance: none;
+      border: 1px solid rgba(232, 201, 138, 0.38);
+      background: rgba(232, 201, 138, 0.08); color: var(--gold-dim);
+      border-radius: 999px; padding: 6px 11px; font-size: 11px;
+      letter-spacing: 0.08em; cursor: pointer; white-space: nowrap;
+    }
+    .wish-say-btn:active { transform: scale(0.98); }
+    .wish-say-btn:disabled { opacity: 0.55; cursor: wait; }
+    .wish-card-reply {
+      margin: 10px 0 0; padding-top: 10px;
+      border-top: 1px solid rgba(232, 201, 138, 0.14);
+      font-size: 13px; line-height: 1.75; color: var(--gold);
+    }
+    .wish-card-foot {
+      position: absolute; right: 12px; bottom: 8px; z-index: 3;
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+    .wish-card-date {
+      font-size: 11px; color: rgba(168, 160, 149, 0.72); letter-spacing: 0.06em;
+      white-space: nowrap; line-height: 1;
+    }
+    .wish-card-del {
+      appearance: none; flex-shrink: 0;
+      width: 28px; height: 28px; padding: 0;
+      display: inline-flex; align-items: center; justify-content: center;
+      border: none; background: transparent; color: rgba(224, 138, 106, 0.75);
+      border-radius: 6px; cursor: pointer; line-height: 0;
+    }
+    .wish-card-del svg { width: 16px; height: 16px; display: block; }
+    .wish-card-del:active { transform: scale(0.92); opacity: 0.75; }
+    .tree-card { min-height: 120px; padding-bottom: 36px; }
+    .tree-compose { margin-bottom: 4px; }
+    .tree-compose .btn { margin-top: 10px; }
+    .tree-compose textarea {
+      min-height: 128px;
+      color: var(--ink);
+      border-color: rgba(232, 201, 138, 0.28);
+      background-color: rgba(18, 20, 32, 0.78);
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20120%20150%22%20fill%3D%22none%22%3E%3Cg%20transform%3D%22translate(60%2072)%20rotate(-16)%20scale(0.95)%22%3E%3Cpath%20d%3D%22M0%2042C-16%2024-18%205%200-38C18%205%2016%2024%200%2042Z%22%20fill%3D%22%23e8c98a%22%20opacity%3D%220.32%22%2F%3E%3Cpath%20d%3D%22M0%2038V-34%22%20stroke%3D%22%23e8c98a%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.5%22%2F%3E%3Cpath%20d%3D%22M0%204C-8-4-10-14-7-22M0%2014C8%206%2010-4%207-12%22%20stroke%3D%22%23e8c98a%22%20stroke-width%3D%221.1%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.32%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(32%2092)%20rotate(-46)%20scale(0.7)%22%3E%3Cpath%20d%3D%22M0%2042C-16%2024-18%205%200-38C18%205%2016%2024%200%2042Z%22%20fill%3D%22%23e8c98a%22%20opacity%3D%220.22%22%2F%3E%3Cpath%20d%3D%22M0%2038V-34%22%20stroke%3D%22%23e8c98a%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.4%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(90%2092)%20rotate(40)%20scale(0.7)%22%3E%3Cpath%20d%3D%22M0%2042C-16%2024-18%205%200-38C18%205%2016%2024%200%2042Z%22%20fill%3D%22%23e8c98a%22%20opacity%3D%220.22%22%2F%3E%3Cpath%20d%3D%22M0%2038V-34%22%20stroke%3D%22%23e8c98a%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.4%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px bottom 6px;
+      background-size: 88px auto;
+    }
+    .tree-card {
+      background-color: rgba(14, 16, 28, 0.86);
+      background-image: none;
+      border-color: rgba(232, 201, 138, 0.22);
+    }
+    .tree-card .wish-card-bg {
+      color: rgba(232, 201, 138, 0.42);
+      right: -2px; bottom: -8px; width: 120px; height: 120px;
+    }
+    .wish-empty { margin: 12px 0 0; font-size: 13px; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="sky" id="sky" aria-hidden="true">
+    <svg class="sky-orbits" viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice">
+      <ellipse cx="300" cy="280" rx="240" ry="92" fill="none" stroke="rgba(232,201,138,0.14)" stroke-width="1"/>
+      <ellipse cx="300" cy="280" rx="170" ry="58" fill="none" stroke="rgba(232,201,138,0.08)" stroke-width="1"/>
+      <ellipse cx="40" cy="720" rx="210" ry="80" fill="none" stroke="rgba(232,201,138,0.16)" stroke-width="1"/>
+      <ellipse cx="220" cy="430" rx="260" ry="120" fill="none" stroke="rgba(232,201,138,0.1)" stroke-width="1"/>
+    </svg>
+    <div class="planet planet-saturn"></div>
+    <div class="planet planet-venus"></div>
+    <div class="planet planet-mars"></div>
+    <div class="planet planet-neptune"></div>
+  </div>
+  <div class="phone">
+    <section class="view" id="view-home">
+      <header class="topbar">
+        <div class="brand">
+          <h1>星星日记</h1>
+          <p class="brand-sub">记录你的阴晴圆缺</p>
+        </div>
+        <div class="topbar-wash" aria-hidden="true">
+          <svg viewBox="0 0 360 48" preserveAspectRatio="xMidYMid slice">
+            <g fill="none" stroke="#e8c98a" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55">
+              <polyline points="40,28 52,8 76,12 70,32 40,28" stroke-width="0.9"/>
+              <polyline points="76,12 100,10 124,18 148,30" stroke-width="0.9"/>
+              <polyline points="168,10 196,16 184,34" stroke-width="0.75"/>
+              <polyline points="220,34 240,14 268,18 260,36 220,34" stroke-width="0.8"/>
+              <polyline points="268,18 292,12 320,22" stroke-width="0.8"/>
+            </g>
+            <g fill="#e8c98a">
+              <circle cx="40" cy="28" r="1.2"/><circle cx="52" cy="8" r="1.4"/><circle cx="76" cy="12" r="1.1"/>
+              <circle cx="70" cy="32" r="1"/><circle cx="100" cy="10" r="1.2"/><circle cx="124" cy="18" r="1.1"/>
+              <circle cx="148" cy="30" r="1.3"/><circle cx="168" cy="10" r="1.1"/><circle cx="196" cy="16" r="1"/>
+              <circle cx="184" cy="34" r="1.1"/><circle cx="220" cy="34" r="1"/><circle cx="240" cy="14" r="1.3"/>
+              <circle cx="268" cy="18" r="1.1"/><circle cx="260" cy="36" r="1"/><circle cx="292" cy="12" r="1.2"/>
+              <circle cx="320" cy="22" r="1.3"/>
+              <circle cx="18" cy="16" r="0.5" opacity="0.45"/><circle cx="132" cy="40" r="0.5" opacity="0.4"/>
+              <circle cx="210" cy="8" r="0.45" opacity="0.4"/><circle cx="340" cy="36" r="0.5" opacity="0.4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="when">
+          <button type="button" class="place-pin" id="place-pin" aria-label="定位观测地">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s-6-5.3-6-10a6 6 0 1 1 12 0c0 4.7-6 10-6 10z"/>
+              <circle cx="12" cy="11" r="2.2"/>
+            </svg>
+            <span id="place-label">北京</span>
+          </button>
+          <div class="when-text"><strong id="date-line"></strong><span id="week-line"></span></div>
+          <button type="button" class="auth-entry" id="auth-entry" aria-label="登录">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.6"/>
+              <path d="M4.8 19.2c1.8-3.4 4.4-5.1 7.2-5.1s5.4 1.7 7.2 5.1"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <div class="home-grid">
+        <div class="mods-top">
+          <article class="card mod-tall"><a class="tap" href="#astro">
+            <div>
+              <div class="kicker" id="m1-kicker">天文学 · 月相</div>
+              <div class="moon-wrap"><div class="moon" id="moon-disc"></div></div>
+              <h2 class="mod-title" id="m1-title"></h2>
+              <p class="mod-line" id="m1-line"></p>
+            </div>
+            <p class="hint" id="m1-hint">查看今夜全部天象 ›</p>
+          </a></article>
+          <article class="card mod-tall"><a class="tap" href="#aspects">
+            <div>
+              <div class="kicker" id="m2-kicker">占星 · 月相相位</div>
+              <h2 class="mod-title" id="m2-title"></h2>
+              <p class="mod-line" id="m2-line"></p>
+              <div class="aspect-mini" id="m2-items"></div>
+            </div>
+            <p class="hint" id="m2-hint">查看日月金水火相位 ›</p>
+          </a></article>
+        </div>
+        <article class="card mod-wide"><a class="tap" href="#signs">
+          <div class="kicker" id="m3-kicker">占星 · 月亮星座</div>
+          <h2 class="mod-title" id="m3-title"></h2>
+          <p class="mod-line" id="m3-line"></p>
+          <p class="hint" id="m3-hint">查看日月金水火星座 ›</p>
+        </a></article>
+        <article class="card blessing">
+          <div class="kicker">今日寄语</div>
+          <p id="blessing"></p>
+        </article>
+        <div class="fun-grid">
+          <a class="card fun" href="#oracle">
+            <div class="ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="10" y="4" width="28" height="40" rx="3.5"/>
+                <rect x="14" y="8" width="20" height="32" rx="2" opacity="0.4"/>
+                <path d="M24 14.5l3.1 6.2 6.8.8-5.1 4.7 1.5 6.7L24 29.6 17.7 33l1.5-6.7-5.1-4.7 6.8-.8z" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <span>神谕卡</span>
+          </a>
+          <a class="card fun" href="#divination">
+            <div class="ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="28" r="15"/>
+                <circle cx="24" cy="28" r="5.4" fill="currentColor" stroke="none"/>
+                <path d="M24 4v9"/>
+                <circle cx="24" cy="4.2" r="2.6" fill="currentColor" stroke="none"/>
+                <path d="M16 20h16" opacity="0.55"/>
+              </svg>
+            </div>
+            <span>占卜</span>
+          </a>
+          <a class="card fun" href="#chart">
+            <div class="ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="24" r="17"/>
+                <circle cx="24" cy="24" r="8.5" opacity="0.5"/>
+                <path d="M24 7v34M7 24h34" opacity="0.38"/>
+                <path d="M24 11.5l2.2 4.5 5 .6-3.7 3.4 1.1 4.8L24 22.4l-4.6 2.4 1.1-4.8-3.7-3.4 5-.6z" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <span>占星</span>
+          </a>
+          <a class="card fun" href="#synastry">
+            <div class="ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="17" cy="18" r="8.5"/>
+                <circle cx="31" cy="18" r="8.5"/>
+                <path d="M17 26.5c-7.2 1.8-11 7-11 12.5h14"/>
+                <path d="M31 26.5c7.2 1.8 11 7 11 12.5H28"/>
+                <path d="M21 18h6" opacity="0.55"/>
+                <circle cx="24" cy="18" r="2.2" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <span>合盘</span>
+          </a>
+          <a class="card fun" href="#wish">
+            <div class="ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="24" cy="34" rx="17" ry="8"/>
+                <ellipse cx="24" cy="34" rx="9" ry="3.4" fill="currentColor" fill-opacity="0.2" stroke="none"/>
+                <path d="M7 34c0-12 7.4-24 17-24s17 12 17 24"/>
+                <path d="M24 8l2.1 4.2 4.6.5-3.4 3.2.9 4.5L24 18.3l-4.2 2.1.9-4.5-3.4-3.2 4.6-.5z" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <span>许愿池</span>
+          </a>
+          <a class="card fun" href="#tree">
+            <div class="ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 42V26" stroke-width="2"/>
+                <path d="M24 10c-7 8-8 18 0 28 8-10 7-20 0-28z" fill="currentColor" fill-opacity="0.22"/>
+                <path d="M24 12v24"/>
+                <path d="M24 20c-4-3-5-8-3.5-12M24 24c4-3 5-8 3.5-12" opacity="0.55"/>
+                <path d="M12 28c-4.5 5-5 12 0 18 5-6 4.5-13 0-18z" fill="currentColor" fill-opacity="0.14"/>
+                <path d="M36 28c4.5 5 5 12 0 18-5-6-4.5-13 0-18z" fill="currentColor" fill-opacity="0.14"/>
+              </svg>
+            </div>
+            <span>树洞</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="view-astro" hidden>
+      <header class="subbar"><button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2>天文学星象</h2></header>
+      <div class="stack" id="astro-list"></div>
+    </section>
+    <section class="view" id="view-aspects" hidden>
+      <header class="subbar"><button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2>相位关系</h2></header>
+      <div class="stack" id="aspect-list"></div>
+    </section>
+    <section class="view" id="view-signs" hidden>
+      <header class="subbar"><button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2>星座位置</h2></header>
+      <div class="stack" id="sign-list"></div>
+    </section>
+    <section class="view" id="view-oracle" hidden>
+      <header class="subbar subbar-center"><button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2>神谕卡</h2></header>
+      <article class="card oracle-card" id="oracle-card"></article>
+      <button class="btn" id="oracle-draw">抽一张</button>
+      <div class="oracle-history">
+        <div class="kicker">近30日主牌</div>
+        <div class="stack" id="oracle-log"></div>
+      </div>
+    </section>
+    <section class="view" id="view-divination" hidden>
+      <header class="subbar subbar-center"><button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2>占卜</h2></header>
+      <div class="card panel">
+        <p class="lead">把心里的一件事问出来，得一支今日签。</p>
+        <textarea id="div-q" placeholder="例如：这件事，我还要不要继续？"></textarea>
+        <button class="btn" id="div-go" style="margin-top:10px">求签</button>
+      </div>
+      <div id="div-result" style="margin-top:10px"></div>
+      <div class="div-mods">
+        <section class="card div-mod">
+          <div class="kicker">视频占卜</div>
+          <div class="video-pick" id="video-pick">
+            <a class="card video-pick-item" href="#div-video-yes">
+              <div class="video-thumb">
+                <img alt="YES OR NO" />
+                <span class="play" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="currentColor"><path d="M18 12v24l20-12z"/></svg>
+                </span>
+              </div>
+              <h3>YES OR NO</h3>
+            </a>
+            <a class="card video-pick-item" href="#div-video-ta">
+              <div class="video-thumb">
+                <img alt="TA想对我说的话" />
+                <span class="play" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="currentColor"><path d="M18 12v24l20-12z"/></svg>
+                </span>
+              </div>
+              <h3>TA想对我说的话</h3>
+            </a>
+          </div>
+        </section>
+        <section class="card div-mod">
+          <div class="kicker">卡片占卜</div>
+          <div class="card-pick" id="card-pick"></div>
+        </section>
+        <section class="card div-mod private">
+          <div class="kicker">私人占卜</div>
+          <p>微信搜索「<span class="wx-id">Arties星星</span>」，可联系占星师进行私占。</p>
+        </section>
+      </div>
+    </section>
+    <section class="view" id="view-div-video" hidden>
+      <header class="subbar subbar-center"><button type="button" class="back" data-back="divination" aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2 id="div-video-title">视频占卜</h2></header>
+      <div class="card video-player-wrap">
+        <video id="div-video-el" controls playsinline webkit-playsinline preload="metadata"></video>
+      </div>
+      <article class="card video-desc"><p id="div-video-desc"></p></article>
+    </section>
+    <section class="view" id="view-div-card" hidden>
+      <header class="subbar subbar-center"><button type="button" class="back" id="div-card-back" data-back="divination" aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2 id="div-card-title">卡片占卜</h2></header>
+      <div class="card card-hero"><img id="div-card-img" alt="" /></div>
+      <p class="note" id="div-card-hint" style="margin-top:0">心里默念问题，点你有感应的那一组。</p>
+      <div class="card-options" id="div-card-options"></div>
+    </section>
+    <section class="view" id="view-div-card-opt" hidden>
+      <header class="subbar subbar-center"><button type="button" class="back" id="div-card-opt-back" data-back="divination" aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2 id="div-card-opt-head">解读</h2></header>
+      <div class="card card-opt-img"><img id="div-card-opt-img" alt="" /></div>
+      <article class="card video-desc card-opt-body">
+        <h3 id="div-card-opt-name"></h3>
+        <p id="div-card-opt-text"></p>
+      </article>
+    </section>
+    <section class="view" id="view-chart" hidden data-mode="form">
+      <header class="subbar chart-subbar">
+        <button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="chart-head-main">
+          <h2 id="chart-title">星盘</h2>
+          <button class="chart-switch" id="chart-switch" type="button" aria-label="切换档案" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 3l4 4-4 4"/>
+              <path d="M20 7H10a4 4 0 0 0-4 4"/>
+              <path d="M8 21l-4-4 4-4"/>
+              <path d="M4 17h10a4 4 0 0 0 4-4"/>
+            </svg>
+          </button>
+        </div>
+        <button class="chart-add" id="chart-add" type="button" aria-label="新增" hidden>+</button>
+      </header>
+      <div id="chart-form-view">
+        <div class="card panel chart-form-panel">
+          <div id="chart-loading" class="chart-loading" hidden>
+            <div class="chart-loading-inner">
+              <span class="chart-loading-spin" aria-hidden="true"></span>
+              <p>正在计算星盘…</p>
+            </div>
+          </div>
+          <form id="chart-form">
+            <div class="field"><label for="chart-nick">昵称</label><input id="chart-nick" name="nickname" type="text" maxlength="20" placeholder="怎么称呼你" required /></div>
+            <div class="field"><label>性别</label>
+              <div class="gender-seg">
+                <label><input type="radio" name="gender" value="女" />女</label>
+                <label><input type="radio" name="gender" value="男" checked />男</label>
+              </div>
+            </div>
+            <div class="field"><label>出生时间</label>
+              <div class="picker-labels"><span>年</span><span>月</span><span>日</span><span>时</span><span>分</span></div>
+              <div class="birth-wheel" data-birth-picker>
+                <div class="picker-col" data-part="year"></div>
+                <div class="picker-col" data-part="month"></div>
+                <div class="picker-col" data-part="day"></div>
+                <div class="picker-col" data-part="hour"></div>
+                <div class="picker-col" data-part="minute"></div>
+                <input type="hidden" name="birthTime" class="birth-time-value" />
+              </div>
+              <p class="chart-tz-hint">按出生地当地时间填写（随地点时区换算）</p>
+            </div>
+            <div class="field"><label>出生地点</label>
+              <div class="picker-labels place-labels place-labels-cn"><span>国家</span><span>省份</span><span>城市</span></div>
+              <div class="birth-wheel place-wheel" data-place-picker>
+                <div class="picker-col" data-part="country"></div>
+                <div class="picker-col" data-part="region"></div>
+                <div class="picker-col" data-part="city"></div>
+                <input type="hidden" name="birthPlace" class="place-value" />
+                <input type="hidden" name="birthCountry" class="place-country" />
+              </div>
+            </div>
+            <button class="btn" type="submit">提交</button>
+          </form>
+        </div>
+      </div>
+      <div id="chart-result-view" hidden>
+        <div class="card panel">
+          <ul class="chart-birth-meta">
+            <li><strong>出生时间</strong><span id="chart-birth-time"></span></li>
+            <li><strong>出生地点</strong><span id="chart-birth-place"></span></li>
+          </ul>
+          <div class="chart-sign-grid" id="chart-sign-grid" aria-label="主要天体星座"></div>
+          <div class="analysis-block"><h3>整体</h3><p id="chart-overall"></p></div>
+          <div class="analysis-block"><h3>事业</h3><p id="chart-career"></p></div>
+          <div class="analysis-block"><h3>财富</h3><p id="chart-wealth"></p></div>
+          <div class="analysis-block"><h3>感情</h3><p id="chart-love"></p></div>
+          <div class="analysis-block"><h3>健康</h3><p id="chart-health"></p></div>
+          <div class="analysis-block">
+            <h3>接下来一年</h3>
+            <h4 class="analysis-sub">行运</h4>
+            <p id="chart-year-transit"></p>
+            <h4 class="analysis-sub">法达</h4>
+            <p id="chart-year-firdaria"></p>
+          </div>
+        </div>
+      </div>
+      <p class="note chart-private-tip">微信搜索「<span class="wx-id">Arties星星</span>」，可联系占星师进行私占。</p>
+    </section>
+    <section class="view" id="view-synastry" hidden>
+      <header class="subbar chart-subbar">
+        <button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="chart-head-main"><h2>合盘</h2></div>
+        <button class="chart-add" id="syn-add" type="button" aria-label="新增档案">+</button>
+      </header>
+      <div class="syn-pair">
+        <div id="syn-left"></div>
+        <div class="syn-vs" id="syn-vs">VS</div>
+        <div id="syn-right"></div>
+      </div>
+      <div id="syn-report">
+        <p class="wish-empty">点击左侧或右侧档案进行选择，双方齐后自动计算合盘。</p>
+      </div>
+    </section>
+    <section class="view" id="view-wish" hidden>
+      <header class="subbar subbar-center"><button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2>许愿池</h2></header>
+      <div class="card panel wish-compose">
+        <p class="lead">把心愿轻轻投进池里，只留在这台设备上。</p>
+        <input id="wish-input" type="text" maxlength="80" placeholder="今晚想许一个什么愿？" />
+        <button class="btn" id="wish-go">许愿</button>
+      </div>
+      <div class="wish-grid" id="wish-list"></div>
+    </section>
+    <section class="view" id="view-tree" hidden>
+      <header class="subbar subbar-center"><button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2>树洞</h2></header>
+      <div class="card panel tree-compose">
+        <p class="lead">把不想说的话放进来，只有你能看见。</p>
+        <textarea id="tree-input" placeholder="写给夜空听的一句。"></textarea>
+        <button class="btn" id="tree-go">放进树洞</button>
+      </div>
+      <div class="wish-grid" id="tree-list"></div>
+    </section>
+    <section class="view" id="view-square" hidden>
+      <header class="subbar subbar-center"><button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><h2>广场</h2></header>
+      <div class="stack" id="square-list"></div>
+    </section>
+    <section class="view" id="view-login" hidden>
+      <header class="subbar subbar-center">
+        <button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <h2 id="login-view-title">登录</h2>
+      </header>
+      <div class="card panel auth-panel">
+        <p class="login-error" id="login-error" hidden></p>
+        <p class="login-tip" id="login-tip" hidden></p>
+
+        <div id="login-auth-step">
+          <div class="login-tabs" role="tablist">
+            <button type="button" class="login-tab active" data-login-mode="code">验证码登录</button>
+            <button type="button" class="login-tab" data-login-mode="password">密码登录</button>
+          </div>
+          <form id="login-form">
+            <div class="field">
+              <label for="login-phone">手机号</label>
+              <input id="login-phone" name="phone" type="tel" maxlength="11" inputmode="numeric" autocomplete="tel" placeholder="11 位手机号" required />
+            </div>
+            <div id="login-code-fields">
+              <div class="field">
+                <label for="login-code">验证码</label>
+                <div class="code-row">
+                  <input id="login-code" name="code" type="text" maxlength="6" inputmode="numeric" autocomplete="one-time-code" placeholder="6 位验证码" />
+                  <button type="button" class="code-send" id="login-send-code">获取验证码</button>
+                </div>
+              </div>
+            </div>
+            <div id="login-pass-fields" hidden>
+              <div class="field">
+                <label for="login-password">密码</label>
+                <input id="login-password" name="password" type="password" maxlength="32" autocomplete="current-password" placeholder="登录密码" />
+              </div>
+            </div>
+            <div class="auth-actions">
+              <button class="btn" type="submit" id="login-submit">验证并继续</button>
+              <button class="btn ghost" type="button" id="login-cancel">先逛逛首页</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="login-setup-step" hidden>
+          <p class="lead">验证成功，请设置用户名和密码，之后可用手机号+密码登录。</p>
+          <form id="login-setup-form">
+            <div class="field">
+              <label for="setup-nickname">用户名</label>
+              <input id="setup-nickname" name="nickname" type="text" maxlength="16" placeholder="至少 2 个字" required />
+            </div>
+            <div class="field">
+              <label for="setup-password">设置密码</label>
+              <input id="setup-password" name="password" type="password" maxlength="32" autocomplete="new-password" placeholder="至少 4 位" required />
+            </div>
+            <div class="field">
+              <label for="setup-password2">确认密码</label>
+              <input id="setup-password2" name="password2" type="password" maxlength="32" autocomplete="new-password" placeholder="再输入一次" required />
+            </div>
+            <div class="auth-actions">
+              <button class="btn" type="submit">完成并登录</button>
+              <button class="btn ghost" type="button" id="setup-back">返回</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="view" id="view-profile" hidden>
+      <header class="subbar subbar-center">
+        <button type="button" class="back" data-back aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5.5L8.5 12 15 18.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <h2>个人中心</h2>
+      </header>
+      <div class="card panel auth-panel">
+        <div class="profile-avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="3.2"/>
+            <path d="M5.5 19c1.6-3.2 4-4.8 6.5-4.8S16.9 15.8 18.5 19"/>
+          </svg>
+        </div>
+        <div class="profile-meta">
+          <strong id="profile-nick">星友</strong>
+          <span id="profile-account"></span>
+        </div>
+        <div class="auth-actions">
+          <button class="btn ghost" type="button" id="profile-logout">退出登录</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="modal-mask" id="oracle-modal" hidden>
+    <div class="modal-sheet">
+      <article class="card oracle-card" id="oracle-modal-card"></article>
+      <button class="btn" id="oracle-modal-close">收起</button>
+    </div>
+  </div>
+  <div class="modal-mask" id="chart-modal" hidden>
+    <div class="modal-sheet">
+      <div class="card panel">
+        <p class="lead">新增人物档案</p>
+        <form id="chart-modal-form">
+          <div class="field"><label>昵称</label><input name="nickname" type="text" maxlength="20" placeholder="昵称" required /></div>
+          <div class="field"><label>性别</label>
+            <div class="gender-seg">
+              <label><input type="radio" name="gender" value="女" />女</label>
+              <label><input type="radio" name="gender" value="男" checked />男</label>
+            </div>
+          </div>
+          <div class="field"><label>出生时间</label>
+            <div class="picker-labels"><span>年</span><span>月</span><span>日</span><span>时</span><span>分</span></div>
+            <div class="birth-wheel" data-birth-picker>
+              <div class="picker-col" data-part="year"></div>
+              <div class="picker-col" data-part="month"></div>
+              <div class="picker-col" data-part="day"></div>
+              <div class="picker-col" data-part="hour"></div>
+              <div class="picker-col" data-part="minute"></div>
+              <input type="hidden" name="birthTime" class="birth-time-value" />
+            </div>
+          </div>
+          <div class="field"><label>出生地点</label>
+            <div class="picker-labels place-labels place-labels-cn"><span>国家</span><span>省份</span><span>城市</span></div>
+            <div class="birth-wheel place-wheel" data-place-picker>
+              <div class="picker-col" data-part="country"></div>
+              <div class="picker-col" data-part="region"></div>
+              <div class="picker-col" data-part="city"></div>
+              <input type="hidden" name="birthPlace" class="place-value" />
+              <input type="hidden" name="birthCountry" class="place-country" />
+            </div>
+          </div>
+          <div class="modal-actions">
+            <button class="btn ghost" type="button" id="chart-modal-close">取消</button>
+            <button class="btn" type="submit">提交</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-mask" id="chart-switch-modal" hidden>
+    <div class="modal-sheet">
+      <div class="card panel">
+        <div class="modal-head">
+          <p class="lead">切换档案</p>
+          <div class="modal-head-actions">
+            <button type="button" class="modal-icon-btn add" id="chart-switch-add" aria-label="新增">+</button>
+            <button type="button" class="modal-icon-btn close" id="chart-switch-close" aria-label="关闭">×</button>
+          </div>
+        </div>
+        <div id="chart-switch-list"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-mask" id="syn-pick-sheet" hidden>
+    <div class="modal-sheet syn-pick-sheet">
+      <div class="card panel">
+        <div class="modal-head">
+          <p class="lead">选择合盘对象</p>
+          <div class="modal-head-actions">
+            <button type="button" class="modal-icon-btn close" id="syn-pick-close" aria-label="关闭">×</button>
+          </div>
+        </div>
+        <div id="syn-pick-list"></div>
+        <div class="syn-pick-actions">
+          <button type="button" class="btn" id="syn-pick-add">新增档案</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="auth-ui.js?v=202609011729"></script>
+  <script type="module" src="natal-ui.js?v=202609031627"></script>
+  <script type="module" src="synastry-ui.js?v=202609011725"></script>
+  <script src="llm-config.default.js?v=202609041656"></script>
+  <script src="llm-config.js" onerror="/* 本地可选覆盖，公网无此文件 */"></script>
+  <script src="llm-client.js?v=202609011802"></script>
+  <script type="module" src="wish-ui.js?v=202609011802"></script>
+  <script type="module" src="tree-ui.js?v=202609011802"></script>
+  <script type="module" src="geo-place.js?v=2026082816"></script>
+  <script src="sky-refresh.js?v=202609011733"></script>
+  <script src="oracle-pool.js?v=202609011436"></script>
+  <script src="lot-reply.js?v=202609011714"></script>
+  <script>
+    (function () {
+      var sky = document.getElementById("sky");
+      for (var i = 0; i < 96; i++) {
+        var s = document.createElement("span");
+        s.className = "star";
+        s.style.left = Math.random() * 100 + "%";
+        s.style.top = Math.random() * 100 + "%";
+        s.style.animationDelay = (Math.random() * 3.6).toFixed(2) + "s";
+        s.style.transform = "scale(" + (0.6 + Math.random() * 1.6).toFixed(2) + ")";
+        sky.appendChild(s);
+      }
+
+      var d = window.STARS_DATA || {};
+      var diary = d.diary || {};
+      var COLORS = {
+        "太阳": "#f0d080", "月亮": "#e8e0c8", "水星": "#c5c8d0", "金星": "#e8c98a",
+        "火星": "#c45b3a", "木星": "#e2c9a0", "土星": "#c4a36a", "天王星": "#7ba3c4",
+        "海王星": "#5b7aa8", "冥王星": "#8a6a8a"
+      };
+      var PERSONAL = ["太阳", "月亮", "水星", "金星", "火星"];
+      var ZODIAC = ["白羊", "金牛", "双子", "巨蟹", "狮子", "处女", "天秤", "天蝎", "射手", "摩羯", "水瓶", "双鱼"];
+      var ORACLES = window.ORACLE_POOL ? window.ORACLE_POOL.all() : [];
+      var ORACLE_STORE_KEY = "diary-oracle-draws";
+      var LOTS = [
+        { rank: "上上", title: "星开一路", text: "所问之事有光，宜主动迈一小步，好运会跟着来。" },
+        { rank: "上吉", title: "月照归途", text: "方向对了，只是还要一点耐心。今夜适合把话说软。" },
+        { rank: "上吉", title: "风送好音", text: "会有回响。先把心意准备好，不必催促结果。" },
+        { rank: "中吉", title: "半开的门", text: "可以试，但留退路。小步前进，比一次赌上全部更好。" },
+        { rank: "中吉", title: "灯火可亲", text: "身边人愿意帮你。开口吧，孤独会因此淡一点。" },
+        { rank: "中平", title: "潮停片刻", text: "先不要加码。把现状看清楚，再决定要不要转身。" },
+        { rank: "中平", title: "云后有星", text: "眼前不明朗，不等于没有路。宜静候，不宜硬闯。" },
+        { rank: "小吉", title: "一盏温茶", text: "事可成，但成在细节。把一件小事做好，就是答案。" },
+        { rank: "小吉", title: "路遇清风", text: "阻力会小一些。适合联络、学习、把心愿说给信任的人。" },
+        { rank: "中平", title: "且将息", text: "今晚宜休息。把问题放到明天的阳光里，会更好看。" },
+        { rank: "下平", title: "先收回手", text: "暂时不宜推进。保护力气，等相位转顺再动身。" },
+        { rank: "下平", title: "改道亦安", text: "原路或许拥堵。换一个问法、换一个节奏，仍然可喜。" }
+      ];
+
+      function esc(s) {
+        return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+        });
+      }
+      function hashStr(s) {
+        var h = 2166136261;
+        for (var i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 16777619);
+        return h >>> 0;
+      }
+      function paintMoon(el, frac, waxing) {
+        if (!el) return;
+        var k = Math.max(0, Math.min(1, Number(frac) || 0));
+        var r = 38, cx = 42, cy = 42;
+        var wax = waxing !== false;
+        var hx = wax ? 34 : 50;
+        var uid = "m" + Math.random().toString(36).slice(2, 8);
+        var svg = '<svg viewBox="0 0 84 84" xmlns="http://www.w3.org/2000/svg">';
+        svg += "<defs>";
+        svg += '<radialGradient id="' + uid + 'lit" cx="' + hx + '" cy="28" r="48" gradientUnits="userSpaceOnUse">';
+        svg += '<stop offset="0%" stop-color="#fffdf6"/><stop offset="32%" stop-color="#fff0c8"/>';
+        svg += '<stop offset="68%" stop-color="#edc988"/><stop offset="100%" stop-color="#c9a56a"/>';
+        svg += "</radialGradient>";
+        svg += '<radialGradient id="' + uid + 'dark" cx="42" cy="40" r="42" gradientUnits="userSpaceOnUse">';
+        svg += '<stop offset="0%" stop-color="#2a2d3c"/><stop offset="100%" stop-color="#14161f"/>';
+        svg += "</radialGradient></defs>";
+        var lit = "url(#" + uid + "lit)";
+        var dark = "url(#" + uid + "dark)";
+        // 底盘始终可见，避免半满时只剩描边空圈
+        svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + dark + '"/>';
+        if (k > 0.02) {
+          if (k > 0.98) {
+            svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + lit + '"/>';
+          } else {
+            // 椭圆晨昏线：渐盈亮面在右，渐亏亮面在左；半满时 rx≈0 画半圆
+            var rx = Math.abs(2 * k - 1) * r;
+            var top = cx + "," + (cy - r);
+            var bot = cx + "," + (cy + r);
+            var sweepRim = wax ? 1 : 0;
+            var path;
+            if (rx < 0.8) {
+              path = "M" + top + " A" + r + "," + r + " 0 0 " + sweepRim + " " + bot + " Z";
+            } else if (k >= 0.5) {
+              var sweepTerm = wax ? 0 : 1;
+              path = "M" + top + " A" + r + "," + r + " 0 0 " + sweepRim + " " + bot +
+                " A" + rx.toFixed(2) + "," + r + " 0 0 " + sweepTerm + " " + top + " Z";
+            } else {
+              path = "M" + top + " A" + r + "," + r + " 0 0 " + sweepRim + " " + bot +
+                " A" + rx.toFixed(2) + "," + r + " 0 0 " + sweepRim + " " + top + " Z";
+            }
+            svg += '<path d="' + path + '" fill="' + lit + '"/>';
+          }
+        }
+        svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none" stroke="#e8c98a" stroke-width="1.5"/>';
+        svg += "</svg>";
+        el.innerHTML = svg;
+      }
+      function setText(id, v) {
+        var el = document.getElementById(id);
+        if (el) el.textContent = v || "";
+      }
+
+      var parts = (d.date || "").split("-");
+      setText("date-line", parts.length === 3 ? Number(parts[1]) + "月" + Number(parts[2]) + "日" : "");
+      setText("week-line", d.weekday || "");
+      var m1 = diary.mod1 || {};
+      var m2 = diary.mod2 || {};
+      var m3 = diary.mod3 || {};
+      setText("m1-kicker", m1.kicker); setText("m1-title", m1.title); setText("m1-line", m1.line); setText("m1-hint", (m1.hint || "查看今夜全部天象") + " ›");
+      setText("m2-kicker", m2.kicker); setText("m2-title", m2.title); setText("m2-line", m2.line); setText("m2-hint", (m2.hint || "") + " ›");
+      setText("m3-kicker", m3.kicker); setText("m3-title", m3.title); setText("m3-line", m3.line); setText("m3-hint", (m3.hint || "") + " ›");
+      setText("blessing", diary.blessing || d.advice || "");
+      paintMoon(document.getElementById("moon-disc"), d.moonFraction, d.waxing);
+
+      var mini = document.getElementById("m2-items");
+      (m2.items || []).slice(0, 1).forEach(function (a) {
+        var other = a.a === "月亮" ? a.b : a.a;
+        var chip = document.createElement("span");
+        chip.className = "chip " + (a.tone || "");
+        chip.textContent = a.aspect + " · " + other;
+        mini.appendChild(chip);
+      });
+
+      function fillAstro() {
+        var box = document.getElementById("astro-list");
+        box.innerHTML = "";
+        (diary.astronomy || []).forEach(function (ev) {
+          var art = document.createElement("article");
+          art.className = "card item";
+          art.innerHTML = '<div class="badge">' + esc(ev.label || ev.kind) + "</div>" +
+            "<h3>" + esc(ev.title) + "</h3>" +
+            '<p class="meta">' + esc(ev.caption) + "</p>" +
+            "<p>" + esc(ev.detail) + "</p>";
+          box.appendChild(art);
+        });
+      }
+      function fillAspects() {
+        var box = document.getElementById("aspect-list");
+        box.innerHTML = "";
+        var items = diary.personalAspects || [];
+        if (!items.length) {
+          box.innerHTML = '<p class="empty">今日日月金水火无主要相位入界。</p>';
+          return;
+        }
+        PERSONAL.forEach(function (p) {
+          var group = items.filter(function (a) { return a.a === p || a.b === p; })
+            .filter(function (a) {
+              var first = PERSONAL.indexOf(a.a) >= 0 ? a.a : a.b;
+              return first === p;
+            });
+          if (!group.length) return;
+          var h = document.createElement("div");
+          h.className = "group-title";
+          h.textContent = p + "的相位";
+          box.appendChild(h);
+          group.forEach(function (a) {
+            var other = a.a === p ? a.b : a.a;
+            var art = document.createElement("article");
+            art.className = "card item";
+            art.innerHTML = '<span class="badge ' + esc(a.tone || "") + '">' + esc(a.aspect) + "</span>" +
+              "<h3>" + esc(p) + " · " + esc(other) + "</h3>" +
+              "<p>" + esc(a.influence) + "</p>" +
+              '<p class="meta">' + esc(a.motion || "") + " · " + esc(a.endsIn || "") +
+              " · 距精确 " + esc(a.orbUsed) + "°</p>";
+            box.appendChild(art);
+          });
+        });
+      }
+      function fillSigns() {
+        var box = document.getElementById("sign-list");
+        box.innerHTML = "";
+        (diary.personalSigns || []).forEach(function (b) {
+          var art = document.createElement("article");
+          art.className = "card item";
+          art.innerHTML = "<h3>" + esc(b.name) + " · " + esc(b.label) + "</h3><p>" + esc(b.influence) + "</p>";
+          box.appendChild(art);
+        });
+        var outer = diary.outerSignChanges || [];
+        if (outer.length) {
+          var h = document.createElement("div");
+          h.className = "group-title";
+          h.textContent = "慢星换座";
+          box.appendChild(h);
+          outer.forEach(function (b) {
+            var art = document.createElement("article");
+            art.className = "card item";
+            art.innerHTML = "<h3>" + esc(b.name) + " " + esc(b.from) + " → " + esc(b.to) + "</h3>" +
+              '<p class="meta">' + esc(b.when) + "</p><p>" + esc(b.influence) + "</p>";
+            box.appendChild(art);
+          });
+        }
+      }
+      function fillSquare() {
+        var box = document.getElementById("square-list");
+        box.innerHTML = "";
+        var posts = [];
+        (diary.astronomy || []).slice(0, 6).forEach(function (ev) {
+          posts.push({ title: ev.title, text: ev.caption, tag: "天象速报" });
+        });
+        (diary.moonAspects || []).slice(0, 3).forEach(function (a) {
+          posts.push({ title: a.a + " " + a.aspect + " " + a.b, text: a.influence, tag: "相位" });
+        });
+        if (!posts.length) posts.push({ title: "今夜星点", text: "无特别合相，宜看月相。", tag: "广场" });
+        posts.forEach(function (p) {
+          var art = document.createElement("article");
+          art.className = "card item";
+          art.innerHTML = '<div class="badge">' + esc(p.tag) + "</div><h3>" + esc(p.title) + "</h3><p>" + esc(p.text) + "</p>";
+          box.appendChild(art);
+        });
+      }
+
+      function applyDiaryPlace(place) {
+        if (!place) return;
+        var label = document.getElementById("place-label");
+        if (label) label.textContent = place.name || "北京";
+        if (window.GeoPlace && window.GeoPlace.localizeAstronomy) {
+          diary.astronomy = window.GeoPlace.localizeAstronomy(d, place);
+        }
+        fillAstro();
+        fillSquare();
+        setText("m1-hint", "查看" + (place.name || "北京") + "今夜天象 ›");
+      }
+      window.addEventListener("diary-place", function (ev) {
+        applyDiaryPlace(ev.detail);
+      });
+      window.addEventListener("geo-place-ready", function () {
+        if (window.GeoPlace && window.GeoPlace.getSaved) {
+          applyDiaryPlace(window.GeoPlace.getSaved() || window.GeoPlace.DEFAULT_PLACE);
+        }
+      });
+      if (window.GeoPlace && window.GeoPlace.getSaved) {
+        applyDiaryPlace(window.GeoPlace.getSaved() || window.GeoPlace.DEFAULT_PLACE);
+      } else {
+        applyDiaryPlace({ name: "北京", lat: 39.9042, lon: 116.4074, tz: "Asia/Shanghai", source: "default" });
+      }
+
+      var oracleExtra = 0;
+      function oracleMotif(kind) {
+        var inner = {
+          star: '<polygon points="100,28 108,72 154,72 116,98 130,142 100,114 70,142 84,98 46,72 92,72" fill="currentColor" opacity="0.85"/><circle cx="46" cy="40" r="3" fill="currentColor"/><circle cx="160" cy="48" r="2.4" fill="currentColor"/><circle cx="168" cy="120" r="2" fill="currentColor"/>',
+          tide: '<path d="M20 90c18-18 36 18 54 0s36 18 54 0 36 18 54 0" fill="none" stroke="currentColor" stroke-width="3"/><path d="M20 118c18-16 36 16 54 0s36 16 54 0 36 16 54 0" fill="none" stroke="currentColor" stroke-width="2.2" opacity="0.7"/><path d="M20 146c18-14 36 14 54 0s36 14 54 0 36 14 54 0" fill="none" stroke="currentColor" stroke-width="1.6" opacity="0.45"/>',
+          seed: '<ellipse cx="100" cy="108" rx="18" ry="28" fill="currentColor" opacity="0.35"/><path d="M100 78c18 18 8 52-12 66" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M100 52c-8 22 8 36 0 58" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="48" r="6" fill="currentColor"/>',
+          wind: '<path d="M24 70h92c16 0 16-22 0-22" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M36 100h108c14 0 14 20 0 20" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M28 132h86c12 0 12-16 0-16" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.6"/>',
+          lighthouse: '<path d="M92 170V78h16v92z" fill="currentColor" opacity="0.28"/><path d="M84 78h32l-6-22h-20z" fill="currentColor" opacity="0.45"/><path d="M100 36l54 22M100 36L46 58" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="32" r="6" fill="currentColor"/>',
+          well: '<ellipse cx="100" cy="86" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="2.4"/><ellipse cx="100" cy="86" rx="26" ry="8" fill="currentColor" opacity="0.25"/><path d="M54 86v40c0 14 20 26 46 26s46-12 46-26V86" fill="none" stroke="currentColor" stroke-width="2"/>',
+          wing: '<path d="M100 96c-28-40-62-28-70-6 22-6 40 8 70 28 30-20 48-34 70-28-8-22-42-34-70 6z" fill="currentColor" opacity="0.32"/><path d="M100 96c-24-8-40 6-52 22M100 96c24-8 40 6 52 22" fill="none" stroke="currentColor" stroke-width="1.8"/>',
+          fire: '<path d="M100 160c-28 0-40-24-28-52 8 10 18 8 16-16 22 10 48 28 40 56-6 18-16 12-28 12z" fill="currentColor" opacity="0.4"/><path d="M96 148c-10-8-8-28 2-40" fill="none" stroke="currentColor" stroke-width="2"/>',
+          bridge: '<path d="M28 128h144" stroke="currentColor" stroke-width="3"/><path d="M40 128c20-36 100-36 120 0" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M64 128v-22M100 128v-30M136 128v-22" stroke="currentColor" stroke-width="1.6" opacity="0.7"/>',
+          dew: '<circle cx="100" cy="88" r="22" fill="currentColor" opacity="0.28"/><circle cx="92" cy="80" r="7" fill="currentColor" opacity="0.5"/><path d="M100 52c18 28 18 48 0 72-18-24-18-44 0-72z" fill="currentColor" opacity="0.22"/>',
+          mountain: '<path d="M20 150l52-72 28 34 24-48 56 86z" fill="currentColor" opacity="0.22"/><path d="M20 150l52-72 28 34 24-48 56 86" fill="none" stroke="currentColor" stroke-width="2"/>',
+          key: '<circle cx="78" cy="88" r="18" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="78" cy="88" r="6" fill="currentColor" opacity="0.45"/><path d="M94 96h70v10H128v12h-12v-12h-10v8h-12z" fill="currentColor" opacity="0.55"/>',
+          home: '<path d="M40 110l60-44 60 44v52H40z" fill="currentColor" opacity="0.22"/><path d="M40 110l60-44 60 44v52H40z" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="88" y="126" width="24" height="36" fill="currentColor" opacity="0.35"/>',
+          sprout: '<path d="M100 168V96" stroke="currentColor" stroke-width="2.6"/><path d="M100 118c-28-6-40-28-36-48 22 8 32 24 36 48z" fill="currentColor" opacity="0.35"/><path d="M100 110c24-8 40-26 38-48-20 10-30 26-38 48z" fill="currentColor" opacity="0.22"/>',
+          galaxy: '<ellipse cx="100" cy="100" rx="70" ry="22" fill="none" stroke="currentColor" stroke-width="1.6" transform="rotate(-18 100 100)"/><ellipse cx="100" cy="100" rx="46" ry="14" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.6" transform="rotate(-18 100 100)"/><circle cx="100" cy="100" r="6" fill="currentColor"/><circle cx="54" cy="78" r="2.2" fill="currentColor"/><circle cx="150" cy="118" r="2" fill="currentColor"/>',
+          anchor: '<circle cx="100" cy="58" r="10" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M100 68v70M70 96h60" stroke="currentColor" stroke-width="2.4"/><path d="M58 128c8 28 76 28 84 0" fill="none" stroke="currentColor" stroke-width="2.2"/>',
+          window: '<rect x="58" y="48" width="84" height="104" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M100 48v104M58 100h84" stroke="currentColor" stroke-width="1.8"/><circle cx="78" cy="76" r="8" fill="currentColor" opacity="0.25"/>',
+          letter: '<rect x="46" y="64" width="108" height="72" rx="4" fill="currentColor" opacity="0.18"/><path d="M46 70l54 36 54-36" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="46" y="64" width="108" height="72" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>'
+        }[kind] || innerFallback();
+        return '<svg class="oracle-motif" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">' + inner + "</svg>";
+      }
+      function innerFallback() {
+        return '<circle cx="100" cy="100" r="36" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="100" r="6" fill="currentColor"/>';
+      }
+      function pad2(n) { return n < 10 ? "0" + n : String(n); }
+      function parseYmd(ymd) {
+        var p = String(ymd || "").split("-");
+        if (p.length !== 3) return new Date();
+        return new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+      }
+      function formatYmd(dt) {
+        return dt.getFullYear() + "-" + pad2(dt.getMonth() + 1) + "-" + pad2(dt.getDate());
+      }
+      function loadOracleMap() {
+        try {
+          var raw = JSON.parse(localStorage.getItem(ORACLE_STORE_KEY) || "{}");
+          return raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {};
+        } catch (e) {
+          return {};
+        }
+      }
+      function saveOracleMap(map) {
+        var keys = Object.keys(map).sort();
+        if (keys.length > 60) {
+          keys.slice(0, keys.length - 60).forEach(function (k) { delete map[k]; });
+        }
+        localStorage.setItem(ORACLE_STORE_KEY, JSON.stringify(map));
+      }
+      function oracleByTitle(title) {
+        if (window.ORACLE_POOL && window.ORACLE_POOL.byTitle) {
+          return window.ORACLE_POOL.byTitle(title);
+        }
+        for (var i = 0; i < ORACLES.length; i++) if (ORACLES[i].title === title) return ORACLES[i];
+        return null;
+      }
+      function recordToCard(rec) {
+        if (!rec) return null;
+        var found = oracleByTitle(rec.title);
+        if (found) return found;
+        return { title: rec.title || "神谕", motif: rec.motif || "star", text: rec.text || "" };
+      }
+      function pickOracleCard() {
+        var map = loadOracleMap();
+        var today = d.date || formatYmd(new Date());
+        var last = map[today];
+        var n = ORACLES.length;
+        var idx = Math.floor(Math.random() * n);
+        if (last && n > 1) {
+          var guard = 0;
+          while (ORACLES[idx].title === last.title && guard < 12) {
+            idx = Math.floor(Math.random() * n);
+            guard += 1;
+          }
+        }
+        return ORACLES[idx];
+      }
+      function saveTodayDraw(card) {
+        var map = loadOracleMap();
+        var today = d.date || formatYmd(new Date());
+        map[today] = {
+          title: card.title,
+          motif: card.motif,
+          text: card.text,
+          t: Date.now()
+        };
+        saveOracleMap(map);
+      }
+      function renderOracleCard(el, card, tag) {
+        var tagLine = tag || "";
+        if (card.classic) tagLine = tagLine ? "经典 · " + tagLine : "经典神谕";
+        el.innerHTML =
+          '<div class="oracle-bg" aria-hidden="true">' + oracleMotif(card.motif) + "</div>" +
+          (tagLine ? '<div class="tag">' + esc(tagLine) + "</div>" : "") +
+          "<h3>" + esc(card.title) + "</h3><p>" + esc(card.text) + "</p>";
+      }
+      function renderOracleEmpty(el) {
+        el.innerHTML =
+          '<div class="oracle-bg" aria-hidden="true">' + oracleMotif("star") + "</div>" +
+          '<div class="tag">尚未抽取</div>' +
+          "<h3>今夜还空着</h3><p>点下方「抽一张」，才会记入今日主牌。没抽过的日子，不会出现在近30日记录里。</p>";
+      }
+      function showOracle() {
+        var map = loadOracleMap();
+        var today = d.date || "";
+        var rec = today ? map[today] : null;
+        var btn = document.getElementById("oracle-draw");
+        if (rec) {
+          renderOracleCard(document.getElementById("oracle-card"), recordToCard(rec), "今日主牌");
+          if (btn) btn.textContent = "再抽一张";
+        } else {
+          renderOracleEmpty(document.getElementById("oracle-card"));
+          if (btn) btn.textContent = "抽一张";
+        }
+        fillOracleLog();
+      }
+      function fillOracleLog() {
+        var box = document.getElementById("oracle-log");
+        box.innerHTML = "";
+        var map = loadOracleMap();
+        var base = parseYmd(d.date);
+        var rows = [];
+        for (var i = 0; i < 30; i++) {
+          var dt = new Date(base.getFullYear(), base.getMonth(), base.getDate() - i);
+          var ymd = formatYmd(dt);
+          if (!map[ymd]) continue;
+          rows.push({ ymd: ymd, dt: dt, rec: map[ymd] });
+        }
+        if (!rows.length) {
+          box.innerHTML = '<p class="empty">还没有抽取记录。抽过之后，才会出现在这里。</p>';
+          return;
+        }
+        rows.forEach(function (row) {
+          var card = recordToCard(row.rec);
+          var el = document.createElement("div");
+          el.className = "card oracle-row";
+          el.innerHTML =
+            '<span class="day">' + esc((row.dt.getMonth() + 1) + "月" + row.dt.getDate() + "日") + "</span>" +
+            '<button type="button" class="name" data-oracle-ymd="' + esc(row.ymd) + '">' + esc(card.title) + "</button>";
+          box.appendChild(el);
+        });
+      }
+      function openOracleModal(ymd) {
+        var map = loadOracleMap();
+        var rec = map[ymd];
+        if (!rec) return;
+        var card = recordToCard(rec);
+        var dt = parseYmd(ymd);
+        renderOracleCard(
+          document.getElementById("oracle-modal-card"),
+          card,
+          (dt.getMonth() + 1) + "月" + dt.getDate() + "日主牌"
+        );
+        document.getElementById("oracle-modal").hidden = false;
+      }
+      function closeOracleModal() {
+        document.getElementById("oracle-modal").hidden = true;
+      }
+      document.getElementById("oracle-draw").addEventListener("click", function () {
+        var card = pickOracleCard();
+        saveTodayDraw(card);
+        oracleExtra += 1;
+        renderOracleCard(document.getElementById("oracle-card"), card, "今日主牌");
+        document.getElementById("oracle-draw").textContent = "再抽一张";
+        fillOracleLog();
+      });
+      document.getElementById("oracle-log").addEventListener("click", function (e) {
+        var btn = e.target.closest("[data-oracle-ymd]");
+        if (!btn) return;
+        openOracleModal(btn.getAttribute("data-oracle-ymd"));
+      });
+      document.getElementById("oracle-modal-close").addEventListener("click", closeOracleModal);
+      document.getElementById("oracle-modal").addEventListener("click", function (e) {
+        if (e.target.id === "oracle-modal") closeOracleModal();
+      });
+      var DIV_VIDEOS = {
+        "div-video-yes": {
+          title: "YES OR NO",
+          src: "videos/yes-or-no.mp4",
+          poster: "videos/yes-or-no.png",
+          desc: "想着你想问的那件事，深呼吸，点击视频播放按钮，并在有感应的时候，按下暂停键，领取问题的答案。"
+        },
+        "div-video-ta": {
+          title: "TA想对我说的话",
+          src: "videos/ta-message.mp4",
+          poster: "videos/ta-message.png",
+          desc: "想着你心里想的那个人，默念TA的名字，在脑海里想着TA的样子，深呼吸，点击视频播放按钮，并在有感应的时候，按下暂停键，领取问题的答案。"
+        }
+      };
+      (function assignVideoCovers() {
+        var covers = ["videos/cover-1.png", "videos/cover-2.png"];
+        if (Math.random() < 0.5) covers.reverse();
+        var imgs = document.querySelectorAll("#video-pick img");
+        imgs.forEach(function (img, i) { img.src = covers[i]; });
+      })();
+      function pauseDivVideo() {
+        var el = document.getElementById("div-video-el");
+        if (el) el.pause();
+      }
+      function showDivVideo(key) {
+        var info = DIV_VIDEOS[key];
+        if (!info) return false;
+        document.querySelectorAll(".view").forEach(function (v) { v.hidden = true; });
+        document.getElementById("view-div-video").hidden = false;
+        setText("div-video-title", info.title);
+        setText("div-video-desc", info.desc);
+        var el = document.getElementById("div-video-el");
+        if (el.getAttribute("src") !== info.src) {
+          el.setAttribute("src", info.src);
+          el.setAttribute("poster", info.poster);
+          el.load();
+        }
+        el.currentTime = 0;
+        window.scrollTo(0, 0);
+        return true;
+      }
+      var DIV_CARDS = [
+        {
+          id: "year",
+          title: "2027年，你过得怎么样？",
+          image: "cards/card-1.jpg",
+          groups: [
+            { name: "第1组", text: "今年，你可能过得很艰辛，压力比较大，给自己设立了超高目标，布置了很多任务。年底，你会有很大的收获，会在工作成果或者收入上拿到一个非常好的结果，比如得到公司的嘉奖，或者拿到非常丰厚的奖金。你会选择和同一组的同事或者好朋友们聚餐庆祝，大概率会组团跨年，开心地迎接2027年。这一年有欢笑，也有泪水，请给自己一个大大的赞，你已经做得很棒了，宇宙也会给到你一个非常好的奖励。" },
+            { name: "第2组", text: "2026年的你，看起来过得很不错，但偶尔也会遇到糟心的人或事情，影响你的好心情。不过你的内心越来越强大了，get到了一个法宝：问题永远不会消失，但是可以转移。遇到看不顺眼的人或事，就选择性忽视；遇到不想做的事情，就适当放弃。所以年底前，你会在心态上达到一种很好的平衡和自信，并且带着这种很棒的能量和磁场，迎接新一年到来。年底这段时间你会过得比较悠闲自在，大概率还会有些钱财上的小收获。" },
+            { name: "第3组", text: "2026年，在工作上和个人成长上，你积累了很丰富的经验，认真踏实地打基础，很可能迎来一次自我突破。年底，你可能会邂逅人生中重要的伴侣或者合作伙伴，这个人比较年轻，带着风象和火象的能量，在你人生的新篇章里，TA会是一个比较重要的存在。你会因为结识这样一个人而感到非常开心。年底你可能还会写下2027年的奋斗目标，继续勇敢前进。加油，你即将迎来一个全新的开始。" },
+            { name: "第4组", text: "2026年，你花了很多精力在做一件事情。年底前，你会得到很好的正反馈，包括但不限于拿到一个官方认证的奖、获得某个领域的证书、考试顺利通过、被理想的学校或者公司录取，也有些人会被求婚、求婚成功，或者在12月办一场婚礼。这是你人生中一个充满鲜花和掌声的小节点，敬请期待一下吧。" }
+          ]
+        },
+        {
+          id: "friend",
+          title: "心里想一个朋友，看看你们的缘分～",
+          image: "cards/card-2.jpg",
+          groups: [
+            { name: "陪伴", text: "你们在人生某一个阶段，是很好的朋友。有那么一段时间，你们的想法很类似，遇到的人生课题也很像，经常聊天，互相排解烦恼，一起想办法解决困境。但在漫长的人生旅程中，你们会经历很多不同的故事，所以并不是一直陪伴彼此，会发展各自的故事线。也许现在很忙碌，身上背负着不同的压力，联系变少。但长远来看，你们还会是很好的朋友。未来的某一天，你们会约个饭，开心地谈论过往，也会是彼此在困境中可以依靠的朋友。" },
+            { name: "亦师亦友", text: "你的朋友很神秘，你并不是真正了解TA。和TA相比，你的个性更容易被看透，而TA是很冷静、睿智、有主见的人。你们之间更像是因为某些合同或者利益绑定在一起的伙伴，比如同事、室友、合伙人。短期来看，你们是相互合作的关系，很融洽。时间长了，你们可能会一起经过很多风雨，共同承担一些压力。你会在这段友情中得到成长，TA是亦师亦友的存在。" },
+            { name: "智囊", text: "你和你的朋友可能一个土象、一个火象。虽然个性不同，但聚在一起总能迸发出很多有趣的想法。你们的友情偏理性，比起拥有深厚情感，更像是把彼此当作很重要的人脉资源。在日常生活中，你们不会觉得彼此不可或缺，但遇到困难会找对方出主意。所以，这个朋友不是情感上的陪伴，而是你的智囊。你们可以互相借鉴彼此的智慧去完成一些挑战，互相成就。" },
+            { name: "童真", text: "你和你的朋友应该很早就认识，或者两个人有一些相似的经历，相处时很轻松愉快。对方会比你成熟一些，阅历更丰富。你们很合拍，可以成为彼此推进事业的原动力，给彼此打气。你们当下的链接并不深，但日后会有在某个领域合作的机会，两个人一直都保持一种很赤诚的态度。也许你们老了之后，也会一起开开心心地玩乐，总能激发出彼此原始且天真的能量。" }
+          ]
+        },
+        {
+          id: "meet",
+          title: "我和TA下一次见面会是什么场景？",
+          image: "cards/card-3.jpg",
+          groups: [
+            { name: "惊喜", text: "下次见面会带一点小心思。可能是对方递给你一份小礼物、一杯热的，或是一个你没想到的小仪式。场景不会很大张旗鼓，更像两个人之间的悄悄话。你心里那句没说出口的话，到时候会更容易被接住。见面时别急着把气氛撑满，把那一点温柔收下就好。这一面结束后，你会觉得被认真对待了。" },
+            { name: "分享", text: "下次见面会很日常、也很甜。大概率是一起吃饭、喝点什么，把最近的生活摊开来说。不一定轰轰烈烈，但你会觉得被滋养到。对方状态比较放松，你们聊着聊着就笑了。适合把想说的话说浅一点、说真一点，别把见面变成对账或审判。这一面会让你想起：原来你们还是可以很轻松地待在一起的。" },
+            { name: "纪念", text: "下次见面会带一点仪式感。可能靠近纪念日、生日，或是你们都觉得「该好好见一面」的节点。场景偏私密、偏暖，灯光不会太亮。你会意识到这段关系已经走过一段路。把期待放柔软一点，重要的不是场面有多大，而是你们愿意把这一年放进同一张桌子上。见完之后，心里那块空会暂时被填上。" },
+            { name: "郑重", text: "下次见面会比较正式、干净。可能和办事、看展、工作相关的场合叠在一起，或是对方特意收拾后来见你。气氛克制但用心，你会感觉到TA把这次见面当一回事。适合把话说清楚，也适合把边界留好。见完之后，事情会比见面之前更明白一点。这一面不一定甜，但会让关系往前挪一步。" }
+          ]
+        },
+        {
+          id: "career",
+          title: "2027年，我的事业运势怎么样？",
+          image: "cards/card-4.jpg",
+          groups: [
+            { name: "开花", text: "2027年，你会把已经养了很久的东西开出来。工作看起来更像那么回事：成果能被看见，台面上也更稳。上半年可能还在摆位置、理流程，下半年会有比较明显的展示期。别急着换赛道，把现有的花养好，掌声会跟着来。年底回头看，你会觉得自己终于把桌子摆正了，也配得上那些夸奖。" },
+            { name: "灵感", text: "2027年事业运偏软、偏创意。不一定是职位猛跳，而是想法变多、贵人变多、路变宽。适合学习、试新项目、把作品拿出去被人看见。过程会有点雾，看不真切也没关系，走着走着风景就清楚了。别跟别人比速度，你的优势是感觉和审美，用在对的事上，就会慢慢变成机会和收入。" },
+            { name: "扎根", text: "2027年要靠耐力。外面看起来不热闹，其实你在把根扎深：专业变硬、口碑变稳、能扛事的人设立住了。年中可能有一阵雨，压力上来，但雨后叶子更绿。适合考证书、把基础补齐、把团队或流程建好。年底你会发现，别人还在找风口，你已经不太容易被吹倒。这一年的奖赏，是你变得更踏实。" },
+            { name: "聚焦", text: "2027年事业运很「一根筋」，而这是好事。你会把力气收成一件主线：一个岗位、一个作品、一个考试，或一次关键晋升。光线很亮，影子也很清楚，意味着选择会摊开在你面前。少做加法，敢做选择。做成那一件，整年都值。也被提醒：被看见的同时会被比较，把作品打磨干净再出手。" }
+          ]
+        }
+      ];
+      function cardById(id) {
+        for (var i = 0; i < DIV_CARDS.length; i++) if (DIV_CARDS[i].id === id) return DIV_CARDS[i];
+        return null;
+      }
+      function fillCardPick() {
+        var box = document.getElementById("card-pick");
+        if (!box || box.getAttribute("data-ready")) return;
+        box.setAttribute("data-ready", "1");
+        DIV_CARDS.forEach(function (c) {
+          var a = document.createElement("a");
+          a.className = "card card-pick-item";
+          a.href = "#div-card-" + c.id;
+          a.innerHTML = '<div class="card-thumb"><img src="' + esc(c.image) + '" alt="' + esc(c.title) + '" /></div><h3>' + esc(c.title) + "</h3>";
+          box.appendChild(a);
+        });
+      }
+      function showCardDetail(id) {
+        var c = cardById(id);
+        if (!c) return false;
+        document.querySelectorAll(".view").forEach(function (v) { v.hidden = true; });
+        document.getElementById("view-div-card").hidden = false;
+        setText("div-card-title", c.title);
+        var img = document.getElementById("div-card-img");
+        img.src = c.image;
+        img.alt = c.title;
+        var box = document.getElementById("div-card-options");
+        box.innerHTML = "";
+        c.groups.forEach(function (g, i) {
+          var a = document.createElement("a");
+          a.className = "card-opt";
+          a.href = "#div-card-" + c.id + "-" + (i + 1);
+          a.textContent = "第" + (i + 1) + "组";
+          box.appendChild(a);
+        });
+        window.scrollTo(0, 0);
+        return true;
+      }
+      function showCardOption(id, n) {
+        var c = cardById(id);
+        var g = c && c.groups[n - 1];
+        if (!g) return false;
+        document.querySelectorAll(".view").forEach(function (v) { v.hidden = true; });
+        document.getElementById("view-div-card-opt").hidden = false;
+        document.getElementById("div-card-opt-back").setAttribute("data-back", "div-card-" + id);
+        setText("div-card-opt-head", c.title);
+        setText("div-card-opt-name", g.name);
+        setText("div-card-opt-text", g.text);
+        var img = document.getElementById("div-card-opt-img");
+        img.src = "cards/card-" + (DIV_CARDS.indexOf(c) + 1) + "-" + n + ".jpg";
+        img.alt = g.name;
+        window.scrollTo(0, 0);
+        return true;
+      }
+      function showDivCardRoute(name) {
+        var m = /^div-card-([a-z]+)(?:-([1-4]))?$/.exec(name);
+        if (!m) return false;
+        if (m[2]) return showCardOption(m[1], Number(m[2]));
+        return showCardDetail(m[1]);
+      }
+      document.getElementById("div-go").addEventListener("click", function () {
+        var q = document.getElementById("div-q").value.trim() || "今晚想问的事";
+        var lot = LOTS[hashStr(q + "|" + (d.date || "")) % LOTS.length];
+        var out = window.LotReply
+          ? window.LotReply.replyLot(q, lot)
+          : { shortQuestion: q, reply: lot.text, lotText: lot.text };
+        document.getElementById("div-result").innerHTML =
+          '<article class="card oracle-card">' +
+          '<div class="tag">' + esc(lot.rank) + "</div>" +
+          '<p class="lot-q">所问：<strong>' + esc(out.shortQuestion || q) + "</strong></p>" +
+          "<h3>" + esc(lot.title) + "</h3>" +
+          '<p class="lot-answer">' + esc(out.reply) + "</p>" +
+          (out.lotText ? '<p class="lot-base">原签：' + esc(out.lotText) + "</p>" : "") +
+          "</article>";
+      });
+
+      function loadList(key) {
+        try { return JSON.parse(localStorage.getItem(key) || "[]"); } catch (e) { return []; }
+      }
+      function saveList(key, arr) { localStorage.setItem(key, JSON.stringify(arr.slice(0, 30))); }
+      function renderNotes(id, key, empty) {
+        var box = document.getElementById(id);
+        var arr = loadList(key);
+        box.innerHTML = "";
+        if (!arr.length) {
+          box.innerHTML = '<p class="empty">' + empty + "</p>";
+          return;
+        }
+        arr.forEach(function (n) {
+          var art = document.createElement("article");
+          art.className = "card item";
+          art.innerHTML = '<p class="meta">' + esc(n.t) + "</p><p>" + esc(n.text) + "</p>";
+          box.appendChild(art);
+        });
+      }
+      document.getElementById("wish-go").addEventListener("click", function () {
+        if (window.WishUI) window.WishUI.addWish(document.getElementById("wish-input").value.trim());
+      });
+      document.getElementById("tree-go").addEventListener("click", function () {
+        if (window.TreeUI) window.TreeUI.addTree(document.getElementById("tree-input").value.trim());
+      });
+
+      function chartFindValidProfile(raw) {
+        if (!raw.profiles || !raw.profiles.length) return null;
+        if (raw.activeId) {
+          var hit = raw.profiles.find(function (x) { return x.id === raw.activeId; });
+          if (hit && hit.chart && hit.chart.placements && hit.chart.placements.length) return hit;
+        }
+        for (var i = 0; i < raw.profiles.length; i++) {
+          var q = raw.profiles[i];
+          if (q.chart && q.chart.placements && q.chart.placements.length) return q;
+        }
+        return null;
+      }
+      function chartHasSavedProfile() {
+        try {
+          var raw = JSON.parse(localStorage.getItem("diary-natal-profiles") || "{}");
+          return chartFindValidProfile(raw);
+        } catch (e) { return null; }
+      }
+      function syncChartViewInline() {
+        var view = document.getElementById("view-chart");
+        if (!view) return;
+        var prof = chartHasSavedProfile();
+        var mode = prof ? "result" : "form";
+        view.setAttribute("data-mode", mode);
+        var fv = document.getElementById("chart-form-view");
+        var rv = document.getElementById("chart-result-view");
+        var title = document.getElementById("chart-title");
+        var sw = document.getElementById("chart-switch");
+        var addBtn = document.getElementById("chart-add");
+        if (fv) fv.hidden = mode !== "form";
+        if (rv) rv.hidden = mode !== "result";
+        if (title) title.textContent = prof && prof.nickname ? prof.nickname : "星盘";
+        if (sw) {
+          try {
+            var raw = JSON.parse(localStorage.getItem("diary-natal-profiles") || "{}");
+            sw.hidden = !prof || !raw.profiles || raw.profiles.length < 1;
+          } catch (e) { sw.hidden = true; }
+        }
+        if (addBtn) addBtn.hidden = !prof;
+      }
+      window.syncChartViewInline = syncChartViewInline;
+      window.chartHasSavedProfile = chartHasSavedProfile;
+
+      var routes = {
+        "": "home", home: "home", astro: "astro", aspects: "aspects", signs: "signs",
+        oracle: "oracle", divination: "divination", chart: "chart", synastry: "synastry",
+        wish: "wish", tree: "tree", square: "square",
+        login: "login", profile: "profile"
+      };
+      function route() {
+        var rawName = (location.hash || "#home").replace(/^#/, "") || "home";
+        pauseDivVideo();
+        if (window.AuthUI) {
+          var gated = window.AuthUI.guardRoute(rawName);
+          if (!gated.ok) {
+            document.querySelectorAll(".view").forEach(function (v) { v.hidden = true; });
+            var loginView = document.getElementById("view-login");
+            if (loginView) loginView.hidden = false;
+            window.scrollTo(0, 0);
+            return;
+          }
+        }
+        if (showDivVideo(rawName)) return;
+        if (showDivCardRoute(rawName)) return;
+        var name = routes[rawName] || "home";
+        if (window.AuthUI && window.AuthUI.isAuthGated(name) && !window.AuthUI.isLoggedIn()) {
+          window.AuthUI.openLogin(name);
+          return;
+        }
+        document.querySelectorAll(".view").forEach(function (v) { v.hidden = true; });
+        var view = document.getElementById("view-" + name);
+        if (!view) {
+          name = "home";
+          view = document.getElementById("view-home");
+        }
+        view.hidden = false;
+        window.scrollTo(0, 0);
+        if (name === "login" && window.AuthUI) window.AuthUI.syncAuthChrome();
+        if (name === "profile" && window.AuthUI) window.AuthUI.syncAuthChrome();
+        if (name === "divination") fillCardPick();
+        if (name === "astro") fillAstro();
+        if (name === "aspects") fillAspects();
+        if (name === "signs") fillSigns();
+        if (name === "chart") {
+          syncChartViewInline();
+          if (window.ChartModule) window.ChartModule.onChartRoute();
+          else window.addEventListener("chart-module-ready", function () {
+            if (window.ChartModule) window.ChartModule.onChartRoute();
+          }, { once: true });
+        }
+        if (name === "synastry") {
+          if (window.SynastryUI) window.SynastryUI.onSynastryRoute();
+          else window.addEventListener("synastry-ui-ready", function () {
+            if (window.SynastryUI) window.SynastryUI.onSynastryRoute();
+          }, { once: true });
+        }
+        if (name === "square") fillSquare();
+        if (name === "oracle") showOracle();
+        else closeOracleModal();
+        if (name === "wish") {
+          if (window.WishUI) window.WishUI.render();
+          else window.addEventListener("wish-ui-ready", function () {
+            if (window.WishUI) window.WishUI.render();
+          }, { once: true });
+        }
+        if (name === "tree") {
+          if (window.TreeUI) window.TreeUI.render();
+          else window.addEventListener("tree-ui-ready", function () {
+            if (window.TreeUI) window.TreeUI.render();
+          }, { once: true });
+        }
+      }
+      document.querySelectorAll("[data-back]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var to = btn.getAttribute("data-back");
+          location.hash = to ? to : "home";
+        });
+      });
+      window.addEventListener("hashchange", route);
+      route();
+    })();
+  </script>
+</body>
+</html>

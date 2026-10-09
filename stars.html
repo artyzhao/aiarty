@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>星星日历</title>
+  <script src="stars-data.js?v=20261009123005"></script>
+  <style>
+    :root {
+      --bg: #04050a;
+      --paper: rgba(10, 11, 16, 0.8);
+      --ink: #f4efe4;
+      --muted: #a8a095;
+      --gold: #e8c98a;
+      --gold-dim: #c4a36a;
+      --line: rgba(232, 201, 138, 0.2);
+      --card: rgba(12, 13, 18, 0.86);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+    .sky {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(1100px 640px at 50% -10%, #101218 0%, transparent 55%),
+        radial-gradient(720px 460px at 90% 20%, #121018 0%, transparent 50%),
+        linear-gradient(180deg, #06070c 0%, #04050a 52%, #030308 100%);
+    }
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: #fff;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: twinkle 3.6s ease-in-out infinite;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 0.95; }
+    }
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 36px 24px 80px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      padding-bottom: 22px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+    header h1 {
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      margin: 0 0 8px;
+      color: var(--gold);
+    }
+    header .lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+    }
+    header .meta {
+      text-align: right;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    header .meta strong {
+      display: block;
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    header .meta .lunar {
+      color: var(--gold-dim);
+      margin-top: 4px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+    .moon-card, .advice-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 24px;
+      backdrop-filter: blur(10px);
+    }
+    .moon-card {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .moon {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: #0c0d14;
+      box-shadow: 0 0 28px rgba(232, 201, 138, 0.3);
+      position: relative;
+      z-index: 2;
+      isolation: isolate;
+      overflow: hidden;
+    }
+    .moon svg { display: block; width: 88px; height: 88px; position: relative; z-index: 1; }
+    .moon-copy h2 {
+      margin: 0 0 6px;
+      font-size: 20px;
+      font-weight: 650;
+      letter-spacing: 0.12em;
+    }
+    .moon-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .advice-card h3 {
+      margin: 0 0 10px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      color: var(--gold-dim);
+    }
+    .advice-card p {
+      margin: 0;
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+    .sec-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      border-left: 2px solid var(--gold);
+      padding-left: 12px;
+    }
+    .sec-head h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 650;
+      letter-spacing: 0.16em;
+    }
+    .sec-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .sky-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .sky-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .sky-card img {
+      display: block;
+      width: 100%;
+      height: 168px;
+      object-fit: cover;
+    }
+    .sky-card .body {
+      padding: 14px 16px 16px;
+    }
+    .sky-card h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      font-weight: 650;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+    }
+    .sky-card p {
+      margin: 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .influence-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+    .inf-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 16px 18px;
+    }
+    .inf-card .label {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      color: var(--gold-dim);
+      margin-bottom: 8px;
+    }
+    .inf-card p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--ink);
+    }
+    .planet-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .planet-chip {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 14px 16px;
+    }
+    .planet-chip .row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .planet-chip .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      box-shadow: 0 0 8px currentColor;
+    }
+    .planet-chip h3 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 650;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+    }
+    .planet-chip .pos {
+      margin: 0;
+      font-size: 13px;
+      color: var(--ink);
+    }
+    .planet-chip .hint {
+      margin: 4px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .aspect-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .aspect-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 12px 20px;
+      align-items: start;
+    }
+    .aspect-card .pair {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .aspect-card .pair strong {
+      font-size: 16px;
+      font-weight: 650;
+      letter-spacing: 0.06em;
+      color: var(--ink);
+    }
+    .aspect-card .badge {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+    }
+    .aspect-card .badge.tense { color: #e0a090; }
+    .aspect-card .badge.blend { color: var(--gold); }
+    .aspect-card .meta {
+      margin: 6px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .aspect-card .effect {
+      margin: 0;
+      font-size: 14px;
+      color: var(--ink);
+    }
+    .empty-note {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 8px;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+    }
+    @media (max-width: 860px) {
+      header { grid-template-columns: 1fr; }
+      header .meta { text-align: left; }
+      .hero, .sky-grid, .influence-grid, .planet-grid, .aspect-card { grid-template-columns: 1fr; }
+      .moon-card { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sky" id="sky" aria-hidden="true"></div>
+  <div class="page">
+    <header>
+      <div>
+        <h1>星星日历</h1>
+        <p class="lead">看今日星象，知心情、财富、工作与感情</p>
+      </div>
+      <div class="meta">
+        <strong id="date-line"></strong>
+        <div class="lunar" id="lunar-line"></div>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="moon-card">
+        <div class="moon" id="moon-disc" aria-hidden="true"></div>
+        <div class="moon-copy">
+          <h2 id="moon-title"></h2>
+          <p id="moon-sub"></p>
+        </div>
+      </div>
+      <div class="advice-card">
+        <h3>今日建议</h3>
+        <p id="advice"></p>
+      </div>
+    </div>
+
+    <div class="sec-head">
+      <h2>今日星象</h2>
+      <p>图示当日可见天象，文字从简</p>
+    </div>
+    <div class="sky-grid" id="sky-grid"></div>
+
+    <div class="sec-head">
+      <h2>对你的影响</h2>
+      <p>心情 · 财富 · 工作 · 感情</p>
+    </div>
+    <div class="influence-grid" id="influence-grid"></div>
+
+    <div class="sec-head">
+      <h2>行星位置</h2>
+      <p>太阳、月亮与八大行星 · 当日黄道</p>
+    </div>
+    <div class="planet-grid" id="planet-grid"></div>
+
+    <div class="sec-head">
+      <h2>相位关系</h2>
+      <p>合、六分、刑、拱、冲 · 及当日影响</p>
+    </div>
+    <div class="aspect-list" id="aspect-list"></div>
+
+    <footer>星象按当前时刻计算，每 3 小时自动更新；影响与建议仅供参考，不构成决策依据。<span id="updated"></span></footer>
+  </div>
+  <script>
+    (function () {
+      var sky = document.getElementById("sky");
+      for (var i = 0; i < 110; i++) {
+        var s = document.createElement("span");
+        s.className = "star";
+        s.style.left = Math.random() * 100 + "%";
+        s.style.top = Math.random() * 100 + "%";
+        s.style.animationDelay = (Math.random() * 3.6).toFixed(2) + "s";
+        s.style.transform = "scale(" + (0.6 + Math.random() * 1.6).toFixed(2) + ")";
+        sky.appendChild(s);
+      }
+
+      var d = window.STARS_DATA;
+      var parts = d.date.split("-");
+      document.getElementById("date-line").textContent =
+        parts[0] + "年" + Number(parts[1]) + "月" + Number(parts[2]) + "日  " + d.weekday;
+      document.getElementById("lunar-line").textContent = d.lunar;
+      document.getElementById("moon-title").textContent = d.moonPhase + " · " + d.moonIllumination;
+      document.getElementById("moon-sub").textContent = "今夜主星象，见下方图示";
+      document.getElementById("advice").textContent = d.advice;
+      if (d.updatedAt) {
+        document.getElementById("updated").textContent = " 更新于 " + d.updatedAt + "。";
+      }
+      paintMoon(document.getElementById("moon-disc"), d.moonFraction, d.waxing);
+
+      var grid = document.getElementById("sky-grid");
+      d.sky.forEach(function (item) {
+        var card = document.createElement("article");
+        card.className = "sky-card";
+        card.innerHTML =
+          '<img src="' + item.image + '" alt="' + item.alt + '" />' +
+          '<div class="body"><h3>' + item.title + "</h3><p>" + item.caption + "</p></div>";
+        grid.appendChild(card);
+      });
+
+      var labels = [
+        ["心情", d.influence.mood],
+        ["财富", d.influence.wealth],
+        ["工作", d.influence.work],
+        ["感情", d.influence.love]
+      ];
+      var inf = document.getElementById("influence-grid");
+      labels.forEach(function (pair) {
+        var card = document.createElement("article");
+        card.className = "inf-card";
+        card.innerHTML =
+          '<div class="label">' + pair[0] + "</div><p>" + pair[1] + "</p>";
+        inf.appendChild(card);
+      });
+
+      var colors = {
+        "太阳": "#f0d080", "月亮": "#e8e0c8", "水星": "#c5c8d0", "金星": "#e8c98a",
+        "火星": "#c45b3a", "木星": "#e2c9a0", "土星": "#c4a36a", "天王星": "#7ba3c4",
+        "海王星": "#5b7aa8", "冥王星": "#8a6a8a"
+      };
+      var planetGrid = document.getElementById("planet-grid");
+      (d.bodies || []).forEach(function (b) {
+        var chip = document.createElement("article");
+        chip.className = "planet-chip";
+        var color = colors[b.name] || "#e8c98a";
+        chip.innerHTML =
+          '<div class="row"><span class="dot" style="background:' + color + ';color:' + color + '"></span><h3>' + b.name + "</h3></div>" +
+          '<p class="pos">' + b.label + "</p>" +
+          '<p class="hint">' + (b.meaning || "") + "</p>";
+        planetGrid.appendChild(chip);
+      });
+
+      var aspectList = document.getElementById("aspect-list");
+      var aspects = d.aspects || [];
+      var personal = { "太阳": 1, "月亮": 1, "水星": 1, "金星": 1, "火星": 1 };
+      var first = [];
+      var rest = [];
+      aspects.forEach(function (a) {
+        if (personal[a.a] || personal[a.b]) first.push(a);
+        else rest.push(a);
+      });
+      function renderAspects(title, items) {
+        if (!items.length) return;
+        if (title) {
+          var note = document.createElement("p");
+          note.className = "empty-note";
+          note.textContent = title;
+          aspectList.appendChild(note);
+        }
+        items.forEach(function (a) {
+          var card = document.createElement("article");
+          card.className = "aspect-card";
+          var tone = a.tone || "blend";
+          card.innerHTML =
+            '<div><div class="pair"><strong>' + a.a + " · " + a.b + '</strong><span class="badge ' + tone + '">' + a.aspect + "</span></div>" +
+            '<p class="meta">黄经距 ' + a.sep + "° · 距精确 " + a.orbUsed + "°</p></div>" +
+            '<p class="effect">' + a.influence + "</p>";
+          aspectList.appendChild(card);
+        });
+      }
+      if (!aspects.length) {
+        var empty = document.createElement("p");
+        empty.className = "empty-note";
+        empty.textContent = "今日无主要相位入界。";
+        aspectList.appendChild(empty);
+      } else {
+        renderAspects("日月金水火相关", first);
+        renderAspects("木土天海冥等", rest);
+      }
+
+      function paintMoon(el, frac, waxing) {
+        if (!el) return;
+        var k = Math.max(0, Math.min(1, Number(frac) || 0));
+        var r = 40, cx = 44, cy = 44;
+        var wax = waxing !== false;
+        var hx = wax ? 36 : 52;
+        var uid = "m" + Math.random().toString(36).slice(2, 8);
+        var svg = '<svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">';
+        svg += "<defs>";
+        svg += '<radialGradient id="' + uid + 'lit" cx="' + hx + '" cy="32" r="48" gradientUnits="userSpaceOnUse">';
+        svg += '<stop offset="0%" stop-color="#fff8e8"/><stop offset="38%" stop-color="#f0d9a0"/>';
+        svg += '<stop offset="72%" stop-color="#d4b478"/><stop offset="100%" stop-color="#9a7a48"/>';
+        svg += "</radialGradient>";
+        svg += '<radialGradient id="' + uid + 'dark" cx="44" cy="42" r="44" gradientUnits="userSpaceOnUse">';
+        svg += '<stop offset="0%" stop-color="#1a1c28"/><stop offset="100%" stop-color="#05060a"/>';
+        svg += "</radialGradient></defs>";
+        var lit = "url(#" + uid + "lit)";
+        var dark = "url(#" + uid + "dark)";
+        svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + dark + '"/>';
+        if (k > 0.02) {
+          if (k > 0.98) {
+            svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + lit + '"/>';
+          } else {
+            var rx = Math.abs(2 * k - 1) * r;
+            var top = cx + "," + (cy - r);
+            var bot = cx + "," + (cy + r);
+            var sweepRim = wax ? 1 : 0;
+            var path;
+            if (rx < 0.8) {
+              path = "M" + top + " A" + r + "," + r + " 0 0 " + sweepRim + " " + bot + " Z";
+            } else if (k >= 0.5) {
+              var sweepTerm = wax ? 0 : 1;
+              path = "M" + top + " A" + r + "," + r + " 0 0 " + sweepRim + " " + bot +
+                " A" + rx.toFixed(2) + "," + r + " 0 0 " + sweepTerm + " " + top + " Z";
+            } else {
+              path = "M" + top + " A" + r + "," + r + " 0 0 " + sweepRim + " " + bot +
+                " A" + rx.toFixed(2) + "," + r + " 0 0 " + sweepRim + " " + top + " Z";
+            }
+            svg += '<path d="' + path + '" fill="' + lit + '"/>';
+          }
+        }
+        svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none" stroke="#e8c98a" stroke-width="1.5"/>';
+        svg += "</svg>";
+        el.innerHTML = svg;
+      }
+    })();
+  </script>
+  <script src="sky-refresh.js?v=202609011733"></script>
+</body>
+</html>
