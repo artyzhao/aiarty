@@ -1,21 +1,21 @@
 window.STARS_DATA = {
-  "date": "2026-11-04",
-  "weekday": "星期三",
-  "lunar": "农历九月廿六",
+  "date": "2026-11-05",
+  "weekday": "星期四",
+  "lunar": "农历九月廿七",
   "moonPhase": "残月",
-  "moonIllumination": "21%",
-  "moonFraction": 0.211,
+  "moonIllumination": "19%",
+  "moonFraction": 0.1933,
   "waxing": false,
   "sky": [
     {
       "title": "残月在处女",
-      "caption": "残月约21%，日落后南天可见。",
+      "caption": "残月约19%，日落后南天可见。",
       "image": "stars/today-1.svg",
       "alt": "残月位于处女座"
     },
     {
       "title": "土星西天可见",
-      "caption": "土星距日约147度，西天寻找即可。",
+      "caption": "土星距日约146度，西天寻找即可。",
       "image": "stars/today-2.svg",
       "alt": "土星位于西天"
     },
@@ -36,31 +36,31 @@ window.STARS_DATA = {
   "bodies": [
     {
       "name": "太阳",
-      "lon": 222.24,
+      "lon": 222.44,
       "sign": "天蝎",
-      "deg": 12.2,
+      "deg": 12.4,
       "label": "天蝎座12°",
       "meaning": "自我"
     },
     {
       "name": "月亮",
-      "lon": 167.55,
+      "lon": 170.27,
       "sign": "处女",
-      "deg": 17.5,
-      "label": "处女座18°",
+      "deg": 20.3,
+      "label": "处女座20°",
       "meaning": "情绪"
     },
     {
       "name": "水星",
-      "lon": 222.11,
+      "lon": 221.85,
       "sign": "天蝎",
-      "deg": 12.1,
+      "deg": 11.8,
       "label": "天蝎座12°",
       "meaning": "沟通"
     },
     {
       "name": "金星",
-      "lon": 204.64,
+      "lon": 204.57,
       "sign": "天秤",
       "deg": 24.6,
       "label": "天秤座25°",
@@ -68,15 +68,15 @@ window.STARS_DATA = {
     },
     {
       "name": "火星",
-      "lon": 140.44,
+      "lon": 140.54,
       "sign": "狮子",
-      "deg": 20.4,
-      "label": "狮子座20°",
+      "deg": 20.5,
+      "label": "狮子座21°",
       "meaning": "行动"
     },
     {
       "name": "木星",
-      "lon": 144.78,
+      "lon": 144.8,
       "sign": "狮子",
       "deg": 24.8,
       "label": "狮子座25°",
@@ -84,7 +84,7 @@ window.STARS_DATA = {
     },
     {
       "name": "土星",
-      "lon": 8.94,
+      "lon": 8.92,
       "sign": "白羊",
       "deg": 8.9,
       "label": "白羊座9°",
@@ -92,9 +92,9 @@ window.STARS_DATA = {
     },
     {
       "name": "天王星",
-      "lon": 64.55,
+      "lon": 64.54,
       "sign": "双子",
-      "deg": 4.6,
+      "deg": 4.5,
       "label": "双子座5°",
       "meaning": "变数"
     },
@@ -117,28 +117,28 @@ window.STARS_DATA = {
   ],
   "aspects": [
     {
-      "a": "太阳",
-      "b": "水星",
-      "aspect": "合相",
-      "nature": "融合",
-      "tone": "blend",
-      "angle": 0,
-      "sep": 0.1,
-      "orbUsed": 0.1,
-      "orbMax": 8.0,
-      "influence": "脑子亮、话也密，适合想清楚再开口。"
-    },
-    {
       "a": "金星",
       "b": "木星",
       "aspect": "六分相",
       "nature": "顺畅",
       "tone": "easy",
       "angle": 60,
-      "sep": 59.9,
-      "orbUsed": 0.1,
+      "sep": 59.8,
+      "orbUsed": 0.2,
       "orbMax": 4.0,
       "influence": "金星六分木星，感情与机遇有机会衔接，稍动即可。"
+    },
+    {
+      "a": "太阳",
+      "b": "水星",
+      "aspect": "合相",
+      "nature": "融合",
+      "tone": "blend",
+      "angle": 0,
+      "sep": 0.6,
+      "orbUsed": 0.6,
+      "orbMax": 8.0,
+      "influence": "脑子亮、话也密，适合想清楚再开口。"
     },
     {
       "a": "海王星",
@@ -206,7 +206,7 @@ window.STARS_DATA = {
     "mod1": {
       "kicker": "天文学 · 月相",
       "title": "残月",
-      "line": "亮面 21% · 渐亏",
+      "line": "亮面 19% · 渐亏",
       "hint": "查看今夜全部天象"
     },
     "mod2": {
@@ -228,7 +228,7 @@ window.STARS_DATA = {
         "kind": "moon",
         "label": "月相",
         "title": "残月",
-        "caption": "亮面约21%，月龄约25日，渐亏。",
+        "caption": "亮面约19%，月龄约25日，渐亏。",
         "detail": "日落后向南天寻找最亮的月盘即可，今夜月色是主画面。"
       },
       {
@@ -242,14 +242,14 @@ window.STARS_DATA = {
         "kind": "planet",
         "label": "行星可见",
         "title": "木星东天可见",
-        "caption": "距日约77度，黎明前于东天寻找。",
+        "caption": "距日约78度，黎明前于东天寻找。",
         "detail": "木星是夜空里较稳的光点，可与月亮对照。"
       },
       {
         "kind": "planet",
         "label": "行星可见",
         "title": "土星西天可见",
-        "caption": "距日约147度，日落后于西天寻找。",
+        "caption": "距日约146度，日落后于西天寻找。",
         "detail": "土星是夜空里较稳的光点，可与月亮对照。"
       },
       {
@@ -298,31 +298,31 @@ window.STARS_DATA = {
     "moonAspects": [],
     "personalAspects": [
       {
-        "a": "太阳",
-        "b": "水星",
-        "aspect": "合相",
-        "nature": "融合",
-        "tone": "blend",
-        "angle": 0,
-        "sep": 0.1,
-        "orbUsed": 0.1,
-        "orbMax": 8.0,
-        "influence": "脑子亮、话也密，适合想清楚再开口。",
-        "endsIn": "约 4 天后结束",
-        "motion": "正在分离"
-      },
-      {
         "a": "金星",
         "b": "木星",
         "aspect": "六分相",
         "nature": "顺畅",
         "tone": "easy",
         "angle": 60,
-        "sep": 59.9,
-        "orbUsed": 0.1,
+        "sep": 59.8,
+        "orbUsed": 0.2,
         "orbMax": 4.0,
         "influence": "金星六分木星，感情与机遇有机会衔接，稍动即可。",
         "endsIn": "约 4 周后结束",
+        "motion": "正在分离"
+      },
+      {
+        "a": "太阳",
+        "b": "水星",
+        "aspect": "合相",
+        "nature": "融合",
+        "tone": "blend",
+        "angle": 0,
+        "sep": 0.6,
+        "orbUsed": 0.6,
+        "orbMax": 8.0,
+        "influence": "脑子亮、话也密，适合想清楚再开口。",
+        "endsIn": "约 4 天后结束",
         "motion": "正在分离"
       },
       {
@@ -345,21 +345,21 @@ window.STARS_DATA = {
         "name": "太阳",
         "sign": "天蝎",
         "label": "天蝎座12°",
-        "deg": 12.2,
+        "deg": 12.4,
         "influence": "太阳在天蝎，自我气质偏深沉专注，宜深耕、少试探。"
       },
       {
         "name": "月亮",
         "sign": "处女",
-        "label": "处女座18°",
-        "deg": 17.5,
+        "label": "处女座20°",
+        "deg": 20.3,
         "influence": "月亮在处女，心情偏细致清明，宜整理、求精确。"
       },
       {
         "name": "水星",
         "sign": "天蝎",
         "label": "天蝎座12°",
-        "deg": 12.1,
+        "deg": 11.8,
         "influence": "水星在天蝎，沟通与思绪偏深沉专注，宜深耕、少试探。"
       },
       {
@@ -372,12 +372,12 @@ window.STARS_DATA = {
       {
         "name": "火星",
         "sign": "狮子",
-        "label": "狮子座20°",
-        "deg": 20.4,
+        "label": "狮子座21°",
+        "deg": 20.5,
         "influence": "火星在狮子，行动欲偏明亮自信，宜表达、被看见。"
       }
     ],
     "outerSignChanges": []
   },
-  "updatedAt": "2026-11-04 23:40"
+  "updatedAt": "2026-11-05 04:28"
 };
